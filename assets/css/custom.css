@@ -11,6 +11,7 @@ By Azai.com them
  
  /*Null arrows: slider images module*/
  .swiper-button-wrapper {display: none!important;}
+ .default-menu>ul>li+li {margin-left: 1.2rem;}/*Menu fix position*/
  
 
 /***************************************************************
