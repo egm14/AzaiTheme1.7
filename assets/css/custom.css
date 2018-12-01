@@ -48,6 +48,7 @@ By Azai.com them
 @media only screen and (min-width:1200px){
  /*Null arrows: slider images module*/
  .swiper-button-wrapper {display: none!important;}
+ /*Menu fix position*/
  .default-menu>ul>li+li {margin-left: 1.2rem;color: #000000!important;}
  .default-menu>ul>li>a {font-size: .75rem;color: black!important;}
  .stickUpTop:not(.isStuck) .stick-up {padding-top: 40px;padding-bottom: 40px;height: 0px;}
