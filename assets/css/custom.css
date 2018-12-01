@@ -9,9 +9,8 @@ By Azai.com them
  ******************* General CSS Changel  *********************
  ***************************************************************/
  
- /*Null arrows: slider images module*/
- .swiper-button-wrapper {display: none!important;}
- .default-menu>ul>li+li {margin-left: 1.2rem;}/*Menu fix position*/
+
+ 
  
 
 /***************************************************************
@@ -47,7 +46,12 @@ By Azai.com them
  ***************************************************************/
 
 @media only screen and (min-width:1200px){
-
+ /*Null arrows: slider images module*/
+ .swiper-button-wrapper {display: none!important;}
+ .default-menu>ul>li+li {margin-left: 1.2rem;color: #000000!important;}
+ .default-menu>ul>li>a {font-size: .75rem;color: black!important;}
+ .stickUpTop:not(.isStuck) .stick-up {padding-top: 40px;padding-bottom: 40px;height: 0px;}
+ .header-absolute {position: absolute;left: 0;top: 0;right: 0;background: rgba(255, 255, 255, 0.64)!important;z-index: 3;height: 100px;}
 }
 
 /***************************************************************
