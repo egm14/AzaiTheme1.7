@@ -19,11 +19,13 @@ By Azai.com them
  .toTop, .toTop:focus {font-size: 50px;color:#2f2c2f;background:none;}
 
  /*------------------ FOOTER - SECTION -------------*/
- .footer-container #footer h3{font:400 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
+ .footer-container #footer h3{font:bold 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
  header .col-sm-12 i{color:black!important;}
  #footer div.container div.footer-column div.col-12:nth-child(1n+2){border-left:1.5px solid #ebebeb;}
  #footer div.container div.text-center{margin-top:40px;}
  #footer div.container #redes-desk{font-size:1.2rem;}
+
+ 
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/
@@ -48,7 +50,7 @@ By Azai.com them
  ***************************************************************/
 
  @media only screen and (min-width:1366px){
-   #footer {padding-top: 90px;}
+   #footer {padding-top: 80px;}
 }
 
 /***************************************************************
@@ -65,8 +67,7 @@ By Azai.com them
   section#wrapper {top: 50px;position: relative;}
   #index section#wrapper {top:0px;}
   ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 15px;}
-  #footer {padding-top: 75px;}
-
+  #footer {padding-top: 70px;}
  
 }
 
@@ -79,13 +80,28 @@ By Azai.com them
     
 }   
 
-
 /***************************************************************
- ****** Screen Min-width 768px to  Max-width 1024px ************
+ ******************** Screen Min-width 768px  ******************
  ***************************************************************/
  /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width:768px) and (max-width:1024px){
- 
+@media only screen and (min-width:768px){
+  /*--------------- Footer Social Profiles ----------------*/
+	#footer div.container #redes-desk a i{
+	    font-size:22px;
+	    color:white;
+	    background-color:black;
+	    padding:10px;
+	    display:inline-block;
+	    min-width:40px;
+	    min-height:40px;
+	    border-radius:50%;
+	    margin:5px 5px;
+	    }
+	#footer div.container #redes-desk a i:hover{
+	    font-size:18px;
+	    background-color:#4a4a4a;
+	}
+	 
 }
 
 /***************************************************************
