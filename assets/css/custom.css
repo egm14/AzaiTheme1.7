@@ -17,8 +17,11 @@ By Azai.com them
  section.facet .facet-list .slider-container .back-bar .selected-bar {background: #ababab;}
  ul .list-default li a, ul[class*=" list-default-"] li a, ul[class^=list-default-] li a {color: grey;}
  .toTop, .toTop:focus {font-size: 50px;color:#2f2c2f;background:none;}
- .it_IXBEFYKOZXIX , .it_GWGOVQTUIZPL , .it_CKTTMIPDZKSU  {border-left: 2px solid #ebebeb;}
- .row.it_NJOWNFQGKULQ {padding-bottom: 42px;}
+ .footer-container #footer h3{font:400 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
+ header .col-sm-12 i{color:black!important;}
+ #footer div.container div.footer-column div.col-12:nth-child(1n+2){border-left:1.5px solid #ebebeb;}
+ #footer div.container div.text-center{margin-top:40px;}
+ #footer div.container #redes-desk{font-size:1.2rem;}
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/
@@ -89,7 +92,7 @@ By Azai.com them
 
 @media only screen and (max-width:767px){
     /*IPAD top banner sticker*/
-   
+    #footer div.container div.text-center{margin-top:20px;}
 }
 
 /***************************************************************
