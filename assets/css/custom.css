@@ -59,7 +59,7 @@ By Azai.com them
  .default-menu>ul>li>a {font-size: .75rem;color: black!important;}
  .stickUpTop:not(.isStuck) .stick-up {padding-top: 40px;padding-bottom: 40px;height: 0px;}
  .header-absolute {position: absolute;left: 0;top: 0;right: 0;background: rgba(255, 255, 255, 0.64)!important;z-index: 3;height: 100px;}
-  section#main {top: 145px;position: relative;}
+  /*section#main {top: 145px;position: relative;}*/
   section#wrapper {top: 50px;position: relative;}
   #index section#wrapper {top:0px;}
   ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 15px;}
@@ -119,6 +119,8 @@ By Azai.com them
 #header>.wrapper {padding-top: 3px;padding-bottom: 3px;width: 150px}
 header#header {display: flex;}
 .separator-list.justify-content-center {position: relative;top: 15px;}
+li.top-level-menu-li {margin-bottom: 0px;padding-bottom: 0px;border-bottom: 1px solid #cccccc36;border-left: 0px!important;padding-left:0px;padding-right: 0px;padding: 0px 0px 0px 7px;}
+ul.menu.clearfix.top-level-menu.jxmegamenu_item {margin: 0px -13px 0px -13px;}
 }
 /***************************************************************
  ******************* Screen Max-width 375px *********************
