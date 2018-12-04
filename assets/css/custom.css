@@ -111,6 +111,7 @@ By Azai.com them
 @media only screen and (max-width:767px){
     /*IPAD top banner sticker*/
     #footer div.container div.text-center{margin-top:20px;}
+	#ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 376px;top: 0px;} /*Slider*/
 }
 
 /***************************************************************
@@ -127,7 +128,8 @@ By Azai.com them
  ***************************************************************/
 
 @media only screen and (max-width: 640px){
-
+#ps-image-slider.swiper-container .swiper-slide .img-fluid {top: 31%!important;width: 110%!important;height: auto;min-width: 440px!important;}
+#ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 250px;top: 47px}
    
  }
 
