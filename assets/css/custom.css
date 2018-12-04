@@ -8,10 +8,17 @@ By Azai.com them
 /***************************************************************
  ******************* General CSS Changel  *********************
  ***************************************************************/
+ 
+ 
+ 
+/***************************************************************
+ ***************LIST OF DISABLED FUNCTIONS *********************
+ ***************************************************************/
  /*Null arrows: slider images module*/
  .swiper-button-wrapper {display: none!important;}
-
- 
+ div#ship {background: black;color: white;}
+ /*Display Backgraud banner categori*/
+ .block-category {display: none;}
  
 
 /***************************************************************
@@ -53,6 +60,8 @@ By Azai.com them
  .stickUpTop:not(.isStuck) .stick-up {padding-top: 40px;padding-bottom: 40px;height: 0px;}
  .header-absolute {position: absolute;left: 0;top: 0;right: 0;background: rgba(255, 255, 255, 0.64)!important;z-index: 3;height: 100px;}
   section#main {top: 145px;position: relative;}
+  section#wrapper {top: 50px;position: relative;}
+ ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 15px;}
 }
 
 /***************************************************************
@@ -104,6 +113,7 @@ By Azai.com them
 
 
 @media only screen and (max-width:420px){
+	
  
 }
 /***************************************************************
