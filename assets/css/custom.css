@@ -59,7 +59,7 @@ By Azai.com them
  .default-menu>ul>li>a {font-size: .75rem;color: black!important;}
  .stickUpTop:not(.isStuck) .stick-up {padding-top: 40px;padding-bottom: 40px;height: 0px;}
  .header-absolute {position: absolute;left: 0;top: 0;right: 0;background: rgba(255, 255, 255, 0.64)!important;z-index: 3;height: 100px;}
-  section#main {top: 145px;position: relative;}
+  /*section#main {top: 145px;position: relative;}*/
   section#wrapper {top: 50px;position: relative;}
   #index section#wrapper {top:0px;}
   ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 15px;}
