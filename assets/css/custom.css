@@ -17,6 +17,8 @@ By Azai.com them
  section.facet .facet-list .slider-container .back-bar .selected-bar {background: #ababab;}
  ul .list-default li a, ul[class*=" list-default-"] li a, ul[class^=list-default-] li a {color: grey;}
  .toTop, .toTop:focus {font-size: 50px;color:#2f2c2f;background:none;}
+
+ /*------------------ FOOTER - SECTION -------------*/
  .footer-container #footer h3{font:400 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
  header .col-sm-12 i{color:black!important;}
  #footer div.container div.footer-column div.col-12:nth-child(1n+2){border-left:1.5px solid #ebebeb;}
@@ -42,23 +44,12 @@ By Azai.com them
 }
 
 /***************************************************************
- ******************* Screen Max-width 1200px *******************
- ***************************************************************/
-
-@media only screen and (max-width:1200px){
-   
-    
-}   
-
-
-/***************************************************************
  ******************* Screen Min-width 1366px *********************
  ***************************************************************/
 
  @media only screen and (min-width:1366px){
-   
+   #footer {padding-top: 90px;}
 }
-
 
 /***************************************************************
  ******************* Screen Min-width 1200px *********************
@@ -74,9 +65,20 @@ By Azai.com them
   section#wrapper {top: 50px;position: relative;}
   #index section#wrapper {top:0px;}
   ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 15px;}
-  #footer {padding-top: 200px;}
+  #footer {padding-top: 75px;}
+
  
 }
+
+/***************************************************************
+ ******************* Screen Max-width 1200px *******************
+ ***************************************************************/
+
+@media only screen and (max-width:1200px){
+   
+    
+}   
+
 
 /***************************************************************
  ****** Screen Min-width 768px to  Max-width 1024px ************
