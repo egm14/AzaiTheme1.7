@@ -10,7 +10,15 @@ By Azai.com them
  ***************************************************************/
  span.it_04953631.top-level-menu-li-span.jxmegamenu_item.sf-with-ul {color: black;}
  .footer-container #footer h4{font:400 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
+ #footer .footer-block:not(.block-social) ul li a {color:gray;}
  header .col-sm-12 i{color:black!important;}
+ header#header {z-index:999;}
+ section.facet .facet-list .slider-container .back-bar .pointer {background: #000000;}
+ section.facet .facet-list .slider-container .back-bar .selected-bar {background: #ababab;}
+ ul .list-default li a, ul[class*=" list-default-"] li a, ul[class^=list-default-] li a {color: grey;}
+ .toTop, .toTop:focus {font-size: 50px;color:#2f2c2f;background:none;}
+ .it_IXBEFYKOZXIX , .it_GWGOVQTUIZPL , .it_CKTTMIPDZKSU  {border-left: 2px solid #ebebeb;}
+ .row.it_NJOWNFQGKULQ {padding-bottom: 42px;}
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/
@@ -118,7 +126,7 @@ By Azai.com them
 @media only screen and (max-width:420px){
 #header>.wrapper {padding-top: 3px;padding-bottom: 3px;width: 150px}
 header#header {display: flex;}
-.separator-list.justify-content-center {position: relative;top: 15px;z-index: 999;}
+.separator-list.justify-content-center {position: relative;top: 15px;}
 li.top-level-menu-li {margin-bottom: 0px;padding-bottom: 0px;border-bottom: 1px solid #cccccc36;border-left: 0px!important;padding-left:0px;padding-right: 0px;padding: 0px 0px 0px 7px;}
 ul.menu.clearfix.top-level-menu.jxmegamenu_item {margin: 0px -13px 0px -13px;}
 }
