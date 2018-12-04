@@ -8,7 +8,7 @@ By Azai.com them
 /***************************************************************
  ******************* General CSS Changel  *********************
  ***************************************************************/
- 
+ span.it_04953631.top-level-menu-li-span.jxmegamenu_item.sf-with-ul {color: black;}
  
  
 /***************************************************************
@@ -16,7 +16,7 @@ By Azai.com them
  ***************************************************************/
  /*Null arrows: slider images module*/
  .swiper-button-wrapper {display: none!important;}
- div#ship {background: black;color: white;}
+ div#ship {background: black;color: white;padding: 2px 0px 0px 0px;text-transform: uppercase;}
  /*Display Backgraud banner categori*/
  .block-category {display: none;}
  
@@ -114,8 +114,9 @@ By Azai.com them
 
 
 @media only screen and (max-width:420px){
-	
- 
+#header>.wrapper {padding-top: 3px;padding-bottom: 3px;width: 150px}
+header#header {display: flex;}
+.separator-list.justify-content-center {position: relative;top: 15px;}
 }
 /***************************************************************
  ******************* Screen Max-width 375px *********************
