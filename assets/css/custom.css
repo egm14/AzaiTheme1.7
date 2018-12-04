@@ -9,7 +9,7 @@ By Azai.com them
  ******************* General CSS Changel  *********************
  ***************************************************************/
  span.it_04953631.top-level-menu-li-span.jxmegamenu_item.sf-with-ul {color: black;}
- 
+
  
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
@@ -63,6 +63,8 @@ By Azai.com them
   section#wrapper {top: 50px;position: relative;}
   #index section#wrapper {top:0px;}
   ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 15px;}
+  #footer {padding-top: 200px;}
+ 
 }
 
 /***************************************************************
