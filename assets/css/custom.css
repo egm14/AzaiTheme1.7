@@ -87,7 +87,9 @@ By Azai.com them
   section#wrapper{top:50px;}
   #header .header-absolute{padding-top:2px;padding-bottom:2px;}
   /*#header .stickUpTop:not(.isStuck) .stick-up{padding:0!important;}*/ /* Verificar */
-
+  #footer div.container{
+		padding:50px 170px;
+	}
  
 }
 
@@ -96,7 +98,7 @@ By Azai.com them
  ***************************************************************/
 
 @media only screen and (max-width:1200px){
-   
+   .separator-list > :not(:last-child){margin-right:3.4375rem;}
     
 }   
 
@@ -121,9 +123,7 @@ By Azai.com them
 	    font-size:18px;
 	    background-color:#4a4a4a;
 	}
-	#footer div.container{
-		padding:50px 170px;
-	}
+	
 	 
 }
 
