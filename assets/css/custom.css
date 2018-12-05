@@ -24,6 +24,8 @@ By Azai.com them
  #footer div.container div.text-center{margin-top:40px;}
  #footer div.container #redes-desk{font-size:1.2rem;}
 
+/*------------------- HEADER - SECTION ----------------*/
+#index #header .header-nav-mobile{background:#fff!important;}
  
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
@@ -68,6 +70,10 @@ By Azai.com them
   ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 15px;}
   #footer {padding-top: 70px;}
   header#header {z-index:999;}/*Posicion Principal del header*/
+  section#wrapper{top:50px;}
+  #header .header-absolute{padding-top:2px;padding-bottom:2px;}
+  #header .stickUpTop:not(.isStuck) .stick-up{padding:0!important;}
+
  
 }
 
@@ -100,6 +106,9 @@ By Azai.com them
 	#footer div.container #redes-desk a i:hover{
 	    font-size:18px;
 	    background-color:#4a4a4a;
+	}
+	#footer div.container{
+		padding:50px 170px;
 	}
 	 
 }
