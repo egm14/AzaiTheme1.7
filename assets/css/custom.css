@@ -70,6 +70,9 @@ By Azai.com them
   #index section#wrapper {top:0px;}
   ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 15px;}
   #footer {padding-top: 70px;}
+  section#wrapper{top:50px;}
+  #header .header-absolute{padding-top:2px;padding-bottom:2px;}
+  #header .stickUpTop:not(.isStuck) .stick-up{padding:0!important;}
  
 }
 
@@ -102,6 +105,9 @@ By Azai.com them
 	#footer div.container #redes-desk a i:hover{
 	    font-size:18px;
 	    background-color:#4a4a4a;
+	}
+	#footer div.container{
+		padding:50px 170px;
 	}
 	 
 }
