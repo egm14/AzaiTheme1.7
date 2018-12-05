@@ -25,6 +25,8 @@ By Azai.com them
  #footer div.container div.text-center{margin-top:40px;}
  #footer div.container #redes-desk{font-size:1.2rem;}
 
+/*------------------- HEADER - SECTION ----------------*/
+#index #header .header-nav-mobile{background:#fff!important;}
  
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
