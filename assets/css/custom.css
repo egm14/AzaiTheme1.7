@@ -93,7 +93,7 @@ By Azai.com them
  /*Icon functional-buttons miniture - page Category*/
  .functional-buttons{height:40px; top:-3.15rem;background-color:rgba(0,0,0,.6);padding:5px 10px;}
  .grid .product-miniature .product-miniature-container .product-miniature-information .product-buttons > a{color:#ededed;}
- .grid .product-miniature .product-miniature-container .product-miniature-information{padding-bottom:10px;}
+ .grid .product-miniature .product-miniature-container .product-miniature-information{padding-bottom:0px;}
 }
 
 /***************************************************************
@@ -125,6 +125,10 @@ By Azai.com them
 	#footer div.container #redes-desk a i:hover{
 	    font-size:18px;
 	    background-color:#4a4a4a;
+	}
+	article.product-miniature.js-product-miniature:hover h1.product-title,
+	article.product-miniature.js-product-miniature:hover div.product-prices-md{
+		opacity: 0.3;
 	}
 	
 	 
