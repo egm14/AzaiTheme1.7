@@ -88,7 +88,8 @@ By Azai.com them
   header#header {z-index:999;}/*Posicion Principal del header*/
   #header .header-absolute{padding-top:2px;padding-bottom:2px;}
   /*#header .stickUpTop:not(.isStuck) .stick-up{padding:0!important;}*/ /* Verificar */
-  #footer div.container{padding:50px 170px;}
+  #footer div.container{padding:50px 170px 25px 170px}
+  #footer div.container#redes-desk{padding:0px;}
  .grid .product-miniature .product-miniature-container .product-miniature-information div{margin-top:0px;margin-bottom:0px!important;}
  /*Icon functional-buttons miniture - page Category*/
  .functional-buttons{height:40px; top:-3.15rem;background-color:rgba(0,0,0,.6);padding:5px 10px;}
