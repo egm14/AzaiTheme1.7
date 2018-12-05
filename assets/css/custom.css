@@ -12,7 +12,6 @@ By Azai.com them
  .footer-container #footer h4{font:400 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
  #footer .footer-block:not(.block-social) ul li a {color:gray;}
  header .col-sm-12 i{color:black!important;}
- header#header {z-index:999;}
  section.facet .facet-list .slider-container .back-bar .pointer {background: #000000;}
  section.facet .facet-list .slider-container .back-bar .selected-bar {background: #ababab;}
  ul .list-default li a, ul[class*=" list-default-"] li a, ul[class^=list-default-] li a {color: grey;}
@@ -68,6 +67,7 @@ By Azai.com them
   #index section#wrapper {top:0px;}
   ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 15px;}
   #footer {padding-top: 70px;}
+  header#header {z-index:999;}/*Posicion Principal del header*/
  
 }
 
