@@ -21,6 +21,7 @@ By Azai.com them
  label.custom-control-label.active {box-shadow: 0 0 0 0.125rem #000000;}
  .custom-radio .custom-control-label:after {background: #000000;}
  .product-reference span {color: #A1A1A1;}
+ h1.h2.product-name {font-family: 'Didot-Italic', cursive!important;}
 
 
  /*------------------ FOOTER - SECTION -------------*/
@@ -160,6 +161,7 @@ By Azai.com them
  .add.mb-1 {width: 100%;}
  button.btn.btn-md.btn-primary.add-to-cart {padding: 20px 66px;margin-bottom: 10px;width: 100%;}
  .product-variants .custom-select {width: 89%;}
+
  
  }
 
