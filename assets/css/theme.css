@@ -49,7 +49,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: Helvetica Neue, sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -77,7 +77,7 @@ section {
 
 body {
     margin: 0;
-    font-family: Arimo, sans-serif;
+    font-family: Helvetica Neue, Arimo, sans-serif;
     font-size: .7rem;
     font-weight: 400;
     line-height: 1.286;
@@ -6488,7 +6488,7 @@ button.close {
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: Arimo, sans-serif;
+    font-family: Helvetica Neue, Arimo, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.286;
@@ -6611,7 +6611,7 @@ button.close {
     left: 0;
     z-index: 1060;
     max-width: 17.25rem;
-    font-family: Arimo, sans-serif;
+    font-family: Helvetica Neue, Arimo, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.286;
@@ -11657,7 +11657,7 @@ body {
 }
 
 body p {
-    font: normal 1rem/1.625rem Arimo, sans-serif
+    font: normal 1rem/1.625rem Helvetica Neue, Arimo, sans-serif
 }
 
 main {
@@ -11707,7 +11707,7 @@ h2 {
 
 .page-heading,
 .page-heading a {
-    font: 300 1.625rem/2rem Exo\ 2, sans-serif;
+    font: 300 1.625rem/2rem Helvetica Neue,  sans-serif;
     color: #2f2c2f
 }
 
@@ -11721,7 +11721,7 @@ h2 {
     font-weight: 400;
     font-size: 1.625rem;
     line-height: 1.15;
-    font-family: Exo\ 2, sans-serif;
+    font-family: Helvetica Neue,  sans-serif;
     color: #2f2c2f
 }
 
@@ -11748,7 +11748,7 @@ h2 {
     font-weight: 400;
     font-size: 3.125rem;
     line-height: 1.2;
-    font-family: Exo\ 2, sans-serif;
+    font-family: Helvetica Neue,  sans-serif;
     color: #2f2c2f
 }
 
@@ -12281,7 +12281,7 @@ ul[class*=" list-default-"] li a,
 ul[class^=list-default-] li a {
     color: #7e7c7c;
     text-decoration: none;
-    font: normal 1rem/1.625rem Arimo, sans-serif
+    font: normal 1rem/1.625rem Helvetica Neue, Arimo, sans-serif
 }
 
 ul .list-default li a:active,
@@ -12322,7 +12322,7 @@ ul[class*=" list-default-"].list-default-sm li,
 ul[class*=" list-default-"].list-default-sm li span,
 ul[class^=list-default-].list-default-sm li,
 ul[class^=list-default-].list-default-sm li span {
-    font: normal 1rem/1.625rem Arimo, sans-serif
+    font: normal 1rem/1.625rem Helvetica Neue, Arimo, sans-serif
 }
 
 ul .list-default ul.list-default,
@@ -12354,7 +12354,7 @@ ul.list-fa-marker>li>.fa {
 }
 
 .btn-link {
-    font: normal 1rem/1.625rem Arimo, sans-serif
+    font: normal 1rem/1.625rem Helvetica Neue, Arimo, sans-serif
 }
 
 .btn-link.icon-left {
@@ -12509,7 +12509,7 @@ textarea {
     color: #2f2c2f;
     border: .0625rem solid #ebebeb;
     text-transform: uppercase;
-    font: 700 .6875rem/1.25rem Arimo, sans-serif;
+    font: 700 .6875rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     height: 3.125rem;
     padding: .9375rem 2.1875rem .9375rem 1.4375rem;
     -webkit-box-sizing: border-box;
@@ -12617,7 +12617,7 @@ textarea {
 }
 
 .card-header {
-    font: 400 1.25rem/2rem Exo\ 2, sans-serif
+    font: 400 1.25rem/2rem Helvetica Neue, sans-serif
 }
 
 .modal {
@@ -12865,7 +12865,7 @@ textarea {
 .custom-control {
     cursor: pointer;
     color: #767676;
-    font: 400 1rem/1.25rem Arimo, sans-serif;
+    font: 400 1rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     padding-left: 0
@@ -12904,7 +12904,7 @@ textarea {
 
 .list-group .list-group-item {
     border-color: #f4f1e9;
-    font: normal 1rem/1.625rem Arimo, sans-serif
+    font: normal 1rem/1.625rem Helvetica Neue, Arimo, sans-serif
 }
 
 .separator-list {
@@ -13045,7 +13045,7 @@ main .universal-carousel .swiper-container .products {
 
 .product-name,
 .product-title {
-    font: 400 1.25rem/1.875rem Exo\ 2, sans-serif;
+    font: 400 1.25rem/1.875rem Helvetica Neue,  sans-serif;
     color: #767676
 }
 
@@ -13144,7 +13144,7 @@ ul.product-flags li {
     white-space: nowrap;
     letter-spacing: .02em;
     display: inline-block;
-    font-family: Exo\ 2, sans-serif
+    font-family: Helvetica Neue, sans-serif
 }
 
 ul.product-flags li.discount {
@@ -13238,7 +13238,7 @@ ul.product-flags-small li.online-only {
 
 [class*=" product-prices-"],
 [class^=product-prices-] {
-    font: 700 1.125rem/1.75rem Exo\ 2, sans-serif;
+    font: 700 1.125rem/1.75rem Helvetica Neue, sans-serif;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -13264,7 +13264,7 @@ ul.product-flags-small li.online-only {
 
 [class*=" product-prices-"] .price,
 [class^=product-prices-] .price {
-    font: 700 1.125rem/1.75rem Exo\ 2, sans-serif;
+    font: 700 1.125rem/1.75rem Helvetica Neue, sans-serif;
     color: #2f2c2f;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
@@ -13273,7 +13273,7 @@ ul.product-flags-small li.online-only {
 
 [class*=" product-prices-"] .regular-price,
 [class^=product-prices-] .regular-price {
-    font: 400 .75rem/1.75rem Exo\ 2, sans-serif;
+    font: 400 .75rem/1.75rem Helvetica Neue, sans-serif;
     text-decoration: line-through;
     color: #a1a1a1;
     -webkit-box-ordinal-group: 3;
@@ -13288,7 +13288,7 @@ ul.product-flags-small li.online-only {
 [class^=product-prices-] .discount-amount,
 [class^=product-prices-] .discount-percentage {
     color: #7e7c7c;
-    font: 400 .75rem/1.75rem Arimo, sans-serif;
+    font: 400 .75rem/1.75rem Helvetica Neue, Arimo, sans-serif;
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3
@@ -13456,7 +13456,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 #manufacturer .brand-wrapper ul>li .brand-infos h3,
 #supplier .brand-wrapper ul>li .brand-infos h3 {
-    font: 400 1.25rem/2rem Exo\ 2, sans-serif
+    font: 400 1.25rem/2rem Helvetica Neue, sans-serif
 }
 
 #manufacturer .brand-wrapper ul>li .brand-products,
@@ -19443,7 +19443,7 @@ button.swiper-pagination-bullet {
     padding: .5rem .6875rem .5rem 2.1875rem;
     text-align: left;
     border-radius: 0;
-    font: 400 .875rem/1.125rem Arimo, sans-serif;
+    font: 400 .875rem/1.125rem Helvetica Neue, Arimo, sans-serif;
     margin: .3125rem auto
 }
 
@@ -19567,7 +19567,7 @@ body#checkout .nav-tabs li {
     text-align: center;
     padding: 1.25rem;
     width: 25%;
-    font: 400 1.125rem/1.375rem Arimo, sans-serif;
+    font: 400 1.125rem/1.375rem Helvetica Neue, Arimo, sans-serif;
     text-transform: none
 }
 
@@ -19790,7 +19790,7 @@ body#checkout #gift_message textarea {
 }
 
 .address-selector .address-item .address-header h4 {
-    font: 400 1.125rem/1.875rem Arimo, sans-serif;
+    font: 400 1.125rem/1.875rem Helvetica Neue, Arimo, sans-serif;
     margin-bottom: .625rem
 }
 
@@ -19803,7 +19803,7 @@ body#checkout #gift_message textarea {
 }
 
 .address-selector .address-item .address-header .custom-control-description .address-alias {
-    font: 400 1.125rem/1.875rem Arimo, sans-serif;
+    font: 400 1.125rem/1.875rem Helvetica Neue, Arimo, sans-serif;
     color: #2f2c2f
 }
 
@@ -20061,7 +20061,7 @@ body#checkout #gift_message textarea {
 
 .page-content.page-cms {
     background: none;
-    font: normal 1rem/1.625rem Arimo, sans-serif
+    font: normal 1rem/1.625rem Helvetica Neue, Arimo, sans-serif
 }
 
 .page-content.page-cms .cms-box img {
@@ -20181,7 +20181,7 @@ body#checkout #gift_message textarea {
 }
 
 #cms .content-wrapper h2 {
-    font: 300 1.625rem/2rem Exo\ 2, sans-serif
+    font: 300 1.625rem/2rem Helvetica Neue, sans-serif
 }
 
 #cms .content-wrapper h2.icon:before {
@@ -20192,7 +20192,7 @@ body#checkout #gift_message textarea {
 }
 
 #cms .content-wrapper h3 {
-    font: 400 1.375rem/1.875rem Exo\ 2, sans-serif
+    font: 400 1.375rem/1.875rem Helvetica Neue,sans-serif
 }
 
 @media (max-width:575.98px) {
@@ -20202,7 +20202,7 @@ body#checkout #gift_message textarea {
 }
 
 #cms .content-wrapper h4 {
-    font: 700 1rem/1.25rem Arimo, sans-serif;
+    font: 700 1rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     margin: 0 0 .9375rem
 }
 
@@ -20249,14 +20249,14 @@ body#checkout #gift_message textarea {
 
 #cms .content-wrapper .animateCount li {
     text-align: center;
-    font: 700 3.5rem/2.8125rem Arimo, sans-serif;
+    font: 700 3.5rem/2.8125rem Helvetica Neue, Arimo, sans-serif;
     color: #000;
     padding: .375rem .9375rem 0
 }
 
 @media (min-width:576px) and (max-width:767.98px) {
     #cms .content-wrapper .animateCount li {
-        font: 700 2.875rem/2.1875rem Arimo, sans-serif
+        font: 700 2.875rem/2.1875rem Helvetica Neue, Arimo, sans-serif
     }
 }
 
@@ -20272,7 +20272,7 @@ body#checkout #gift_message textarea {
 
 @media (min-width:576px) and (max-width:767.98px) {
     #cms .content-wrapper .animateCount li h3 {
-        font: 700 1rem/1.5rem Arimo, sans-serif
+        font: 700 1rem/1.5rem Helvetica Neue, Arimo, sans-serif
     }
 }
 
@@ -20297,7 +20297,7 @@ body#checkout #gift_message textarea {
     color: #000;
     background: #ebebeb;
     padding: 3.375rem 3.125rem 0;
-    font: 700 1.25rem/2.125rem Arimo, sans-serif;
+    font: 700 1.25rem/2.125rem Helvetica Neue, Arimo, sans-serif;
     text-transform: uppercase;
     text-align: center;
     -webkit-transition: all .3s ease-in-out;
@@ -20463,12 +20463,12 @@ body#checkout #gift_message textarea {
 
 @media (min-width:576px) and (max-width:767.98px) {
     #cms .content-wrapper .list-4 li h3 {
-        font: 700 1rem/1.5rem Arimo, sans-serif
+        font: 700 1rem/1.5rem Helvetica Neue, Arimo, sans-serif
     }
 }
 
 #cms .content-wrapper #testimonials li.testimonial {
-    font: 700 1rem/1.75rem Arimo, sans-serif;
+    font: 700 1rem/1.75rem Helvetica Neue, Arimo, sans-serif;
     text-transform: uppercase;
     text-align: center;
     padding: .3125rem 1.875rem 2.5rem
@@ -20480,7 +20480,7 @@ body#checkout #gift_message textarea {
 
 @media (max-width:575.98px) {
     #cms .content-wrapper #testimonials li.testimonial {
-        font: normal .8125rem/1.375rem Arimo, sans-serif
+        font: normal .8125rem/1.375rem Helvetica Neue, Arimo, sans-serif
     }
 }
 
@@ -20674,7 +20674,7 @@ body#checkout #gift_message textarea {
 #cms .content-wrapper #admin-action-cms p .btn,
 #cms .content-wrapper #admin-action-cms p main .list .products article.product-miniature .product-miniature-container .product-miniature-information .product-buttons>a,
 main .list .products article.product-miniature .product-miniature-container .product-miniature-information #cms .content-wrapper #admin-action-cms p .product-buttons>a {
-    font: 700 17px/21px Arimo, sans-serif;
+    font: 700 17px/21px Helvetica Neue, Arimo, sans-serif;
     border: 1px solid;
     padding: 10px 14px;
     display: inline-block
@@ -20864,7 +20864,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .block-category #category-description .category-title {
-    font: 300 1.625rem/2rem Exo\ 2, sans-serif;
+    font: 300 1.625rem/2rem Helvetica Neue, sans-serif;
     margin-bottom: .625rem;
     display: inline-block
 }
@@ -21118,7 +21118,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 .pagination a {
     position: relative;
     color: #2f2c2f;
-    font: 700 .875rem/1.875rem Arimo, sans-serif;
+    font: 700 .875rem/1.875rem Helvetica Neue, Arimo, sans-serif;
     min-width: 1.875rem;
     min-height: 1.875rem;
     display: block;
@@ -21225,7 +21225,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 section.facet .facet-title {
     font-weight: 400;
-    font-family: Exo\ 2, sans-serif;
+    font-family: Helvetica Neue, sans-serif;
     font-size: 1.25rem;
     line-height: 1.5;
     margin-bottom: .9375rem;
@@ -21277,7 +21277,7 @@ section.facet .facet-list:not(.variant-links) .facet-label a>span {
 }
 
 section.facet .facet-list .facet-label a {
-    font: 400 1rem/1.25rem Arimo, sans-serif;
+    font: 400 1rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     color: #767676;
     display: block
 }
@@ -21342,7 +21342,7 @@ section.facet .facet-list .slider-container .back-bar .pointer {
 }
 
 section.facet .facet-list .slider-container .back-bar .pointer-label {
-    font: 400 13px/16px Arimo, sans-serif;
+    font: 400 13px/16px Helvetica Neue, Arimo, sans-serif;
     color: #a1a1a1;
     top: -27px
 }
@@ -21356,7 +21356,7 @@ section.facet .facet-list .slider-container .scale>span {
 }
 
 section.facet .facet-list .slider-container .scale>span ins {
-    font: 400 13px/16px Arimo, sans-serif;
+    font: 400 13px/16px Helvetica Neue, Arimo, sans-serif;
     color: #a1a1a1
 }
 
@@ -21383,7 +21383,7 @@ section.facet .facet-list .slider-container .scale>span ins {
 }
 
 .active_filters ul .filter-block {
-    font: 700 .6875rem/1.25rem Arimo, sans-serif;
+    font: 700 .6875rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     letter-spacing: .1em;
     color: #fff;
     text-transform: uppercase;
@@ -21634,7 +21634,7 @@ section.facet .facet-list .slider-container .scale>span ins {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: .625rem;
-    font: 400 .6875rem/1.25rem Arimo, sans-serif;
+    font: 400 .6875rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     letter-spacing: .1em;
     color: #a1a1a1
 }
@@ -21677,7 +21677,7 @@ section.facet .facet-list .slider-container .scale>span ins {
 }
 
 .product-right-column .product-name {
-    font: 400 1.25rem/1.875rem Exo\ 2, sans-serif;
+    font: 400 1.25rem/1.875rem Helvetica Neue, sans-serif;
     margin-bottom: .9375rem
 }
 
@@ -21752,7 +21752,7 @@ section.facet .facet-list .slider-container .scale>span ins {
 }
 
 .product-customization .product-customization-item .remove-image {
-    font: 400 .6875rem/.875rem Arimo, sans-serif;
+    font: 400 .6875rem/.875rem Helvetica Neue, Arimo, sans-serif;
     letter-spacing: .1em;
     color: #a1a1a1;
     text-transform: uppercase
@@ -21784,7 +21784,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .product-customization .customization-message {
-    font: 400 1.125rem/1.875rem Arimo, sans-serif
+    font: 400 1.125rem/1.875rem Helvetica Neue, Arimo, sans-serif
 }
 
 .product-customization .required {
@@ -21941,13 +21941,13 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 .product-additional-info .product-lookbooks label {
     text-transform: uppercase;
-    font: 400 .6875rem/1.25rem Arimo, sans-serif;
+    font: 400 .6875rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     letter-spacing: .1em;
     color: #a1a1a1
 }
 
 .product-additional-info .product-lookbooks ul>li a {
-    font: 400 .875rem/1.25rem Arimo, sans-serif;
+    font: 400 .875rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     color: #a1a1a1;
     letter-spacing: .1em
 }
@@ -22002,7 +22002,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .product-reference {
-    font: 400 .6875rem/1.25rem Arimo, sans-serif;
+    font: 400 .6875rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     color: #a1a1a1;
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -22022,7 +22022,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 #product-availability span {
     display: inline-block;
-    font: 400 .6875rem/1.25rem Arimo, sans-serif;
+    font: 400 .6875rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     letter-spacing: .08em;
     text-transform: uppercase;
     color: #fff;
@@ -22067,7 +22067,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .product-variants h5 {
-    font: 400 .6875rem/1.25rem Arimo, sans-serif;
+    font: 400 .6875rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     color: #a1a1a1;
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -22235,7 +22235,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
         margin-right: 1rem;
         font-size: 1.4375rem;
         line-height: 1.875rem;
-        font-family: Exo\ 2, sans-serif
+        font-family: Helvetica Neue, sans-serif
     }
 }
 
@@ -22262,7 +22262,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
     color: #b3b3b3;
     background: none;
     border: none;
-    font: 300 1.4375rem/1.875rem Exo\ 2, sans-serif;
+    font: 300 1.4375rem/1.875rem Helvetica Neue, sans-serif;
     margin: 0;
     position: relative
 }
@@ -22341,7 +22341,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .product-pack .pack-miniature-container .pack-title {
-    font: 400 16px/20px Exo\ 2, sans-serif;
+    font: 400 16px/20px Helvetica Neue, sans-serif;
     color: #000
 }
 
@@ -22353,7 +22353,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 .product-attachments .attachment h4,
 .product-attachments .attachment h4 a {
-    font: 400 1.125rem/1.875rem Arimo, sans-serif
+    font: 400 1.125rem/1.875rem Helvetica Neue, Arimo, sans-serif
 }
 
 .product-features {
@@ -22389,12 +22389,12 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .product-features>dl.data-sheet dd.value {
-    font: normal 1rem/1.625rem Arimo, sans-serif;
+    font: normal 1rem/1.625rem Helvetica Neue, Arimo, sans-serif;
     color: #9d9d9d
 }
 
 .product-features>dl.data-sheet dt.name {
-    font: 700 .6875rem/1.25rem Arimo, sans-serif;
+    font: 700 .6875rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     letter-spacing: .1em;
     color: #b3b3b3;
     text-transform: uppercase
@@ -23101,7 +23101,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 .cart-summary .cart-summary-line .label,
 .cart-summary .cart-summary-line .value,
 .cart-summary .cart-summary-line label {
-    font: 700 1.125rem/1.75rem Exo\ 2, sans-serif;
+    font: 700 1.125rem/1.75rem Helvetica Neue, sans-serif;
     color: #000
 }
 
@@ -23169,7 +23169,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 .product-line-grid .product-line-grid-body>.product-line-info .current-price {
     color: #000;
-    font: 700 1.125rem/1.75rem Exo\ 2, sans-serif
+    font: 700 1.125rem/1.75rem Helvetica Neue, sans-serif
 }
 
 .product-line-grid .product-line-grid-body>.product-line-info .current-price>span:not(:last-child) {
@@ -23178,16 +23178,16 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 .product-line-grid .product-line-grid-body>.product-line-info .current-price .price {
     color: #000;
-    font: 700 1.125rem/1.75rem Exo\ 2, sans-serif
+    font: 700 1.125rem/1.75rem Helvetica Neue, sans-serif
 }
 
 .product-line-grid .product-line-grid-body>.product-line-info .current-price .regular-price {
     color: #a1a1a1;
-    font: 400 .75rem/1.75rem Exo\ 2, sans-serif
+    font: 400 .75rem/1.75rem Helvetica Neue, sans-serif
 }
 
 .product-line-grid .product-line-grid-body>.product-line-info .current-price .discount {
-    font: 400 .75rem/1.75rem Exo\ 2, sans-serif;
+    font: 400 .75rem/1.75rem Helvetica Neue, sans-serif;
     color: #7e7c7c
 }
 
@@ -23203,7 +23203,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 .product-line-grid .product-line-grid-right .cart-line-product-actions .price,
 .product-line-grid .product-line-grid-right .product-price .price {
     color: #000;
-    font: 700 1.125rem/1.75rem Exo\ 2, sans-serif
+    font: 700 1.125rem/1.75rem Helvetica Neue, sans-serif
 }
 
 .product-line-grid .product-line-grid-right .cart-line-product-actions .remove-from-cart,
@@ -23238,7 +23238,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 #block-reassurance>ul .block-reassurance-item span {
-    font: 400 1.125rem/1.875rem Arimo, sans-serif;
+    font: 400 1.125rem/1.875rem Helvetica Neue , Eox\ 2, Arimo, sans-serif;
     font-weight: 600
 }
 
@@ -23251,7 +23251,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .cart-summary-product-item .product-price .price {
-    font: 700 1.125rem/1.75rem Exo\ 2, sans-serif;
+    font: 700 1.125rem/1.75rem Helvetica Neue, sans-serif;
     color: #2f2c2f
 }
 
@@ -23382,13 +23382,13 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 #pagenotfound .page-not-found,
 #products .page-not-found {
-    font: 400 1.125rem/1.875rem Arimo, sans-serif;
+    font: 400 1.125rem/1.875rem Helvetica Neue, Eox\ 2, Arimo, sans-serif;
     margin: 0 auto
 }
 
 #pagenotfound .page-not-found h4,
 #products .page-not-found h4 {
-    font: 400 1.25rem/2rem Exo\ 2, sans-serif;
+    font: 400 1.25rem/2rem Helvetica Neue, sans-serif;
     margin: .625rem 0 1.5625rem
 }
 
@@ -23445,7 +23445,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
     font-size: 1.625rem;
     line-height: 1.15;
     font-weight: 400;
-    font-family: Arimo, sans-serif;
+    font-family: Helvetica Neue, Eox\ 2, Arimo, sans-serif;
     width: 100%;
     position: relative;
     margin-bottom: 0;
@@ -23490,7 +23490,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .sitemap .page-subheading {
-    font: 400 1.25rem/2rem Exo\ 2, sans-serif
+    font: 400 1.25rem/2rem Helvetica Neue, sans-serif
 }
 
 .sitemap #col_categories ul.nested>li {
@@ -23749,7 +23749,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 #blockcart-modal .modal-body .title {
-    font: 400 1.375rem/1.625rem Exo\ 2, sans-serif;
+    font: 400 1.375rem/1.625rem Helvetica Neue, sans-serif;
     position: relative;
     padding-left: 1.875rem
 }
@@ -23807,7 +23807,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
     font-weight: 400;
     font-size: .875rem;
     line-height: 1.29;
-    font-family: Arimo, sans-serif
+    font-family: Helvetica Neue, Eox\ 2,Arimo, sans-serif
 }
 
 #blockcart-modal .modal-body .media-body .list-inline-separated>p:not(:last-child) {
@@ -23827,7 +23827,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
     text-transform: uppercase;
     color: #7e7c7c;
     font-weight: 400;
-    font-family: Arimo, sans-serif
+    font-family: Helvetica Neue, Eox\ 2, Arimo, sans-serif
 }
 
 #blockcart-modal .modal-body .media-body .product-prices-md>span:first-child,
@@ -23847,7 +23847,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
     letter-spacing: .1em;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: Arimo, sans-serif
+    font-family: Helvetica Neue, Eox\ 2, Arimo, sans-serif
 }
 
 #blockcart-modal .modal-body .modal-cart-container [class*=modal-cart] .label {
@@ -23999,7 +23999,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 .currency-selector>span:first-child {
     position: relative;
     display: block;
-    font: 700 .875rem/1.375rem Arimo, sans-serif;
+    font: 700 .875rem/1.375rem Helvetica Neue, Eox\ 2, Arimo, sans-serif;
     letter-spacing: .1em;
     text-transform: uppercase;
     color: #767676;
@@ -24260,7 +24260,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 .links_toggle>ul>li a {
     text-transform: uppercase;
-    font-family: Arimo, sans-serif;
+    font-family: Helvetica Neue, Eox\ 2, Arimo, sans-serif;
     font-size: .625rem;
     line-height: 1.375rem;
     font-weight: 700;
@@ -24305,7 +24305,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 .language-selector>span:first-child {
     position: relative;
     display: block;
-    font: 700 .875rem/1.375rem Arimo, sans-serif;
+    font: 700 .875rem/1.375rem Helvetica Neue, Eox\ 2, Arimo, sans-serif;
     letter-spacing: .1em;
     text-transform: uppercase;
     color: #767676;
@@ -24510,13 +24510,13 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 .cart-summary .block-cart-body .cart-subtotals .label,
 .cart-summary .block-cart-body .cart-total .label {
-    font: 400 1rem/1.875rem Arimo, sans-serif;
+    font: 400 1rem/1.875rem Helvetica Neue, Arimo, sans-serif;
     color: #767676
 }
 
 .cart-summary .block-cart-body .cart-subtotals .value,
 .cart-summary .block-cart-body .cart-total .value {
-    font: 700 1.125rem/1.75rem Exo\ 2, sans-serif;
+    font: 700 1.125rem/1.75rem Helvetica Neue, sans-serif;
     color: #2f2c2f
 }
 
@@ -24842,7 +24842,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
     display: inline-block;
     position: relative;
     padding-left: 1.5625rem;
-    font: normal 1rem/1.625rem Arimo, sans-serif;
+    font: normal 1rem/1.625rem Helvetica Neue, Eox\ 2, Arimo, sans-serif;
     color: #7e7c7c
 }
 
@@ -24888,7 +24888,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 #footer .jxml-copyright a {
-    font: 400 .875rem/1.125rem Arimo, sans-serif;
+    font: 400 .875rem/1.125rem Helvetica Neue, Eox\ 2, Arimo, sans-serif;
     color: #aab2b5
 }
 
