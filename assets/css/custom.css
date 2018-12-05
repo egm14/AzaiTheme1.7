@@ -13,6 +13,7 @@ By Azai.com them
  section.facet .facet-list .slider-container .back-bar .selected-bar {background: #ababab;}
  ul .list-default li a, ul[class*=" list-default-"] li a, ul[class^=list-default-] li a {color: grey;}
  .toTop, .toTop:focus {font-size: 50px;color:#2f2c2f;background:none;}
+ .variant-links.mt-1{margin-top:0px!important;}
  
 
  /*------------------- PRODUCT- SECTION ----------------*/
@@ -89,7 +90,10 @@ By Azai.com them
   /*#header .stickUpTop:not(.isStuck) .stick-up{padding:0!important;}*/ /* Verificar */
   #footer div.container{padding:50px 170px;}
  .grid .product-miniature .product-miniature-container .product-miniature-information div{margin-top:0px;margin-bottom:0px!important;}
- 
+ /*Icon functional-buttons miniture - page Category*/
+ .functional-buttons{height:40px; top:-3.15rem;background-color:rgba(0,0,0,.6);padding:5px 10px;}
+ .grid .product-miniature .product-miniature-container .product-miniature-information .product-buttons > a{color:#ededed;}
+ .grid .product-miniature .product-miniature-container .product-miniature-information{padding-bottom:10px;}
 }
 
 /***************************************************************

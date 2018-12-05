@@ -13158,7 +13158,7 @@ ul.product-flags li.new {
 }
 
 ul.product-flags li.on-sale {
-    background: #00b06c;
+    background: #000;
     float: right
 }
 
@@ -13265,11 +13265,12 @@ ul.product-flags-small li.online-only {
 
 [class*=" product-prices-"] .price,
 [class^=product-prices-] .price {
-    font: 400 1.125rem/1.75rem Helvetica Neue, sans-serif;
+    font: 400 0.95rem/1.75rem Helvetica Neue, sans-serif;
     color: #2f2c2f;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1
+    line-height:normal;
 }
 
 [class*=" product-prices-"] .regular-price,
@@ -22665,8 +22666,9 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .product-miniature .product-title {
-    font-size: 1rem;
-    margin: 0 0 .4375rem
+    font-size: .9rem;
+    margin: 0 0;
+    line-height:normal;
 }
 
 .product-miniature .add-to-cart i,
@@ -22750,7 +22752,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .product-miniature .functional-buttons>:not(:last-child) {
-    margin-right: 1.875rem
+    margin-right: 1.4rem
 }
 
 @media (max-width:1199.98px) {
