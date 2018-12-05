@@ -13,7 +13,11 @@ By Azai.com them
  section.facet .facet-list .slider-container .back-bar .selected-bar {background: #ababab;}
  ul .list-default li a, ul[class*=" list-default-"] li a, ul[class^=list-default-] li a {color: grey;}
  .toTop, .toTop:focus {font-size: 50px;color:#2f2c2f;background:none;}
- 
+ /*Color botom primario*/
+ .btn-primary {color: white;background: #060606;-moz-box-shadow: inset 0 0 0 2px #464646;-webkit-box-shadow: inset 0 0 0 2px #000000;box-shadow: inset 0 0 0 2px #080808;border: none;}
+ label.custom-control-label.active {box-shadow: 0 0 0 0.125rem #000000;}
+ .custom-radio .custom-control-label:after {background: #000000;}
+
 
  /*------------------ FOOTER - SECTION -------------*/
  .footer-container #footer h3{font:bold 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
@@ -142,9 +146,14 @@ By Azai.com them
  ***************************************************************/
 
 @media only screen and (max-width: 640px){
+/*------------------- AJUSTES GENERALES ----------------*/	
+/*Ajustes de tamaños slider*/	
 #ps-image-slider.swiper-container .swiper-slide .img-fluid {top: 31%!important;width: 110%!important;height: auto;min-width: 440px!important;}
 #ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 250px;top: 47px}
-   
+/*------------------- PRODUCT- SECTION ----------------*/
+  /*Buttom add to bag*/
+ .add.mb-1 {width: 100%;}
+ button.btn.btn-md.btn-primary.add-to-cart {padding: 20px 66px;margin-bottom: 10px;width: 100%;}
  }
 
 /***************************************************************
