@@ -13045,14 +13045,15 @@ main .universal-carousel .swiper-container .products {
 
 .product-name,
 .product-title {
-    font: 400 1.25rem/1.875rem Helvetica Neue,  sans-serif;
-    color: #767676
+    font: 600 1.25rem/1.875rem Helvetica Neue,  sans-serif;
+    color: #000;
+    text-decoration: underline;
 }
 
 .product-name a,
 .product-title a {
     font: inherit;
-    color: #767676
+    color: #000
 }
 
 .product-name a:active,
@@ -13264,7 +13265,7 @@ ul.product-flags-small li.online-only {
 
 [class*=" product-prices-"] .price,
 [class^=product-prices-] .price {
-    font: 700 1.125rem/1.75rem Helvetica Neue, sans-serif;
+    font: 400 1.125rem/1.75rem Helvetica Neue, sans-serif;
     color: #2f2c2f;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
@@ -21317,7 +21318,7 @@ section.facet .facet-list.variant-links .custom-control-label[style*="#ffffff"]:
 section.facet .facet-list .slider-container {
     position: relative;
     padding-bottom: 38px;
-    width: 100%!important
+    width: 75%!important
 }
 
 section.facet .facet-list .slider-container .back-bar {
@@ -22535,7 +22536,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 @media (min-width:1200px) {
     .category-block .product-miniature .product-miniature-container .product-miniature-information,
     .grid .product-miniature .product-miniature-container .product-miniature-information {
-        padding: 24px 15px 45px
+        padding: 5px 15px 45px
     }
 }
 
