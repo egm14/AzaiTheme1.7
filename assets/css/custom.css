@@ -72,7 +72,7 @@ By Azai.com them
   header#header {z-index:999;}/*Posicion Principal del header*/
   section#wrapper{top:50px;}
   #header .header-absolute{padding-top:2px;padding-bottom:2px;}
-  #header .stickUpTop:not(.isStuck) .stick-up{padding:0!important;}
+  /*#header .stickUpTop:not(.isStuck) .stick-up{padding:0!important;}*/ /* Verificar */
 
  
 }
