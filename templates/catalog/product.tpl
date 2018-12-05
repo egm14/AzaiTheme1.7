@@ -50,7 +50,6 @@
     <meta itemprop="url" content="{$product.url}">
 
     <div class="product-card row mb-2 mb-lg-3 mb-xxl-4">
-	<h1 class="h2 product-name" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
       <div class="product-left-column col-12 col-md-6">
         {block name='page_content_container'}
           <section class="page-content" id="content">
@@ -68,7 +67,7 @@
             {l s='Reference' d='Shop.Theme.Catalog'} <span>{$product.reference}</span>
           </p>
           {block name='page_header'}
-            <!--<h1 class="h2 product-name" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>-->
+            <h1 class="h2 product-name" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
           {/block}
           {block name='product_availability'}
             <span id="product-availability">
