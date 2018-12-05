@@ -1701,9 +1701,9 @@ main .list .products article.product-miniature {
     main .grid .products article.product-miniature,
     main .list .products article.product-miniature .product-miniature-container .product-miniature-thumbnail {
         -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.33333%;
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%
+        -ms-flex: 0 0 24.33333%;
+        flex: 0 0 24.33333%;
+        max-width: 24.33333%
     }
     .col-xl-5,
     .layout-both-columns main .list .products article.product-miniature .product-miniature-container .product-miniature-thumbnail {
