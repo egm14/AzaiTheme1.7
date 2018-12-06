@@ -21976,7 +21976,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 @media (min-width:1200px) {
     .product-additional-info .social-sharing ul {
-        margin-top: 2.8125rem
+        margin-top: 1.5625rem
     }
 }
 
@@ -22008,7 +22008,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
     color: #a1a1a1;
     text-transform: uppercase;
     letter-spacing: .1em;
-    margin-bottom: 1.5625rem;
+    margin-bottom: .2rem;
     display: inline-block
 }
 

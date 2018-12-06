@@ -31,7 +31,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  label.custom-control-label.active {box-shadow: 0 0 0 0.125rem #000000;}
  .custom-radio .custom-control-label:after {background: #000000;}
  .product-reference span {color: #A1A1A1;}
- h1.h2.product-name {font-family: 'Didot-Italic', cursive!important;}
+ h1.h2.product-name {font-family: 'Didot-Italic', cursive!important;margin-bottom:.1rem;}
+ div.product-right-column .product-reference{margin-bottom:1.1rem;}
  div.product-right-column #product-availability{display:none;}
  div.product-right-column .product-prices{display:block;}
  div.product-right-column .product-prices .product-price-container .price{font:400 23px/25px Helvetica, sans-serif;}
@@ -40,7 +41,9 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  div.product-right-column .custom-radio .custom-control-label::before{width:1.3rem;height:1.3rem;top:.1rem;}
  div.product-right-column .custom-radio .custom-control-label::after{width:.9rem;height:.9rem;top:.3rem;}
  div.product-right-column #add-to-cart-or-refresh .product-variants .product-variants-item ul{margin-bottom:0;}
- div.product-right-column div.product-add-to-cart{margin-top:1rem;}
+ div.product-right-column div.product-add-to-cart{margin-top:2rem;margin-bottom:.7rem;}
+ div.product-right-column .product-variants{margin-bottom:1.2rem;}
+ div.product-right-column .product-additional-info .social-sharing ul:before{content:"Share:";display:inline-block; margin-right:2rem;}
 
 
  /*------------------ FOOTER - SECTION -------------*/

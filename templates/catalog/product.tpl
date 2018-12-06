@@ -67,7 +67,7 @@
             <h1 class="h2 product-name" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
           {/block}
           <p class="product-reference">
-            {l s='Reference' d='Shop.Theme.Catalog'} <span>{$product.reference}</span>
+            {l s='Reference:' d='Shop.Theme.Catalog'} <span>{$product.reference}</span>
           </p>
           
           {block name='product_availability'}
