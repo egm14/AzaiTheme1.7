@@ -15,6 +15,7 @@ By Azai.com them
  .toTop, .toTop:focus {font-size: 50px;color:#2f2c2f;background:none;}
  .variant-links.mt-1{margin-top:0px!important;}
 form#formgiftcard {max-width: none;}/*Giftcard*/
+.gcsm-header {background: #000000!important;}/*Giftcard color*/
  
 
 
