@@ -30,6 +30,9 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  div.product-right-column .product-prices .product-price-container .price{font:400 23px/25px Helvetica, sans-serif;}
  div.product-right-column #tab-content #description ul{list-style:disc;line-height:26px;}
  div.product-right-column .tabs.product-tabs{margin-top:2rem;}
+ div.product-right-column .custom-radio .custom-control-label::before{width:1.3rem;height:1.3rem;top:.1rem;}
+ div.product-right-column .custom-radio .custom-control-label::after{width:.9rem;height:.9rem;top:.3rem;}
+ div.product-right-column #add-to-cart-or-refresh .product-variants .product-variants-item ul{margin-bottom:0;}
 
 
  /*------------------ FOOTER - SECTION -------------*/
