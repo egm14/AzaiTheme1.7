@@ -166,6 +166,7 @@ By Azai.com them
 /*Ajustes de tamaños slider*/	
 #ps-image-slider.swiper-container .swiper-slide .img-fluid {top: 31%!important;width: 110%!important;height: auto;min-width: 440px!important;}
 #ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 250px;top: 47px}
+#choicegiftcard section .step-title {text-transform: uppercase;margin-bottom:0;font-size: 13px;}/*Font size module gift card */
 /*------------------- PRODUCT- SECTION ----------------*/
   /*Buttom add to bag*/
  .add.mb-1 {width: 100%;}
