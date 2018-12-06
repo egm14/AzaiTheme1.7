@@ -1,7 +1,3 @@
-/*
- * Custom code goes here.
- * A template should always ship with an empty custom.js
- */
  
 /*=========== Fancy spinner - Windows ==========*/
 $(window).on('ready', function () {
@@ -15,7 +11,7 @@ $(window).on('ready', function () {
 $(document).ready(function(){
 	/*==================== SECTION PRODUCT - AJAX BLOCK CART =======================*/
 
-	//for product page 'add' button...
+	/*for product page 'add' button...
      $('#add_to_cart').on("click", function(ee){
      	ee.preventDefault();
      	$('#header .cart_block')
@@ -30,13 +26,13 @@ $(document).ready(function(){
             .prev()
             .removeClass('active');
     	},3000);
-     });
+     });*/
 
-     var loader = $(".loader-page");
+     
     
-
-     /*==================== SPINNER ELEMENT LINK A TO MOBILE  =======================*/
-
+     var loader = $(".loader-page");
+     /*==================== SPINNER ELEMENT LINK A TO MOBILE  =======================
+		
 
 		var aElem = $('body');
 		
@@ -50,7 +46,7 @@ $(document).ready(function(){
      		if((aL.localName == "a") || (aL.offsetParent.localName == "a")){
      			console.log("es un elemnto aA -AAAAAA");
      		 
-     		 /*-------- Depurando variables --------------*/
+     		 /*-------- Depurando variables --------------
      	
 		     	//var alName = event.handleObj.selector || "undefine";
 		     	var aParentClass = aL.parentNode.className;	
@@ -61,14 +57,14 @@ $(document).ready(function(){
 		     		var aLink = aL.href;
 		     		console.log("Elemento href: " + aLink);
 		     		var aLinksplit = aLink.split(":")[0];
-		     		/*--------- REcorriendo URL SPLIT - comprobando query ----------*/
+		     		/*--------- REcorriendo URL SPLIT - comprobando query ----------
 		     		if(aLink.indexOf('?') != -1){
 					aLinksplit = aLink.split("?")[1].split("=")[0];
 					console.log("Delete link:" + aLinksplit);
 					//console.log("Simbolo de: ?");
 					}
 
-					/*--------Recorriendo URL SPLIT - comprobar si contiene pagination --------*/
+					/*--------Recorriendo URL SPLIT - comprobar si contiene pagination --------
 				var aLinksplit2 = aLink.split("/");
 				var abSplit = aLinksplit2.length - 1;
 				var aLinksplit2b = aLinksplit2[abSplit].split("-")[0];
@@ -93,7 +89,7 @@ $(document).ready(function(){
 		     	}
 		     }
 
-				/*-------- Condiciones para aplicar spinner loader -------------*/
+				/*-------- Condiciones para aplicar spinner loader -------------
 				if((aL.localName = "a") && (aLinksplit == "http" || aLinksplit == "https")){
 				  	if((aLinksplit !="delete" || aLinksplit != "add") && (aL.href.split(".")[1] != "html#") && (aL.dataset.zoomId != "MagicZoomPlusImageMainImage") && (aParentClass != "shopping_cart") && ("remove_link") && (aLink != aBaseUri) && (aLink !== null) && (aLink != "javascript:;") && (aLink != BaseUriD) && (aL.classList[0] !== "add_to_compare") && (aL.offsetParent.localName !== "h4")){
 			      			setTimeout(function () {openLoader() }, 300);
@@ -108,7 +104,7 @@ $(document).ready(function(){
 				  }
 				  console.log("Spinner in/out");
 			}
-		});
+		});*/
   
 
      setTimeout(function () {openLoader() }, 300);
@@ -142,7 +138,7 @@ $(document).ready(function(){
 	  		var hei = 500;
 	  	}
 
-	  $('.sizes-chart').fancybox({
+	  /*$('.sizes-chart').fancybox({
 	  	 'type': 'iframe',
 		 'width': wid,
 		 'max-height': hei,
@@ -150,8 +146,9 @@ $(document).ready(function(){
 		 'scrolling' : 'auto',
 		 //'autoScale': true,
 		 'autoSize' : true
-	  	});
+	  	});*/
 	  });
+	  
 
      /*sSIZE-CHART-CONTENT*/
 
@@ -169,47 +166,7 @@ $(document).ready(function(){
 	   
   /*========= END SIZE CHART ==============*/
 
-  /*================== SECTION PRODUCT VIEW - PINCH PAN =================*/
-	// General Mobile Events
-	/*if (window.innerWidth < 768) {
-		console.log("pantalla menor de 768px");
-
-		//Fancybox mobile "Pinch Pan"
-		var elemet1 = ($('#image-block'))[0]; 
-		var mc1 = new Hammer(elemet1);
-
-		mc1.on("tap", function(ev){
-			console.log("Se ha hecho: "+ ev.type);
-
-		  if($('.fancybox-opened').length < 0){
-		  	console.log("No se ha creado el div.fancybox-opened");
-	      }else{
-	      	setTimeout(function(){
-	      		console.log("Añadiendo div after");
-	      		var zoomdiv = $('.fancybox-skin');
-	     		//zoomdiv.css("background-color","blue");
-	     	    zoomdiv.after("<div class=" +"pinch-zoom"+">Pinch To Zoom</div>");
-	      	
-		      	//Desaparecer Pinch-zoom al tocar
-				var element2 = ($('.fancybox-inner'))[0];
-				var mc2 = new Hammer.Manager(element2);
-
-				var pinch = new Hammer.Pinch();
-    			var pan = new Hammer.Pan();
-
-    			pinch.recognizeWith(pan);
-    			mc2.add([pinch, pan]);
-				
-
-				mc2.on("pinchstart panstart", function (ev) {
-				   	console.log("Clase deshabilitada por: " + ev.type);
-						$('.pinch-zoom').addClass('disable');
-			    });
-	      	},100);
-	      }
-		 console.log("img.fancybox-inner está aquí");
-		});
-	}*/
+  
 
 	/*==================== LOGIN-CONTENT DISPLAY WHEN PRESS MENU =======================*/
 	// VARIABLE AND ACTION TO OPEN MOBILE MENU COMPLETE
@@ -271,15 +228,15 @@ $(document).ready(function(){
 
  /*==================== SHOW ORDEN RESUMEN BEHAVIOR =======================*/
 $('#show-orden').on('click', ".span", function(){
- //$('#show-orden').find('#order-detail-content').toggleClass("active");
- $('#show-orden').toggleClass("active");
- $('#show-orden').find('#order-detail-content').toggle(300, 'swing');
- });
-
-$('#show-orden').find('.close-resumen').on('click', function(e){
-	 $('#show-orden').find('#order-detail-content').hide();
+	 //$('#show-orden').find('#order-detail-content').toggleClass("active");
 	 $('#show-orden').toggleClass("active");
-	 e.preventDefault();
+	 $('#show-orden').find('#order-detail-content').toggle(300, 'swing');
+	 });
+
+	$('#show-orden').find('.close-resumen').on('click', function(e){
+		 $('#show-orden').find('#order-detail-content').hide();
+		 $('#show-orden').toggleClass("active");
+		 e.preventDefault();
 });
 
 

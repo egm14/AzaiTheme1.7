@@ -2735,14 +2735,14 @@ select.form-control-lg:not([size]):not([multiple]) {
 .form-control.is-invalid,
 .was-validated .custom-select:invalid,
 .was-validated .form-control:invalid {
-    border-color: #d05656
+    border-color: #3a3a3a
 }
 
 .custom-select.is-invalid:focus,
 .form-control.is-invalid:focus,
 .was-validated .custom-select:invalid:focus,
 .was-validated .form-control:invalid:focus {
-    border-color: #d05656;
+    border-color: #3a3a3a;
     -webkit-box-shadow: 0 0 0 .2rem hsla(0, 63%, 65%, .25);
     box-shadow: 0 0 0 .2rem hsla(0, 63%, 65%, .25)
 }
@@ -2995,7 +2995,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 .btn-primary:hover,
 main .list .products article.product-miniature .product-miniature-container .product-miniature-information .product-buttons>a:hover {
     color: #fff;
-    background-color: #d74e4e;
+    background-color: #444;
     border-color: #d54343
 }
 
@@ -3023,7 +3023,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 main .list .products article.product-miniature .product-miniature-container .product-miniature-information .product-buttons>a:not(:disabled):not(.disabled).active,
 main .list .products article.product-miniature .product-miniature-container .product-miniature-information .product-buttons>a:not(:disabled):not(.disabled):active {
     color: #fff;
-    background-color: #d54343;
+    background-color: #3a3a3a;
     border-color: #d23939
 }
 
@@ -11999,7 +11999,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .btn-md {
-    padding: 1.25rem 1.5625rem;
+    padding: 1rem 1.5625rem;
     font-size: .75rem
 }
 
@@ -13066,7 +13066,7 @@ main .universal-carousel .swiper-container .products {
 }
 
 .product-thumbnail {
-    background: #faf8f2;
+    background: #f8f8f8;
     display: block;
     text-align: center;
     position: relative
@@ -21679,7 +21679,7 @@ section.facet .facet-list .slider-container .scale>span ins {
 }
 
 .product-right-column .product-name {
-    font: 400 26px/36px Helvetica Neue, sans-serif;
+    font: 400 30px/36px Helvetica Neue, sans-serif;
     margin-bottom: .9375rem
 }
 
@@ -22210,7 +22210,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
     bottom: 0;
     left: 50%;
     right: 50%;
-    border-bottom: .125rem solid #cbaa95;
+    border-bottom: .125rem solid #000;
     -webkit-transition: all .3s ease;
     transition: all .3s ease
 }
@@ -22233,7 +22233,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
         margin-left: .9375rem
     }
     .product-tabs .nav-tabs .nav-item+.nav-item:before {
-        content: "/";
+        content: "|";
         margin-right: 1rem;
         font-size: 1.4375rem;
         line-height: 1.875rem;
@@ -22433,7 +22433,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .layout-full-width .product-right-column {
-    padding: 1.5625rem .9375rem 1rem 1.875rem
+    padding: .5625rem .9375rem 1rem 1.875rem
 }
 
 @media (min-width:1200px) {
@@ -23895,7 +23895,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 #blockcart-modal .body-cart-product {
-    background: #faf8f2;
+    background: #f8f8f8;
     padding: 2.1875rem 1.25rem
 }
 

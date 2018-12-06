@@ -16,6 +16,7 @@ By Azai.com them
  .variant-links.mt-1{margin-top:0px!important;}
 form#formgiftcard {max-width: none;}/*Giftcard*/
 .gcsm-header {background: #000000!important;}/*Giftcard color*/
+[class^="icon-"], [class*=" icon-"]{display:inline-block;font-family:Helvetica Neue;font-weight:600;}/*FontAwesome btn icon*/
  
 
 
@@ -34,6 +35,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  div.product-right-column .custom-radio .custom-control-label::before{width:1.3rem;height:1.3rem;top:.1rem;}
  div.product-right-column .custom-radio .custom-control-label::after{width:.9rem;height:.9rem;top:.3rem;}
  div.product-right-column #add-to-cart-or-refresh .product-variants .product-variants-item ul{margin-bottom:0;}
+ div.product-right-column div.product-add-to-cart{margin-top:1rem;}
 
 
  /*------------------ FOOTER - SECTION -------------*/
@@ -51,6 +53,80 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  #index .header-absolute {background: #ffffff;}
  header .col-sm-12 i{color:black!important;}
  div#ship {background: black;color: white;padding: 2px 0px 0px 0px;text-transform: uppercase;}
+ header  #_desktop_language_selector i.fa, header #_desktop_currency_selector i.fa{margin-left:.2rem !important;}
+  header #_desktop_user_info i{margin-left:.7rem;}
+
+ /*----------------- Size Chart -----------------------*/
+.sizes-chart{
+    text-decoration:underline;
+}
+.container-woman-size-chart ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.container-woman-size-chart ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    }
+.container-woman-size-chart ul.tabs li:hover{
+    background-color:#dadada;
+    }
+.container-woman-size-chart ul.tabs li a{
+    text-decoration:none;
+    color:inherit;
+    }
+.container-woman-size-chart ul.tabs li.current{
+    background: black;
+    color: white;
+    }
+.container-woman-size-chart .tab-content{
+    display: none;
+    }
+.container-woman-size-chart .tab-content.current{
+    display: inherit;
+    margin-top:5px;
+    }
+.container-woman-size-chart p{
+    line-height:15px;
+    }
+.container-woman-size-chart h2{
+    font-weight:bold;
+    }
+.container-woman-size-chart{
+    padding:10px;
+    max-width:500px;
+    }
+.table-zchart{
+    overflow-x: auto;
+    }
+.table-zchart table{
+    width:100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    }
+.table-zchart table td,.table-zchart table th{
+    text-align: center;
+    padding:4px;
+    border-left:1px solid #bbbbbb;
+    } 
+.table-zchart table td:nth-child(1), .table-zchart table th:nth-child(1){
+    border-left:0px;
+    width:40px;
+    }
+.table-zchart .row-odd{
+    background-color:#dadada;
+    }
+.table-zchart .row-even{
+    background-color:#f6f6f6;
+    }
+.table-zchart .no-border{
+    border-left:none!important;
+    }
  
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
@@ -78,6 +154,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 
  @media only screen and (min-width:1366px){
    #footer {padding-top: 80px;}
+   #header .stickUpTop:not(.isStuck) .stick-up{padding-top:10px;}
 }
 
 /***************************************************************
@@ -97,7 +174,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
   ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 30px;}
 =======
   #module-giftcard-choicegiftcard section#wrapper {top: 110px;}
-  ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 15px;}
+  ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 40px;}
 >>>>>>> 80dd3183ee1d879bb1e223e910788d24d9b10cab
   #footer {padding-top: 70px;}
   header#header {z-index:999;}/*Posicion Principal del header*/

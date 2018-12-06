@@ -104,6 +104,29 @@
                   {include file='catalog/_partials/product-variants.tpl'}
                 {/block}
 
+                 <!-- Size Chart Dinamic -->
+                  {if ($product->category == 'rings') or ($product->category == 'jewelry-rings')}
+                      <span class="size-chart-container"><a target="_blank" class="" href="{$content_dir}themes/azai-theme/assets/Azai-RingSizeguide.pdf">{l s='Sizes chart Ring'}</a></span>
+                      <script type="text/javascript">
+                        console.log('Size Chart Rings');
+                      </script>
+                    {elseif ($product->category == 'jewelry')}
+                      <span class="size-chart-container"><a target="_blank" class="sizes-chart" href="{$content_dir}themes/azai-theme/assets/Azai-RingSizeguide.pdf">{l s='Sizes chart Jewelry'}</a></span>
+                        <script type="text/javascript">
+                          console.log('Size Chart Jewelry');
+                        </script>
+                    {elseif ($product->category == 'bags') or ($product->category == 'necklaces') or ($product->category == 'jewelry-necklaces') or ($product->category == 'earrings') or ($product->category == 'jewelry-earrings') or ($product->category == 'bracelets') or ($product->category == 'jewelry-bracelets') or ($product->category == 'hats') or ($product->category == 'brooches') or ($product->category == 'clutches-crossbody-bags')}
+                        <script type="text/javascript">
+                          console.log('Categorias sin Size-chart');
+                        </script>
+                    {else}
+                        <span class="size-chart-container"><a class="sizes-chart" href="{$base_dir}content/10-azai-size-chart?content_only=1">{l s='Sizes chart'}</a></span>
+                        <script type="text/javascript">
+                          console.log('Cualquier otra categoria');
+                        </script>
+                  {/if}
+                  <!-- End Size Chart Dinamic -->
+
                 {block name='product_pack'}
                   {if $packItems}
                     <section class="product-pack u-carousel uc-el-pack-miniature uc-nav mb-3">
