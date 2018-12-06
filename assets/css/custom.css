@@ -14,15 +14,19 @@ By Azai.com them
  ul .list-default li a, ul[class*=" list-default-"] li a, ul[class^=list-default-] li a {color: grey;}
  .toTop, .toTop:focus {font-size: 50px;color:#2f2c2f;background:none;}
  .variant-links.mt-1{margin-top:0px!important;}
- 
 
- /*------------------- PRODUCT- SECTION ----------------*/
+ /*------------------- PRODUCT- PAGE -SECTION ----------------*/
  /*Color botom primario*/
  .btn-primary {color: white;background: #060606;-moz-box-shadow: inset 0 0 0 2px #464646;-webkit-box-shadow: inset 0 0 0 2px #000000;box-shadow: inset 0 0 0 2px #080808;border: none;}
  label.custom-control-label.active {box-shadow: 0 0 0 0.125rem #000000;}
  .custom-radio .custom-control-label:after {background: #000000;}
  .product-reference span {color: #A1A1A1;}
  h1.h2.product-name {font-family: 'Didot-Italic', cursive!important;}
+ div.product-right-column #product-availability{display:none;}
+ div.product-right-column .product-prices{display:block;}
+ div.product-right-column .product-prices .product-price-container .price{font:400 23px/25px Helvetica, sans-serif;}
+ div.product-right-column #tab-content #description ul{list-style:disc;line-height:26px;}
+ div.product-right-column .tabs.product-tabs{margin-top:2rem;}
 
 
  /*------------------ FOOTER - SECTION -------------*/
@@ -40,7 +44,6 @@ By Azai.com them
  #index .header-absolute {background: #ffffff;}
  header .col-sm-12 i{color:black!important;}
  div#ship {background: black;color: white;padding: 2px 0px 0px 0px;text-transform: uppercase;}
- 
  
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
@@ -83,7 +86,7 @@ By Azai.com them
   /*section#main {top: 145px;position: relative;}*/
   section#wrapper {top: 65px;position: relative;}
   #index section#wrapper {top:0px;}
-  ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 15px;}
+  ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 30px;}
   #footer {padding-top: 70px;}
   header#header {z-index:999;}/*Posicion Principal del header*/
   #header .header-absolute{padding-top:2px;padding-bottom:2px;}

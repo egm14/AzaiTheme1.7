@@ -63,12 +63,13 @@
       </div>
       <div class="product-right-column col-12 col-md-6">
         {block name='page_header_container'}
+        {block name='page_header'}
+            <h1 class="h2 product-name" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+          {/block}
           <p class="product-reference">
             {l s='Reference' d='Shop.Theme.Catalog'} <span>{$product.reference}</span>
           </p>
-          {block name='page_header'}
-            <h1 class="h2 product-name" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
-          {/block}
+          
           {block name='product_availability'}
             <span id="product-availability">
               {if $product.show_availability && $product.availability_message}
@@ -137,9 +138,7 @@
             {/block}
           </div>
         </div>
-      </div>
-    </div>
-    {block name='product_tabs'}
+          {block name='product_tabs'}
       <div class="tabs product-tabs mb-4">
         <ul class="nav nav-tabs d-none d-md-flex align-items-md-center justify-content-md-center" role="tablist">
           {if $product.description}
@@ -233,6 +232,10 @@
         </div>
       </div>
     {/block}
+
+      </div>
+    </div>
+    
 
     {block name='product_accessories'}
       {if $accessories}

@@ -27,7 +27,7 @@
     --success: #7cd22f;
     --info: #c5f2fd;
     --warning: #feb380;
-    --danger: #de6d6d;
+    --danger: #d05656;
     --light: #f1f1f1;
     --dark: #141414;
     --white: #fff;
@@ -550,7 +550,7 @@ samp {
 
 code {
     font-size: 87.5%;
-    color: #de6d6d;
+    color: #000;
     word-break: break-word
 }
 
@@ -2713,7 +2713,7 @@ select.form-control-lg:not([size]):not([multiple]) {
     width: 100%;
     margin-top: .25rem;
     font-size: 80%;
-    color: #de6d6d
+    color: #d05656
 }
 
 .invalid-tooltip {
@@ -2735,14 +2735,14 @@ select.form-control-lg:not([size]):not([multiple]) {
 .form-control.is-invalid,
 .was-validated .custom-select:invalid,
 .was-validated .form-control:invalid {
-    border-color: #de6d6d
+    border-color: #d05656
 }
 
 .custom-select.is-invalid:focus,
 .form-control.is-invalid:focus,
 .was-validated .custom-select:invalid:focus,
 .was-validated .form-control:invalid:focus {
-    border-color: #de6d6d;
+    border-color: #d05656;
     -webkit-box-shadow: 0 0 0 .2rem hsla(0, 63%, 65%, .25);
     box-shadow: 0 0 0 .2rem hsla(0, 63%, 65%, .25)
 }
@@ -2760,7 +2760,7 @@ select.form-control-lg:not([size]):not([multiple]) {
 
 .form-check-input.is-invalid~.form-check-label,
 .was-validated .form-check-input:invalid~.form-check-label {
-    color: #de6d6d
+    color: #d05656
 }
 
 .form-check-input.is-invalid~.invalid-feedback,
@@ -2772,7 +2772,7 @@ select.form-control-lg:not([size]):not([multiple]) {
 
 .custom-control-input.is-invalid~.custom-control-label,
 .was-validated .custom-control-input:invalid~.custom-control-label {
-    color: #de6d6d
+    color: #d05656
 }
 
 .custom-control-input.is-invalid~.custom-control-label:before,
@@ -2800,7 +2800,7 @@ select.form-control-lg:not([size]):not([multiple]) {
 
 .custom-file-input.is-invalid~.custom-file-label,
 .was-validated .custom-file-input:invalid~.custom-file-label {
-    border-color: #de6d6d
+    border-color: #d05656
 }
 
 .custom-file-input.is-invalid~.custom-file-label:before,
@@ -2949,7 +2949,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 .btn:disabled,
 main .list .products article.product-miniature .product-miniature-container .product-miniature-information .product-buttons>a.disabled,
 main .list .products article.product-miniature .product-miniature-container .product-miniature-information .product-buttons>a:disabled {
-    opacity: .65;
+    opacity: 1;
     -webkit-box-shadow: none;
     box-shadow: none
 }
@@ -2986,8 +2986,8 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 .btn-primary,
 main .list .products article.product-miniature .product-miniature-container .product-miniature-information .product-buttons>a {
-    background-color: #de6d6d;
-    border-color: #de6d6d;
+    background-color: #000;
+    border-color: #000;
     -webkit-box-shadow: none;
     box-shadow: none
 }
@@ -12146,7 +12146,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 main .list .products article.product-miniature .product-miniature-container .product-miniature-information .product-buttons>a:active:focus,
 main .list .products article.product-miniature .product-miniature-container .product-miniature-information .product-buttons>a:focus,
 main .list .products article.product-miniature .product-miniature-container .product-miniature-information .product-buttons>a[disabled] {
-    background: #eea493;
+    background: #000;
     color: #fff
 }
 
@@ -13047,7 +13047,7 @@ main .universal-carousel .swiper-container .products {
 .product-title {
     font: 600 1.25rem/1.875rem Helvetica Neue,  sans-serif;
     color: #000;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 .product-name a,
@@ -21452,7 +21452,7 @@ section.facet .facet-list .slider-container .scale>span ins {
 .product-left-column .page-content:before {
     position: absolute;
     content: "";
-    background: #faf8f2;
+    background: #fff;
     top: 0;
     bottom: 0;
     width: .9375rem;
@@ -21679,7 +21679,7 @@ section.facet .facet-list .slider-container .scale>span ins {
 }
 
 .product-right-column .product-name {
-    font: 400 1.25rem/1.875rem Helvetica Neue, sans-serif;
+    font: 400 26px/36px Helvetica Neue, sans-serif;
     margin-bottom: .9375rem
 }
 
@@ -21712,13 +21712,13 @@ section.facet .facet-list .slider-container .scale>span ins {
     .product-right-column {
         padding-top: .5rem;
         font-weight: 300;
-        font-size: 1.375rem
+        font-size: 1rem
     }
 }
 
 @media (min-width:1200px) {
     .product-right-column {
-        font-size: 1.625rem
+        font-size: 1rem
     }
 }
 
