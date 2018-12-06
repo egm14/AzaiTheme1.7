@@ -14,11 +14,9 @@ By Azai.com them
  ul .list-default li a, ul[class*=" list-default-"] li a, ul[class^=list-default-] li a {color: grey;}
  .toTop, .toTop:focus {font-size: 50px;color:#2f2c2f;background:none;}
  .variant-links.mt-1{margin-top:0px!important;}
-<<<<<<< HEAD
-=======
- form#formgiftcard {max-width: none;}/*Giftcard*/
+form#formgiftcard {max-width: none;}/*Giftcard*/
  
->>>>>>> 80dd3183ee1d879bb1e223e910788d24d9b10cab
+
 
  /*------------------- PRODUCT- PAGE -SECTION ----------------*/
  /*Color botom primario*/
