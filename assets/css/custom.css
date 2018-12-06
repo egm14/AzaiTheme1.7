@@ -16,6 +16,8 @@ By Azai.com them
  .variant-links.mt-1{margin-top:0px!important;}
 form#formgiftcard {max-width: none;}/*Giftcard*/
 .gcsm-header {background: #000000!important;}/*Giftcard color*/
+#cart-summary-product-list .close:before {content: "\f014"!important;font: normal normal normal 14px/1 FontAwesome!important;}
+
  
 
 
