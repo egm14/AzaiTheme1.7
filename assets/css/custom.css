@@ -16,7 +16,6 @@ By Azai.com them
  .variant-links.mt-1{margin-top:0px!important;}
 form#formgiftcard {max-width: none;}/*Giftcard*/
 .gcsm-header {background: #000000!important;}/*Giftcard color*/
-<<<<<<< HEAD
 [class^="icon-"], [class*=" icon-"]{display:inline-block;font-family:Helvetica Neue;font-weight:600;}/*FontAwesome btn icon*/
 #cart-summary-product-list .close:before {content: "\f014"!important;font: normal normal normal 14px/1 FontAwesome!important;}
 
@@ -177,12 +176,9 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
   /*section#main {top: 145px;position: relative;}*/
   section#wrapper {top: 65px;position: relative;}
   #index section#wrapper {top:0px;}
-<<<<<<< HEAD
-  ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 30px;}
-=======
   #module-giftcard-choicegiftcard section#wrapper {top: 110px;}
-  ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 40px;}
->>>>>>> 80dd3183ee1d879bb1e223e910788d24d9b10cab
+  /*ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 30px;}
+  ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 40px;}*/
   #footer {padding-top: 70px;}
   header#header {z-index:999;}/*Posicion Principal del header*/
   #header .header-absolute{padding-top:2px;padding-bottom:2px;}
