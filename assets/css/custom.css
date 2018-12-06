@@ -16,7 +16,12 @@ By Azai.com them
  .variant-links.mt-1{margin-top:0px!important;}
 form#formgiftcard {max-width: none;}/*Giftcard*/
 .gcsm-header {background: #000000!important;}/*Giftcard color*/
+<<<<<<< HEAD
 [class^="icon-"], [class*=" icon-"]{display:inline-block;font-family:Helvetica Neue;font-weight:600;}/*FontAwesome btn icon*/
+=======
+#cart-summary-product-list .close:before {content: "\f014"!important;font: normal normal normal 14px/1 FontAwesome!important;}
+
+>>>>>>> 7e30dca4646a01c1922cc78e420673e81f480835
  
 
 
