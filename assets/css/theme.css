@@ -22087,7 +22087,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 @media (min-width:1200px) {
     .product-variants h5 {
-        min-width: 11.25rem
+        min-width: 4.25rem
     }
 }
 
@@ -22190,7 +22190,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 
 @media (min-width:1200px) {
     .product-tabs .nav-tabs {
-        margin-bottom: 2.8125rem
+        margin-bottom: 1.8rem
     }
 }
 
