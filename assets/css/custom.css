@@ -23,6 +23,19 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #category span.regular-price {color: #b4b0b0;}
 #category span.discount-percentage.discount-product {color: red;}
 #category span.price {font-weight: bold!important;}
+#jx-header-account-link .fa-sign-in:before {content: "\f007";font-family: FontAwesome;color: black;}
+#jx-header-account-link .fl-chapps-user139:before {content: "\f007";font-family: FontAwesome;color: black;}
+
+/***************************************************************
+ ***************LIST OF DISABLED FUNCTIONS *********************
+ ***************************************************************/
+ /*Display arrows slider images module*/
+ #wrapper .swiper-button-wrapper {display: none!Important;}
+ /*Display Backgraud banner categori*/
+ .block-category {display: none;}
+ /*Display Buttom Quantity in Product*/
+ .product-quantity.d-flex.flex-wrap.align-content-center {display: none!important;}
+
 
  /*------------------- PRODUCT- PAGE -SECTION ----------------*/
  /*Color botom primario*/
@@ -139,15 +152,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #sizechartmodal .modal-dialog-centered{width:-moz-fit-content; margin-left:auto;margin-right:auto;}
 #sizechartmodal .modal-dialog-centered .modal-content object{min-height:40rem;width:30rem;}
  
-/***************************************************************
- ***************LIST OF DISABLED FUNCTIONS *********************
- ***************************************************************/
- /*Display arrows slider images module*/
- .swiper-button-wrapper {display: none!important;}
- /*Display Backgraud banner categori*/
- .block-category {display: none;}
- /*Display Buttom Quantity in Product*/
- .product-quantity.d-flex.flex-wrap.align-content-center {display: none!important;}
+
  
 
 /***************************************************************
