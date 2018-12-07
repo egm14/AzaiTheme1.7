@@ -20,6 +20,9 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #cart-summary-product-list .close:before {content: "\f014"!important;font: normal normal normal 14px/1 FontAwesome!important;}
 #cart .product-line-grid.row.align-items-md-center {display: flex;flex-wrap: inherit;}
 #cart .close:before {content: "\f014"!important;font: normal normal normal 14px/1 FontAwesome!important;}
+#category span.regular-price {color: #b4b0b0;}
+#category span.discount-percentage.discount-product {color: red;}
+#category span.price {font-weight: bold!important;}
 
  /*------------------- PRODUCT- PAGE -SECTION ----------------*/
  /*Color botom primario*/
@@ -40,6 +43,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  div.product-right-column div.product-add-to-cart{margin-top:2rem;margin-bottom:.7rem;}
  div.product-right-column .product-variants{margin-bottom:1.2rem;}
  div.product-right-column .product-additional-info .social-sharing ul:before{content:"Share:";display:inline-block; margin-right:2rem;}
+ #product span.discount {color: red;}
+ #product span.regular-price {color: #b4b0b0;}
 
 
  /*------------------ FOOTER - SECTION -------------*/
