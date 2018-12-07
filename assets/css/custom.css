@@ -24,7 +24,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #category span.discount-percentage.discount-product {color: red;}
 #category span.price {font-weight: bold!important;}
 #jx-header-account-link .fa-sign-in:before {content: "\f007";font-family: FontAwesome;color: black;}
-i.fl-chapps-user139 {content: "\f007";font-family: FontAwesome;color: black;}
+#jx-header-account-link.fl-chapps-user139:before {content: "\f007";font-family: FontAwesome;color: black;}
 
  /*------------------- PRODUCT- PAGE -SECTION ----------------*/
  /*Color botom primario*/
