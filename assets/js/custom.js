@@ -121,35 +121,7 @@ $(document).ready(function(){
 			console.log("Estoy cerrando loader");
 	     }
      /*==================== SIZE CHART  =======================*/
-
-     /* SIZE - CHART- FANCYBOX*/
-	  $('.sizes-chart').on("click", function(e){
-	  	e.preventDefault();
-	  	console.log("Size-chart: me hicieron click");
-
-	  	if (window.innerWidth > 768) {
-	  		var wid = 500;
-	  		var hei = 750;
-	  	}else if(window.innerWidth < 768){
-	  		var wid = 500;
-	  		var hei = 500;
-	  	}else if(window.innerWidth > 400){
-	  		var wid = 320;
-	  		var hei = 500;
-	  	}
-
-	  /*$('.sizes-chart').fancybox({
-	  	 'type': 'iframe',
-		 'width': wid,
-		 'max-height': hei,
-		 'fitToView' : true,
-		 'scrolling' : 'auto',
-		 //'autoScale': true,
-		 'autoSize' : true
-	  	});*/
-	  });
 	  
-
      /*sSIZE-CHART-CONTENT*/
 
      	$('div.container-woman-size-chart').find('ul.tabs li').click(function(e){
