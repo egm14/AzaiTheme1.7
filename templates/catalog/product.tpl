@@ -120,7 +120,9 @@
                           console.log('Categorias sin Size-chart');
                         </script>
                     {else}
-                        <span class="size-chart-container"><a class="sizes-chart" href="{$base_dir}content/10-azai-size-chart?content_only=1">{l s='Sizes chart'}</a></span>
+                        {block name='size_chart'}
+                           {include file='catalog/sizechart.tpl'}
+                        {/block}
                         <script type="text/javascript">
                           console.log('Cualquier otra categoria');
                         </script>

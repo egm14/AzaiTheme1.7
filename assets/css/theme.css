@@ -24983,7 +24983,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .breadcrumb {
-    padding: 0;
+    padding: .5rem 0;
     margin: 0;
     background-color: transparent
 }

@@ -129,6 +129,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 .table-zchart .no-border{
     border-left:none!important;
     }
+#sizechartmodal .modal-dialog{width:-moz-fit-content; margin-left:auto;margin-right:auto;}
+}
  
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
@@ -195,6 +197,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 
 @media only screen and (max-width:1200px){
    .separator-list > :not(:last-child){margin-right:3.4375rem;}
+   .container-woman-size-chart{min-width:450px;}
     
 }   
 
@@ -235,6 +238,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
     /*IPAD top banner sticker*/
     #footer div.container div.text-center{margin-top:20px;}
 	#ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 376px;top: 0px;} /*Slider*/
+	/*Sizechartmodel*/
+	.container-woman-size-chart{min-width:25rem;}
 }
 
 /***************************************************************
