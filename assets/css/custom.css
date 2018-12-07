@@ -25,7 +25,17 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #category span.price {font-weight: bold!important;}
 #jx-header-account-link .fa-sign-in:before {content: "\f007";font-family: FontAwesome;color: black;}
 #jx-header-account-link .fl-chapps-user139:before {content: "\f007";font-family: FontAwesome;color: black;}
-#wrapper .swiper-button-wrapper {display: none!Important;}
+
+/***************************************************************
+ ***************LIST OF DISABLED FUNCTIONS *********************
+ ***************************************************************/
+ /*Display arrows slider images module*/
+ #wrapper .swiper-button-wrapper {display: none!Important;}
+ /*Display Backgraud banner categori*/
+ .block-category {display: none;}
+ /*Display Buttom Quantity in Product*/
+ .product-quantity.d-flex.flex-wrap.align-content-center {display: none!important;}
+
 
  /*------------------- PRODUCT- PAGE -SECTION ----------------*/
  /*Color botom primario*/
@@ -142,15 +152,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #sizechartmodal .modal-dialog{width:-moz-fit-content; margin-left:auto;margin-right:auto;}
 }
  
-/***************************************************************
- ***************LIST OF DISABLED FUNCTIONS *********************
- ***************************************************************/
- /*Display arrows slider images module*/
 
- /*Display Backgraud banner categori*/
- .block-category {display: none;}
- /*Display Buttom Quantity in Product*/
- .product-quantity.d-flex.flex-wrap.align-content-center {display: none!important;}
  
 
 /***************************************************************
