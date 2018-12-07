@@ -145,7 +145,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/
  /*Display arrows slider images module*/
- .swiper-button-wrapper {display: none!important;}
+.swiper-button-wrapper {display: none!important;}
  /*Display Backgraud banner categori*/
  .block-category {display: none;}
  /*Display Buttom Quantity in Product*/
