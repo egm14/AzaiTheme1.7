@@ -155,7 +155,18 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
    .jxsearch-wrapper #jx_blog_search_query, .jxsearch-wrapper #jx_search_query{
    -webkit-box-shadow:0 0.1875rem 1.6875rem 0 rgba(0,0,0,.15);
    box-shadow:0 0.1875rem 1.6875rem 0 rgba(0,0,0,.15);}
- 
+
+/*Modal button close*/
+  .modal .modal-dialog .modal-content .btn.close-modal{
+    position:absolute;
+    right:0;
+    top:0;
+    background-color:black;
+    color:white;
+    border-radius:0;
+  }
+ .modal .modal-dialog .modal-content .btn.close-modal:hover{font-size:1.3rem;}
+ .modal .modal-dialog .modal-content .btn.close-modal:focus{background-color:#141414;font-size:inherit;}
 
  
 
@@ -206,6 +217,9 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  nav.mb-xl-4{margin-bottom:1.4rem!important;background-color:#f4f4f4;}
  /*SIZE CHART*/
  #sizechartmodal .modal-dialog .modal-content img.container-images{max-height:54rem;max-width:40rem;}
+ .jx-header-account #jx-header-account-link i{display:initial!important;}
+ .product-variants .custom-select{width:9.9375rem;}
+ .modal-content .container-woman-size-chart{min-width:500px;}
  
 }
 

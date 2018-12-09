@@ -38,6 +38,7 @@
 					                    <a href="{$urls.theme_assets}OtherFile/Azai-RingSizeguide.pdf">
 					              </object>-->
 					              <img class="sizes-chart-ring container-images" src="{$urls.theme_assets}OtherFile/azai-ring-size-chart.jpg" width="100%" height="100%" />
+					              <button type="button" class="btn close-modal" data-dismiss="modal">X</button>
 						    </div>
 						   </div>
 						</div>
@@ -57,6 +58,7 @@
 					                    <a href="{$urls.theme_assets}OtherFile/Azai-RingSizeguide.pdf">
 					              </object>-->
 					              <img class="sizes-chart-ring container-images" src="{$urls.theme_assets}OtherFile/azai-ring-size-chart.jpg" width="100%" height="100%" />
+					              <button type="button" class="btn close-modal" data-dismiss="modal">X</button>
 						    </div>
 						   </div>
 						</div>
@@ -310,6 +312,7 @@
 									<p style="font-size: .7em; text-align: center; margin-top: 10px;">With outerwear, choose your true size for the best fit.<br /> All sizes are approximate.</p>
 									<!-- container -->
 								</div>
+								<button type="button" class="btn close-modal" data-dismiss="modal">X</button>
 						    </div>
 						  </div>
 						</div>
