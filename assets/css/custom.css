@@ -151,6 +151,10 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
     }
 #sizechartmodal .modal-dialog{width:-moz-fit-content;width:fit-content;margin-left:auto;margin-right:auto;}
 #sizechartmodal .modal-dialog-centered .modal-content object{min-height:40rem;width:30rem;}
+  /* Search Form*/
+   .jxsearch-wrapper #jx_blog_search_query, .jxsearch-wrapper #jx_search_query{
+   -webkit-box-shadow:0 0.1875rem 1.6875rem 0 rgba(0,0,0,.15);
+   box-shadow:0 0.1875rem 1.6875rem 0 rgba(0,0,0,.15);}
  
 
  
@@ -258,6 +262,9 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
   .separator-list > :not(:last-child){margin-right:2.4375rem;}
    div.product-right-column .product-variants h5, div.product-right-column p, div.product-right-column a, div.product-right-column .social-sharing{font-size:.8rem;}
    div.product-right-column div.product-right-column a.sizes-chart{font-size:1.2rem;}
+   /*Search form*/
+   .jxsearch-wrapper.active-jxsearch #jxsearchwrapper{position:fixed!important;top:14%!important;}
+
 
 }
 
