@@ -170,7 +170,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 
  @media only screen and (min-width:1366px){
    #footer {padding-top: 80px;}
-   #header .stickUpTop:not(.isStuck) .stick-up{padding-top:10px;}
+  /* #header .stickUpTop:not(.isStuck) .stick-up{padding-top:10px;}*/
 }
 
 /***************************************************************
@@ -191,7 +191,6 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
   ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 40px;}*/
   #footer {padding-top: 70px;}
   header#header {z-index:999;}/*Posicion Principal del header*/
-  #header .header-absolute{padding-top:2px;padding-bottom:2px;}
   /*#header .stickUpTop:not(.isStuck) .stick-up{padding:0!important;}*/ /* Verificar */
   #footer div.container{padding:50px 170px 25px 170px}
   #footer div.container#redes-desk{padding:0px;}
