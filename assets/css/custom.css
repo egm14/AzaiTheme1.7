@@ -271,6 +271,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 	#ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 376px;top: 0px;} /*Slider*/
 	/*Sizechartmodel*/
 	.container-woman-size-chart{min-width:25rem;}
+  .container-woman-size-chart .tab-content{width:92%;}
 	#sizechartmodal .modal-dialog-centered .modal-content object{min-height:33rem;width:25rem;}
   /* header menu icon*/
   .separator-list > :not(:last-child){margin-right:2.4375rem;}
@@ -278,6 +279,9 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
    div.product-right-column div.product-right-column a.sizes-chart{font-size:1.2rem;}
    /*Search form*/
    .jxsearch-wrapper.active-jxsearch #jxsearchwrapper{position:fixed!important;top:14%!important;}
+   /*Close Button to mobile menu*/
+   #_mobile_menu_wrapper .only-mobile button.closeSlidebar:before,
+   #_mobile_cart .cart-summary button.closeSlidebar:before{font-size:1.4rem;}
 
 
 }
