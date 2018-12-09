@@ -232,7 +232,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 	    min-height:40px;
 	    border-radius:50%;
 	    margin:5px 5px;
-	    }
+	    }s
 	#footer div.container #redes-desk a i:hover{
 	    font-size:18px;
 	    background-color:#4a4a4a;
@@ -241,14 +241,14 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 	article.product-miniature.js-product-miniature:hover div.product-prices-md{
 		opacity: 0.3;
 	}
-	 
-}
+	}
 
 /***************************************************************
  ******************* Screen Max-width 768px *********************
  ***************************************************************/
 
 @media only screen and (max-width:767px){
+  body{font-size:.85rem;}
     /*IPAD top banner sticker*/
     #footer div.container div.text-center{margin-top:20px;}
 	#ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 376px;top: 0px;} /*Slider*/
@@ -257,6 +257,9 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 	#sizechartmodal .modal-dialog-centered .modal-content object{min-height:33rem;width:25rem;}
   /* header menu icon*/
   .separator-list > :not(:last-child){margin-right:2.4375rem;}
+   div.product-right-column .product-variants h5, div.product-right-column p, div.product-right-column a, div.product-right-column .social-sharing{font-size:.8rem;}
+   div.product-right-column div.product-right-column a.sizes-chart{font-size:1.2rem;}
+
 }
 
 /***************************************************************
