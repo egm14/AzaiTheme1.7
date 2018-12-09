@@ -201,6 +201,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  .grid .product-miniature .product-miniature-container .product-miniature-information .product-buttons > a{color:#ededed;}
  .grid .product-miniature .product-miniature-container .product-miniature-information{padding-bottom:0px;}
  nav.mb-xl-4{margin-bottom:1.4rem!important;background-color:#f4f4f4;}
+ /*SIZE CHART*/
+ #sizechartmodal .modal-dialog .modal-content img.container-images{max-height:54rem;max-width:40rem;}
  
 }
 
@@ -253,6 +255,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 	/*Sizechartmodel*/
 	.container-woman-size-chart{min-width:25rem;}
 	#sizechartmodal .modal-dialog-centered .modal-content object{min-height:33rem;width:25rem;}
+  /* header menu icon*/
+  .separator-list > :not(:last-child){margin-right:2.4375rem;}
 }
 
 /***************************************************************
@@ -260,7 +264,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  ***************************************************************/
 
 @media only screen and (max-width:720px){
-    
+ .modal-content{width:92%;margin-left:auto;margin-right:auto;}
+
 }
 
 
