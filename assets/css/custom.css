@@ -77,7 +77,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  #index .header-absolute {background: #ffffff;}
  header .col-sm-12 i{color:black!important;}
  div#ship {background: black;color: white;padding: 2px 0px 0px 0px;text-transform: uppercase;}
- header  #_desktop_language_selector i.fa, header #_desktop_currency_selector i.fa{margin-left:.2rem !important;}
+ header #_desktop_language_selector i.fa, header #_desktop_currency_selector i.fa{margin-left:.2rem !important;}
   header #_desktop_user_info i{margin-left:.7rem;}
 
  /*----------------- Size Chart -----------------------*/
@@ -153,7 +153,6 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
     }
 #sizechartmodal .modal-dialog{width:-moz-fit-content;width:fit-content;margin-left:auto;margin-right:auto;}
 #sizechartmodal .modal-dialog-centered .modal-content object{min-height:40rem;width:30rem;}
-#_desktop_user_info .jx-header-account .dropdown-menu.show{border-radius:0.8rem;box-shadow:1px 2px 3px gray;}
 #_desktop_user_info a#jx-header-account-link::after {font-family:"FontAwesome";
     content:"\f107";
     display:inline-block;
@@ -242,6 +241,10 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  .jx-header-account #jx-header-account-link i{display:initial!important;}
  .product-variants .custom-select{width:9.9375rem;}
  .modal-content .container-woman-size-chart{min-width:500px;}
+ /*MENUS DROPDOWN*/
+ #_desktop_user_info .jx-header-account .dropdown-menu.show,
+header #_desktop_currency_selector .currency-selector .dropdown-menu,
+.language-selector .dropdown-menu{border-radius:0.8rem;box-shadow:1px 2px 3px gray;}
 
 }
 
@@ -280,7 +283,9 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 	article.product-miniature.js-product-miniature:hover div.product-prices-md{
 		opacity: 0.3;
 	}
-	}
+	 #_mobile_user_info .jx-header-account .dropdown-menu.show{
+	 	border-radius:0.8rem;box-shadow:1px 2px 3px gray;}
+}
 
 /***************************************************************
  ******************* Screen Max-width 768px *********************
