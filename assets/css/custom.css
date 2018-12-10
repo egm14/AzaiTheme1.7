@@ -28,17 +28,6 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #choicegiftcard .jcarousel-control-prev, #choicegiftcard .jcarousel-control-next {position: absolute;top: 36%;margin-top: -15px;width: 30px;height: 30px;text-align: center;background: #000;color: #fff;text-decoration: none;text-shadow: 0 0 1px #000;font: 27px/27px Arial,sans-serif;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;-webkit-box-shadow: 0 0 4px #000;-moz-box-shadow: 0 0 4px #000;box-shadow: 0 0 4px #000;border-color: #000;
 }
 
-/***************************************************************
- ***************LIST OF DISABLED FUNCTIONS *********************
- ***************************************************************/
- /*Display arrows slider images module*/
- #wrapper .swiper-button-wrapper {display: none!Important;}
- /*Display Backgraud banner categori*/
- .block-category {display: none;}
- /*Display Buttom Quantity in Product*/
- .product-quantity.d-flex.flex-wrap.align-content-center {display: none!important;}
-
-
  /*------------------- PRODUCT- PAGE -SECTION ----------------*/
  /*Color botom primario*/
  .btn-primary {color: white;background: #060606;-moz-box-shadow: inset 0 0 0 2px #464646;-webkit-box-shadow: inset 0 0 0 2px #000000;box-shadow: inset 0 0 0 2px #080808;border: none;}
@@ -187,6 +176,18 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 
  /*Shopping Cart*/
 .blockcart > a .cart-products-count{position:absolute;top:-13px;right:-9px; background:black;}
+.cart-grid .cart-grid-body a.btn-secondary.icon-left{box-shadow:none;}
+.cart-grid .cart-grid-right{border-left:solid 1px #f7f4ee;}
+
+/***************************************************************
+ ***************LIST OF DISABLED FUNCTIONS *********************
+ ***************************************************************/
+ /*Display arrows slider images module*/
+ #wrapper .swiper-button-wrapper {display: none!important;}
+ /*Display Backgraud banner categori*/
+ .block-category {display: none;}
+ /*Display Buttom Quantity in Product*/
+ .product-quantity.d-flex.flex-wrap.align-content-center {display: none!important;}
 
  
 
