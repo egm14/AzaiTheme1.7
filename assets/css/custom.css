@@ -153,7 +153,6 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
     }
 #sizechartmodal .modal-dialog{width:-moz-fit-content;width:fit-content;margin-left:auto;margin-right:auto;}
 #sizechartmodal .modal-dialog-centered .modal-content object{min-height:40rem;width:30rem;}
-<<<<<<< HEAD
 #_desktop_user_info .jx-header-account .dropdown-menu.show{border-radius:0.8rem;box-shadow:1px 2px 3px gray;}
 #_desktop_user_info a#jx-header-account-link::after {font-family:"FontAwesome";
     content:"\f107";
@@ -169,7 +168,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
     transition:0.3s all ease;
 }
 .page-footer a.icon-home:before{display:none;}
-=======
+
   /* Search Form*/
    .jxsearch-wrapper #jx_blog_search_query, .jxsearch-wrapper #jx_search_query{
    -webkit-box-shadow:0 0.1875rem 1.6875rem 0 rgba(0,0,0,.15);
@@ -187,7 +186,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  .modal .modal-dialog .modal-content .btn.close-modal:hover{font-size:1.3rem;}
  .modal .modal-dialog .modal-content .btn.close-modal:focus{background-color:#141414;font-size:inherit;}
 
->>>>>>> 20a6e8e915408bfa835851ec9affa3255e7dbf09
+
  
 
 /***************************************************************
@@ -235,16 +234,15 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  .grid .product-miniature .product-miniature-container .product-miniature-information .product-buttons > a{color:#ededed;}
  .grid .product-miniature .product-miniature-container .product-miniature-information{padding-bottom:0px;}
  nav.mb-xl-4{margin-bottom:1.4rem!important;background-color:#f4f4f4;}
-<<<<<<< HEAD
+
  #content div.address-selector article address{font-size:.9rem;}
-=======
+
  /*SIZE CHART*/
  #sizechartmodal .modal-dialog .modal-content img.container-images{max-height:54rem;max-width:40rem;}
  .jx-header-account #jx-header-account-link i{display:initial!important;}
  .product-variants .custom-select{width:9.9375rem;}
  .modal-content .container-woman-size-chart{min-width:500px;}
- 
->>>>>>> 20a6e8e915408bfa835851ec9affa3255e7dbf09
+
 }
 
 /***************************************************************
