@@ -185,6 +185,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  .modal .modal-dialog .modal-content .btn.close-modal:hover{font-size:1.3rem;}
  .modal .modal-dialog .modal-content .btn.close-modal:focus{background-color:#141414;font-size:inherit;}
 
+ /*Shopping Cart*/
+.blockcart > a .cart-products-count{position:absolute;top:-13px;right:-9px; background:black;}
 
  
 
@@ -309,6 +311,8 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
    /*Close Button to mobile menu*/
    #_mobile_menu_wrapper .only-mobile button.closeSlidebar:before,
    #_mobile_cart .cart-summary button.closeSlidebar:before{font-size:1.4rem;}
+   /*Shopping Cart*/
+	.blockcart > a .cart-products-count{position:absolute;top:-12px;right:-9px;}
 
 
 }
