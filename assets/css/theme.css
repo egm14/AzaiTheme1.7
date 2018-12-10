@@ -19594,11 +19594,11 @@ body#checkout .nav-tabs li a:before {
 }
 
 body#checkout .nav-tabs li a.reachable:before {
-    background: #f8dbd5
+    background: #f2f2f2
 }
 
 body#checkout .nav-tabs li a.reachable.active:before {
-    background: #7e7c7c
+    background: #272727
 }
 
 body#checkout .checkout-step {

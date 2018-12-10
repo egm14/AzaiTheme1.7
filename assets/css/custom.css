@@ -176,8 +176,17 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 
  /*Shopping Cart*/
 .blockcart > a .cart-products-count{position:absolute;top:-13px;right:-9px; background:black;}
-.cart-grid .cart-grid-body a.btn-secondary.icon-left{box-shadow:none;}
+.cart-grid .cart-grid-body a.btn-secondary.icon-left, #blockcart-modal .modal-body .button-container .btn-secondary{box-shadow:none; color:gray;}
 .cart-grid .cart-grid-right{border-left:solid 1px #f7f4ee;}
+.cart-grid .cart-grid-right .cart-summary .checkout.cart-detailed-actions a.btn{background-color:black;color:white;box-shadow:none;}
+
+/*Chcekctout  - Step - Addresses*/
+#checkout-addresses-step .js-address-form #delivery-addresses article.selected{background-color:black;}
+#checkout-addresses-step .js-address-form #delivery-addresses article.selected span.custom-control-label,
+#checkout-addresses-step .js-address-form #delivery-addresses article.selected span.h6	,
+#checkout-addresses-step .js-address-form #delivery-addresses article.selected .address-footer .btn-link {color:white;}
+
+
 
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
@@ -248,6 +257,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  #_desktop_user_info .jx-header-account .dropdown-menu.show,
 header #_desktop_currency_selector .currency-selector .dropdown-menu,
 .language-selector .dropdown-menu{border-radius:0.8rem;box-shadow:1px 2px 3px gray;}
+/*main layout grid border*/
+ #main h2.page-heading.text-center{border-top:solid 1px lightgray; padding-top:1rem;}
 
 }
 
@@ -287,7 +298,9 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
 		opacity: 0.3;
 	}
 	 #_mobile_user_info .jx-header-account .dropdown-menu.show{
-	 	border-radius:0.8rem;box-shadow:1px 2px 3px gray;}
+	 	border-radius:0.8rem;box-shadow:1px 2px 3px gray;
+	 }
+	 #checkout-addresses-step{padding:1.5rem;}
 }
 
 /***************************************************************
@@ -314,7 +327,25 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
    #_mobile_cart .cart-summary button.closeSlidebar:before{font-size:1.4rem;}
    /*Shopping Cart*/
 	.blockcart > a .cart-products-count{position:absolute;top:-12px;right:-9px;}
-
+	/*shopping cart list*/
+	.cart-container .cart-overview li.cart-item div.product-line-grid .col-8.col-sm-9{padding-left:5px;padding-right:5px;}
+	.cart-container .cart-overview .product-title{font:600 0.8rem/1.24rem Helvetica Neue, sans-serif;margin-bottom:.3875rem;}
+	.cart-container .cart-overview .product-line-grid .product-line-grid-body > .product-line-info .current-price .price{font:700 0.85rem/0.55rem Helvetica Neue, sans-serif;}
+	.cart-container .cart-overview .product-line-grid-right.product-line-actions{width:initial;padding-right:10px;}
+	.cart-container .cart-overview .product-line-grid-left{margin-bottom:0px!important;}
+	.cart-container .cart-overview li hr{margin-bottom:1rem;margin-top:1rem;}
+	/*Modal button container*/
+	#blockcart-modal .modal-body .button-container{display:flex;flex-direction:column-reverse;}
+	/*Address - checkout page*/
+	#checkout-addresses-step .js-address-form #delivery-addresses article{margin:0px!important;margin-right:6px!important;}
+	#checkout-addresses-step .js-address-form #delivery-addresses{
+		display:flex;flex-flow: inherit;
+		overflow: scroll;
+		-webkit-box-shadow: inset -21px -4px 13px -11px rgba(0,0,0,0.24);
+        -moz-box-shadow: inset -21px -4px 13px -11px rgba(0,0,0,0.24);
+        box-shadow: inset -21px -4px 13px -11px rgba(0,0,0,0.24);}
+	#checkout-addresses-step .address-selector .address-item .address-header{min-height:22rem;width:15rem;}
+	#checkout-addresses-step .address-selector{margin-bottom:1rem;}
 
 }
 
