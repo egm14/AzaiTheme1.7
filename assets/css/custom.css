@@ -25,6 +25,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #category span.price {font-weight: bold!important;}
 #jx-header-account-link .fa-sign-in:before {content: "\f007";font-family: FontAwesome;color: black;}
 #jx-header-account-link .fl-chapps-user139:before {content: "\f007";font-family: FontAwesome;color: black;}
+#choicegiftcard .jcarousel-control-prev, #choicegiftcard .jcarousel-control-next {position: absolute;top: 36%;margin-top: -15px;width: 30px;height: 30px;text-align: center;background: #000;color: #fff;text-decoration: none;text-shadow: 0 0 1px #000;font: 27px/27px Arial,sans-serif;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;-webkit-box-shadow: 0 0 4px #000;-moz-box-shadow: 0 0 4px #000;box-shadow: 0 0 4px #000;border-color: #000;
+}
 
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
@@ -151,6 +153,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
     }
 #sizechartmodal .modal-dialog{width:-moz-fit-content;width:fit-content;margin-left:auto;margin-right:auto;}
 #sizechartmodal .modal-dialog-centered .modal-content object{min-height:40rem;width:30rem;}
+<<<<<<< HEAD
 #_desktop_user_info .jx-header-account .dropdown-menu.show{border-radius:0.8rem;box-shadow:1px 2px 3px gray;}
 #_desktop_user_info a#jx-header-account-link::after {font-family:"FontAwesome";
     content:"\f107";
@@ -166,6 +169,25 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
     transition:0.3s all ease;
 }
 .page-footer a.icon-home:before{display:none;}
+=======
+  /* Search Form*/
+   .jxsearch-wrapper #jx_blog_search_query, .jxsearch-wrapper #jx_search_query{
+   -webkit-box-shadow:0 0.1875rem 1.6875rem 0 rgba(0,0,0,.15);
+   box-shadow:0 0.1875rem 1.6875rem 0 rgba(0,0,0,.15);}
+
+/*Modal button close*/
+  .modal .modal-dialog .modal-content .btn.close-modal{
+    position:absolute;
+    right:0;
+    top:0;
+    background-color:black;
+    color:white;
+    border-radius:0;
+  }
+ .modal .modal-dialog .modal-content .btn.close-modal:hover{font-size:1.3rem;}
+ .modal .modal-dialog .modal-content .btn.close-modal:focus{background-color:#141414;font-size:inherit;}
+
+>>>>>>> 20a6e8e915408bfa835851ec9affa3255e7dbf09
  
 
 /***************************************************************
@@ -183,7 +205,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 
  @media only screen and (min-width:1366px){
    #footer {padding-top: 80px;}
-   #header .stickUpTop:not(.isStuck) .stick-up{padding-top:10px;}
+  /* #header .stickUpTop:not(.isStuck) .stick-up{padding-top:10px;}*/
 }
 
 /***************************************************************
@@ -204,7 +226,6 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
   ol.breadcrumb {background: #f4f4f4;padding-top: 10px;padding-bottom: 10px;margin-top: 0px;margin-bottom: 40px;}*/
   #footer {padding-top: 70px;}
   header#header {z-index:999;}/*Posicion Principal del header*/
-  #header .header-absolute{padding-top:2px;padding-bottom:2px;}
   /*#header .stickUpTop:not(.isStuck) .stick-up{padding:0!important;}*/ /* Verificar */
   #footer div.container{padding:50px 170px 25px 170px}
   #footer div.container#redes-desk{padding:0px;}
@@ -214,7 +235,16 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  .grid .product-miniature .product-miniature-container .product-miniature-information .product-buttons > a{color:#ededed;}
  .grid .product-miniature .product-miniature-container .product-miniature-information{padding-bottom:0px;}
  nav.mb-xl-4{margin-bottom:1.4rem!important;background-color:#f4f4f4;}
+<<<<<<< HEAD
  #content div.address-selector article address{font-size:.9rem;}
+=======
+ /*SIZE CHART*/
+ #sizechartmodal .modal-dialog .modal-content img.container-images{max-height:54rem;max-width:40rem;}
+ .jx-header-account #jx-header-account-link i{display:initial!important;}
+ .product-variants .custom-select{width:9.9375rem;}
+ .modal-content .container-woman-size-chart{min-width:500px;}
+ 
+>>>>>>> 20a6e8e915408bfa835851ec9affa3255e7dbf09
 }
 
 /***************************************************************
@@ -243,7 +273,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 	    min-height:40px;
 	    border-radius:50%;
 	    margin:5px 5px;
-	    }
+	    }s
 	#footer div.container #redes-desk a i:hover{
 	    font-size:18px;
 	    background-color:#4a4a4a;
@@ -252,20 +282,32 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 	article.product-miniature.js-product-miniature:hover div.product-prices-md{
 		opacity: 0.3;
 	}
-	 
-}
+	}
 
 /***************************************************************
  ******************* Screen Max-width 768px *********************
  ***************************************************************/
 
 @media only screen and (max-width:767px){
+  body{font-size:.85rem;}
     /*IPAD top banner sticker*/
     #footer div.container div.text-center{margin-top:20px;}
 	#ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 376px;top: 0px;} /*Slider*/
 	/*Sizechartmodel*/
 	.container-woman-size-chart{min-width:25rem;}
+  .container-woman-size-chart .tab-content{width:92%;}
 	#sizechartmodal .modal-dialog-centered .modal-content object{min-height:33rem;width:25rem;}
+  /* header menu icon*/
+  .separator-list > :not(:last-child){margin-right:2.4375rem;}
+   div.product-right-column .product-variants h5, div.product-right-column p, div.product-right-column a, div.product-right-column .social-sharing{font-size:.8rem;}
+   div.product-right-column div.product-right-column a.sizes-chart{font-size:1.2rem;}
+   /*Search form*/
+   .jxsearch-wrapper.active-jxsearch #jxsearchwrapper{position:fixed!important;top:14%!important;}
+   /*Close Button to mobile menu*/
+   #_mobile_menu_wrapper .only-mobile button.closeSlidebar:before,
+   #_mobile_cart .cart-summary button.closeSlidebar:before{font-size:1.4rem;}
+
+
 }
 
 /***************************************************************
@@ -273,7 +315,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  ***************************************************************/
 
 @media only screen and (max-width:720px){
-    
+ .modal-content{width:92%;margin-left:auto;margin-right:auto;}
+
 }
 
 

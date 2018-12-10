@@ -27,34 +27,38 @@
 <!-- Size Chart Dinamic -->
                   {if ({$product.category} == 'rings') or ({$product.category} == 'jewelry-rings')}
                       <!-- Sizechard -->
-						<span class="size-chart-container" data-toggle="modal" data-target="#sizechartmodal"><a class="sizes-chart" href="#sizechartmodal">{l s='Sizes chart Jewelry'}</a></span>
+						<span class="size-chart-container" data-toggle="modal" data-target="#sizechartmodal"><a class="sizes-chart" href="#sizechartmodal">{l s='Sizes chart Rings'}</a></span>
                       	<!-- Modal -->
 						<div class="modal fade" id="sizechartmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 						  <div class="modal-dialog modal-dialog-centered" role="document">
 						    <div class="modal-content">
-						    	<!-- Ring Size Chart -->
+						    	<!-- Ring Size Chart 
 						    	  <object data="{$urls.theme_assets}OtherFile/Azai-RingSizeguide.pdf" type="application/pdf">
 					                <embed src="{$urls.theme_assets}OtherFile/Azai-RingSizeguide.pdf" type="application/pdf">&nbsp; </embed>
-					                    alt :<a href="{$urls.theme_assets}OtherFile/Azai-RingSizeguide.pdf">
-					              </object>
+					                    <a href="{$urls.theme_assets}OtherFile/Azai-RingSizeguide.pdf">
+					              </object>-->
+					              <img class="sizes-chart-ring container-images" src="{$urls.theme_assets}OtherFile/azai-ring-size-chart.jpg" width="100%" height="100%" />
+					              <button type="button" class="btn close-modal" data-dismiss="modal">X</button>
 						    </div>
 						   </div>
 						</div>
                       <script type="text/javascript">
-                        console.log('Size Chart Rings');
+                        console.log('Sizes Chart Rings');
                       </script>
                     {elseif ({$product.category} == 'jewelry')}
                      <!-- Sizechard -->
-						<span class="size-chart-container" data-toggle="modal" data-target="#sizechartmodal"><a class="sizes-chart" href="#sizechartmodal">{l s='Sizes chart Jewelry'}</a></span>
+						<span class="size-chart-container" data-toggle="modal" data-target="#sizechartmodal"><a class="sizes-chart" href="#sizechartmodal">{l s='Sizes chart Jewelry 2'}</a></span>
                       	<!-- Modal -->
 						<div class="modal fade" id="sizechartmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 						  <div class="modal-dialog modal-dialog-centered" role="document">
 						    <div class="modal-content">
-						    	<!-- Ring Size Chart -->
+						    	<!-- Ring Size Chart 
 						    	  <object data="{$urls.theme_assets}OtherFile/Azai-RingSizeguide.pdf" type="application/pdf">
 					                <embed src="{$urls.theme_assets}OtherFile/Azai-RingSizeguide.pdf" type="application/pdf">&nbsp; </embed>
-					                    alt :<a href="{$urls.theme_assets}OtherFile/Azai-RingSizeguide.pdf">
-					              </object>
+					                    <a href="{$urls.theme_assets}OtherFile/Azai-RingSizeguide.pdf">
+					              </object>-->
+					              <img class="sizes-chart-ring container-images" src="{$urls.theme_assets}OtherFile/azai-ring-size-chart.jpg" width="100%" height="100%" />
+					              <button type="button" class="btn close-modal" data-dismiss="modal">X</button>
 						    </div>
 						   </div>
 						</div>
@@ -308,6 +312,7 @@
 									<p style="font-size: .7em; text-align: center; margin-top: 10px;">With outerwear, choose your true size for the best fit.<br /> All sizes are approximate.</p>
 									<!-- container -->
 								</div>
+								<button type="button" class="btn close-modal" data-dismiss="modal">X</button>
 						    </div>
 						  </div>
 						</div>
