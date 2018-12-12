@@ -199,6 +199,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  .block-category {display: none;}
  /*Display Buttom Quantity in Product*/
  .product-quantity.d-flex.flex-wrap.align-content-center {display: none!important;}
+ /*Display Buttom Product New */
+ li.product-flag.new {display: none;}
 
  
 
