@@ -289,7 +289,12 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
 .language-selector .dropdown-menu{border-radius:0.8rem;box-shadow:1px 2px 3px gray;}
 /*main layout grid border*/
  #main h2.page-heading.text-center{border-top:solid 1px lightgray; padding-top:1rem;}
-
+  /*Search form*/
+   .jxsearch-wrapper.active-jxsearch #jxsearchwrapper{position:fixed!important;top:17%!important;box-shadow:1px 2px 2px 2px gray; border-top-right-radius:10px;border-bottom-right-radius:10px;}
+   .jxsearch-wrapper.active-jxsearch::before{display:none;}
+   .jxsearch-wrapper.active-jxsearch #jxsearchwrapper .search-close{left:-1.8rem;background:white;height:2.875rem;box-shadow:1px 2px 2px 2px rgba(0,0,0,.3);border-top-left-radius:10px;border-bottom-left-radius:10px;}
+   .jxsearch-wrapper.active-jxsearch #jxsearchwrapper .search-close i{line-height:2.875rem;padding-left:5px;}
+   .jxsearch-wrapper.active-jxsearch #jxsearchwrapper #jx_search_query{border-top-right-radius:10px;border-bottom-right-radius:10px;}
 }
 
 /***************************************************************
@@ -300,6 +305,7 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
    .separator-list > :not(:last-child){margin-right:3.4375rem;}
    .container-woman-size-chart{min-width:450px;}
    body#checkout .nav-tabs li{font-size:.94rem;text-align:center;}
+
     
 }   
 
@@ -332,6 +338,7 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
 	 	border-radius:0.8rem;box-shadow:1px 2px 3px gray;
 	 }
 	 #checkout-addresses-step{padding:1.5rem;}
+	 
 }
 
 /***************************************************************
@@ -352,7 +359,7 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
    div.product-right-column .product-variants h5, div.product-right-column p, div.product-right-column a, div.product-right-column .social-sharing{font-size:.8rem;}
    div.product-right-column div.product-right-column a.sizes-chart{font-size:1.2rem;}
    /*Search form*/
-   .jxsearch-wrapper.active-jxsearch #jxsearchwrapper{position:fixed!important;top:14%!important;}
+   .jxsearch-wrapper.active-jxsearch #jxsearchwrapper{position:fixed!important;top:7.4rem !important;}
    /*Close Button to mobile menu*/
    #_mobile_menu_wrapper .only-mobile button.closeSlidebar:before,
    #_mobile_cart .cart-summary button.closeSlidebar:before{font-size:1.4rem;}
