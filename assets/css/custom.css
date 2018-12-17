@@ -208,12 +208,16 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 /*Shipping Carrier - checkout Step*/
 body#checkout .checkout-step .delivery-options .delivery-option-item{padding:0!important;}
 body#checkout .checkout-step .delivery-options .delivery-option-item:focus{background-color:black;}
-body#checkout .checkout-step .delivery-options .delivery-option-item:focus label.custom-control .row.delivery-options{background-color:black;}
+body#checkout .checkout-step .delivery-options .delivery-option-item input.custom-control-input:checked{background-color:black;}
 body#checkout .checkout-step .delivery-options .delivery-option-item label{padding:1rem;}
 body#checkout .delivery-option .col-sm-4, body#checkout .delivery-option .col-sm-3{text-align:center;}
 body#checkout #checkout-delivery-step .form-fields .delivery-options hr{margin-top:1rem;margin-bottom:1rem;color:transparent;border:none;}
 body#checkout #checkout-delivery-step .custom-radio .custom-control-label::before{top:-.862rem;}
 body#checkout #checkout-delivery-step .custom-radio .custom-control-label::after{top:-0.682rem;}
+
+/*checkout - Payment Step */
+body#checkout #checkout-payment-step #order-summary-content div.row div.card.noshadow{padding:1rem;font-size:.8rem;}
+body#checkout #checkout-payment-step #order-summary-content div.summary-selected-carrier div.logo-container img{max-width:30px;}
 
 
 
@@ -384,6 +388,7 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
         box-shadow: inset -21px -4px 13px -11px rgba(0,0,0,0.24);}
 	#checkout-addresses-step .address-selector .address-item .address-header{min-height:22rem;width:15rem;}
 	#checkout-addresses-step .address-selector{margin-bottom:1rem;}
+	body#checkout ul.nav.nav-tabs.mt-2.mb-4{margin-top:2rem!important;margin-bottom:1rem!important;}
 
 
 }

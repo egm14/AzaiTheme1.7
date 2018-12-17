@@ -43,11 +43,12 @@
               {foreach from=$delivery_options item=carrier key=carrier_id}
               <div class="delivery-option-item">
                 <label class="custom-control custom-radio">
-                    <div class="row delivery-option">
-                      <div class="col-1">
+                  <!--<div class="col-1">-->
                           <input class="custom-control-input" type="radio" name="delivery_option[{$id_address}]" id="delivery_option_{$carrier.id}" value="{$carrier_id}"{if $delivery_option == $carrier_id} checked{/if}>
                           <span class="custom-control-label"></span>
-                      </div>
+                      <!--</div>-->
+                    <div class="row delivery-option">
+                      
                       <label for="delivery_option_{$carrier.id}" class="col-11 delivery-option-2">
                         <div class="row">
                           <div class="col-sm-5">
