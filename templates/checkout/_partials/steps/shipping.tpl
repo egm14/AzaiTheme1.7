@@ -49,7 +49,7 @@
                       <!--</div>-->
                     <div class="row delivery-option">
                       
-                      <label for="delivery_option_{$carrier.id}" class="col-11 delivery-option-2">
+                      <label for="delivery_option_{$carrier.id}" class="col-11 delivery-option-2" >
                         <div class="row">
                           <div class="col-sm-5">
                             <div class="row">
@@ -64,9 +64,20 @@
                             </div>
                           </div>
                           <div class="col-sm-4">
+                            <!-- Exception to dominican REpublica Carrier -->
+                            {if ($customer.addresses[$cart.id_address_delivery].country == 'Dominican Republic' || $customer.addresses[$cart.id_address_delivery].country == 'República Dominicana')}
+                              <br />
+                                <ol style="list-style:disc;padding-left:10px;text-align:left;">
+                                <li style="margin-bottom:.4rem">{l s='Delivery time:'}&nbsp;{$carrier.delay}&nbsp;</li>
+                                <li style="margin-bottom:.4rem">{l s='Le enviaremos un correo eléctrico con las instrucciones y el número de identificación de su pedido, el cual le permitirá dar seguimiento a su paquete (Traking number).'}</li>
+                                <li>{l s='Al momento de la entrega del paquete  lo estaremos contactando a travez de su número de teléfono. Así garantizamos una entrega satisfactoria.'}</li>
+                              </ol>
+                            {else}
                             <span class="carrier-delay">{$carrier.delay}</span>
+                            {/if}
+                            
                           </div>
-                          <div class="col-sm-3">
+                          <div class="col-sm-3" style="font-weight:600;">
                             <span class="carrier-price">{$carrier.price}</span>
                           </div>
                         </div>
@@ -84,7 +95,27 @@
             </div>
           {/block}
           <div class="order-options">
-            <div id="delivery">
+            {if $customer.addresses[$cart.id_address_delivery].country == 'Unites State' || $customer.addresses[$cart.id_address_delivery].country == 'Estados Unidos' || $customer.addresses[$cart.id_address_delivery].country == 'EE.UU.'}
+              <!-- Sizechard -->
+              {$customer.addresses[$cart.id_address_delivery].country}
+                <span class="zone_map" data-toggle="modal" data-target="#maptime_modal"><a class="sizes-chart" href="#maptime_modal" style="background-color:black;text-decoration:underline!important; color:white; text-align:right; padding:5px 10px!important; text-decoration:none; border-radius:10px;">{l s='Consult transit time by state'}</a></span>
+                
+              
+
+                <!-- Modal -->
+                <div class="modal fade" id="maptime_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+                  <div class="modal-dialog modal-dialog-centered" role="document" >
+                    <div class="modal-content" style="max-height:700px; max-width:500px;margin-left:auto;margin-right:auto;display:block;">
+                        <!-- Close btn -->
+                        <button type="button" class="btn close-modal" data-dismiss="modal">X</button>
+                        <img style="width:inherit;" src="{$urls.theme_assets}OtherFile/ups_map.jpg" />
+                    </div>
+                  </div>
+                </div>
+
+              
+            {/if}
+            <div id="delivery" style="margin-top:.7rem">
               <label for="delivery_message">{l s='If you would like to add a comment about your order, please write it in the field below.' d='Shop.Theme.Checkout'}</label>
               <textarea class="form-control" rows="2" cols="120" id="delivery_message" name="delivery_message">{$delivery_message}</textarea>
             </div>
