@@ -422,6 +422,11 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
     font-size:medium;
     /*content:"\f068"!important;*/
   }
+  /*------------ Acount link --------------*/
+  body#my-account ul.my-account-links li a i{font-size:4rem}
+  body#my-account ul.my-account-links li a{padding:1.4rem}
+  body#my-account ul.my-account-links.row li{display: inline-block; width:11rem;}
+  body#my-account ul.my-account-links.row{display:inline-block;}
 }
 
 /***************************************************************
