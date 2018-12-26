@@ -62,4 +62,6 @@
   {$HOOK_HEADER nofilter}
 {/block}
 
-{block name='hook_extra'}{/block}
+{block name='hook_extra'}
+<script src='https://www.google.com/recaptcha/api.js'></script>
+{/block}
