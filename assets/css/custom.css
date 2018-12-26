@@ -395,6 +395,33 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
   body#checkout #checkout-payment-step #order-summary-content div.summary-selected-carrier{text-align:center;}
   body#checkout #checkout-payment-step #order-summary-content #order-items div.order-confirmation-table .p-3 div.order-line div.col-sm-2.col-3{padding-right:0;padding-left:0;}
   body#checkout #checkout-payment-step #order-summary-content div.card.noshadow{margin-bottom:10px;}
+    /*-------------Footer ---------------*/
+    #footer h3 i.fa.fa-angle-down{
+      display:none;
+    }
+  footer#footer .container .row .col-xs-12{
+    border-bottom:1px solid #cccccc;
+    border-left:0px!important;
+    padding-left:20px;
+    padding-right:20px;
+    
+  }
+  section.footer-block h3{
+    padding:20px 0px!important;
+    font-weight:500!important;
+  }
+  footer#footer h3:after{
+    content: "\2d";
+    /*content:"\f067"!important;*/
+    padding-top:20px;
+    font-family: 'entypo';
+    font-size:medium;
+  }
+  footer#footer h3.collapsed:after{
+    content: "\2b"!important;
+    font-size:medium;
+    /*content:"\f068"!important;*/
+  }
 }
 
 /***************************************************************
@@ -403,6 +430,7 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
 
 @media only screen and (max-width:720px){
  .modal-content{width:92%;margin-left:auto;margin-right:auto;}
+ footer#footer .container .row .col-12.col-sm-12.col-md-3{border-bottom:1px solid #cccccc;}
 
 }
 

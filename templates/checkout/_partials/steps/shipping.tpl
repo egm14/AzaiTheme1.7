@@ -97,7 +97,6 @@
           <div class="order-options">
             {if $customer.addresses[$cart.id_address_delivery].country == 'Unites State' || $customer.addresses[$cart.id_address_delivery].country == 'Estados Unidos' || $customer.addresses[$cart.id_address_delivery].country == 'EE.UU.'}
               <!-- Sizechard -->
-              {$customer.addresses[$cart.id_address_delivery].country}
                 <span class="zone_map" data-toggle="modal" data-target="#maptime_modal"><a class="sizes-chart" href="#maptime_modal" style="background-color:black;text-decoration:underline!important; color:white; text-align:right; padding:5px 10px!important; text-decoration:none; border-radius:10px;">{l s='Consult transit time by state'}</a></span>
                 
               
