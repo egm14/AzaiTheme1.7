@@ -100,7 +100,7 @@ var ps_ws_version = 'advansedwishlistis16';
 {else}
 <i class="icon-heart"></i>
 {/if}
-{l s='Add to wishlist' mod='advansedwishlist'}</a></p>
+<span class="wishlist-keyword" '>{l s='Add to wishlist' mod='advansedwishlist'}</span></a></p>
 
     <div class="allert_note">{l s='You must be logged' mod='advansedwishlist'}
     <p class="login_links">
