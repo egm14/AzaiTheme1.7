@@ -301,7 +301,13 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
    .jxsearch-wrapper.active-jxsearch #jxsearchwrapper .search-close{left:-1.8rem;background:white;height:2.875rem;box-shadow:1px 2px 2px 2px rgba(0,0,0,.3);border-top-left-radius:10px;border-bottom-left-radius:10px;}
    .jxsearch-wrapper.active-jxsearch #jxsearchwrapper .search-close i{line-height:2.875rem;padding-left:5px;}
    .jxsearch-wrapper.active-jxsearch #jxsearchwrapper #jx_search_query{border-top-right-radius:10px;border-bottom-right-radius:10px;}
+   /*iconos page category*/
+   .product-miniature-information .functional-buttons .wishlist .wishlist-keyword{display:none;}
+   .product-miniature-information .functional-buttons .wishlist a i:before{color:#dfdfdf;font-size:1.375rem;}
+   .product-miniature-information .functional-buttons .wishlist a i:hover::before{color:black;}
+   .product-miniature-information .functional-buttons .wishlist:hover .allert_note{display:block!important;margin-top:5px;}
 }
+
 
 /***************************************************************
  ******************* Screen Max-width 1200px *******************
@@ -311,8 +317,6 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
    .separator-list > :not(:last-child){margin-right:3.4375rem;}
    .container-woman-size-chart{min-width:450px;}
    body#checkout .nav-tabs li{font-size:.94rem;text-align:center;}
-
-    
 }   
 
 /***************************************************************
@@ -413,7 +417,8 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
   footer#footer h3:after{
     content: "\2d";
     /*content:"\f067"!important;*/
-    padding-top:20px;
+    padding-top:.7rem;
+    padding-bottom:.7rem;
     font-family: 'entypo';
     font-size:medium;
   }
@@ -427,8 +432,16 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
   body#my-account ul.my-account-links li a{padding:1.4rem}
   body#my-account ul.my-account-links.row li{display: inline-block; width:11rem;}
   body#my-account ul.my-account-links.row{display:inline-block;}
+  /*-------------- Mobile menu content -------------*/
+      #_mobile_jxmegamenu .top-level ul.top-level-menu  li{margin-top:0;padding-left:1rem;padding-right:1rem;}
+      #_mobile_jxmegamenu .top-level ul.top-level-menu  li a{display:block;width:100%;padding-bottom:1.2rem;padding-top:1.2rem;text-align:left;}
+      #_mobile_jxmegamenu .top-level ul.top-level-menu li.top-level-menu-li a.top-level-menu-li-a::after{position: absolute;right:.25rem;color:#aab2b5;font-family: FontAwesome;content: "\F107";font-size: 1.1rem;line-height: 1.125rem;}
+      #_mobile_jxmegamenu .top-level ul.top-level-menu span.menu-mobile-grover, #_mobile_jxmegamenu .top-level ul.top-level-menu span.top-level-menu-li-span{padding-top:1.2rem;padding-bottom:1.2rem;}
+     #_mobile_jxmegamenu .top-level ul.top-level-menu div.is-megamenu .megamenu-row .megamenu-col{margin-top:0;}
+     #_mobile_jxmegamenu .top-level ul.top-level-menu div.is-megamenu li a{padding-top:.5rem;padding-bottom:.7rem;}
+     #_mobile_jxmegamenu .top-level ul.top-level-menu div.is-megamenu li a:hover{color:black;text-decoration:underline;}
+          #_mobile_jxmegamenu .top-level ul.top-level-menu span.menu-mobile-grover::after{font-size:1.2rem;}
 }
-
 /***************************************************************
  ******************* Screen Max-width 720x *********************
  ***************************************************************/
@@ -436,6 +449,8 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
 @media only screen and (max-width:720px){
  .modal-content{width:92%;margin-left:auto;margin-right:auto;}
  footer#footer .container .row .col-12.col-sm-12.col-md-3{border-bottom:1px solid #cccccc;}
+ footer#footer .link-list-title{margin:0!important;padding-top:.4rem;padding-bottom:.4rem;font-size:1rem;}
+ footer#footer .jxml-copyright{margin-top:1rem;}
 
 }
 
@@ -510,6 +525,16 @@ ul.menu.clearfix.top-level-menu.jxmegamenu_item {margin: 0px -13px 0px -13px;}
         width:-moz-available;
         margin-left:-15px;
         margin-right:-15px;
+    }
+    footer.page-footer a.account-link.icon-left,
+    footer.page-footer a.account-link.mr-3{
+      padding:10px;
+      margin-right:10px!important;
+    }
+    body#addresses .address-selector .address-item{
+      flex:inherit;
+      margin:0 .475rem 1rem;
+      max-width:170px;
     }
 }
 /***************************************************************
