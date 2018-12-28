@@ -46,9 +46,13 @@
 {/block}
 
 {block name='content'}
+
+          
   <section id="main" itemscope itemtype="https://schema.org/Product">
     <meta itemprop="url" content="{$product.url}">
-
+    {block name='page_header'}
+            <h1 class="h2 product-name mobile" style="display:none" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+          {/block}
     <div class="product-card row mb-2 mb-lg-3 mb-xxl-4">
       <div class="product-left-column col-12 col-md-6">
         {block name='page_content_container'}
@@ -63,9 +67,10 @@
       </div>
       <div class="product-right-column col-12 col-md-6">
         {block name='page_header_container'}
-        {block name='page_header'}
+          {block name='page_header'}
             <h1 class="h2 product-name" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
           {/block}
+
           <p class="product-reference">
             {l s='Reference:' d='Shop.Theme.Catalog'} <span>{$product.reference}</span>
           </p>

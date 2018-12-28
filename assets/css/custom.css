@@ -34,7 +34,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
  label.custom-control-label.active {box-shadow: 0 0 0 0.125rem #000000;}
  .custom-radio .custom-control-label:after {background: #000000;}
  .product-reference span {color: #A1A1A1;}
- h1.h2.product-name {font-family: 'Didot-Italic', cursive!important;margin-bottom:.1rem;}
+ h1.h2.product-name {font-family: 'Didot-Italic', cursive!important;margin-bottom:.2rem;font-size:2rem;}
  div.product-right-column .product-reference{margin-bottom:1.1rem;}
  div.product-right-column #product-availability{display:none;}
  div.product-right-column .product-prices{display:block;}
@@ -221,9 +221,21 @@ body#checkout #checkout-payment-step #order-summary-content div.summary-selected
 body#checkout #checkout-payment-step #order-summary-content #order-items div.order-confirmation-table hr{margin-top:0rem;margin-bottom:0rem;}
 body#checkout #checkout-payment-step #order-summary-content #order-items div.order-confirmation-table{border-width:.1rem;}
 
-/*User info */
-header #_mobile_user_info .jx-header-account div.dropdown-menu
+/*CopyRight Footer*/
+footer#footer .jxml-copyright{margin-top:1.5rem;}
 
+/*Pagination Margin*/
+#js-product-list{margin-bottom:3rem!important;}
+
+/*Wishlist button span text - product page*/
+body#product .product-additional-info #wishlist_button span{
+  display: initial;
+  font-size:initial;
+  text-decoration: underline;
+}
+body#product .product-additional-info #wishlist_button{
+  margin-top:.635rem;
+}
 
 
 /***************************************************************
@@ -446,6 +458,9 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
      #_mobile_jxmegamenu .top-level ul.top-level-menu div.is-megamenu li a{padding-top:.5rem;padding-bottom:.7rem;}
      #_mobile_jxmegamenu .top-level ul.top-level-menu div.is-megamenu li a:hover{color:black;text-decoration:underline;}
      #_mobile_jxmegamenu .top-level ul.top-level-menu span.menu-mobile-grover::after{font-size:1.2rem;}
+  /*Product name*/
+  body#product h1.h2.product-name.mobile{font-family: 'Didot-Italic', cursive!important;margin-bottom:1.2rem;font-size:2rem;text-align:center!important;display:block!important;}
+  body#product h1.h2.product-name{display:none;}
 }
 /***************************************************************
  ******************* Screen Max-width 720x *********************
@@ -475,6 +490,13 @@ p.select.datesendcard {margin: 0px 0px 0px -32px;}/*gift card date*/
   /*Buttom add to bag*/
  .add.mb-1 {width: 100%;}
  button.btn.btn-md.btn-primary.add-to-cart {padding: 20px 66px;margin-bottom: 10px;width: 100%;}
+ body#product button.btn.btn-md.btn-primary.add-to-cart{margin-bottom:0px;font-size:1rem;}
+ /*Sizechart button*/
+ body#product span.size-chart-container a.sizes-chart{font-size:1rem;}
+ /*Share buttons*/
+ body#product div.product-right-column .product-additional-info .social-sharing ul::before{font-size:1rem;}
+ /*Add to wish list span*/
+ body#product .product-additional-info #wishlist_button span{font-size:1rem;}
  .product-variants .custom-select {width: 89%;}
  /*Animacion Swipe Productos*/
 .stage{width:100%;padding:7rem 2rem 2rem;text-align:center}.guide{color:#fff;background:#0000008c;border-radius:6px;font-size:15px;padding:5px 8px 5px 8px;margin:5px}*,*:after,*:before{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.swipe{display:inline-block;color:#000;-moz-animation-name:swipe;-webkit-animation-name:swipe;animation-name:swipe;-moz-animation-duration:2700ms;-webkit-animation-duration:2700ms;animation-duration:2700ms;-moz-animation-delay:250ms;-webkit-animation-delay:250ms;animation-delay:250ms;-moz-animation-timing-function:linear;-webkit-animation-timing-function:linear;animation-timing-function:linear;-moz-animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;font-size:30px;top:220px!important;position:relative!important;text-shadow:0 0 #fff}.swipe .fa-long-arrow-left,.swipe .fa-long-arrow-right{font-size:.65em;color:#000}.swipe .fa-long-arrow-left{-moz-transform:scaleX(.75) skew(20deg) translateY(-.9em) translateX(1.25em);-ms-transform:scaleX(.75) skew(20deg) translateY(-.9em) translateX(1.25em);-webkit-transform:scaleX(.75) skew(20deg) translateY(-.9em) translateX(1.25em);transform:scaleX(.75) skew(20deg) translateY(-.9em) translateX(1.25em)}.swipe .fa-long-arrow-right{-moz-transform:scaleX(.75) skew(20deg) translateY(-.9em) translateX(-.95em);-ms-transform:scaleX(.75) skew(20deg) translateY(-.9em) translateX(-.95em);-webkit-transform:scaleX(.75) skew(20deg) translateY(-.9em) translateX(-.95em);transform:scaleX(.75) skew(20deg) translateY(-.9em) translateX(-.95em)}.swipe .fa-hand-o-up{-moz-transform:scaleY(1.2);-ms-transform:scaleY(1.2);-webkit-transform:scaleY(1.2);transform:scaleY(1.2);-moz-animation-name:swipe-rotate;-webkit-animation-name:swipe-rotate;animation-name:swipe-rotate;-moz-animation-duration:2700ms;-webkit-animation-duration:2700ms;animation-duration:2700ms;-moz-animation-delay:250ms;-webkit-animation-delay:250ms;animation-delay:250ms;-moz-animation-timing-function:linear;-webkit-animation-timing-function:linear;animation-timing-function:linear;-moz-animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}@-moz-keyframes swipe{0%{-moz-transform:translateX(0);transform:translateX(0)}10%{-moz-transform:translateX(-.1em);transform:translateX(-.1em)}20%{-moz-transform:translateX(.1em);transform:translateX(.1em)}30%{-moz-transform:translateX(-.1em);transform:translateX(-.1em)}40%{-moz-transform:translateX(.1em);transform:translateX(.1em)}50%{-moz-transform:translateX(0);transform:translateX(0)}100%{-moz-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes swipe{0%{-webkit-transform:translateX(0);transform:translateX(0)}10%{-webkit-transform:translateX(-.1em);transform:translateX(-.1em)}20%{-webkit-transform:translateX(.1em);transform:translateX(.1em)}30%{-webkit-transform:translateX(-.1em);transform:translateX(-.1em)}40%{-webkit-transform:translateX(.1em);transform:translateX(.1em)}50%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes swipe{0%{-moz-transform:translateX(0);-ms-transform:translateX(0);-webkit-transform:translateX(0);transform:translateX(0)}10%{-moz-transform:translateX(-.1em);-ms-transform:translateX(-.1em);-webkit-transform:translateX(-.1em);transform:translateX(-.1em)}20%{-moz-transform:translateX(.1em);-ms-transform:translateX(.1em);-webkit-transform:translateX(.1em);transform:translateX(.1em)}30%{-moz-transform:translateX(-.1em);-ms-transform:translateX(-.1em);-webkit-transform:translateX(-.1em);transform:translateX(-.1em)}40%{-moz-transform:translateX(.1em);-ms-transform:translateX(.1em);-webkit-transform:translateX(.1em);transform:translateX(.1em)}50%{-moz-transform:translateX(0);-ms-transform:translateX(0);-webkit-transform:translateX(0);transform:translateX(0)}100%{-moz-transform:translateX(0);-ms-transform:translateX(0);-webkit-transform:translateX(0);transform:translateX(0)}}@-moz-keyframes swipe-rotate{0%{-moz-transform:scaleY(1.2) skew(0);transform:scaleY(1.2) skew(0)}10%{-moz-transform:scaleY(1.2) skew(5deg);transform:scaleY(1.2) skew(5deg)}20%{-moz-transform:scaleY(1.2) skew(-5deg);transform:scaleY(1.2) skew(-5deg)}30%{-moz-transform:scaleY(1.2) skew(5deg);transform:scaleY(1.2) skew(5deg)}40%{-moz-transform:scaleY(1.2) skew(-5deg);transform:scaleY(1.2) skew(-5deg)}50%{-moz-transform:scaleY(1.2) skew(0);transform:scaleY(1.2) skew(0)}100%{-moz-transform:scaleY(1.2) skew(0);transform:scaleY(1.2) skew(0)}}@-webkit-keyframes swipe-rotate{0%{-webkit-transform:scaleY(1.2) skew(0);transform:scaleY(1.2) skew(0)}10%{-webkit-transform:scaleY(1.2) skew(5deg);transform:scaleY(1.2) skew(5deg)}20%{-webkit-transform:scaleY(1.2) skew(-5deg);transform:scaleY(1.2) skew(-5deg)}30%{-webkit-transform:scaleY(1.2) skew(5deg);transform:scaleY(1.2) skew(5deg)}40%{-webkit-transform:scaleY(1.2) skew(-5deg);transform:scaleY(1.2) skew(-5deg)}50%{-webkit-transform:scaleY(1.2) skew(0);transform:scaleY(1.2) skew(0)}100%{-webkit-transform:scaleY(1.2) skew(0);transform:scaleY(1.2) skew(0)}}@keyframes swipe-rotate{0%{-moz-transform:scaleY(1.2) skew(0);-ms-transform:scaleY(1.2) skew(0);-webkit-transform:scaleY(1.2) skew(0);transform:scaleY(1.2) skew(0)}10%{-moz-transform:scaleY(1.2) skew(5deg);-ms-transform:scaleY(1.2) skew(5deg);-webkit-transform:scaleY(1.2) skew(5deg);transform:scaleY(1.2) skew(5deg)}20%{-moz-transform:scaleY(1.2) skew(-5deg);-ms-transform:scaleY(1.2) skew(-5deg);-webkit-transform:scaleY(1.2) skew(-5deg);transform:scaleY(1.2) skew(-5deg)}30%{-moz-transform:scaleY(1.2) skew(5deg);-ms-transform:scaleY(1.2) skew(5deg);-webkit-transform:scaleY(1.2) skew(5deg);transform:scaleY(1.2) skew(5deg)}40%{-moz-transform:scaleY(1.2) skew(-5deg);-ms-transform:scaleY(1.2) skew(-5deg);-webkit-transform:scaleY(1.2) skew(-5deg);transform:scaleY(1.2) skew(-5deg)}50%{-moz-transform:scaleY(1.2) skew(0);-ms-transform:scaleY(1.2) skew(0);-webkit-transform:scaleY(1.2) skew(0);transform:scaleY(1.2) skew(0)}100%{-moz-transform:scaleY(1.2) skew(0);-ms-transform:scaleY(1.2) skew(0);-webkit-transform:scaleY(1.2) skew(0);transform:scaleY(1.2) skew(0)}}div#stage{position:absolute;top:1px;z-index:99;height:462px;width:100%}}@media only screen and (max-width:375px){.col-xs-6{width:56%;margin:0 -13px 0 -11px}.breadcrumb,#product .breadcrumb{background:#ffffff!important;padding-top:3px;padding-bottom:3px;margin-top:0;margin-bottom:15px}.row.it_GUYJJLPNEYRW.stick-up.align-center{background:white;border-bottom:solid .1px #ccc}.footer-container #redes-desk a i{font-size:30px;margin:0;border-radius:0}.footer-container #redes-desk a:nth-last-child(1){border-right:0px!important}.footer-container #redes-desk a{display:inline-block;width:32.5%;border-right:1px solid white;margin:0px!important}.footer-container #redes-desk{background-color:black;text-align:center;padding:0;margin:0px!important}.fancybox-inner{overflow:auto!important;width:335px;height:482px}}

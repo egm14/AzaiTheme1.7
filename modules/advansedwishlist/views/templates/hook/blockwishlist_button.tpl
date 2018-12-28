@@ -73,7 +73,7 @@
 {/if}
 {if $show_btn_text}<span class="wishlist-keyword" '>{l s='Add to Wishlist' mod='advansedwishlist'}</span>{/if}</a></p>
 
-    <div class="allert_note">{l s='To add to wishlist must be logged' mod='advansedwishlist'}
+    <div class="allert_note">{l s='You must be logged' mod='advansedwishlist'}
     <p class="login_links">
     <a class="inline" href="{$login_link|escape:'htmlall':'UTF-8'}">{l s='Sign in' mod='advansedwishlist'}</a> | <a class="inline" href="{$login_link|escape:'htmlall':'UTF-8'}">{l s='Register' mod='advansedwishlist'}</a>
     </p>

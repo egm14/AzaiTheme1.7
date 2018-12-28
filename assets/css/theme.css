@@ -11719,7 +11719,7 @@ h2 {
 
 .subpages-heading {
     font-weight: 400;
-    font-size: 1.625rem;
+    font-size: 1.25rem;
     line-height: 1.15;
     font-family: Helvetica Neue,  sans-serif;
     color: #2f2c2f
@@ -13139,7 +13139,7 @@ ul.product-flags li {
     min-width: 2.8125rem;
     color: #fff;
     font-weight: 700;
-    font-size: .875rem;
+    font-size: .575rem;
     line-height: 1.42;
     text-transform: uppercase;
     white-space: nowrap;
@@ -21228,7 +21228,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 section.facet .facet-title {
     font-weight: 400;
     font-family: Helvetica Neue, sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: .9375rem;
     color: #2f2c2f
@@ -21279,7 +21279,7 @@ section.facet .facet-list:not(.variant-links) .facet-label a>span {
 }
 
 section.facet .facet-list .facet-label a {
-    font: 400 1rem/1.25rem Helvetica Neue, Arimo, sans-serif;
+    font: 400 .9rem/1.25rem Helvetica Neue, Arimo, sans-serif;
     color: #767676;
     display: block
 }
