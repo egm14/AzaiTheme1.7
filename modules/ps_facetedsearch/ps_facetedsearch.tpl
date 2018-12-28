@@ -25,7 +25,7 @@
 
 {if isset($listing.rendered_facets)}
   <div id="search_filters_wrapper" class="only-mobile{if $page.canonical == $urls.current_url} is-default-filter{/if}" data-off-canvas="filter-slidebar left push">
-  	hola
+  	<button type="button" class="closeSlidebar" aria-label="Close"></button>
     {$listing.rendered_facets nofilter}
   </div>
 {/if}
