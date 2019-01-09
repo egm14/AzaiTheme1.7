@@ -149,7 +149,7 @@
                                 <td class="col-xs-2 col-md-2 wishlist_delete">
                                     <a class="icon" href="#" onclick="javascript:event.preventDefault();return (WishlistDelete('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}', '{l s='Do you really want to delete this wishlist ?' mod='advansedwishlist' js=1}'));">
                                                 {if $wl_custom_font}
-                                                <span class="jms-arrows-remove-1"></span>
+                                                <span class="fa fa-trash-o"></span>
                                                 {else}
                                                 {if $advansedwishlistis17 == 1}
                                                 <i class="material-icons">delete</i>
