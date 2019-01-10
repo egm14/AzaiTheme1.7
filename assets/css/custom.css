@@ -567,6 +567,7 @@ ul.menu.clearfix.top-level-menu.jxmegamenu_item {margin: 0px -13px 0px -13px;}
     .product-miniature-information .functional-buttons{flex-flow:column-reverse;margin-top:0!important;}
     .product-miniature-information .functional-buttons .wishlist{font-size:1rem;text-decoration:underline;}
     .product-miniature-information .functional-buttons .product-buttons{display:none!important;}
+    #module-returnmanager-manager #rm_single_order_detail_container .rm_scrollable_div{max-width:344px!important;}
 }
 /***************************************************************
  ******************* Screen Max-width 375px *********************
