@@ -8,6 +8,7 @@ By Azai.com theme v1.7
 /***************************************************************
  ******************* General CSS Changel  *********************
  ***************************************************************/
+ [class^="icon-"]::before{font-family:FontAwesome;}
  span.it_04953631.top-level-menu-li-span.jxmegamenu_item.sf-with-ul {color: black;} 
  section.facet .facet-list .slider-container .back-bar .pointer {background: #000000;}
  section.facet .facet-list .slider-container .back-bar .selected-bar {background: #ababab;}
@@ -22,17 +23,21 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #cart .close:before {content: "\f014"!important;font: normal normal normal 14px/1 FontAwesome!important;}
 #category span.regular-price {color: #b4b0b0;}
 #category span.discount-percentage.discount-product {color: red;}
+.block-categories .arrows .arrow-down, .block-categories .arrows .arrow-right {cursor: pointer;margin-left: .3125rem;color: #2f2c2f;left: 88%;position: absolute;font-size: 15px;}
 #category span.price {font-weight: bold!important;}
 #jx-header-account-link .fa-sign-in:before {content: "\f007";font-family: FontAwesome;color: black;}
 #jx-header-account-link .fl-chapps-user139:before {content: "\f007";font-family: FontAwesome;color: black;}
 #choicegiftcard .jcarousel-control-prev, #choicegiftcard .jcarousel-control-next {position: absolute;top: 36%;margin-top: -15px;width: 30px;height: 30px;text-align: center;background: #000;color: #fff;text-decoration: none;text-shadow: 0 0 1px #000;font: 27px/27px Arial,sans-serif;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;-webkit-box-shadow: 0 0 4px #000;-moz-box-shadow: 0 0 4px #000;box-shadow: 0 0 4px #000;border-color: #000;
 }
 span.discount-percentage.discount-product {color: red;}
-.jxmegamenu_item .is-megamenu ul.content > li.category.sfHoverForce a{color:black!important;}
 
  /*------------------- PRODUCT- PAGE -SECTION ----------------*/
  /*Color botom primario*/
  .btn-primary {color: white;background: #060606;-moz-box-shadow: inset 0 0 0 2px #464646;-webkit-box-shadow: inset 0 0 0 2px #000000;box-shadow: inset 0 0 0 2px #080808;border: none;}
+ ul.footer_links .btn.btn-default.button.button-small{background-color:black;color:white;}
+ ul.footer_links #form_wishlist #submitWishlist{background-color:black;color:white;}
+ ul.footer_links .btn.btn-default.button.button-small i.icon-chevron-left::before{font-family:FontAwesome;content:"\F104";margin-right:5px;}
+ ul.footer_links.clearfix li{display:inline-block;}
  label.custom-control-label.active {box-shadow: 0 0 0 0.125rem #000000;}
  .custom-radio .custom-control-label:after {background: #000000;}
  .product-reference span {color: #A1A1A1;}
