@@ -31,12 +31,12 @@
             {l s='My orders' mod='jxheaderaccount'}
           </a>
         </li>
-        <!--{if $returnAllowed}
+        {if $returnAllowed}
           <li>
-            <a href="{$link->getPageLink('order-follow', true)|escape:'htmlall':'UTF-8'}" title="{l s='My returns' mod='jxheaderaccount'}" rel="nofollow">
+            <a href="returns" title="{l s='My returns' mod='jxheaderaccount'}" rel="nofollow">
               {l s='My merchandise returns' mod='jxheaderaccount'}
             </a>
-          </li>-->
+          </li>
         {/if}
         <li>
           <a href="{$link->getPageLink('order-slip', true)|escape:'htmlall':'UTF-8'}" title="{l s='My credit slips' mod='jxheaderaccount'}" rel="nofollow">
