@@ -352,6 +352,7 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
    .product-miniature-information .functional-buttons .wishlist .buttons_bottom_block a#wishlist_button{color:#dfdfdf;}
    .product-miniature-information .functional-buttons .wishlist .buttons_bottom_block a#wishlist_button i::before{color:#dfdfdf;font-size:1.2rem;}
    .product-miniature-information .functional-buttons .wishlist .buttons_bottom_block {margin-bottom:0;}
+   .container.rg-demo-popup-content.rgldbox-content { width: 40%;}
 }
 
 
