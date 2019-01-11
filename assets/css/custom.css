@@ -540,6 +540,12 @@ p.select.datesendcard {margin: 0px 0px 0px -32px;}/*gift card date*/
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
+	/*Items del carrito de compra Fix*/
+	#cart-summary-product-list img.img-fluid {height: 100px;}
+	#cart-summary-product-list .media.align-items-center {height: 52px!important;}
+	.cart-summary-product-item .product-title {margin-bottom: -0.0625rem;}
+	.cart-summary-product-item .product-quantity {margin-top: 0px;}
+
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
 		display: block; 
