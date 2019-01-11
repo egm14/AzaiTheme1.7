@@ -265,7 +265,11 @@ body#product .product-additional-info #wishlist_button span{
 body#product .product-additional-info #wishlist_button{
   margin-top:.635rem;
 }
-
+/*Items del carrito de compra Fix*/
+	#cart-summary-product-list img.img-fluid {height: 100px;}
+	/*#cart-summary-product-list .media.align-items-center {height: 52px!important;}*/
+	.cart-summary-product-item .product-title {margin-bottom: -0.0625rem;}
+	.cart-summary-product-item .product-quantity {margin-top: 0px;}
 
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
@@ -544,14 +548,6 @@ p.select.datesendcard {margin: 0px 0px 0px -32px;}/*gift card date*/
 
 @media (max-width: 550px) {
  
-}
-
-	/*Items del carrito de compra Fix*/
-	#cart-summary-product-list img.img-fluid {height: 100px;}
-	#cart-summary-product-list .media.align-items-center {height: 52px!important;}
-	.cart-summary-product-item .product-title {margin-bottom: -0.0625rem;}
-	.cart-summary-product-item .product-quantity {margin-top: 0px;}
-
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
 		display: block; 
