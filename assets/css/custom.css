@@ -30,7 +30,11 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #choicegiftcard .jcarousel-control-prev, #choicegiftcard .jcarousel-control-next {position: absolute;top: 36%;margin-top: -15px;width: 30px;height: 30px;text-align: center;background: #000;color: #fff;text-decoration: none;text-shadow: 0 0 1px #000;font: 27px/27px Arial,sans-serif;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;-webkit-box-shadow: 0 0 4px #000;-moz-box-shadow: 0 0 4px #000;box-shadow: 0 0 4px #000;border-color: #000;
 }
 span.discount-percentage.discount-product {color: red;}
+<<<<<<< HEAD
 
+=======
+.block-categories .arrows .arrow-down, .block-categories .arrows .arrow-right {cursor: pointer;margin-left: .3125rem;color: #2f2c2f;left: 88%;position: absolute;font-size: 15px;height: 10%;width: 10%}
+>>>>>>> 8315784c407a6524db37c3846c53e4a6f5c001c8
  /*------------------- PRODUCT- PAGE -SECTION ----------------*/
  /*Color botom primario*/
  .btn-primary {color: white;background: #060606;-moz-box-shadow: inset 0 0 0 2px #464646;-webkit-box-shadow: inset 0 0 0 2px #000000;box-shadow: inset 0 0 0 2px #080808;border: none;}
