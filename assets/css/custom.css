@@ -19,6 +19,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 .gcsm-header {background: #000000!important;}/*Giftcard color*/
 [class^="icon-"], [class*=" icon-"]{display:inline-block;font-family:Helvetica Neue;font-weight:600;}/*FontAwesome btn icon*/
 #cart-summary-product-list .close:before {content: "\f014"!important;font: normal normal normal 14px/1 FontAwesome!important;}
+#cart-summary-product-list hr{margin-top:.5rem;margin-bottom:.5rem;}
 #cart .product-line-grid.row.align-items-md-center {display: flex;flex-wrap: inherit;}
 #cart .close:before {content: "\f014"!important;font: normal normal normal 14px/1 FontAwesome!important;}
 #category span.regular-price {color: #b4b0b0;}
