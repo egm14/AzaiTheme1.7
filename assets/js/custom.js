@@ -199,10 +199,10 @@ $(document).ready(function(){
     
 
  /*==================== SHOW ORDEN RESUMEN BEHAVIOR =======================*/
-$('#show-orden').on('click', ".span", function(){
+$('#order-summary-content')..on('click', ".btn-order-summary", function(){
 	 //$('#show-orden').find('#order-detail-content').toggleClass("active");
-	 $('#show-orden').toggleClass("active");
-	 $('#show-orden').find('#order-detail-content').toggle(300, 'swing');
+	 $('#order-summary-content').toggleClass("active");
+	 $('#order-summary-content').find('final-resumen-div').toggle(300, 'swing');
 	 });
 
 	$('#show-orden').find('.close-resumen').on('click', function(e){
