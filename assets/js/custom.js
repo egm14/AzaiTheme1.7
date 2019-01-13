@@ -9,103 +9,6 @@ $(window).on('ready', function () {
 		});
 
 $(document).ready(function(){
-	/*==================== SECTION PRODUCT - AJAX BLOCK CART =======================*/
-
-	/*for product page 'add' button...
-     $('#add_to_cart').on("click", function(ee){
-     	ee.preventDefault();
-     	$('#header .cart_block')
-            .stop(true, true)
-            .slideDown(450)
-            .prev()
-           .addClass('active');
-    	setTimeout(function(){
-          $('#header .cart_block')
-            .stop(true, true)
-            .slideUp(450)
-            .prev()
-            .removeClass('active');
-    	},3000);
-     });*/
-
-     
-    
-     var loader = $(".loader-page");
-     /*==================== SPINNER ELEMENT LINK A TO MOBILE  =======================
-		
-
-		var aElem = $('body');
-		
-     	Hammer(aElem[0]).on("tap", function(event){
-     		var aL = event.target;
-     		//console.log("Se ha hecho: "+ event.type);
-     		//console.log(aL.localName);
-     		//console.log("padre : "+ aL.offsetParent.localName);
-     		//console.log(event);
-
-     		if((aL.localName == "a") || (aL.offsetParent.localName == "a")){
-     			console.log("es un elemnto aA -AAAAAA");
-     		 
-     		 /*-------- Depurando variables --------------
-     	
-		     	//var alName = event.handleObj.selector || "undefine";
-		     	var aParentClass = aL.parentNode.className;	
-		     	var aBaseUri = aL.baseURI;
-		     	var BaseUriD = aBaseUri + "#";
-
-		     	if(aL.href){
-		     		var aLink = aL.href;
-		     		console.log("Elemento href: " + aLink);
-		     		var aLinksplit = aLink.split(":")[0];
-		     		/*--------- REcorriendo URL SPLIT - comprobando query ----------
-		     		if(aLink.indexOf('?') != -1){
-					aLinksplit = aLink.split("?")[1].split("=")[0];
-					console.log("Delete link:" + aLinksplit);
-					//console.log("Simbolo de: ?");
-					}
-
-					/*--------Recorriendo URL SPLIT - comprobar si contiene pagination --------
-				var aLinksplit2 = aLink.split("/");
-				var abSplit = aLinksplit2.length - 1;
-				var aLinksplit2b = aLinksplit2[abSplit].split("-")[0];
-				//console.log(aLinksplit2);
-				console.log(aLinksplit2b);
-		     }
-		     	
-		     	//console.log("Selector " + alName);	
-		     	//console.log("data-image: " + aL.dataset.zoomId);
-		     	//console.log("aBaseUri: " + aBaseUri);
-		     	//console.log("location.href: " + location.href);
-		     	//console.log("Split element: " + aLinksplit);
-		     	console.log(aParentClass);
-		     	//console.log(event);
-
-		     	if(aL.parentElement.localName == "a"){
-		     		if(aL.parentElement.href.split(".")[1] == "html"){
-		     		setTimeout(function () {openLoader() }, 300);
-			      			console.log("Spinner a mostrar padre.");
-		     	}else{
-		     		console.log("No se puede mostrar Spinner padre.");
-		     	}
-		     }
-
-				/*-------- Condiciones para aplicar spinner loader -------------
-				if((aL.localName = "a") && (aLinksplit == "http" || aLinksplit == "https")){
-				  	if((aLinksplit !="delete" || aLinksplit != "add") && (aL.href.split(".")[1] != "html#") && (aL.dataset.zoomId != "MagicZoomPlusImageMainImage") && (aParentClass != "shopping_cart") && ("remove_link") && (aLink != aBaseUri) && (aLink !== null) && (aLink != "javascript:;") && (aLink != BaseUriD) && (aL.classList[0] !== "add_to_compare") && (aL.offsetParent.localName !== "h4")){
-			      			setTimeout(function () {openLoader() }, 300);
-			      			console.log("Spinner a mostrar");
-
-					      	if((aLinksplit2b == "page")){
-					      		setTimeout(function () {closeLoader() }, 300);
-					      		console.log("spinner loader out 2");
-				     		}else{}
-			     	}else{
-				     	console.log("No se puede mostrar spinner")}
-				  }
-				  console.log("Spinner in/out");
-			}
-		});*/
-  
 
      setTimeout(function () {openLoader() }, 300);
 			      			console.log("Spinner a mostrar");
@@ -197,7 +100,12 @@ $(document).ready(function(){
     	setTimeout(window.scrollTo(0,600), 600);
     }
     
-
+/*==================== HAVE A CODE BEHAVIOR TITLE =======================*/
+$('#checkout-payment-step').on('click', '.promo-code-title-btn', function(){
+	console.log("encontrado");
+	$('#cart-voucher-promo').find('#promo-code').addClass('show');
+	
+});
  /*==================== SHOW ORDEN RESUMEN BEHAVIOR =======================
 $('#order-summary-content')..on('click', ".btn-order-summary", function(){
 	 //$('#show-orden').find('#order-detail-content').toggleClass("active");

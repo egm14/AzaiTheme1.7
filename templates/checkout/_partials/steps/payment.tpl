@@ -9,7 +9,13 @@
   {if $is_free}
     <p>{l s='No payment needed for this order' d='Shop.Theme.Checkout'}</p>
   {/if}
+
+      
+
   <div class="payment-options{if $is_free} d-none{/if}">
+    <!-- ADD template voucher checkout visible before to payment -->
+      <a class="promo-code-title-btn" href="#cart-voucher-promo">{l s='Have you a code?'}</a>
+       <!--template voucher incluede -->
     {foreach from=$payment_options item="module_options"}
       {foreach from=$module_options item="option"}
         <div id="{$option.id}-container" class="payment-option clearfix custom-control custom-radio">
