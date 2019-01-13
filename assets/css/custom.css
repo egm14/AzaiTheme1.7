@@ -49,6 +49,7 @@ body#checkout #checkout-payment-step .payment-options .payment-option.custom-con
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio .img-fluid{display:none;}
 body#checkout #checkout-payment-step .payment-options .stripe-payment-17{margin:10px 0 10px 0;}
 body#checkout #checkout-payment-step .payment-options img.dsecure{border-radius:0.4rem;height:4rem;}
+body#checkout #checkout-payment-step .payment-options input[data-module-name="paypal"]{z-index:1;opacity:0;top:13px;left:13px;}
 
 /*CustomCheckout*/
 body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem;}
@@ -399,6 +400,9 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
 	 	border-radius:0.8rem;box-shadow:1px 2px 3px gray;
 	 }
 	 #checkout-addresses-step{padding:1.5rem;}
+
+   /*Filter section*/
+   #search_filters_wrapper ..variant-links label span{display:inline-block;}
 	 
 }
 
@@ -450,6 +454,7 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
   body#checkout #checkout-payment-step #order-summary-content div.summary-selected-carrier{text-align:center;}
   body#checkout #checkout-payment-step #order-summary-content #order-items div.order-confirmation-table .p-3 div.order-line div.col-sm-2.col-3{padding-right:0;padding-left:0;}
   body#checkout #checkout-payment-step #order-summary-content div.card.noshadow{margin-bottom:10px;}
+
     /*-------------Footer ---------------*/
     #footer h3 i.fa.fa-angle-down{
       display:none;

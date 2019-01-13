@@ -198,7 +198,7 @@ $(document).ready(function(){
     }
     
 
- /*==================== SHOW ORDEN RESUMEN BEHAVIOR =======================*/
+ /*==================== SHOW ORDEN RESUMEN BEHAVIOR =======================
 $('#order-summary-content')..on('click', ".btn-order-summary", function(){
 	 //$('#show-orden').find('#order-detail-content').toggleClass("active");
 	 $('#order-summary-content').toggleClass("active");
@@ -209,7 +209,7 @@ $('#order-summary-content')..on('click', ".btn-order-summary", function(){
 		 $('#show-orden').find('#order-detail-content').hide();
 		 $('#show-orden').toggleClass("active");
 		 e.preventDefault();
-});
+});*/
 
 
 
