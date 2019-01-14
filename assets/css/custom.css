@@ -564,17 +564,19 @@ p.select.datesendcard {margin: 0px 0px 0px -32px;}/*gift card date*/
  ***************************************************************/
 
 @media (max-width: 550px) {
+	 #footer div.container #redes-desk {font-size: 0.2rem;width: 110%;}
 	/*Items del carrito de compra Fix*/
 	#cart-summary-product-list img.img-fluid {height: 100px;}
 	.cart-summary-product-item .product-title {margin-bottom: -0.0625rem;}
 	.cart-summary-product-item .product-quantity {margin-top: 0px;}
-}
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
 	
+	/* Force table to not be like tables anymore */
+	#rm_single_order_detail_container tbody {display: block;}
+	#rm_single_order_detail_container thead {display: block;}
+	#rm_single_order_detail_container table {display: block;}
+	#rm_single_order_detail_container th {display: block;}
+	#rm_single_order_detail_container td {display: block;}
+	#rm_single_order_detail_container tr {display: block;}
 	/* Hide table headers (but not display: none;, for accessibility) */
 	thead tr { 
 		position: absolute;
@@ -602,28 +604,28 @@ p.select.datesendcard {margin: 0px 0px 0px -32px;}/*gift card date*/
 		padding-right: 10px; 
 		white-space: nowrap;
 	}
-.rm_single_order_row .rm_description_col {
+	.rm_single_order_row .rm_description_col {
     width: 100%;
-}
-.rm_scrollable_div {
+	}
+	.rm_scrollable_div {
     max-width: none;
     overflow-x: scroll;
-}
-.rm_center_align {
+	}
+	.rm_center_align {
     text-align: left;
-}
-.rm_label_hightlight {
+	}
+	.rm_label_hightlight {
     font: 600 18px/22px "Open Sans", sans-serif;
     color: #000000;
     border-top: 0px solid #a9a9a9;
     text-transform: uppercase;
-}
-.rm_single_order_row .rm_order_header {
+	}
+	.rm_single_order_row .rm_order_header {
     border-top: 1px solid #cccccc;
     background-color: #F6F6F6;
     padding: 5px 1px 2px 0px!important;
-}
-.white_content {
+	}
+	.white_content {
     display: block;
     position: fixed;
     top: 0%;
@@ -635,38 +637,38 @@ p.select.datesendcard {margin: 0px 0px 0px -32px;}/*gift card date*/
     left: 0%;
     padding: 18px 18px;
     height: 100%;
-}
-.rm_popup_left {
+	}
+	.rm_popup_left {
     width: 100%;
-}
-.rm_single_order_row .rm_img_col {
+	}
+	.rm_single_order_row .rm_img_col {
     width: 100%;
-}
-.rm_popup_left {
+	}
+	.rm_popup_left {
     width: 150%;
-}
-.rm_popup_right {
+	}
+	.rm_popup_right {
     width: 150%;
-}
-.rm_popup_close_icon {
+	}
+	.rm_popup_close_icon {
     height: 25px;
     width: 25px;
     position: absolute;
     right: 0;
     margin-right: -138px;
     margin-top: -17px;
-}
-.rm_o_total_left {
+	}
+	.rm_o_total_left {
     float: none;
     font-weight: bold;
     font-size: 20px;
     top: 25px;
     position: relative;
-}
-div#rm_popup_pro_info {
+	}
+	div#rm_popup_pro_info {
     height: 0px!important;
-}
-.rm_submit_success_heading {
+	}
+	.rm_submit_success_heading {
     margin-bottom: 67px;
     padding-left: 52px;
     min-height: 50px;
@@ -675,10 +677,11 @@ div#rm_popup_pro_info {
     font-weight: bold;
     position: relative;
     top: 55px;
-}
-.rm_scrollable_div {
+	}
+	.rm_scrollable_div {
     width: 100%;
-}
+	}
+	
 }
 
 @media (max-width: 1024px) and (min-width: 768px){
