@@ -22,10 +22,10 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
-   <!-- <div class="loader-page"> -->
+ <!-- Add loader --->
+  <div class="loader-page">
       <!--spinner 1<div class="lds-ripple"><div></div><div></div></div>-->
-     <!-- spinner 2--><div class="spinner2"><div class="dot1"></div><div class="dot2"></div>
+     <!-- spinner 2--><div class="spinner2"><div class="dot1"></div><div class="dot2"></div></div>
   </div> 
 {assign var='displayMegaHeader' value={hook h='jxMegaLayoutHeader'}}
 {if $displayMegaHeader}

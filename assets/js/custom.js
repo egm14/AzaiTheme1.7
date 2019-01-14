@@ -1,17 +1,19 @@
  
 /*=========== Fancy spinner - Windows ==========*/
-$(window).on('ready', function () {
-	      setTimeout(function () {
+
+$(document).ready(function(){
+		//Close loader
+		setTimeout(function () {
 		    //$(".loader-page").css({visibility:"hidden",opacity:"0"})
 		    $(".loader-page").hide();
 		  }, 300);
 		  console.log("Spinner fuera luego del documento estar ready");
-		});
 
-$(document).ready(function(){
 
-     setTimeout(function () {openLoader() }, 300);
-			      			console.log("Spinner a mostrar");
+		var loader = $(".loader-page");
+
+     	/*setTimeout(function () {openLoader() }, 300);
+			      console.log("Spinner a mostrar");*/
 
      	 function openLoader(e){
 			//loader.css({visibility:"visibe",opacity:"100"});
