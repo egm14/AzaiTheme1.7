@@ -95,7 +95,7 @@ body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem
  header .col-sm-12 i{color:black!important;}
  #footer div.container div.footer-column div.col-12:nth-child(1n+2){border-left:1.5px solid #ebebeb;}
  #footer div.container div.text-center{margin-top:40px;}
- #footer div.container #redes-desk {font-size: 0.2rem;width: 110%;}
+ #footer div.container #redes-desk{font-size:1.2rem;}
  #footer .footer-block:not(.block-social) ul li a {color:gray;}
  .footer-container #footer h4{font:400 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
 
@@ -564,6 +564,7 @@ p.select.datesendcard {margin: 0px 0px 0px -32px;}/*gift card date*/
  ***************************************************************/
 
 @media (max-width: 550px) {
+	 #footer div.container #redes-desk {font-size: 0.2rem;width: 110%;}
 	/*Items del carrito de compra Fix*/
 	#cart-summary-product-list img.img-fluid {height: 100px;}
 	.cart-summary-product-item .product-title {margin-bottom: -0.0625rem;}
@@ -680,6 +681,7 @@ p.select.datesendcard {margin: 0px 0px 0px -32px;}/*gift card date*/
 	.rm_scrollable_div {
     width: 100%;
 	}
+	
 }
 
 @media (max-width: 1024px) and (min-width: 768px){
