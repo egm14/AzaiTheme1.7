@@ -56,6 +56,9 @@ body#checkout #js-checkout-summary #cart-voucher-promo #promo-code form{backgrou
 body#checkout #js-checkout-summary #cart-voucher-promo #promo-code form .form-control::placeholder{background-color:white;}
 body#checkout #js-checkout-summary #cart-voucher-promo #promo-code form button.btn.btn-secondary{background-color:white;}
 
+/*Preview Image*/
+body#product #content .images-container{background-color:inherit!important;}
+
 /*CustomCheckout*/
 body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem;}
 
@@ -79,9 +82,10 @@ body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem
  div.product-right-column .custom-radio .custom-control-label::before{width:1.3rem;height:1.3rem;top:.1rem;}
  div.product-right-column .custom-radio .custom-control-label::after{width:.9rem;height:.9rem;top:.3rem;}
  div.product-right-column #add-to-cart-or-refresh .product-variants .product-variants-item ul{margin-bottom:0;}
- div.product-right-column div.product-add-to-cart{margin-top:2rem;margin-bottom:.7rem;}
+ div.product-right-column div.product-add-to-cart{margin-top:2rem;margin-bottom:.3rem;}
  div.product-right-column .product-variants{margin-bottom:1.2rem;}
  div.product-right-column .product-additional-info .social-sharing ul:before{content:"Share:";display:inline-block; margin-right:2rem;}
+ div.product-right-column .product-additional-info p.buttons_bottom_block{margin-top:1.1rem;}
  #product span.discount {color: red;}
  #product span.regular-price {color: #b4b0b0;}
 
