@@ -337,7 +337,7 @@ body#product .product-additional-info #wishlist_button{
   header#header {z-index:999;}/*Posicion Principal del header*/
   /*#header .stickUpTop:not(.isStuck) .stick-up{padding:0!important;}*/ /* Verificar */
   #footer div.container{padding:50px 170px 25px 170px}
-  #footer .footer-column .col-12.text-center.align-items-md-center.well-1{padding-bottom:0;}
+  #footer .col-12.text-center.align-items-md-center.well-1{padding-bottom:0;}
   #footer div.container#redes-desk{padding:0px;}
  .grid .product-miniature .product-miniature-container .product-miniature-information div{margin-top:0px;margin-bottom:0px!important;}
  /*Icon functional-buttons miniture - page Category*/
