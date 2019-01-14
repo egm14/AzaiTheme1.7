@@ -254,6 +254,10 @@ body#checkout #checkout-delivery-step .form-fields .delivery-options hr{margin-t
 body#checkout #checkout-delivery-step .custom-radio .custom-control-label::before{top:-.862rem;}
 body#checkout #checkout-delivery-step .custom-radio .custom-control-label::after{top:-0.682rem;}
 
+/*Checkout - personal information */
+body#checkout #checkout-personal-information-step ul.nav li.nav-item a{text-decoration:underline;font-size:.85rem;font-weight:600;}
+body#checkout #checkout-personal-information-step label.form-control-label, body#checkout .js-address-form label.form-control-label{font-size:1rem;}
+
 /*checkout - Payment Step */
 body#checkout #checkout-payment-step #order-summary-content div.row div.card.noshadow{padding:1rem;font-size:.8rem;}
 body#checkout #checkout-payment-step #order-summary-content div.summary-selected-carrier div.logo-container img{max-width:30px;}
@@ -331,6 +335,7 @@ body#product .product-additional-info #wishlist_button{
   header#header {z-index:999;}/*Posicion Principal del header*/
   /*#header .stickUpTop:not(.isStuck) .stick-up{padding:0!important;}*/ /* Verificar */
   #footer div.container{padding:50px 170px 25px 170px}
+  #footer .footer-column .col-12.text-center.align-items-md-center.well-1{padding-bottom:0;}
   #footer div.container#redes-desk{padding:0px;}
  .grid .product-miniature .product-miniature-container .product-miniature-information div{margin-top:0px;margin-bottom:0px!important;}
  /*Icon functional-buttons miniture - page Category*/
@@ -360,7 +365,7 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
    .jxsearch-wrapper.active-jxsearch #jxsearchwrapper #jx_search_query{border-top-right-radius:10px;border-bottom-right-radius:10px;}
    /*iconos page category*/
    .product-miniature-information .functional-buttons .wishlist .wishlist-keyword{display:none;}
-   .product-miniature-information .functional-buttons .wishlist a i:before{color:#dfdfdf;font-size:1.375rem;}
+   .product-miniature-information .functional-buttons .wishlist a i:before{color:#dfdfdf;font-size:1.375rem;font-style:normal;}
    .product-miniature-information .functional-buttons .wishlist a i:hover::before{color:black;}
    .product-miniature-information .functional-buttons .wishlist:hover .allert_note{display:block!important;margin-top:5px;}
    .product-miniature-information .functional-buttons .wishlist .buttons_bottom_block a#wishlist_button{color:#dfdfdf;}
