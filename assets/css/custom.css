@@ -747,8 +747,8 @@ ul.menu.clearfix.top-level-menu.jxmegamenu_item {margin: 0px -13px 0px -13px;}
  ******************* Screen Max-width 375px *********************
  ***************************************************************/
 @media only screen and (max-width:375px){
- 
-}
+ .breadcrumb {display: -webkit-box!important;/* display: flex; */}
+
 }
 
 /***************************************************************
