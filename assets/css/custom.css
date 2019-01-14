@@ -284,7 +284,9 @@ body#product .product-additional-info #wishlist_button{
 	/*#cart-summary-product-list .media.align-items-center {height: 52px!important;}*/
 	.cart-summary-product-item .product-title {margin-bottom: -0.0625rem;}
 	.cart-summary-product-item .product-quantity {margin-top: 0px;}
-
+	/*Add Border solid Login Form*/
+.jx-header-account-wrapper .header-login-content .form-group .btn-show-password, .jx-header-account-wrapper .header-login-content .form-group .form-control {border-top: solid 0.1px #f0f0f0;border-left: none;border-right: solid 0.1px #f0f0f0;border-bottom: solid 0.1px #f0f0f0;}
+.jx-header-account-wrapper .header-login-content .form-group .form-control {text-align: center;border: solid 0.1px;}
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/
