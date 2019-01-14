@@ -38,9 +38,9 @@
 <p class="buttons_bottom_block">
         <a title="{l s='Add to wishlist' mod='advansedwishlist'}" onclick="return false;">
             {if $advansedwishlistis17 == 1}
-            <i class="material-icons">schedule</i>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
             {else}
-            <i class="icon-clock-o"></i>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
             {/if}
         </a>
 </p>        
