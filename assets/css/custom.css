@@ -216,10 +216,10 @@ body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem
 
  /*Checkout nav*/
  body#checkout .nav-tabs li a.reachable.active::before{
- 	animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) alternate infinite;
+ 	animation: lds-ripple-2 1s cubic-bezier(0, 0.2, 0.8, 1) alternate infinite;
  }
 
-@keyframes lds-ripple {
+@keyframes lds-ripple-2 {
   0% {
     transform:scale(1);
     background-color:#f2f2f2;
@@ -351,7 +351,7 @@ body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem
 #checkout-addresses-step .js-address-form #delivery-addresses article.selected .address-footer .btn-link {color:white;}
 
 /*modal cart*/
-.cart-summary.open-slidebar .block-cart-body .cart-footer a.btn{margin-bottom:2rem;color: white;background: black;}
+.cart-summary.open-slidebar .block-cart-body .cart-footer a.btn{margin-bottom:2rem;color: white;background: black;box-shadow:none;}
 
 /*Shipping Carrier - checkout Step*/
 body#checkout .checkout-step .delivery-options .delivery-option-item{padding:0!important;}
