@@ -8,6 +8,7 @@ By Azai.com theme v1.7
 /***************************************************************
  ******************* General CSS Changel  *********************
  ***************************************************************/
+
  [class^="icon-"]::before{font-family:FontAwesome;font-style:normal;}
  span.it_04953631.top-level-menu-li-span.jxmegamenu_item.sf-with-ul {color: black;} 
  section.facet .facet-list .slider-container .back-bar .pointer {background: #000000;}
@@ -33,6 +34,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 span.discount-percentage.discount-product {color: red;}
 .block-categories .arrows .arrow-down, .block-categories .arrows .arrow-right {cursor: pointer;margin-left: .3125rem;color: #2f2c2f;left: 88%;position: absolute;font-size: 15px;height: 10%;width: 10%}
 
+
 /*Btn to show resumen cart at final-summary-order*/
 body#checkout #checkout-payment-step .Payment-method-title{font-weight:600;}
 body#checkout #checkout-payment-step  .btn-order-summary h4.black{font-size:1.1rem;cursor:pointer;background-color:black;color:white;padding:5px 10px;margin-left:-10px;margin-right:-10px;}
@@ -43,6 +45,7 @@ body#cart .cart-line-product-actions a{margin-bottom:2rem;}
 body#cart a.remove-from-cart.close{width:1.1rem;}
 
 /*Stripe payment methods*/
+body#checkout, body#cart{font-size:.87rem!important;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio{background-color:black;color:white;padding:10px 10px;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio:hover{background-color:#1d1b1b;font-weight:600;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label{width:100%;}
