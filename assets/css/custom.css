@@ -639,7 +639,7 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
  footer#footer .container .row .col-12.col-sm-12.col-md-3{border-bottom:1px solid #cccccc;border-left:0px;}
  footer#footer .link-list-title{margin:0!important;padding-top:.4rem;padding-bottom:.4rem;font-size:1rem;}
  footer#footer .jxml-copyright{margin-top:1rem;}
-
+body#category .grid .product-miniature .product-miniature-container .product-miniature-information .product-prices-md{text-align:center;display:flow-root;}
 }
 
 
