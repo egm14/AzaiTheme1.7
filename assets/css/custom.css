@@ -98,7 +98,7 @@ body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem
  #footer div.container #redes-desk{font-size:1.2rem;}
  #footer .footer-block:not(.block-social) ul li a {color:gray;}
  .footer-container #footer h4{font:400 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
- #footer {padding-top: 5px;border-top: solid 0.1px #cccccc;}
+ #footer {padding-top: 5px;}
 
 
 /*------------------- HEADER - SECTION ----------------*/
