@@ -388,6 +388,7 @@ body#product .product-additional-info #wishlist_button span{
 body#product .product-additional-info #wishlist_button{
   margin-top:.635rem;
 }
+body#product #wishlist_button_block{margin-top:2rem;}
 /*Items del carrito de compra Fix*/
 	#cart-summary-product-list img.img-fluid {height: 100px;}
 	/*#cart-summary-product-list .media.align-items-center {height: 52px!important;}*/
