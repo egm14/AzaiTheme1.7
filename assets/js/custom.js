@@ -25,53 +25,48 @@ $(document).ready(function(){
 			loader.hide();
 			console.log("Estoy cerrando loader");
 	     }
-	  /*==================== FIX COLOR RULE FILTER - COLUMN LEFT  =======================*/
+	/*==================== FIX COLOR RULE FILTER - COLUMN LEFT  =======================*/
+	 	
 	 	var filterColor = $('#search_filters');
+	 	//verificando si existe el div #serach_filters
 	 	if(filterColor){
-	 		console.log("EStán los filtros activados");
-
+	 		/*console.log("EStán los filtros activados");*/
+	 		//Buscando div sesion con clase facet
 	 		var filt = filterColor.find('section.facet');
 	 		filt.each(function(){
+	 			//Recorriendo la lista de div section
 	 			var titleFilter = this.firstElementChild.innerText;
-	 			console.log(titleFilter);
-	 			if(titleFilter == "Peso" || titleFilter == "peso"){
-	 				console.log("color encontrado");
-	 				//console.log(this);
+	 			/*console.log(titleFilter);*/
+	 			//filtrando el section que posea el title Color
+	 			if(titleFilter == "Color" || titleFilter == "color"){ 
+	 				/*console.log("color encontrado");
+	 				console.log(this);
 	 				console.log(this.childNodes);
-	 				console.log(this.childNodes[2]);
+	 				console.log(this.childNodes[2]);*/
 	 				var list = this.childNodes;
 	 				var sum = 0;
-	 				//console.log("número de hijos" + this.childNodes.length);
-	 					//$.each(this.childNodes, function(index, value){
+	 				/*console.log("número de hijos" + this.childNodes.length);*/
+	 					
 	 					for(var num in list){
 	 						sum += list[num];
-	 						console.log("buscando UL");
-	 						console.log("numeros: " + num);
+	 						/*console.log("buscando UL");
+	 						console.log("numeros: " + num);*/
 
 	 						var ul = this.childNodes[num];
-	 						console.log(ul);
-
+	 						/*console.log(ul);*/
+	 						//verificando si fue encontrado el ul
 	 						if(ul.localName == "ul"){
-	 							console.log("Encontrado: " + ul.localName);
-	 							console.log(ul.attributes.id.nodeValue);
+	 							/*console.log("Encontrado: " + ul.localName);
+	 							console.log(ul.attributes.id.nodeValue);*/
 	 							var add = "#"+ul.attributes.id.nodeValue;
 	 							//console.log(add);
 	 							$(add).addClass("variant-links");
 	 						}
 	 					}
-
-		 				/*for(a=0; a>this.childNodes.length; a++){
-		 					console.log(this.childNodes[a].nodeName);
-		 					console.log("buscando UL");
-		 				}*/
-		 				
 	 			}
-	 			console.log("llevando filt");
+	 			/*console.log("Node no encontrado");*/
 	 				});
 	 	}
-	 		
-	 	
-	  
      /*==================== SIZE CHART  =======================*/
 	  
      /*sSIZE-CHART-CONTENT*/
