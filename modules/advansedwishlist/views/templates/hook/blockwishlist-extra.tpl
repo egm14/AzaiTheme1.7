@@ -30,7 +30,8 @@ var added_to_wishlist_btn = '{l s='Added to wishlist' mod='advansedwishlist' js=
 var add_to_wishlist_btn = '{l s='Add to wishlist' mod='advansedwishlist' js=1}';
 var idDefaultWishlist = '{$id_wishlist}';
 {if $advansedwishlistis17 == 1}
-var wishlist_btn_icon = '<i class="material-icons">Hola</i>';
+/*var wishlist_btn_icon = '<i class="material-icons">Hola</i>';*/
+var wishlist_btn_icon = '<i class="fa fa-heart" aria-hidden="true"></i>';
 var ps_ws_version = 'advansedwishlistis17';
 {else}
 var wishlist_btn_icon = '<i class="icon icon-heart"></i>';
