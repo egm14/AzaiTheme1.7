@@ -880,7 +880,9 @@ ul.menu.clearfix.top-level-menu.jxmegamenu_item {margin: 0px -13px 0px -13px;}
 
  /*ACtive*/
  .active{display:block;}
-/*swipe*/   
+ 
+ @media only screen and (max-width: 420px){
+    /*swipe*/   
 .stage {
   width: 100%;
   padding: 7rem 2rem 2rem;
@@ -1172,3 +1174,13 @@ ul.menu.clearfix.top-level-menu.jxmegamenu_item {margin: 0px -13px 0px -13px;}
     -webkit-transform: scaleY(1.2) skew(0);
     transform: scaleY(1.2) skew(0);
   }
+}
+div#stage {
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    height: 462px;
+    width: 100%;
+}
+
+}
