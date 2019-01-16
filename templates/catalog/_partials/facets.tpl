@@ -53,12 +53,12 @@
             <span>{$facet.label}</span>
             <i class="fa fa-angle-down ml-1" aria-hidden="true"></i>
           </h1>
-            {if $facet.widgetType !== 'dropdown'}
+
+            {if $facet.widgetType != 'dropdown'}
 
               {block name='facet_item_other'}
-                <!--hola <ul id="facet_{$_expand_id}" class="facet-list collapse d-xl-block{if !$_collapse} show{/if}{if isset($filter.properties.color) || isset($filter.properties.texture)} variant-links list-inline{/if}"> -->
-                  {if isset($filter.properties.color)}<p>{l s='hola es una prueba'}</p>{/if}
-                  <ul id="facet_{$_expand_id}" class="{if isset($filter.properties.color)}list-inline-item d-inline-block{/if}facet-list collapse d-xl-block{if !$_collapse} show{/if}">
+                <ul id="facet_{$_expand_id}" class="facet-list collapse d-xl-block{if !$_collapse} show{/if}{if isset($filter.properties.color) || isset($filter.properties.texture)} variant-links list-inline{/if}"> 
+               
 
                   {foreach from=$facet.filters key=filter_key item="filter"}
                     {if $filter.displayed}

@@ -25,6 +25,53 @@ $(document).ready(function(){
 			loader.hide();
 			console.log("Estoy cerrando loader");
 	     }
+	  /*==================== FIX COLOR RULE FILTER - COLUMN LEFT  =======================*/
+	 	var filterColor = $('#search_filters');
+	 	if(filterColor){
+	 		console.log("EStán los filtros activados");
+
+	 		var filt = filterColor.find('section.facet');
+	 		filt.each(function(){
+	 			var titleFilter = this.firstElementChild.innerText;
+	 			console.log(titleFilter);
+	 			if(titleFilter == "Peso" || titleFilter == "peso"){
+	 				console.log("color encontrado");
+	 				//console.log(this);
+	 				console.log(this.childNodes);
+	 				console.log(this.childNodes[2]);
+	 				var list = this.childNodes;
+	 				var sum = 0;
+	 				//console.log("número de hijos" + this.childNodes.length);
+	 					//$.each(this.childNodes, function(index, value){
+	 					for(var num in list){
+	 						sum += list[num];
+	 						console.log("buscando UL");
+	 						console.log("numeros: " + num);
+
+	 						var ul = this.childNodes[num];
+	 						console.log(ul);
+
+	 						if(ul.localName == "ul"){
+	 							console.log("Encontrado: " + ul.localName);
+	 							console.log(ul.attributes.id.nodeValue);
+	 							var add = "#"+ul.attributes.id.nodeValue;
+	 							//console.log(add);
+	 							$(add).addClass("variant-links");
+	 						}
+	 					}
+
+		 				/*for(a=0; a>this.childNodes.length; a++){
+		 					console.log(this.childNodes[a].nodeName);
+		 					console.log("buscando UL");
+		 				}*/
+		 				
+	 			}
+	 			console.log("llevando filt");
+	 				});
+	 	}
+	 		
+	 	
+	  
      /*==================== SIZE CHART  =======================*/
 	  
      /*sSIZE-CHART-CONTENT*/
