@@ -70,7 +70,6 @@ $(document).ready(function(){
      /*==================== SIZE CHART  =======================*/
 	  
      /*sSIZE-CHART-CONTENT*/
-
      	$('div.container-woman-size-chart').find('ul.tabs li').click(function(e){
 		      e.preventDefault();
 
@@ -85,7 +84,6 @@ $(document).ready(function(){
 	   
   /*========= END SIZE CHART ==============*/
 
-  
 
 	/*==================== LOGIN-CONTENT DISPLAY WHEN PRESS MENU =======================*/
 	// VARIABLE AND ACTION TO OPEN MOBILE MENU COMPLETE
@@ -150,6 +148,23 @@ $('#checkout-payment-step').on('click', '.promo-code-title-btn', function(){
 	$('#cart-voucher-promo').find('#promo-code').addClass('show');
 	
 });
+
+/*==================== CHANGE COLOR ADD TO BAG =======================*/
+
+$('#box-cart-btn').on('click', function(e){
+	console.log("agregando clase gradiend-border");
+	console.log(e);
+	$('#box-cart-btn').addClass("gradient-border");	
+	setTimeout(butNormal, 5000);
+});
+function butNormal(){
+	$('#box-cart-btn').removeClass("gradient-border");
+	console.log("Removiendo clase gradiend-border");
+
+}
+
+
+
  /*==================== SHOW ORDEN RESUMEN BEHAVIOR =======================
 $('#order-summary-content')..on('click', ".btn-order-summary", function(){
 	 //$('#show-orden').find('#order-detail-content').toggleClass("active");
@@ -162,6 +177,7 @@ $('#order-summary-content')..on('click', ".btn-order-summary", function(){
 		 $('#show-orden').toggleClass("active");
 		 e.preventDefault();
 });*/
+
 
 
 
