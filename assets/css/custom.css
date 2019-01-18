@@ -417,6 +417,9 @@ body#checkout #checkout-payment-step #order-summary-content div.summary-selected
 body#checkout #checkout-payment-step #order-summary-content #order-items div.order-confirmation-table hr{margin-top:0rem;margin-bottom:0rem;}
 body#checkout #checkout-payment-step #order-summary-content #order-items div.order-confirmation-table{border-width:.1rem;}
 
+/*Cart body*/
+body#cart #advansedwishlist_block{display:none!important;}
+
 /*CopyRight Footer*/
 footer#footer .jxml-copyright{margin-top:1.5rem;}
 
@@ -431,6 +434,7 @@ body#product .product-additional-info #wishlist_button span{
 }
 body#product .product-additional-info #wishlist_button{
   margin-top:.635rem;
+  font-size:1rem;
 }
 body#product #wishlist_button_block{margin-top:2rem;}
 /*Items del carrito de compra Fix*/
