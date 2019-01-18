@@ -85,42 +85,11 @@ $(document).ready(function(){
   /*========= END SIZE CHART ==============*/
 
 
-	/*==================== LOGIN-CONTENT DISPLAY WHEN PRESS MENU =======================*/
-	// VARIABLE AND ACTION TO OPEN MOBILE MENU COMPLETE
-	var mobilmenu = $('.top_menu').find('.menu-title');
-	var menulogin = $('#header-login');
-	
-	mobilmenu.on("touchstart", OpenMobilMenuIcon);
-	$('.icon-menu-login').on("touchstart", OpenMobilMenu);
+	  /*==================== MENU LOGIN SESIÓN - MOBILE =======================*/
 
-	//OPEN MOBILE MENU FROM FOOTER -> CATEGORY MENU
-	$('#footer').find('section.blockcategories_footer.footer-block h4').on("touchstart", function(e){
-		e.preventDefault();
-		OpenMobilMenuIcon();
-		$('ul.top-level-menu').show().animate({ scrollTop: '0px'});
-		console.log("Hiciste click en category footer");
-	});
-
-		//FUNCTION TO OPEN ICON UPSET TO MOBILE MENU
-		function OpenMobilMenuIcon(e){
-			$('.top_menu').find('.iconos-menu-mobile').toggleClass('active-imb');
-			console.log('click creado para abrir iconos mobile menu');
-		}
-		//FUNCTION TO SHOW MOBILE MENU
-	 	function OpenMobilMenu(e){
-			var menuloginul = menulogin.find('ul.header-login-content');
-			menulogin.find('ul.header-login-content').toggleClass("active-b");
-			menulogin.find('.tm_header_user_info').toggleClass("active");
-			menulogin.find(".menu-myaccount").toggleClass("active-b");
-			
-			/*---------- SCROLL TO BOTTOM WHEN OPEN DE LOGIN MENU-----------*/
-			setTimeout($('ul.top-level-menu').animate({ scrollTop: $(document).height() }, 'slow'), 600);
-	      	console.log('slow down icon menu');
-      	
-      }
-
-	//
-    /*==================== MENU LOGIN SESIÓN - MOBILE =======================*/
+	  $('#jx-header-account-link').on('click tap', function(){
+	  	$('.jx-header-account').find('.dropdown-menu-right').removeClass('active-dropdown-login')
+	  });
 	
 /*==================== SECTION CHECKOUT - FORM SLIDEDOWN =======================*/
 	// LOGIN FORM

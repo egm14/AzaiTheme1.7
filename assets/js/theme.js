@@ -588,7 +588,241 @@ function(t, e, n) {
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  */
-var i;(i=jQuery).fn.scrollbox=function(t){return(t=i.extend({linear:!1,startDelay:2,delay:3,step:5,speed:32,switchItems:1,direction:"vertical",distance:"auto",autoPlay:!0,onMouseOverPause:!0,paused:!1,queue:null,listElement:"ul",listItemElement:"li",infiniteLoop:!0,switchAmount:0,afterForward:null,afterBackward:null,triggerStackable:!1},t)).scrollOffset="vertical"===t.direction?"scrollTop":"scrollLeft",t.queue&&(t.queue=i("#"+t.queue)),this.each(function(){var e,n,o,r,s,a,l,c,u,f=i(this),d=null,h=null,p=!1,m=0,g=0;t.onMouseOverPause&&(f.bind("mouseover",function(){p=!0}),f.bind("mouseout",function(){p=!1})),e=f.children(t.listElement+":first-child"),!1===t.infiniteLoop&&0===t.switchAmount&&(t.switchAmount=e.children().length),a=function(){var o,s,a,l,c;if(!p&&(o=e.children(t.listItemElement+":first-child"),l="auto"!==t.distance?t.distance:"vertical"===t.direction?o.outerHeight(!0):o.outerWidth(!0),t.linear?a=Math.min(f[0][t.scrollOffset]+t.step,l):(c=Math.max(3,parseInt(.3*(l-f[0][t.scrollOffset]),10)),a=Math.min(f[0][t.scrollOffset]+c,l)),f[0][t.scrollOffset]=a,a>=l)){for(s=0;s<t.switchItems;s++)t.queue&&t.queue.find(t.listItemElement).length>0?(e.append(t.queue.find(t.listItemElement)[0]),e.children(t.listItemElement+":first-child").remove()):e.append(e.children(t.listItemElement+":first-child")),++m;if(f[0][t.scrollOffset]=0,clearInterval(d),d=null,i.isFunction(t.afterForward)&&t.afterForward.call(f,{switchCount:m,currentFirstChild:e.children(t.listItemElement+":first-child")}),t.triggerStackable&&0!==g)return void n();if(!1===t.infiniteLoop&&m>=t.switchAmount)return;t.autoPlay&&(h=setTimeout(r,1e3*t.delay))}},l=function(){if(!p){var o,s,a,l,c;if(0===f[0][t.scrollOffset]){for(s=0;s<t.switchItems;s++)e.children(t.listItemElement+":last-child").insertBefore(e.children(t.listItemElement+":first-child"));o=e.children(t.listItemElement+":first-child"),l="auto"!==t.distance?t.distance:"vertical"===t.direction?o.height():o.width(),f[0][t.scrollOffset]=l}if(t.linear?a=Math.max(f[0][t.scrollOffset]-t.step,0):(c=Math.max(3,parseInt(.3*f[0][t.scrollOffset],10)),a=Math.max(f[0][t.scrollOffset]-c,0)),f[0][t.scrollOffset]=a,0===a){if(--m,clearInterval(d),d=null,i.isFunction(t.afterBackward)&&t.afterBackward.call(f,{switchCount:m,currentFirstChild:e.children(t.listItemElement+":first-child")}),t.triggerStackable&&0!==g)return void n();t.autoPlay&&(h=setTimeout(r,1e3*t.delay))}}},n=function(){0!==g&&(g>0?(g--,h=setTimeout(r,0)):(g++,h=setTimeout(o,0)))},r=function(){clearInterval(d),d=setInterval(a,t.speed)},o=function(){clearInterval(d),d=setInterval(l,t.speed)},c=function(){t.autoPlay=!0,p=!1,clearInterval(d),d=setInterval(a,t.speed)},u=function(){p=!0},s=function(e){t.delay=e||t.delay,clearTimeout(h),t.autoPlay&&(h=setTimeout(r,1e3*t.delay))},t.autoPlay&&(h=setTimeout(r,1e3*t.startDelay)),f.bind("resetClock",function(t){s(t)}),f.bind("forward",function(){t.triggerStackable?null!==d?g++:r():(clearTimeout(h),r())}),f.bind("backward",function(){t.triggerStackable?null!==d?g--:o():(clearTimeout(h),o())}),f.bind("pauseHover",function(){u()}),f.bind("forwardHover",function(){c()}),f.bind("speedUp",function(e,n){"undefined"===n&&(n=Math.max(1,parseInt(t.speed/2,10))),t.speed=n}),f.bind("speedDown",function(e,n){"undefined"===n&&(n=2*t.speed),t.speed=n}),f.bind("updateConfig",function(e,n){t=i.extend(t,n)})})}},function(t,e,n){"use strict";$('[class*="js-slidebar-"]').each(function(){var t=$(this).attr("class").match(/js-slidebar-(\w+)/i)[1];$(this).find(".slidebar-toggle-"+t).attr("data-id-slidebar",t),$(this).find(".slidebar-body-"+t).attr("data-off-canvas",$(this).attr("class").match(/js-slidebar-(\S+)/i)[1].replace("-"," ").replace("-"," ")).prepend('<button type="button" class="closeSlidebar fa fa-times" aria-label="Close"></button>')}),$(".clone-slidebar-toggle").each(function(){$("body").append('<span id="'+$(this).attr("data-id-slidebar")+'" class="slidebar-toggle" data-id-slidebar="'+$(this).attr("data-id-slidebar")+'"></span>')}),$(document).on("click",".clone-slidebar-toggle",function(t){t.preventDefault(),$("#"+$(this).attr("data-id-slidebar")).trigger("click")});var i=new function(){var t=$("[data-canvas]"),e={},n=!1,i=!1,o=["top","right","bottom","left"],r=["reveal","push","overlay","shift"],s=function(n){var i=$(),o="0",r=1e3*parseFloat(e[n].element.css("transitionDuration"),10);return"reveal"!==e[n].style&&"push"!==e[n].style&&"shift"!==e[n].style||(i=i.add(t)),"push"!==e[n].style&&"overlay"!==e[n].style&&"shift"!==e[n].style||(i=i.add(e[n].element)),!$('[data-id-slidebar="'+n+'"]').hasClass("slidebar-toggle-animated")||"push"!==e[n].style&&"overlay"!==e[n].style&&"shift"!==e[n].style||(i=i.add($('[data-id-slidebar="'+n+'"]'))),e[n].active&&("top"===e[n].side?o=e[n].element.css("height")+" 0 -"+e[n].element.css("height"):"right"===e[n].side?o="0 0 0 -"+e[n].element.css("width"):"bottom"===e[n].side?o="-"+e[n].element.css("height")+" 0 0":"left"===e[n].side&&(o="0 -"+e[n].element.css("width")+" 0 "+e[n].element.css("width"))),{elements:i,amount:o,duration:r}},a=function(t){return!!e.hasOwnProperty(t)};this.init=function(t){if(n)throw"Slidebars has already been initialized.";i||($("[data-off-canvas]").each(function(){var t=$(this).attr("data-off-canvas").split(" ",3);if(!t||!t[0]||-1===o.indexOf(t[1])||-1===r.indexOf(t[2]))throw"Error registering Slidebar, please specifiy a valid id, side and style'.";!function(t,n,i,o){if(a(t))throw"Error registering Slidebar, a Slidebar with id '"+t+"' already exists.";e[t]={id:t,side:n,style:i,element:o,active:!1}}(t[0],t[1],t[2],$(this))}),i=!0),n=!0,this.css(),$(l).trigger("init"),"function"==typeof t&&t()},this.exit=function(t){if(!n)throw"Slidebars hasn't been initialized.";var e=function(){n=!1,$(l).trigger("exit"),"function"==typeof t&&t()};this.getActiveSlidebar()?this.close(e):e()},this.css=function(t){if(!n)throw"Slidebars hasn't been initialized.";this.getActiveSlidebar()&&this.open(this.getActiveSlidebar()),$(l).trigger("css"),"function"==typeof t&&t()},this.open=function(t,i){if(!n)throw"Slidebars hasn't been initialized.";if(!t)throw"You must pass a Slidebar id.";if(!a(t))throw"Error opening Slidebar, there is no Slidebar with id '"+t+"'.";var o=function(){e[t].active=!0,e[t].element.css("visibility","visible"),$(l).trigger("opening",[e[t].id]);var n=s(t);$("html").addClass("slidebar-active-wrapper"),n.elements.css({"transition-duration":n.duration+"ms",margin:n.amount}).addClass("open-slidebar"),setTimeout(function(){$(l).trigger("opened",[e[t].id]),"function"==typeof i&&i()},n.duration)};this.getActiveSlidebar()&&this.getActiveSlidebar()!==t?this.close(o):o()},this.close=function(t,i){if("function"==typeof t&&(i=t,t=null),!n)throw"Slidebars hasn't been initialized.";if(t&&!a(t))throw"Error closing Slidebar, there is no Slidebar with id '"+t+"'.";if(t||(t=this.getActiveSlidebar()),t&&e[t].active){e[t].active=!1,$(l).trigger("closing",[e[t].id]);var o=s(t);o.elements.css("margin","").removeClass("open-slidebar"),setTimeout(function(){$("html").removeClass("slidebar-active-wrapper")},o.duration),setTimeout(function(){o.elements.css("transition-duration",""),e[t].element.css("visibility",""),$(l).trigger("closed",[e[t].id]),"function"==typeof i&&i()},o.duration)}},this.toggle=function(t,i){if(!n)throw"Slidebars hasn't been initialized.";if(!t)throw"You must pass a Slidebar id.";if(!a(t))throw"Error toggling Slidebar, there is no Slidebar with id '"+t+"'.";e[t].active?this.close(t,function(){"function"==typeof i&&i()}):this.open(t,function(){"function"==typeof i&&i()})},this.isActive=function(){return n},this.isActiveSlidebar=function(t){if(!n)throw"Slidebars hasn't been initialized.";if(!t)throw"You must provide a Slidebar id.";if(!a(t))throw"Error retrieving Slidebar, there is no Slidebar with id '"+t+"'.";return e[t].active},this.getActiveSlidebar=function(){if(!n)throw"Slidebars hasn't been initialized.";var t=!1;for(var i in e)if(a(i)&&e[i].active){t=e[i].id;break}return t},this.getSlidebars=function(){if(!n)throw"Slidebars hasn't been initialized.";var t=[];for(var i in e)a(i)&&t.push(e[i].id);return t},this.getSlidebar=function(t){if(!n)throw"Slidebars hasn't been initialized.";if(!t)throw"You must pass a Slidebar id.";if(!a(t))throw"Error retrieving Slidebar, there is no Slidebar with id '"+t+"'.";return e[t]},this.events={};var l=this.events;$(window).on("resize",this.css.bind(this))};i.init(),$('[class*="slidebar-toggle"]').each(function(){var t=$(this).attr("data-id-slidebar");$(this).on("click",function(e){$(this).hasClass("inactive-device")||(e.stopPropagation(),e.preventDefault(),i.toggle(t),$(this).toggleClass("active-sl-toogle"))})}),$(document).on("click",".js-close-any",function(t){i.getActiveSlidebar()&&!$(t.target).closest("[data-off-canvas]").hasClass("open-slidebar")&&(t.preventDefault(),t.stopPropagation(),i.close(),$('[class*="slidebar-toggle"]').removeClass("active-sl-toogle"))}),$("[data-off-canvas] button.closeSlidebar").on("click",function(t){t.preventDefault(),t.stopPropagation(),i.close()}),$(i.events).on("opening",function(){$("[data-canvas]").addClass("js-close-any")}),$(i.events).on("closing",function(){$("[data-canvas]").removeClass("js-close-any")})},function(t,e,n){"use strict";
+/*var i;(i=jQuery).fn.scrollbox=function(t){return(t=i.extend({linear:!1,startDelay:2,delay:3,step:5,speed:32,switchItems:1,direction:"vertical",distance:"auto",autoPlay:!0,onMouseOverPause:!0,paused:!1,queue:null,listElement:"ul",listItemElement:"li",infiniteLoop:!0,switchAmount:0,afterForward:null,afterBackward:null,triggerStackable:!1},t)).scrollOffset="vertical"===t.direction?"scrollTop":"scrollLeft",t.queue&&(t.queue=i("#"+t.queue)),this.each(function(){var e,n,o,r,s,a,l,c,u,f=i(this),d=null,h=null,p=!1,m=0,g=0;t.onMouseOverPause&&(f.bind("mouseover",function(){p=!0}),f.bind("mouseout",function(){p=!1})),e=f.children(t.listElement+":first-child"),!1===t.infiniteLoop&&0===t.switchAmount&&(t.switchAmount=e.children().length),a=function(){var o,s,a,l,c;if(!p&&(o=e.children(t.listItemElement+":first-child"),l="auto"!==t.distance?t.distance:"vertical"===t.direction?o.outerHeight(!0):o.outerWidth(!0),t.linear?a=Math.min(f[0][t.scrollOffset]+t.step,l):(c=Math.max(3,parseInt(.3*(l-f[0][t.scrollOffset]),10)),a=Math.min(f[0][t.scrollOffset]+c,l)),f[0][t.scrollOffset]=a,a>=l)){for(s=0;s<t.switchItems;s++)t.queue&&t.queue.find(t.listItemElement).length>0?(e.append(t.queue.find(t.listItemElement)[0]),e.children(t.listItemElement+":first-child").remove()):e.append(e.children(t.listItemElement+":first-child")),++m;if(f[0][t.scrollOffset]=0,clearInterval(d),d=null,i.isFunction(t.afterForward)&&t.afterForward.call(f,{switchCount:m,currentFirstChild:e.children(t.listItemElement+":first-child")}),t.triggerStackable&&0!==g)return void n();if(!1===t.infiniteLoop&&m>=t.switchAmount)return;t.autoPlay&&(h=setTimeout(r,1e3*t.delay))}},l=function(){if(!p){var o,s,a,l,c;if(0===f[0][t.scrollOffset]){for(s=0;s<t.switchItems;s++)e.children(t.listItemElement+":last-child").insertBefore(e.children(t.listItemElement+":first-child"));o=e.children(t.listItemElement+":first-child"),l="auto"!==t.distance?t.distance:"vertical"===t.direction?o.height():o.width(),f[0][t.scrollOffset]=l}if(t.linear?a=Math.max(f[0][t.scrollOffset]-t.step,0):(c=Math.max(3,parseInt(.3*f[0][t.scrollOffset],10)),a=Math.max(f[0][t.scrollOffset]-c,0)),f[0][t.scrollOffset]=a,0===a){if(--m,clearInterval(d),d=null,i.isFunction(t.afterBackward)&&t.afterBackward.call(f,{switchCount:m,currentFirstChild:e.children(t.listItemElement+":first-child")}),t.triggerStackable&&0!==g)return void n();t.autoPlay&&(h=setTimeout(r,1e3*t.delay))}}},n=function(){0!==g&&(g>0?(g--,h=setTimeout(r,0)):(g++,h=setTimeout(o,0)))},r=function(){clearInterval(d),d=setInterval(a,t.speed)},o=function(){clearInterval(d),d=setInterval(l,t.speed)},c=function(){t.autoPlay=!0,p=!1,clearInterval(d),d=setInterval(a,t.speed)},u=function(){p=!0},s=function(e){t.delay=e||t.delay,clearTimeout(h),t.autoPlay&&(h=setTimeout(r,1e3*t.delay))},t.autoPlay&&(h=setTimeout(r,1e3*t.startDelay)),f.bind("resetClock",function(t){s(t)}),f.bind("forward",function(){t.triggerStackable?null!==d?g++:r():(clearTimeout(h),r())}),f.bind("backward",function(){t.triggerStackable?null!==d?g--:o():(clearTimeout(h),o())}),f.bind("pauseHover",function(){u()}),f.bind("forwardHover",function(){c()}),f.bind("speedUp",function(e,n){"undefined"===n&&(n=Math.max(1,parseInt(t.speed/2,10))),t.speed=n}),f.bind("speedDown",function(e,n){"undefined"===n&&(n=2*t.speed),t.speed=n}),f.bind("updateConfig",function(e,n){t=i.extend(t,n)})})}},function(t,e,n){"use strict";$('[class*="js-slidebar-"]').each(function(){var t=$(this).attr("class").match(/js-slidebar-(\w+)/i)[1];$(this).find(".slidebar-toggle-"+t).attr("data-id-slidebar",t),$(this).find(".slidebar-body-"+t).attr("data-off-canvas",$(this).attr("class").match(/js-slidebar-(\S+)/i)[1].replace("-"," ").replace("-"," ")).prepend('<button type="button" class="closeSlidebar fa fa-times" aria-label="Close"></button>')}),$(".clone-slidebar-toggle").each(function(){$("body").append('<span id="'+$(this).attr("data-id-slidebar")+'" class="slidebar-toggle" data-id-slidebar="'+$(this).attr("data-id-slidebar")+'"></span>')}),$(document).on("click",".clone-slidebar-toggle",function(t){t.preventDefault(),$("#"+$(this).attr("data-id-slidebar")).trigger("click")});var i=new function(){var t=$("[data-canvas]"),e={},n=!1,i=!1,o=["top","right","bottom","left"],r=["reveal","push","overlay","shift"],s=function(n){var i=$(),o="0",r=1e3*parseFloat(e[n].element.css("transitionDuration"),10);return"reveal"!==e[n].style&&"push"!==e[n].style&&"shift"!==e[n].style||(i=i.add(t)),"push"!==e[n].style&&"overlay"!==e[n].style&&"shift"!==e[n].style||(i=i.add(e[n].element)),!$('[data-id-slidebar="'+n+'"]').hasClass("slidebar-toggle-animated")||"push"!==e[n].style&&"overlay"!==e[n].style&&"shift"!==e[n].style||(i=i.add($('[data-id-slidebar="'+n+'"]'))),e[n].active&&("top"===e[n].side?o=e[n].element.css("height")+" 0 -"+e[n].element.css("height"):"right"===e[n].side?o="0 0 0 -"+e[n].element.css("width"):"bottom"===e[n].side?o="-"+e[n].element.css("height")+" 0 0":"left"===e[n].side&&(o="0 -"+e[n].element.css("width")+" 0 "+e[n].element.css("width"))),{elements:i,amount:o,duration:r}},a=function(t){return!!e.hasOwnProperty(t)};this.init=function(t){if(n)throw"Slidebars has already been initialized.";i||($("[data-off-canvas]").each(function(){var t=$(this).attr("data-off-canvas").split(" ",3);if(!t||!t[0]||-1===o.indexOf(t[1])||-1===r.indexOf(t[2]))throw"Error registering Slidebar, please specifiy a valid id, side and style'.";!function(t,n,i,o){if(a(t))throw"Error registering Slidebar, a Slidebar with id '"+t+"' already exists.";e[t]={id:t,side:n,style:i,element:o,active:!1}}(t[0],t[1],t[2],$(this))}),i=!0),n=!0,this.css(),$(l).trigger("init"),"function"==typeof t&&t()},this.exit=function(t){if(!n)throw"Slidebars hasn't been initialized.";var e=function(){n=!1,$(l).trigger("exit"),"function"==typeof t&&t()};this.getActiveSlidebar()?this.close(e):e()},this.css=function(t){if(!n)throw"Slidebars hasn't been initialized.";this.getActiveSlidebar()&&this.open(this.getActiveSlidebar()),$(l).trigger("css"),"function"==typeof t&&t()},this.open=function(t,i){if(!n)throw"Slidebars hasn't been initialized.";if(!t)throw"You must pass a Slidebar id.";if(!a(t))throw"Error opening Slidebar, there is no Slidebar with id '"+t+"'.";var o=function(){e[t].active=!0,e[t].element.css("visibility","visible"),$(l).trigger("opening",[e[t].id]);var n=s(t);$("html").addClass("slidebar-active-wrapper"),n.elements.css({"transition-duration":n.duration+"ms",margin:n.amount}).addClass("open-slidebar"),setTimeout(function(){$(l).trigger("opened",[e[t].id]),"function"==typeof i&&i()},n.duration)};this.getActiveSlidebar()&&this.getActiveSlidebar()!==t?this.close(o):o()},this.close=function(t,i){if("function"==typeof t&&(i=t,t=null),!n)throw"Slidebars hasn't been initialized.";if(t&&!a(t))throw"Error closing Slidebar, there is no Slidebar with id '"+t+"'.";if(t||(t=this.getActiveSlidebar()),t&&e[t].active){e[t].active=!1,$(l).trigger("closing",[e[t].id]);var o=s(t);o.elements.css("margin","").removeClass("open-slidebar"),setTimeout(function(){$("html").removeClass("slidebar-active-wrapper")},o.duration),setTimeout(function(){o.elements.css("transition-duration",""),e[t].element.css("visibility",""),$(l).trigger("closed",[e[t].id]),"function"==typeof i&&i()},o.duration)}},this.toggle=function(t,i){if(!n)throw"Slidebars hasn't been initialized.";if(!t)throw"You must pass a Slidebar id.";if(!a(t))throw"Error toggling Slidebar, there is no Slidebar with id '"+t+"'.";e[t].active?this.close(t,function(){"function"==typeof i&&i()}):this.open(t,function(){"function"==typeof i&&i()})},this.isActive=function(){return n},this.isActiveSlidebar=function(t){if(!n)throw"Slidebars hasn't been initialized.";if(!t)throw"You must provide a Slidebar id.";if(!a(t))throw"Error retrieving Slidebar, there is no Slidebar with id '"+t+"'.";return e[t].active},this.getActiveSlidebar=function(){if(!n)throw"Slidebars hasn't been initialized.";var t=!1;for(var i in e)if(a(i)&&e[i].active){t=e[i].id;break}return t},this.getSlidebars=function(){if(!n)throw"Slidebars hasn't been initialized.";var t=[];for(var i in e)a(i)&&t.push(e[i].id);return t},this.getSlidebar=function(t){if(!n)throw"Slidebars hasn't been initialized.";if(!t)throw"You must pass a Slidebar id.";if(!a(t))throw"Error retrieving Slidebar, there is no Slidebar with id '"+t+"'.";return e[t]},this.events={};var l=this.events;$(window).on("resize",this.css.bind(this))};i.init(),$('[class*="slidebar-toggle"]').each(function(){var t=$(this).attr("data-id-slidebar");$(this).on("click",function(e){$(this).hasClass("inactive-device")||(e.stopPropagation(),e.preventDefault(),i.toggle(t),$(this).toggleClass("active-sl-toogle"))})}),$(document).on("click",".js-close-any",function(t){i.getActiveSlidebar()&&!$(t.target).closest("[data-off-canvas]").hasClass("open-slidebar")&&(t.preventDefault(),t.stopPropagation(),i.close(),$('[class*="slidebar-toggle"]').removeClass("active-sl-toogle"))}),$("[data-off-canvas] button.closeSlidebar").on("click",function(t){t.preventDefault(),t.stopPropagation(),i.close()}),$(i.events).on("opening",function(){$("[data-canvas]").addClass("js-close-any")}),$(i.events).on("closing",function(){$("[data-canvas]").removeClass("js-close-any")})},function(t,e,n){"use strict";
+*/
+var i;
+(i = jQuery).fn.scrollbox = function(t) {
+    return (t = i.extend({
+        linear: !1,
+        startDelay: 2,
+        delay: 3,
+        step: 5,
+        speed: 32,
+        switchItems: 1,
+        direction: "vertical",
+        distance: "auto",
+        autoPlay: !0,
+        onMouseOverPause: !0,
+        paused: !1,
+        queue: null,
+        listElement: "ul",
+        listItemElement: "li",
+        infiniteLoop: !0,
+        switchAmount: 0,
+        afterForward: null,
+        afterBackward: null,
+        triggerStackable: !1
+    }, t)).scrollOffset = "vertical" === t.direction ? "scrollTop" : "scrollLeft", t.queue && (t.queue = i("#" + t.queue)), this.each(function() {
+        var e, n, o, r, s, a, l, c, u, f = i(this),
+            d = null,
+            h = null,
+            p = !1,
+            m = 0,
+            g = 0;
+        t.onMouseOverPause && (f.bind("mouseover", function() {
+            p = !0
+        }), f.bind("mouseout", function() {
+            p = !1
+        })), e = f.children(t.listElement + ":first-child"), !1 === t.infiniteLoop && 0 === t.switchAmount && (t.switchAmount = e.children().length), a = function() {
+            var o, s, a, l, c;
+            if (!p && (o = e.children(t.listItemElement + ":first-child"), l = "auto" !== t.distance ? t.distance : "vertical" === t.direction ? o.outerHeight(!0) : o.outerWidth(!0), t.linear ? a = Math.min(f[0][t.scrollOffset] + t.step, l) : (c = Math.max(3, parseInt(.3 * (l - f[0][t.scrollOffset]), 10)), a = Math.min(f[0][t.scrollOffset] + c, l)), f[0][t.scrollOffset] = a, a >= l)) {
+                for (s = 0; s < t.switchItems; s++) t.queue && t.queue.find(t.listItemElement).length > 0 ? (e.append(t.queue.find(t.listItemElement)[0]), e.children(t.listItemElement + ":first-child").remove()) : e.append(e.children(t.listItemElement + ":first-child")), ++m;
+                if (f[0][t.scrollOffset] = 0, clearInterval(d), d = null, i.isFunction(t.afterForward) && t.afterForward.call(f, {
+                        switchCount: m,
+                        currentFirstChild: e.children(t.listItemElement + ":first-child")
+                    }), t.triggerStackable && 0 !== g) return void n();
+                if (!1 === t.infiniteLoop && m >= t.switchAmount) return;
+                t.autoPlay && (h = setTimeout(r, 1e3 * t.delay))
+            }
+        }, l = function() {
+            if (!p) {
+                var o, s, a, l, c;
+                if (0 === f[0][t.scrollOffset]) {
+                    for (s = 0; s < t.switchItems; s++) e.children(t.listItemElement + ":last-child").insertBefore(e.children(t.listItemElement + ":first-child"));
+                    o = e.children(t.listItemElement + ":first-child"), l = "auto" !== t.distance ? t.distance : "vertical" === t.direction ? o.height() : o.width(), f[0][t.scrollOffset] = l
+                }
+                if (t.linear ? a = Math.max(f[0][t.scrollOffset] - t.step, 0) : (c = Math.max(3, parseInt(.3 * f[0][t.scrollOffset], 10)), a = Math.max(f[0][t.scrollOffset] - c, 0)), f[0][t.scrollOffset] = a, 0 === a) {
+                    if (--m, clearInterval(d), d = null, i.isFunction(t.afterBackward) && t.afterBackward.call(f, {
+                            switchCount: m,
+                            currentFirstChild: e.children(t.listItemElement + ":first-child")
+                        }), t.triggerStackable && 0 !== g) return void n();
+                    t.autoPlay && (h = setTimeout(r, 1e3 * t.delay))
+                }
+            }
+        }, n = function() {
+            0 !== g && (g > 0 ? (g--, h = setTimeout(r, 0)) : (g++, h = setTimeout(o, 0)))
+        }, r = function() {
+            clearInterval(d), d = setInterval(a, t.speed)
+        }, o = function() {
+            clearInterval(d), d = setInterval(l, t.speed)
+        }, c = function() {
+            t.autoPlay = !0, p = !1, clearInterval(d), d = setInterval(a, t.speed)
+        }, u = function() {
+            p = !0
+        }, s = function(e) {
+            t.delay = e || t.delay, clearTimeout(h), t.autoPlay && (h = setTimeout(r, 1e3 * t.delay))
+        }, t.autoPlay && (h = setTimeout(r, 1e3 * t.startDelay)), f.bind("resetClock", function(t) {
+            s(t)
+        }), f.bind("forward", function() {
+            t.triggerStackable ? null !== d ? g++ : r() : (clearTimeout(h), r())
+        }), f.bind("backward", function() {
+            t.triggerStackable ? null !== d ? g-- : o() : (clearTimeout(h), o())
+        }), f.bind("pauseHover", function() {
+            u()
+        }), f.bind("forwardHover", function() {
+            c()
+        }), f.bind("speedUp", function(e, n) {
+            "undefined" === n && (n = Math.max(1, parseInt(t.speed / 2, 10))), t.speed = n
+        }), f.bind("speedDown", function(e, n) {
+            "undefined" === n && (n = 2 * t.speed), t.speed = n
+        }), f.bind("updateConfig", function(e, n) {
+            t = i.extend(t, n)
+        })
+    })
+}
+},
+function(t, e, n) {
+    "use strict";
+    $('[class*="js-slidebar-"]').each(function() {
+        var t = $(this).attr("class").match(/js-slidebar-(\w+)/i)[1];
+        $(this).find(".slidebar-toggle-" + t).attr("data-id-slidebar", t), $(this).find(".slidebar-body-" + t).attr("data-off-canvas", $(this).attr("class").match(/js-slidebar-(\S+)/i)[1].replace("-", " ").replace("-", " ")).prepend('<button type="button" class="closeSlidebar fa fa-times" aria-label="Close"></button>')
+    }), $(".clone-slidebar-toggle").each(function() {
+        $("body").append('<span id="' + $(this).attr("data-id-slidebar") + '" class="slidebar-toggle" data-id-slidebar="' + $(this).attr("data-id-slidebar") + '"></span>')
+    }), $(document).on("click", ".clone-slidebar-toggle", function(t) {
+        t.preventDefault(), $("#" + $(this).attr("data-id-slidebar")).trigger("click")
+    });
+    var i = new function() {
+        var t = $("[data-canvas]"),
+            e = {},
+            n = !1,
+            i = !1,
+            o = ["top", "right", "bottom", "left"],
+            r = ["reveal", "push", "overlay", "shift"],
+            s = function(n) {
+                var i = $(),
+                    o = "0",
+                    r = 1e3 * parseFloat(e[n].element.css("transitionDuration"), 10);
+                return "reveal" !== e[n].style && "push" !== e[n].style && "shift" !== e[n].style || (i = i.add(t)), "push" !== e[n].style && "overlay" !== e[n].style && "shift" !== e[n].style || (i = i.add(e[n].element)), !$('[data-id-slidebar="' + n + '"]').hasClass("slidebar-toggle-animated") || "push" !== e[n].style && "overlay" !== e[n].style && "shift" !== e[n].style || (i = i.add($('[data-id-slidebar="' + n + '"]'))), e[n].active && ("top" === e[n].side ? o = e[n].element.css("height") + " 0 -" + e[n].element.css("height") : "right" === e[n].side ? o = "0 0 0 -" + e[n].element.css("width") : "bottom" === e[n].side ? o = "-" + e[n].element.css("height") + " 0 0" : "left" === e[n].side && (o = "0 -" + e[n].element.css("width") + " 0 " + e[n].element.css("width"))), {
+                    elements: i,
+                    amount: o,
+                    duration: r
+                }
+            },
+            a = function(t) {
+                return !!e.hasOwnProperty(t)
+            };
+        this.init = function(t) {
+            if (n) throw "Slidebars has already been initialized.";
+            i || ($("[data-off-canvas]").each(function() {
+                var t = $(this).attr("data-off-canvas").split(" ", 3);
+                if (!t || !t[0] || -1 === o.indexOf(t[1]) || -1 === r.indexOf(t[2])) throw "Error registering Slidebar, please specifiy a valid id, side and style'.";
+                ! function(t, n, i, o) {
+                    if (a(t)) throw "Error registering Slidebar, a Slidebar with id '" + t + "' already exists.";
+                    e[t] = {
+                        id: t,
+                        side: n,
+                        style: i,
+                        element: o,
+                        active: !1
+                    }
+                }(t[0], t[1], t[2], $(this))
+            }), i = !0), n = !0, this.css(), $(l).trigger("init"), "function" == typeof t && t()
+        }, this.exit = function(t) {
+            if (!n) throw "Slidebars hasn't been initialized.";
+            var e = function() {
+                n = !1, $(l).trigger("exit"), "function" == typeof t && t()
+            };
+            this.getActiveSlidebar() ? this.close(e) : e()
+        }, this.css = function(t) {
+            if (!n) throw "Slidebars hasn't been initialized.";
+            this.getActiveSlidebar() && this.open(this.getActiveSlidebar()), $(l).trigger("css"), "function" == typeof t && t()
+        }, this.open = function(t, i) {
+            if (!n) throw "Slidebars hasn't been initialized.";
+            if (!t) throw "You must pass a Slidebar id.";
+            if (!a(t)) throw "Error opening Slidebar, there is no Slidebar with id '" + t + "'.";
+            var o = function() {
+                e[t].active = !0, e[t].element.css("visibility", "visible"), $(l).trigger("opening", [e[t].id]);
+                var n = s(t);
+                $("html").addClass("slidebar-active-wrapper"), n.elements.css({
+                    "transition-duration": n.duration + "ms",
+                    margin: n.amount
+                }).addClass("open-slidebar"), setTimeout(function() {
+                    $(l).trigger("opened", [e[t].id]), "function" == typeof i && i()
+                }, n.duration)
+            };
+            this.getActiveSlidebar() && this.getActiveSlidebar() !== t ? this.close(o) : o()
+        }, this.close = function(t, i) {
+            if ("function" == typeof t && (i = t, t = null), !n) throw "Slidebars hasn't been initialized.";
+            if (t && !a(t)) throw "Error closing Slidebar, there is no Slidebar with id '" + t + "'.";
+            if (t || (t = this.getActiveSlidebar()), t && e[t].active) {
+                e[t].active = !1, $(l).trigger("closing", [e[t].id]);
+                var o = s(t);
+                o.elements.css("margin", "").removeClass("open-slidebar"), setTimeout(function() {
+                    $("html").removeClass("slidebar-active-wrapper")
+                }, o.duration), setTimeout(function() {
+                    o.elements.css("transition-duration", ""), e[t].element.css("visibility", ""), $(l).trigger("closed", [e[t].id]), "function" == typeof i && i()
+                }, o.duration)
+            }
+        }, this.toggle = function(t, i) {
+            if (!n) throw "Slidebars hasn't been initialized.";
+            if (!t) throw "You must pass a Slidebar id.";
+            if (!a(t)) throw "Error toggling Slidebar, there is no Slidebar with id '" + t + "'.";
+            e[t].active ? this.close(t, function() {
+                "function" == typeof i && i()
+            }) : this.open(t, function() {
+                "function" == typeof i && i()
+            })
+        }, this.isActive = function() {
+            return n
+        }, this.isActiveSlidebar = function(t) {
+            if (!n) throw "Slidebars hasn't been initialized.";
+            if (!t) throw "You must provide a Slidebar id.";
+            if (!a(t)) throw "Error retrieving Slidebar, there is no Slidebar with id '" + t + "'.";
+            return e[t].active
+        }, this.getActiveSlidebar = function() {
+            if (!n) throw "Slidebars hasn't been initialized.";
+            var t = !1;
+            for (var i in e)
+                if (a(i) && e[i].active) {
+                    t = e[i].id;
+                    break
+                }
+            return t
+        }, this.getSlidebars = function() {
+            if (!n) throw "Slidebars hasn't been initialized.";
+            var t = [];
+            for (var i in e) a(i) && t.push(e[i].id);
+            return t
+        }, this.getSlidebar = function(t) {
+            if (!n) throw "Slidebars hasn't been initialized.";
+            if (!t) throw "You must pass a Slidebar id.";
+            if (!a(t)) throw "Error retrieving Slidebar, there is no Slidebar with id '" + t + "'.";
+            return e[t]
+        }, this.events = {};
+        var l = this.events;
+        $(window).on("resize", this.css.bind(this))
+    };
+    i.init(), $('[class*="slidebar-toggle"]').each(function() {
+        var t = $(this).attr("data-id-slidebar");
+        $(this).on("click", function(e) {
+            $(this).hasClass("inactive-device") || (e.stopPropagation(), e.preventDefault(), i.toggle(t), $(this).toggleClass("active-sl-toogle"))
+        })
+    }), $(document).on("click", ".js-close-any", function(t) {
+        i.getActiveSlidebar() && !$(t.target).closest("[data-off-canvas]").hasClass("open-slidebar") && (t.preventDefault(), t.stopPropagation(), i.close(), $('[class*="slidebar-toggle"]').removeClass("active-sl-toogle"))
+    }), $("[data-off-canvas] button.closeSlidebar").on("click", function(t) {
+        t.preventDefault(), t.stopPropagation(), i.close()
+    }), $("[data-off-canvas] a.icon-menu-login").on("click", function(t) {
+        t.preventDefault(), t.stopPropagation(), i.close(), $('.jx-header-account').find('.dropdown-menu-right').addClass('active-dropdown-login'), console.log("intentando abrir menu login")
+    }), $(i.events).on("opening", function() {
+        $("[data-canvas]").addClass("js-close-any")
+    }), $(i.events).on("closing", function() {
+        $("[data-canvas]").removeClass("js-close-any")
+    })
+},
+function(t, e, n) {
+    "use strict";
+
+
 /**
  * Stik Up
  *

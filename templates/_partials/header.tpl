@@ -81,8 +81,10 @@
           <button type="button" class="closeSlidebar fa fa-times" aria-label="Close"></button>
           <div id="_mobile_links_toggle" class="mb-3 d-xl-none"></div>
           <div id="_mobile_jxmegamenu"></div>
-          <div id="_mobile_language_selector" class="d-xl-none js-dropdown mt-4"></div>
-          <div id="_mobile_currency_selector" class="d-xl-none js-dropdown mt-3"></div>
+          <div id="_mobile_lg_current" style="display:flex;">
+          <div id="_mobile_language_selector" style="width:50%" class="d-xl-none js-dropdown mt-3"></div>
+          <div id="_mobile_currency_selector" style="width:50%" class="d-xl-none js-dropdown mt-3"></div>
+          </div>
 
           <!-- ICONOS MENU MOBILE -->
           <nav class="iconos-menu-mobile redessociales">
