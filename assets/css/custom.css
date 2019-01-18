@@ -539,7 +539,62 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
    .separator-list > :not(:last-child){margin-right:3.4375rem;}
    .container-woman-size-chart{min-width:450px;}
    body#checkout .nav-tabs li{font-size:.94rem;text-align:center;}
-}   
+}  
+
+/***************************************************************
+ ******** Screen Max-width 1200px iPad and Mobile***************
+ ***************************************************************/
+
+@media only screen and (max-width:1024px){
+  
+/*--------------------- Menú Mobile ---------------------*/
+nav.iconos-menu-mobile.redessociales{
+        z-index:222;
+        bottom:0;
+        left:0;
+        width:100%;
+        background-color:black;
+        display: -webkit-flex; /* Safari */
+        -webkit-box-shadow:0px 2px 20px 4px #808080;
+                box-shadow:0px 2px 20px 4px #808080;
+        text-align:center;
+        display:-webkit-inline-box!important;
+        display:-ms-inline-flexbox!important;
+        display:inline-flex!important;
+        position:absolute;
+        opacity:1!important;
+    }
+nav.iconos-menu-mobile.redessociales a{
+        -webkit-flex: 1;  /* Safari 6.1+ */
+        -ms-flex: 1;  /* IE 10 */    
+        flex: 1;
+        color:#efefef;
+        font-size:1.45rem!important;
+        border-right:1px solid #676666;
+        padding:14px 20px;
+        width:calc(100%/5);
+    }
+nav.iconos-menu-mobile.redessociales a.fa, nav.iconos-menu-mobile.redessociales a.ig{
+        font-size:1.45rem!important;
+    }
+nav.icono-menu-mobile a:hover{
+        transform:scale(1.4);
+        transition-timing-function: 1s;
+        color:white;
+    }
+    .active-imb{
+        display:-webkit-inline-box!important;
+        display:-ms-inline-flexbox!important;
+        display:inline-flex!important;
+        position:fixed;
+        opacity:1!important;
+    }
+    .active-b{
+        display:block!important;
+    }
+
+}
+
 
 /***************************************************************
  ******************** Screen Min-width 768px  ******************

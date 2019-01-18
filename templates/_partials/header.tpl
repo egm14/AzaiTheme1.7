@@ -83,6 +83,15 @@
           <div id="_mobile_jxmegamenu"></div>
           <div id="_mobile_language_selector" class="d-xl-none js-dropdown mt-4"></div>
           <div id="_mobile_currency_selector" class="d-xl-none js-dropdown mt-3"></div>
+
+          <!-- ICONOS MENU MOBILE -->
+          <nav class="iconos-menu-mobile redessociales">
+               <a class="fl icon-menu-login" href="#" style="display:block;"><i class="fa fa-user"></i></a>
+                <a class="fb" href="//facebook.com/azaistore" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a class="ig" href="//www.instagram.com/azaistore/" target="_blank"><i class="fa fa-instagram"></i></a> 
+                <a class="tw" href="//twitter.com/azaistore" target="_blank"><i class="fa fa-twitter"></i></a> 
+                <a class="vi" href="https://goo.gl/zTJpsd" target="_blank" rel="noopener"><i class="fa fa-map-marker"></i></a>
+          </nav>
         </div>
       </div>
       <div id="_mobile_user_info"></div>
