@@ -498,7 +498,7 @@ body#product #wishlist_button_block{margin-top:2rem;}
   #footer div.container{padding:50px 170px 25px 170px}
   #footer .col-12.text-center.align-items-md-center.well-1{padding-bottom:0;}
   #footer div.container#redes-desk{padding:0px;}
- .grid .product-miniature .product-miniature-container .product-miniature-information div{margin-top:0px;margin-bottom:0px!important;}
+ .grid .product-miniature .product-miniature-container .product-miniature-information div{margin-top:0px;margin-bottom:0px!important;justify-content:center;}
  /*Icon functional-buttons miniture - page Category*/
  .functional-buttons{height:40px; top:-3.15rem;background-color:rgba(0,0,0,.6);padding:5px 10px;}
  .grid .product-miniature .product-miniature-container .product-miniature-information .product-buttons > a{color:#ededed;}
