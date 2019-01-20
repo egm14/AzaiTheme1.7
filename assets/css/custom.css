@@ -648,6 +648,7 @@ nav.icono-menu-mobile a:hover{
 
    /*Filter section*/
    #search_filters_wrapper ..variant-links label span{display:inline-block;}
+   body#category #search_filters_wrapper .facet-list.variant-links li{display:inline-block;}
 	 
 }
 
@@ -756,6 +757,7 @@ nav.icono-menu-mobile a:hover{
  footer#footer .link-list-title{margin:0!important;padding-top:.4rem;padding-bottom:.4rem;font-size:1rem;}
  footer#footer .jxml-copyright{margin-top:1rem;}
 body#category .grid .product-miniature .product-miniature-container .product-miniature-information .product-prices-md{text-align:center;display:flow-root;}
+
 }
 
 
