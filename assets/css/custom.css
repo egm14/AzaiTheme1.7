@@ -75,7 +75,7 @@ body#category ..product-prices-md.with-discount{justify-content: center;}
 }
 span.discount-percentage.discount-product {color: red;}
 .block-categories .arrows .arrow-down, .block-categories .arrows .arrow-right {cursor: pointer;margin-left: .3125rem;color: #2f2c2f;left: 88%;position: absolute;font-size: 15px;height: 10%;width: 10%}
-
+.default-menu > ul > li > .top-level-menu-li-span{color:black!important;}
 
 /*Btn to show resumen cart at final-summary-order*/
 body#checkout #checkout-payment-step .Payment-method-title{font-weight:600;}
