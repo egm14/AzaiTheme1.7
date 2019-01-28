@@ -53,7 +53,9 @@ By Azai.com theme v1.7
  [class^="icon-"]::before{font-family:FontAwesome;font-style:normal;}
  span.it_04953631.top-level-menu-li-span.jxmegamenu_item.sf-with-ul {color: black;} 
  section.facet .facet-list .slider-container .back-bar .pointer {background: #000000;}
- section.facet .facet-list .slider-container .back-bar .selected-bar {background: #ababab;}
+ section.facet .facet-list .slider-container .back-bar .selected-bar {background: #ababab; width:100%!important;}
+ section.facet .facet-list .slider-container .back-bar .pointer.high {left:94%!important;}
+ section.facet .facet-list .slider-container .back-bar .pointer-label.high{left:92%!important;}
  ul .list-default li a, ul[class*=" list-default-"] li a, ul[class^=list-default-] li a {color: grey;}
  .toTop, .toTop:focus {font-size: 50px;color:#2f2c2f;background:none;}
  .variant-links.mt-1{margin-top:0px!important;}
