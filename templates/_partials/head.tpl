@@ -28,7 +28,8 @@
 {block name='head_ie_compatibility'}
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 {/block}
-  <div id="ship"><div class="ship-text"><marquee scrollamount="5">{l s='Free Shipping Over $90 USA | Over $150 México (1 - 2 days) | Rep. Dom. Envío Gratis (2 - 3 Dias)'}</marquee></div></div>
+  <div id="ship"><div class="ship-text">{l s='Free Shipping Over $90 USA | Over $150 México (1 - 2 days) | Rep. Dom. Envío Gratis (2 - 3 Dias)'}</div></div>
+
 {block name='head_seo'}
   <title>{block name='head_seo_title'}{$page.meta.title}{/block}</title>
   <meta name="description" content="{block name='head_seo_description'}{$page.meta.description}{/block}">

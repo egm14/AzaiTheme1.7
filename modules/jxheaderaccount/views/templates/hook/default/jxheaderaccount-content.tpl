@@ -114,7 +114,7 @@
           </button>
           <div class="register-link nav d-block">
             <a {if $configs.JXHEADERACCOUNT_USE_REDIRECT}href="{$urls.pages.register}" {else}href="#create-account-content-{$hook}" data-toggle="tab"{/if} data-link-action="display-register-form">
-              {l s='No account? Create one here' d='Shop.Theme.Customeraccount'}
+              {l s='No account?' d='Shop.Theme.Customeraccount'}&nbsp;<span class="one">{l s='Create one here' d='Shop.Theme.Customeraccount'}</span> 
             </a>
           </div>
           <div class="nav d-block">

@@ -49,7 +49,19 @@ By Azai.com theme v1.7
   }
 }
 
+/*Stiker banner top*/
+#ship{width:100%;height:25px;background:black;color:white;display:block!important;text-transform:uppercase;font-size:0.8em;margin-bottom: 4px; margin: 0px 0px 0px 0px;text-align:center;color: white; padding: 2px 0px 0px 0px; text-transform: uppercase;}
 
+#ship div.ship-text{width:-moz-max-content;font-size:.9rem;padding:3px 0px;position:absolute;top:0;left:0;margin-bottom:0px;overflow-y:hidden;animation: TextScroll 30s linear infinite;-webkit-animation: TextScroll 30s linear infinite;-moz-animation: TextScroll 30s linear infinite;
+}
+@keyframes TextScroll{
+    from{left:100%;}
+    to{left:-100%;}
+}
+/*Account user dropdown*/
+.jx-header-account-wrapper .header-login-footer .register-link a span.one{text-decoration:underline;}
+.jx-header-account-wrapper .header-login-footer .register-link a{text-decoration:none;font-weight:normal;}
+/*Other*/
  [class^="icon-"]::before{font-family:FontAwesome;font-style:normal;}
  span.it_04953631.top-level-menu-li-span.jxmegamenu_item.sf-with-ul {color: black;} 
  section.facet .facet-list .slider-container .back-bar .pointer {background: #000000;}
@@ -78,6 +90,7 @@ body#category ..product-prices-md.with-discount{justify-content: center;}
 span.discount-percentage.discount-product {color: red;}
 .block-categories .arrows .arrow-down, .block-categories .arrows .arrow-right {cursor: pointer;margin-left: .3125rem;color: #2f2c2f;left: 88%;position: absolute;font-size: 15px;height: 10%;width: 10%}
 .default-menu > ul > li > .top-level-menu-li-span{color:black!important;}
+.jx-header-account-wrapper .header-login-footer .forgot-password{color:red;}
 
 /*Btn to show resumen cart at final-summary-order*/
 body#checkout #checkout-payment-step .Payment-method-title{font-weight:600;}
@@ -152,9 +165,8 @@ body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem
  #index #header .header-nav-mobile{background:#fff!important;}
  #index .header-absolute {background: #ffffff;}
  header .col-sm-12 i{color:black!important;}
- div#ship {background: black;color: white;padding: 2px 0px 0px 0px;text-transform: uppercase;}
  header #_desktop_language_selector i.fa, header #_desktop_currency_selector i.fa{margin-left:.2rem !important;}
-  header #_desktop_user_info i{margin-left:.7rem;}
+ header #_desktop_user_info i{margin-left:.7rem;}
 
  /*----------------- Size Chart -----------------------*/
 .sizes-chart{
@@ -698,11 +710,22 @@ nav.icono-menu-mobile a:hover{
 	#checkout-addresses-step .address-selector .address-item .address-header{min-height:22rem;width:15rem;}
 	#checkout-addresses-step .address-selector{margin-bottom:1rem;}
 	body#checkout ul.nav.nav-tabs.mt-2.mb-4{margin-top:2rem!important;margin-bottom:1rem!important;}
+
+  /*Stiker banner web*/
+    /*IPAD top banner sticker*/
+    #ship div.ship-text{
+    padding:4px 0px;
+    animation: TextScroll 20s linear infinite;
+    -webkit-animation: TextScroll 20s linear infinite;
+    -moz-animation: TextScroll 20s linear infinite;
+  }
   /*Checkout - Step - Payment*/
   body#checkout #checkout-payment-step #order-summary-content div.summary-selected-carrier{text-align:center;}
   body#checkout #checkout-payment-step #order-summary-content #order-items div.order-confirmation-table .p-3 div.order-line div.col-sm-2.col-3{padding-right:0;padding-left:0;}
   body#checkout #checkout-payment-step #order-summary-content div.card.noshadow{margin-bottom:10px;}
-
+  
+  /*Miniature picture */
+  #category .product-miniature.js-product-miniature{padding-left:5px;padding-right:5px;}
     /*-------------Footer ---------------*/
     #footer h3 i.fa.fa-angle-down{
       display:none;
