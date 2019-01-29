@@ -410,8 +410,11 @@ body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem
 #checkout-addresses-step .js-address-form #delivery-addresses article.selected .address-footer .btn-link {color:white;}
 
 /*modal cart*/
-.cart-summary.open-slidebar .block-cart-body .cart-footer a.btn{margin-bottom:2rem;color: white;background: black;box-shadow:none;}
-
+.cart-summary.open-slidebar .block-cart-body .cart-footer a.btn{margin-bottom:.5rem;color: white;background: black;box-shadow:none;}
+.cart-summary.open-slidebar button.closeSlidebar::before{font-size:1.4rem}
+.cart-summary.open-slidebar button.closeSlidebar.shopping{display:block!important;position:relative;top:inherit;right:initial;width:100%;height:auto;text-align:center;margin-bottom:2rem;font-weight:initial;margin-top:.5rem;font-size:.8rem;}
+.cart-summary.open-slidebar button.closeSlidebar.shopping::before{content:none;}
+.cart-summary.open-slidebar .block-cart-body .cart-subtotals .cart-tax{display:none!important;}
 /*Shipping Carrier - checkout Step*/
 body#checkout .checkout-step .delivery-options .delivery-option-item{padding:0!important;}
 body#checkout .checkout-step .delivery-options .delivery-option-item:focus{background-color:black;}
