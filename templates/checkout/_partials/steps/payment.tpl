@@ -16,10 +16,10 @@
     <!-- ADD template voucher checkout visible before to payment 
       <a class="promo-code-title-btn" href="#cart-voucher-promo">{l s='Have you a code?'}</a>-->
         {block name='cart_summary_voucher'}
-      {include file='checkout/_partials/cart-voucher.tpl'}
-    {/block}
+          {include file='checkout/_partials/cart-voucher.tpl'}
+        {/block}
        <!--template voucher inclueded -->
-       
+
     {foreach from=$payment_options item="module_options"}
       {foreach from=$module_options item="option"}
         <div id="{$option.id}-container" class="payment-option clearfix custom-control custom-radio">
