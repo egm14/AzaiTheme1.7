@@ -1018,6 +1018,10 @@ ul.menu.clearfix.top-level-menu.jxmegamenu_item {margin: 0px -13px 0px -13px;}
    body#cart .cart-container ul.cart-items li.cart-item .product-line-grid-body .product-line-info{margin-bottom:.3rem;}
    body#cart .cart-container ul.cart-items li.cart-item .product-line-grid-body .product-line-info .current-price{display:flex;}
    body#cart .cart-container ul.cart-items li.cart-item .product-line-grid-body .product-line-info .current-price .price{display:flex;align-items: center;}
+
+   /*Cart Totals*/
+   div.cart-grid-right .cart-summary.mb-3 .cart-detailed-totals hr{margin-top:.5rem;margin-bottom:.5rem;}
+   div.cart-grid .cart-grid-body.mb-3.mb-lg-0.col-12.col-lg-8{margin-bottom:0rem;}
 }   
 /***************************************************************
  ******************* Screen Max-width 375px *********************
