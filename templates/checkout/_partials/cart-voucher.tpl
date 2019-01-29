@@ -45,7 +45,8 @@
         {/if}
 
         <p>
-          <a class="promo-code-button btn-link btn-link-primary" data-toggle="collapse" href="#promo-code" aria-expanded="false" aria-controls="promo-code">
+          <!--Adding xtra classes to promo code btn: payment-option clearfix custom-control custom-radio-->
+          <a class="promo-code-button btn-link btn-link-primary payment-option clearfix custom-control custom-radio" data-toggle="collapse" href="#promo-code" aria-expanded="false" aria-controls="promo-code">
             {l s='Have a promo code?' d='Shop.Theme.Checkout'}
           </a>
         </p>

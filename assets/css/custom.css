@@ -112,9 +112,20 @@ body#checkout #checkout-payment-step .payment-options .payment-option.custom-con
 body#checkout #checkout-payment-step .payment-options .stripe-payment-17{margin:10px 0 10px 0;}
 body#checkout #checkout-payment-step .payment-options img.dsecure{border-radius:0.4rem;height:4rem;}
 body#checkout #checkout-payment-step .payment-options input[data-module-name="paypal"]{z-index:1;opacity:1;top:13px;left:13px;}
+
+
+/*-------------code Voucher----------
 body#checkout #js-checkout-summary #cart-voucher-promo #promo-code form{background-color:black!important;}
 body#checkout #js-checkout-summary #cart-voucher-promo #promo-code form .form-control::placeholder{background-color:white;}
-body#checkout #js-checkout-summary #cart-voucher-promo #promo-code form button.btn.btn-secondary{background-color:white;}
+body#checkout #js-checkout-summary #cart-voucher-promo #promo-code form button.btn.btn-secondary{background-color:white;}*/
+
+/*body#checkout #checkout-payment-step #cart-voucher-promo #promo-code form{background-color:black!important;}
+body#checkout #checkout-payment-step #cart-voucher-promo #promo-code form .form-control::placeholder{background-color:white;}
+body#checkout #checkout-payment-step #cart-voucher-promo #promo-code form button.btn.btn-secondary{background-color:white;}
+*/
+
+body#checkout #checkout-payment-step .block-promo a.promo-code-button.btn-link.btn-link-primary{background-color:black;color:white;display:block;padding-left:1.2rem;}
+body#checkout #checkout-payment-step .block-promo .alert.alert-danger.js-error{display:none;}
 
 /*Preview Image*/
 body#product #content .images-container{background-color:inherit!important;}
