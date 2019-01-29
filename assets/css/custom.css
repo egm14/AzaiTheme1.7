@@ -1351,22 +1351,4 @@ div#stage {
     width: 100%;
 }
 
-/* Estilo Domex */
-
-#checkout-delivery-step .col-sm-5 {
-    background-color: black;
-    margin: 0px -18px 0px 12px;
-    padding: 0px 0px 0px 10px;
-}
-
-#checkout-delivery-step span.h6.carrier-name {
-    color: white;
-}
-
-#checkout-delivery-step .col-sm-3 {
-    background: #000000;
-    color: white;
-    margin: 0px -18px 0px 12px;
-    padding: 0px 0px 0px 10px;
-}
 }
