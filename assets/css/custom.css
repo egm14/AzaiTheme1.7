@@ -285,6 +285,8 @@ body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem
  .modal .modal-dialog .modal-content .btn.close-modal:focus{background-color:#141414;font-size:inherit;}
 
  /*Checkout nav*/
+
+ body#checkout .nav-tabs li a.reachable::before{background:#c3dec2;}
  body#checkout .nav-tabs li a.reachable.active::before{
  	animation: lds-ripple-2 1s cubic-bezier(0, 0.2, 0.8, 1) alternate infinite;
  }
@@ -292,11 +294,11 @@ body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem
 @keyframes lds-ripple-2 {
   0% {
     transform:scale(1);
-    background-color:#f2f2f2;
+    background-color:#c3dec2;
   }
   100% {
     transform:scale(1.3);
-    background-color:black;
+    background-color:#12a109;
   }
 }
 
@@ -982,6 +984,8 @@ header#header {display: flex;}
 li.top-level-menu-li {margin-bottom: 0px;padding-bottom: 0px;border-bottom: 1px solid #cccccc36;border-left: 0px!important;padding-left:0px;padding-right: 0px;padding: 0px 0px 0px 7px;}
 ul.menu.clearfix.top-level-menu.jxmegamenu_item {margin: 0px -13px 0px -13px;}
 .menu-mobile-grover:after {padding: 5px;}
+ body#checkout .nav-tabs li a.reachable span span.punto-step{display:none;}
+body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
  /*---------Footer to mobile -----------*/
     
     #jxhtmlcontent_footer #redes-desk  a i{
