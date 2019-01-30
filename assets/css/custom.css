@@ -104,7 +104,7 @@ body#cart a.remove-from-cart.close{width:1.1rem;}
 /*Stripe payment methods*/
 body#checkout, body#cart{font-size:.87rem!important;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio{background-color:black;color:white;padding:10px 10px;}
-body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio:hover{background-color:#1d1b1b;font-weight:600;}
+body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio:hover{background-color:#4CAF50;font-weight:600;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label{width:100%;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label::after{content:"\f107";font-family:"FontAwesome";color:white;margin-left:6px;position:absolute;left:-2px;top:0;opacity:1;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label::before{background-color:black;}
@@ -1350,23 +1350,9 @@ div#stage {
     height: 462px;
     width: 100%;
 }
-
 /* Estilo Domex */
-
-#checkout-delivery-step .col-sm-5, .delivery_option_110{
-    background-color: black;
-    margin: 0px -18px 0px 12px;
-    padding: 0px 0px 0px 10px;
-}
-
-#checkout-delivery-step span.h6.carrier-name, .delivery_option_110 {
-    color: white;
-}
-
-#checkout-delivery-step .col-sm-3, .delivery_option_110 {
-    background: #000000;
-    color: white;
-    margin: 0px -18px 0px 12px;
-    padding: 0px 0px 0px 10px;
-}
+#checkout-delivery-step span.h6.carrier-name{color: white;}
+#checkout-delivery-step .col-sm-3 {background: #000000;color: white;margin: 0px -18px 0px 12px;padding: 0px 0px 0px 10px;}
+#checkout-delivery-step .col-sm-4 {padding: 12px;}
+#checkout-delivery-step .col-sm-5 {background-color: black;margin: 0px -18px 0px 12px;padding: 0px 0px 0px 10px;}
 }
