@@ -22,23 +22,19 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+{block name='cart_detailed_actions'}
+  <div class="checkout cart-detailed-actions text-center">
+    {if $cart.minimalPurchaseRequired}
+      <div class="alert alert-warning" role="alert">
+        {$cart.minimalPurchaseRequired}
+      </div>
+      <button id="cartAction" type="button" class="btn btn-lg btn-secondary icon-right disabled" disabled><span>{l s='Proceed to checkout' d='Shop.Theme.Actions'}</span></button>
+    {elseif empty($cart.products) }
+      <button id="cartAction" type="button" class="btn btn-lg btn-secondary icon-right disabled" disabled><span>{l s='Proceed to checkout' d='Shop.Theme.Actions'}</span></button>
+    {else}
+      <a id="cartAction" href="{$urls.pages.cart}?action=show&checkout" class="btn btn-lg btn-secondary icon-right"><span>{l s='Proceed to checkout' d='Shop.Theme.Actions'}</span></a>
+      {hook h='displayExpressCheckout'}
+    {/if}
+  </div>
+{/block}
 
-{$step_classes = [
-  'active' => $step_is_current,
-  'reachable' => $step_is_reachable,
-  'complete' => $step_is_complete
-]}
-
-{if isset($tab) && $tab}
-  {block name='nav_step'}
-    <li class="nav-item">
-      <a id="{$identifier}-tab" class="nav-link {$step_classes|classnames}" href="#{$identifier}" data-toggle="tab" role="tab" aria-controls="{$identifier}"><span class="step-number">{$position}<span class="punto-step">. </span></span>{$title}</a>
-    </li>
-  {/block}
-{else}
-  {block name='step'}
-    <div id="{$identifier}" class="tab-pane checkout-step {$step_classes|classnames}" role="tabpanel" aria-labelledby="{$identifier}-tab">
-      {block name='step_content'}DUMMY STEP CONTENT{/block}
-    </div>
-  {/block}
-{/if}

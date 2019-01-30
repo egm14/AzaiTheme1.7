@@ -703,7 +703,7 @@ nav.icono-menu-mobile a:hover{
    .jxsearch-wrapper.active-jxsearch #jxsearchwrapper{position:fixed!important;top:7.4rem !important;}
    /*Close Button to mobile menu*/
    #_mobile_menu_wrapper .only-mobile button.closeSlidebar:before,
-   #_mobile_cart .cart-summary button.closeSlidebar:before{font-size:1.4rem;}
+   #_mobile_cart .cart-summary button.closeSlidebar:before{font-size:1.6rem;}
    /*Shopping Cart*/
 	.blockcart > a .cart-products-count{position:absolute;top:-12px;right:-9px;}
 	/*shopping cart list*/
@@ -726,6 +726,8 @@ nav.icono-menu-mobile a:hover{
 	#checkout-addresses-step .address-selector .address-item .address-header{min-height:22rem;width:15rem;}
 	#checkout-addresses-step .address-selector{margin-bottom:1rem;}
 	body#checkout ul.nav.nav-tabs.mt-2.mb-4{margin-top:2rem!important;margin-bottom:1rem!important;}
+  /*Cart on section checkout no available*/
+  body#checkout main div.col-12.col-lg-4{display:none;}
 
   /*Stiker banner web*/
     /*IPAD top banner sticker*/
@@ -745,7 +747,7 @@ nav.icono-menu-mobile a:hover{
     border-radius: calc(6 * var(--borderWidth));
   }
   .gradient-border{
-    border-radius: calc(6 * var(--borderWidth));
+    border-radius: calc(6.5 * var(--borderWidth));
   }
 
   /*Miniature picture */
