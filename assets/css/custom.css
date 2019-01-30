@@ -124,8 +124,8 @@ body#checkout #checkout-payment-step #cart-voucher-promo #promo-code form .form-
 body#checkout #checkout-payment-step #cart-voucher-promo #promo-code form button.btn.btn-secondary{background-color:white;}
 */
 body#checkout #checkout-payment-step .block-promo .alert.alert-danger.js-error{display:none;}
-body#checkout #checkout-payment-step .block-promo a.promo-code-button.btn-link.btn-link-primary{background-color:black;color:white;display:block;padding-left:1.7rem;}
-body#checkout #checkout-payment-step .block-promo a.promo-code-button.btn-link.btn-link-primary::after{content:"\f107";font-family: "FontAwesome"; color:white;margin-left:6px;position:absolute; left:-2px;top:0;opacity:1;display:flex;align-items: center;bottom:0;width:1.7rem;text-align:center;}
+body#checkout #checkout-payment-step .block-promo a.promo-code-button.btn-link.btn-link-primary{background-color:black;color:white;display:block;padding-left:2.3rem;}
+body#checkout #checkout-payment-step .block-promo a.promo-code-button.btn-link.btn-link-primary::after{content:"\f107";font-family: "FontAwesome"; color:white;margin-left:6px;position:absolute; left:8px;top:0;opacity:1;display:flex;align-items: center;bottom:0;width:1.7rem;text-align:center;}
 
 /*Preview Image*/
 body#product #content .images-container{background-color:inherit!important;}
@@ -1351,4 +1351,22 @@ div#stage {
     width: 100%;
 }
 
+/* Estilo Domex */
+
+#checkout-delivery-step .col-sm-5, .delivery_option_110{
+    background-color: black;
+    margin: 0px -18px 0px 12px;
+    padding: 0px 0px 0px 10px;
+}
+
+#checkout-delivery-step span.h6.carrier-name, .delivery_option_110 {
+    color: white;
+}
+
+#checkout-delivery-step .col-sm-3, .delivery_option_110 {
+    background: #000000;
+    color: white;
+    margin: 0px -18px 0px 12px;
+    padding: 0px 0px 0px 10px;
+}
 }
