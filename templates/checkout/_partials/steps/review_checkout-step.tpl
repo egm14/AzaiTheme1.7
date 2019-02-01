@@ -32,7 +32,7 @@
 {if isset($tab) && $tab}
   {block name='nav_step'}
     <li class="nav-item">
-      <a id="{$identifier}-tab" class="nav-link {$step_classes|classnames}" href="#{$identifier}" data-toggle="tab" role="tab" aria-controls="{$identifier}"><span class="step-number">{$position}<span class="punto-step">. </span></span><span class="title-step">{$title}</span></a>
+      <a id="{$identifier}-tab" class="nav-link {$step_classes|classnames}" href="#{$identifier}" data-toggle="tab" role="tab" aria-controls="{$identifier}"><span class="step-number">{$position}<span class="punto-step">. </span></span>{$title}</a>
     </li>
   {/block}
 {else}
