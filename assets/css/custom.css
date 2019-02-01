@@ -52,7 +52,7 @@ By Azai.com theme v1.7
 /*Stiker banner top*/
 #ship{width:100%;height:25px;background:black;color:white;display:block!important;text-transform:uppercase;font-size:0.8em;margin-bottom: 4px; margin: 0px 0px 0px 0px;text-align:center;color: white; padding: 2px 0px 0px 0px; text-transform: uppercase;position:relative;overflow:hidden;}
 
-#ship div.ship-text{width:-moz-max-content;width:max-content;font-size:.9rem;padding:3px 0px;position:absolute;top:0;left:0;margin-bottom:0px;overflow-y:hidden;animation: TextScroll 30s linear infinite;-webkit-animation: TextScroll 30s linear infinite;-moz-animation: TextScroll 30s linear infinite;height:20px;
+#ship div.ship-text{width:-moz-max-content;width:max-content;font-size:.9rem;padding:3px 0px;position:relative;top:0;left:0;margin-bottom:0px;overflow-y:hidden;animation: TextScroll 30s linear infinite;-webkit-animation: TextScroll 30s linear infinite;-moz-animation: TextScroll 30s linear infinite;height:20px;
 }
 @keyframes TextScroll{
     from{left:100%;}
