@@ -29,7 +29,6 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 {/block}
   <div id="ship"><div class="ship-text">{l s='Free Shipping Over $90 USA | Over $150 México (1 - 2 days) | Rep. Dom. Envío Gratis (2 - 3 Dias)'}</div></div>
-
 {block name='head_seo'}
   <title>{block name='head_seo_title'}{$page.meta.title}{/block}</title>
   <meta name="description" content="{block name='head_seo_description'}{$page.meta.description}{/block}">
@@ -51,6 +50,10 @@
   <link rel="shortcut icon" type="image/x-icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
 {/block}
 
+{block name='hook_header'}
+  {$HOOK_HEADER nofilter}
+{/block}
+
 {block name='stylesheets'}
   {include file="_partials/stylesheets.tpl" stylesheets=$stylesheets}
 {/block}
@@ -59,10 +62,16 @@
   {include file="_partials/javascript.tpl" javascript=$javascript.head vars=$js_custom_vars}
 {/block}
 
-{block name='hook_header'}
-  {$HOOK_HEADER nofilter}
-{/block}
-
 {block name='hook_extra'}
 <script src='https://www.google.com/recaptcha/api.js'></script>
 {/block}
+
+{literal}
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PBFFQKC');</script>
+    <!-- End Google Tag Manager -->
+  {/literal}
