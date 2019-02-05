@@ -35,9 +35,6 @@
   </h3>
   <ul id="account-list-block" class="list-default-sm collapse d-md-block">
         <li>
-       <!-- <a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" > -->
-          <a href="#create-account-content-displayNav2" data-toggle="tab" data-link-action="display-register-form" title="{l s='Create new Account'}">
-          <!--<a id="createaccount" href="#" title="{l s='Create new Account'}" rel="nofollow">-->{l s='Create new account' mod='blockmyaccountfooter'}</a>
           {$my_account_url.url}
       </li>
     {foreach from=$my_account_urls item=my_account_url}
