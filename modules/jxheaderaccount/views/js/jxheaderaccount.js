@@ -117,10 +117,13 @@ $(document).on("submit", '[id*="login-content-"] form', function(e) {
                 for (a in e.errors) "indexOf" != a && "" != a && "back" != a ? "" == e.errors[a] ? (r.find("[name=" + a + "]").parents(".form-group").removeClass("has-error"), r.find("[name=" + a + "]").parents(".form-group").find(".help-block").remove()) : (r.find("[name=" + a + "]").parents(".form-group").addClass("has-error"), r.find("[name=" + a + "]").parents(".form-group").find(".help-block").remove(), r.find("[name=" + a + "]").parent().append('<div class="help-block"><ul><li class="alert alert-danger">' + e.errors[a] + "</li></ul></div>")) : "" == a && ("" == e.errors[a] ? r.find(".main-help-block ul").html("") : r.find(".main-help-block ul").html('<li class="alert alert-danger">' + e.errors[a] + "</li>"))
             } else 
                     var menuUser = $('#_mobile_user_info').find('.dropdown-menu.dropdown-menu-right');
-                    var userAlert = $('body').find('.alert.create-acount.alert-success')
+                    var menuUser2 = $('#_desktop_user_info').find('.dropdown-menu.dropdown-menu-right');
+                    var userAlert = $('body').find('.alert.create-acount.alert-success');
                     console.log("cuenta creada exitosamente")
                     menuUser.removeClass('show')
+                    menuUser2.removeClass('show')
                     menuUser.css("display", "none")
+                    menuUser2.css("display", "none")
                     userAlert.addClass('active')
                     setTimeout(function(){document.location.reload()}, 3000)
         },

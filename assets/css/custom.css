@@ -64,23 +64,24 @@ By Azai.com theme v1.7
  padding:1.1rem 2rem;
  text-align:center;
  border-radius:.5rem;
- z-index:1000;
+ z-index:0;
  font-size:medium;
  position:fixed;
  right:5rem;
- top:-7%;
+ top:0;
+ transform: translateY(-5%);
  opacity:0;
 }
 
 .alert.create-acount.alert-success::before{top:auto;}
 .alert.create-acount.alert-success.active{
-  animation: alertAccount .75s ease-out forwards;
+  animation: alertAccount .25s ease-out forwards;
  
 }
 @keyframes alertAccount{
-  0%{top:initial;opacity:0;}
+  0%{top:initial;opacity:0;z-index:1000;}
   50%{opacity:1;}
-  100%{top:30%;opacity:1;}
+  100%{opacity:1;z-index:1000;transform: translateY(80%);top:30%;}
 }
 
 /*Account user dropdown*/
