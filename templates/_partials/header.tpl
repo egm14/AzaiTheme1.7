@@ -32,6 +32,7 @@
   <div id="alerts-n">
   <div class="alerts create-acount alert-success"> {l s='Created account successful!' d='Shop.Theme.Global'} </div>
   <div class="alerts create-acount alert-processing"> {l s='Procesing account' d='Shop.Theme.Global'} </div>
+  <div class="alerts create-acount alert-error"> {l s='An error has occurred, please review the form.' d='Shop.Theme.Global'} </div>
   </div>
   <!-- Alert account created end -->
   
