@@ -27,6 +27,10 @@
       <!--spinner 1<div class="lds-ripple"><div></div><div></div></div>-->
      <!-- spinner 2--><div class="spinner2"><div class="dot1"></div><div class="dot2"></div></div>
   </div> 
+   <!-- Alert account create. -->
+  <div class="alert create-acount alert-success"> {l s='created account successful!' d='Shop.Theme.Customeraccount'} </div>
+  <!-- Alert account created end -->
+  
 {assign var='displayMegaHeader' value={hook h='jxMegaLayoutHeader'}}
 {if $displayMegaHeader}
   {$displayMegaHeader nofilter}

@@ -58,6 +58,31 @@ By Azai.com theme v1.7
     from{left:100%;}
     to{left:-100%;}
 }
+/*-- account element alert --*/
+.alert.create-acount.alert-success{
+ display:inline;
+ padding:1.1rem 2rem;
+ text-align:center;
+ border-radius:.5rem;
+ z-index:1000;
+ font-size:medium;
+ position:fixed;
+ right:5rem;
+ top:-7%;
+ opacity:0;
+}
+
+.alert.create-acount.alert-success::before{top:auto;}
+.alert.create-acount.alert-success.active{
+  animation: alertAccount .75s ease-out forwards;
+ 
+}
+@keyframes alertAccount{
+  0%{top:initial;opacity:0;}
+  50%{opacity:1;}
+  100%{top:30%;opacity:1;}
+}
+
 /*Account user dropdown*/
 .jx-header-account-wrapper .header-login-footer .register-link a span.one{text-decoration:underline;}
 .jx-header-account-wrapper .header-login-footer .register-link a{text-decoration:none;font-weight:normal;}
@@ -1047,6 +1072,11 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
    /*Cart Totals*/
    div.cart-grid-right .cart-summary.mb-3 .cart-detailed-totals hr{margin-top:.5rem;margin-bottom:.5rem;}
    div.cart-grid .cart-grid-body.mb-3.mb-lg-0.col-12.col-lg-8{margin-bottom:0rem;}
+
+   /*Alert creadted account*/
+  .alert.create-acount.alert-success{
+    right:calc(100% - 20em); 
+  }
 }   
 /***************************************************************
  ******************* Screen Max-width 375px *********************
