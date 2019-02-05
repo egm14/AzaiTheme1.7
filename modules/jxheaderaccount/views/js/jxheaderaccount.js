@@ -102,6 +102,10 @@ $(document).on("submit", '[id*="login-content-"] form', function(e) {
         }
     }, (new n.ajax).init(a)
 }), $(document).on("submit", '[id*="create-account-content-"] form', function(e) {
+    //this.preventDefault();
+        var userAlert = $('#alerts-n')
+        userAlert.find('.alerts.create-acount.alert-processing').addClass('active')
+        console.log("Clic creando cuenta");
     var r, a;
     e.preventDefault(), r = $(this).closest(".create-account-content"), a = {
         data: $.extend({}, n.getQueryParameters(r.find("form").serializeArray()), {
@@ -116,19 +120,19 @@ $(document).on("submit", '[id*="login-content-"] form', function(e) {
                 var a;
                 for (a in e.errors) "indexOf" != a && "" != a && "back" != a ? "" == e.errors[a] ? (r.find("[name=" + a + "]").parents(".form-group").removeClass("has-error"), r.find("[name=" + a + "]").parents(".form-group").find(".help-block").remove()) : (r.find("[name=" + a + "]").parents(".form-group").addClass("has-error"), r.find("[name=" + a + "]").parents(".form-group").find(".help-block").remove(), r.find("[name=" + a + "]").parent().append('<div class="help-block"><ul><li class="alert alert-danger">' + e.errors[a] + "</li></ul></div>")) : "" == a && ("" == e.errors[a] ? r.find(".main-help-block ul").html("") : r.find(".main-help-block ul").html('<li class="alert alert-danger">' + e.errors[a] + "</li>"))
             } else 
+                    userAlert.find('.alerts.create-acount.alert-processing').removeClass('active')
+                    userAlert.find('.alerts.create-acount.alert-success').addClass('active')
                     var menuUser = $('#_mobile_user_info').find('.dropdown-menu.dropdown-menu-right');
                     var menuUser2 = $('#_desktop_user_info').find('.dropdown-menu.dropdown-menu-right');
-                    var userAlert = $('body').find('.alert.create-acount.alert-success');
                     //console.log("cuenta creada exitosamente")
-                    if(menuUser =! "undefine"){
+                    if(menuUser){
                     menuUser.removeClass('show')
                     menuUser.css("display", "none")
                     }
                     if(menuUser2){
-                    menuUser2.css("display", "none")
                     menuUser2.removeClass('show')
+                    menuUser2.css("display", "none")
                     }
-                    userAlert.addClass('active')
                     setTimeout(function(){document.location.reload()}, 3500)
         },
         error: function(e) {
@@ -138,6 +142,8 @@ $(document).on("submit", '[id*="login-content-"] form', function(e) {
 }), //Create action to notifiación content form page
     $(document).on("submit", 'form#customer-form', function(e) {
         //this.preventDefault();
+        var userAlert = $('#alerts-n')
+        userAlert.find('.alerts.create-acount.alert-processing').addClass('active')
         console.log("Clic creando cuenta");
     var r, a;
     e.preventDefault(), r = $(this).closest(".register-form"), a = {
@@ -153,9 +159,10 @@ $(document).on("submit", '[id*="login-content-"] form', function(e) {
                 var a;
                 for (a in e.errors) "indexOf" != a && "" != a && "back" != a ? "" == e.errors[a] ? (r.find("[name=" + a + "]").parents(".form-group").removeClass("has-error"), r.find("[name=" + a + "]").parents(".form-group").find(".help-block").remove()) : (r.find("[name=" + a + "]").parents(".form-group").addClass("has-error"), r.find("[name=" + a + "]").parents(".form-group").find(".help-block").remove(), r.find("[name=" + a + "]").parent().append('<div class="help-block"><ul><li class="alert alert-danger">' + e.errors[a] + "</li></ul></div>")) : "" == a && ("" == e.errors[a] ? r.find(".main-help-block ul").html("") : r.find(".main-help-block ul").html('<li class="alert alert-danger">' + e.errors[a] + "</li>"))
             } else 
+                    userAlert.find('.alerts.create-acount.alert-processing').removeClass('active')
+                    userAlert.find('.alerts.create-acount.alert-success').addClass('active')
                     var menuUser = $('#_mobile_user_info').find('.dropdown-menu.dropdown-menu-right');
                     var menuUser2 = $('#_desktop_user_info').find('.dropdown-menu.dropdown-menu-right');
-                    var userAlert = $('body').find('.alert.create-acount.alert-success');
                     //console.log("cuenta creada exitosamente")
                     if(menuUser){
                     menuUser.removeClass('show')
@@ -165,7 +172,6 @@ $(document).on("submit", '[id*="login-content-"] form', function(e) {
                     menuUser2.removeClass('show')
                     menuUser2.css("display", "none")
                     }
-                    userAlert.addClass('active')
                     setTimeout(function(){document.location.reload()}, 3500)
         },
         error: function(e) {

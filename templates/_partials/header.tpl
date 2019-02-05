@@ -27,8 +27,12 @@
       <!--spinner 1<div class="lds-ripple"><div></div><div></div></div>-->
      <!-- spinner 2--><div class="spinner2"><div class="dot1"></div><div class="dot2"></div></div>
   </div> 
+
    <!-- Alert account create. -->
-  <div class="alert create-acount alert-success"> {l s='Created account successful!' d='Shop.Theme.Global'} </div>
+  <div id="alerts-n">
+  <div class="alerts create-acount alert-success"> {l s='Created account successful!' d='Shop.Theme.Global'} </div>
+  <div class="alerts create-acount alert-processing"> {l s='Procesing account' d='Shop.Theme.Global'} </div>
+  </div>
   <!-- Alert account created end -->
   
 {assign var='displayMegaHeader' value={hook h='jxMegaLayoutHeader'}}

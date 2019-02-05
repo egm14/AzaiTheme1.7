@@ -59,8 +59,8 @@ By Azai.com theme v1.7
     to{left:-100%;}
 }
 /*-- account element alert --*/
-.alert.create-acount.alert-success{
- display:inline;
+.alerts{
+  display:inline;
  padding:1.1rem 2rem;
  text-align:center;
  border-radius:.5rem;
@@ -71,24 +71,38 @@ By Azai.com theme v1.7
  top:0;
  transform: translateY(-5%);
  opacity:0;
+ color:white;
+}
+
+.alerts.create-acount.alert-success{
  background-color:#09bc82;
  border-color:#09bc82;
 }
+.alerts.create-acount.alert-processing{
+  background-color:#f8a617;
+}
 
-.alert.create-acount.alert-success::before{top:auto;}
-/*.alert.create-acount.alert-success.active{*/
+.alerts.create-acount.alert-success::before{
+  content:"\f058";
+  font-family: "FontAwesome";
+  top:auto;
+}
+.alerts.create-acount.alert-processing::before{
+  content:"\f017";
+  font-family: "FontAwesome";
+  top:auto;
+}
+/*.alert.create-acount.alert-success.active{
   animation: alertAccount .25s ease-out forwards;
- 
 }
 
 @keyframes alertAccount{
   0%{top:initial;opacity:0;z-index:1000;}
   50%{opacity:1;}
   100%{opacity:1;z-index:1000;transform: translateY(80%);top:30%;}
-}
+}*/
 
-
-.alert.create-acount.alert-success.active{
+.alerts.create-acount.alert-success.active,.alerts.create-acount.alert-processing.active {
   -webkit-animation:moveOpen 5s ease-out;
   -webkit-animation-iteration-count: forwards;
   -webkit-animation-fill-mode: forwards;
@@ -103,7 +117,7 @@ By Azai.com theme v1.7
   12% {-webkit-transform: translate(0,52px);}
   16% {-webkit-transform: translate(0,50px);}
   80% {-webkit-transform: translate(0,50px);}
-  85% {-webkit-transform: translate(0,55px);}
+  85% {-webkit-transform: translate(0,50px);}
   to {-webkit-transform: translate(0,-100px);}
 }
 

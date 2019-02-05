@@ -29,10 +29,6 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 {/block}
   <div id="ship"><div class="ship-text">{l s='Free Shipping Over $90 USA | Over $150 México (1 - 2 days) | Rep. Dom. Envío Gratis (2 - 3 Dias)'}</div></div>
-
-  <!-- Alert account create. -->
-  <div class="alert create-acount alert-success"> {l s='created account successful!' d='Shop.Theme.Customeraccount'} </div>
-  <!-- Alert account created end -->
   
 {block name='head_seo'}
   <title>{block name='head_seo_title'}{$page.meta.title}{/block}</title>
