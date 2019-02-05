@@ -101,8 +101,14 @@ By Azai.com theme v1.7
   50%{opacity:1;}
   100%{opacity:1;z-index:1000;transform: translateY(80%);top:30%;}
 }*/
-
-.alerts.create-acount.alert-success.active,.alerts.create-acount.alert-processing.active {
+.alerts.create-acount.alert-processing.active {
+   -webkit-animation:moveOpen 10s ease-out;
+  -webkit-animation-iteration-count: forwards;
+  -webkit-animation-fill-mode: forwards;
+  z-index:1033;
+  opacity:1;
+}
+.alerts.create-acount.alert-success.active,{
   -webkit-animation:moveOpen 5s ease-out;
   -webkit-animation-iteration-count: forwards;
   -webkit-animation-fill-mode: forwards;
