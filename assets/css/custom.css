@@ -71,17 +71,40 @@ By Azai.com theme v1.7
  top:0;
  transform: translateY(-5%);
  opacity:0;
+ background-color:#09bc82;
+ border-color:#09bc82;
 }
 
 .alert.create-acount.alert-success::before{top:auto;}
-.alert.create-acount.alert-success.active{
+/*.alert.create-acount.alert-success.active{*/
   animation: alertAccount .25s ease-out forwards;
  
 }
+
 @keyframes alertAccount{
   0%{top:initial;opacity:0;z-index:1000;}
   50%{opacity:1;}
   100%{opacity:1;z-index:1000;transform: translateY(80%);top:30%;}
+}
+
+
+.alert.create-acount.alert-success.active{
+  -webkit-animation:moveOpen 5s ease-out;
+  -webkit-animation-iteration-count: forwards;
+  -webkit-animation-fill-mode: forwards;
+  z-index:1033;
+  opacity:1;
+}
+/* Safari and Chrome */
+@-webkit-keyframes moveOpen 
+  {
+  from {-webkit-transform: translate(0,-100px);}
+  10% {-webkit-transform: translate(0,20px);}
+  12% {-webkit-transform: translate(0,22px);}
+  16% {-webkit-transform: translate(0,20px);}
+  80% {-webkit-transform: translate(0,20px);}
+  85% {-webkit-transform: translate(0,25px);}
+  to {-webkit-transform: translate(0,-100px);}
 }
 
 /*Account user dropdown*/

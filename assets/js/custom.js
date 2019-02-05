@@ -133,7 +133,6 @@ function butNormal(){
 }
 
 
-
  /*==================== SHOW ORDEN RESUMEN BEHAVIOR =======================
 $('#order-summary-content')..on('click', ".btn-order-summary", function(){
 	 //$('#show-orden').find('#order-detail-content').toggleClass("active");
