@@ -62,6 +62,9 @@ By Azai.com theme v1.7
 #account-list-block a.Registro-personal-link {
     text-decoration: underline blink;
 }
+/*Botone invertidos Registro*/
+#create-account-content-displayNav2 button.btn.btn-secondary.btn-md.btn-block.submit {background: black;color: white;}
+#create-account-content-displayNav2 a.btn.btn-primary.btn-md.btn-block {background: white;color: black;}
 /*-- account element alert --*/
 .alerts{
   display:inline;
