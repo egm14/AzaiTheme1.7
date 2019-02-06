@@ -58,6 +58,10 @@ By Azai.com theme v1.7
     from{left:100%;}
     to{left:-100%;}
 }
+/*Link subrayado crear nueva cuenta*/
+#account-list-block a.Registro-personal-link {
+    text-decoration: underline blink;
+}
 /*-- account element alert --*/
 .alerts{
   display:inline;

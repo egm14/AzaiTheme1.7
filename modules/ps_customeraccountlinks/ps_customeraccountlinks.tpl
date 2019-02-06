@@ -37,7 +37,11 @@
         <li>
           {$my_account_url.url}
       </li>
+	  	<li>
+          <a href="{$urls.pages.register}" class="Registro-personal-link">{l s='Crear nueva cuenta '}</a>
+        </li>
     {foreach from=$my_account_urls item=my_account_url}
+
         <li>
           <a href="{$my_account_url.url}" title="{$my_account_url.title}" rel="nofollow">
             {$my_account_url.title}
