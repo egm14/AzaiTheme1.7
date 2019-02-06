@@ -115,14 +115,16 @@ $(document).on("submit", '[id*="login-content-"] form', function(e) {
             controller: "auth",
             ajax: !0
         }),
-        success: function(e) {
+        success: function(e, textstatus, xhr) {
+            //console.log(textstatus)
+            //console.log(xhr.status)
             if (e.hasError) {
                 var a;
                 for (a in e.errors) "indexOf" != a && "" != a && "back" != a ? "" == e.errors[a] ? (r.find("[name=" + a + "]").parents(".form-group").removeClass("has-error"), r.find("[name=" + a + "]").parents(".form-group").find(".help-block").remove()) : (r.find("[name=" + a + "]").parents(".form-group").addClass("has-error"), r.find("[name=" + a + "]").parents(".form-group").find(".help-block").remove(), r.find("[name=" + a + "]").parent().append('<div class="help-block"><ul><li class="alert alert-danger">' + e.errors[a] + "</li></ul></div>")) : "" == a && ("" == e.errors[a] ? r.find(".main-help-block ul").html("") : r.find(".main-help-block ul").html('<li class="alert alert-danger">' + e.errors[a] + "</li>"))
                 userAlert.find('.alerts.create-acount.alert-processing').removeClass('active')
                 userAlert.find('.alerts.create-acount.alert-error').addClass('active')
                 //console.log("ha ocurrido un error al crear la cuenta I")
-            } else if (200 == response.status){
+            } else if (xhr.status == 200){
                     userAlert.find('.alerts.create-acount.alert-processing').removeClass('active')
                     userAlert.find('.alerts.create-acount.alert-success').addClass('active')
                     var menuUser = $('#_mobile_user_info').find('.dropdown-menu.dropdown-menu-right');
@@ -159,14 +161,18 @@ $(document).on("submit", '[id*="login-content-"] form', function(e) {
             controller: "auth",
             ajax: !0
         }),
-        success: function(e) {
+        success: function(e, textstatus, xhr) {
+            //console.log(textstatus)
+            //console.log(xhr.status)
             if (e.hasError) {
                 var a;
                 for (a in e.errors) "indexOf" != a && "" != a && "back" != a ? "" == e.errors[a] ? (r.find("[name=" + a + "]").parents(".form-group").removeClass("has-error"), r.find("[name=" + a + "]").parents(".form-group").find(".help-block").remove()) : (r.find("[name=" + a + "]").parents(".form-group").addClass("has-error"), r.find("[name=" + a + "]").parents(".form-group").find(".help-block").remove(), r.find("[name=" + a + "]").parent().append('<div class="help-block"><ul><li class="alert alert-danger">' + e.errors[a] + "</li></ul></div>")) : "" == a && ("" == e.errors[a] ? r.find(".main-help-block ul").html("") : r.find(".main-help-block ul").html('<li class="alert alert-danger">' + e.errors[a] + "</li>"))
                 userAlert.find('.alerts.create-acount.alert-processing').removeClass('active')
                 userAlert.find('.alerts.create-acount.alert-error').addClass('active')
                 //console.log("ha ocurrido un error al crear la cuenta II")
-            } else if (200 == response.status){
+                
+            } else if(xhr.status == 200) {
+
                     userAlert.find('.alerts.create-acount.alert-processing').removeClass('active')
                     userAlert.find('.alerts.create-acount.alert-success').addClass('active')
                     var menuUser = $('#_mobile_user_info').find('.dropdown-menu.dropdown-menu-right');
