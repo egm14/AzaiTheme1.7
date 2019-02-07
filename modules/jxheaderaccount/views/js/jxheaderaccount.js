@@ -107,7 +107,8 @@ $(document).on("submit", '[id*="login-content-"] form', function(e) {
         userAlert.find('.alerts.create-acount.alert-processing').addClass('active')
         console.log("Clic creando cuenta");
     var r, a;
-    e.preventDefault(), r = $(this).closest(".create-account-content"), a = {
+    if(document.body.id != "checkout"){
+    e.preventDefault()} r = $(this).closest(".create-account-content"), a = {
         data: $.extend({}, n.getQueryParameters(r.find("form").serializeArray()), {
             submitCreate: 1,
             fc: "module",
@@ -153,7 +154,9 @@ $(document).on("submit", '[id*="login-content-"] form', function(e) {
         userAlert.find('.alerts.create-acount.alert-processing').addClass('active')
         console.log("Clic creando cuenta");
     var r, a;
-    e.preventDefault(), r = $(this).closest(".register-form"), a = {
+    if(document.body.id != "checkout"){
+    e.preventDefault()}
+        r = $(this).closest(".register-form"), a = {
         data: $.extend({}, n.getQueryParameters(r.find("form").serializeArray()), {
             submitCreate: 1,
             fc: "module",
