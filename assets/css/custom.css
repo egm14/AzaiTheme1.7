@@ -828,6 +828,7 @@ nav.icono-menu-mobile a:hover{
   body#checkout #checkout-payment-step #order-summary-content div.summary-selected-carrier{text-align:center;}
   body#checkout #checkout-payment-step #order-summary-content #order-items div.order-confirmation-table .p-3 div.order-line div.col-sm-2.col-3{padding-right:0;padding-left:0;}
   body#checkout #checkout-payment-step #order-summary-content div.card.noshadow{margin-bottom:10px;}
+  #checkout-payment-step .custom-radio .custom-control-label:after {background: #00000000!important;} /*fix radio/
   
   /*Animation button*/
   .gradient-border:after {
