@@ -35,7 +35,7 @@ By Azai.com theme v1.7
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
-
+#checkout #cart-voucher-promo a.close span{opacity:0;}
 
 @keyframes animatedgradient {
   0% {
