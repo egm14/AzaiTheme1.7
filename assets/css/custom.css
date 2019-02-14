@@ -36,6 +36,16 @@ By Azai.com theme v1.7
   background-size: 300% 300%;
 }
 #checkout #cart-voucher-promo a.close span{opacity:0;}
+.cart-summary.open-slidebar button.closeSlidebar.btn{
+  background-color:black;
+  color:white;
+  border-radius:0;
+  top:0;
+  right:0;
+  width:3rem;
+  height:3rem;
+
+}
 
 @keyframes animatedgradient {
   0% {
