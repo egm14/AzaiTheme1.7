@@ -573,6 +573,10 @@ body#product #wishlist_button_block{margin-top:2rem;}
   /*Add Border solid Login Form*/
 .jx-header-account-wrapper .header-login-content .form-group .btn-show-password, .jx-header-account-wrapper .header-login-content .form-group .form-control {border-top: solid 0.1px #f0f0f0;border-left: none;border-right: solid 0.1px #f0f0f0;border-bottom: solid 0.1px #f0f0f0;}
 .jx-header-account-wrapper .header-login-content .form-group .form-control {text-align: center;border: solid 0.1px;}
+
+article.address-item .custom-radio .custom-control-label::before{top:-1.1rem;}
+article.address-item .custom-radio .custom-control-label::after{top:-0.912rem;}
+
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/

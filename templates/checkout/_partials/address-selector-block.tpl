@@ -33,8 +33,8 @@
         
           <div class="custom-control custom-radio">
             <label>
-              <input class="custom-control-input" type="radio" name="{$name}" value="{$address.id}" {if $address.id == $selected}checked{/if}>
-              <span class="custom-control-label">
+              <input class="custom-control-input" type="radio" name="{$name}" value="{$address.id}" {if $address.id == $selected}checked{/if}><br />
+              <span class="custom-control-label" style="padding-left:0;">
                 <span class="address-alias h6">{$address.alias}</span>
                 <div class="address">{$address.formatted nofilter}</div>
               </span>
