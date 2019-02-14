@@ -1107,7 +1107,7 @@ p.select.datesendcard {margin: 0px 0px 0px -32px;}/*gift card date*/
 
 
 @media only screen and (max-width:420px){
-/*#header>.wrapper {padding-top: 3px;padding-bottom: 3px;width: 150px}*/
+#header>.wrapper {padding-top: 3px;padding-bottom: 3px;width: 150px}
 header#header {display: flex;}
 .separator-list.justify-content-center {position: relative;top: 15px;}
 li.top-level-menu-li {margin-bottom: 0px;padding-bottom: 0px;border-bottom: 1px solid #cccccc36;border-left: 0px!important;padding-left:0px;padding-right: 0px;padding: 0px 0px 0px 7px;}

@@ -123,8 +123,9 @@
         <a id="tocheckout" class="btn btn-secondary btn-sm" href="{$cart_url}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}">{l s='Proceed to checkout' d='Shop.Theme.Actions'}</a>
         <button type="button" class="closeSlidebar shopping" aria-label="Close">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
         
-      </div>
+      
       End cart block oficial show data -->
+      </div>
     </div>
   </div>
 </div>
