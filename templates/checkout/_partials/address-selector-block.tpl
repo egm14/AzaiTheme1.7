@@ -58,7 +58,7 @@
             href="{url entity='order' params=['id_address' => $address.id, 'editAddress' => $type, 'token' => $token]}"
           >
             <i class="fa fa-pencil-square mr-1" aria-hidden="true"></i>{l s='Edit' d='Shop.Theme.Actions'}
-          </a>
+          </a><br />
           <a
             class="delete-address btn-link"
             data-link-action="delete-address"
@@ -70,6 +70,47 @@
       </footer>
     </article>
   {/foreach}
+    <article
+      class="address-item{if $address.id == $selected} selected{/if}"
+      id="{$name|classname}-address-{$address.id}"
+    >
+    <label class="radio-block">
+      
+        <a class="btn-link btn-link-primary icon-left" style="padding-left:0;" href="{$new_address_delivery_url}">
+          <header class="address-header" style="display:flex;align-items:center;">
+          <div class="custom-control custom-radio">
+            
+              <input class="custom-control-input" type="radio" name="{$name}" value="{$address.id}" {if $address.id == $selected}checked{/if}>
+              <span class="custom-control-label add-new-address">
+                <span class="address-alias h6">{*$address.alias*}</span>
+                <div class="address"><p class="add-address"><i class="material-icons-add_box"></i>{l s='add new address' d='Shop.Theme.Actions'}</p>
+                {*$address.formatted nofilter*}</div>
+              </span>
+            </label>
+          </div>
+          </header>
+      <hr>
+      <footer class="address-footer">
+        {if $interactive}
+          <!--<a
+            class="edit-address btn-link"
+            data-link-action="edit-address"
+            href="{url entity='order' params=['id_address' => $address.id, 'editAddress' => $type, 'token' => $token]}"
+          >
+            <i class="fa fa-pencil-square mr-1" aria-hidden="true"></i>{l s='Edit' d='Shop.Theme.Actions'}
+          </a>
+          <a
+            class="delete-address btn-link"
+            data-link-action="delete-address"
+            href="{url entity='order' params=['id_address' => $address.id, 'deleteAddress' => true, 'token' => $token]}"
+          >
+            <i class="fa fa-trash-o mr-1" aria-hidden="true"></i>{l s='Delete' d='Shop.Theme.Actions'}
+          </a>-->
+          {l s='Click in the box to create new addres'}
+        {/if}
+      </footer>
+      </a>
+    </article>
   {if $interactive}
     <p>
       <button class="ps-hidden-by-js form-control-submit center-block" type="submit">{l s='Save' d='Shop.Theme.Actions'}</button>
