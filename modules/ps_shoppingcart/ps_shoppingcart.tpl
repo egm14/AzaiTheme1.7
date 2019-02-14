@@ -35,7 +35,7 @@
     </a>
   </div>
   <div class="cart-summary" data-off-canvas="blockcart-slidebar right push">
-    <button type="button" class="closeSlidebar" aria-label="Close"></button>
+    <button type="button" class="closeSlidebar btn" aria-label="Close"></button>
     <div class="block-cart-body">
       <h4 class="cart-summary-header text-center page-heading">{l s='Cart' d='Shop.Theme.Actions'}</h4>
       <ul id="cart-summary-product-list">
