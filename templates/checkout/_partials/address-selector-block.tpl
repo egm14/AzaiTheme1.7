@@ -58,7 +58,7 @@
             href="{url entity='order' params=['id_address' => $address.id, 'editAddress' => $type, 'token' => $token]}"
           >
             <i class="fa fa-pencil-square mr-1" aria-hidden="true"></i>{l s='Edit' d='Shop.Theme.Actions'}
-          </a><br />
+          </a>
           <a
             class="delete-address btn-link"
             data-link-action="delete-address"

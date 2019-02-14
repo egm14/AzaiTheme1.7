@@ -824,8 +824,9 @@ nav.icono-menu-mobile a:hover{
     -webkit-box-shadow: inset -21px -4px 13px -11px rgba(0,0,0,0.24);
         -moz-box-shadow: inset -21px -4px 13px -11px rgba(0,0,0,0.24);
         box-shadow: inset -21px -4px 13px -11px rgba(0,0,0,0.24);}
-  #checkout-addresses-step .address-selector .address-item .address-header{min-height:22rem;width:10rem;}
-  #checkout-addresses-step .address-selector{margin-bottom:1rem;}
+  body#checkout #checkout-addresses-step .address-selector .address-item .address-header{min-height:22rem;width:10rem;}
+  body#checkout #checkout-addresses-step .address-selector{margin-bottom:1rem;}
+  body#checkout #checkout-addresses-step .address-selector .address-item .address-footer .btn-link{display:block;}
   body#checkout ul.nav.nav-tabs.mt-2.mb-4{margin-top:2rem!important;margin-bottom:1rem!important;}
   /*Cart on section checkout no available*/
   body#checkout main div.col-12.col-lg-4{display:none;}
