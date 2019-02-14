@@ -38,7 +38,51 @@
     <button type="button" class="closeSlidebar btn" aria-label="Close"></button>
     <div class="block-cart-body">
       <h4 class="cart-summary-header text-center page-heading">{l s='Cart' d='Shop.Theme.Actions'}</h4>
-      <ul id="cart-summary-product-list">
+      <div class="cart-grid row">
+      <!-- Left Block: cart product informations & shpping -->
+      <div class="cart-grid-body mb-3 mb-lg-0 col-12 col-lg-8">
+
+        <!-- cart products detailed -->
+        <div class="cart-container mb-4">
+          {block name='cart_overview'}
+            {include file='checkout/_partials/cart-detailed.tpl' cart=$cart}
+          {/block}
+        </div>
+
+        <!--{block name='continue_shopping'}
+          <a class="btn btn-secondary btn-sm icon-left" href="{$urls.pages.index}">
+            <span>{l s='Continue shopping' d='Shop.Theme.Actions'}</span>
+          </a>
+        {/block}-->
+
+        <!-- shipping informations 
+        {block name='hook_shopping_cart_footer'}
+          {hook h='displayShoppingCartFooter'}
+        {/block}-->
+        {block name='cart_summary'}
+          <div class="cart-summary mb-3">
+
+             <hr>
+            <div class="cart-total d-flex flex-wrap justify-content-between my-3">
+              <strong class="label" style="font-style:underline;">{l s='Subtotal' d='Shop.Theme.Checkout'}</strong>
+              <!--<strong class="value">{$cart.totals.total.value}</strong>-->
+            </div>
+
+            {block name='cart_totals'}
+              {include file='checkout/_partials/cart-detailed-totals.tpl' cart=$cart}
+            {/block}
+
+            {block name='cart_actions'}
+              {include file='checkout/_partials/cart-detailed-actions.tpl' cart=$cart}
+            {/block}
+             <button type="button" class="closeSlidebar shopping" aria-label="Close">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
+          </div>
+        {/block}
+      </div>
+      <!-- Cart sustituto final -->
+
+     <!--Cart block oficial-->
+      <!--<ul id="cart-summary-product-list">
         {foreach from=$cart.products item=product}
           <li class="cart-summary-product-item text-left">
             {include 'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' product=$product}
@@ -74,11 +118,13 @@
         <strong class="label">{$cart.totals.total.label}</strong>
         <strong class="value">{$cart.totals.total.value}</strong>
       </div>
+      
       <div class="cart-footer text-center">
         <a id="tocheckout" class="btn btn-secondary btn-sm" href="{$cart_url}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}">{l s='Proceed to checkout' d='Shop.Theme.Actions'}</a>
         <button type="button" class="closeSlidebar shopping" aria-label="Close">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
-        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>-->
+        
       </div>
+      End cart block oficial show data -->
     </div>
   </div>
 </div>

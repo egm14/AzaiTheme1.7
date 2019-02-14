@@ -107,7 +107,7 @@
           >
             <i class="fa fa-trash-o mr-1" aria-hidden="true"></i>{l s='Delete' d='Shop.Theme.Actions'}
           </a>-->
-          {l s='Click in the box to create new addres'}
+          {l s='Click in the box to create new addres' d='Shop.Theme.Actions'}
         {/if}
       </footer>
       </a>

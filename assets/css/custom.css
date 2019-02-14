@@ -577,6 +577,21 @@ body#product #wishlist_button_block{margin-top:2rem;}
 article.address-item .custom-radio .custom-control-label::before{top:-1.1rem;}
 article.address-item .custom-radio .custom-control-label::after{top:-0.912rem;}
 
+/*------------ New Cart Summary --------------*/
+.cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container{margin-bottom:1rem!important;}
+.cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-left,
+.cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-right{width:26%;padding:0px 7px;}
+.cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-body{width:48%; padding:0px 5px;text-align:left;}
+.cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-left .product-thumbnail{margin-right:0.563rem;}
+.cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-left .remove-from-cart.close{top:0px;right:0px;}
+.cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-left .remove-from-cart.close::before{content:"\f014" !important;font:normal normal normal 14px/1 FontAwesome !important;}
+.cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-right div.row.align-items-center div{margin-bottom:0px!important;}
+.cart-summary.open-slidebar .cart-summary.mb-3 .second-part-cart-sumary{display:none;}
+.cart-summary.open-slidebar .cart-summary.mb-3 #cart-subtotal-shipping{display:none;}
+.cart-summary.open-slidebar .cart-summary.mb-3 .cart-total{margin: 0.5rem 0 !important}
+.cart-summary.open-slidebar .cart-summary.mb-3 .cart-total hr{margin:0!important;}
+.cart-summary.open-slidebar .cart-summary.mb-3 .cart-total strong.label{text-decoration:underline;font-weight:700!important;font-size:1.1rem!important;color:black!important;}
+
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/
@@ -1092,7 +1107,7 @@ p.select.datesendcard {margin: 0px 0px 0px -32px;}/*gift card date*/
 
 
 @media only screen and (max-width:420px){
-#header>.wrapper {padding-top: 3px;padding-bottom: 3px;width: 150px}
+/*#header>.wrapper {padding-top: 3px;padding-bottom: 3px;width: 150px}*/
 header#header {display: flex;}
 .separator-list.justify-content-center {position: relative;top: 15px;}
 li.top-level-menu-li {margin-bottom: 0px;padding-bottom: 0px;border-bottom: 1px solid #cccccc36;border-left: 0px!important;padding-left:0px;padding-right: 0px;padding: 0px 0px 0px 7px;}
