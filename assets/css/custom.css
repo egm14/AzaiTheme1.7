@@ -184,7 +184,6 @@ body#category ..product-prices-md.with-discount{justify-content: center;}
 #jx-header-account-link .fl-chapps-user139:before {content: "\f007";font-family: FontAwesome;color: black;}
 #choicegiftcard .jcarousel-control-prev, #choicegiftcard .jcarousel-control-next {position: absolute;top: 36%;margin-top: -15px;width: 30px;height: 30px;text-align: center;background: #000;color: #fff;text-decoration: none;text-shadow: 0 0 1px #000;font: 27px/27px Arial,sans-serif;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;-webkit-box-shadow: 0 0 4px #000;-moz-box-shadow: 0 0 4px #000;box-shadow: 0 0 4px #000;border-color: #000;
 }
-.row.it_LLQMAEZGTHLF.stick-up.d-xl-flex.align-items-xl-center {padding-top: 0!important;}
 span.discount-percentage.discount-product {color: red;}
 .block-categories .arrows .arrow-down, .block-categories .arrows .arrow-right {cursor: pointer;margin-left: .3125rem;color: #2f2c2f;left: 88%;position: absolute;font-size: 15px;height: 10%;width: 10%}
 .default-menu > ul > li > .top-level-menu-li-span{color:black!important;}
