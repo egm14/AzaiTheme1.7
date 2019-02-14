@@ -80,10 +80,11 @@
           <header class="address-header" style="display:flex;align-items:center;">
           <div class="custom-control custom-radio">
             
-              <input class="custom-control-input" type="radio" name="{$name}" value="{$address.id}" {if $address.id == $selected}checked{/if}>
-              <span class="custom-control-label add-new-address">
+              <!--<input class="custom-control-input" type="radio" name="{$name}" value="{$address.id}" {if $address.id == $selected}checked{/if}>-->
+              <span class="custom-control-label-n add-new-address-n">
                 <span class="address-alias h6">{*$address.alias*}</span>
-                <div class="address"><p class="add-address"><i class="material-icons-add_box"></i>{l s='add new address' d='Shop.Theme.Actions'}</p>
+                <div class="address"><p class="add-address" style="display:flex;align-items:end;">
+                  <i class="material-icons-add_box" style="position:initial; margin-right:6px;"></i>{l s='add new address' d='Shop.Theme.Actions'}</p>
                 {*$address.formatted nofilter*}</div>
               </span>
             </label>

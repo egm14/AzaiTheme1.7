@@ -72,9 +72,9 @@
           <p class="alert alert-danger js-address-error" name="alert-delivery" style="display: none">{l s="Your address is incomplete, please update it." d="Shop.Notifications.Error"}</p>
         {/if}
 
-        <p class="add-address">
+        <!--<p class="add-address">
           <a class="btn-link btn-link-primary icon-left" href="{$new_address_delivery_url}"><i class="material-icons-add_box"></i>{l s='add new address' d='Shop.Theme.Actions'}</a>
-        </p>
+        </p>-->
 
         {if $use_same_address && !$cart.is_virtual}
           <p>
