@@ -4,7 +4,10 @@ CSS Personalizado para la Tienda AZAI Store
 By Azai.com theme v1.7
 */
 
-
+.cart-grid-body.mb-3.mb-lg-0.col-12.col-lg-8 {
+    max-width: 100%!important;
+    flex: none!important;
+}
 /***************************************************************
  ******************* General CSS Changel  *********************
  ***************************************************************/
@@ -142,6 +145,11 @@ By Azai.com theme v1.7
   z-index:1033;
   opacity:1;
 }
+/* Botones -Comprar como invitado - O registrarse */
+#checkout-personal-information-step button.nav-link {padding:5px;font-size:10px;background:black;color:white;border: 0;}
+#checkout-personal-information-step button.nav-link.active.show {font-size:10px;padding:5px;background:#4CAF50;color:black;}
+#checkout-personal-information-step li.nav-item.px-3 {padding-left: 1rem!important;font-size: 20px;}
+#checkout-personal-information-step li.nav-item.px-3 {padding-right: 1rem!important;}
 
 /* Safari and Chrome */
 @-webkit-keyframes moveOpen 
@@ -650,7 +658,8 @@ article.address-item .custom-radio .custom-control-label::after{top:-0.912rem;}
  .grid .product-miniature .product-miniature-container .product-miniature-information .product-buttons > a{color:#ededed;}
  .grid .product-miniature .product-miniature-container .product-miniature-information{padding-bottom:0px;}
  nav.mb-xl-4{margin-bottom:1.4rem!important;background-color:#f4f4f4;}
-
+/*Header fix*/
+ #header .stickUpTop:not(.isStuck) .stick-up {padding-top: 0px!important;padding-bottom: 40px;}
  #content div.address-selector article address{font-size:.9rem;}
 
  /*SIZE CHART*/
@@ -916,6 +925,7 @@ nav.icono-menu-mobile a:hover{
   /*Product name*/
   body#product h1.h2.product-name.mobile{font-family: 'Didot-Italic', cursive!important;margin-bottom:1.2rem;font-size:2rem;text-align:center!important;display:block!important;}
   body#product h1.h2.product-name{display:none;}
+  
 }
 /***************************************************************
  ******************* Screen Max-width 720x *********************
@@ -1488,9 +1498,8 @@ div#stage {
     height: 462px;
     width: 100%;
 }
-/* Estilo Domex */
-#checkout-delivery-step span.h6.carrier-name{color: white;}
-#checkout-delivery-step .col-sm-3 {background: #000000;color: white;margin: 0px -18px 0px 12px;padding: 0px 0px 0px 10px;}
-#checkout-delivery-step .col-sm-4 {padding: 12px;}
-#checkout-delivery-step .col-sm-5 {background-color: black;margin: 0px -18px 0px 12px;padding: 0px 0px 0px 10px;}
-}
+/* Estilo Carrier */
+body#checkout .checkout-step .delivery-options .delivery-option-item label .row {background: #f1f1f1;border: none;}
+body#checkout #hook-display-before-carrier .custom-radio:focus, .custom-control:hover {background: #000000;}
+
+

@@ -25064,4 +25064,11 @@ main .list .products article.product-miniature .product-miniature-container .pro
     font-weight: 400;
     font-style: normal
 }
+#_desktop_cart .cart-grid-body.mb-3.mb-lg-0.col-12.col-lg-8 {
+    max-width: 100%!important;
+    flex: none!important;
+}
+#_desktop_cart .col-md-6.price {
+    margin: 1px;
+}
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9hc3NldHNcXGNzc1xcdGhlbWUuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
