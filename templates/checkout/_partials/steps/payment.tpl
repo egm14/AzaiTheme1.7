@@ -4,6 +4,48 @@
 
   {hook h='displayPaymentTop'}
 
+   <div id="show-orden">
+          <div class="span btn-order-summary">
+            <span class="text-resumen-cart"><i class="fa fa-shopping-bag" aria-hidden="true" style="margin-right:5px"></i> {l s='Show Order Summary' d='Shop.Theme.Checkout'}</span>
+            <span> {$cart.totals.total.value}</span>      
+          </div>
+    
+     <!-- Summary cart container -->
+          <div id="order-summary-content" class="table_block table-responsive">
+              <div class="cart-subtotals">
+              {foreach from=$cart.subtotals item="subtotal"}
+                {if isset($subtotal) && $subtotal}
+                  <div class="cart-{$subtotal.type} d-flex flex-wrap justify-content-between">
+                    <span class="label">{$subtotal.label}</span>
+                    <span class="value">{$subtotal.value}</span>
+                    {if $subtotal.type == 'discount'}
+                      {if $cart.vouchers.added}
+                        <ul class="list-group mb-2 w-100">
+                          {foreach from=$cart.vouchers.added item='voucher'}
+                            <li class="list-group-item d-flex flex-wrap justify-content-between">
+                              <span>{$voucher.name}({$voucher.reduction_formatted})</span><a data-link-action="remove-voucher" href="{$voucher.delete_url}" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </a>
+                            </li>
+                          {/foreach}
+                        </ul>
+                      {/if}
+                    {/if}
+                  </div>
+                {/if}
+              {/foreach}
+            </div>
+            <hr>
+            <div class="cart-total d-flex flex-wrap justify-content-between my-3">
+              <strong class="label">{$cart.totals.total.label}</strong>
+              <strong class="value">{$cart.totals.total.value}</strong>
+            </div>
+       <!-- Final Summary cart container -->
+             <i class="close-resumen"></i>
+          </div> 
+ </div>
+ <!-- Final Show Order -->
+
   <h2 class="Payment-method-title">{l s='Select your payment method' d='Shop.Theme.Checkout'}</h2>
 
   {if $is_free}
@@ -17,7 +59,7 @@
         {block name='cart_voucher'}
           {include file='checkout/_partials/cart-voucher.tpl'}
         {/block}
-       <!--template voucher inclueded -->
+    <!--template voucher inclueded -->
 
     {foreach from=$payment_options item="module_options"}
       {foreach from=$module_options item="option"}

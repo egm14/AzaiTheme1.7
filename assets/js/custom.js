@@ -110,13 +110,7 @@ $(document).ready(function(){
     	//console.log("hola");
     	setTimeout(window.scrollTo(0,600), 600);
     }
-    
-/*==================== HAVE A CODE BEHAVIOR TITLE =======================*/
-/*$('#checkout-payment-step').on('click', '.promo-code-title-btn', function(){
-	console.log("encontrado");
-	$('#cart-voucher-promo').find('#promo-code').addClass('show');
-	
-});*/
+
 
 /*==================== CHANGE COLOR ADD TO BAG =======================*/
 
@@ -182,14 +176,14 @@ function addGradient(vb){
 }
 
 
- /*==================== SHOW ORDEN RESUMEN BEHAVIOR =======================
-$('#order-summary-content')..on('click', ".btn-order-summary", function(){
-	 //$('#show-orden').find('#order-detail-content').toggleClass("active");
-	 $('#order-summary-content').toggleClass("active");
-	 $('#order-summary-content').find('final-resumen-div').toggle(300, 'swing');
-	 });
+ /*==================== SHOW ORDEN RESUMEN BEHAVIOR =======================*/
+$('#show-orden').on('click', ".span.btn-order-summary", function(){
+	 $(this).toggleClass("active");
+	 $('#show-orden').find('#order-summary-content').toggle(100, 'swing');
+	 $('#show-orden').find('i.fa-shopping-bag').toggleClass("active");
+});
 
-	$('#show-orden').find('.close-resumen').on('click', function(e){
+	/*$('#show-orden').find('.close-resumen').on('click', function(e){
 		 $('#show-orden').find('#order-detail-content').hide();
 		 $('#show-orden').toggleClass("active");
 		 e.preventDefault();
