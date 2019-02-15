@@ -143,8 +143,8 @@ By Azai.com theme v1.7
   opacity:1;
 }
 /* Botones -Comprar como invitado - O registrarse */
-#checkout-personal-information-step button.nav-link {padding: 5px;font-size: 10px;background: black;color: white;border-radius: 0px;border: 0;}
-#checkout-personal-information-step button.nav-link.active.show {font-size:10px;padding: 5px;background:#4CAF50;color:black;border-radius: 0px;}
+#checkout-personal-information-step button.nav-link {padding:5px;font-size:10px;background:black;color:white;border: 0;}
+#checkout-personal-information-step button.nav-link.active.show {font-size:10px;padding:5px;background:#4CAF50;color:black;}
 #checkout-personal-information-step li.nav-item.px-3 {padding-left: 1rem!important;font-size: 20px;}
 #checkout-personal-information-step li.nav-item.px-3 {padding-right: 1rem!important;}
 
