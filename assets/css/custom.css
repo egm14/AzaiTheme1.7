@@ -1504,6 +1504,6 @@ div#stage {
 }
 /* Estilo Carrier */
 body#checkout .checkout-step .delivery-options .delivery-option-item label .row {background: #f1f1f1;border: none;}
-body#checkout #hook-display-before-carrier .custom-radio:focus, .custom-control:hover {background: #000000;}
+body#checkout #hook-display-before-carrier .custom-control:active, .custom-control:focus, .custom-control:hover {color: #4CAF50;}
 
 
