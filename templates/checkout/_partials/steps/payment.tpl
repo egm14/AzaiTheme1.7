@@ -13,9 +13,8 @@
       
 
   <div class="payment-options{if $is_free} d-none{/if}">
-    <!-- ADD template voucher checkout visible before to payment 
-      <a class="promo-code-title-btn" href="#cart-voucher-promo">{l s='Have you a code?'}</a>-->
-        {block name='cart_summary_voucher'}
+    <!-- ADD template voucher checkout visible before to payment -->
+        {block name='cart_voucher'}
           {include file='checkout/_partials/cart-voucher.tpl'}
         {/block}
        <!--template voucher inclueded -->

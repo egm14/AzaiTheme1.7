@@ -112,11 +112,11 @@ $(document).ready(function(){
     }
     
 /*==================== HAVE A CODE BEHAVIOR TITLE =======================*/
-$('#checkout-payment-step').on('click', '.promo-code-title-btn', function(){
+/*$('#checkout-payment-step').on('click', '.promo-code-title-btn', function(){
 	console.log("encontrado");
 	$('#cart-voucher-promo').find('#promo-code').addClass('show');
 	
-});
+});*/
 
 /*==================== CHANGE COLOR ADD TO BAG =======================*/
 

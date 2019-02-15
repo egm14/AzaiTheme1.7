@@ -47,9 +47,7 @@
 
   <div class="second-part-cart-sumary">
   <hr> 
-    {block name='cart_voucher'}
-      {include file='checkout/_partials/cart-voucher.tpl'}
-    {/block}
+    
 
     <div class="cart-detailed-block">
       <div class="cart-summary-line cart-total">
