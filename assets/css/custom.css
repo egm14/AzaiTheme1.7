@@ -4,7 +4,10 @@ CSS Personalizado para la Tienda AZAI Store
 By Azai.com theme v1.7
 */
 
-
+.cart-grid-body.mb-3.mb-lg-0.col-12.col-lg-8 {
+    max-width: 100%!important;
+    flex: none!important;
+}
 /***************************************************************
  ******************* General CSS Changel  *********************
  ***************************************************************/
@@ -1498,3 +1501,5 @@ div#stage {
 /* Estilo Carrier */
 body#checkout .checkout-step .delivery-options .delivery-option-item label .row {background: #f1f1f1;border: none;}
 body#checkout #hook-display-before-carrier .custom-radio:focus, .custom-control:hover {background: #000000;}
+
+
