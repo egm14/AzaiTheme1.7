@@ -1495,9 +1495,6 @@ div#stage {
     height: 462px;
     width: 100%;
 }
-/* Estilo Domex */
-#checkout-delivery-step span.h6.carrier-name{color: white;}
-#checkout-delivery-step .col-sm-3 {background: #000000;color: white;margin: 0px -18px 0px 12px;padding: 0px 0px 0px 10px;}
-#checkout-delivery-step .col-sm-4 {padding: 12px;}
-#checkout-delivery-step .col-sm-5 {background-color: black;margin: 0px -18px 0px 12px;padding: 0px 0px 0px 10px;}
-}
+/* Estilo Carrier */
+body#checkout .checkout-step .delivery-options .delivery-option-item label .row {background: #f1f1f1;border: none;}
+body#checkout #hook-display-before-carrier .custom-radio:focus, .custom-control:hover {background: #000000;}
