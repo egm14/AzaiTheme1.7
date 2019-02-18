@@ -55,8 +55,8 @@
 		  {if $cart_product['id_product'] == $product.id}
 			  {$in_cart = 1}
 		  {/if}
-		  {/foreach}	
-			
+		  {/foreach}
+		  
 				{if $in_cart}
 				{l s='Already in cart' d='Shop.Theme.Actions'}
 				{else}
