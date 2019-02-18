@@ -41,6 +41,7 @@
       </div>
       <div class="add mb-1">
         <button
+          id="box-cart-btn"
           class="btn btn-md btn-primary add-to-cart"
           data-button-action="add-to-cart"
           type="submit"
@@ -48,7 +49,19 @@
             disabled
           {/if}
         >
-          {l s='Add to cart' d='Shop.Theme.Actions'}
+          {*l s='Add to cart' d='Shop.Theme.Actions'*}
+		  {$in_cart = 0}
+		  {foreach from=$cart['products'] item='cart_product' }
+		  {if $cart_product['id_product'] == $product.id}
+			  {$in_cart = 1}
+		  {/if}
+		  {/foreach}	
+			
+				{if $in_cart}
+				{l s='Already in cart' d='Shop.Theme.Actions'}
+				{else}
+				{l s='Add to cart' d='Shop.Theme.Actions'}
+				{/if}
         </button>
       </div>
     {/block}
