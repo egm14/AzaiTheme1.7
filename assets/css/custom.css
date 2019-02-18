@@ -816,6 +816,8 @@ nav.icono-menu-mobile a:hover{
    #_desktop_cart .cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-body {width: 41%;padding: 0px 0px;text-align: left;}
    #_desktop_cart .cart-summary .block-cart-body .product-attributes, .cart-summary .block-cart-body .product-title {font-size: 1rem;color: #767676;margin-bottom: 0px;}
    #_desktop_cart .product-line-grid .product-line-grid-body>.product-line-info .current-price {color: #000;font: 700 1.125rem/1.75rem Helvetica Neue,sans-serif;font-size: 10px;}
+   /*Fix cart Item - tablet*/
+   #_mobile_cart .cart-grid-body.mb-3.mb-lg-0.col-12.col-lg-8 {flex: none;max-width: none;}
 }
 
 /***************************************************************
@@ -1120,7 +1122,8 @@ p.select.datesendcard {margin: 0px 0px 0px -32px;}/*gift card date*/
     margin-right: -138px;
     margin-top: -17px;
 }
-
+/*Fix Cart */
+#_desktop_cart .product-line-grid .product-line-grid-right .cart-line-product-actions, .product-line-grid .product-line-grid-right .product-price {top: 30px;position: absolute;right: 45px;}
 }
 /***************************************************************
  ******************* Screen Max-width 420px *********************
