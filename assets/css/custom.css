@@ -808,7 +808,8 @@ nav.icono-menu-mobile a:hover{
    /*Filter section*/
    #search_filters_wrapper ..variant-links label span{display:inline-block;}
    body#category #search_filters_wrapper .facet-list.variant-links li{display:inline-block;}
-
+   /*Fix position dump - desktop*/
+   .cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-left .remove-from-cart.close {top: 10px;right: 13px;position: absolute;}
 }
 
 /***************************************************************
