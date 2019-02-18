@@ -4,10 +4,7 @@ CSS Personalizado para la Tienda AZAI Store
 By Azai.com theme v1.7
 */
 
-.cart-grid-body.mb-3.mb-lg-0.col-12.col-lg-8 {
-    max-width: 100%!important;
-    flex: none!important;
-}
+
 /***************************************************************
  ******************* General CSS Changel  *********************
  ***************************************************************/
@@ -149,8 +146,8 @@ By Azai.com theme v1.7
   opacity:1;
 }
 /* Botones -Comprar como invitado - O registrarse */
-#checkout-personal-information-step button.nav-link {padding:5px;font-size:10px;background:black;color:white;border: 0;}
-#checkout-personal-information-step button.nav-link.active.show {font-size:10px;padding:5px;background:#4CAF50;color:black;}
+#checkout-personal-information-step button.nav-link {font-size:10px;background:black;color:white;border: 0;}
+#checkout-personal-information-step button.nav-link.active.show {font-size:10px;background:#4CAF50;color:black;}
 #checkout-personal-information-step li.nav-item.px-3 {padding-left: 1rem!important;font-size: 20px;}
 #checkout-personal-information-step li.nav-item.px-3 {padding-right: 1rem!important;}
 
@@ -601,7 +598,7 @@ article.address-item .custom-radio .custom-control-label::after{top:-0.912rem;}
 .cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-right{width:26%;padding:0px 7px;}
 .cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-body{width:48%; padding:0px 5px;text-align:left;}
 .cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-left .product-thumbnail{margin-right:0.563rem;}
-.cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-left .remove-from-cart.close{top:0px;right:0px;}
+.cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-left .remove-from-cart.close{top: -35px;right: 0px;position: absolute;}
 .cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-left .remove-from-cart.close::before{content:"\f014" !important;font:normal normal normal 14px/1 FontAwesome !important;}
 .cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-right div.row.align-items-center div{margin-bottom:0px!important;}
 .cart-summary.open-slidebar .cart-summary.mb-3 .second-part-cart-sumary{display:none;}
@@ -814,7 +811,11 @@ nav.icono-menu-mobile a:hover{
    /*Filter section*/
    #search_filters_wrapper ..variant-links label span{display:inline-block;}
    body#category #search_filters_wrapper .facet-list.variant-links li{display:inline-block;}
-
+   /*Fix position dump - desktop*/
+   #_desktop_cart .cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-left .remove-from-cart.close {top: 10px;right: 13px;position: absolute;}
+   #_desktop_cart .cart-summary.open-slidebar .block-cart-body .cart-grid .cart-container ul.cart-items li div.product-line-grid .product-line-grid-body {width: 41%;padding: 0px 0px;text-align: left;}
+   #_desktop_cart .cart-summary .block-cart-body .product-attributes, .cart-summary .block-cart-body .product-title {font-size: 1rem;color: #767676;margin-bottom: 0px;}
+   #_desktop_cart .product-line-grid .product-line-grid-body>.product-line-info .current-price {color: #000;font: 700 1.125rem/1.75rem Helvetica Neue,sans-serif;font-size: 10px;}
 }
 
 /***************************************************************
@@ -1510,6 +1511,6 @@ div#stage {
 }
 /* Estilo Carrier */
 body#checkout .checkout-step .delivery-options .delivery-option-item label .row {background: #f1f1f1;border: none;}
-body#checkout #hook-display-before-carrier .custom-radio:focus, .custom-control:hover {background: #000000;}
+body#checkout #hook-display-before-carrier .custom-control:active, .custom-control:focus, .custom-control:hover {color: #4CAF50;}
 
 
