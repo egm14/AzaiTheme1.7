@@ -94,7 +94,8 @@ By Azai.com theme v1.7
  color:white;
 }
 
-.alerts.create-acount.alert-success{
+.alerts.create-acount.alert-success, 
+.alerts.create-acount.alert-success-product{
  background-color:#09bc82;
  border-color:#09bc82;
 }
@@ -105,7 +106,8 @@ By Azai.com theme v1.7
   background-color:#f76063;
 }
 
-.alerts.create-acount.alert-success::before{
+.alerts.create-acount.alert-success::before, 
+.alerts.create-acount.alert-success-product::before{
   content:"\f058";
   font-family: "FontAwesome";
   top:auto;
@@ -131,7 +133,8 @@ By Azai.com theme v1.7
   100%{opacity:1;z-index:1000;transform: translateY(80%);top:30%;}
 }*/
 .alerts.create-acount.alert-success.active, 
-.alerts.create-acount.alert-error.active {
+.alerts.create-acount.alert-error.active,
+.alerts.create-acount.alert-success-product.active{
   -webkit-animation:moveOpen 5s ease-out;
   -webkit-animation-iteration-count: forwards;
   -webkit-animation-fill-mode: forwards;

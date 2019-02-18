@@ -114,17 +114,6 @@ $(document).ready(function(){
 
 	/*==================== CHANGE COLOR ADD TO BAG =======================*/
 
-	/*$('#box-cart-btn').on('click', function(e){
-		console.log("agregando clase gradiend-border");
-		console.log(e);
-		$('#box-cart-btn').addClass("gradient-border");	
-		setTimeout(butNormal, 5000);
-	});
-	function butNormal(){
-		$('#box-cart-btn').removeClass("gradient-border");
-		console.log("Removiendo clase gradiend-border");
-	}*/
-
 	$('[data-link-action="sign-in"]').on('click', function(e){
 		var ele = $('[data-link-action="sign-in"]');
 		addGradient(ele);
@@ -166,7 +155,7 @@ $(document).ready(function(){
 	});*/
 	function addGradient(vb){
 		console.log("agregando clase gradiend-border");
-		console.log(vb);
+		//console.log(vb);
 		vb.addClass("gradient-border");	
 		var add = vb;
 		setTimeout(function(){
