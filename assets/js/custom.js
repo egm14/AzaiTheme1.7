@@ -112,101 +112,74 @@ $(document).ready(function(){
     }
 
 
-/*==================== CHANGE COLOR ADD TO BAG =======================*/
+	/*==================== CHANGE COLOR ADD TO BAG =======================*/
 
-/*$('#box-cart-btn').on('click', function(e){
-	console.log("agregando clase gradiend-border");
-	console.log(e);
-	$('#box-cart-btn').addClass("gradient-border");	
-	setTimeout(butNormal, 5000);
-});
-function butNormal(){
-	$('#box-cart-btn').removeClass("gradient-border");
-	console.log("Removiendo clase gradiend-border");
-}*/
-
-$('[data-link-action="sign-in"]').on('click', function(e){
-	var ele = $('[data-link-action="sign-in"]');
-	addGradient(ele);
-});
-/*Estos código dañan el proceso de checkout
-$('[data-link-action="register-new-customer"').on('click', function(){
-	var ele = $('[data-link-action="register-new-customer"');
-	addGradient(ele);
-});
-$('[type="submit"').on('click', function(){
-	var ele = $('[type="submit"');
-	addGradient(ele);
-});
-*/
-$('#box-cart-btn').on('click', function(e){
-	var ele = $('#box-cart-btn');
-	addGradient(ele);
-});
-$('#tocheckout').on('click', function(e){
-	var ele = $('#tocheckout');
-	//console.log(this);
-	addGradient(ele);
-});
-$('#cartAction').on('click', function(e){
-	var ele = $('#cartAction');
-	//console.log(this);
-	addGradient(ele);
-});
-
-/*$('#continue-1').on('click', function(e){
-	var ele = $('#continue-1');
-	//console.log(this);
-	addGradient(ele);
-});
-$('#continue-2').on('click', function(e){
-	var ele = $('#continue-2');
-	//console.log(this);
-	addGradient(ele);
-});*/
-function addGradient(vb){
-	console.log("agregando clase gradiend-border");
-	console.log(vb);
-	vb.addClass("gradient-border");	
-	var add = vb;
-	setTimeout(function(){
-		vb.removeClass("gradient-border")
+	/*$('#box-cart-btn').on('click', function(e){
+		console.log("agregando clase gradiend-border");
+		console.log(e);
+		$('#box-cart-btn').addClass("gradient-border");	
+		setTimeout(butNormal, 5000);
+	});
+	function butNormal(){
+		$('#box-cart-btn').removeClass("gradient-border");
 		console.log("Removiendo clase gradiend-border");
-		}, 6000);	
-}
+	}*/
+
+	$('[data-link-action="sign-in"]').on('click', function(e){
+		var ele = $('[data-link-action="sign-in"]');
+		addGradient(ele);
+	});
+	/*Estos código dañan el proceso de checkout
+	$('[data-link-action="register-new-customer"').on('click', function(){
+		var ele = $('[data-link-action="register-new-customer"');
+		addGradient(ele);
+	});
+	$('[type="submit"').on('click', function(){
+		var ele = $('[type="submit"');
+		addGradient(ele);
+	});
+	*/
+	$('#box-cart-btn').on('click', function(e){
+		var ele = $('#box-cart-btn');
+		addGradient(ele);
+	});
+	$('#tocheckout').on('click', function(e){
+		var ele = $('#tocheckout');
+		//console.log(this);
+		addGradient(ele);
+	});
+	$('#cartAction').on('click', function(e){
+		var ele = $('#cartAction');
+		//console.log(this);
+		addGradient(ele);
+	});
+
+	/*$('#continue-1').on('click', function(e){
+		var ele = $('#continue-1');
+		//console.log(this);
+		addGradient(ele);
+	});
+	$('#continue-2').on('click', function(e){
+		var ele = $('#continue-2');
+		//console.log(this);
+		addGradient(ele);
+	});*/
+	function addGradient(vb){
+		console.log("agregando clase gradiend-border");
+		console.log(vb);
+		vb.addClass("gradient-border");	
+		var add = vb;
+		setTimeout(function(){
+			vb.removeClass("gradient-border")
+			console.log("Removiendo clase gradiend-border");
+			}, 6000);	
+	}
 
 
- /*==================== SHOW ORDEN RESUMEN BEHAVIOR =======================*/
-$('#show-orden').on('click', ".span.btn-order-summary", function(){
-	 $(this).toggleClass("active");
-	 $('#show-orden').find('#order-summary-content').toggle(100, 'swing');
-	 $('#show-orden').find('i.fa-shopping-bag').toggleClass("active");
-});
-
-	/*$('#show-orden').find('.close-resumen').on('click', function(e){
-		 $('#show-orden').find('#order-detail-content').hide();
-		 $('#show-orden').toggleClass("active");
-		 e.preventDefault();
-});*/
-
-
-
-
- /*==================== SECTION REGISTER - FORM =======================*/
- 	//FUNCTION UTILIZED ON CUSTOMER_ACCOUNT_FORM.TPL DELUXES
- 	// $('input:radio[name="id_customertype"]').change(function(){
-  //               console.log($(this).val());
-
-  //               if($(this).val() === 'wholesale'){
-  //                  	$('div#js_wholesale_form').show();
-  //                   $('p#js_wholesale_msg').show();
-  //                   $('input#uploadBtn').attr("required", true);
-  //                   console.log("Seleccion: wholesale");
-  //               }else{
-  //                   $('div#js_wholesale_form').hide();
-  //                   $('p#js_wholesale_msg').hide();
-  //                   $('input#uploadBtn').attr("required", false);
-  //                   console.log("Selección:Retail");
-  //               }
-  //           });
+	 /*==================== SHOW ORDEN RESUMEN BEHAVIOR =======================*/
+	$('#show-orden').on('click', ".span.btn-order-summary", function(){
+		 $(this).toggleClass("active");
+		 $('#show-orden').find('#order-summary-content').toggle(100, 'swing');
+		 $('#show-orden').find('i.fa-shopping-bag').toggleClass("active");
+	});
 });

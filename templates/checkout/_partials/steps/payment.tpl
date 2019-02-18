@@ -39,10 +39,11 @@
             <div class="cart-total d-flex flex-wrap justify-content-between my-3">
               <strong class="label">{$cart.totals.total.label}</strong>
               <strong class="value">{$cart.totals.total.value}</strong>
+              <span>{$totals.total.value}</span>
             </div>
-       <!-- Final Summary cart container -->
-             <i class="close-resumen"></i>
+            
           </div> 
+    <!-- Final Summary cart container -->
  </div>
  <!-- Final Show Order -->
 
