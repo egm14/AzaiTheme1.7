@@ -33,10 +33,10 @@
             prestashop.blockcart = prestashop.blockcart || {}, prestashop.blockcart.ajax = !0;
             var t = prestashop.blockcart.showModal || function(t) {
                 var userAlert = $('#alerts-n').find('.alerts.create-acount.alert-success-product')
-                function(){
+                
                     userAlert.addClass('active')
-                    settimeout(function(){userAlert.removeClass('active')},3000)
-                }
+                    setTimeout(function(){userAlert.removeClass('active')},3000)
+                
                 $("body").append(t), $("#blockcart-modal")/*.modal("show")*/.on("hidden.bs.modal", function() {
                     $("#blockcart-modal").remove()
                 })
