@@ -36,7 +36,7 @@
                     <span class="value">{$voucher.reduction_formatted}</span>
                   </div>
                   <div class="col-auto ml-2">
-                    <a class="close" href="{$voucher.delete_url}" data-link-action="remove-voucher"><span aria-hidden="true">&times;</span></a>
+                    <a class="close" href="{$voucher.delete_url}" data-link-action="remove-voucher"><span  aria-hidden="true">&times;</span></a>
                   </div>
                 </li>
               {/foreach}
@@ -44,7 +44,7 @@
           {/block}
         {/if}
 
-        <p>
+        <p style="margin:0px;">
           <!--Adding xtra classes to promo code btn: payment-option clearfix custom-control custom-radio-->
           <a class="promo-code-button btn-link btn-link-primary payment-option clearfix custom-control custom-radio" data-toggle="collapse" href="#promo-code" aria-expanded="false" aria-controls="promo-code">
             {l s='Have a promo code?' d='Shop.Theme.Checkout'}

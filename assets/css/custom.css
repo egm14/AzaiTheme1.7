@@ -35,7 +35,10 @@ By Azai.com theme v1.7
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
-#checkout #cart-voucher-promo a.close span{opacity:0;}
+#checkout #cart-voucher-promo a.close span, .cart-discount ul li a.close span{opacity:0;}
+.cart-discount ul.list-group{margin-top:.3rem;margin-bottom:.3rem;}
+#show-orden #order-summary-content hr{margin-top:.5rem;margin-bottom:1rem;}
+#checkout #cart-voucher-promo a.close, .cart-discount ul li a.close{position:initial!important;}
 .cart-summary.open-slidebar button.closeSlidebar.btn{
   background-color:black;
   color:white;
@@ -243,7 +246,7 @@ body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem
 #show-orden .span.btn-order-summary{padding:10px 20px;margin-bottom:.5rem;background-color:black;color:white;text-decoration:underline;display:flex;flex-wrap:wrap;justify-content:space-between;}
 #show-orden .span.btn-order-summary.active{background-color:#242424;font-weight:700;}
 .fa-shopping-bag.active{display:initial; background-color:white;color:black;border-radius:50%;padding:5px;}
-#show-orden #order-summary-content{display:none;}
+#show-orden #order-summary-content{display:none;border:1px solid black; margin-top:-8px;}
 
  /*------------------- PRODUCT- PAGE -SECTION ----------------*/
  /*Color botom primario*/
