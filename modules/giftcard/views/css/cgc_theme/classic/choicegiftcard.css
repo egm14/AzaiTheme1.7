@@ -1,0 +1,457 @@
+/*** sections ***/
+#choicegiftcard section {
+    box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border: 1px #ebebeb solid;
+    padding: 0.9375rem;
+    
+}
+#choicegiftcard section .step-title{
+	text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+#choicegiftcard section.js-current-step .step-title{
+	margin-bottom:15px;
+}
+#choicegiftcard section[data-gcstep-enable='0'] .step-title{
+   color:#CECECE;
+}
+#choicegiftcard section[data-gcstep-enable='1'] .step-title{
+   cursor: pointer;
+}
+#choicegiftcard section .done{
+   display: none;
+}
+#choicegiftcard section[data-gcstep-valid='1'] .done{
+	display:inline-block;
+}
+#choicegiftcard section[data-gcstep-valid='1'] .step-number{
+	display:none;
+}
+#choicegiftcard section .step-edit {
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-right: 0.125rem;
+    color: #acaaa6;
+    text-transform: lowercase;
+    font-weight: normal;
+    font-size: 15px;
+}
+#choicegiftcard section .step-edit .edit{
+	font-size: 1rem;
+}
+#choicegiftcard section .gc-receptmode-options label{
+	font-weight:normal;
+}
+#choicegiftcard .ta-gc-submit button{
+	height: 44px;
+	font-size:16px;
+	font-weight: bold;
+    line-height: inherit;
+    text-transform:uppercase;
+    padding-top: 0.625rem;
+}
+#choicegiftcard .ta-gc-submit button {
+    width:100%;
+}
+#choicegiftcard .ta-gc-submit button i, .gcsm-cart-summary .btn i{
+	font-size:24px;
+	vertical-align: middle;
+	margin-right:12px;
+}
+#choicegiftcard section .gc-section-content{
+	/*display: none;*/
+	max-height: 0;
+	padding: 0px 2.3125rem;
+	overflow-y: hidden;
+}
+#choicegiftcard section .gc-section-content .gc-actions{
+	margin-top:15px;
+}
+#choicegiftcard #gc-step-template .gc-section-content{
+	padding:0;
+}
+#choicegiftcard section.js-current-step .gc-section-content{
+	
+	max-height: 500px; /* approximate max height */
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+#choicegiftcard .custom-radio input[type="radio"]{
+  height: 1.25rem;
+  width: 1.25rem;
+}
+#choicegiftcard .gc-receptmode-option label {
+	cursor:pointer;
+}
+#recepmode-mail-additional-information{
+	display:none;
+    margin-left: 2.875rem;
+    margin-top: 1.25rem;
+}
+/*** GIFTCARD TABS ***/
+#choicegiftcard .gctabs{
+	margin:0;
+	list-style: none;		
+}
+#choicegiftcard .gctabs li a{
+	float:left;
+	background: #f5f3f1;
+	padding: 10px 10px 7px 10px;
+	font-weight: bold;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+	color: grey;
+	margin-right: 1px;
+	text-decoration: none;
+}
+#choicegiftcard .gctabs {
+	border-bottom: 4px solid #000;
+}
+#choicegiftcard .gctabs li a.selected {
+	color: #FFF;
+	background: black;
+}
+#choicegiftcard div.gctab_content{
+	display:none;
+}
+#choicegiftcard div.gctab_content.selected{
+	display:block;
+}
+/*** END TABS ***/
+
+#choicegiftcard p.error {
+	background-color : #fdf7f7;
+	border: 1px solid #d9534f;
+	color : #d9534f;
+	padding : 5px;
+}
+#choicegiftcard p.success {
+color: #3c763d;
+background-color: #dff0d8;
+border: 1px solid #3c763d;
+padding : 5px;
+}
+/***  JCAROUSEL  ***/
+#choicegiftcard .jcarousel-wrapper {
+    margin: 0px auto 25px auto;
+    position: relative;
+    border: 10px solid #fff;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+#choicegiftcard .jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+#choicegiftcard .jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#choicegiftcard .jcarousel li {
+    width: 200px;
+    float: left;
+    border: 1px solid #fff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px 5px 25px 5px;
+    position:relative;
+}
+#choicegiftcard .jcarousel li:hover {
+    
+    border: 1px solid #cecece;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#choicegiftcard .jcarousel li.selected {
+    
+   border: 2px solid #66A523;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+#choicegiftcard .jcarousel li span.zoom_link{
+	background:url(../../../img/icon/zoom.png) no-repeat;
+	padding-left: 20px !important;
+	position:absolute;
+	bottom:5px;
+	left:5px;
+	height: 16px;
+    color: #414141;
+}
+#choicegiftcard .jcarousel li span.check{
+	visibility:hidden;
+	opacity:0;
+  	transition:opacity 0.5s linear;
+ 	background:url(../../../img/icon/check_wg.png) no-repeat;
+ 	height:24px;
+ 	width:24px;
+	position:absolute;
+	top:3px;
+	right:5px;
+}
+#choicegiftcard .jcarousel li.selected span.check{
+	 visibility:visible;
+  	 opacity:1;
+}
+
+#choicegiftcard .jcarousel img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+}
+
+/** Carousel Controls **/
+#choicegiftcard .jcarousel-control-prev,
+#choicegiftcard .jcarousel-control-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 4px #000;
+    -moz-box-shadow: 0 0 4px #000;
+    box-shadow: 0 0 4px #000;
+    border-color: #000;
+}
+
+#choicegiftcard .jcarousel-control-prev {
+    left: 5px;
+}
+
+#choicegiftcard .jcarousel-control-next {
+    right: 5px;
+}
+
+/** Carousel Pagination **/
+
+#choicegiftcard .jcarousel-pagination-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#choicegiftcard .jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+    margin-right: 7px;
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+#choicegiftcard .jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+}
+/***  END JCAROUSEL  ***/
+
+
+
+
+/*** FORM GIFT CARD ***/
+#recepmode-mail-additional-information p.email.datesendcard {
+    padding-bottom: 0px!important;
+    margin: 0px 0px 0px -40px!important;
+}
+#recepmode-mail-additional-information p.description.datesendcard {
+    padding-bottom: 0px!important;
+    margin: 0px 0px 0px -40px!important;
+}
+#formgiftcard p{
+	padding-bottom: 5px;
+}
+#formgiftcard p.datesendcard{
+	margin-top: 5px;
+}
+#formgiftcard h3.datesendcard{
+	background: url("../../../img/icon/calendar_send.png") no-repeat;
+	padding-left: 28px !important;
+	padding-top: 5px;
+}
+#formgiftcard .input {
+	color: #3c3c3c;
+	height: 40px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	border-radius: 0;
+	line-height: 16px;
+	background-color: #fff;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dedede;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+	transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color
+		0.15s linear 0s;
+	-webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s,
+		color 0.15s linear 0s;
+	-moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s,
+		color 0.15s linear 0s;
+	-o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color
+		0.15s linear 0s;
+}
+
+#formgiftcard .input:focus {
+	box-shadow: 0;
+	border: 1px solid #000;
+	color: #000;
+	outline: none;
+}
+
+
+/* Icons */
+#formgiftcard  input.input_user_to{
+	background-image: url(../../../img/icon/user_to.png);
+	background-size: 30px 27px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+#formgiftcard input.input_user_to:focus{
+	background-image: url(../../../img/icon/user_to_active.png);
+}
+#formgiftcard input.input_user_from{
+	background-image: url(../../../img/icon/user_from.png);
+	background-size: 30px 27px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+#formgiftcard input.input_user_from:focus{
+	background-image: url(../../../img/icon/user_from_active.png);
+}
+#formgiftcard .textarea_comment{
+	background-image: url(../../../img/icon/pen.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+#formgiftcard .textarea_comment:focus{
+	background-image: url(../../../img/icon/pen_active.png);
+}
+
+
+#formgiftcard input.email {
+	background-image: url(../../../img/icon/mail.png);
+	background-size: 29px 19px;
+	background-position: 11px 12px;
+	background-repeat: no-repeat;
+}
+
+#formgiftcard input.email:focus {
+	background-image: url(../../../img/icon/mail_active.png);
+}
+
+#formgiftcard textarea.textarea_comment {
+	width: 100%;
+	height: 150px;
+	line-height: 150%;
+	resize: vertical;
+}
+
+
+
+#formgiftcard select{
+	height: 25px;
+    width: 30%;
+}
+}
+#formgiftcard  .submit_button {
+	float: left;
+	width: 50%;
+	border: #fbfbfb solid 8px;
+	cursor: pointer;
+	background-color: grey;
+	color: white;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	font-weight: 700;
+}
+
+#formgiftcard  .submit_button:hover {
+	background: no-repeat 10px 9px #000;
+	
+}
+
+
+/*** END FORM GIFT CARD ***/
+
+/*AJAX OVERLAY*/
+#choicegiftcard div.ui-loader-background {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	margin: 0;
+	background-image: url('../../../img/ajax-loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background-color: rgba(0, 0, 0, 0.6);
+	/* For IE 5.5 - 7*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,
+		endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	position: absolute;
+	z-index: 1000;
+	display: none;
+}
+
+#choicegiftcard .ui-loading .ui-loader-background {
+	display: block;
+}
+/*END AJAX OVERLAY*/
