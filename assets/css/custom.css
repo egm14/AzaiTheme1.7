@@ -74,6 +74,7 @@ By Azai.com theme v1.7
 /*Link subrayado crear nueva cuenta*/
 #account-list-block a.Registro-personal-link {
     text-decoration: underline blink;
+	font-weight: bold!important;
 }
 /*Botone invertidos Registro*/
 #create-account-content-displayNav2 button.btn.btn-secondary.btn-md.btn-block.submit {background: black;color: white;}
