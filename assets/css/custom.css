@@ -967,7 +967,7 @@ body#category .grid .product-miniature .product-miniature-container .product-min
 /*Ajustes de tamaños slider*/  
 #ps-image-slider.swiper-container .swiper-slide .img-fluid {top: 31%!important;width: 110%!important;height: auto;min-width: 440px!important;}
 #ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 250px;top: 47px}
-#choicegiftcard section .step-title {text-transform: uppercase;margin-bottom:0;font-size: 13px;}/*Font size module gift card */
+#choicegiftcard section .step-title {text-transform: uppercase;margin-bottom:0;font-size: 12px;}/*Font size module gift card */
 p.select.datesendcard {margin: 0px 0px 0px -39px;}/*gift card date*/
 /*------------------- PRODUCT- SECTION ----------------*/
   /*Buttom add to bag*/
@@ -1216,7 +1216,7 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
  .active{display:block;}
  
  @media only screen and (max-width: 420px){
-    /*swipe*/   
+ /*swipe*/   
 .stage {
   width: 100%;
   padding: 7rem 2rem 2rem;
@@ -1519,5 +1519,35 @@ div#stage {
 /* Estilo Carrier */
 body#checkout .checkout-step .delivery-options .delivery-option-item label .row {background: #f1f1f1;border: none;}
 body#checkout #hook-display-before-carrier .custom-control:active, .custom-control:focus, .custom-control:hover {color: #4CAF50;}
-
-
+/*gift card*/
+#formgiftcard .input {
+    color: #3c3c3c;
+    height: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    border-radius: 0;
+    line-height: 16px;
+    background-color: #fff;
+    padding: 13px 13px 13px 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color
+ 0.15s linear 0s;
+    -webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s,
+ color 0.15s linear 0s;
+    -moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s,
+ color 0.15s linear 0s;
+    -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color
+ 0.15s linear 0s;
+}
+}

@@ -403,7 +403,8 @@ padding : 5px;
     width: 30%;
 	}
 #formgiftcard select{
-	height: 28px;
+	height: 25px;
+	width: 30%;
 }
 
 #formgiftcard  .submit_button {
