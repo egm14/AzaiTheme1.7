@@ -19,7 +19,7 @@
                     <span class="label">{$subtotal.label}</span>
                     <span class="value">{$subtotal.value}</span>
                     {if $subtotal.type == 'discount'}
-                      {if $cart.vouchers.added}
+                      {if $cart.vouchers.added == true}
                         <ul class="list-group mb-2 w-100">
                           {foreach from=$cart.vouchers.added item='voucher'}
                             <li class="list-group-item d-flex flex-wrap justify-content-between">
@@ -144,7 +144,8 @@
   {/if}
   <div id="payment-confirmation">
     <div class="ps-shown-by-js">
-      <button type="submit" {if !$selected_payment_option} disabled {/if} class="btn btn-primary btn-sm">
+      <button type="submit" {if ($cart.vouchers.added != true && $cart.totals.total.amount+$cart.subtotals.tax.amount == 0)|| $selected_payment_option != false} disabled {/if} class="btn btn-primary btn-sm">
+       
         {l s='Order with an obligation to pay' d='Shop.Theme.Checkout'}
       </button>
       {if $show_final_summary}
