@@ -968,7 +968,7 @@ body#category .grid .product-miniature .product-miniature-container .product-min
 #ps-image-slider.swiper-container .swiper-slide .img-fluid {top: 31%!important;width: 110%!important;height: auto;min-width: 440px!important;}
 #ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 250px;top: 47px}
 #choicegiftcard section .step-title {text-transform: uppercase;margin-bottom:0;font-size: 12px;}/*Font size module gift card */
-p.select.datesendcard {margin: 0px 0px 0px -39px;}/*gift card date*/
+p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
 /*------------------- PRODUCT- SECTION ----------------*/
   /*Buttom add to bag*/
  .add.mb-1 {width: 100%;}
