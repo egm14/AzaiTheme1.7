@@ -22,12 +22,6 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
-<!-- Include Header Elements to notification-->
-{block name='headElements'}
-      {include file='_partials/elementsHeader.tpl'}
-{/block}
-  
 {assign var='displayMegaHeader' value={hook h='jxMegaLayoutHeader'}}
 {if $displayMegaHeader}
   {$displayMegaHeader nofilter}
@@ -82,19 +76,8 @@
           <button type="button" class="closeSlidebar fa fa-times" aria-label="Close"></button>
           <div id="_mobile_links_toggle" class="mb-3 d-xl-none"></div>
           <div id="_mobile_jxmegamenu"></div>
-          <div id="_mobile_lg_current" style="display:flex;">
-          <div id="_mobile_language_selector" style="width:50%" class="d-xl-none js-dropdown mt-3"></div>
-          <div id="_mobile_currency_selector" style="width:50%" class="d-xl-none js-dropdown mt-3"></div>
-          </div>
-
-          <!-- ICONOS MENU MOBILE -->
-          <nav class="iconos-menu-mobile redessociales">
-               <a class="fl icon-menu-login" href="#" style="display:block;"><i class="fa fa-user"></i></a>
-                <a class="fb" href="//facebook.com/azaiwomen/" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a class="ig" href="//www.instagram.com/azaiwomen/" target="_blank"><i class="fa fa-instagram"></i></a> 
-                <a class="tw" href="//twitter.com/azaiwomen/" target="_blank"><i class="fa fa-twitter"></i></a> 
-                <a class="vi" href="https://goo.gl/zTJpsd" target="_blank" rel="noopener"><i class="fa fa-map-marker"></i></a>
-          </nav>
+          <div id="_mobile_language_selector" class="d-xl-none js-dropdown mt-4"></div>
+          <div id="_mobile_currency_selector" class="d-xl-none js-dropdown mt-3"></div>
         </div>
       </div>
       <div id="_mobile_user_info"></div>
