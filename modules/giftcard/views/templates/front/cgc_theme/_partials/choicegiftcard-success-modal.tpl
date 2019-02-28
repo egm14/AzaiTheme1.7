@@ -18,7 +18,7 @@
  *}
 <div id="gc-success-modal" role="dialog">
 	<div class="gcsm-header">
-      <h4><i class="fa fa-check">  </i>{l s='Gift Card Successfully Added to Your Shopping Cart' mod='giftcard'}</h4>
+      <h4><i class="fa fa-gift">&nbsp;</i>{l s='Gift Card Successfully Added to Your Shopping Cart' mod='giftcard'}</h4>
     </div>
     <div class="gcsm-body">
     <div class="row">
