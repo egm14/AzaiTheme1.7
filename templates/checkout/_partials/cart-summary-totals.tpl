@@ -32,17 +32,22 @@
   {/block}
   {else}
   {block name='cart_summary_total'}
-    <div class="cart-summary-line cart-total">
+    <div class="cart-summary-line cart-total hi-total">
       <strong class="label">{$cart.totals.total.label} {$cart.labels.tax_short}</strong>
       <strong class="value">{$cart.totals.total.value}</strong>
     </div>
   {/block}
   {/if}
   {block name='cart_summary_tax'}
-    <div class="cart-summary-line">
+    <div class="cart-summary-line hi-tax">
       <span class="label sub">{$cart.subtotals.tax.label}</span>
       <span class="value sub">{$cart.subtotals.tax.value}</span>
     </div>
+    <div class="cart-summary-line cart-total">
+    <span class="label sub">{l s='Total General'}</span>
+    <span class="value sub">{$currency.iso_code}{$currency.sign}{$cart.totals.total.amount+$cart.subtotals.tax.amount}</span>
+  </div>
   {/block}
+ 
 
 </div>

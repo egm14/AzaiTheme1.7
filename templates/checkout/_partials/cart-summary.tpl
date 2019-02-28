@@ -65,13 +65,6 @@
     {block name='cart_detailed_notification'}
 
    <!-- Alert to Dominican Republic customer - buy over $200.o0 -->
-    <!-- ### Put this code inside function  _assignCarrier() on ParentOrderController.php ###
-        //create an address object by retrieving the id from the current cart.
-        $address = new Address($this->context->cart->id_address_delivery);
-        //now the country name will now be in the "$address->country" field so if you want to pass it to your smarty template use:
-        $this->context->smarty->assign('country_name', $address->country);
-        $this->context->smarty->assign('country_id', $address->id)
-    -->
 
     {if $cart.totals.total.value >= '$200' && ($customer.addresses[$cart.id_address_delivery].country == 'Dominican Republic' || $customer.addresses[$cart.id_address_delivery].country == 'República Dominicana')}
         <div class="notification alert alert-warning">

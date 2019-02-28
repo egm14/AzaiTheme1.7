@@ -7,7 +7,7 @@
    <div id="show-orden">
           <div class="span btn-order-summary">
             <span class="text-resumen-cart"><i class="fa fa-shopping-bag" aria-hidden="true" style="margin-right:5px"></i> {l s='Show Order Summary' d='Shop.Theme.Checkout'}</span>
-            <span>{$cart.totals.total.amount+$cart.subtotals.tax.amount}</span>      
+            <span>{$currency.iso_code}{$currency.sign}{$cart.totals.total.amount+$cart.subtotals.tax.amount}</span>      
           </div>
     
      <!-- Summary cart container -->
@@ -16,9 +16,17 @@
               {foreach from=$cart.subtotals item="subtotal"}
                 {if isset($subtotal) && $subtotal}
                   <div class="cart-{$subtotal.type} d-flex flex-wrap justify-content-between">
+                    {if $subtotal.type == 'discount'}
+                    <span class="label">{$subtotal.label}</span>
+                    <span class="value">-{$subtotal.value}</span>
+                    {else}
                     <span class="label">{$subtotal.label}</span>
                     <span class="value">{$subtotal.value}</span>
-                    {if $subtotal.type == 'discount'}
+                    {/if}
+                    
+                  </div>
+                {/if}
+                 <!--{if $subtotal.type == 'discount'}
                       {if $cart.vouchers.added == true}
                         <ul class="list-group mb-2 w-100">
                           {foreach from=$cart.vouchers.added item='voucher'}
@@ -30,17 +38,16 @@
                           {/foreach}
                         </ul>
                       {/if}
-                    {/if}
-                  </div>
-                {/if}
+                    {/if}-->
               {/foreach}
+
             </div>
             <hr>
             <div class="cart-total d-flex flex-wrap justify-content-between my-3" style="margin-bottom:.3rem!important;">
               <!--<strong class="label">{$cart.totals.total.label}</strong>
               <strong class="value">{$cart.totals.total.value}</strong>
               <span>{$totals.total.value}</span>-->
-              <strong><span class="label">Total (tax + shipping incl.)</span></strong>
+              <strong><span class="label">{l s='Total (tax + shipping incl.)' d='Shop.Theme.Checkout'}</span></strong>
               <strong><span class="value">{$currency.iso_code}{$currency.sign}{$cart.totals.total.amount+$cart.subtotals.tax.amount}</span> </strong>
             </div>
             
