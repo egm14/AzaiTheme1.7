@@ -397,16 +397,17 @@ padding : 5px;
 	resize: vertical;
 }
 
-
+#recepmode-mail-additional-information select#days {width: 16%!important;}
+#recepmode-mail-additional-information select#months {width: 38%!important;}
 #recepmode-mail-additional-information .formgiftcard select {
 	height: 25px;
     width: 30%;
-	}
+}
 #formgiftcard select{
 	height: 25px;
 	width: 30%;
 }
-
+ 
 #formgiftcard  .submit_button {
 	float: left;
 	width: 50%;
