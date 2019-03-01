@@ -1520,6 +1520,7 @@ div#stage {
 body#checkout .checkout-step .delivery-options .delivery-option-item label .row {background: #f1f1f1;border: none;}
 body#checkout #hook-display-before-carrier .custom-control:active, .custom-control:focus, .custom-control:hover {color: #4CAF50;}
 /*gift card*/
+#gc-success-modal i.fa.fa-check {color: #21c912;}
 #formgiftcard .input {
     color: #3c3c3c;
     height: 40px;
@@ -1551,3 +1552,4 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
  0.15s linear 0s;
 }
 }
+
