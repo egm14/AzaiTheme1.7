@@ -611,6 +611,24 @@ article.address-item .custom-radio .custom-control-label::after{top:-0.912rem;}
 .cart-summary.open-slidebar .cart-summary.mb-3 .cart-total hr{margin:0!important;}
 .cart-summary.open-slidebar .cart-summary.mb-3 .cart-total strong.label{text-decoration:underline;font-weight:700!important;font-size:1.1rem!important;color:black!important;}
 
+/*------------ login botón --------------*/
+li.swiper-slide .copy-container-btn{width:25%;}
+
+li.swiper-slide .copy-container-btn .logginSlide{
+  display:inline-block;
+  padding:1rem 4rem;
+  color: black;
+  background:white;
+  position:absolute;
+  left:15%;
+}
+li.swiper-slide .copy-container-btn img{
+  width:100%;
+  height:auto;
+}
+
+
+
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/

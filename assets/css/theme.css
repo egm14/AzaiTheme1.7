@@ -19567,14 +19567,14 @@ body#checkout .nav-tabs {
 body#checkout .nav-tabs li {
     position: relative;
     text-align: center;
-    padding: 1.25rem;
+    padding: 1.25rem .5rem;
     width: 25%;
     font: 400 1.125rem/1.375rem Helvetica Neue, Arimo, sans-serif;
     text-transform: none
 }
 
 body#checkout .nav-tabs li>span {
-    display: none
+    display: none;
 }
 
 body#checkout .nav-tabs li a {
@@ -19612,6 +19612,9 @@ body#checkout .checkout-step .nav {
 
 body#checkout .checkout-step .nav li a {
     padding: 0
+}
+body#checkout .nav-tabs li a span.title-step{
+    display:block;
 }
 
 body#checkout .checkout-step .nav li a.active {
