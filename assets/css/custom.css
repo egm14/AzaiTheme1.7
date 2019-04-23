@@ -846,6 +846,7 @@ nav.icono-menu-mobile a:hover{
    /*Close Button to mobile menu*/
    #_mobile_menu_wrapper .only-mobile button.closeSlidebar:before,
    #_mobile_cart .cart-summary button.closeSlidebar:before{font-size:1.6rem;}
+   #_mobile_menu_wrapper button.closeSlidebar.fa.fa-times {background-color: black;color: white;border-radius: 0;top: 0;right: 0;width: 3rem;height: 3rem;}
    /*Shopping Cart*/
   .blockcart > a .cart-products-count{position:absolute;top:-12px;right:-9px;}
   /*shopping cart list*/
