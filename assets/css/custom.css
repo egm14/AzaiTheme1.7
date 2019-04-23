@@ -243,9 +243,12 @@ body#product #content .images-container{background-color:inherit!important;}
 body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem;}
 
 /* Checkout show order summary */
-
-#show-orden .span.btn-order-summary{padding:10px 20px;margin-bottom:.5rem;background-color:black;color:white;text-decoration:underline;display:flex;flex-wrap:wrap;justify-content:space-between;}
-#show-orden .span.btn-order-summary.active{background-color:#242424;font-weight:700;}
+body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
+#show-orden .span.btn-order-summary{padding:10px 20px;margin-bottom:.5rem;background-color:black;color:white;display:flex;flex-wrap:wrap;justify-content:space-between;}
+#show-orden .span.btn-order-summary::after{content:"\f107";font-family:"FontAwesome";color:white;text-decoration:none!important;}
+#show-orden .span.btn-order-summary.active{background-color:#4CAF50;font-weight:700;}
+#show-orden .span.btn-order-summary::hover{background-color:#4CAF50;font-weight:700;}
+#show-orden .span.btn-order-summary span{text-decoration:underline;}
 .fa-shopping-bag.active{display:initial; background-color:white;color:black;border-radius:50%;padding:5px;}
 #show-orden #order-summary-content{display:none;border:1px solid black; margin-top:-8px;}
 
@@ -626,7 +629,6 @@ li.swiper-slide .copy-container-btn img{
   width:100%;
   height:auto;
 }
-
 
 
 /***************************************************************
