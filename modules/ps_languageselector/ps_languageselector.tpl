@@ -25,8 +25,8 @@
 <div id="_desktop_language_selector">
   <div class="language-selector js-dropdown">
     <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="{l s='Language dropdown' d='Shop.Theme.Global'}">
-      <!--span class="expand-more">{$language.iso_code}</span-->
-	  <span class="expand-more">{l s='Language' d='Shop.Theme.Global'} ({$language.iso_code})</span>
+      <span class="expand-more-desktop">{$language.iso_code}</span>
+	  <span class="expand-more-mobil">{l s='Language' d='Shop.Theme.Global'} ({$language.iso_code})</span>
       <i class="fa fa-angle-down ml-1" aria-hidden="true"></i>
     </span>
     <div class="dropdown-menu dropdown-menu-left" aria-labelledby="language-selector-label">

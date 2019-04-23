@@ -25,8 +25,8 @@
 <div id="_desktop_currency_selector">
   <div class="currency-selector js-dropdown">
     <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="{l s='Currency dropdown' d='Shop.Theme.Global'}">
-      <!--span class="expand-more">{$current_currency.iso_code}</span-->
-	  <span class="expand-more">{l s='currency' d='Shop.Theme.Global'} ({$current_currency.iso_code})</span>
+      <span class="expand-more-desktop">{$current_currency.iso_code}</span>
+	  <span class="expand-more-mobil">{l s='currency' d='Shop.Theme.Global'} ({$current_currency.iso_code})</span>
       <i class="fa fa-angle-down ml-1" aria-hidden="true"></i>
     </span>
     <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="currency-selector-label">
