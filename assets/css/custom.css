@@ -541,7 +541,7 @@ body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem
 /*modal cart*/
 .cart-summary.open-slidebar .block-cart-body .cart-footer a.btn{margin-bottom:.5rem;color: white;background: black;box-shadow:none;}
 .cart-summary.open-slidebar button.closeSlidebar::before{font-size:1.4rem}
-.cart-summary.open-slidebar button.closeSlidebar.shopping{display:block!important;position:relative;top:inherit;right:initial;width:100%;height:auto;text-align:center;margin-bottom:2rem;font-weight:initial;margin-top:.5rem;font-size:.8rem;}
+.cart-summary.open-slidebar button.closeSlidebar.shopping{display:block!important;position:relative;top:inherit;right:initial;width:100%;height:auto;text-align:center;margin-bottom:2rem;font-weight:initial;margin-top:.5rem;font-size:.8rem;text-decoration: underline;padding: 10px;margin: 17px 0px 0px 0px;}
 .cart-summary.open-slidebar button.closeSlidebar.shopping::before{content:none;}
 .cart-summary.open-slidebar .block-cart-body .cart-subtotals .cart-tax{display:none!important;}
 /*Shipping Carrier - checkout Step*/
