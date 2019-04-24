@@ -212,8 +212,9 @@ body#cart a.remove-from-cart.close{width:1.1rem;}
 
 /*Stripe payment methods*/
 body#checkout, body#cart{font-size:.87rem!important;}
-body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio{background-color:black;color:white;padding:10px 10px;}
+body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio{background-color:black;color:white;padding:10px 10px;min-height:55px;display:flex;justify-content:center;flex-direction:column;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio:hover{background-color:#4CAF50;font-weight:600;}
+body#checkout #checkout-payment-step .payment-options .payment-option.paypal-option-payment:hover { animation: shadow-pulse 1s infinite;background:red;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label{width:100%;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label::after{content:"\f107";font-family:"FontAwesome";color:white;margin-left:6px;position:absolute;left:-2px;top:0;opacity:1;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label::before{background-color:black;}
@@ -234,7 +235,7 @@ body#checkout #checkout-payment-step #cart-voucher-promo #promo-code form button
 */
 body#checkout #checkout-payment-step .block-promo .alert.alert-danger.js-error{display:none;}
 body#checkout #checkout-payment-step .block-promo a.promo-code-button.btn-link.btn-link-primary{background-color:black;color:white;display:block;padding-left:2.3rem;}
-body#checkout #checkout-payment-step .block-promo a.promo-code-button.btn-link.btn-link-primary::after{content:"\f107";font-family: "FontAwesome"; color:white;margin-left:6px;position:absolute; left:8px;top:0;opacity:1;display:flex;align-items: center;bottom:0;width:1.7rem;text-align:center;}
+body#checkout #checkout-payment-step .block-promo a.promo-code-button.btn-link.btn-link-primary::after{content:"\f107";font-family: "FontAwesome"; color:white;margin-left:6px;position:absolute; left:8px;top:0;opacity:1;display:flex;flex-direction:column;justify-content:center;bottom:0;width:1.7rem;}
 
 /*Preview Image*/
 body#product #content .images-container{background-color:inherit!important;}
@@ -243,9 +244,12 @@ body#product #content .images-container{background-color:inherit!important;}
 body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem;}
 
 /* Checkout show order summary */
-
-#show-orden .span.btn-order-summary{padding:10px 20px;margin-bottom:.5rem;background-color:black;color:white;text-decoration:underline;display:flex;flex-wrap:wrap;justify-content:space-between;}
-#show-orden .span.btn-order-summary.active{background-color:#242424;font-weight:700;}
+body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
+#show-orden .span.btn-order-summary{padding:10px 20px;margin-bottom:.5rem;background-color:black;color:white;display:flex;flex-wrap:wrap;justify-content:space-between;}
+#show-orden .span.btn-order-summary::after{content:"\f107";font-family:"FontAwesome";color:white;text-decoration:none!important;}
+#show-orden .span.btn-order-summary.active{background-color:#4CAF50;font-weight:700;}
+#show-orden .span.btn-order-summary::hover{background-color:#4CAF50;font-weight:700;}
+#show-orden .span.btn-order-summary span{text-decoration:underline;}
 .fa-shopping-bag.active{display:initial; background-color:white;color:black;border-radius:50%;padding:5px;}
 #show-orden #order-summary-content{display:none;border:1px solid black; margin-top:-8px;}
 
@@ -626,7 +630,6 @@ li.swiper-slide .copy-container-btn img{
   width:100%;
   height:auto;
 }
-
 
 
 /***************************************************************

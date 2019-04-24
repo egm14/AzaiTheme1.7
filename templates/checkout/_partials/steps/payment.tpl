@@ -73,15 +73,32 @@
 
     {foreach from=$payment_options item="module_options"}
       {foreach from=$module_options item="option"}
-        <div id="{$option.id}-container" class="payment-option clearfix custom-control custom-radio">
+        
+
+          {if $option.module_name == "paypal"}
+            <div id="{$option.id}-container" class="paypal-option-payment payment-option clearfix custom-control custom-radio">
+            {* This is the way an option should be selected when Javascript is enabled *}
+            <input class="custom-control-input{if $option.binary} binary{/if}" id="{$option.id}" data-module-name="{$option.module_name}" name="payment-option" type="radio" required {if $selected_payment_option == $option.id || $is_free} checked {/if}>
+
+             <label class="ps-shown-by-js custom-control-label" for="{$option.id}">
+                {if $option.logo}
+                  <img class="img-fluid" src="{$option.logo}">
+                {/if}
+                {$option.call_to_action_text}
+                <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+              </label>
+          {else}
+          <div id="{$option.id}-container" class="payment-option clearfix custom-control custom-radio">
           {* This is the way an option should be selected when Javascript is enabled *}
-          <input class="custom-control-input{if $option.binary} binary{/if}" id="{$option.id}" data-module-name="{$option.module_name}" name="payment-option" type="radio" required {if $selected_payment_option == $option.id || $is_free} checked {/if}>
-          <label class="ps-shown-by-js custom-control-label" for="{$option.id}">
-            {if $option.logo}
-              <img class="img-fluid" src="{$option.logo}">
-            {/if}
-            {$option.call_to_action_text}
-          </label>
+            <input class="custom-control-input{if $option.binary} binary{/if}" id="{$option.id}" data-module-name="{$option.module_name}" name="payment-option" type="radio" required {if $selected_payment_option == $option.id || $is_free} checked {/if}>
+               <label class="ps-shown-by-js custom-control-label" for="{$option.id}">
+                  {if $option.logo}
+                    <img class="img-fluid" src="{$option.logo}">
+                  {/if}
+                  {$option.call_to_action_text}
+              </label>
+          {/if}
+         
           {* This is the way an option should be selected when Javascript is disabled *}
           <form method="GET" class="ps-hidden-by-js">
             {if $option.id === $selected_payment_option}
