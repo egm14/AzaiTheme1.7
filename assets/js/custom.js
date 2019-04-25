@@ -171,4 +171,11 @@ $(document).ready(function(){
 		 $('#show-orden').find('#order-summary-content').toggle(100, 'swing');
 		 $('#show-orden').find('i.fa-shopping-bag').toggleClass("active");
 	});
+
+	 /*==================== CHANGE BEHAVIOR CUENTO =======================*/
+	 $('checkout-payment-step').on('click', ".paypal-option-payment", function(){
+	 		$('#payment-confirmation').addClass("gradient-border");
+	 		console.log("Cambiando buttons pago debido a Paypal");
+	 });
+
 });
