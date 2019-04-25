@@ -660,6 +660,9 @@ li.swiper-slide .copy-container-btn img{
  @media only screen and (min-width:1366px){
    #footer {padding-top: 80px;}
   /* #header .stickUpTop:not(.isStuck) .stick-up{padding-top:10px;}*/
+  span.expand-more-mobil {
+    display: none;
+}
 }
 
 /***************************************************************
@@ -808,6 +811,7 @@ nav.icono-menu-mobile a:hover{
  ***************************************************************/
  /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width:768px){
+	
   /*--------------- Footer Social Profiles ----------------*/
   #footer div.container #redes-desk a i{
       font-size:22px;
@@ -843,13 +847,14 @@ nav.icono-menu-mobile a:hover{
    #_desktop_cart .product-line-grid .product-line-grid-body>.product-line-info .current-price {color: #000;font: 700 1.125rem/1.75rem Helvetica Neue,sans-serif;font-size: 10px;}
    /*Fix cart Item - tablet*/
    #_mobile_cart .cart-grid-body.mb-3.mb-lg-0.col-12.col-lg-8 {flex: none;max-width: none;}
+   span.expand-more-mobil {display: none;}/*Ocultar Lenguaje - Moneda Mobil desktop*/
 }
 
 /***************************************************************
  ******************* Screen Max-width 768px *********************
  ***************************************************************/
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:767px){ 
   body{font-size:.85rem;}
     /*IPAD top banner sticker*/
     #footer div.container div.text-center{margin-top:20px;}
@@ -1015,6 +1020,7 @@ p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
  ***************************************************************/
 
 @media (max-width: 550px) {
+	
    #footer div.container #redes-desk {font-size: 0.2rem;width: 110%;}
   /*Items del carrito de compra Fix*/
   #cart-summary-product-list img.img-fluid {height: 100px;}
@@ -1573,5 +1579,6 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
     -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color
  0.15s linear 0s;
 }
+span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
 }
 
