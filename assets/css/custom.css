@@ -216,7 +216,7 @@ body#checkout #checkout-payment-step .payment-options .payment-option.custom-con
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio:hover{background-color:#4CAF50;font-weight:600;}
 body#checkout #checkout-payment-step .payment-options .payment-option.paypal-option-payment:hover { animation: shadow-pulse 1s infinite;background:red;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label{width:100%;}
-body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label::after{content:"\f107";font-family:"FontAwesome";color:white;margin-left:6px;position:absolute;left:-2px;top:0;opacity:1;}
+body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label::after{content:"\f107";font-family:"FontAwesome";color:white;margin-left:6px;position:absolute;left:-2px;opacity:1;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label::before{background-color:black;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio .img-fluid{display:none;}
 body#checkout #checkout-payment-step .payment-options .stripe-payment-17{margin:10px 0 10px 0;}
