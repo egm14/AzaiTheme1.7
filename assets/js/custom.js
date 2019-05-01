@@ -173,8 +173,8 @@ $(document).ready(function(){
 	});
 
 	 /*==================== CHANGE BEHAVIOR CUENTO =======================*/
-	 $('checkout-payment-step').on('click', ".paypal-option-payment", function(){
-	 		$('#payment-confirmation').addClass("gradient-border");
+	 $('#checkout-payment-step').on('click', ".paypal-option-payment", function(){
+	 		$('#payment-confirmation').find(".btn-primary").addClass("button-jittery");
 	 		console.log("Cambiando buttons pago debido a Paypal");
 	 });
 

@@ -215,8 +215,9 @@ body#checkout, body#cart{font-size:.87rem!important;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio{background-color:black;color:white;padding:10px 10px;min-height:55px;display:flex;justify-content:center;flex-direction:column;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio:hover{background-color:#4CAF50;font-weight:600;}
 body#checkout #checkout-payment-step .payment-options .payment-option.paypal-option-payment:hover { animation: shadow-pulse 1s infinite;background:red;}
+body#checkout #checkout-payment-step .payment-options .payment-option.paypal-option-payment label::after{content:""!important;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label{width:100%;}
-body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label::after{content:"\f107";font-family:"FontAwesome";color:white;margin-left:6px;position:absolute;left:-2px;opacity:1;}
+body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label::after{content:"\f107";font-family:"FontAwesome";color:white;margin-left:6px;position:absolute;left:-2px;opacity:1;top:0;bottom:0;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio label.ps-shown-by-js.custom-control-label::before{background-color:transparent;}
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio .img-fluid{display:none;}
 body#checkout #checkout-payment-step .payment-options .stripe-payment-17{margin:10px 0 10px 0;}
@@ -629,6 +630,52 @@ li.swiper-slide .copy-container-btn .logginSlide{
 li.swiper-slide .copy-container-btn img{
   width:100%;
   height:auto;
+}
+
+
+div#stage {
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    height: 462px;
+    width: 100%;
+}
+/* Estilo Carrier */
+body#checkout .checkout-step .delivery-options .delivery-option-item label .row {background: #f1f1f1;border: none;}
+body#checkout #hook-display-before-carrier .custom-control:active, .custom-control:focus, .custom-control:hover {color: #4CAF50;}
+/*gift card*/
+#gc-success-modal i.fa.fa-check {color: #21c912;}
+#formgiftcard .input {
+    color: #3c3c3c;
+    height: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    border-radius: 0;
+    line-height: 16px;
+    background-color: #fff;
+    padding: 13px 13px 13px 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color
+ 0.15s linear 0s;
+    -webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s,
+ color 0.15s linear 0s;
+    -moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s,
+ color 0.15s linear 0s;
+    -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color
+ 0.15s linear 0s;
+}
+span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
 }
 
 
@@ -1240,6 +1287,48 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
  **************** External library extension *******************
  ***************************************************************/
 
+/*CodeOpen sourche animation: https://codemyui.com/in-your-face-cta-buttons*/
+.button-jittery{
+  animation: jittery 5s infinite;
+  &:hover {
+    animation: heartbeat 0.2s infinite;
+  }
+}
+@keyframes jittery {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1.15) rotate(2deg);
+  }
+  40% {
+    transform: scale(1.15) rotate(0);
+    background:white;
+    color:black;
+  }
+}
+@keyframes heartbeat {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
  /*ACtive*/
  .active{display:block;}
  
@@ -1537,48 +1626,3 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
     transform: scaleY(1.2) skew(0);
   }
 }
-div#stage {
-    position: absolute;
-    top: 0px;
-    z-index: 99;
-    height: 462px;
-    width: 100%;
-}
-/* Estilo Carrier */
-body#checkout .checkout-step .delivery-options .delivery-option-item label .row {background: #f1f1f1;border: none;}
-body#checkout #hook-display-before-carrier .custom-control:active, .custom-control:focus, .custom-control:hover {color: #4CAF50;}
-/*gift card*/
-#gc-success-modal i.fa.fa-check {color: #21c912;}
-#formgiftcard .input {
-    color: #3c3c3c;
-    height: 40px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    border-radius: 0;
-    line-height: 16px;
-    background-color: #fff;
-    padding: 13px 13px 13px 5px;
-    margin-bottom: 10px;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #dedede;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
-    transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color
- 0.15s linear 0s;
-    -webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s,
- color 0.15s linear 0s;
-    -moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s,
- color 0.15s linear 0s;
-    -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color
- 0.15s linear 0s;
-}
-span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
-}
-
