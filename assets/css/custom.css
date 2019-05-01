@@ -222,7 +222,7 @@ body#checkout #checkout-payment-step .payment-options .payment-option.custom-con
 body#checkout #checkout-payment-step .payment-options .payment-option.custom-control.custom-radio .img-fluid{display:none;}
 body#checkout #checkout-payment-step .payment-options .stripe-payment-17{margin:10px 0 10px 0;}
 body#checkout #checkout-payment-step .payment-options img.dsecure{border-radius:0.4rem;height:4rem;}
-body#checkout #checkout-payment-step .payment-options input[data-module-name="paypal"]{z-index:1;opacity:1;left:13px;}
+body#checkout #checkout-payment-step .payment-options input[data-module-name="paypal"]{z-index:1;opacity:1;top:13px;left:13px;}
 
 
 /*-------------code Voucher----------
@@ -1039,8 +1039,8 @@ body#category .grid .product-miniature .product-miniature-container .product-min
 @media only screen and (max-width: 640px){
 /*------------------- AJUSTES GENERALES ----------------*/  
 /*Ajustes de tamaños slider*/  
-#ps-image-slider.swiper-container .swiper-slide .img-fluid {top: 31%!important;width: 110%!important;height: auto;min-width: 440px!important;}
-#ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 250px;top: 47px}
+#ps-image-slider.swiper-container .swiper-slide .img-fluid {top: 37%!important;width: 110%!important;height: auto;min-width: 440px!important;}
+#ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 350px;top: 70px}
 #choicegiftcard section .step-title {text-transform: uppercase;margin-bottom:0;font-size: 12px;}/*Font size module gift card */
 p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
 /*------------------- PRODUCT- SECTION ----------------*/
@@ -1210,8 +1210,9 @@ p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
 
 
 @media only screen and (max-width:420px){
+div#ship {position: fixed;top: 0px;left: 0px;right: 0px;z-index: 4;}
 #header>.wrapper {padding-top: 3px;padding-bottom: 3px;width: 150px}
-header#header {display: flex;}
+header#header {display: flex;position: fixed;top: 25px;left: 0px;right: 0px;}
 .separator-list.justify-content-center {position: relative;top: 15px;}
 li.top-level-menu-li {margin-bottom: 0px;padding-bottom: 0px;border-bottom: 1px solid #cccccc36;border-left: 0px!important;padding-left:0px;padding-right: 0px;padding: 0px 0px 0px 7px;}
 ul.menu.clearfix.top-level-menu.jxmegamenu_item {margin: 0px -13px 0px -13px;}
