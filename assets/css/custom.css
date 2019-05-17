@@ -189,6 +189,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #cart .close:before {content: "\f014"!important;font: normal normal normal 14px/1 FontAwesome!important;}
 #category span.regular-price {color: #b4b0b0;}
 #category span.discount-percentage.discount-product {color: red;}
+#authentication section#wrapper {padding-bottom: 10rem;}/*fix wrapper*/
 body#category ..product-prices-md.with-discount{justify-content: center;}
 .block-categories .arrows .arrow-down, .block-categories .arrows .arrow-right {cursor: pointer;margin-left: .3125rem;color: #2f2c2f;left: 88%;position: absolute;font-size: 15px;}
 #category span.price {font-weight: bold!important;}
