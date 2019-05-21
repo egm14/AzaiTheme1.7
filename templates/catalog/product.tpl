@@ -45,14 +45,47 @@
   {/if}
 {/block}
 
-{block name='content'}
 
+{block name='content'}
+  {if $shop.name == "azaimayoreo"}
+        {if $customer.is_logged == NULL}
+         
+            <script type="text/javascript">
+              var w = "{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}?create_account=1";
+              {literal}
+            location.href =  w ;
+            console.log("Redireccionando...." + w);
+            {/literal}
+            </script>
+          
+        {else}
+          {literal}
+            <script type="text/javascript">console.log('Dentro de Azaimayoreo registrado.');</script>
+          {/literal}
+        {/if}
+    {else}
+        <script type="text/javascript">
+          var w = "{$smarty.server.HTTP_HOST}";
+        {literal}
+              console.log(w);
+            {/literal}
+        </script>
+    {/if}
+    {$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}?create_account=1<br />
+    {$smarty.server.HTTP_HOST}
+    {$language.iso_code}
+    <pre>{$language|print_r}</pre>
+    <pre>
+      {$smarty.server|print_r}
+    </pre>
           
   <section id="main" itemscope itemtype="https://schema.org/Product">
+
     <meta itemprop="url" content="{$product.url}">
     {block name='page_header'}
             <h1 class="h2 product-name mobile" style="display:none" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
           {/block}
+
     <div class="product-card row mb-2 mb-lg-3 mb-xxl-4">
       <div class="product-left-column col-12 col-md-6">
         {block name='page_content_container'}

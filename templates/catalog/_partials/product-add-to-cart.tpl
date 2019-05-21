@@ -49,7 +49,7 @@
             disabled
           {/if}
         >
-          {*l s='Add to cart' d='Shop.Theme.Actions'*}
+          {l s='Add to cart' d='Shop.Theme.Actions'}
 		  {$in_cart = 0}
 		  {foreach from=$cart['products'] item='cart_product' }
 		  {if $cart_product['id_product'] == $product.id}
