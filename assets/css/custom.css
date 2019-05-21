@@ -35,6 +35,23 @@ By Azai.com theme v1.7
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
 #checkout #cart-voucher-promo a.close span, .cart-discount ul li a.close span{opacity:0;}
 .cart-discount ul.list-group{margin-top:.3rem;margin-bottom:.3rem;}
 #show-orden #order-summary-content hr{margin-top:.5rem;margin-bottom:1rem;}
@@ -189,6 +206,7 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #cart .close:before {content: "\f014"!important;font: normal normal normal 14px/1 FontAwesome!important;}
 #category span.regular-price {color: #b4b0b0;}
 #category span.discount-percentage.discount-product {color: red;}
+#authentication section#wrapper {padding-bottom: 10rem;}/*fix wrapper*/
 body#category ..product-prices-md.with-discount{justify-content: center;}
 .block-categories .arrows .arrow-down, .block-categories .arrows .arrow-right {cursor: pointer;margin-left: .3125rem;color: #2f2c2f;left: 88%;position: absolute;font-size: 15px;}
 #category span.price {font-weight: bold!important;}
