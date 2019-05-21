@@ -23,28 +23,28 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
+                  <div class="footer-before">
+                    <div class="row">
+                      {block name='hook_footer_before'}
+                        {hook h='displayFooterBefore'}
+                      {/block}
+                    </div>
+                  </div>
+                  <div class="footer-main bg-dark">
+                    <div class="row">
+                      {block name='hook_footer'}
+                        {hook h='displayFooter'}
+                      {/block}
+                    </div>
+                  </div>
+                  <div class="footer-after">
+                    <div class="row">
+                      {block name='hook_footer_after'}
+                        {hook h='displayFooterAfter'}
+                      {/block}
+                    </div>
+                  </div>
 
-<div class="footer-before">
-  <div class="row">
-    {block name='hook_footer_before'}
-      {hook h='displayFooterBefore'}
-    {/block}
-  </div>
-</div>
-<div class="footer-main bg-dark">
-  <div class="row">
-    {block name='hook_footer'}
-      {hook h='displayFooter'}
-    {/block}
-  </div>
-</div>
-<div class="footer-after">
-  <div class="row">
-    {block name='hook_footer_after'}
-      {hook h='displayFooterAfter'}
-    {/block}
-  </div>
-</div>
 <div class="footer-copyright bg-dark">
   {block name='copyright_link'}
     <a class="_blank" href="http://www.prestashop.com" target="_blank">
