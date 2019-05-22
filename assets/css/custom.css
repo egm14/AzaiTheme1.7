@@ -1645,3 +1645,18 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
     transform: scaleY(1.2) skew(0);
   }
 }
+
+/*Fix Quote*/
+#_desktop_quotecart span.cart-products-count {
+    color: aliceblue;
+    background: black;
+    border-radius: 10px;
+    padding: 3px 6px 3px 6px;
+    font-size: 15px;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    background: black;
+}
+#_desktop_quotecart span.hidden-sm-down {display: none;}
+#_desktop_quotecart .quotation_cart.active.collapsed {background: #2fb5d200;}
