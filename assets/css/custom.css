@@ -696,6 +696,42 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
 }
 
+/*ROJA45*/
+#header .quotation_cart .dropdown-menu{
+  padding:0px 10px 10px 10px !important;
+}
+
+#header .quotation_cart .dropdown-menu dt{
+  display:flex;
+  flex-direction:row;
+  flex-basis:-moz-available;
+}
+
+#header #_desktop_quotecart .btn.btn-primary.btn-request-quote{
+  display:block;
+  position:relative;
+  left:2rem;
+}
+
+#header .header-nav-mobile #_mobile_quotecart i{
+  color:black!important;
+}
+#header .header-nav-mobile .quotation_cart{
+  top:-12px;
+}
+#header .header-nav-mobile .quotation_cart .header{
+  position:initial;
+}
+#header .header-nav-mobile .quotation_cart .header .hidden-sm-down{
+  display:none;
+}
+#header .header-nav-mobile .quotation_cart .header .cart-products-count{
+  background-color:black;
+  padding:3px;
+  border-radius:50%;
+  top:-8px;
+  right:-8px;
+}
 
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
