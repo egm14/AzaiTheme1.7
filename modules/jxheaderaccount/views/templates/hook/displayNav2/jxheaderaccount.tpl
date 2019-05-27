@@ -19,7 +19,7 @@
     <a id="jx-header-account-link" href="#" onclick="return false;"{if $configs.JXHEADERACCOUNT_DISPLAY_TYPE == 'dropdown'} data-toggle="dropdown"{/if}{if $configs.JXHEADERACCOUNT_DISPLAY_TYPE == 'leftside' || $configs.JXHEADERACCOUNT_DISPLAY_TYPE == 'rightside'}  data-id-slidebar="jxheaderaccount-slidebar" class="slidebar-toggle"{/if}>
       {if $customer.is_logged}
         <i class="fa fa-sign-in" aria-hidden="true"></i>
-        <span>{l s='Your Account' mod='jxheaderaccount'}</span>
+        <!--<span>{l s='Your Account' mod='jxheaderaccount'}</span>--->
       {else}
         <i class="fl-chapps-user139" aria-hidden="true"></i>
         <span>{l s='Sign in' mod='jxheaderaccount'}</span>
