@@ -697,16 +697,17 @@ span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
 }
 
 /*ROJA45*/
+#header #_mobile_quotecart .quotation_cart .dropdown-menu{
+  padding:0px 10px 10px 10px !important;
+}
 #header .quotation_cart .dropdown-menu{
   padding:0px 10px 10px 10px !important;
 }
-
 #header .quotation_cart .dropdown-menu dt{
   display:flex;
   flex-direction:row;
   flex-basis:-moz-available;
 }
-
 #header #_desktop_quotecart .btn.btn-primary.btn-request-quote{
   display:block;
   position:relative;
