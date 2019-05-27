@@ -1114,6 +1114,8 @@ p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
 #footer div.container div.text-center{margin-top:0;padding-bottom:0;}
 #footer .copyright{margin-top:1rem};
 #formgiftcard p.datesendcard {margin: 10px 0px 0px -73px;}
+/*Fix slider Azai Mayoreo*/
+#bonslick .link-bonslick {display: block;position: relative;overflow: hidden;top: 87px;width: 100%;height: 307px;}
  }
 
 
@@ -1682,18 +1684,10 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
     transform: scaleY(1.2) skew(0);
   }
 }
-
-/*Fix Quote*/
-#_desktop_quotecart span.cart-products-count {
-    color: aliceblue;
-    background: black;
-    border-radius: 10px;
-    padding: 3px 6px 3px 6px;
-    font-size: 15px;
-    position: absolute;
-    top: 4px;
-    right: 5px;
-    background: black;
+/*Test display label cuenta*/
+a.btn.btn-primary.btn-request-quote {
+    left: 100px;
 }
-#_desktop_quotecart span.hidden-sm-down {display: none;}
-#_desktop_quotecart .quotation_cart.active.collapsed {background: #2fb5d200;}
+#jx-header-account-link span {
+    display: none!important;
+}

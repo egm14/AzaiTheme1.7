@@ -14,7 +14,9 @@
 }
 
 #header .quotation_cart .header {
-    margin-top: .125rem;
+    margin-top: -2px;
+    left: 40px;
+    position: absolute;
 }
 
 #header .header-nav .quotation_cart.active .header {
@@ -2208,8 +2210,8 @@ ul.product_list.grid > li .product-container .button-container.roja45quotationsp
     padding: 3px 6px 3px 6px;
     font-size: 15px;
     position: absolute;
-    top: 4px;
-    right: 5px;
+    top: -8px;
+    right: -10px;
     background: black;
 }
 #_desktop_quotecart span.hidden-sm-down {display: none;!important}
