@@ -2217,3 +2217,71 @@ ul.product_list.grid > li .product-container .button-container.roja45quotationsp
 #_desktop_quotecart span.hidden-sm-down {display: none;!important}
 #_desktop_quotecart .quotation_cart.active.collapsed {background: #2fb5d200;!important}
 #_desktop_quotecart i.material-icons.expand-more {display: none;!important}
+#header .quotation_cart .dropdown-menu .cart-info .product-quantity {
+    display: inline-block;
+    color: #3a3939;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 23px;
+    padding-right: 5px;
+    text-decoration: underline;
+}
+#header .quotation_cart .dropdown-menu dt {
+    display: flex;
+    flex-direction: row;
+    flex-basis: -moz-available;
+    flex: auto;
+    border-bottom: solid #d9d9d9 1px;
+}
+
+#header #_desktop_quotecart .quotation_cart .dropdown-menu {
+    right: -255px;
+    left: unset;
+    float: left;
+    display: block;
+    width: auto;
+    height: 535px;
+    overflow: scroll;
+    overflow-x: hidden;
+    top: 50px;
+    z-index: 9999999;
+}
+
+#_desktop_quotecart img {
+    border: solid #c7c7c7ad 1px;
+}
+
+#header #_desktop_quotecart .btn.btn-primary.btn-request-quote {
+    display: block;
+    position: relative;
+    left: 7rem!important;
+    top: 15px;
+}
+
+/*Scroll del carrito de cotizacion*/
+#_desktop_quotecart ::-webkit-scrollbar{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+#_desktop_quotecart ::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+#_desktop_quotecart ::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    background-image: -webkit-linear-gradient(90deg,#d9d9d9,#d9d9d9 50%,#d9d9d9,#d9d9d9)
+}
+
+
+
+
+
+
+
+
+
+
+
+
