@@ -696,22 +696,55 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
 }
 
+
 /*ROJA45*/
+
+#roja45quotationspro-modal .modal-content button.close{
+  padding:4px;
+  margin:0px 1px 1px 1px;
+  color:#4cbb6c;
+  background-color:white;
+  width:1.7rem;
+  height:1.7rem;
+}
+#roja45quotationspro-modal .modal-content button.close:before{
+  display:none;
+}
 #header #_mobile_quotecart .quotation_cart .dropdown-menu{
-  padding:0px 10px 10px 10px !important;
+  padding:0px 10px 10px 0px !important;
+}
+#header .quotation_cart .dropdown-menu .cart-info{
+  padding-right:31px;
+}
+#header #_desktop_quotecart .btn.btn-primary.btn-request-quote:hover span{
+  color:black!important;
+}
+#header .quotation_cart .dropdown-menu a.remove-from-cart i{
+  font-size:1.4rem;
+}
+#header .quotation_cart .dropdown-menu a.remove-from-cart{
+  right:15px;
+}
+#header .quotation_cart .dropdown-menu .cart-images{
+  margin-right:10px;
+}
+#header .quotation_cart .dropdown-menu .cart-buttons{
+  margin-bottom:0;
 }
 #header .quotation_cart .dropdown-menu{
   padding:0px 10px 10px 10px !important;
 }
+
 #header .quotation_cart .dropdown-menu dt{
   display:flex;
   flex-direction:row;
   flex-basis:-moz-available;
 }
+
 #header #_desktop_quotecart .btn.btn-primary.btn-request-quote{
   display:block;
   position:relative;
-  left:2rem;
+  left:5rem;
 }
 
 #header .header-nav-mobile #_mobile_quotecart i{
@@ -732,6 +765,24 @@ span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
   border-radius:50%;
   top:-8px;
   right:-8px;
+  width:20px;
+}
+.product-additional-info .btn.btn-link.bootstrap-touchspin-down, .product-additional-info .btn.btn-link.bootstrap-touchspin-up{
+  height:35px;
+  padding:5px;
+  font-size:1.3rem;
+}
+.product-additional-info .roja45quotationspro_button_container .btn.add-to-quote{
+  width:-moz-available;
+  padding-top:1rem;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  font-size:1rem;
+  height:3rem;
+}
+.product-additional-info .roja45quotationspro_button_container .btn.add-to-quote i{
+  margin-right:5px;
 }
 
 /***************************************************************
@@ -742,7 +793,7 @@ span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
  /*Display Backgraud banner categori*/
  .block-category {display: none;}
  /*Display Buttom Quantity in Product*/
- .product-quantity.d-flex.flex-wrap.align-content-center {display: none!important;}
+ /*.product-quantity.d-flex.flex-wrap.align-content-center {display: none!important;}*/
 
  
 

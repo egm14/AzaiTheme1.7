@@ -26,19 +26,68 @@
   {if !$configuration.is_catalog}
 
     {block name='product_quantity'}
-      <div class="product-quantity d-flex flex-wrap align-content-center">
-        <div class="qty mb-1 mr-3">
-          <input
-            type="text"
-            name="qty"
-            id="quantity_wanted"
-            value="{$product.quantity_wanted}"
-            class="input-group input-group-lg"
-            min="{$product.minimal_quantity}"
-            aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
-          >
-        </div>
-      </div>
+      {if $shop.name == "azaimayoreo" && $customer.is_logged != NULL}
+    <table id="table_qty" class="table" style="margin-top:1rem;max-width:400px;">
+          <thead>
+            <tr style="background-color:black; color:white; text-align:center">
+              <th scope="col" colspan="4">Quantitys</th>
+              <th scope="col" colspan="2">Prices</th>
+            </tr>
+          </thead>
+          </tbody>
+            <tr>
+              <th scope="col">S</th>
+              <th scope="col">M</th>
+              <th scope="col">L</th>
+              <th scope="col">Q</th>
+              <th scope="col" style="text-align:center">P</th>
+              <th scope="col">T</th>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>9</td>
+              <td style="padding-left:0px;padding-right:0px;padding-top:5px;">
+                  <div class="product-quantity d-flex flex-wrap align-content-center">
+                    <div class="qty mb-1 mr-3">
+                      <input
+                        type="text"
+                        name="qty"
+                        step="9"
+                        min="9"
+                        max="100"
+                        id="quantity_wanted"
+                        value="{$product.quantity_wanted}"
+                        class="input-group input-group-lg"
+                        min="{$product.minimal_quantity}"
+                        aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
+                        style="max-width:70px;color:black;height:35px;padding:10px;min-width:55px"
+                      >
+                    </div>
+                  </div>
+             </td>
+             <td>{$product.price}</td>
+             
+          </tr>
+        </tbody>
+    </table>
+        {else}
+              <div class="product-quantity d-flex flex-wrap align-content-center">
+                    <div class="qty mb-1 mr-3">
+                      <input
+                        type="text"
+                        name="qty"
+                        step="1"
+                        id="quantity_wanted"
+                        value="{$product.quantity_wanted}"
+                        class="input-group input-group-lg"
+                        min="{$product.minimal_quantity}"
+                        aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
+                      >
+                    </div>
+                  </div>
+        {/if}
       <div class="add mb-1">
         <button
           id="box-cart-btn"

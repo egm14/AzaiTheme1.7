@@ -209,7 +209,9 @@ function(t, e, n) {
                 buttondown_class: "",
                 buttonup_class: "",
                 min: parseInt(e.attr("min"), 10),
-                max: 1e6
+                max: parseInt(e.attr("max"), 10),
+                step: parseInt(e.attr("step")),
+                //max: 1e6
             }), e.on("change", function(e) {
                 var n = (0, r.default)(t.find(".product-refresh"));
                 return (0, r.default)(e.currentTarget).trigger("touchspin.stopspin"), n.trigger("click", {

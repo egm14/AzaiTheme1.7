@@ -71,13 +71,7 @@
             {/literal}
         </script>
     {/if}
-    {$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}?create_account=1<br />
-    {$smarty.server.HTTP_HOST}
-    {$language.iso_code}
-    <pre>{$language|print_r}</pre>
-    <pre>
-      {$smarty.server|print_r}
-    </pre>
+    
           
   <section id="main" itemscope itemtype="https://schema.org/Product">
 
