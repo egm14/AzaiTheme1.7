@@ -22,25 +22,18 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<<<<<<< HEAD
- 
-=======
->>>>>>> 1fdc698db23f31d88976f361d213148ba2198278
 {block name='product_miniature_item'}
   <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
     <div class="product-miniature-container">
       <div class="product-miniature-thumbnail">
         <div class="product-thumbnail">
           {block name='product_thumbnail'}
-<<<<<<< HEAD
           {if $shop.name == "azaimayoreo" && $customer.is_logged == NULL}
                   <a href="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}?create_account=1" class="product-thumbnail-link">
           {else}
                    <a href="{$product.url}" class="product-thumbnail-link">
           {/if}
-=======
             <a href="{$product.url}" class="product-thumbnail-link">
->>>>>>> 1fdc698db23f31d88976f361d213148ba2198278
               {capture name='displayProductListGallery'}{hook h='displayProductListGallery' product=$product}{/capture}
               {if $smarty.capture.displayProductListGallery}
                 {hook h='displayProductListGallery' product=$product}
@@ -71,7 +64,6 @@
 
       <div class="product-miniature-information">
         {block name='product_name'}
-<<<<<<< HEAD
           <h1 class="product-title" itemprop="name">
             {if $shop.name == "azaimayoreo"}
               {if $customer.is_logged == NULL}
@@ -82,9 +74,7 @@
             {else}
               <a href="{$product.url}">{$product.name|truncate:45:'...'}</a></h1>
             {/if}
-=======
           <h1 class="product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:45:'...'}</a></h1>
->>>>>>> 1fdc698db23f31d88976f361d213148ba2198278
         {/block}
         {block name='product_price_and_shipping'}
           {if $product.show_price && !$configuration.is_catalog}
@@ -135,16 +125,12 @@
               </a>
             {else}
               {if $product.customizable == 0}
-<<<<<<< HEAD
                 {if $shop.name == "azaimayoreo" && $customer.is_logged == NULL}
                       <a itemprop="url" class="view-product" style="display:none;" href="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}?create_account=1" title="{l s='View product' d='Shop.Theme.Actions'}">
                   {else}
                       <a itemprop="url" class="view-product" href="{$product.url}" title="{l s='View product' d='Shop.Theme.Actions'}">
                   {/if}
-                
-=======
                 <a itemprop="url" class="view-product" href="{$product.url}" title="{l s='View product' d='Shop.Theme.Actions'}">
->>>>>>> 1fdc698db23f31d88976f361d213148ba2198278
                   <i class="fl-chapps-eye95"></i>
                   <span>{l s='View product' d='Shop.Theme.Actions'}</span>
                 </a>
