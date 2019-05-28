@@ -2273,6 +2273,8 @@ ul.product_list.grid > li .product-container .button-container.roja45quotationsp
     background-color: #d9d9d9;
     background-image: -webkit-linear-gradient(90deg,#d9d9d9,#d9d9d9 50%,#d9d9d9,#d9d9d9)
 }
+
+@media only screen and (max-width:767px){ 
 #module-roja45quotationspro-QuotationsProFront #content {
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
     background: white;
@@ -2305,6 +2307,7 @@ ul.product_list.grid > li .product-container .button-container.roja45quotationsp
 }
 #quote_summary h4.product-name {
     font-size: 14px;
+}
 }
 
 
