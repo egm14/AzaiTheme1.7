@@ -48,9 +48,9 @@
               <td>3</td>
               <td>3</td>
               <td>9</td>
-              <td style="padding-left:0px;padding-right:0px;padding-top:5px;">
+              <td style="padding-left:0px;padding-right:0px;padding-top:5px;text-align:center;">
                   <div class="product-quantity d-flex flex-wrap align-content-center">
-                    <div class="qty mb-1 mr-3">
+                    <div class="qty mb-1 mr-3" style="margin-right:0px!important;">
                       <input
                         type="text"
                         name="qty"
@@ -67,8 +67,9 @@
                     </div>
                   </div>
              </td>
-             <td>{$product.price}</td>
-             
+             <td>
+              <div id="product-price-quantity" data-price="{$product.price_amount}">{$currency.iso_code}{$currency.sign}<span class="product-amount">{$product.price_amount}</span></div>
+            </td>
           </tr>
         </tbody>
     </table>

@@ -784,7 +784,9 @@ span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
 .product-additional-info .roja45quotationspro_button_container .btn.add-to-quote i{
   margin-right:5px;
 }
-
+#product .input-group-btn-vertical{
+  width:1rem;
+}
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/

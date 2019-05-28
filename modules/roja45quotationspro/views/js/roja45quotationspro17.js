@@ -24,14 +24,13 @@ $(document).ready(function () {
                 $(roja45quotationspro_productselector_price).addClass('roja45_hidden');
             }
             $('html').find('#quote_quantity_wanted').TouchSpin({
-                step:9,
-                min: 9,
-                max: 50,
+               /* min: parseInt(e.attr("min"), 10),
+                max: parseInt(e.attr("max"), 10),
+                step: parseInt(e.attr("step")),*/
                 maxboostedstep: false,
                 mousewheel:true, 
                 buttondown_class: "btn btn-link",
-                buttonup_class: "btn btn-link",
-                console.log(this.min.value);
+                buttonup_class: "btn btn-link"
             });
               
             /*

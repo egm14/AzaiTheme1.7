@@ -178,4 +178,54 @@ $(document).ready(function(){
 	 		console.log("Cambiando buttons pago debido a Paypal");
 	 });
 
+
+	 /*==================== CALCULADORA AJAX =======================*/
+
+	 	var price = $('#product-price-quantity').data('price');
+	 	var qty = $('#quantity_wanted').val();
+	 	console.log('obteniendo variables');
+	 	calculadoraQTY(qty, price);
+	 
+	 $('.product-quantity').on('touchspin change touchspin.on.startspin', function(){
+	 	obtenerCalculo();
+	 });
+	
+
+
+	 function obtenerCalculo(){
+	 	var price = $('#product-price-quantity').data('price');
+	 	var qty = $('#quantity_wanted').val();
+	 	console.log('obteniendo variables');
+	 	calculadoraQTY(qty, price);
+
+	 }
+	 
+	 function calculadoraQTY(qty,price){
+	 	var parametros ={
+	 		"prodqty" : qty,
+	 		"prodprice" : price
+	 	}
+
+	 	$.ajax({
+	 		data: parametros,
+	 		url: window.location.origin + '/azai19b/themes/AzaiShop/assets/php/'+'calculadora.php',
+	 		type: 'post',
+	 		beforeSend: function(){
+	 			console.log("Enviando datos a la calculadora.");
+	 			console.log("qty: " + parametros.prodqty, "price: " + parametros.prodprice);
+	 			//console.log(url.value);
+	 		},
+	 		success: function(resultado, text){
+	 			$('#product-price-quantity').find('.product-amount').html(" " + resultado);
+	 			console.log("Resultado obtenido");
+	 			console.log(resultado);
+	 		},
+	 		 error: function (request, status, error) {
+	 		 	console.log("Hay un error: " + error);
+
+	 		}
+	 	});
+	 }
+
+
 });

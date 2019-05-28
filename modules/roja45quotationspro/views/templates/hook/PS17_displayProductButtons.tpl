@@ -13,7 +13,7 @@
 <div id="roja45quotationspro_buttons_block" class="roja45quotationspro_button_container no-print ">
      
 
-    <div class="qty">
+    <div class="qty" style="display:none!important;">
     
                <input 
                  type="number" 
@@ -24,7 +24,7 @@
                  min="9"
                  class="form-control"
                  aria-label="{l s='Quantity' mod='roja45quotationspro'}"
-                 style="max-width:70px;color:black;height:35px;padding:10px;min-width:35px;display:none;"
+                 style="max-width:70px;color:black;height:35px;padding:10px;min-width:35px;"
                  >
             
     </div>
