@@ -40,5 +40,6 @@
             <i class="material-icons">format_list_numbered</i>
             {l s='Add to quote' mod='roja45quotationspro'}
         </a>
+        <br />
     </div>
 </div>

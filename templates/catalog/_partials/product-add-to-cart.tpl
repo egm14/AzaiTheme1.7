@@ -27,28 +27,20 @@
 
     {block name='product_quantity'}
       {if $shop.name == "azaimayoreo" && $customer.is_logged != NULL}
-    <table id="table_qty" class="table" style="margin-top:1rem;max-width:400px;">
+    <table id="table_qty" class="table" style="margin-top:1rem;max-width:400px;text-align:center;border:1px solid darkgrey;">
           <thead>
             <tr style="background-color:black; color:white; text-align:center">
-              <th scope="col" colspan="4">Quantitys</th>
-              <th scope="col" colspan="2">Prices</th>
+              <th scrop="col">Color</th>
+              <th scope="col" style="cuento">Pack QTY</th>
+              <th scope="col" >TotalQty <br />S-M-L(3-3-3)</th>
+              <th scope="col" >Pack Price</th>
+
             </tr>
           </thead>
           </tbody>
             <tr>
-              <th scope="col">S</th>
-              <th scope="col">M</th>
-              <th scope="col">L</th>
-              <th scope="col">Q</th>
-              <th scope="col" style="text-align:center">P</th>
-              <th scope="col">T</th>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>3</td>
-              <td>3</td>
-              <td>9</td>
-              <td style="padding-left:0px;padding-right:0px;padding-top:5px;text-align:center;">
+              <td>#Color</td>
+              <td style="padding-left:0px;padding-right:0px;padding-top:5px;text-align:center;border-right:solid 2px black;">
                   <div class="product-quantity d-flex flex-wrap align-content-center">
                     <div class="qty mb-1 mr-3" style="margin-right:0px!important;">
                       <input
@@ -67,6 +59,8 @@
                     </div>
                   </div>
              </td>
+              <td>9</td>
+              
              <td>
               <div id="product-price-quantity" data-price="{$product.price_amount}">{$currency.iso_code}{$currency.sign}<span class="product-amount">{$product.price_amount}</span></div>
             </td>
@@ -100,18 +94,18 @@
           {/if}
         >
           {l s='Add to cart' d='Shop.Theme.Actions'}
-		  {$in_cart = 0}
-		  {foreach from=$cart['products'] item='cart_product' }
-		  {if $cart_product['id_product'] == $product.id}
-			  {$in_cart = 1}
-		  {/if}
-		  {/foreach}
-		  
-				{if $in_cart}
-				{l s='Already in cart' d='Shop.Theme.Actions'}
-				{else}
-				{l s='Add to cart' d='Shop.Theme.Actions'}
-				{/if}
+      {$in_cart = 0}
+      {foreach from=$cart['products'] item='cart_product' }
+      {if $cart_product['id_product'] == $product.id}
+        {$in_cart = 1}
+      {/if}
+      {/foreach}
+      
+        {if $in_cart}
+        {l s='Already in cart' d='Shop.Theme.Actions'}
+        {else}
+        {l s='Add to cart' d='Shop.Theme.Actions'}
+        {/if}
         </button>
       </div>
     {/block}
