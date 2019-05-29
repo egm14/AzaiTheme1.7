@@ -183,27 +183,33 @@ $(document).ready(function(){
 
 	 	var price = $('#product-price-quantity').data('price');
 	 	var qty = $('#quantity_wanted').val();
+	 	var datapack = $('#quantity_wanted').data('pack');
+
 	 	console.log('obteniendo variables');
-	 	calculadoraQTY(qty, price);
+	 	calculadoraQTY(qty, price, datapack);
 	 
 	 $('.product-quantity').on('touchspin change touchspin.on.startspin', function(){
 	 	obtenerCalculo();
 	 });
-	
-
 
 	 function obtenerCalculo(){
 	 	var price = $('#product-price-quantity').data('price');
+	 	var datapack = $('#quantity_wanted').data('pack');
 	 	var qty = $('#quantity_wanted').val();
+	 	
 	 	console.log('obteniendo variables');
-	 	calculadoraQTY(qty, price);
+	 	//console.log('Esto es datapack: ' + datapack);
+
+	 	calculadoraQTY(qty, price, datapack);
 
 	 }
 	 
-	 function calculadoraQTY(qty,price){
+	 function calculadoraQTY(qty,price, pack){
 	 	var parametros ={
-	 		"prodqty" : qty,
-	 		"prodprice" : price
+	 		"prodqty" :  qty,
+	 		"prodprice" : price,
+	 		"proddata" : pack,
+	 		"QtyxData" : qty * pack
 	 	}
 
 	 	$.ajax({
@@ -212,11 +218,12 @@ $(document).ready(function(){
 	 		type: 'post',
 	 		beforeSend: function(){
 	 			console.log("Enviando datos a la calculadora.");
-	 			console.log("qty: " + parametros.prodqty, "price: " + parametros.prodprice);
+	 			console.log("qty: " + parametros.prodqty + " price: " + parametros.prodprice + " Data-pack: " + parametros.QtyxData);
 	 			//console.log(url.value);
 	 		},
 	 		success: function(resultado, text){
 	 			$('#product-price-quantity').find('.product-amount').html(" " + resultado);
+	 			$('#table_qty_qty').html(parametros.QtyxData);
 	 			console.log("Resultado obtenido");
 	 			console.log(resultado);
 	 		},

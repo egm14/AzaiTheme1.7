@@ -26,7 +26,7 @@
   {if !$configuration.is_catalog}
 
     {block name='product_quantity'}
-      {if $shop.name == "azaimayoreo" && $customer.is_logged != NULL}
+      {if $shop.name != "azaimayoreo" && $customer.is_logged != NULL}
     <table id="table_qty" class="table" style="margin-top:1rem;max-width:400px;text-align:center;border:1px solid darkgrey;">
           <thead>
             <tr style="background-color:black; color:white; text-align:center">
@@ -46,9 +46,10 @@
                       <input
                         type="text"
                         name="qty"
-                        step="9"
-                        min="9"
+                        step="1"
+                        min="1"
                         max="100"
+                        data-pack="9"
                         id="quantity_wanted"
                         value="{$product.quantity_wanted}"
                         class="input-group input-group-lg"
@@ -59,7 +60,7 @@
                     </div>
                   </div>
              </td>
-              <td>9</td>
+              <td id="table_qty_qty">9</td>
               
              <td>
               <div id="product-price-quantity" data-price="{$product.price_amount}">{$currency.iso_code}{$currency.sign}<span class="product-amount">{$product.price_amount}</span></div>

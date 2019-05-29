@@ -790,6 +790,10 @@ span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
 .product-additional-info #roja45quotationspro_buttons_block{
   display:block;
 }
+#product #table_qty thead tr th, #product #table_qty tbody tr td{
+  vertical-align:middle;
+  padding:.2rem .5rem
+}
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/
