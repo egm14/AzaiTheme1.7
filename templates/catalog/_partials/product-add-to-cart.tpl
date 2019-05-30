@@ -27,22 +27,22 @@
 
     {block name='product_quantity'}
       {if $shop.name != "azaimayoreo" && $customer.is_logged != NULL}
-    <table id="table_qty" class="table" style="margin-top:1rem;max-width:400px;text-align:center;border:1px solid darkgrey;">
-          <thead>
+    <table id="table_qty" class="table" style="margin-top:1rem;max-width:400px;text-align:center;">
+          
             <tr style="background-color:black; color:white; text-align:center">
-              <th scrop="col">Color</th>
-              <th scope="col" style="cuento">Pack QTY</th>
-              <th scope="col" >TotalQty <br />S-M-L(3-3-3)</th>
-              <th scope="col" >Pack Price</th>
+              <td scrop="col">Color</td>
+              <td scope="col" style="cuento">Pack QTY</td>
+              <td scope="col" >TotalQty <br />S-M-L(3-3-3)</td>
+              <td scope="col" >Pack Price</td>
 
             </tr>
-          </thead>
+          
           </tbody>
             <tr>
-              <td>#Color</td>
-              <td style="padding-left:0px;padding-right:0px;padding-top:5px;text-align:center;border-right:solid 2px black;">
+              <td><div id="backColor" style="width:2rem; height:2rem;border-radius:50%;background-color:black;margin-left:auto;margin-right:auto;"></div></td>
+              <td style="padding-left:0px;padding-right:0px;padding-top:5px;text-align:center;">
                   <div class="product-quantity d-flex flex-wrap align-content-center">
-                    <div class="qty mb-1 mr-3" style="margin-right:0px!important;">
+                    <div class="qty mb-1 mr-3" style="margin-right:auto!important;margin-left:auto;">
                       <input
                         type="text"
                         name="qty"
@@ -55,7 +55,7 @@
                         class="input-group input-group-lg"
                         min="{$product.minimal_quantity}"
                         aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
-                        style="max-width:70px;color:black;height:35px;padding:10px;min-width:55px"
+                        style="max-width:70px;color:black;height:47px;padding:10px;min-width:55px;font-size:1rem;"
                       >
                     </div>
                   </div>

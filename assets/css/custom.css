@@ -794,6 +794,15 @@ span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
   vertical-align:middle;
   padding:.2rem .5rem
 }
+#product #table_qty tbody .bootstrap-touchspin-down,#product #table_qty tbody .bootstrap-touchspin-up{
+  background-color:black!important;
+  padding:3px 7px!important;
+  color:white!important;
+}
+#product #table_qty tbody .bootstrap-touchspin-down{margin-top:5px;}
+#table_qty tbody tr td{
+  border:1px solid black;
+}
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/

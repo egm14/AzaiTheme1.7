@@ -187,10 +187,65 @@ $(document).ready(function(){
 
 	 	console.log('obteniendo variables');
 	 	calculadoraQTY(qty, price, datapack);
+
+	 	setTimeout(tableColor,2000);
+
+		 /*$('.product-quantity').on('click tap mousewheel touch touchspin.on.startspin', function(){
+	 		obtenerCalculo();
+		 });*/
+		 $('#quantity_wanted').on('change mousewheel touchspin', function(){
+		 	obtenerCalculo();
+		 });
+		 
+		 //Change color table on product
+		 prestashop.on("updatedProduct",function(){
+		 	tableColor();
+		 	$('#quantity_wanted').val(qty);
+		 });
+
+	 	/*change color table auto or selected */
+	 	function tableColor(){
+	 		var formColor = $('#add-to-cart-or-refresh').find('.product-variants-item');
+	 		var backColorDom = $('#backColor');
+	 		//console.log(formColor);
+		 		formColor.each(function(key, value){
+		 			console.log( "Probando each: " + key + " : " + value.innerText);
+		 			//console.log(formColor[key]);
+		 			 if(formColor[key].children[0].innerText == "COLOR"){
+		 			 	//console.log("product-variant color encontrado");
+		 			 	console.log("Esto es el key: " + key);
+		 			 	var liColor = formColor[key].children[1].children;
+		 			 	//console.log(liColor);
+		 				var sumKey = 0;
+		 				/*console.log("número de hijos" + this.childNodes.length);*/
+		 					for(var numb in liColor){
+		 						sumKey += liColor[numb];
+		 						//console.log(numb);
+		 						while(liColor[numb].localName == "li"){
+		 							var colorAttributes = liColor[numb].children[0].children[0].attributes;
+		 								console.log(liColor[numb]);
+		 								//console.log(colorAttributes[0]);
+		 								if(colorAttributes[0].nodeValue == "custom-control-label active"){
+		 									//console.log(colorAttributes[1].value);
+		 									var backcolor = colorAttributes[1].value.split(" ")[1];
+		 										console.log(backcolor);
+		 										backColorDom.css("background-color", backcolor);
+		 										console.log(backColorDom);
+		 								}else{
+		 									console.log(colorAttributes[1] + ": No activo");
+		 								}
+		 								break;
+			 			 		//console.log(this.children[0].class);
+			 			 		}
+			 			 	}
+			 			
+			 		}
+		 			 return (value.innerText == "Color");
+	 		});
+
+		 }
+	 	/*Change color end*/
 	 
-	 $('.product-quantity').on('touchspin change touchspin.on.startspin', function(){
-	 	obtenerCalculo();
-	 });
 
 	 function obtenerCalculo(){
 	 	var price = $('#product-price-quantity').data('price');
