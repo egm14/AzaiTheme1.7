@@ -32,6 +32,7 @@
         {/if}
         {if isset($requested_products)}
         <div class="quote-cart-block dropdown-menu">
+            
             <div class="block-content">
                 <dl class="products">
                     {foreach from=$requested_products item=product}
@@ -46,7 +47,16 @@
                             </div>
                             {if isset($product.attributes)}
                             <div class="product-atributes">
-                                <a href="{$product.link}" title="Product detail">{$product.attributes}</a>
+                                <a href="{$product.link}" title="Product detail">
+                                    {assign var="color" value=","|explode:$product.attributes}
+                                    {$color[0]}
+                            </a>
+
+                            {assign var="priceValue" value=$product.price*($product.quote_quantity*9)}
+                            <p>${$priceValue}</p>
+                            {assign var ="priceSum" value= $priceValue++}
+                            <p>{$priceSum}</p>
+
                             </div>
                             {/if}
                         </div>
