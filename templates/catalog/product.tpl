@@ -111,9 +111,17 @@
               {/if}
             </span>
           {/block}
-          {block name='product_prices'}
-            {include file='catalog/_partials/product-prices.tpl'}
-          {/block}
+
+          
+             {if $shop.name == "azaimayoreo"}
+              {if $customer.is_logged != NULL}
+                 {block name='product_prices'}
+                   {include file='catalog/_partials/product-prices.tpl'}
+                 {/block}
+              {/if}
+            {/if}
+         
+
           {block name='product_description_short'}
             <div id="product-description-short-{$product.id}" class="d-none" itemprop="description">{$product.description_short nofilter}</div>
           {/block}
@@ -125,6 +133,8 @@
               {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
             {/block}
           {/if}
+
+          
           <div class="product-actions">
             {block name='product_buy'}
               <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
