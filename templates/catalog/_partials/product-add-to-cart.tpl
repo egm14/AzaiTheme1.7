@@ -32,7 +32,7 @@
             <tr style="background-color:black; color:white; text-align:center">
               <td scrop="col">Color</td>
               <td scope="col" style="cuento">Pack QTY</td>
-              <td scope="col" >TotalQty <br />S-M-L(3-3-3)</td>
+              <td scope="col" >TotalQty <br /><b>S-M-L(3-3-3)</b></td>
               <td scope="col" >Pack Price</td>
 
             </tr>
