@@ -190,9 +190,7 @@ $(document).ready(function(){
 
 	 	setTimeout(tableColor,2000);
 
-		 /*$('.product-quantity').on('click tap mousewheel touch touchspin.on.startspin', function(){
-	 		obtenerCalculo();
-		 });*/
+
 		 $('#quantity_wanted').on('change mousewheel touchspin', function(){
 		 	obtenerCalculo();
 		 });
@@ -200,7 +198,13 @@ $(document).ready(function(){
 		 //Change color table on product
 		 prestashop.on("updatedProduct",function(){
 		 	tableColor();
-		 	$('#quantity_wanted').val(qty);
+		 	//$('#quantity_wanted').val(qty);
+		 	closeLoader();
+		 });
+		 $("ul.variant-links.list-inline").on('click', function(dt){
+	 		openLoader();
+	 		console.log("click sobre color");
+	 		//console.log(dt);
 		 });
 
 	 	/*change color table auto or selected */
@@ -213,7 +217,7 @@ $(document).ready(function(){
 		 			//console.log(formColor[key]);
 		 			 if(formColor[key].children[0].innerText == "COLOR"){
 		 			 	//console.log("product-variant color encontrado");
-		 			 	console.log("Esto es el key: " + key);
+		 			 	//console.log("Esto es el key: " + key);
 		 			 	var liColor = formColor[key].children[1].children;
 		 			 	//console.log(liColor);
 		 				var sumKey = 0;
@@ -223,12 +227,12 @@ $(document).ready(function(){
 		 						//console.log(numb);
 		 						while(liColor[numb].localName == "li"){
 		 							var colorAttributes = liColor[numb].children[0].children[0].attributes;
-		 								console.log(liColor[numb]);
+		 								//console.log(liColor[numb]);
 		 								//console.log(colorAttributes[0]);
 		 								if(colorAttributes[0].nodeValue == "custom-control-label active"){
 		 									//console.log(colorAttributes[1].value);
 		 									var backcolor = colorAttributes[1].value.split(" ")[1];
-		 										console.log(backcolor);
+		 										//console.log(backcolor);
 		 										backColorDom.css("background-color", backcolor);
 		 										console.log(backColorDom);
 		 								}else{
@@ -266,10 +270,15 @@ $(document).ready(function(){
 	 		"proddata" : pack,
 	 		"QtyxData" : qty * pack
 	 	}
-
+	 		var uriPhp;
+		 	if(window.location.hostname =="localhost"){
+		 		uriPhp = '/azai19b/themes/AzaiShop/assets/php/';
+		 	}else{
+		 		uriPhp = '/themes/AzaiShop/assets/php/';
+		 	}
 	 	$.ajax({
 	 		data: parametros,
-	 		url: window.location.origin + '/azai19b/themes/AzaiShop/assets/php/'+'calculadora.php',
+	 		url: window.location.origin + uriPhp+'calculadora.php',
 	 		type: 'post',
 	 		beforeSend: function(){
 	 			console.log("Enviando datos a la calculadora.");
@@ -277,10 +286,14 @@ $(document).ready(function(){
 	 			//console.log(url.value);
 	 		},
 	 		success: function(resultado, text){
-	 			$('#product-price-quantity').find('.product-amount').html(" " + resultado);
+	 			var PriceData = $('#product-price-quantity');
+	 				PriceData.find('.product-amount').html(" " + resultado);//value tag price html
+	 				PriceData.data('price', resultado);//data price
+	 				console.log("New data-price: " + PriceData.data('price'));
+	 				
 	 			$('#table_qty_qty').html(parametros.QtyxData);
-	 			console.log("Resultado obtenido");
-	 			console.log(resultado);
+	 			//console.log("Resultado obtenido");
+	 			//console.log(resultado);
 	 		},
 	 		 error: function (request, status, error) {
 	 		 	console.log("Hay un error: " + error);
