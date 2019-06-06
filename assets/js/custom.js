@@ -288,8 +288,8 @@ $(document).ready(function(){
 	 		success: function(resultado, text){
 	 			var PriceData = $('#product-price-quantity');
 	 				PriceData.find('.product-amount').html(" " + resultado);//value tag price html
-	 				PriceData.data('price', resultado);//data price
-	 				console.log("New data-price: " + PriceData.data('price'));
+	 				//PriceData.data('price', resultado);//data price change price with the new one calculated
+	 				//console.log("New data-price: " + PriceData.data('price'));
 	 				
 	 			$('#table_qty_qty').html(parametros.QtyxData);
 	 			//console.log("Resultado obtenido");
