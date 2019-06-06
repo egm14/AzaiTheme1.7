@@ -33,7 +33,6 @@
           {else}
                    <a href="{$product.url}" class="product-thumbnail-link">
           {/if}
-            <a href="{$product.url}" class="product-thumbnail-link">
               {capture name='displayProductListGallery'}{hook h='displayProductListGallery' product=$product}{/capture}
               {if $smarty.capture.displayProductListGallery}
                 {hook h='displayProductListGallery' product=$product}
@@ -71,10 +70,7 @@
               {else}
                   <a href="{$product.url}">{$product.name|truncate:45:'...'}</a></h1>
               {/if}
-            {else}
-              <a href="{$product.url}">{$product.name|truncate:45:'...'}</a></h1>
             {/if}
-          <h1 class="product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:45:'...'}</a></h1>
         {/block}
         {block name='product_price_and_shipping'}
           {if $product.show_price && !$configuration.is_catalog}
@@ -130,7 +126,6 @@
                   {else}
                       <a itemprop="url" class="view-product" href="{$product.url}" title="{l s='View product' d='Shop.Theme.Actions'}">
                   {/if}
-                <a itemprop="url" class="view-product" href="{$product.url}" title="{l s='View product' d='Shop.Theme.Actions'}">
                   <i class="fl-chapps-eye95"></i>
                   <span>{l s='View product' d='Shop.Theme.Actions'}</span>
                 </a>

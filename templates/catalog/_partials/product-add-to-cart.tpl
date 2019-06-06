@@ -26,7 +26,7 @@
   {if !$configuration.is_catalog}
 
     {block name='product_quantity'}
-      {if $shop.name != "azaimayoreo" && $customer.is_logged != NULL}
+      {if $shop.name == "azaimayoreo" && $customer.is_logged != NULL}
     <table id="table_qty" class="table" style="margin-top:1rem;max-width:400px;text-align:center;">
           
             <tr style="background-color:black; color:white; text-align:center">
@@ -94,7 +94,7 @@
             disabled
           {/if}
         >
-          {l s='Add to cart' d='Shop.Theme.Actions'}
+        
       {$in_cart = 0}
       {foreach from=$cart['products'] item='cart_product' }
       {if $cart_product['id_product'] == $product.id}
