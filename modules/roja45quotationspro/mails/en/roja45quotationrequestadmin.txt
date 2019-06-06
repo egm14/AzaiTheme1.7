@@ -1,0 +1,8 @@
+
+New Quotation Request
+
+You have received a new quotation request from {customer_firstname} {customer_lastname}.
+
+{content_text}
+
+{shop_name} [{shop_url}] built by roja45.com

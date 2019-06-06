@@ -1,0 +1,8 @@
+
+Estimado/a {firstname} {lastname},
+
+Nos gustaría hacerle saber que su cotización se ha cancelado.
+
+Si usted cree que ha sucedido en el error por favor no dude en ponerse en contacto con nosotros para que podamos resolver el problema.</p>
+
+{shop_name} hecho por http://www.roja45.com/

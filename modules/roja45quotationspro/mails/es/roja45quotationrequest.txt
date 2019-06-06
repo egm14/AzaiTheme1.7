@@ -1,0 +1,11 @@
+Nueva Solicitud de Cotización
+
+Estimada/o {customer_firstname} {customer_lastname},
+
+Muchas gracias, hemos recibido su solicitud y revisaremos su solicitud lo antes posible.
+Por favor, compruebe abajo el resumen de su solicitud, si necesita hacer cualquier cambio por favor ponerse en contacto.
+Gracias por seleccionarnos para realizar su compra.
+
+{content_text}
+
+{shop_name} [{shop_url}] built by roja45.com

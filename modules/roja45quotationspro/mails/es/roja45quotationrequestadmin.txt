@@ -1,0 +1,8 @@
+
+Nueva Solicitud de Cotizacion
+
+Ha recibido una nueva solicitud de cotizacion de {customer_firstname} {customer_lastname}.
+
+{content_text}
+
+{shop_name} [{shop_url}] built by roja45.com

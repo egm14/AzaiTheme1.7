@@ -1,0 +1,6 @@
+Dear {customer_firstname} {customer_lastname},
+
+Thank you for your message.
+
+Kind regards
+{shop_name}

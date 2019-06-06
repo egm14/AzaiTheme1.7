@@ -1,0 +1,11 @@
+
+Estimado/a {firstname} {lastname},
+
+Muchas gracias, hemos recibido su solicitud y crearán su pedido tan pronto como sea posible.
+Usted recibirá un correo electrónico aún más una vez que su pedido ha sido planteado con el fin de confirmar el pago.
+
+Gracias por elegirnos.
+
+Si usted cree que ha sucedido en el error por favor no dude en ponerse en contacto con nosotros para que podamos resolver el problema.
+
+{shop_name} hecho por http://www.roja45.com/

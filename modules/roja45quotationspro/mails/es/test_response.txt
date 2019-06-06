@@ -1,0 +1,2 @@
+Estimado/a {customer_firstname} {customer_lastname},
+Gracias por su mensaje

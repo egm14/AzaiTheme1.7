@@ -1,0 +1,12 @@
+
+New Quotation Request
+
+Dear {customer_firstname} {customer_lastname},
+
+Many thanks, we have received your request and we will review your request as soon as possible.
+If you need to make any changes please email, or call, us as soon as possible.
+Thank you for selecting us to make your request.
+
+{content_text}
+
+{shop_name} [{shop_url}] built by roja45.com

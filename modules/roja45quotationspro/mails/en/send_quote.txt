@@ -1,0 +1,15 @@
+
+Dear {firstname} {lastname},
+
+Many thanks for your request.  We are pleased to provide below our quotation for the items you requested.
+{account_block_txt}
+{quote_txt}
+
+Open the following link to purchase this quote now: {purchase_link}
+
+You can find more details regarding this quote the My Quotes section in your account area.  Log in to the 'My Quotes' section of your account using this link: {my_quotes_link}
+If you would like to change the items on your quote you may either email us by replying to this email, with your changes, or create a new quotation request via the website.
+
+If you have any questions, please do not hesitate to contact us.
+
+{shop_name} built by http://www.roja45.com/

@@ -1,0 +1,8 @@
+
+Dear {firstname} {lastname},
+
+We would like to let you know that your quotation has been cancelled.
+
+If you believe this has happened in error please do not hesitate to contact us so we may resolve the problem.
+
+{shop_name} built by http://www.roja45.com/

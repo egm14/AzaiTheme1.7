@@ -1,0 +1,5 @@
+Quotation Status Update
+
+Quotation [{quotation_reference}] status has changed to [{quotation_status}]
+
+{shop_name} built by http://www.roja45.com/

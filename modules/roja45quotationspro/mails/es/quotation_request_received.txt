@@ -1,0 +1,10 @@
+
+Estimado/a {customer_firstname} {customer_lastname},
+
+Muchas gracias por su solicitud. Hemos recibido sus necesidades y nosotros le enviaremos nuestra cotización tan pronto como sea posible.
+
+Gracias por elegirnos.
+
+Si tiene alguna pregunta, por favor no dude en ponerse en contacto con nosotros.
+
+{shop_name} hecho por http://www.roja45.com/

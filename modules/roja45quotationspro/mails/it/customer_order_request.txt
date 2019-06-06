@@ -1,0 +1,11 @@
+
+Dear {customer_firstname} {customer_lastname},
+
+Many thanks, we have received your request and we will create your order as soon as possible.
+You will receive a further email once your order has been raised in order to confirm payment.
+
+Thank you for choosing us.
+
+If you have any further questions, please do not hesitate to contact us.
+
+{shop_name} built by http://www.roja45.com/

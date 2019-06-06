@@ -1,0 +1,16 @@
+
+Dear {firstname} {lastname},
+
+Many thanks for your request.  We are pleased to provide below our quotation for the items you requested.
+
+{account_block_txt}
+{quote_txt}
+
+Abra el siguiente enlace para comprar esta cotización ahora {purchase_link}
+
+Puede encontrar más detalles sobre esta cita en la sección Mis cotizaciones en el área de su cuenta.  Inicie sesión en el 'Mis Cotizaciones' sección de su cuenta a través de este enlace: {my_quotes_link}
+Si usted quisiera cambiar los artículos en su cotización puede enviarnos un email respondiendo a este correo electrónico, con sus cambios, o crear una nueva solicitud en el sitio web.
+
+Si usted tiene alguna pregunta, por favor no dude en ponerse en contacto con nosotros.
+
+{shop_name} hecho porhttp://www.roja45.com/

@@ -1,0 +1,5 @@
+Actualizar el Estado de Cotización
+
+Estado de Cotización [{quotation_reference}] ha cambiando a [{quotation_status}]
+
+{quotation_summary_txt}

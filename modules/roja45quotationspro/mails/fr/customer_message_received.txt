@@ -1,0 +1,8 @@
+
+Dear {firstname} {lastname},
+
+Many thanks for your message, we will reply as soon as possible.
+
+If you have any further questions, please do not hesitate to contact us.
+
+{shop_name} built by http://www.roja45.com/
