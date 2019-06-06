@@ -693,7 +693,7 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
     -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color
  0.15s linear 0s;
 }
-span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
+
 }
 
 
@@ -913,6 +913,8 @@ header #_desktop_currency_selector .currency-selector .dropdown-menu,
 
 @media only screen and (max-width:1024px){
   
+span.expand-more-desktop {display: none;}/*Ocultar Lenguaje - Moneda Mobil*/
+
 /*--------------------- Menú Mobile ---------------------*/
 nav.iconos-menu-mobile.redessociales{
         z-index:222;
