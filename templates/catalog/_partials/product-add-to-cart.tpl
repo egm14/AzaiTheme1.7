@@ -84,7 +84,9 @@
                     </div>
                   </div>
         {/if}
+        {if $shop.name != "azaimayoreo"}
       <div class="add mb-1">
+        
         <button
           id="box-cart-btn"
           class="btn btn-md btn-primary add-to-cart"
@@ -95,6 +97,7 @@
           {/if}
         >
         
+         
       {$in_cart = 0}
       {foreach from=$cart['products'] item='cart_product' }
       {if $cart_product['id_product'] == $product.id}
@@ -108,7 +111,8 @@
         {l s='Add to cart' d='Shop.Theme.Actions'}
         {/if}
         </button>
-      </div>
+      </div>{/if}
+        
     {/block}
     
     {block name='product_minimal_quantity'}
