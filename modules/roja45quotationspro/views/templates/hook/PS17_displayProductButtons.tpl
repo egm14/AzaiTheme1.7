@@ -38,7 +38,7 @@
            data-id-product="{$product->id}"
            data-minimal-quantity="{if isset($product->product_attribute_minimal_quantity) && $product->product_attribute_minimal_quantity >= 1}{$product->product_attribute_minimal_quantity|intval}{else}{$product->minimal_quantity|intval}{/if}">
             <i class="material-icons">format_list_numbered</i>
-            {l s='Add to quote' mod='roja45quotationspro'}
+            {l s='Add to quote' d='Shop.Theme.Actions'}
         </a>
         <br />
     </div>

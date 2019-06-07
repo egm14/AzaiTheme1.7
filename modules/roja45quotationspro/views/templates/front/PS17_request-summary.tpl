@@ -259,7 +259,7 @@
                     id="submitRequest"
                     data-sitekey="{$roja45quotationspro_recaptcha_site_key}"
                     data-callback='onRecaptchaInvisibleSubmitCallback'>
-                {l s='Request Quote' mod='roja45quotationspro'}
+                {l s='Request Quote' d='Shop.Theme.Actions'}
 
             </button>
             {else}
@@ -267,7 +267,7 @@
                         id="submitRequest"
                         class="btn btn-default btn-primary request-quotation button-medium {if $roja45quotationspro_enable_captcha}disabled{/if}"
                         title="{l s='Request Quote' mod='roja45quotationspro'}">
-                {l s='Request Quote' mod='roja45quotationspro'}
+                {l s='Request Quote' d='Shop.Theme.Actions'}
                 </button>
             {/if}
             <a href="{$home_url}"

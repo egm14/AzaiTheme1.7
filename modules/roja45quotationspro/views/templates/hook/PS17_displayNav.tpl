@@ -49,12 +49,12 @@
                             <div class="product-atributes">
                                 <a href="{$product.link}" title="Product detail">
                                     {assign var="color" value=","|explode:$product.attributes}
-                                    {$color[0]}
-                            </a>
+                                    {$color[0]}</a>
 
                             {assign var="priceValue" value=$product.price*($product.quote_quantity*9)}
                             <p>${$priceValue}</p>
-                            {assign var ="priceSum" value= $priceValue++}
+                            
+                            {assign var ="priceSum" value= $priceValue}
                             <p>{$priceSum}</p>
 
                             </div>
@@ -70,7 +70,7 @@
                     {/foreach}
                     <p class="cart-buttons">
                         <a class="btn btn-primary btn-request-quote" href="{url entity='module' name='roja45quotationspro' controller='QuotationsProFront' params = ['action' => 'quoteSummary']}" title="Check out" rel="nofollow">
-                            <span>{l s='Request Quote' mod='roja45quotationspro'}</span>
+                            <span>{l s='Request Quote' d='Shop.Theme.Actions'}</span>
                         </a>
                     </p>
                 </dl>
