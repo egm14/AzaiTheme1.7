@@ -153,6 +153,7 @@ $(document).ready(function(){
 		//console.log(this);
 		addGradient(ele);
 	});*/
+		
 	function addGradient(vb){
 		console.log("agregando clase gradiend-border");
 		//console.log(vb);
@@ -178,6 +179,28 @@ $(document).ready(function(){
 	 		console.log("Cambiando buttons pago debido a Paypal");
 	 });
 
+
+	 /*==================== SCROLL BEHAVIOR - HADER MENU STICKY =======================*/
+
+	 	$(window).scroll(scrollElement);
+
+	 	function scrollElement(){
+	 		var wHeight = $(window).scrollTop();
+	 		var mHeader = $('#header');
+	 			//console.log("Distancia del scroll: " + wHeight);
+	 		if($(window).width()<= 400){
+		 		if(wHeight < 44){
+		 			//console.log("Position: Block");
+		 			mHeader.css('position', 'inherit');
+
+		 		}else{
+		 			//console.log("Position: Fixed");
+		 			mHeader.css('position', 'Fixed');
+	 			}
+	 		}
+
+
+	 	};
 
 	 /*==================== CALCULADORA AJAX =======================*/
 
@@ -257,7 +280,7 @@ $(document).ready(function(){
 	 	var qty = $('#quantity_wanted').val();
 	 	
 	 	console.log('obteniendo variables');
-	 	//console.log('Esto es datapack: ' + datapack);
+	 	console.log('Esto es datapack: ' + datapack);
 
 	 	calculadoraQTY(qty, price, datapack);
 
@@ -275,6 +298,7 @@ $(document).ready(function(){
 		 		uriPhp = '/azai19b/themes/AzaiShop/assets/php/';
 		 	}else{
 		 		uriPhp = '/themes/AzaiShop/assets/php/';
+		 		console.log(window.location.origin + uriPhp+'calculadora.php');
 		 	}
 	 	$.ajax({
 	 		data: parametros,
@@ -288,8 +312,7 @@ $(document).ready(function(){
 	 		success: function(resultado, text){
 	 			var PriceData = $('#product-price-quantity');
 	 				PriceData.find('.product-amount').html(" " + resultado);//value tag price html
-	 				//PriceData.data('price', resultado);//data price change price with the new one calculated
-	 				//console.log("New data-price: " + PriceData.data('price'));
+	 				
 	 				
 	 			$('#table_qty_qty').html(parametros.QtyxData);
 	 			//console.log("Resultado obtenido");
