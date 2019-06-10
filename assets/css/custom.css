@@ -1342,7 +1342,7 @@ p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
 @media only screen and (max-width:420px){
 div#ship {position: fixed;top: 0px;left: 0px;right: 0px;z-index: 4;}
 #header>.wrapper {padding-top: 3px;padding-bottom: 3px;width: 150px}
-header#header {display: flex;position: fixed;top: 25px;left: 0px;right: 0px;}
+header#header {display:flex; position:relative; top: 25px;left: 0px;right: 0px;}
 .separator-list.justify-content-center {position: relative;top: 15px;}
 li.top-level-menu-li {margin-bottom: 0px;padding-bottom: 0px;border-bottom: 1px solid #cccccc36;border-left: 0px!important;padding-left:0px;padding-right: 0px;padding: 0px 0px 0px 7px;}
 ul.menu.clearfix.top-level-menu.jxmegamenu_item {margin: 0px -13px 0px -13px;}
