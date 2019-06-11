@@ -39,14 +39,15 @@
                                 {if $nbr_products > 1}
                                     <p class="cart-products-count">{l s='There are [1]%d[/1] products in your order.' mod='roja45quotationspro' sprintf=[$nbr_products] tags=['<span class="ajax_quote_quantity">']}</p>
                                 {else}
-                                    <p class="cart-products-count">{l s='There is 1 product in your quote.' d='Shop.Theme.Actions''}</p>
+                                    <p class="cart-products-count">{l s='There is 1 product in your quote.' d='Shop.Theme.Actions'}</p>
                                 {/if}
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <div class="cart-content-btn">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">{l s='Continue shopping' mod='roja45quotationspro'}</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            {l s='Continue shopping' d='Shop.Theme.Actions'}</button>
                             <a href="{$request_link}" class="btn btn-primary"><i class="material-icons">&#xE876;</i>{l s='Request Quote' d='Shop.Theme.Actions'}</a>
                         </div>
                     </div>
