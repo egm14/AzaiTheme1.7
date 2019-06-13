@@ -140,7 +140,10 @@ By Azai.com theme v1.7
   font-family: "FontAwesome";
   top:auto;
 }
-
+#block-container-row-1-8 h3 {display: none;}
+#block-container-row-3-2 h3 {text-align: center;text-decoration: underline;font-size: 15px;font-family: 'Didot-Italic', cursive!important;padding: 15px;}
+#block-container-row-2-2 h3 {display: none;}
+#wrapper h4.title_block.subpages-heading {text-align: center;text-decoration: underline;font-size: 15px;font-family: 'Didot-Italic', cursive!important;padding: 15px;}
 /*.alert.create-acount.alert-success.active{
   animation: alertAccount .25s ease-out forwards;
 }
@@ -208,6 +211,8 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #category span.discount-percentage.discount-product {color: red;}
 #authentication section#wrapper {padding-bottom: 10rem;}/*fix wrapper*/
 #authentication li.separador-register {padding: 12px 5px;}/*add new tab Bottoms register*/
+#authentication button.nav-link.active {background: black;color: white;}
+#authentication a.nav-link.active {margin: -12px;color: white;}
 body#category ..product-prices-md.with-discount{justify-content: center;}
 .block-categories .arrows .arrow-down, .block-categories .arrows .arrow-right {cursor: pointer;margin-left: .3125rem;color: #2f2c2f;left: 88%;position: absolute;font-size: 15px;}
 #category span.price {font-weight: bold!important;}

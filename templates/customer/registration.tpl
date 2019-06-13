@@ -35,7 +35,7 @@
 	  <ul class="nav" role="tablist">
         <button class="nav-link active">{l s='Already have an account?' d='Shop.Theme.Customeraccount'}</button>
 		<li class="separador-register">{l s='Or'}</li>
-		<button class="nav-link active"><a href="{$urls.pages.authentication}">{l s='Log in instead!' d='Shop.Theme.Customeraccount'}</a></button>
+		<button class="nav-link active"><a class="nav-link active" href="{$urls.pages.authentication}">{l s='Log in instead!' d='Shop.Theme.Customeraccount'}</a></button>
 	  </ul>
         {render file='customer/_partials/customer-form.tpl' ui=$register_form}
       </section>
