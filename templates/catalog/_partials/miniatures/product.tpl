@@ -161,7 +161,7 @@
                   </p>
                   <h1 class="product-name">{$product.name}</h1>
                   {if $shop.name != "azaimayoreo"}
-                  <div id="quickview-product-prices"></div>
+                    <div id="quickview-product-prices"></div>
                   {/if}
                   {block name='product_buy'}
                     <div id="quickview-product-addToCart" class="product-actions"></div>
