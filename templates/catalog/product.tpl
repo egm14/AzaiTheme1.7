@@ -113,12 +113,10 @@
           {/block}
 
           
-             {if $shop.name == "azaimayoreo"}
-              {if $customer.is_logged != NULL}
+             {if $shop.name != "azaimayoreo"}
                  {block name='product_prices'}
                    {include file='catalog/_partials/product-prices.tpl'}
                  {/block}
-              {/if}
             {/if}
          
 
