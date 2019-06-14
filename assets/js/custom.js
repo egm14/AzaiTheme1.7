@@ -14,7 +14,9 @@ $(document).ready(function(){
 
      	/*setTimeout(function () {openLoader() }, 300);
 			      console.log("Spinner a mostrar");*/
-
+		var wtCategory = $('#wt_cat_carousel').on('click tap', function(){
+			loader.show();
+		});
      	 function openLoader(e){
 			//loader.css({visibility:"visibe",opacity:"100"});
 			loader.show();
