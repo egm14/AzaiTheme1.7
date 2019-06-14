@@ -134,7 +134,7 @@
 							<div class="content">
 								{if isset($wtconfig->showimg) && $wtconfig->showimg == 1}
 								<div class="cat-img">
-										<a href="{$link->getCategoryLink($category->id_category, $category->link_rewrite)|escape:'html':'UTF-8'}" title="{$category->name|escape:'html':'UTF-8'}" >
+										<a href="{$link->getCategoryLink($category->id_category, $category->link_rewrite)|escape:'html':'UTF-8'}"  title="{$category->name|escape:'html':'UTF-8'}" >
 
 											<div class="category-image">
 												<img class="category-image-src" src="{$link->getCatImageLink($category->link_rewrite, $category->id_image, 'home_default')|escape:'html':'UTF-8'}"width="100%"/>
