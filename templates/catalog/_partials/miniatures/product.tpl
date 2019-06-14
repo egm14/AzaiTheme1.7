@@ -144,7 +144,7 @@
       </div>
     </div>
     <script id="quickview-template-{$product.id}-{$product.id_product_attribute}" type="text/template">
-          {if $shop.name != "azaimayoreo"}
+          {if $shop.name == "azaimayoreo"}
               <div id="quickview-modal-{$product.id}-{$product.id_product_attribute}" class="quickview modal fade modal-close-inside" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-mayoreo" role="document">
                   <div class="modal-content">
