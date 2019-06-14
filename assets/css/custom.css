@@ -1429,94 +1429,91 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
  ***************************************************************/
 
  /* Carousel principal Azai Wholesale*/
- p.namecarrousel {
-    text-align: center;
-    font-weight: bold;
-    font-size: 17px;
-}
-.containercarrousel {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.itemscarrousel {
-  display: flex;
-  align-itemscarrousel: center;
-  width: fit-content;
-  animation: carouselAnim 50s infinite alternate linear;
+ /*Carusel Home azai Wholesale*/
+ #carousel {
+    border:solid 1px rgba(0,0,0,0.3);
+    border-radius:4px;
+    box-shadow:0 0 0 4px rgba(125,125,125,0.1);
+    margin:40px 20px;
+    overflow:hidden;
+    padding:0;
+    position:relative;
+    width:auto;
 }
 
-.entrycarrousel {
-  display: flex;
-  align-itemscarrousel: center;
-  flex-direction: column;
-  position: relative;
-  width: 300px;
-  background: #fff;
-  margin: 1em;
-  padding: 0.5em;
-  border-radius: 10px;
-  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+/* navegacion */
+#carousel .navigation {
+    background:rgba(0,0,0,0.1);
+    color:#ffffff;
+    display:block;
+    font-family:verdana,sans-serif;
+    font-size:3em;
+    height:100%;
+    padding-top: 118px;
+    position:absolute;
+    text-align:center;
+    text-shadow:rgba(0,0,0,0.1); 0 0 2px;
+    width:50px;
+    -moz-transition:all 0.4s;
+    -ms-transition:all 0.4s;
+    -webkit-transition:all 0.4s;
+    -o-transition:all 0.4s;
+    transition:all 0.4s;
 }
 
-  .itemscarrousel {
-    animation: carouselAnim 35s infinite alternate linear;
-  }
-  
-  @keyframes carouselAnim {
-    from {
-      transform: translate(0, 0);
-    }
-    to {
-      transform: translate(calc(-100% + (2 * 300px)));
-    }
-  }
-
-.entrycarrousel p {
-  text-align: center;
-  padding: 1em;
+#carousel:hover .navigation {
+    background:rgba(0,0,0,0.3);
+    color:rgba(255,255,255,0.8);
+    text-shadow:rgba(0,0,0,0.7); 0 0 2px;
 }
 
-.namecarrousel {
-  font-weight: bold;
+#carousel .navigation:hover {
+    background:rgba(0,0,0,0.5);
 }
 
-@keyframes carouselAnim {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(calc(-100% + (5 * 300px)));
-  }
+#carousel .previous {
+    left:0;
 }
 
-.containercarrousel .faderscarrousel {
-  width: 100%;
-  position: absolute;
-  height: 100%;
+#carousel .next {
+    right:0;
 }
 
-.faderscarrousel .rightcarrousel,
-.faderscarrousel .leftcarrousel {
-  background: linear-gradient(
-    to rightcarrousel,
-    rgba(245, 245, 245, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  width: 15%;
-  height: 100%;
-  position: absolute;
-  z-index: 200;
+/* carousel container */
+#carousel ul {
+    -moz-box-orient:horizontal;
+    -ms-box-orient:horizontal;
+    -webkit-box-orient:horizontal;
+    -o-box-orient:horizontal;
+    box-orient:horizontal;
+    display:-moz-box;
+    display:-ms-box;
+    display:-webkit-box;
+    display:-o-box;
+    display:box;    
+    list-style-type:none;
+    margin:5px;
+    margin-left:-200px;
+    padding:0;
+}
+#block-container-row-1-2 li.col-xs-12 {
+    width: 100%;
 }
 
-.rightcarrousel {
-  rightcarrousel: 0;
-  background: linear-gradient(
-    to leftcarrousel,
-    rgba(245, 245, 245, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+/* standard width and height for the carousel items */
+#carousel li {
+    margin-right:10px;
+    width:200px;
+}
+
+/* animation properties for the carousel */
+.animate ul {
+    -moz-transition:margin 1s;
+    -ms-transition:margin 1s;
+    -webkit-transition:margin 1s;
+    -o-transition:margin 1s;
+    transition:margin 1s;
+	animation: carouselAnim 35s infinite alternate linear;
 }
 
 /*CodeOpen sourche animation: https://codemyui.com/in-your-face-cta-buttons*/
