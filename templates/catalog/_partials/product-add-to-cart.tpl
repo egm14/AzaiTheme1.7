@@ -26,15 +26,22 @@
   {if !$configuration.is_catalog}
 
     {block name='product_quantity'}
-      {if $shop.name == "azaimayoreo" && $customer.is_logged != NULL}
+      {if $shop.name != "azaimayoreo" && $customer.is_logged != NULL}
     <table id="table_qty" class="table" style="margin-top:1rem;max-width:400px;text-align:center;">
           
             <tr style="background-color:black; color:white; text-align:center">
               <td scrop="col">Color</td>
               <td scope="col" style="cuento">Pack QTY</td>
-              <td scope="col" >TotalQty <br /><b>S-M-L(3-3-3)</b></td>
-              <td scope="col" >Pack Price</td>
 
+              {if ($product.category == 'bags') or ($product.category == 'necklaces') or ($product.category == 'jewelry-necklaces') or ($product.category == 'earrings') or ($product.category == 'jewelry-earrings') or ($product.category == 'bracelets') or ($product.category == 'jewelry-bracelets') or ($product.category == 'hats') or ($product.category == 'brooches') or ($product.category == 'clutches-crossbody-bags') or
+              ($product.category == 'jewelry') or
+              ($product.category == 'rings') or ($product.category == 'jewelry-rings')}
+                <td scope="col">TotalQty</b></td>
+              {else}
+                <td scope="col">TotalQty<br /><b>S-M-L (3-3-3)</b></td>
+              {/if}
+
+              <td scope="col">Pack Price</td>
             </tr>
           
           </tbody>
