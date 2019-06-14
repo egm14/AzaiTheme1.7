@@ -1471,6 +1471,97 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
  **************** External library extension *******************
  ***************************************************************/
 
+ /* Carousel principal Azai Wholesale*/
+ p.namecarrousel {
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+.containercarrousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.itemscarrousel {
+  display: flex;
+  align-itemscarrousel: center;
+  width: fit-content;
+  animation: carouselAnim 50s infinite alternate linear;
+}
+
+.entrycarrousel {
+  display: flex;
+  align-itemscarrousel: center;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+  background: #fff;
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+  .itemscarrousel {
+    animation: carouselAnim 35s infinite alternate linear;
+  }
+  
+  @keyframes carouselAnim {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(calc(-100% + (2 * 300px)));
+    }
+  }
+
+.entrycarrousel p {
+  text-align: center;
+  padding: 1em;
+}
+
+.namecarrousel {
+  font-weight: bold;
+}
+
+@keyframes carouselAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-100% + (5 * 300px)));
+  }
+}
+
+.containercarrousel .faderscarrousel {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.faderscarrousel .rightcarrousel,
+.faderscarrousel .leftcarrousel {
+  background: linear-gradient(
+    to rightcarrousel,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+}
+
+.rightcarrousel {
+  rightcarrousel: 0;
+  background: linear-gradient(
+    to leftcarrousel,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
 /*CodeOpen sourche animation: https://codemyui.com/in-your-face-cta-buttons*/
 .button-jittery{
   animation: jittery 5s infinite;
