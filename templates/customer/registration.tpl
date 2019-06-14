@@ -25,7 +25,7 @@
 {extends file='page.tpl'}
 
 {block name='page_title'}
-  {l s='Create an account' d='Shop.Theme.Customeraccount'}
+  {*l s='Create an account' d='Shop.Theme.Customeraccount'*}
 {/block}
 
 {block name='page_content'}
@@ -33,9 +33,9 @@
       {$hook_create_account_top nofilter}
       <section id="create-account-form" class="register-form">
 	  <ul class="nav" role="tablist">
-        <button class="nav-link active">{l s='Already have an account?' d='Shop.Theme.Customeraccount'}</button>
-		<li class="separador-register">{l s='Or'}</li>
-		<button class="nav-link active"><a class="nav-link active" href="{$urls.pages.authentication}">{l s='Log in instead!' d='Shop.Theme.Customeraccount'}</a></button>
+        <button class="nav-link active create-account">{l s='Create an Account' d='Shop.Theme.Customeraccount'}<i style="margin-left:8px;" class="fa fa-arrow-down" aria-hidden="true"></i>
+</button>
+		<button class="nav-link active do-loging"><a class="nav-link active" href="{$urls.pages.authentication}">{l s='Log in instead!' d='Shop.Theme.Customeraccount'}</a></button>
 	  </ul>
         {render file='customer/_partials/customer-form.tpl' ui=$register_form}
       </section>

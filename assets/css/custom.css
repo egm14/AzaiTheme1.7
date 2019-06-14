@@ -215,7 +215,10 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #category span.discount-percentage.discount-product {color: red;}
 #authentication section#wrapper {padding-bottom: 10rem;}/*fix wrapper*/
 #authentication li.separador-register {padding: 12px 5px;}/*add new tab Bottoms register*/
-#authentication button.nav-link.active {background: black;color: white;}
+#authentication button.nav-link.active {background: black;color: white;font-size:1.2rem!important;}
+form#customer-form{margin-top:2rem;}
+button.nav-link.active.create-account{background:#d2d2d2!important;color:#656565!important;border:none; margin-right:.5rem;}
+button.nav-link.active.do-loging{border:none;text-decoration:underline;padding:5px 15px;}
 #authentication a.nav-link.active {margin: -12px;color: white;}
 body#category ..product-prices-md.with-discount{justify-content: center;}
 .block-categories .arrows .arrow-down, .block-categories .arrows .arrow-right {cursor: pointer;margin-left: .3125rem;color: #2f2c2f;left: 88%;position: absolute;font-size: 15px;}
@@ -1209,7 +1212,9 @@ nav.icono-menu-mobile a:hover{
  footer#footer .link-list-title{margin:0!important;padding-top:.4rem;padding-bottom:.4rem;font-size:1rem;}
  footer#footer .jxml-copyright{margin-top:1rem;}
 body#category .grid .product-miniature .product-miniature-container .product-miniature-information .product-prices-md{text-align:center;display:flow-root;}
-
+  button.nav-link.active.create-account{ margin-top:1rem;}
+button.nav-link.active.do-loging{padding:15px;margin-top:6rem;}
+section#create-account-form ul.nav{display:flex;align-items:center;justify-content:center;flex-flow:wrap-reverse;}
 }
 
 
