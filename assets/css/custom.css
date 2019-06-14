@@ -215,7 +215,10 @@ form#formgiftcard {max-width: none;}/*Giftcard*/
 #category span.discount-percentage.discount-product {color: red;}
 #authentication section#wrapper {padding-bottom: 10rem;}/*fix wrapper*/
 #authentication li.separador-register {padding: 12px 5px;}/*add new tab Bottoms register*/
-#authentication button.nav-link.active {background: black;color: white;}
+#authentication button.nav-link.active {background: black;color: white;font-size:1.2rem!important;}
+form#customer-form{margin-top:2rem;}
+button.nav-link.active.create-account{background:#d2d2d2!important;color:#656565!important;border:none; margin-right:.5rem;}
+button.nav-link.active.do-loging{border:none;text-decoration:underline;padding:5px 15px;}
 #authentication a.nav-link.active {margin: -12px;color: white;}
 body#category ..product-prices-md.with-discount{justify-content: center;}
 .block-categories .arrows .arrow-down, .block-categories .arrows .arrow-right {cursor: pointer;margin-left: .3125rem;color: #2f2c2f;left: 88%;position: absolute;font-size: 15px;}
@@ -432,6 +435,49 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
   }
  .modal .modal-dialog .modal-content .btn.close-modal:hover{font-size:1.3rem;}
  .modal .modal-dialog .modal-content .btn.close-modal:focus{background-color:#141414;font-size:inherit;}
+
+ /*QuickView modal*/
+ body#category .quickview.modal .modal-dialog-mayoreo{
+  width:35%;
+
+ }
+  body#category .quickview.modal .modal-dialog-mayoreo .product-left-column.col-12.col-md{
+    padding:.6rem;
+
+  }
+  body#category .quickview.modal .modal-dialog .modal-body .product-left-column,
+  body#category .quickview.modal .modal-dialog .modal-body .product-left-column .images-container{
+    background-color:white!important;
+  }
+  body#category .quickview.modal .modal-dialog-mayoreo .modal-body .product-left-column .images-container .product-images.swiper-container-vertical{
+    flex-basis:8rem!important;
+  }
+  body#category .quickview.modal .modal-dialog .modal-content button.close{
+    background-color:black;
+    color:white;
+    border-radius:0;
+    width:1.7rem;
+    height:1.7rem;
+  }
+  body#category .quickview.modal .modal-dialog .modal-content button.close::before{
+    font-size:1.5rem;
+  }
+  body#category .quickview.modal .modal-dialog .modal-content button.goProduct{
+    position:absolute;
+    bottom:1.5rem;
+    left:calc(35%);
+    padding:5px 10px;
+    background-color:black;
+    color:white;
+    border:none;
+  }
+  body#category .quickview.modal .modal-dialog .modal-content button.goProduct:hover{
+    background-color:white;
+    color:black;
+    border:solid 1px darkgray;
+    transition:1.5s ease-out;
+
+  }
 
  /*Checkout nav*/
 
@@ -1166,7 +1212,9 @@ nav.icono-menu-mobile a:hover{
  footer#footer .link-list-title{margin:0!important;padding-top:.4rem;padding-bottom:.4rem;font-size:1rem;}
  footer#footer .jxml-copyright{margin-top:1rem;}
 body#category .grid .product-miniature .product-miniature-container .product-miniature-information .product-prices-md{text-align:center;display:flow-root;}
-
+  button.nav-link.active.create-account{ margin-top:1rem;}
+button.nav-link.active.do-loging{padding:15px;margin-top:6rem;}
+section#create-account-form ul.nav{display:flex;align-items:center;justify-content:center;flex-flow:wrap-reverse;}
 }
 
 

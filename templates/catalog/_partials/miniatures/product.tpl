@@ -144,37 +144,59 @@
       </div>
     </div>
     <script id="quickview-template-{$product.id}-{$product.id_product_attribute}" type="text/template">
-      <div id="quickview-modal-{$product.id}-{$product.id_product_attribute}" class="quickview modal fade modal-close-inside" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-lg" role="document">
-          <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"></button>
-            <div class="modal-body">
-              <div class="row m-0">
-                <div class="product-left-column col-12 col-md-6">
-                  {block name='product_cover_thumbnails'}
-                    {include file='catalog/_partials/product-cover-thumbnails.tpl'}
-                  {/block}
-                </div>
-                <div class="product-right-column col-12 col-md-6">
-                  <p class="product-reference">
-                    {l s='Reference' d='Shop.Theme.Catalog'} <span>{$product.reference}</span>
-                  </p>
-                  <h1 class="product-name">{$product.name}</h1>
-                  {if $shop.name != "azaimayoreo"}
-                    <div id="quickview-product-prices"></div>
-                  {/if}
-                  {block name='product_buy'}
-                    <div id="quickview-product-addToCart" class="product-actions"></div>
-                  {/block}
-                  {block name='product_description_short'}
-                    <div id="product-description-short" class="d-none" itemprop="description">{$product.description_short nofilter}</div>
-                  {/block}
+          {if $shop.name == "azaimayoreo"}
+              <div id="quickview-modal-{$product.id}-{$product.id_product_attribute}" class="quickview modal fade modal-close-inside" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-mayoreo" role="document">
+                  <div class="modal-content">
+                    <a href="{$product.url}" class="product-thumbnail-link"><button class="goProduct">{l s='View product' d='Shop.Theme.Actions'}<i style="margin-left:5px;" class="fa fa-chevron-right" aria-hidden="true"></i></button></a>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"></button>
+                    <div class="modal-body">
+                      <div class="row m-0">
+                        <div class="product-left-column col-12 col-md">
+                          {block name='product_cover_thumbnails'}
+                            {include file='catalog/_partials/product-cover-thumbnails.tpl'}
+                          {/block}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          {else}
+              <div id="quickview-modal-{$product.id}-{$product.id_product_attribute}" class="quickview modal fade modal-close-inside" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-lg" role="document">
+                  <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"></button>
+                    <div class="modal-body">
+                      <div class="row m-0">
+                        <div class="product-left-column col-12 col-md-6">
+                          {block name='product_cover_thumbnails'}
+                            {include file='catalog/_partials/product-cover-thumbnails.tpl'}
+                          {/block}
+                        </div>
+
+                        <div class="product-right-column col-12 col-md-6">
+                          <p class="product-reference">
+                            {l s='Reference' d='Shop.Theme.Catalog'} <span>{$product.reference}</span>
+                          </p>
+                          <h1 class="product-name">{$product.name}</h1>
+                         
+                            <div id="quickview-product-prices"></div>
+                         
+                          {block name='product_buy'}
+                            <div id="quickview-product-addToCart" class="product-actions"></div>
+                          {/block}
+                          {block name='product_description_short'}
+                            <div id="product-description-short" class="d-none" itemprop="description">{$product.description_short nofilter}</div>
+                          {/block}
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         {/if}
     </script>
   </article>
 {/block}

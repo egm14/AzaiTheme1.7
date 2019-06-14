@@ -65,7 +65,7 @@
                         <script type="text/javascript">
                           console.log('Size Chart Jewelry');
                         </script>
-                    {elseif ($product->category == 'bags') or ($product->category == 'necklaces') or ($product->category == 'jewelry-necklaces') or ($product->category == 'earrings') or ($product->category == 'jewelry-earrings') or ($product->category == 'bracelets') or ($product->category == 'jewelry-bracelets') or ($product->category == 'hats') or ($product->category == 'brooches') or ($product->category == 'clutches-crossbody-bags')}
+                    {elseif ($product.category == 'bags') or ($product.category == 'necklaces') or ($product.category == 'jewelry-necklaces') or ($product.category == 'earrings') or ($product.category == 'jewelry-earrings') or ($product.category == 'bracelets') or ($product.category == 'jewelry-bracelets') or ($product.category == 'hats') or ($product.category == 'brooches') or ($product.category == 'clutches-crossbody-bags')}
                         <script type="text/javascript">
                           console.log('Categorias sin Size-chart');
                         </script>
