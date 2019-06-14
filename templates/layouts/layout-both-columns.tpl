@@ -109,11 +109,7 @@
         {/if}
       </section>
 
-      
-<<<<<<< HEAD
-=======
-        {if $customer.is_logged != NULL}
->>>>>>> 9fd48f23234e20bef02b4cdb3b1694dc8a931d53
+
           <footer id="footer">
             {assign var='displayMegaFooter' value={hook h='jxMegaLayoutFooter'}}
             {if $displayMegaFooter}
@@ -126,7 +122,7 @@
               </div>
             {/if}
           </footer>
-        {/if}
+      
       
 
     </main>
