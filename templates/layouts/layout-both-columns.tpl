@@ -109,8 +109,7 @@
         {/if}
       </section>
 
-      {if $shop.name == "azaimayoreo"} 
-        {if $customer.is_logged != NULL}
+      
           <footer id="footer">
             {assign var='displayMegaFooter' value={hook h='jxMegaLayoutFooter'}}
             {if $displayMegaFooter}
@@ -124,20 +123,7 @@
             {/if}
           </footer>
         {/if}
-      {else}
-      <footer id="footer">
-        {assign var='displayMegaFooter' value={hook h='jxMegaLayoutFooter'}}
-        {if $displayMegaFooter}
-          {$displayMegaFooter nofilter}
-        {else}
-          <div class="container">
-            {block name="footer"}
-              {include file="_partials/footer.tpl"}
-            {/block}
-          </div>
-        {/if}
-      </footer>
-      {/if}
+      
 
     </main>
 
