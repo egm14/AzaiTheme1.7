@@ -433,6 +433,49 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  .modal .modal-dialog .modal-content .btn.close-modal:hover{font-size:1.3rem;}
  .modal .modal-dialog .modal-content .btn.close-modal:focus{background-color:#141414;font-size:inherit;}
 
+ /*QuickView modal*/
+ body#category .quickview.modal .modal-dialog-mayoreo{
+  width:35%;
+
+ }
+  body#category .quickview.modal .modal-dialog-mayoreo .product-left-column.col-12.col-md{
+    padding:.6rem;
+
+  }
+  body#category .quickview.modal .modal-dialog .modal-body .product-left-column,
+  body#category .quickview.modal .modal-dialog .modal-body .product-left-column .images-container{
+    background-color:white!important;
+  }
+  body#category .quickview.modal .modal-dialog-mayoreo .modal-body .product-left-column .images-container .product-images.swiper-container-vertical{
+    flex-basis:8rem!important;
+  }
+  body#category .quickview.modal .modal-dialog .modal-content button.close{
+    background-color:black;
+    color:white;
+    border-radius:0;
+    width:1.7rem;
+    height:1.7rem;
+  }
+  body#category .quickview.modal .modal-dialog .modal-content button.close::before{
+    font-size:1.5rem;
+  }
+  body#category .quickview.modal .modal-dialog .modal-content button.goProduct{
+    position:absolute;
+    bottom:1.5rem;
+    left:calc(35%);
+    padding:5px 10px;
+    background-color:black;
+    color:white;
+    border:none;
+  }
+  body#category .quickview.modal .modal-dialog .modal-content button.goProduct:hover{
+    background-color:white;
+    color:black;
+    border:solid 1px darkgray;
+    transition:1.5s ease-out;
+
+  }
+
  /*Checkout nav*/
 
  body#checkout .nav-tabs li a.reachable::before{background:#c3dec2;}
