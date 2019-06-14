@@ -1,4 +1,4 @@
- 
+
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
@@ -300,9 +300,9 @@ $(document).ready(function(){
 	 	}
 	 		var uriPhp;
 		 	if(window.location.hostname =="localhost"){
-		 		uriPhp = '/azai19b/themes/AzaiShop/assets/php/';
+		 		uriPhp = '/azai19b/themes/AzaiShop/assets/php2/';
 		 	}else{
-		 		uriPhp = '/themes/AzaiShop/assets/php/';
+		 		uriPhp = '/themes/AzaiShop/assets/php2/';
 		 		console.log(window.location.origin + uriPhp+'calculadora.php');
 		 	}
 	 	$.ajax({
