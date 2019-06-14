@@ -144,7 +144,10 @@ $(document).ready(function(){
 		//console.log(this);
 		addGradient(ele);
 	});
-
+	$('#product').on('click tap', 'a.btn.btn-primary.add-to-quote.ajax_add_quote_button',function(){
+		var ele = $('#product').find('a.btn.btn-primary.add-to-quote.ajax_add_quote_button');
+		addGradient(ele);
+	});
 	/*$('#continue-1').on('click', function(e){
 		var ele = $('#continue-1');
 		//console.log(this);
