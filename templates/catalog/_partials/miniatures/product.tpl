@@ -70,6 +70,8 @@
               {else}
                   <a href="{$product.url}">{$product.name|truncate:45:'...'}</a></h1>
               {/if}
+            {else}
+                  <a href="{$product.url}">{$product.name|truncate:45:'...'}</a></h1>
             {/if}
         {/block}
         {block name='product_price_and_shipping'}
