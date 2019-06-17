@@ -70,6 +70,8 @@
               {else}
                   <a href="{$product.url}">{$product.name|truncate:45:'...'}</a></h1>
               {/if}
+            {else}
+                  <a href="{$product.url}">{$product.name|truncate:45:'...'}</a></h1>
             {/if}
         {/block}
         {block name='product_price_and_shipping'}
@@ -107,18 +109,29 @@
 
         <div class="functional-buttons">
           {block name='quick_view'}
-            <a class="quick-view" href="#" data-link-action="quickview" data-img-cover="{$product.cover.large.url}" data-loading-text="{l s='Loading product info...' d='Shop.Theme.Actions'}">
+           {if $shop.name == "azaimayoreo"}
+            <a class="quick-view" href="#" data-link-action="quickview" data-img-cover="{$product.cover.large.url}" data-loading-text="{l s='Loading product info...' d='Shop.Theme.Actions'}" style="margin-right:0;">
               <i class="material-icons-zoom_in"></i>
               <span>{l s='Quick view' d='Shop.Theme.Actions'}</span>
             </a>
+            {else}
+              <a class="quick-view" href="#" data-link-action="quickview" data-img-cover="{$product.cover.large.url}" data-loading-text="{l s='Loading product info...' d='Shop.Theme.Actions'}">
+              <i class="material-icons-zoom_in"></i>
+              <span>{l s='Quick view' d='Shop.Theme.Actions'}</span>
+            </a>
+            {/if}
           {/block}
           {hook h='displayProductListFunctionalButtons' product=$product}
           <div class="product-buttons">
+
             {if $product.add_to_cart_url && !$configuration.is_catalog && ({$product.minimal_quantity} < {$product.quantity})}
+
+              {if $shop.name != "azaimayoreo"}
               <a class="add-to-cart" href="{$product.add_to_cart_url}" rel="nofollow" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" data-link-action="add-to-cart">
                 <i class="fl-chapps-hand135"></i>
                 <span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
               </a>
+              {/if}
             {else}
               {if $product.customizable == 0}
                 {if $shop.name == "azaimayoreo" && $customer.is_logged == NULL}

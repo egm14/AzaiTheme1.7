@@ -229,6 +229,9 @@ $(document).ready(function(){
 		 	//$('#quantity_wanted').val(qty);
 		 	closeLoader();
 		 });
+		 prestashop.on("handleError",function(){
+		 	closeLoader();
+		 });
 		 $("ul.variant-links.list-inline").on('click', function(dt){
 	 		openLoader();
 	 		console.log("click sobre color");
@@ -241,7 +244,7 @@ $(document).ready(function(){
 	 		var backColorDom = $('#backColor');
 	 		//console.log(formColor);
 		 		formColor.each(function(key, value){
-		 			console.log( "Probando each: " + key + " : " + value.innerText);
+		 			//console.log( "Probando each: " + key + " : " + value.innerText);
 		 			//console.log(formColor[key]);
 		 			 if(formColor[key].children[0].innerText == "COLOR"){
 		 			 	//console.log("product-variant color encontrado");
@@ -262,9 +265,9 @@ $(document).ready(function(){
 		 									var backcolor = colorAttributes[1].value.split(" ")[1];
 		 										//console.log(backcolor);
 		 										backColorDom.css("background-color", backcolor);
-		 										console.log(backColorDom);
+		 										//console.log(backColorDom);
 		 								}else{
-		 									console.log(colorAttributes[1] + ": No activo");
+		 									//console.log(colorAttributes[1] + ": No activo");
 		 								}
 		 								break;
 			 			 		//console.log(this.children[0].class);
@@ -303,14 +306,14 @@ $(document).ready(function(){
 		 		uriPhp = '/azai19b/themes/AzaiShop/assets/php2/';
 		 	}else{
 		 		uriPhp = '/themes/AzaiShop/assets/php2/';
-		 		console.log(window.location.origin + uriPhp+'calculadora.php');
+		 		//console.log(window.location.origin + uriPhp+'calculadora.php');
 		 	}
 	 	$.ajax({
 	 		data: parametros,
 	 		url: window.location.origin + uriPhp+'calculadora.php',
 	 		type: 'post',
 	 		beforeSend: function(){
-	 			console.log("Enviando datos a la calculadora.");
+	 			//console.log("Enviando datos a la calculadora.");
 	 			console.log("qty: " + parametros.prodqty + " price: " + parametros.prodprice + " Data-pack: " + parametros.QtyxData);
 	 			//console.log(url.value);
 	 		},
