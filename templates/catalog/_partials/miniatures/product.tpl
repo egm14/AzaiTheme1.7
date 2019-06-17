@@ -116,11 +116,15 @@
           {/block}
           {hook h='displayProductListFunctionalButtons' product=$product}
           <div class="product-buttons">
+
             {if $product.add_to_cart_url && !$configuration.is_catalog && ({$product.minimal_quantity} < {$product.quantity})}
+
+              {if $shop.name != "azaimayoreo"}
               <a class="add-to-cart" href="{$product.add_to_cart_url}" rel="nofollow" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" data-link-action="add-to-cart">
                 <i class="fl-chapps-hand135"></i>
                 <span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
               </a>
+              {/if}
             {else}
               {if $product.customizable == 0}
                 {if $shop.name == "azaimayoreo" && $customer.is_logged == NULL}
