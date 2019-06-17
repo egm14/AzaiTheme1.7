@@ -471,6 +471,9 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
     color:white;
     border:none;
   }
+  .quickview .product-left-column::after{
+    background:none;
+  }
   body#category .quickview.modal .modal-dialog .modal-content button.goProduct:hover{
     background-color:white;
     color:black;
