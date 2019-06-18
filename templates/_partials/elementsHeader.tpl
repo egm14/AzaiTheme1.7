@@ -35,7 +35,11 @@
   <div class="alerts create-acount alert-success"> {l s='Created account successful!' d='Shop.Theme.Global'} </div>
   <div class="alerts create-acount alert-processing"> {l s='Procesing account' d='Shop.Theme.Global'} </div>
   <div class="alerts create-acount alert-error"> {l s='An error has occurred, please review the form.' d='Shop.Theme.Global'} </div>
+  {if $shop.name != 'azaimayoreo'}
   <div class="alerts create-acount alert-success-product"> {l s='Product added to cart' d='Shop.Theme.Global'} </div>
+  {else}
+  <div class="alerts create-acount alert-success-product"> {l s='Product added to Order' d='Shop.Theme.Global'} </div>
+  {/if}
   </div>
   <!-- Alert account created end -->
 {/block}

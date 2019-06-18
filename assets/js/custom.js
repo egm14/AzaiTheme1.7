@@ -208,16 +208,7 @@ $(document).ready(function(){
 	 	};
 
 	 /*==================== CALCULADORA AJAX =======================*/
-
-	 	var price = $('#product-price-quantity').data('price');
-	 	var qty = $('#quantity_wanted').val();
-	 	var datapack = $('#quantity_wanted').data('pack');
-
-	 	console.log('obteniendo variables');
-	 	calculadoraQTY(qty, price, datapack);
-
 	 	setTimeout(tableColor,2000);
-
 
 		 $('#quantity_wanted').on('change mousewheel touchspin', function(){
 		 	obtenerCalculo();
@@ -299,6 +290,7 @@ $(document).ready(function(){
 	 		"prodqty" :  qty,
 	 		"prodprice" : price,
 	 		"proddata" : pack,
+	 		"async"	: true,
 	 		"QtyxData" : qty * pack
 	 	}
 	 		var uriPhp;

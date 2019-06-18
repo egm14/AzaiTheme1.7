@@ -70,7 +70,7 @@
               <td id="table_qty_qty">9</td>
               
              <td>
-              <div id="product-price-quantity" data-price="{$product.price_amount}">{$currency.iso_code}{$currency.sign}<span class="product-amount">{$product.price_amount}</span></div>
+              <div id="product-price-quantity" data-price="{$product.price_amount}">{$currency.iso_code}{$currency.sign}<span class="product-amount">{$product.price_amount*($product.quote_quantity*9)}</span></div>
             </td>
           </tr>
         </tbody>
