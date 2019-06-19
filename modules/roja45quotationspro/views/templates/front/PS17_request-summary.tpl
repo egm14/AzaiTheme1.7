@@ -14,7 +14,7 @@
 
 {block name="page_title"}
     <h4 id="quote_title" class="title_block">{l s='Request summary' mod='roja45quotationspro'}
-        {if isset($numberProducts)}<span id="summary_products_quantity">({$numberProducts} {if $numberProducts == 1}{l s='Diferent product' mod='roja45quotationspro'}{else}{l s='Diferent product' mod='roja45quotationspro'}{/if})</span>{/if}
+        {if isset($numberProducts)}<span id="summary_products_quantity">({$numberProducts} {if $numberProducts == 1}{l s='Packages' mod='roja45quotationspro'}{else}{l s='Packages' mod='roja45quotationspro'}{/if})</span>{/if}
     </h4>
 {/block}
 
@@ -64,7 +64,7 @@
                     <th class="quote_product first_item">{l s='Product' mod='roja45quotationspro'}</th>
                     <th class="quote_description item">{l s='Description' mod='roja45quotationspro'}</th>
                     {assign var='col_span_subtotal' value='2'}
-                    <th class="quote_quantity item text-center">{l s='Quantity' mod='roja45quotationspro'}</th>
+                    <th class="quote_quantity item text-center">{l s='Packages' mod='roja45quotationspro'}</th>
                     <th class="quote_delete last_item">&nbsp;</th>
                 </tr>
                 </thead>
