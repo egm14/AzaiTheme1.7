@@ -318,3 +318,6 @@ p.namecarrousel {
     font-family: 'Didot-Italic', cursive!important;
     padding: 0;
 }
+#block-container-row-1-8 img{
+	   width: 100%;
+}
