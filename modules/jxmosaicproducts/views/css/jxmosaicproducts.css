@@ -301,3 +301,10 @@ p.namecarrousel {
 #block-container-row-3-2 li.col-xs-12 {
     width: 100%;
 }
+#block-container-row-3-2 h3 {
+    text-align: center;
+    text-decoration: underline;
+    /* font-size: 15px; */
+    font-family: 'Didot-Italic', cursive!important;
+    padding: 0;
+}
