@@ -22,26 +22,30 @@
                  height="{$smallSize.height|escape:'html':'UTF-8'}"{/if}/>
         </a>
     </td>
+
     <td class="quote_description">
         {capture name=sep} : {/capture}
         {capture}{l s=' :' mod='roja45quotationspro'}{/capture}
         <h4 class="product-name" style="margin-bottom:.3rem;">
             <a href="{$product.link|escape:'html':'UTF-8'}">{$product.name|escape:'html':'UTF-8'}</a>
         </h4>
+        <pre>{*$product|print_r*}</pre>
         {if isset($product.attributes) && $product.attributes}
-            <p>
+            <!--<p>
                 <a href="{$product.link|escape:'html':'UTF-8'}">
                     {*assign var="color" value=","|split:$product.attributes*}{*color[0]*}
                 </a>
-            </p>
+            </p>-->
         {/if}
 
         {assign var="priceValue" value=$product.price*($product.quote_quantity*9)}
-            <p>${$priceValue}</p>
+            <p id="product-price-quantity" data-price="{$product.price}" ><span class="product-amount">${$priceValue}</span></p>
+
+            <p>{$product.price}</p>
         
         <a href="{$product.link}" title="Product detail">
-                                    {assign var="color" value=","|explode:$product.attributes}
-                                    {$color[0]}</a>
+            {assign var="color" value=","|explode:$product.attributes}{$color[0]}
+        </a>
 
         
         {if $product.reference}
@@ -60,16 +64,18 @@
             value="{$product.quote_quantity|escape:'html':'UTF-8'}"
             class="quote_quantity input-group"
             min="{$product.minimal_quantity|escape:'html':'UTF-8'}"
-            aria-label="{l s='Quantity' mod='roja45quotationspro'}">
+            aria-label="{l s='Quantity' mod='roja45quotationspro'}"
+            data-pack="9">
     </td>
 
     <td class="quote_delete text-center" data-title="{l s='Delete' mod='roja45quotationspro'}">
         <div>
             <a rel="nofollow" title="{l s='Delete' mod='roja45quotationspro'}" class="quote_quantity_delete"
                id="{$product.id_product|escape:'html':'UTF-8'}_{$product.id_product_attribute|escape:'html':'UTF-8'}_{if $displayQuantity > 0}nocustom{else}0{/if}"
-               href="{url entity='module' name='roja45quotationspro' controller='QuotationsProFront' params = ['action' => 'deleteFromQuote', 'id_product' => $product.id_product, 'id_product_attribute' => $product.id_product_attribute]}">
+               href="{url entity='module' name='roja45quotationspro' controller='QuotationsProFront' params = ['action' => 'deleteFromQuote', 'id_product' => $product.id_product, 'id_product_attribute' => $product.id_product_attribute]}" >
                 <i class="material-icons">delete</i>
             </a>
         </div>
     </td>
 </tr>
+

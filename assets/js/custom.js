@@ -210,9 +210,16 @@ $(document).ready(function(){
 	 /*==================== CALCULADORA AJAX =======================*/
 	 	setTimeout(tableColor,2000);
 
-		 $('#quantity_wanted').on('change mousewheel touchspin', function(){
-		 	obtenerCalculo();
-		 });
+	 	$(document).on('change', 'input[name=quote_quantity]', function(evt) {
+        console.log("TTTTouchSpin .quote_quantity: ");
+        console.log(evt.target);
+        obtenerCalculo(evt);
+
+    	});
+
+		 $('#quantity_wanted').on('change mousewheel touchspin', function(evt){
+		 	obtenerCalculo(evt);
+		 });	
 		 
 		 //Change color table on product
 		 prestashop.on("updatedProduct",function(){
@@ -273,19 +280,36 @@ $(document).ready(function(){
 	 	/*Change color end*/
 	 
 
-	 function obtenerCalculo(){
-	 	var price = $('#product-price-quantity').data('price');
-	 	var datapack = $('#quantity_wanted').data('pack');
-	 	var qty = $('#quantity_wanted').val();
-	 	
-	 	console.log('obteniendo variables');
-	 	console.log('Esto es datapack: ' + datapack);
+	 function obtenerCalculo(evt){
+	 	//obteniendo id de form - elemento tagged
 
-	 	calculadoraQTY(qty, price, datapack);
+	 	var target = $(evt.target.form).attr('id');
+	 	//console.log(target);
+	 	if(target == 'quotationspro_request_form'){
+	 		//console.log("estoy en resumen quotatino");
+	 		var targetRow = evt.target.parentElement.parentElement.parentElement;
+	 		var targetRowId = $(targetRow).attr('id');
+	 		//console.log(targetRow);
+	 		//console.log(targetRowId);
+	 		//console.log($('#'+targetRow));
+	 		var price = $(targetRow).find('#product-price-quantity').data('price');
+	 		//console.log(price);
+	 		var priceLocation = $(targetRow).find('#product-price-quantity');
+	 		var qty = $(targetRow).find('#quantity_wanted').val();
+	 	}else{
+	 		var priceLocation = $('#product-price-quantity');
+	 		var price = $('#product-price-quantity').data('price');
+	 		var qty = $('#quantity_wanted').val();
+	 	}	
+	 		var datapack = $('#quantity_wanted').data('pack');
+		 	//console.log('obteniendo variables');
+		 	//console.log('Esto es datapack: ' + datapack);
+
+	 	calculadoraQTY(qty, price, datapack, priceLocation);
 
 	 }
 	 
-	 function calculadoraQTY(qty,price, pack){
+	 function calculadoraQTY(qty,price, pack, priceLocation){
 	 	var parametros ={
 	 		"prodqty" :  qty,
 	 		"prodprice" : price,
@@ -310,13 +334,11 @@ $(document).ready(function(){
 	 			//console.log(url.value);
 	 		},
 	 		success: function(resultado, text){
-	 			var PriceData = $('#product-price-quantity');
-	 				PriceData.find('.product-amount').html(" " + resultado);//value tag price html
-	 				
+	 			priceLocation.find('.product-amount').html(" " + resultado);//value tag price html
 	 				
 	 			$('#table_qty_qty').html(parametros.QtyxData);
-	 			//console.log("Resultado obtenido");
-	 			//console.log(resultado);
+	 			console.log("Resultado obtenido");
+	 			console.log(resultado);
 	 		},
 	 		 error: function (request, status, error) {
 	 		 	console.log("Hay un error: " + error);
