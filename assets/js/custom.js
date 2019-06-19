@@ -211,8 +211,8 @@ $(document).ready(function(){
 	 	setTimeout(tableColor,2000);
 
 	 	$(document).on('change', 'input[name=quote_quantity]', function(evt) {
-        console.log("TTTTouchSpin .quote_quantity: ");
-        console.log(evt.target);
+        //console.log("TTTTouchSpin .quote_quantity: ");
+        //console.log(evt.target);
         obtenerCalculo(evt);
 
     	});

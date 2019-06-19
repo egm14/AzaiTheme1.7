@@ -37,11 +37,10 @@
                 </a>
             </p>-->
         {/if}
+        <pre>{$smarty}</pre>
 
         {assign var="priceValue" value=$product.product_price*($product.quote_quantity*9)}
          <p id="product-price-quantity" data-price="{$product.product_price}" >{$product.product_price_currency_iso}{$product.product_price_currency_symbol} <span class="product-amount">{$priceValue|number_format:2:".":","}</span></p>
-
-            <pre>{*$product|print_r*}</pre>
         
         <a href="{$product.link}" title="Product detail">
             {assign var="color" value=","|explode:$product.attributes}{$color[0]}
