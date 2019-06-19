@@ -97,7 +97,7 @@
       margin:.4rem .6rem;
     }
  .cool-link::after{
- 	width:80%;
+ 	width:20%;
  }
 }	
 
@@ -109,7 +109,12 @@
       width:100%;
       display:block;
       margin:0px;
+      margin-bottom:15px;
     }
+  #wt_category_feature .container .row .col-sm{
+  	padding-right:0px!important;
+  	padding-left:0px!important;
+  }
 </style>
 
 
