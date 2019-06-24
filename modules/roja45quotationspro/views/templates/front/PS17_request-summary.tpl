@@ -6,8 +6,8 @@
 *
 * Changing this file will render any support provided by us null and void.
 *
-*  @author 			Roja45
-*  @copyright  		2016 Roja45
+*  @author          Roja45
+*  @copyright       2016 Roja45
 *  @license          /license.txt
 *}
 {extends file='page.tpl'}
@@ -73,7 +73,11 @@
                 {assign var='odd' value=0}
                 {assign var='have_non_virtual_products' value=false}
                 {if isset($requested_products)}
-                {foreach $requested_products as $product}
+               
+                {assign var="total_quote" value='0'} 
+                {assign var="total_quote_qtye" value='0'} 
+                {foreach $requested_products as $product key=k item=v}
+
                     {if $product.is_virtual == 0}
                         {assign var='have_non_virtual_products' value=true}
                     {/if}
@@ -82,9 +86,23 @@
                     {assign var='odd' value=($odd+1)%2}
                     {* Display the product line *}
                     {include file="module:roja45quotationspro/views/templates/front/PS17_request-summary-product-line.tpl" productLast=$product@last productFirst=$product@first}
+                    {*Sum the total quote*}
+                    {$total_quote=$total_quote+$priceValue}
+                    {$total_quote_qtye=$total_quote_qtye+$product.qty_in_cart}
+                    
                 {/foreach}
                     {assign var='last_was_odd' value=$product@iteration%2}
                 {/if}
+
+                <tr style="font-weight:bold;font-size:1.2rem;">
+                    
+                    <td>Total</td>
+                    <td>{$currency.iso_code}{$currency.sign} <span class="product-amount-quote">{$total_quote|number_format:2:".":","}</span></h3></td>
+                    <td style="text-align:center!important;"><span class="product-amount-quote-qty" >{$total_quote_qtye}</span></td>
+                    <td></td>
+                </tr>
+              
+
                 </tbody>
             </table>
         </div>
