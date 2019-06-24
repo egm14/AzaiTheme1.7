@@ -41,16 +41,11 @@
         {/if}
 
         {assign var="priceValue" value=$product.product_price*($product.quote_quantity*9) scope=parent}
-         <p id="product-price-quantity" data-price="{$product.product_price}" >{$product.product_price_currency_iso}{$product.product_price_currency_symbol} <span class="product-amount">{$priceValue|number_format:2:".":","}</span></p>
-
-       
-         
+         <p style="margin-bottom:0px;" id="product-price-quantity" data-price="{$product.product_price}" >{$product.product_price_currency_iso}{$product.product_price_currency_symbol} <span class="product-amount">{$priceValue|number_format:2:".":","}</span></p>
 
         <a href="{$product.link}" title="Product detail">
             {assign var="color" value=","|explode:$product.attributes}{$color[0]}
         </a>
-       
-
 
         {if $product.reference}
         <small class="quote_ref">{l s='SKU: ' mod='roja45quotationspro'}{$product.reference|escape:'html':'UTF-8'}</small>

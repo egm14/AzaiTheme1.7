@@ -94,7 +94,7 @@
                     {assign var='last_was_odd' value=$product@iteration%2}
                 {/if}
 
-                <tr style="font-weight:bold;font-size:1.2rem;">
+                <tr class="last-row-resumen" style="font-weight:bold;font-size:1rem;">
                     
                     <td>Total</td>
                     <td>{$currency.iso_code}{$currency.sign} <span class="product-amount-quote">{$total_quote|number_format:2:".":","}</span></h3></td>
