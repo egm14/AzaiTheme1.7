@@ -870,6 +870,22 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 #table_qty tbody tr td{
   border:1px solid black;
 }
+/*-----------------Roja45Quotation------------------*/
+#quote_summary tbody td{
+  padding:7px 0px 5px 5px;
+}
+ .quote_navigation .button-exclusive.btn.btn-default{
+  padding:10px;
+  margin-left:20px;
+  height:50px;
+ }
+ .quote_navigation .btn-default::before{
+  background:transparent;
+ }
+ .quote_navigation .button-exclusive.btn.btn-default:hover{
+  background-color:black;
+  color:white;
+ }
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/
@@ -1091,7 +1107,7 @@ nav.icono-menu-mobile a:hover{
 }
 
 /***************************************************************
- ******************* Screen Max-width 768px *********************
+ ******************* Screen Max-width 767px *********************
  ***************************************************************/
 
 @media only screen and (max-width:767px){ 
@@ -1209,6 +1225,32 @@ nav.icono-menu-mobile a:hover{
   /*Product name*/
   body#product h1.h2.product-name.mobile{font-family: 'Didot-Italic', cursive!important;margin-bottom:1.2rem;font-size:2rem;text-align:center!important;display:block!important;}
   body#product h1.h2.product-name{display:none;}
+  /*------------------RojaQuote Module----------------------*/
+  #quote_summary tbody td.quote_product{
+    width:70px!important;
+  }
+  #quote_summary tr.last-row-resumen{
+    background-color:black;
+    color:white!important;
+  }
+  #quote_summary tr.last-row-resumen td{
+    padding:7.5px 0px 7.5px 5px;
+  }
+  .quotationspro_request.notes{
+    min-height:50px;
+  }
+  .quote_navigation .row{
+    padding:0px 10px 20px 10px;
+    display:flex;
+    flex-direction: column;
+  }
+  .quote_navigation .button-exclusive.btn.btn-default{
+    padding:10px 8px;
+    margin-top:1.2rem;
+  }
+  #module-roja45quotationspro-QuotationsProFront #content{
+    box-shadow:none;
+  }
   
 }
 /***************************************************************

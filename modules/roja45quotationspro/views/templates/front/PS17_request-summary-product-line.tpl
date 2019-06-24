@@ -6,10 +6,12 @@
 *
 * Changing this file will render any support provided by us null and void.
 *
-*  @author 			Roja45
-*  @copyright  		2016 Roja45
+*  @author          Roja45
+*  @copyright       2016 Roja45
 *  @license          /license.txt
 *}
+
+ 
 
 <tr id="product_{$product.id_product|escape:'html':'UTF-8'}_{$product.id_product_attribute|escape:'html':'UTF-8'}_{if $displayQuantity > 0}nocustom{else}0{/if}"
     class="quote_item{if isset($productLast) && $productLast && (!isset($ignoreProductLast) || !$ignoreProductLast)} last_item{/if}{if isset($productFirst) && $productFirst} first_item{/if}{if $displayQuantity == 0} alternate_item{/if} {if $odd}odd{else}even{/if}">
@@ -22,14 +24,14 @@
                  height="{$smallSize.height|escape:'html':'UTF-8'}"{/if}/>
         </a>
     </td>
-
+   
     <td class="quote_description">
+
         {capture name=sep} : {/capture}
         {capture}{l s=' :' mod='roja45quotationspro'}{/capture}
         <h4 class="product-name" style="margin-bottom:.3rem;">
             <a href="{$product.link|escape:'html':'UTF-8'}">{$product.name|escape:'html':'UTF-8'}</a>
         </h4>
-        <pre>{*$product|print_r*}</pre>
         {if isset($product.attributes) && $product.attributes}
             <!--<p>
                 <a href="{$product.link|escape:'html':'UTF-8'}">
@@ -37,16 +39,14 @@
                 </a>
             </p>-->
         {/if}
-        <pre>{$smarty}</pre>
 
-        {assign var="priceValue" value=$product.product_price*($product.quote_quantity*9)}
-         <p id="product-price-quantity" data-price="{$product.product_price}" >{$product.product_price_currency_iso}{$product.product_price_currency_symbol} <span class="product-amount">{$priceValue|number_format:2:".":","}</span></p>
-        
+        {assign var="priceValue" value=$product.product_price*($product.quote_quantity*9) scope=parent}
+         <p style="margin-bottom:0px;" id="product-price-quantity" data-price="{$product.product_price}" >{$product.product_price_currency_iso}{$product.product_price_currency_symbol} <span class="product-amount">{$priceValue|number_format:2:".":","}</span></p>
+
         <a href="{$product.link}" title="Product detail">
             {assign var="color" value=","|explode:$product.attributes}{$color[0]}
         </a>
 
-        
         {if $product.reference}
         <small class="quote_ref">{l s='SKU: ' mod='roja45quotationspro'}{$product.reference|escape:'html':'UTF-8'}</small>
         {/if}
@@ -77,4 +77,5 @@
         </div>
     </td>
 </tr>
+
 
