@@ -10,7 +10,7 @@
 * It is also available through the world-wide-web at this URL:
 * http://opensource.org/licenses/GPL-2.0
 *
-* DISCLAIMER
+* DISCLAIMER  fix
 *
 * Do not edit or add to this file if you wish to upgrade the module to newer
 * versions in the future.
