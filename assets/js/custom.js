@@ -337,9 +337,9 @@ $(document).ready(function(){
 	 			priceLocation.find('.product-amount').html(" " + resultado);//value tag price html
 	 				
 	 			$('#table_qty_qty').html(parametros.QtyxData);
-	 			console.log("Resultado obtenido");
+	 			//console.log("Resultado obtenido");
 	 			console.log(resultado);
-	 			console.log('------------------------------');
+	 			//console.log('------------------------------');
 	 			giveTotalQuote();
 	 		},
 	 		 error: function (request, status, error) {
@@ -357,15 +357,15 @@ $(document).ready(function(){
 		 	formQuote.each(function(key, value){
 		 		//console.log(value);
 		 		var priceRow = parseFloat($(value).find('span.product-amount')[0].innerText.replace(",", ""));
-		 		console.log(priceRow);
+		 		//console.log(priceRow);
 		 		var qtyRow = parseInt($(value).find('#quantity_wanted').val());
-		 		console.log("Esto es el valor quantity: " + qtyRow);
+		 		//console.log("Esto es el valor quantity: " + qtyRow);
 
 		 		conteoTotalQuote = conteoTotalQuote+priceRow;
 		 		conteoTotalQuantity = conteoTotalQuantity+qtyRow;
 		 	});
-		 	console.log('------------------------------');
-		 	console.log(conteoTotalQuote.toLocaleString('currency'));
+		 	//console.log('------------------------------');
+		 	//console.log(conteoTotalQuote.toLocaleString('currency'));
 		 	$('#quote_summary').find('.product-amount-quote').html(conteoTotalQuote.toLocaleString('currency'));
 		 	$('#quote_summary').find('.product-amount-quote-qty').html(conteoTotalQuantity);
 	 }
