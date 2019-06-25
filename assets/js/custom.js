@@ -17,6 +17,12 @@ $(document).ready(function(){
 		var wtCategory = $('#wt_cat_carousel').on('click tap', function(){
 			loader.show();
 		});
+		$('a.product-thumbnail-link').on('click tap',function(){
+			openLoader();
+		});
+		$('#js-product-list .product-title').on('click tap', function(){
+			openLoader();
+		});
      	 function openLoader(e){
 			//loader.css({visibility:"visibe",opacity:"100"});
 			loader.show();
