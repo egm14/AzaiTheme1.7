@@ -366,7 +366,7 @@ $(document).ready(function(){
 		 	});
 		 	//console.log('------------------------------');
 		 	//console.log(conteoTotalQuote.toLocaleString('currency'));
-		 	$('#quote_summary').find('.product-amount-quote').html(conteoTotalQuote.toLocaleString('currency'));
+		 	$('#quote_summary').find('.product-amount-quote').html(conteoTotalQuote.toLocaleString('en-US'));
 		 	$('#quote_summary').find('.product-amount-quote-qty').html(conteoTotalQuantity);
 	 }
 
