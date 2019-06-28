@@ -1874,3 +1874,6 @@ a.btn.btn-primary.btn-request-quote {
 #jx-header-account-link span {
     display: none!important;
 }
+.only-mobile.open-slidebar {
+    z-index: 999999;
+}
