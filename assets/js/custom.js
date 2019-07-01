@@ -193,7 +193,7 @@ $(document).ready(function(){
 	 		var wHeight = $(window).scrollTop();
 	 		var mHeader = $('#header');
 	 			//console.log("Distancia del scroll: " + wHeight);
-	 		if($(window).width()<= 400){
+	 		if($(window).width()<= 100){
 		 		if(wHeight < 44){
 		 			//console.log("Position: Block");
 		 			mHeader.css('position', 'inherit');
