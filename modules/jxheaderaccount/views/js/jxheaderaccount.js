@@ -230,16 +230,15 @@ function submitCreate(elem) {
             var uriPhp;
               if(window.location.hostname !="localhost"){
                       urihref = window.location.pathname.split("/");
-                      uripage = "/"+urihref[1]+"/"+urihref[2]
+                      uripage = "/"+urihref[1]
                       urlGo = uripage +"/module/idxvalidatinguser/deluxevalidatinguser"
                       setTimeout(function(){
                       window.location.href = urlGo
                       },3000)
               }else{
                       urihref = window.location.pathname.split("/");
-                      uripage = "/"+urihref[1]
-                      console.log(urihref)
-                      console.log(uripage)
+                      uripage = "/"+urihref[1]+"/"+urihref[2]
+                      console.log("/"+uripage+"/module/idxvalidatinguser/deluxevalidatinguser")
                       setTimeout(function(){
                         window.location.href = "/"+uripage+"/module/idxvalidatinguser/deluxevalidatinguser"
                       },3000)
