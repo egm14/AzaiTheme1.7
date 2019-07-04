@@ -172,7 +172,7 @@ function submitCreate(elem) {
     },
     dataFilter: function(xhrdata, type){
       //console.log(xhrdata)
-      JSON.parse(xhrdata)
+      JSON.parse(JSON.stringify(xhrdata))
       return xhrdata
     },
     success: function (datab, textStatus, jqXHR) {
