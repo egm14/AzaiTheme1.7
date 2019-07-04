@@ -238,8 +238,10 @@ function submitCreate(elem) {
               }else{
                       urihref = window.location.pathname.split("/");
                       uripage = "/"+urihref[1]
+                      console.log(urihref)
+                      console.log(uripage)
                       setTimeout(function(){
-                        window.location.href = uripage+"/module/idxvalidatinguser/deluxevalidatinguser"
+                        window.location.href = "/"+uripage+"/module/idxvalidatinguser/deluxevalidatinguser"
                       },3000)
               }
               
