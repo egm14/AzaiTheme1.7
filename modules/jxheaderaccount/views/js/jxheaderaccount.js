@@ -222,7 +222,7 @@ function submitCreate(elem) {
           //Making redirection to modulo page preference at site
           var shopName = $('title#page-titles').prevObject.context.title
 
-          if(shopName == 'azaimayoreo'){
+          if(shopName != "azaimayoreo"){
             setTimeout(function(){
               document.location.reload()
               }, 3000)
