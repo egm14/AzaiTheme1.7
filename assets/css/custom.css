@@ -1059,6 +1059,10 @@ nav.icono-menu-mobile a:hover{
     justify-content:space-around;
     text-align:left;
   }
+
+  #_mobile_menu_wrapper .only-mobile.open-slidebar{
+    overflow-y:scroll;
+  }
 }
 
 
