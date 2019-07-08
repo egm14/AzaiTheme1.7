@@ -40,7 +40,7 @@
             </p>-->
         {/if}
 
-        {assign var="priceValue" value=$product.product_price*($product.quote_quantity*9) scope=parent}
+        {assign var="priceValue" value=$product.product_price*($product.quote_quantity*$packageAzai) scope=parent}
          <p style="margin-bottom:0px;" id="product-price-quantity" data-price="{$product.product_price}" >{$product.product_price_currency_iso}{$product.product_price_currency_symbol} <span class="product-amount">{$priceValue|number_format:2:".":","}</span></p>
 
         <a href="{$product.link}" title="Product detail">
@@ -48,7 +48,7 @@
         </a>
 
         {if $product.reference}
-        <small class="quote_ref">{l s='SKU: ' mod='roja45quotationspro'}{$product.reference|escape:'html':'UTF-8'}</small>
+        <small class="quote_ref">{assign var="productReference" value="-"|explode:$product.reference}{l s='SKU: ' mod='roja45quotationspro'}{$productReference[1]|escape:'html':'UTF-8'}</small>
         {/if}
     </td>
 
@@ -64,7 +64,7 @@
             class="quote_quantity input-group"
             min="{$product.minimal_quantity|escape:'html':'UTF-8'}"
             aria-label="{l s='Quantity' mod='roja45quotationspro'}"
-            data-pack="9">
+            data-pack="{$packageAzai}">
     </td>
 
     <td class="quote_delete text-center" data-title="{l s='Delete' mod='roja45quotationspro'}">
