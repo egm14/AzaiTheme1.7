@@ -234,7 +234,6 @@ function submitCreate(elem){
               }else{
                       urihref = window.location.pathname.split("/");
                       uripage = "/"+urihref[1] 
-                      console.log(urlGo)
                       setTimeout(function(){
                       window.location.href = uripage +"/module/idxvalidatinguser/deluxevalidatinguser"
                       },3000)
