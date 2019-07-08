@@ -1270,6 +1270,9 @@ body#category .grid .product-miniature .product-miniature-container .product-min
   button.nav-link.active.create-account{ margin-top:1rem;}
 button.nav-link.active.do-loging{padding:15px;margin-top:6rem;}
 section#create-account-form ul.nav{display:flex;align-items:center;justify-content:center;flex-flow:wrap-reverse;}
+body:not(#index) #wrapper{margin-top:85px;}
+.breadcrumb > .breadcrumb-item + .breadcrumb-item{margin-left:.8rem;}
+.breadcrumb > .breadcrumb-item + .breadcrumb-item::before{margin-right:.8rem;}
 }
 
 
@@ -1280,6 +1283,7 @@ section#create-account-form ul.nav{display:flex;align-items:center;justify-conte
 @media only screen and (max-width: 640px){
 /*------------------- AJUSTES GENERALES ----------------*/  
 /*Ajustes de tamaños slider*/  
+#bonslick .slick-dots li button:before {font-family: 'slick';font-size: 20px !important;}
 #ps-image-slider.swiper-container .swiper-slide .img-fluid {top: 37%!important;width: 110%!important;height: auto;min-width: 440px!important;}
 #ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 350px;top: 70px}
 #choicegiftcard section .step-title {text-transform: uppercase;margin-bottom:0;font-size: 12px;}/*Font size module gift card */
