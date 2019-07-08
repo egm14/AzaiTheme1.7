@@ -136,7 +136,7 @@ function submitLoginFunction(elem) {
   ajax.init(options);
 }
 
-function submitCreate(elem) {
+function submitCreate(elem){
   //console.log(elem)
   var element = jxha.getQueryParameters(elem.find('form').serializeArray())
   var datos = $.extend({}, element,{
@@ -220,37 +220,35 @@ function submitCreate(elem) {
           }
           console.log("Esto fue un éxito....")
           //Making redirection to modulo page preference at site
-          var shopName = $('title#page-titles').prevObject.context.title
-
-          if(shopName != "azaimayoreo"){
-           var loginUrl = $('footer#footer').find('.footer-column div .block_myaccount_infoso h3 a').context.referrer
-               //console.log(loginUrl)
-            setTimeout(function(){
-              document.location.href = loginUrl
-              }, 2000)
-          }else{
+          var shopName = $('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase();
+          console.log(shopName)
+          if(shopName == "azaimayoreo"){
             var uriPhp;
-              if(window.location.hostname !="localhost"){
-                      urihref = window.location.pathname.split("/");
-                      uripage = "/"+urihref[1]
-                      urlGo = uripage +"/module/idxvalidatinguser/deluxevalidatinguser"
-                      setTimeout(function(){
-                      window.location.href = urlGo
-                      },3000)
-              }else{
+              if(window.location.hostname =="localhost"){
                       urihref = window.location.pathname.split("/");
                       uripage = "/"+urihref[1]+"/"+urihref[2]
                       console.log("/"+uripage+"/module/idxvalidatinguser/deluxevalidatinguser")
                       setTimeout(function(){
-                        window.location.href = "/"+uripage+"/module/idxvalidatinguser/deluxevalidatinguser"
+                        window.location.href = uripage+"/module/idxvalidatinguser/deluxevalidatinguser"
                       },3000)
-              }
-              
-            }
-        
+              }else{
+                      urihref = window.location.pathname.split("/");
+                      uripage = "/"+urihref[1] 
+                      setTimeout(function(){
+                      window.location.assign(uripage +"/module/idxvalidatinguser/deluxevalidatinguser")
+                      },3000)
+              } 
+          }else{
+              var loginUrl = $('footer#footer').find('.footer-column div .block_myaccount_infoso h3 a').context.referrer
+               //console.log(loginUrl)
+              setTimeout(function(){
+              document.location.assign(loginUrl)
+              }, 2000)
+
+          }
       }
     } 
-  };
+  }
     var ajax = new jxha.ajax();
     ajax.init(options).responseJSON;
     console.log(ajax.options);
