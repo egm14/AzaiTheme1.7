@@ -223,9 +223,11 @@ function submitCreate(elem) {
           var shopName = $('title#page-titles').prevObject.context.title
 
           if(shopName != "azaimayoreo"){
+           var loginUrl = $('footer#footer').find('.footer-column div .block_myaccount_infoso h3 a').context.referrer
+               //console.log(loginUrl)
             setTimeout(function(){
-              document.location.reload()
-              }, 3000)
+              document.location.href = loginUrl
+              }, 2000)
           }else{
             var uriPhp;
               if(window.location.hostname !="localhost"){
