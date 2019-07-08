@@ -235,14 +235,14 @@ function submitCreate(elem){
                       urihref = window.location.pathname.split("/");
                       uripage = "/"+urihref[1] 
                       setTimeout(function(){
-                      window.location.href = uripage +"/module/idxvalidatinguser/deluxevalidatinguser"
+                      window.location.assign(uripage +"/module/idxvalidatinguser/deluxevalidatinguser")
                       },3000)
               } 
           }else{
               var loginUrl = $('footer#footer').find('.footer-column div .block_myaccount_infoso h3 a').context.referrer
                //console.log(loginUrl)
               setTimeout(function(){
-              document.location.href = loginUrl
+              document.location.assign(loginUrl)
               }, 2000)
 
           }
