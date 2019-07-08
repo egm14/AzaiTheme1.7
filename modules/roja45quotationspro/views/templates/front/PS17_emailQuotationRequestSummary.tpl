@@ -57,7 +57,7 @@
         <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
             <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{if isset($product.reference)}
             {*$product.reference|escape:'html':'UTF-8'*}
-            {assign var="referenceProduct" value="-"|explode:$product.attributes}{$referenceProduct[1]}
+            {assign var="referenceProduct" value="-"|explode:$product.reference}{$referenceProduct[1]}
         {/if}</span>
         </td>
         <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
