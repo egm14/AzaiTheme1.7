@@ -24,7 +24,7 @@
         <th colspan=2 bgcolor="#f8f8f8" style="border:0px solid #D6D4D4;border-bottom: 1px solid #d6d4d4;background-color: #fbfbfb;color: #333;font-family: Helvetica, 'Open Sans', Arial, sans-serif;font-size: 13px;padding: 10px;">{l s='Reference' mod='roja45quotationspro'}</th>
         <th colspan=2 bgcolor="#f8f8f8" style="border:0px solid #D6D4D4;border-bottom: 1px solid #d6d4d4;background-color: #fbfbfb;color: #333;font-family: Helvetica, 'Open Sans', Arial, sans-serif;font-size: 13px;padding: 10px;">{l s='Comment' mod='roja45quotationspro'}</th>
         <th colspan=2 bgcolor="#f8f8f8" style="border:0px solid #D6D4D4;border-bottom: 1px solid #d6d4d4;background-color: #fbfbfb;color: #333;font-family: Helvetica, 'Open Sans', Arial, sans-serif;font-size: 13px;padding: 10px;">{l s='Unit price' mod='roja45quotationspro'}</th>
-        <th colspan=2 bgcolor="#f8f8f8" style="border:0px solid #D6D4D4;border-bottom: 1px solid #d6d4d4;background-color: #fbfbfb;color: #333;font-family: Helvetica, 'Open Sans', Arial, sans-serif;font-size: 13px;padding: 10px;">{l s='Quantity' mod='roja45quotationspro'}</th>
+        <th colspan=2 bgcolor="#f8f8f8" style="border:0px solid #D6D4D4;border-bottom: 1px solid #d6d4d4;background-color: #fbfbfb;color: #333;font-family: Helvetica, 'Open Sans', Arial, sans-serif;font-size: 13px;padding: 10px;">{l s='Package Quantity' mod='roja45quotationspro'}</th>
         <th colspan=2 bgcolor="#f8f8f8" style="border:0px solid #D6D4D4;border-bottom: 1px solid #d6d4d4;background-color: #fbfbfb;color: #333;font-family: Helvetica, 'Open Sans', Arial, sans-serif;font-size: 13px;padding: 10px;">{l s='Total price' mod='roja45quotationspro'}</th>
     </tr>
     {foreach from=$requested_products item=product key=k}
