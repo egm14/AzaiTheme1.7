@@ -48,7 +48,7 @@
             {l s='My addresses' mod='jxheaderaccount'}
           </a>
         </li>
-        <li>
+		<li>
           <a href="{$link->getPageLink('identity', true)|escape:'htmlall':'UTF-8'}" title="{l s='Manage my personal information' mod='jxheaderaccount'}" rel="nofollow">
             {l s='My personal info' mod='jxheaderaccount'}
           </a>
@@ -59,6 +59,20 @@
               {l s='My vouchers' mod='jxheaderaccount'}
             </a>
           </li>
+		  <!--condicion si la tienda es Azai Mayoreo se muestre-->
+		  	{if $shop.name == "azaimayoreo"}
+		  <li>
+          <a href="Quotation?action=getCustomerQuotes" title="{l s='Quotes Open' mod='roja45quotationspro'}" rel="nofollow">
+            {l s='Quotes Open' mod='roja45quotationspro'}
+          </a>
+        </li>
+		<li>
+          <a href="Quotation?action=getCustomerQuoteHistory" title="{l s='Quote History' mod='roja45quotationspro'}" rel="nofollow">
+            {l s='Quote History' mod='roja45quotationspro'}
+          </a>
+        </li>
+			{/if}
+			<!--condicion si la tienda es Azai Mayoreo se muestre-->
         {/if}
         {if $f_status}
           <li>

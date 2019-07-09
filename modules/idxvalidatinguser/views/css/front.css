@@ -1,0 +1,151 @@
+/**
+* 2007-2015 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2015 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.deluxeupload {
+	height:32px;
+	border:none;
+	padding-bottom:4px;
+}
+
+.form-b2b {
+  margin:20px 0px;
+}
+
+
+@media(max-width:480px){
+  #deluxeb2b{
+    margin-top:-20px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media(min-width:481px){
+  #deluxeb2b{
+    float:right;
+    margin-top: -28px;
+  }
+
+}
+
+.professional-rg{
+  background: #ffa500;
+  color: white !important;
+  padding: 9px 10px;
+  font-size: 1rem;
+}
+.professional-rg:hover{
+  background:#e49607;
+  color:#ffffff !important;
+}
+
+@media(max-width:480px){
+
+  .standard-rg a{
+    background: green;
+    color: white;
+    padding: 8px 10px;
+    display:block;
+  }
+
+
+}
+
+@media(min-width:481px){
+
+  .standard-rg {
+      float: left;
+  }
+
+
+
+.standard-rg a{
+  background: green;
+  color: white !important;
+  padding: 8px 10px;
+}
+
+
+
+}
+
+
+
+
+.no-account a:hover{
+  background:#1c631c !important;
+}
+.b2btext {
+    margin:20px 0px !important;
+}
+
+#alertprivate {
+   border: 1px solid #e4e4e4;
+   border-radius: 2px;
+   padding: 10px;
+   margin-bottom: 10px;
+   /*float:left;*/
+}
+
+#alertprivate i{
+    display:block;
+    position:relative;
+    margin: 0 auto;
+}
+
+.information{
+  text-align:center;
+  border:1px solid #cacaca;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+#alertdoc {
+  width: 50%;
+  margin: auto;
+  padding-left: 10px;
+}

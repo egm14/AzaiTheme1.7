@@ -27,6 +27,7 @@
 
     {block name='product_quantity'}
       {if $shop.name == "azaimayoreo" && $customer.is_logged != NULL}
+
     <table id="table_qty" class="table" style="margin-top:1rem;max-width:400px;text-align:center;">
           
             <tr style="background-color:black; color:white; text-align:center">
@@ -56,7 +57,7 @@
                         step="1"
                         min="1"
                         max="100"
-                        data-pack="9"
+                        data-pack="{$packageAzai}"
                         id="quantity_wanted"
                         value="{$product.quantity_wanted}"
                         class="input-group input-group-lg"
@@ -67,10 +68,10 @@
                     </div>
                   </div>
              </td>
-              <td id="table_qty_qty">9</td>
+              <td id="table_qty_qty">{$packageAzai}</td>
               
              <td>
-              <div id="product-price-quantity" data-price="{$product.price_amount}">{$currency.iso_code}{$currency.sign} <span class="product-amount">{($product.price_amount*9)|number_format:2:".":","}</span></div>
+              <div id="product-price-quantity" data-price="{$product.price_amount}">{$currency.iso_code}{$currency.sign} <span class="product-amount">{($product.price_amount*$packageAzai)|number_format:2:".":","}</span></div>
             </td>
           </tr>
         </tbody>

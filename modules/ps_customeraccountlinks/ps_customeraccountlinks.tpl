@@ -47,7 +47,22 @@
             {$my_account_url.title}
           </a>
         </li>
+		
     {/foreach}
+	<!--condicion si la tienda es Azai Mayoreo se muestre-->
+	{if $shop.name == "azaimayoreo"}
+	 <li>
+          <a href="Quotation?action=getCustomerQuotes" title="{l s='Quotes Open' mod='roja45quotationspro'}" rel="nofollow">
+            {l s='Quotes Open' mod='roja45quotationspro'}
+          </a>
+        </li>
+		<li>
+          <a href="Quotation?action=getCustomerQuoteHistory" title="{l s='Quote History' mod='roja45quotationspro'}" rel="nofollow">
+            {l s='Quote History' mod='roja45quotationspro'}
+          </a>
+        </li>
+		{/if}
+		<!--condicion si la tienda es Azai Mayoreo se muestre-->
     {hook h='displayMyAccountBlock'}
 	</ul>
 </div>
