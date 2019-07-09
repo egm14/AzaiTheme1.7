@@ -1062,6 +1062,7 @@ nav.icono-menu-mobile a:hover{
 
   #_mobile_menu_wrapper .only-mobile.open-slidebar{
     overflow-y:scroll;
+    z-index:200;
   }
 }
 
