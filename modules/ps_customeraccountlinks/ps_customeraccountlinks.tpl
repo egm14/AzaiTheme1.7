@@ -47,7 +47,18 @@
             {$my_account_url.title}
           </a>
         </li>
+		
     {/foreach}
+	 <li>
+          <a href="Quotation?action=getCustomerQuotes" title="{l s='Quotes Open' mod='roja45quotationspro'}" rel="nofollow">
+            {l s='Quotes Open' mod='roja45quotationspro'}
+          </a>
+        </li>
+		<li>
+          <a href="Quotation?action=getCustomerQuoteHistory" title="{l s='Quote History' mod='roja45quotationspro'}" rel="nofollow">
+            {l s='Quote History' mod='roja45quotationspro'}
+          </a>
+        </li>
     {hook h='displayMyAccountBlock'}
 	</ul>
 </div>
