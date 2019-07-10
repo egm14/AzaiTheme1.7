@@ -75,7 +75,7 @@ By Azai.com theme v1.7 test git
   margin:3px;
 }
 .cart-summary.open-slidebar ul.cart-items li.cart-item .product-line-actions .input-group-btn-vertical button i{
-  color:white;
+  color:white!important;
 }
 .cart-summary.open-slidebar ul.cart-items li.cart-item .product-line-actions .input-group-btn-vertical button.bootstrap-touchspin-up{
 
