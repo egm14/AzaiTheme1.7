@@ -45,7 +45,7 @@
     </div>
     <div class="cart-summary-line cart-total">
     <span class="label sub">{l s='Total General'}</span>
-    <span class="value sub">{$currency.iso_code}{$currency.sign}{$cart.totals.total.amount+$cart.subtotals.tax.amount}</span>
+    <span class="value sub">{$currency.iso_code}{$currency.sign}{($cart.totals.total.amount+$cart.subtotals.tax.amount)|number_format:2:".":","}</span>
 
   </div>
   {/block}
