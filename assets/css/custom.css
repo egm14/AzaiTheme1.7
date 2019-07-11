@@ -68,6 +68,16 @@ By Azai.com theme v1.7 test git
   right:0;
   width:3rem;
   height:3rem;
+}
+.cart-summary.open-slidebar ul.cart-items li.cart-item .product-line-actions .input-group-btn-vertical button{
+  padding:5px 8px;
+  background-color:black;
+  margin:3px;
+}
+.cart-summary.open-slidebar ul.cart-items li.cart-item .product-line-actions .input-group-btn-vertical button i{
+  color:white!important;
+}
+.cart-summary.open-slidebar ul.cart-items li.cart-item .product-line-actions .input-group-btn-vertical button.bootstrap-touchspin-up{
 
 }
 
