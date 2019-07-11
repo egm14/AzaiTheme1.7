@@ -19,7 +19,7 @@
         <div class="header" data-refresh-url="{url entity='module' name='roja45quotationspro' controller='QuotationsProFront' params = ['action' => 'quoteSummary']}">
 
             <!--<i class="material-icons">assignment</i>-->
-            <i class="fl-chapps-hand135" aria-hidden="true" style="font-size:1.4rem;margin-top:-5px;"></i>
+            <i class="fl-chapps-hand135" aria-hidden="true" style="font-size:1.65rem;margin-top:-6px;"></i>
             <span class="hidden-sm-down">{l s='Quote' mod='roja45quotationspro'}</span>
             {if $request_qty > 0}<span class="cart-products-count">{$request_qty}</span>{/if}
             {if $nbr_products > 0}

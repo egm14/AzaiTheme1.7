@@ -78,6 +78,9 @@
 
                               </div>
                             {else}
+                                {if $shop.name == "azaimayoreo" && $carrier.url != "https://azai.com"}
+                                  <img class="imgInternationCarrier" src="{$urls.theme_assets}OtherFile/internationalCarriers.png" style="max-height:30px;display:block;text-align:center;margin:10px auto"/>
+                                {/if}
                               <span class="carrier-delay">{$carrier.delay}</span>
                                </div>
                               <div class="col-sm-3" style="font-weight:600;">

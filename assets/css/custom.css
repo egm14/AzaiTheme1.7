@@ -1288,6 +1288,9 @@ body:not(#index) #wrapper{margin-top:85px;}
 .breadcrumb > .breadcrumb-item + .breadcrumb-item::before{margin-right:.8rem;}
 body#product .layout-full-width .product-right-column{padding-right:1.875rem;}
 body#product footer#footer .link-list-title{padding-right:.4rem;}
+#quote_summary tbody td.quote_delete{padding:0px;width:2.75rem;}
+.quote_navigation .button-exclusive.btn.btn-default{margin-left:0px;}
+body#module-roja45quotationspro-QuotationsProFront a.pull-right.button-exclusive.btn.btn-default{width:100%;padding-top:14px;}
 }
 
 
