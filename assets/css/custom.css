@@ -1279,7 +1279,7 @@ nav.icono-menu-mobile a:hover{
  footer#footer .jxml-copyright{margin-top:1rem;}
 body#category .grid .product-miniature .product-miniature-container .product-miniature-information .product-prices-md{text-align:center;display:flow-root;}
   button.nav-link.active.create-account{ margin-top:1rem;}
-button.nav-link.active.do-loging{padding:15px;margin-top:6rem;}
+button.nav-link.active.do-loging{padding:15px;/*margin-top:6rem;*/}
 section#create-account-form ul.nav{display:flex;align-items:center;justify-content:center;flex-flow:wrap-reverse;}
 body:not(#index) #wrapper{margin-top:85px;}
 .breadcrumb > .breadcrumb-item + .breadcrumb-item{margin-left:.8rem;}
