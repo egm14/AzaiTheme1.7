@@ -850,6 +850,8 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
   font-size:1rem;
   height:3rem;
   max-width:300px;
+  margin-right:auto;
+  margin-left:auto;
 }
 .product-additional-info .roja45quotationspro_button_container .btn.add-to-quote i{
   margin-right:5px;
@@ -1284,6 +1286,8 @@ section#create-account-form ul.nav{display:flex;align-items:center;justify-conte
 body:not(#index) #wrapper{margin-top:85px;}
 .breadcrumb > .breadcrumb-item + .breadcrumb-item{margin-left:.8rem;}
 .breadcrumb > .breadcrumb-item + .breadcrumb-item::before{margin-right:.8rem;}
+body#product .layout-full-width .product-right-column{padding-right:1.875rem;}
+body#product footer#footer .link-list-title{padding-right:.4rem;}
 }
 
 
