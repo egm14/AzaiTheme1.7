@@ -58,6 +58,7 @@ $(document).ready(function () {
             mobile: prestashop.responsive.mobile
         });
     }
+    
     function addAlertProductCart(){
         var userAlert = $('#alerts-n').find('.alerts.create-acount.alert-success-product');
             userAlert.addClass('active');
@@ -78,6 +79,9 @@ $(document).ready(function () {
             roja45quotationspro_quotationscart.add(idProduct, idProductAttribute, false, this, minimalQuantity, quantity);
         }
         addAlertProductCart();
+        var btnLook = $(this)
+        setTimeout(function(){btnLook.removeClass("gradient-border");},2600)
+       
     });
 
     $(document).on('click', 'button.add-to-quote', function (e) {
@@ -224,7 +228,7 @@ var roja45quotationspro_quotationscart = {
                         var selector = roja45quotationspro_responsivecartnavselector.substring(1, roja45quotationspro_responsivecartnavselector.length);
                         var template = data.template.replace(selector, '_mobile_quotecart');
                         $('#_mobile_quotecart').replaceWith(template);
-                        addAlertProductCart();
+                        /*addAlertProductCart();*/
                     } else {
                         var template = data.template;
                         $(roja45quotationspro_responsivecartnavselector).replaceWith(template);

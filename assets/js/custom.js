@@ -173,7 +173,7 @@ $(document).ready(function(){
 		setTimeout(function(){
 			vb.removeClass("gradient-border")
 			console.log("Removiendo clase gradiend-border");
-			}, 6000);	
+			}, 5000);	
 	}
 
 
