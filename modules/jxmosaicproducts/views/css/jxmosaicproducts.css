@@ -240,7 +240,7 @@ p.namecarrousel {
 
 /*@media only screen and (max-width: 768px) {*/
   .itemscarrousel {
-    animation: carouselAnim 35s infinite alternate linear;
+    animation: carouselAnim 8.5s infinite alternate linear;
   }
   
   @keyframes carouselAnim {
