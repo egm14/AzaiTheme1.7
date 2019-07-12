@@ -50,7 +50,7 @@
 		
     {/foreach}
 	<!--condicion si la tienda es Azai Mayoreo se muestre-->
-	{if $shop.name == "azaimayoreo"}
+	{if $shop.name == $azaimayoreo}
 	 <li>
           <a href="Quotation?action=getCustomerQuotes" title="{l s='Quotes Open' mod='roja45quotationspro'}" rel="nofollow">
             {l s='Quotes Open' mod='roja45quotationspro'}

@@ -47,7 +47,7 @@
 
 
 {block name='content'}
-  {if $shop.name == "azaimayoreo"}
+  {if $shop.name == $azaimayoreo}
         {if $customer.is_logged == NULL}
          
             <script type="text/javascript">
@@ -113,7 +113,7 @@
           {/block}
 
             <pre>{*$product|print_r*}</pre>
-             {if $shop.name != "azaimayoreo"}
+             {if $shop.name != $azaimayoreo}
                  {block name='product_prices'}
                    {include file='catalog/_partials/product-prices.tpl'}
                  {/block}

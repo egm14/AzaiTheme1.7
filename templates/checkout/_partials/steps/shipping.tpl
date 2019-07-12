@@ -64,29 +64,37 @@
                             </div>
                           </div>
                           <div class="col-sm-4">
-                            <!-- Exception to dominican REpublica Carrier -->
-                            {if ($customer.addresses[$cart.id_address_delivery].country == 'Dominican Republic' || $customer.addresses[$cart.id_address_delivery].country == 'República Dominicana')}
-                              <br />
-                                <ol style="list-style:disc;padding-left:10px;text-align:left;">
-                                <li style="margin-bottom:.4rem">{l s='Delivery time:'}&nbsp;{$carrier.delay}&nbsp;</li>
-                                <!--<li style="margin-bottom:.4rem">{l s='Le enviaremos un correo eléctrico con las instrucciones y el número de identificación de su pedido, el cual le permitirá dar seguimiento a su paquete (Traking number).'}</li>-->
-                                <li>{l s='Al momento de la entrega del paquete  lo estaremos contactando a travez de su número de teléfono. Así garantizamos una entrega satisfactoria.'}</li>
-                              </ol>
-                               </div>
-                              <div class="col-sm-3" style="font-weight:600;">
-                                <span class="carrier-price">{$carrier.price}</span><i style="margin-left:5px" class="fa fa-hand-peace-o" aria-hidden="true"></i>
-
-                              </div>
-                            {else}
-                                {if $shop.name == "azaimayoreo"}
-                                  <img class="imgInternationCarrier" src="{$urls.theme_assets}OtherFile/internationalCarriers.png" style="max-height:30px;display:block;text-align:center;margin:10px auto"/>
-                                {/if}
+                            {if $shop.name == $azaimayoreo}
+                              <img class="imgInternationCarrier" src="{$urls.theme_assets}OtherFile/internationalCarriers.png" style="max-height:30px;display:block;text-align:center;margin:10px auto"/>
                               <span class="carrier-delay">{$carrier.delay}</span>
                                </div>
                               <div class="col-sm-3" style="font-weight:600;">
                                 <span class="carrier-price">{$carrier.price}</span>
                               </div>
+                            {else}
+                                <!-- Exception to dominican REpublica Carrier -->
+                              {if ($customer.addresses[$cart.id_address_delivery].country == 'Dominican Republic' || $customer.addresses[$cart.id_address_delivery].country == 'República Dominicana')}
+                                <br />
+                                  <ol style="list-style:disc;padding-left:10px;text-align:left;">
+                                  <li style="margin-bottom:.4rem">{l s='Delivery time:'}&nbsp;{$carrier.delay}&nbsp;</li>
+                                  <!--<li style="margin-bottom:.4rem">{l s='Le enviaremos un correo eléctrico con las instrucciones y el número de identificación de su pedido, el cual le permitirá dar seguimiento a su paquete (Traking number).'}</li>-->
+                                  <li>{l s='Al momento de la entrega del paquete  lo estaremos contactando a travez de su número de teléfono. Así garantizamos una entrega satisfactoria.'}</li>
+                                </ol>
+                                 </div>
+                                <div class="col-sm-3" style="font-weight:600;">
+                                  <span class="carrier-price">{$carrier.price}</span><i style="margin-left:5px" class="fa fa-hand-peace-o" aria-hidden="true"></i>
+
+                                </div>
+                              {else}
+                                <span class="carrier-delay">{$carrier.delay}</span>
+                                 </div>
+                                <div class="col-sm-3" style="font-weight:600;">
+                                  <span class="carrier-price">{$carrier.price}</span>
+                                </div>
+                              {/if}
+
                             {/if}
+                            
                         </div>
                       </label>
                       
