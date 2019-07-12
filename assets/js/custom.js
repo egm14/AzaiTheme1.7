@@ -377,6 +377,4 @@ $(document).ready(function(){
 		 	$('#quote_summary').find('.product-amount-quote').html(conteoTotalQuote.toLocaleString('en-US'));
 		 	$('#quote_summary').find('.product-amount-quote-qty').html(conteoTotalQuantity);
 	 }
-
-
 });
