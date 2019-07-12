@@ -14,7 +14,7 @@
 <div id="_desktop_quotecart" class="">
     <div class="quotation_cart {if $nbr_products > 0}active{else}inactive{/if} collapsed">
         {if $nbr_products > 0}
-        <a href="{url entity='module' name='roja45quotationspro' controller='QuotationsProFront' params = ['action' => 'quoteSummary']}" class="quote-summary">
+        <a href="{url entity='module' name='roja45quotationspro' controller='QuotationsProFront' params = ['action' => 'quoteSummary']}" class="quote-summary" >
             {/if}
         <div class="header" data-refresh-url="{url entity='module' name='roja45quotationspro' controller='QuotationsProFront' params = ['action' => 'quoteSummary']}">
 

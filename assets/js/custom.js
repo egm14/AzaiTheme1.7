@@ -220,13 +220,10 @@ $(document).ready(function(){
         //console.log("TTTTouchSpin .quote_quantity: ");
         //console.log(evt.target);
         obtenerCalculo(evt);
-
     	});
-
 		 $('#quantity_wanted').on('change mousewheel touchspin', function(evt){
 		 	obtenerCalculo(evt);
 		 });	
-		 
 		 //Change color table on product
 		 prestashop.on("updatedProduct",function(){
 		 	tableColor();
@@ -240,6 +237,13 @@ $(document).ready(function(){
 	 		openLoader();
 	 		console.log("click sobre color");
 	 		//console.log(dt);
+		 });
+		 $("#_mobile_quotecart").find('.quotation_cart .header i').on('click', function(dt){
+	 		console.log($('#_mobile_quotecart').find('a.quote-summary').length);
+	 		if($('#_mobile_quotecart').find('a.quote-summary').length > 0){
+	 		openLoader();
+	 		console.log("click sobre color");
+			}
 		 });
 
 	 	/*change color table auto or selected */
@@ -277,11 +281,9 @@ $(document).ready(function(){
 			 			 		//console.log(this.children[0].class);
 			 			 		}
 			 			 	}
-			 			
 			 		}
 		 			 return (value.innerText == "Color");
 	 		});
-
 		 }
 	 	/*Change color end*/
 	 
@@ -375,6 +377,4 @@ $(document).ready(function(){
 		 	$('#quote_summary').find('.product-amount-quote').html(conteoTotalQuote.toLocaleString('en-US'));
 		 	$('#quote_summary').find('.product-amount-quote-qty').html(conteoTotalQuantity);
 	 }
-
-
 });

@@ -26,7 +26,7 @@
   {if !$configuration.is_catalog}
 
     {block name='product_quantity'}
-      {if $shop.name == "azaimayoreo" && $customer.is_logged != NULL}
+      {if $shop.name == $azaimayoreo && $customer.is_logged != NULL}
 
     <table id="table_qty" class="table" style="margin-top:1rem;max-width:400px;text-align:center;">
           
@@ -92,7 +92,7 @@
                     </div>
                   </div>
         {/if}
-        {if $shop.name != "azaimayoreo"}
+        {if $shop.name != $azaimayoreo}
       <div class="add mb-1">
         
         <button

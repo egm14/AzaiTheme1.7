@@ -28,7 +28,7 @@
       <div class="product-miniature-thumbnail">
         <div class="product-thumbnail">
           {block name='product_thumbnail'}
-          {if $shop.name == "azaimayoreo" && $customer.is_logged == NULL}
+          {if $shop.name == $azaimayoreo && $customer.is_logged == NULL}
                   <a href="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}?create_account=1" class="product-thumbnail-link">
           {else}
                    <a href="{$product.url}" class="product-thumbnail-link">
@@ -64,7 +64,7 @@
       <div class="product-miniature-information">
         {block name='product_name'}
           <h1 class="product-title" itemprop="name">
-            {if $shop.name == "azaimayoreo"}
+            {if $shop.name == $azaimayoreo}
               {if $customer.is_logged == NULL}
                    <a href="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}?create_account=1">{$product.name|truncate:45:'...'}</a></h1>
               {else}
@@ -88,7 +88,7 @@
               {/if}
               {hook h='displayProductPriceBlock' product=$product type="before_price"}
               <span class="sr-only">{l s='Price' d='Shop.Theme.Catalog'}</span>
-              {if $shop.name == "azaimayoreo"}
+              {if $shop.name == $azaimayoreo}
             <span itemprop="price" class="price">{l s='Unit price'} {$product.price}</span>
             {else}
              <span itemprop="price" class="price">{$product.price}</span>
@@ -113,7 +113,7 @@
 
         <div class="functional-buttons">
           {block name='quick_view'}
-           {if $shop.name == "azaimayoreo"}
+           {if $shop.name == $azaimayoreo}
             <a class="quick-view" href="#" data-link-action="quickview" data-img-cover="{$product.cover.large.url}" data-loading-text="{l s='Loading product info...' d='Shop.Theme.Actions'}" style="margin-right:0;">
               <i class="material-icons-zoom_in"></i>
               <span>{l s='Quick view' d='Shop.Theme.Actions'}</span>
@@ -130,7 +130,7 @@
 
             {if $product.add_to_cart_url && !$configuration.is_catalog && ({$product.minimal_quantity} < {$product.quantity})}
 
-              {if $shop.name != "azaimayoreo"}
+              {if $shop.name != $azaimayoreo}
               <a class="add-to-cart" href="{$product.add_to_cart_url}" rel="nofollow" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" data-link-action="add-to-cart">
                 <i class="fl-chapps-hand135"></i>
                 <span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
@@ -138,7 +138,7 @@
               {/if}
             {else}
               {if $product.customizable == 0}
-                {if $shop.name == "azaimayoreo" && $customer.is_logged == NULL}
+                {if $shop.name == $azaimayoreo && $customer.is_logged == NULL}
                       <a itemprop="url" class="view-product" style="display:none;" href="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}?create_account=1" title="{l s='View product' d='Shop.Theme.Actions'}">
                   {else}
                       <a itemprop="url" class="view-product" href="{$product.url}" title="{l s='View product' d='Shop.Theme.Actions'}">
@@ -161,7 +161,7 @@
       </div>
     </div>
     <script id="quickview-template-{$product.id}-{$product.id_product_attribute}" type="text/template">
-          {if $shop.name == "azaimayoreo"}
+          {if $shop.name == $azaimayoreo}
               <div id="quickview-modal-{$product.id}-{$product.id_product_attribute}" class="quickview modal fade modal-close-inside" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-mayoreo" role="document">
                   <div class="modal-content">
