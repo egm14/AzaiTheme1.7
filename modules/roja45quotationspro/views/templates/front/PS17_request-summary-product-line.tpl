@@ -11,7 +11,7 @@
 *  @license          /license.txt
 *}
 
- 
+
 
 <tr id="product_{$product.id_product|escape:'html':'UTF-8'}_{$product.id_product_attribute|escape:'html':'UTF-8'}_{if $displayQuantity > 0}nocustom{else}0{/if}"
     class="quote_item{if isset($productLast) && $productLast && (!isset($ignoreProductLast) || !$ignoreProductLast)} last_item{/if}{if isset($productFirst) && $productFirst} first_item{/if}{if $displayQuantity == 0} alternate_item{/if} {if $odd}odd{else}even{/if}">

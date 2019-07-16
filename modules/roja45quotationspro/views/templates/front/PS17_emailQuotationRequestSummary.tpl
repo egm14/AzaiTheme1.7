@@ -11,6 +11,7 @@
 *  @license          /license.txt
 *}
 
+ {assign var=packageAzaiW value="9"}
 <table class="table table-recap" bgcolor="#ffffff" style="width:100%;border-collapse:collapse" cellSpacing=0 cellPadding=0 border=0>
     <tr>
         <td class="text-right" style="width:100%;border:1px solid #D6D4D4;border-bottom: 0;background-color: #fbfbfb;padding: 5px;">
@@ -36,9 +37,14 @@
         <th colspan="5" bgcolor="#f8f8f8" style="border:1px solid #D6D4D4;background-color: #fbfbfb;color: #333;font-family: Arial;font-size: 12px;padding: 5px;text-transform:uppercase;">
             <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;text-transform:uppercase;">{l s='Quantity Requested' mod='roja45quotationspro'}</span>
         </th>
+        <th colspan="5" bgcolor="#f8f8f8" style="border:1px solid #D6D4D4;background-color: #fbfbfb;color: #333;font-family: Arial;font-size: 12px;padding: 5px;text-transform:uppercase;">
+            <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;text-transform:uppercase;">{l s='Price' mod='roja45quotationspro'}</span>
+        </th>
     </tr>
     </thead>
     <tbody>
+        {assign var="total_quote" value='0'} 
+        {assign var="total_quote_qtye" value='0'} 
     {foreach $requested_products as $product}
     <tr>
         <td colspan="2" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
@@ -61,10 +67,28 @@
         {/if}</span>
         </td>
         <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
-            <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.qty_in_cart|escape:'html':'UTF-8'}</span>
+            <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.qty_in_cart|escape:'html':'UTF-8'} ({$packageAzaiW} {l s='Und' d='Shop.Theme.Actions'})</span>
+        </td>
+        {assign var="priceValue" value=$product.product_price*($product.quote_quantity*$packageAzaiW) scope=parent}
+        <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
+            <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.product_price_currency_iso}{$product.product_price_currency_symbol}{$priceValue|number_format:2:".":","}</span>
         </td>
     </tr>
+        {*Sum the total quote*}
+        {$total_quote=$total_quote+$priceValue}
+        {$total_quote_qtye=$total_quote_qtye+$product.qty_in_cart}
     {/foreach}
+    <!--Adding total Quote request -->
+    <tr class="last-row-resumen" style="font-weight:bold;font-size:1rem;">
+        <td colspan="2" style="text-align:center;color:#777;padding:7px 0"></td>
+        <td colspan="5" style="text-align:center;color:#777;padding:7px 0"></td>  
+        <td colspan="5" style="text-align:center;color:#777;padding:7px 0"></td>              
+        <td colspan="5" style="text-align:center;color:#777;padding:7px 0;background-color:#000;"><span style="color: #fff;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">Total</span></td>
+        <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0;background-color:#000;"><span style="color: #fff;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$total_quote_qtye} {l s='Packages' d='Shop.Theme.Actions'} ({$total_quote_qtye*$packageAzaiW} {l s='Und' d='Shop.Theme.Actions'})</span></td>
+        <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0;background-color:#000;"><span style="color: #fff;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.product_price_currency_iso}{$product.product_price_currency_symbol}{$total_quote|number_format:2:".":","}</span></h3></td>
+        
+        
+    </tr>
 </table>
 <table class="table" bgcolor="#ffffff" style="width:100%">
     <tr>
