@@ -67,7 +67,7 @@
         {/if}</span>
         </td>
         <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
-            <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.qty_in_cart|escape:'html':'UTF-8'} ({$packageAzaiW} {l s='Und'})</span>
+            <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.qty_in_cart|escape:'html':'UTF-8'} ({$packageAzaiW} {l s='Und' d='Shop.Theme.Actions'})</span>
         </td>
         {assign var="priceValue" value=$product.product_price*($product.quote_quantity*$packageAzaiW) scope=parent}
         <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
@@ -84,7 +84,7 @@
         <td colspan="5" style="text-align:center;color:#777;padding:7px 0"></td>  
         <td colspan="5" style="text-align:center;color:#777;padding:7px 0"></td>              
         <td colspan="5" style="text-align:center;color:#777;padding:7px 0;background-color:#000;"><span style="color: #fff;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">Total</span></td>
-        <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0;background-color:#000;"><span style="color: #fff;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$total_quote_qtye} ({$total_quote_qtye*$packageAzaiW} {l s='Und'})</span></td>
+        <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0;background-color:#000;"><span style="color: #fff;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$total_quote_qtye} {l s='Packages' d='Shop.Theme.Actions'} ({$total_quote_qtye*$packageAzaiW} {l s='Und' d='Shop.Theme.Actions'})</span></td>
         <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0;background-color:#000;"><span style="color: #fff;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.product_price_currency_iso}{$product.product_price_currency_symbol}{$total_quote|number_format:2:".":","}</span></h3></td>
         
         
