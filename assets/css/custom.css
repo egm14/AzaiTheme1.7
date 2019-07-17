@@ -850,8 +850,6 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
   font-size:1rem;
   height:3rem;
   max-width:300px;
-  margin-right:auto;
-  margin-left:auto;
 }
 .product-additional-info .roja45quotationspro_button_container .btn.add-to-quote i{
   margin-right:5px;
@@ -1291,6 +1289,7 @@ body#product footer#footer .link-list-title{padding-right:.4rem;}
 #quote_summary tbody td.quote_delete{padding:0px;width:2.75rem;}
 .quote_navigation .button-exclusive.btn.btn-default{margin-left:0px;}
 body#module-roja45quotationspro-QuotationsProFront a.pull-right.button-exclusive.btn.btn-default{width:100%;padding-top:14px;}
+.product-additional-info .roja45quotationspro_button_container .btn.add-to-quote{margin-left:auto;margin-right:auto;}
 }
 
 
