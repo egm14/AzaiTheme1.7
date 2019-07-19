@@ -30,12 +30,13 @@
             .table-recap.head thead{display:none;}
             .table-recap.head td{display: inline-block !important;}
             .table-recap.title, .table-recap tr.product-line {display:block!important; width:100%;}
-            .table-recap.head tbody tr{min-height:315px;}
-            .table-recap.head tbody tr.last-row-resumen td{padding:5px 10px;float:left;}
-            .table-recap tbody tr td.product-image, .table-recap tbody tr td.product-name,
-            .table-recap tbody tr td.product-attribute, .table-recap tbody tr td.product-reference, .table-recap tbody tr td.product-quantity, .table-recap tbody tr td.product-price{width:48.8%;display:inline-block!important;float:left; padding-top:2px;padding-bottom:2px;}
-            .table-recap tbody tr td.product-image{;height:314px; /*border-bottom:0px!important;*/}
-            .table-recap tbody tr td.product-image img{width:auto; height:300px;}
+            .table-recap.head tbody tr.product-line{height:285px;overflow:hidden;}
+            
+            .table-recap tbody tr td.product-name,.table-recap tbody tr td.product-attribute, .table-recap tbody tr td.product-reference, .table-recap tbody tr td.product-quantity, .table-recap tbody tr td.product-price{width:48.8%;height:45px!important;display:inline-block!important;float:left; padding-top:2px;padding-bottom:2px;overflow:scroll;}
+
+            .table-recap tbody tr td.product-image{display:inline-block;width:48.8%;height:275px;float:left;}
+            .table-recap tbody tr td.product-image img{width:auto; height:280px;}
+            .table-recap.head tbody tr.last-row-resumen td{padding:5px 10px;float:left;height:16px;}
         }
         @media only screen and (min-width: 501px) and (max-width: 768px) {
             body {width:478px!important;margin:auto!important;}
