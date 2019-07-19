@@ -220,7 +220,7 @@ function submitCreate(elem){
           }
           console.log("Esto fue un éxito....")
           //Making redirection to modulo page preference at site
-          var shopName = $('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase();
+          var shopName = $.trim($('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase());
           console.log(shopName)
           if(shopName == "azaimayoreo"){
             var uriPhp;

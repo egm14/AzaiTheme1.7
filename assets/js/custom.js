@@ -229,6 +229,7 @@ $(document).ready(function(){
 		 	tableColor();
 		 	//$('#quantity_wanted').val(qty);
 		 	closeLoader();
+		 	hiddenSize();
 		 });
 		 prestashop.on("handleError",function(){
 		 	closeLoader();
@@ -254,7 +255,7 @@ $(document).ready(function(){
 		 		formColor.each(function(key, value){
 		 			//console.log( "Probando each: " + key + " : " + value.innerText);
 		 			//console.log(formColor[key]);
-		 			 if(formColor[key].children[0].innerText == "COLOR"){
+		 			 if(formColor[key].children[0].innerText.toUpperCase() == "COLOR"){
 		 			 	//console.log("product-variant color encontrado");
 		 			 	//console.log("Esto es el key: " + key);
 		 			 	var liColor = formColor[key].children[1].children;
@@ -282,9 +283,13 @@ $(document).ready(function(){
 			 			 		}
 			 			 	}
 			 		}
-		 			 return (value.innerText == "Color");
+			 		
+			 		return (value.innerText == "Color");
+		 			 
 	 		});
 		 }
+			 		
+			 		
 	 	/*Change color end*/
 	 
 
@@ -352,7 +357,6 @@ $(document).ready(function(){
 	 		},
 	 		 error: function (request, status, error) {
 	 		 	console.log("Hay un error: " + error);
-
 	 		}
 	 	});
 	 }
@@ -377,4 +381,20 @@ $(document).ready(function(){
 		 	$('#quote_summary').find('.product-amount-quote').html(conteoTotalQuote.toLocaleString('en-US'));
 		 	$('#quote_summary').find('.product-amount-quote-qty').html(conteoTotalQuantity);
 	 }
+
+	 function hiddenSize(){
+	 	/*-------------- DISPLAY NONE SIZE ----------*/
+	 	var shopName = $.trim($('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase());
+          //console.log(shopName)
+          if(shopName == "azaimayoreo"){
+	 			var formSize = $('#add-to-cart-or-refresh').find('.product-variants-item');
+	 				formSize.each(function(key, value){
+	 					//console.log(value);
+	 					if(formSize[key].children[0].innerText.toUpperCase() == "SIZE"){
+			 			//	console.log("encontrado size");
+			 				$(formSize[key]).css("display","none");
+			 			}
+	 			});
+	 		}
+	}
 });
