@@ -68,7 +68,7 @@
         {/if}</span>
         </td>
         <td class="product-quantity" colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
-            <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.qty_in_cart|escape:'html':'UTF-8'} ({$packageAzaiW} {l s='Und' d='Shop.Theme.Actions'})</span>
+            <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.qty_in_cart|escape:'html':'UTF-8'} {l s='Packages' d='Shop.Theme.Actions'} ({$packageAzaiW} {l s='Und' d='Shop.Theme.Actions'})</span>
         </td>
         {assign var="priceValue" value=$product.product_price*($product.quote_quantity*$packageAzaiW) scope=parent}
         <td class="product-price" colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
