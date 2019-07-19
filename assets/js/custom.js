@@ -154,6 +154,10 @@ $(document).ready(function(){
 		var ele = $('#product').find('a.btn.btn-primary.add-to-quote.ajax_add_quote_button');
 		addGradient(ele);
 	});
+	$('#_mobile_quotecart .quotation_cart.active').find('i').on('click', function(e){
+		console.log("click cuento");
+		openLoader();
+	});
 	/*$('#continue-1').on('click', function(e){
 		var ele = $('#continue-1');
 		//console.log(this);
