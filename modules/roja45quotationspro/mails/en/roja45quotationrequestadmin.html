@@ -23,30 +23,25 @@
             .space_address{display: none !important;}
         }
         @media only screen and (min-width: 301px) and (max-width: 500px) {
-            body {width:308px!important;margin:auto!important;}
-            .table {width:285px!important;margin:auto!important;}
+            body {min-width:100%!important;margin:auto!important;}
+            .table {width:100%!important;margin:auto!important;}
             .logo, .titleblock, .linkbelow, .box, .footer, .space_footer{width:auto!important;display: block!important;}
-            .table-recap table, .table-recap thead, .table-recap tbody, .table-recap th, .table-recap td, .table-recap tr {
-                display: block !important;
-            }
-            .table-recap{width: 295px !important;}
-            .table-recap tr td, .conf_body td{text-align:center !important;}
+            .table-recap{width: 100% !important;}
+            .table-recap.head thead{display:none;}
+            .table-recap.head td{display: inline-block !important;}
+            .table-recap.title, .table-recap tr.product-line {display:block!important; width:100%;}
+            .table-recap.head tbody tr.product-line{height:293px;overflow:hidden;}
+            
+            .table-recap tbody tr td.product-name,.table-recap tbody tr td.product-attribute, .table-recap tbody tr td.product-reference, .table-recap tbody tr td.product-quantity, .table-recap tbody tr td.product-price{width:48.8%;height:45px!important;display:inline-flex!important;justify-content:left!important;float:left; padding-top:5px!important;padding-bottom:5px!important;overflow:scroll;}
 
+            .table-recap tbody tr td.product-image{display:inline-block;width:48.8%;height:269px;float:left;}
+            .table-recap tbody tr td.product-image img{width:auto; height:263px;}
+            .table-recap.head tbody tr.last-row-resumen td{padding:5px 10px!important;height:45px!important;}
         }
         @media only screen and (min-width: 501px) and (max-width: 768px) {
             body {width:478px!important;margin:auto!important;}
             .table {width:450px!important;margin:auto!important;}
             .logo, .titleblock, .linkbelow, .box, .footer, .space_footer{width:auto!important;display: block!important;}
-        }
-        @media only screen and (max-device-width: 480px) {
-            body {width:308px!important;margin:auto!important;}
-            .table {width:285px;margin:auto!important;}
-            .logo, .titleblock, .linkbelow, .box, .footer, .space_footer{width:auto!important;display: block!important;}
-
-            .table-recap{width: 295px!important;}
-            .table-recap tr td, .conf_body td{text-align:center!important;}
-            .address{display: block !important;margin-bottom: 10px !important;}
-            .space_address{display: none !important;}
         }
     </style>
 </head>
