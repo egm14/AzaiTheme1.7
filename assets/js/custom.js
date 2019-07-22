@@ -401,4 +401,62 @@ $(document).ready(function(){
 	 			});
 	 		}
 	}
+/*==================== Validation email form input  =======================*/
+	$('input[name$="email"]').on('change', emailvalidation);
+
+
+	function emailvalidation() {
+		console.log("Validando email");
+		//console.log(this);
+
+		var request;
+		try {
+			request= new XMLHttpRequest();
+		}
+		catch (tryMicrosoft) {
+			try {
+				request= new ActiveXObject("Msxml2.XMLHTTP");
+			}
+			catch (otherMicrosoft) 
+			{
+				try {
+				request= new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				catch (failed) {
+					request= null;
+				}
+			}
+		}
+		var uriPhp;
+		 	if(window.location.hostname =="localhost"){
+		 		uriPhp = '/azai19b/themes/AzaiShop/assets/php2/';
+		 	}else{
+		 		uriPhp = '/themes/AzaiShop/assets/php2/';
+		 		console.log(window.location.origin + uriPhp+'calculadora.php');
+		 	}
+
+		var url= uriPhp+ "/emailvalidation.php";
+		var emailaddress= $(this);
+		var emailaddressval= emailaddress.val();
+		console.log(emailaddressval);
+		var vars= "email="+emailaddressval;
+		request.open("POST", url, true);
+
+		request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+		request.onreadystatechange= function() {
+			if (request.readyState == 4 && request.status == 200) {
+				var return_data=  request.responseText;
+				var textvalidation = "Invalid email address ";
+
+					$('.emailvalidationNotification').remove();
+					if(request.responseText.trim() == textvalidation.trim()){
+						$(emailaddress).after("<p style='color:red;' class='emailvalidationNotification'>"+return_data+"</p>");
+					}
+				//console.log(return_data);
+				//console.log(this);
+			}
+		}
+		request.send(vars);
+	}
 });
