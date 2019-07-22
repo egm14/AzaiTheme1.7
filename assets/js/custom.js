@@ -191,7 +191,7 @@ $(document).ready(function(){
 	 /*==================== CHANGE BEHAVIOR CUENTO =======================*/
 	 $('#checkout-payment-step').on('click', ".paypal-option-payment", function(){
 	 		$('#payment-confirmation').find(".btn-primary").addClass("button-jittery");
-	 		console.log("Cambiando buttons pago debido a Paypal");
+	 		//console.log("Cambiando buttons pago debido a Paypal");
 	 });
 
 
@@ -240,14 +240,14 @@ $(document).ready(function(){
 		 });
 		 $("ul.variant-links.list-inline").on('click', function(dt){
 	 		openLoader();
-	 		console.log("click sobre color");
+	 		//console.log("click sobre color");
 	 		//console.log(dt);
 		 });
 		 $("#_mobile_quotecart").find('.quotation_cart .header i').on('click', function(dt){
 	 		console.log($('#_mobile_quotecart').find('a.quote-summary').length);
 	 		if($('#_mobile_quotecart').find('a.quote-summary').length > 0){
 	 		openLoader();
-	 		console.log("click sobre color");
+	 		//console.log("click sobre color");
 			}
 		 });
 
@@ -347,7 +347,7 @@ $(document).ready(function(){
 	 		type: 'post',
 	 		beforeSend: function(){
 	 			//console.log("Enviando datos a la calculadora.");
-	 			console.log("qty: " + parametros.prodqty + " price: " + parametros.prodprice + " Data-pack: " + parametros.QtyxData);
+	 			//console.log("qty: " + parametros.prodqty + " price: " + parametros.prodprice + " Data-pack: " + parametros.QtyxData);
 	 			//console.log(url.value);
 	 		},
 	 		success: function(resultado, text){
@@ -355,12 +355,12 @@ $(document).ready(function(){
 	 				
 	 			$('#table_qty_qty').html(parametros.QtyxData);
 	 			//console.log("Resultado obtenido");
-	 			console.log(resultado);
+	 			//console.log(resultado);
 	 			//console.log('------------------------------');
 	 			giveTotalQuote();
 	 		},
 	 		 error: function (request, status, error) {
-	 		 	console.log("Hay un error: " + error);
+	 		 	//console.log("Hay un error: " + error);
 	 		}
 	 	});
 	 }
@@ -406,7 +406,7 @@ $(document).ready(function(){
 
 
 	function emailvalidation() {
-		console.log("Validando email");
+		//console.log("Validando email");
 		//console.log(this);
 
 		var request;
@@ -432,13 +432,13 @@ $(document).ready(function(){
 		 		uriPhp = '/azai19b/themes/AzaiShop/assets/php2/';
 		 	}else{
 		 		uriPhp = '/themes/AzaiShop/assets/php2/';
-		 		console.log(window.location.origin + uriPhp+'calculadora.php');
+		 		//console.log(window.location.origin + uriPhp+'calculadora.php');
 		 	}
 
 		var url= uriPhp+ "/emailvalidation.php";
 		var emailaddress= $(this);
 		var emailaddressval= emailaddress.val();
-		console.log(emailaddressval);
+		//console.log(emailaddressval);
 		var vars= "email="+emailaddressval;
 		request.open("POST", url, true);
 
