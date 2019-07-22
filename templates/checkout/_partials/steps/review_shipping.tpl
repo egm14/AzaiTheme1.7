@@ -68,9 +68,9 @@
                             {if ($customer.addresses[$cart.id_address_delivery].country == 'Dominican Republic' || $customer.addresses[$cart.id_address_delivery].country == 'República Dominicana')}
                               <br />
                                 <ol style="list-style:disc;padding-left:10px;text-align:left;">
-                                <li style="margin-bottom:.4rem">{l s='Delivery time:'}&nbsp;{$carrier.delay}&nbsp;</li>
-                                <li style="margin-bottom:.4rem">{l s='Le enviaremos un correo eléctrico con las instrucciones y el número de identificación de su pedido, el cual le permitirá dar seguimiento a su paquete (Traking number).'}</li>
-                                <li>{l s='Al momento de la entrega del paquete  lo estaremos contactando a travez de su número de teléfono. Así garantizamos una entrega satisfactoria.'}</li>
+                                <li style="margin-bottom:.4rem">{l s='Delivery time:' d='Shop.Theme.Checkout'}&nbsp;{$carrier.delay}&nbsp;</li>
+                                <li style="margin-bottom:.4rem">{l s='Le enviaremos un correo eléctrico con las instrucciones y el número de identificación de su pedido, el cual le permitirá dar seguimiento a su paquete (Traking number).' d='Shop.Theme.Checkout'}</li>
+                                <li>{l s='Al momento de la entrega del paquete  lo estaremos contactando a travez de su número de teléfono. Así garantizamos una entrega satisfactoria.' d='Shop.Theme.Checkout'}</li>
                               </ol>
                             {else}
                             <span class="carrier-delay">{$carrier.delay}</span>
@@ -97,7 +97,7 @@
           <div class="order-options">
             {if ($customer.addresses[$cart.id_address_delivery].country == 'Unites State' || $customer.addresses[$cart.id_address_delivery].country == 'Estados Unidos' || $customer.addresses[$cart.id_address_delivery].country == 'EE.UU.')  && ($carrier.id != 102)}
               <!-- Sizechard -->
-                <span class="zone_map" data-toggle="modal" data-target="#maptime_modal"><a class="sizes-chart" href="#maptime_modal" style="background-color:black;text-decoration:underline!important; color:white; text-align:right; padding:5px 10px!important; text-decoration:none; border-radius:10px;">{l s='Consult transit time by state'}</a></span>
+                <span class="zone_map" data-toggle="modal" data-target="#maptime_modal"><a class="sizes-chart" href="#maptime_modal" style="background-color:black;text-decoration:underline!important; color:white; text-align:right; padding:5px 10px!important; text-decoration:none; border-radius:10px;">{l s='Consult transit time by state' d='Shop.Theme.Checkout'}</a></span>
                 
               
 
@@ -123,7 +123,7 @@
               <span class="custom-checkbox">
                 <input type="checkbox" id="input_recyclable" name="recyclable" value="1" {if $recyclable} checked {/if}>
                 <span><i class="fa fa-check rtl-no-flip checkbox-checked" aria-hidden="true"></i></span>
-                <label for="input_recyclable">{l s='I would like to receive my order in recycled packaging.' d='Shop.Theme.Checkout'}</label>
+                <label for="input_recyclable">{l s='I would like to receive my order in recycled packaging.' d='Shop.Theme.Checkout' }</label>
               </span>
             {/if}
 

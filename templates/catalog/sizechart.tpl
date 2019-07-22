@@ -27,7 +27,7 @@
 <!-- Size Chart Dinamic -->
                   {if ({$product.category} == 'rings') or ({$product.category} == 'jewelry-rings')}
                       <!-- Sizechard -->
-						<span class="size-chart-container" data-toggle="modal" data-target="#sizechartmodal"><a class="sizes-chart" href="#sizechartmodal">{l s='Sizes chart Rings'}</a></span>
+						<span class="size-chart-container" data-toggle="modal" data-target="#sizechartmodal"><a class="sizes-chart" href="#sizechartmodal">{l s='Sizes chart Rings' d='Shop.Theme.Global'}</a></span>
                       	<!-- Modal -->
 						<div class="modal fade" id="sizechartmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 						  <div class="modal-dialog modal-dialog-centered" role="document">
@@ -47,7 +47,7 @@
                       </script>
                     {elseif ({$product.category} == 'jewelry')}
                      <!-- Sizechard -->
-						<span class="size-chart-container" data-toggle="modal" data-target="#sizechartmodal"><a class="sizes-chart" href="#sizechartmodal">{l s='Sizes chart Jewelry 2'}</a></span>
+						<span class="size-chart-container" data-toggle="modal" data-target="#sizechartmodal"><a class="sizes-chart" href="#sizechartmodal">{l s='Sizes chart Jewelry 2' d='Shop.Theme.Global'}</a></span>
                       	<!-- Modal -->
 						<div class="modal fade" id="sizechartmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 						  <div class="modal-dialog modal-dialog-centered" role="document">
@@ -74,7 +74,7 @@
                           console.log('Cualquier otra categoria');
                         </script>
                         <!-- Sizechard -->
-						<span class="size-chart-container" data-toggle="modal" data-target="#sizechartmodal"><a class="sizes-chart" href="#sizechartmodal">{l s='Sizes chart'}</a></span>
+						<span class="size-chart-container" data-toggle="modal" data-target="#sizechartmodal"><a class="sizes-chart" href="#sizechartmodal">{l s='Sizes chart' d='Shop.Theme.Global'}</a></span>
 
 						<!-- Modal -->
 						<div class="modal fade" id="sizechartmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

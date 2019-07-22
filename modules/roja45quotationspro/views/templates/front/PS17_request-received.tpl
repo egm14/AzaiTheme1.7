@@ -20,7 +20,7 @@
 {block name='page_content'}
 <div class="quotationspro_request_dialog_overlay"></div>
     <div class="box">
-        <p>{l s='Many thanks, we have received your request.  We will contact you with your quotation as soon as possible.' d='Shop.Theme.Global'}</p>
+        <p>{l s='Many thanks, we have received your request.  We will contact you with your quotation as soon as possible.' mod='roja45quotationspro'}</p>
     </div>
     <p class="quote_navigation clearfix">
         <a href="{$home_url}" title="{l s='Home' mod='roja45quotationspro'}" class="pull-right button-exclusive btn btn-default">

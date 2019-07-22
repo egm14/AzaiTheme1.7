@@ -29,9 +29,9 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 {/block}
   {if $shop.name == $azaimayoreo}
-    <div id="ship"><div class="ship-text">{l s='Para realizar compra debes registrate.'}</div></div>
+    <div id="ship"><div class="ship-text">{l s='Para realizar compra debes registrate.' d='Shop.Theme.Global'}</div></div>
   {else}
-   <div id="ship"><div class="ship-text">{l s='Free Shipping Over $90 USA | Over $150 México (1 - 2 days) | Rep. Dom. Envío Gratis (2 - 3 Dias)'}</div></div>
+   <div id="ship"><div class="ship-text">{l s='Free Shipping Over $90 USA | Over $150 México (1 - 2 days) | Rep. Dom. Envío Gratis (2 - 3 Dias)' d='Shop.Theme.Global'}</div></div>
   {/if}
   
 {block name='head_seo'}

@@ -89,7 +89,7 @@
               {hook h='displayProductPriceBlock' product=$product type="before_price"}
               <span class="sr-only">{l s='Price' d='Shop.Theme.Catalog'}</span>
               {if $shop.name == $azaimayoreo}
-            <span itemprop="price" class="price">{l s='Unit price'} {$product.price}</span>
+            <span itemprop="price" class="price">{l s='Unit price' d='Shop.Theme.Catalog'} {$product.price}</span>
             {else}
              <span itemprop="price" class="price">{$product.price}</span>
             {/if}

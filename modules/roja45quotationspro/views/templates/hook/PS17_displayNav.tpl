@@ -71,7 +71,7 @@
                     {/foreach}
                     <p class="cart-buttons">
                         <a class="btn btn-primary btn-request-quote" href="{url entity='module' name='roja45quotationspro' controller='QuotationsProFront' params = ['action' => 'quoteSummary']}" title="Check out" rel="nofollow">
-                            <span>{l s='Request Quote' d='Shop.Theme.Actions'}</span>
+                            <span>{l s='Request Quote' mod='roja45quotationspro'}</span>
                         </a>
                     </p>
                 </dl>

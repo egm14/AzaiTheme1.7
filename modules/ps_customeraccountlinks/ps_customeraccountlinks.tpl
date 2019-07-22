@@ -38,7 +38,7 @@
           {$my_account_url.url}
       </li>
 	  	<li>
-          <a href="{$urls.pages.register}" class="Registro-personal-link">{l s='Crear nueva cuenta '}</a>
+          <a href="{$urls.pages.register}" class="Registro-personal-link">{l s='Crear nueva cuenta ' d='Shop.Theme.Customeraccount'}</a>
         </li>
     {foreach from=$my_account_urls item=my_account_url}
 
