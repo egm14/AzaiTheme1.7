@@ -905,7 +905,8 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
  .block-category {display: none;}
  /*Display Buttom Quantity in Product*/
  /*.product-quantity.d-flex.flex-wrap.align-content-center {display: none!important;}*/
-
+/*Display pagina Sitemap dentro de Sitemap*/
+a#sitemap-page {display: none;}
  
 
 /***************************************************************
