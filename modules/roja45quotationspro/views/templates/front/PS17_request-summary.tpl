@@ -264,7 +264,7 @@
                 </div>
                 <div class="customer-copy-checkbox offset-lg-4 col-lg-2">
                     <div class="row">
-                        <label class="field-label pull-right" for="ROJA45QUOTATIONSPRO_CUSTOMER_COPY"><input type="checkbox" class="form-control" id="ROJA45QUOTATIONSPRO_CUSTOMER_COPY" name="ROJA45QUOTATIONSPRO_CUSTOMER_COPY" checked/> {l s='Receive a copy on my email.' mod='roja45quotationspro'}</label>
+                        <label class="field-label pull-right" for="ROJA45QUOTATIONSPRO_CUSTOMER_COPY"><input type="checkbox" class="form-control" id="ROJA45QUOTATIONSPRO_CUSTOMER_COPY" name="ROJA45QUOTATIONSPRO_CUSTOMER_COPY" checked/> {l s='Receive a copy on my email.' d="Shop.Theme.Actions"}</label>
                     </div>
                 </div>
             </div>
