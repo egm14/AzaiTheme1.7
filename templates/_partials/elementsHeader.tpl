@@ -44,7 +44,3 @@
   <!-- Alert account created end -->
 {/block}
 
-
-{*ASSIGN GLOBAL VARIABLES TO USE ON AZAI*}
-{assign var=packageAzai value="9" scope="global"}
-{assign var=azaimayoreo value="azaimayoreo" scope="global"}
