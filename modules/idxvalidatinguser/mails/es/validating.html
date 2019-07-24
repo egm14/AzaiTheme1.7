@@ -4,9 +4,29 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<title>Mensaje desde {shop_name}</title>
-		
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+  #outlook a { padding: 0; }
+  .ReadMsgBody { width: 100%; }
+  .ExternalClass { width: 100%; }
+  .ExternalClass * { line-height:100%; }
+  body { margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+  table, td { border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+  p { display: block; margin: 13px 0; }
 
-		<style>	@media only screen and (max-width: 300px){ 
+
+
+  @media only screen and (max-width:480px) {
+    @-ms-viewport { width:320px; }
+    @viewport { width:320px; }
+  }
+
+
+@media only screen and (max-width: 300px){ 
 				body {
 					width:218px !important;
 					margin:auto !important;
@@ -23,6 +43,7 @@
 				.table-recap tr td, .conf_body td{text-align:center !important;}	
 				.address{display: block !important;margin-bottom: 10px !important;}
 				.space_address{display: none !important;}	
+
 			}
 	@media only screen and (min-width: 301px) and (max-width: 500px) { 
 				body {width:308px!important;margin:auto!important;}
@@ -31,9 +52,13 @@
 				.table-recap table, .table-recap thead, .table-recap tbody, .table-recap th, .table-recap td, .table-recap tr { 
 					display: block !important; 
 				}
-				.table-recap{width: 293px !important;}
+				.table-recap{width: 295px !important;}
 				.table-recap tr td, .conf_body td{text-align:center !important;}
-				
+				table.menu-header-mail{font-size:10px;}/*Agregado*/
+				table.menu-header-mail tr td {padding:5px 5px!important;}/*Agregado*/
+				table.footer-mail a, table.footer-mail p{font-size:10px;}/*Agregado*/
+				table.footer-mail p{margin:0px;}/*Agregado*/
+				table.footer-mail img.slogan{height:25px!important;}/*Agregado*/
 			}
 	@media only screen and (min-width: 501px) and (max-width: 768px) {
 				body {width:478px!important;margin:auto!important;}
@@ -45,68 +70,160 @@
 				.table {width:285px;margin:auto!important;}	
 				.logo, .titleblock, .linkbelow, .box, .footer, .space_footer{width:auto!important;display: block!important;}
 				
-				.table-recap{width: 285px!important;}
+				.table-recap{width: 295px!important;}
 				.table-recap tr td, .conf_body td{text-align:center!important;}	
 				.address{display: block !important;margin-bottom: 10px !important;}
 				.space_address{display: none !important;}	
 			}
+			    /* Client reset */
+      #outlook a{padding:0;}
+      .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%!important;}
+      body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+      table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+      img{-ms-interpolation-mode:bicubic;}
+      /* bring inline */
+      img {display: block; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;}
+      a img {border: none;}
+      a {text-decoration: none; color: #0DDDC2;} /* text link */
+      
+      /* Responsive */
+      @media only screen and (max-device-width: 450px) {
+        #content-wrapper, #body-wrapper {
+          width: 100%!important;
+        }
+        .c-responsive-container {
+          display: inline-block;
+          width: 100%
+          padding: 0 16px;
+        }
+        .c-table-responsive {
+          width: 100%;
+        }
+        .button {
+          width: 100%!important;
+          max-width: 300px;
+        }
+      }
+  @media only screen and (min-width:480px) {
+    .mj-column-per-100, * [aria-labelledby="mj-column-per-100"] { width:100%!important; }
+.mj-column-per-80, * [aria-labelledby="mj-column-per-80"] { width:80%!important; }
+.mj-column-per-30, * [aria-labelledby="mj-column-per-30"] { width:30%!important; }
+.mj-column-per-70, * [aria-labelledby="mj-column-per-70"] { width:70%!important; }
+  }
 </style>
+</head>
+<body style="background: #E3E5E7;">
+  <div style="background-color:#E3E5E7;"><div style="margin:0 auto;max-width:600px;background:white;"><table cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:white;" align="center" border="0"><tbody><tr><!----------------------------- Start Header MAIL ---------------------- -->
+				<table style="width:100%;margin-top:10px;">
+		
+					<tr>
+						<td align="center" class="logo" style="padding:7px 0;">
+							<a title="{shop_name}" href="{shop_url}" style="color:#337ff1">
+								<img style="max-height:70px;" src="{shop_logo}" alt="{shop_name}" />
+							</a>
+						</td>
+					</tr>
 
-	</head>
-	<body style="-webkit-text-size-adjust:none;background-color:#fff;width:650px;font-family:Open-sans, sans-serif;color:#555454;font-size:13px;line-height:18px;margin:auto">
-		<table class="table table-mail" style="width:100%;margin-top:10px;-moz-box-shadow:0 0 5px #afafaf;-webkit-box-shadow:0 0 5px #afafaf;-o-box-shadow:0 0 5px #afafaf;box-shadow:0 0 5px #afafaf;filter:progid:DXImageTransform.Microsoft.Shadow(color=#afafaf,Direction=134,Strength=5)">
-			<tr>
-				<td class="space" style="width:20px;padding:7px 0">&nbsp;</td>
-				<td align="center" style="padding:7px 0">
-					<table class="table" bgcolor="#ffffff" style="width:100%">
-						<tr>
-							<td align="center" class="logo" style="border-bottom:4px solid #333333;padding:7px 0">
-								<a title="{shop_name}" href="{shop_url}" style="color:#337ff1">
-									<img src="{shop_logo}" alt="{shop_name}" />
-								</a>
-							</td>
-						</tr>
+					<tr>
+						<td align="center" style="border-bottom:4px solid #333333">
+							<!-------------------  MENU HEADER MAIL ---------------------- -->
+							<table class="menu-header-mail">
+								<tr align="center">
+									<td style="padding:10px 15px;">
+										<a style="text-decoration:none; color:black;" href="{shop_url}8-dresses">VESTIDOS</a>
+									</td>
+									<td style="padding:10px 15px;">
+										<a style="text-decoration:none; color:black;" href="{shop_url}4-tops">FALDAS</a>
+									</td>
+									<td style="padding:10px 15px;">
+										<a style="text-decoration:none; color:black;" href="{shop_url}13-bottoms">PANTALONES</a>
+									</td style="padding:10px 15px;">
+									<!--<td>
+										<a style="text-decoration:none; color:black;" href="{shop_url}/gift-card">GIFT CARD</a>
+									</td>-->
+									<td style="padding:10px 15px;">
+										<a style="text-decoration:none; color:black;" href="{shop_url}12-accesories">ACCESORIOS</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- --------------------------- End Header MAIL ---------------------- --></tr></tbody></table></div><div style="margin:0 auto;max-width:600px;background:#222228;"><table cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#222228;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;font-size:0px;padding:20px 0px;"><div aria-labelledby="mj-column-per-80" class="mj-column-per-80" style="vertical-align:top;display:inline-block;font-size:13px;text-align:left;width:100%;"><table cellpadding="0" cellspacing="0" style="vertical-align:top;" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:10px 25px;padding-top:30px;" align="center"><table cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0"><tbody><tr><td style="width:80px;"><img alt="Zero To Launch" title="" height="auto" src="https://cdn.auth0.com/website/emails/product/top-verify.png" style="border:none;border-radius:;display:block;outline:none;text-decoration:none;width:100%;height:auto;" width="80"></td></tr></tbody></table></td></tr><tr><td style="word-break:break-word;font-size:0px;padding:0px 20px 0px 20px;" align="center"><div style="cursor:auto;color:white;font-family:'Avenir Next', Avenir, sans-serif;font-size:32px;line-height:60ps;">
+            Verificación de cuenta
+          </div></td></tr></tbody></table></div></td></tr></tbody></table></div><div style="margin:0 auto;max-width:600px;background:white;"><table cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:white;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;font-size:0px;padding:40px 25px 0px;"><div aria-labelledby="mj-column-per-100" class="mj-column-per-100" style="vertical-align:top;display:inline-block;font-size:13px;text-align:left;width:100%;"><table cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px 0px 25px;" align="left"><div style="cursor:auto;color:#222228;font-family:'Avenir Next', Avenir, sans-serif;font-size:18px;font-weight:500;line-height:30px;">
+            Gracias por su registro:
+          </div></td></tr></tbody></table></div><div aria-labelledby="mj-column-per-30" class="mj-column-per-30" style="vertical-align:top;display:inline-block;font-size:13px;text-align:left;width:100%;"><table cellpadding="0" cellspacing="0" width="100%" border="0"><tbody></tbody></table></div><div aria-labelledby="mj-column-per-70" class="mj-column-per-70" style="vertical-align:top;display:inline-block;font-size:13px;text-align:left;width:100%;"><table cellpadding="0" cellspacing="0" width="100%" border="0"></table></div></td></tr></tbody></table></div><div style="margin:0 auto;max-width:600px;background:white;"><table cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:white;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;font-size:0px;padding:0px 30px;"><p style="font-size:1px;margin:0 auto;border-top:1px solid #E3E5E7;width:100%;"></p></td></tr></tbody></table></div><div style="margin:0 auto;max-width:600px;background:white;"><table cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:white;" align="center" border="0"><tbody><tr></tr></tbody></table></div><div style="margin:0 auto;max-width:600px;background:white;"><table cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:white;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;font-size:0px;padding:20px 0px;"><div aria-labelledby="mj-column-per-100" class="mj-column-per-100" style="vertical-align:top;display:inline-block;font-size:13px;text-align:left;width:100%;"><table cellpadding="0" cellspacing="0" style="vertical-align:top;" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px 25px 15px;" align="left"><div style="cursor:auto;color:#222228;font-family:'Avenir Next', Avenir, sans-serif;font-size:16px;line-height:30px;">
+            Se ha recibido su petición de registro. Sin embargo, ésta requiere de una validación previa por el administrador de la tienda.
+          </div></td></tr></tbody></table></div><table cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#F5F7F9;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;font-size:0px;padding:20px 0px;"><div aria-labelledby="mj-column-per-100" class="mj-column-per-100" style="vertical-align:top;display:inline-block;font-size:13px;text-align:left;width:100%;"><table cellpadding="0" cellspacing="0" style="vertical-align:top;" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px 20px;" align="center"><div style="cursor:auto;color:#222228;font-family:'Avenir Next', Avenir, sans-serif;font-size:13px;line-height:20px;">
+            Tenga en cuenta que esta validación puede tomar hasta 24/horas laborable, ya que su cuenta esta siendo procesada para validar los datos suministrados anteriormente.
+          </div></td></tr></tbody></table></div></td></tr></tbody></table>
+		  <div aria-labelledby="mj-column-per-100" class="mj-column-per-100" style="vertical-align:top;display:inline-block;font-size:13px;text-align:left;width:100%;"><table cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:10px 25px;" align="center"><table cellpadding="0" cellspacing="0" align="center" border="0"><tbody><tr><td style="border-radius:3px;color:white;cursor:auto;" align="center" valign="middle" bgcolor="#000000"><a href="#" style="display:inline-block;text-decoration:none;background:#EB54240;border-radius:3px;color:white;font-family:'Avenir Next', Avenir, sans-serif;font-size:14px;font-weight:500;line-height:35px;padding:10px 25px;margin:0px;" target="_blank">
+            CONTACTAR AL ADMINISTRADOR
+          </a></td></tr></tbody></table></td></tr></tbody></table></div></td>
+		  
+		  <!----------------------------- Start Footer ------------------------>
+				<table align="center" class="footer-mail" style="width:100%;margin-top:10px;" >
+					<tr><p style="font-size:1px;margin:0 auto;border-top:1px solid #E3E5E7;width:100%;"></p><td>
+					<tr>
+						<td align="center" class="footer" style="padding:7px 0;">
+						<!-- <span><a href="{shop_url}" style="color:#337ff1">{shop_name}</a> powered by <a href="http://www.prestashop.com/" style="color:#337ff1">PrestaShop&trade;</a></span>-->
+						<img class="slogan" style="height:30px" src="https://azai.com/themes/AzaiShop/mails/mail_element/slogan.png" alt="Live the Azai Experience" />
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="center">
+							<table>
+								<tr>
+									<td>
+										<a style="padding:0px 5px" href="https://www.facebook.com/azaistore"><img style="height:30px" src="https://azai.com/themes/AzaiShop/mails/mail_element/facebook.png" /></a>
+									</td>
+									<td>
+										<a href="https://twitter.com/azaistore" style="padding:0px 5px" ><img style="height:30px" src="https://azai.com/themes/AzaiShop/mails/mail_element/instagram.png" /></a>
+										</td>
+									<td>
+										<a href="https://www.instagram.com/azaistore/" style="padding:0px 5px" ><img style="height:30px" src="https://azai.com/themes/AzaiShop/mails/mail_element/twitter.png" /></a>
+										</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" class="footer" style="padding:0px 7px;">
+							<table width="300"">
+								<tr>
+									<td>
+										<p style="text-align:center">AZAI Store ,  275 Miracle Mile, Coral Gables, FL 33134, EE.UU.</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<table style="font-size:10px">
+								<tr>
+									<td>
+										<a href="{shop_url}content/3-terms-and-conditions-of-use" alt="" style="padding:0px 5px;color:gray;" >ABOUT US</a>
+									</td>
+									<td>
+										<a href="{shop_url}content/2-privacy-policies" alt="" style="padding:0px 5px;color:gray;" >PRIVACY POLICY</a>
+									</td>
+									<td>
+										<a href="{shop_url}content/1-shipping-and-delivery" alt="" style="padding:0px 5px;color:gray;" >SHIPPING INFORMATION</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
 
-<tr>
-	<td align="center" class="titleblock" style="padding:7px 0">
-		<font size="2" face="Open-sans, sans-serif" color="#555454">
-			<span class="title" style="font-weight:500;font-size:28px;text-transform:uppercase;line-height:33px">Mensaje de un cliente de {shop_name}</span>
-		</font>
-	</td>
-</tr>
-<tr>
-	<td class="space_footer" style="padding:0!important">&nbsp;</td>
-</tr>
-<tr>
-	<td class="box" style="border:1px solid #D6D4D4;background-color:#FFAC67;padding:7px 0">
-		<table class="table" style="width:100%">
-			<tr>
-				<td width="10" style="padding:7px 0">&nbsp;</td>
-				<td style="padding:7px 0">
-					<font size="2" face="Open-sans, sans-serif" color="#555454">
-						<span style="color:#777">
-							<span style="color:#333"><strong>Gracias por su registro:</strong></span>Se ha recibido su petici&oacute;n de registro. Sin embargo, &eacute;sta requiere de una validaci&oacute;n previa por el administrador de la tienda.<br /><br />
-						</span>
-					</font>
-				</td>
-				<td width="10" style="padding:7px 0">&nbsp;</td>
-			</tr>
-		</table>
-	</td>
-</tr>
-
-						<tr>
-							<td class="space_footer" style="padding:0!important">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="footer" style="border-top:4px solid #333333;padding:7px 0">
-								<span><a href="{shop_url}" style="color:#337ff1">{shop_name}</a> creado por <a href="http://www.prestashop.com/" style="color:#337ff1">PrestaShop&trade;</a></span>
-							</td>
-						</tr>
-					</table>
-				</td>
-				<td class="space" style="width:20px;padding:7px 0">&nbsp;</td>
-			</tr>
-		</table>
+					</td></tr>
+				</table>
+				<!----------------------------- End Footer ------------------------></tr></tbody></table></div><div style="margin:0 auto;max-width:600px;background:#F5F7F9;"><!--table cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#F5F7F9;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;font-size:0px;padding:20px 0px;"><div aria-labelledby="mj-column-per-100" class="mj-column-per-100" style="vertical-align:top;display:inline-block;font-size:13px;text-align:left;width:100%;"><table cellpadding="0" cellspacing="0" style="vertical-align:top;" width="100%" border="0"><tbody><tr><td style="word-break:break-word;font-size:0px;padding:0px 20px;" align="center"><div style="cursor:auto;color:#222228;font-family:'Avenir Next', Avenir, sans-serif;font-size:13px;line-height:20px;">
+            Tenga en cuenta que esta validación puede tomar hasta 24/horas laborable ya que su cuenta esta siendo procesada para validar los datos correspondientes.
+          </div></td></tr></tbody></table></div></td></tr></tbody></table--></div><div></div></div>
+<img src="https://mandrillapp.com/track/open.php?u=9812467&amp;id=bca57efeee894396adad890ad5feefe1" height="1" width="1">
 	</body>
 </html>
