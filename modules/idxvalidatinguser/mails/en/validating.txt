@@ -1,0 +1,15 @@
+
+[{shop_url}] 
+
+Message from a customer register in {shop_name} 
+
+E-MAIL: {email}
+
+MESSAGE: {message}
+
+ORDER ID: {order_name}
+
+ATTACHED FILE: {attached_file} 		 
+
+{shop_name} [{shop_url}]
+
