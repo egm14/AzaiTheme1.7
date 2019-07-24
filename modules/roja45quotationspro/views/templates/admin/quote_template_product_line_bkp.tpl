@@ -38,11 +38,7 @@
         <table class="table">
             <tr>
                 <td>
-                    <span style="color: #444444;font-family: Helvetica, 'Open Sans', Arial, sans-serif;font-size: 13px;">
-                        {if isset($product.reference)}
-                            {$product.reference|escape:'html':'UTF-8'}
-                        {/if}
-                    </span>
+                    <span style="color: #444444;font-family: Helvetica, 'Open Sans', Arial, sans-serif;font-size: 13px;">{if $product.reference}{$product.reference|escape:'html':'UTF-8'}{/if}</span>
                 </td>
             </tr>
         </table>
@@ -68,7 +64,7 @@
     <td colspan=2 style="border:0px solid #D6D4D4;">
         <table class="table">
             <tr>
-                <td>
+                <td align="center">
                     <span style="color: #444444;font-family: Helvetica, 'Open Sans', Arial, sans-serif;font-size: 13px;">{$product['qty']|escape:'html':'UTF-8'}</span>
                 </td>
             </tr>
