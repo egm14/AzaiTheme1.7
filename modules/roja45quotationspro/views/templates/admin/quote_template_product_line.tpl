@@ -25,7 +25,7 @@
     <td colspan=1 style="border:0px solid #D6D4D4;border-bottom:1px solid #D6D4D4;">
         {if isset($product.image) && $product.image->id}<img src="{$product.image_tag|escape:'html':'UTF-8'}" alt="{$product['product_title']|escape:'html':'UTF-8'}" class="img img-thumbnail" />{/if}
     </td>
-    <td colspan=3 style="border:0px solid #D6D4D4;border-bottom:1px solid #D6D4D4;">
+    <td colspan=3 style="border:0px solid #D6D4D4;border-bottom:1px solid #D6D4D4; padding-left:15px;">
         <span style="color: #444444;font-family: Helvetica, 'Open Sans', Arial, sans-serif;font-size: 13px;">{$product['product_title']|escape:'html':'UTF-8'}</span>
     </td>
     <td align="center" colspan=2 style="border:0px solid #D6D4D4;border-bottom:1px solid #D6D4D4;">
