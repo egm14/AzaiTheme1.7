@@ -1,0 +1,9 @@
+Hi {firstname} {lastname},
+
+Your account for {shop_name} has been activated
+
+Important Tips:
+
+Now you'll be able to login and you can now place orders on our shop: <a href="{shop_url}">{shop_name}
+
+{shop_url} 

@@ -1,0 +1,8 @@
+Hi {firstname} {lastname},
+
+New notice of validating user of your shop {shop_name}.
+
+
+New user is registered. You can enter in your shop to activate it: <a href="{shop_url}">{shop_name}
+
+{shop_url} 

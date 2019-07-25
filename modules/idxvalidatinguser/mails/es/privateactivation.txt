@@ -1,0 +1,9 @@
+Hi {firstname} {lastname},
+
+Tu cuenta para {shop_name} ha sido activada.
+
+Importante:
+
+Ahora podrás identificarte y hacer pedidos normalmente en la tienda: {shop_name}
+
+{shop_url} 

@@ -1,0 +1,8 @@
+Hi {firstname} {lastname},
+
+Tienes un nuevo aviso para validacion de usuario desde {shop_name}.
+
+
+Un nuevo usuari se ha registrado, puedes entrar en tu tienda para activarle: {shop_name}
+
+{shop_url} 
