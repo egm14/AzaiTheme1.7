@@ -481,12 +481,12 @@ $_MODULE['<{roja45quotationspro}prestashop>quote_template_689202409e48743b914713
 $_MODULE['<{roja45quotationspro}prestashop>quote_template_64bcce158bc2b1cd10527b126e3db2ae'] = 'Valor (inc.)';
 $_MODULE['<{roja45quotationspro}prestashop>quote_template_ea9cf7e47ff33b2be14e6dd07cbcefc6'] = 'Envio';
 $_MODULE['<{roja45quotationspro}prestashop>quote_template_2605fbb693837be42d0cd0e701cb5aa3'] = 'Manejo';
-$_MODULE['<{roja45quotationspro}prestashop>quote_template_2295fa1ce03369f498809b8af73f71dd'] = 'Nombe del descuento';
+$_MODULE['<{roja45quotationspro}prestashop>quote_template_2295fa1ce03369f498809b8af73f71dd'] = 'Nombre del descuento';
 $_MODULE['<{roja45quotationspro}prestashop>quote_template_b2f40690858b404ed10e62bdf422c704'] = 'Total';
 $_MODULE['<{roja45quotationspro}prestashop>quote_template_a30223a3070685abab6c21b3923ad3ef'] = 'Tipo de cambio';
 $_MODULE['<{roja45quotationspro}prestashop>quote_template_f31f59b4945d154b4df804883a370c72'] = 'Productos subtotales (exc)';
 $_MODULE['<{roja45quotationspro}prestashop>quote_template_9d5bf15117441a1b52eb1f0808e4aad3'] = 'Descuentos';
-$_MODULE['<{roja45quotationspro}prestashop>quote_template_dc47532a090f0ef4acf1ff560621cc7d'] = 'Cargas (inc,)';
+$_MODULE['<{roja45quotationspro}prestashop>quote_template_dc47532a090f0ef4acf1ff560621cc7d'] = 'Cargos (inc,)';
 $_MODULE['<{roja45quotationspro}prestashop>quote_template_352d47fe03dd65a78e88d1a914d00faf'] = 'Envio (inc.)';
 $_MODULE['<{roja45quotationspro}prestashop>quote_template_ebb3b0383b3e56f68576f58c5a3c509d'] = 'Manejo (inc.)';
 $_MODULE['<{roja45quotationspro}prestashop>quote_template_b0f79042ac83c64f3ccc42268c8ade26'] = 'Total de productos';
@@ -523,7 +523,7 @@ $_MODULE['<{roja45quotationspro}prestashop>quote_template_txt_totals_13fecddc398
 $_MODULE['<{roja45quotationspro}prestashop>quote_template_txt_totals_144a2cdf2c7d87bc20bf340bc0bba604'] = 'Manejo (exc.)';
 $_MODULE['<{roja45quotationspro}prestashop>quote_template_txt_totals_96b0141273eabab320119c467cdcaf17'] = 'Total';
 $_MODULE['<{roja45quotationspro}prestashop>send_quote_7dbd3d0057c0fadc146b3da299ffbc44'] = 'Estimado %1$s %2$s';
-$_MODULE['<{roja45quotationspro}prestashop>send_quote_70f043e9d44d4c945da763e7dcff8a59'] = 'Muchas gracias por su solicitud. Nos complace proporcionarle a continuación nuestra oferta para los artículos que solicitó.';
+$_MODULE['<{roja45quotationspro}prestashop>send_quote_70f043e9d44d4c945da763e7dcff8a59'] = 'Gracias por tu aplicación. Estamos encantados de compartir la cotización del pedido aprobado.';
 $_MODULE['<{roja45quotationspro}prestashop>send_quote_c4646218df0edcdfa5191f7c126c58c9'] = 'Compre esta cotización ahora haciendo clic en el botón de abajo.';
 $_MODULE['<{roja45quotationspro}prestashop>send_quote_8a24700c3cd8335087e4fa216fdebdfc'] = 'COMPRA AHORA';
 $_MODULE['<{roja45quotationspro}prestashop>send_quote_61bb7939b715ddac1fac8fc07575ff73'] = 'Deberá iniciar sesión en su cuenta para ver el precio ofrecido.';

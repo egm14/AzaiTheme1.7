@@ -41,7 +41,7 @@
                             <tr>
                                 <td class="linkbelow" style="padding:7px 0">
                                     <p style="font-family: Helvetica, 'Open Sans', Arial, sans-serif;border:0;margin:3px 0 7px;font-weight:500;font-size:14px;padding-bottom:10px">{l s='Many thanks for your request.' mod='roja45quotationspro'}</p>
-                                    <p style="font-family: Helvetica, 'Open Sans', Arial, sans-serif;border:0;margin:3px 0 7px;font-weight:500;font-size:14px;padding-bottom:10px">{l s='Thank you for your application. We are happy to share the approved order quote.' mod='roja45quotationspro'}</p>
+                                    <p style="font-family: Helvetica, 'Open Sans', Arial, sans-serif;border:0;margin:3px 0 7px;font-weight:500;font-size:14px;padding-bottom:10px">{l s='We are pleased to provide below our quotation for the items you requested.' mod='roja45quotationspro'}</p>
                                 </td>
                             </tr>
                         </table>
