@@ -22,7 +22,7 @@
 * @copyright 2007-2014 PrestaShop SA
 
 * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
-*  International Registered Trademark & Property of PrestaShop SA
+*  International Registered Trademark & Property of PrestaShop SA f
 */
 
 header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");

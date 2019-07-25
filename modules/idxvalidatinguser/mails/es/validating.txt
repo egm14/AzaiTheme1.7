@@ -6,6 +6,7 @@ DIRECCIÓN DE E-MAIL: {email}
 
 MENSAJE: {message}
 
+
 ID DEL PEDIDO: {order_name}
 
 ARCHIVO ADJUNTO: {attached_file} 		 
