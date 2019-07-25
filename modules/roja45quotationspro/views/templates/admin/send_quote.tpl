@@ -61,10 +61,10 @@
                                 <td width="50%" style="border-top:1px solid #D6D4D4;border-bottom:1px solid #D6D4D4;">
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
-                                            <td align="center" style="font-family: Helvetica, 'Open Sans', Arial, sans-serif;border-bottom:1px solid #D6D4D4;margin:3px 0 7px;font-weight:500;font-size:14px;padding-bottom:10px"><p>{l s='Proceed with the payment of your order by clicking on the button below.' mod='roja45quotationspro'}</p></td>
+                                            <td align="center" style="font-family: Helvetica, 'Open Sans', Arial, sans-serif;border-bottom:1px solid #D6D4D4;margin:3px 0 7px;font-weight:500;font-size:14px;padding-bottom:10px"><p>{l s='Purchase this quote now by clicking the button below.' mod='roja45quotationspro'}</p></td>
                                         </tr>
                                         <tr>
-                                            <td align="center" bgcolor="#000"  aling="center" style="padding: 12px 18px 12px 18px; border-radius:3px"><p><a href="{$purchase_link}" target="_blank" style="font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; display: inline-block; padding:12px 18px 12px 20px;">{l s='PAY NOW' mod='roja45quotationspro'} &rarr;</a></p></td>
+                                            <td align="center" bgcolor="#000"  aling="center" style="padding: 12px 18px 12px 18px; border-radius:3px"><p><a href="{$purchase_link}" target="_blank" style="font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; display: inline-block; padding:12px 18px 12px 20px;">{l s='BUY NOW' mod='roja45quotationspro'} &rarr;</a></p></td>
                                         </tr>
                                         <tr>
                                             <td align="center" class="linkbelow" style="font-family: Helvetica, 'Open Sans', Arial, sans-serif;border-bottom:1px solid #D6D4D4;margin:3px 0 7px;font-weight:500;font-size:14px;padding-bottom:10px"><p>{l s='You will need to log in to your account to see the offered price.' mod='roja45quotationspro'}</p></td>
