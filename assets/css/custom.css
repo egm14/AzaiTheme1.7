@@ -896,6 +896,24 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
   background-color:black;
   color:white;
  }
+ /* Add Format Menssage Private account Azai Wholesale*/
+#create-account-form div#alertprivate {
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+    padding: 10px 0px 10px 10px;
+    margin: 5px 0px 0px 0px;
+    margin-bottom: 10px;
+    /* float: left; */
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    display: flex;
+}
+
+#create-account-form  p#p_marca_right {
+    top: 16px;
+    display: contents;
+}
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/
