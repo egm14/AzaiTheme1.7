@@ -914,6 +914,11 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
     top: 16px;
     display: contents;
 }
+
+#create-account-form i.material-icons {
+    margin: 0px 10px 0px -4px!important;
+    padding: 0px 0px 0px 0px;
+}
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/
