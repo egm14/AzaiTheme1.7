@@ -122,7 +122,7 @@
                 </tbody>
             </table>
         </div>
-        <h3 class="page-heading" style="margin-bottom:1rem;">{l s='Your orden confirmation will been sent at your email' mod='roja45quotationspro'}</h3>
+        <h3 class="page-heading" style="margin-bottom:1rem;">{l s='Please provide the following additional information' mod='roja45quotationspro'}</h3>
 
         <div class="row_2" style="display:none;">
         <div class="collapse-group_2">
