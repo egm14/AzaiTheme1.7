@@ -511,7 +511,35 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
 }
 
 /*------------- Loader -------------*/
-
+.loader-submit-page{
+    position: fixed;
+    z-index: 25000;
+    background: rgba(0,0,0,.85);
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction:column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition:all .3s ease;
+    -o-transition:all .3s ease;
+    transition:all .3s ease;
+  }
+.loader-submit-page .spinner2 div{
+  background-color:white!important;
+}
+.loader-submit-page .loader-submit-text{
+  color:white;
+  margin-top:-50px;
+}
 .loader-page {
     position: fixed;
     z-index: 25000;
@@ -1278,7 +1306,7 @@ nav.icono-menu-mobile a:hover{
     padding:7.5px 0px 7.5px 5px;
   }
   .quotationspro_request.notes{
-    min-height:50px;
+    min-height:43px;
   }
   .quote_navigation .row{
     padding:0px 10px 20px 10px;
@@ -1564,6 +1592,11 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
    /*Alert creadted account*/
   .alert.create-acount.alert-success{
     right:calc(100% - 20em); 
+  }
+
+  /*loader page - quote */
+  .loader-submit-page .loader-submit-text{
+    max-width:300px;
   }
 }   
 /***************************************************************

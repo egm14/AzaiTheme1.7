@@ -29,6 +29,11 @@
       <!--spinner 1<div class="lds-ripple"><div></div><div></div></div>-->
      <!-- spinner 2--><div class="spinner2"><div class="dot1"></div><div class="dot2"></div></div>
   </div> 
+   <div class="loader-submit-page" style="display:none;" >
+      <!--spinner 1<div class="lds-ripple"><div></div><div></div></div>-->
+     <!-- spinner 2--><div class="spinner2"><div class="dot1"></div><div class="dot2"></div></div>
+     <h3 class="loader-submit-text">{l s='Submitting the order, wait a moment...' d='Shop.Theme.Global'}</h3>
+  </div> 
 
    <!-- Alert account create. -->
   <div id="alerts-n">
