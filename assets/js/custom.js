@@ -23,6 +23,9 @@ $(document).ready(function(){
 		$('#js-product-list .product-title').on('click tap', function(){
 			openLoader();
 		});
+		$('button#submitRequest').on('click tap', function(){
+			openLoaderSubmit();
+		});
      	 function openLoader(e){
 			//loader.css({visibility:"visibe",opacity:"100"});
 			loader.show();
@@ -32,6 +35,10 @@ $(document).ready(function(){
 			//loader.css({visibility:"hidden",opacity:"0"});
 			loader.hide();
 			console.log("Estoy cerrando loader");
+	     }
+	     function openLoaderSubmit(e){
+	     	var loaderSubmit = $('.loader-submit-page');
+	     	loaderSubmit.show();
 	     }
 	/*==================== FIX COLOR RULE FILTER - COLUMN LEFT  =======================*/
 	 	
@@ -357,7 +364,8 @@ $(document).ready(function(){
 	 			//console.log("Resultado obtenido");
 	 			//console.log(resultado);
 	 			//console.log('------------------------------');
-	 			giveTotalQuote();
+	 			giveTotalQuote(parametros.proddata);
+	 			//console.log("Esto es un; " + parametros.proddata);
 	 		},
 	 		 error: function (request, status, error) {
 	 		 	//console.log("Hay un error: " + error);
@@ -365,11 +373,12 @@ $(document).ready(function(){
 	 	});
 	 }
 
-	 function giveTotalQuote(){
+	 function giveTotalQuote(PackaValue){
 	 	var formQuote = $('#quote_summary').find('tbody tr.quote_item');
 	 	//console.log(formQuote);
 	 	var conteoTotalQuote = 0;
 	 	var conteoTotalQuantity = 0;
+	 	var conteoTotalQuantityUnid = 0;
 		 	formQuote.each(function(key, value){
 		 		//console.log(value);
 		 		var priceRow = parseFloat($(value).find('span.product-amount')[0].innerText.replace(",", ""));
@@ -379,11 +388,13 @@ $(document).ready(function(){
 
 		 		conteoTotalQuote = conteoTotalQuote+priceRow;
 		 		conteoTotalQuantity = conteoTotalQuantity+qtyRow;
+		 		conteoTotalQuantityUnid = PackaValue*conteoTotalQuantity;
 		 	});
+		 	
 		 	//console.log('------------------------------');
-		 	//console.log(conteoTotalQuote.toLocaleString('currency'));
 		 	$('#quote_summary').find('.product-amount-quote').html(conteoTotalQuote.toLocaleString('en-US'));
 		 	$('#quote_summary').find('.product-amount-quote-qty').html(conteoTotalQuantity);
+		 	$('#quote_summary').find('.product-amount-quote-qty-und').html(conteoTotalQuantityUnid);
 	 }
 
 	 function hiddenSize(){

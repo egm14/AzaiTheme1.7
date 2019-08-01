@@ -95,12 +95,28 @@
                 {/if}
 
                 <tr class="last-row-resumen" style="font-weight:bold;font-size:1rem;">
-                    
                     <td>Total</td>
                     <td>{$currency.iso_code}{$currency.sign} <span class="product-amount-quote">{$total_quote|number_format:2:".":","}</span></h3></td>
-                    <td style="text-align:center!important;"><span class="product-amount-quote-qty" >{$total_quote_qtye}</span></td>
-                    <td></td>
+                    <td colspan="2" style="text-align:left!important;padding-left:10px;">
+                        <div class="quote-qty-total-div">
+                            <p style="margin-bottom:.6rem;">
+                                <span class="product-amount-quote-qty" >{$total_quote_qtye}</span>
+                                <span>
+                                    {if $total_quote_qtye <= 1}
+                                        {l s='Package' mod='roja45quotationspro'}
+                                    {else}
+                                        {l s='Packages' mod='roja45quotationspro'}
+                                    {/if}
+                                </span>
+                            </p>
+                            <p style="margin-bottom:0;">
+                                <span class="product-amount-quote-qty-und">{$packageAzai*$total_quote_qtye}</span>
+                                <span>{l s='Units' mod='roja45quotationspro'}</span>
+                            </p>
+                        </div>
+                    </td>
                 </tr>
+
               
 
                 </tbody>
@@ -259,10 +275,11 @@
             <div class="row button-container">
                 <div class="col-lg-6">
                     <div class="row">
-                        <span class="required-field-indicator" style="color:gray;"><sup>&#42</sup>{l s='Required field' mod='roja45quotationspro'}</span>
+                        <span class="required-field-indicator" style="color:gray;display:none;"><sup>&#42</sup>{l s='Required field' mod='roja45quotationspro'}</span>
+                        <p style="color:#fefefe;margin-bottom:0px;">{l s='Send to: ' mod='roja45quotationspro'}{$customer.email}</p>
                     </div>
                 </div>
-                <div class="customer-copy-checkbox offset-lg-4 col-lg-2">
+                <div class="customer-copy-checkbox offset-lg-4 col-lg-2" style="display:none;">
                     <div class="row">
                         <label class="field-label pull-right" for="ROJA45QUOTATIONSPRO_CUSTOMER_COPY"><input type="checkbox" class="form-control" id="ROJA45QUOTATIONSPRO_CUSTOMER_COPY" name="ROJA45QUOTATIONSPRO_CUSTOMER_COPY" checked/> {l s='Receive a copy on my email.' d="Shop.Theme.Actions"}</label>
                     </div>
