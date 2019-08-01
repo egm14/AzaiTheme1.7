@@ -871,7 +871,7 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 }
 .product-additional-info .roja45quotationspro_button_container .btn.add-to-quote{
   width:-moz-available;
-  padding-top:1rem;
+  padding-top:.9rem;
   display:flex;
   flex-direction:row;
   justify-content: center;
@@ -881,6 +881,7 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 }
 .product-additional-info .roja45quotationspro_button_container .btn.add-to-quote i{
   margin-right:5px;
+  margin-top:-3px;
 }
 #product .input-group-btn-vertical{
   width:1.3rem;
