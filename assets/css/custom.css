@@ -875,7 +875,7 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
   display:flex;
   flex-direction:row;
   justify-content: center;
-  font-size:1rem;
+  font-size:.9rem;
   height:3rem;
   max-width:300px;
 }
@@ -1200,6 +1200,8 @@ nav.icono-menu-mobile a:hover{
    /*Fix cart Item - tablet*/
    #_mobile_cart .cart-grid-body.mb-3.mb-lg-0.col-12.col-lg-8 {flex: none;max-width: none;}
    span.expand-more-mobil {display: none;}/*Ocultar Lenguaje - Moneda Mobil desktop*/
+
+   .button-exclusive.btn.btn-default.btn-product{display:none;}
 }
 
 /***************************************************************
