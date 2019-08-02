@@ -165,6 +165,11 @@ $(document).ready(function(){
 		console.log("click cuento");
 		openLoader();
 	});
+	$('#login-content-displayNav2').find('button.submit').on('click tap',function(e){
+		var ele = $(this);
+		addGradient(ele);
+		//openLoader();
+	});
 	/*$('#continue-1').on('click', function(e){
 		var ele = $('#continue-1');
 		//console.log(this);
