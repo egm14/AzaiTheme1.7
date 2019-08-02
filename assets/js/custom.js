@@ -167,7 +167,7 @@ $(document).ready(function(){
 	});
 	$('#login-content-displayNav2').find('button.submit').on('click tap',function(e){
 		var ele = $(this);
-		addGradient(ele);
+		addGradient(ele, 8000);
 		//openLoader();
 	});
 	/*$('#continue-1').on('click', function(e){
@@ -181,15 +181,19 @@ $(document).ready(function(){
 		addGradient(ele);
 	});*/
 		
-	function addGradient(vb){
-		console.log("agregando clase gradiend-border");
+	function addGradient(vb, time){
+		var timer = 5000;
+		if (time){
+			 timer = time;
+		}
+		console.log("agregando clase gradiend-border " + timer);
 		//console.log(vb);
 		vb.addClass("gradient-border");	
 		var add = vb;
 		setTimeout(function(){
 			vb.removeClass("gradient-border")
 			console.log("Removiendo clase gradiend-border");
-			}, 5000);	
+			}, timer);	
 	}
 
 

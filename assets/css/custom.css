@@ -966,6 +966,14 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
   left:30px;
   top:11px;
 }
+.quote_navigation .button-exclusive{
+  margin:15px 8px!important;
+}
+.quote_navigation .button-exclusive i{
+  position:absolute;
+  left:30px;
+  top:14px;
+  }
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
  ***************************************************************/
@@ -1333,7 +1341,7 @@ nav.icono-menu-mobile a:hover{
     flex-direction: column;
   }
   .quote_navigation .button-exclusive.btn.btn-default{
-    padding:10px 8px;
+    padding:15px 8px;
     margin-top:1.2rem;
   }
   #module-roja45quotationspro-QuotationsProFront #content{
