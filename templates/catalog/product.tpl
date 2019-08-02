@@ -179,12 +179,27 @@
 
                 {block name='product_refresh'}
                   <input class="product-refresh ps-hidden-by-js" name="refresh" type="submit" value="{l s='Refresh' d='Shop.Theme.Actions'}">
+
+                  <!-- Adding category button Azai Mayoreo-->
+          {if $shop.name == $azaimayoreo}
+            {if $customer.is_logged != NULL}
+              <a href="{$link->getCategoryLink($category->id_category, $category->link_rewrite)|escape:'html':'UTF-8'}"
+                   class="button-exclusive btn btn-default btn-product" 
+                   title="{l s='Continue shopping' mod='roja45quotationspro'}">
+                    <i class="material-icons">keyboard_arrow_left</i>{l s='Continue shopping' mod='roja45quotationspro'}
+                </a>
+            {/if}
+          {/if}
                 {/block}
               </form>
             {/block}
+          
+          
           </div>
         </div>
           {block name='product_tabs'}
+
+
       <div class="tabs product-tabs mb-4">
         <ul class="nav nav-tabs d-none d-md-flex align-items-md-center justify-content-md-center" role="tablist">
           {if $product.description}
