@@ -133,16 +133,7 @@ $(document).ready(function(){
 		var ele = $('[data-link-action="sign-in"]');
 		addGradient(ele);
 	});
-	/*Estos código dañan el proceso de checkout
-	$('[data-link-action="register-new-customer"').on('click', function(){
-		var ele = $('[data-link-action="register-new-customer"');
-		addGradient(ele);
-	});
-	$('[type="submit"').on('click', function(){
-		var ele = $('[type="submit"');
-		addGradient(ele);
-	});
-	*/
+
 	$('#box-cart-btn').on('click', function(e){
 		var ele = $('#box-cart-btn');
 		addGradient(ele);
@@ -170,16 +161,7 @@ $(document).ready(function(){
 		addGradient(ele, 8000);
 		//openLoader();
 	});
-	/*$('#continue-1').on('click', function(e){
-		var ele = $('#continue-1');
-		//console.log(this);
-		addGradient(ele);
-	});
-	$('#continue-2').on('click', function(e){
-		var ele = $('#continue-2');
-		//console.log(this);
-		addGradient(ele);
-	});*/
+	
 		
 	function addGradient(vb, time){
 		var timer = 5000;

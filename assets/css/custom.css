@@ -914,9 +914,10 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
   padding:7px 0px 5px 5px;
 }
  .quote_navigation .button-exclusive.btn.btn-default{
-  padding:10px;
+  padding:15px 15px 10px 10px;
   margin-left:20px;
   height:50px;
+  display:flex;
  }
  .quote_navigation .btn-default::before{
   background:transparent;
@@ -970,7 +971,6 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
   margin:15px 8px!important;
 }
 .quote_navigation .button-exclusive i{
-  position:absolute;
   left:30px;
   top:14px;
   }
@@ -1202,6 +1202,7 @@ nav.icono-menu-mobile a:hover{
    span.expand-more-mobil {display: none;}/*Ocultar Lenguaje - Moneda Mobil desktop*/
 
    .button-exclusive.btn.btn-default.btn-product{display:none;}
+   #submitRequest{height:min-content;margin:15px 8px!important;padding:15px 20px;}
 }
 
 /***************************************************************

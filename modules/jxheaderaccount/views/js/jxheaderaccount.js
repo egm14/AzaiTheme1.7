@@ -108,6 +108,7 @@ function submitLoginFunction(elem) {
     },
     success: function (jsonData) {
       if (jsonData.hasError) {
+         console.log("Está iniciando sesión :: success");
         var errors = '';
         for (error in jsonData.errors) {
           if (error != 'indexOf' && error != '' && error != 'back') {
