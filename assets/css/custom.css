@@ -991,7 +991,7 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 
 #wt_cat_carousel h4.title-category.cool-link {
     text-transform: uppercase;
-	webkit-text-stroke: 1px black; */
+	/*webkit-text-stroke: 1px black; */
     color: white;
     text-shadow: -3px 0px 0 #0000007a, -1px -1px 0 #000000bf, 1px -1px 0 #000000cf, -1px 1px 0 #0000007a, 1px 1px 0 #0000004f;
 }
