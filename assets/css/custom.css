@@ -1006,6 +1006,10 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
     margin-left: auto;
     margin-right: auto;
 }
+#wt_cat_carousel .item.category-miniature.js-category-miniature .cat-img a .category-image-src {
+    opacity: 100!important;
+    transition: 1s ease;
+}
 
 /***************************************************************
  ******************* Screen Max-width 1650px *******************
