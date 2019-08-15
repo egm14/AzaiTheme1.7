@@ -1375,10 +1375,7 @@ nav.icono-menu-mobile a:hover{
   #module-roja45quotationspro-QuotationsProFront #content{
     box-shadow:none;
   }
-#block-container-row-1-2 .jxmp-frontend-banner.jxmp-frontend-banner-2 {
-    top: 77px;
-    position: relative;
-}
+
 }
 /***************************************************************
  ******************* Screen Max-width 720x *********************
@@ -1663,6 +1660,10 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
   .loader-submit-page .loader-submit-text{
     max-width:300px;
   }
+  #block-container-row-1-2 .jxmp-frontend-banner.jxmp-frontend-banner-2 {
+    top: 77px;
+    position: relative;
+}
 }   
 /***************************************************************
  ******************* Screen Max-width 375px *********************
