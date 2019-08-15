@@ -918,6 +918,7 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
   margin-left:20px;
   height:50px;
   display:flex;
+  justify-content: center;
  }
  .quote_navigation .btn-default::before{
   background:transparent;
