@@ -1661,8 +1661,8 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
     max-width:300px;
   }
   #block-container-row-1-2 .jxmp-frontend-banner.jxmp-frontend-banner-2 {
-    top: 77px;
-    position: relative;
+    top: 77px!important;
+    position: relative!important;
 }
 }   
 /***************************************************************
