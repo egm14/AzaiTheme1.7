@@ -198,7 +198,7 @@ By Azai.com theme v1.7 test git
   16% {-webkit-transform: translate(0,50px);}
   80% {-webkit-transform: translate(0,50px);}
   85% {-webkit-transform: translate(0,50px);}
-  to {-webkit-transform: translate(0,-100px);}
+  to {-webkit-transform: translate(0,-120px);display:none;}
 }
 
 /*Account user dropdown*/
@@ -1576,6 +1576,13 @@ p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
 }
 /*Fix Cart */
 #_desktop_cart .product-line-grid .product-line-grid-right .cart-line-product-actions, .product-line-grid .product-line-grid-right .product-price {top: 30px;position: absolute;right: 45px;}
+}
+
+/*Fixing alert size */
+.alerts.create-acount.alert-processing.active{
+  top:2rem;
+  right:1.2rem;
+  left:1.2rem;
 }
 /***************************************************************
  ******************* Screen Max-width 420px *********************
