@@ -27,7 +27,8 @@
 {/block}
 
 {*ASSIGN GLOBAL VARIABLES TO USE ON AZAI*}
-{assign var=packageAzai value="9" scope="global"}
+{assign var=packageAzai value="6" scope="global"}
+{assign var=packageAzaiStep value="6" scope="global"}
 {assign var=azaimayoreo value="azaimayoreo" scope="global"}
 
 {block name='head_ie_compatibility'}

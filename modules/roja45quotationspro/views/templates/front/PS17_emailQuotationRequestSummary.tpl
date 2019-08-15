@@ -11,7 +11,7 @@
 *  @license          /license.txt
 *}
 
- {assign var=packageAzaiW value="9"}
+ {assign var=packageAzaiW value="6"}
 <table class="table table-recap title" bgcolor="#ffffff" style="width:100%;border-collapse:collapse" cellSpacing=0 cellPadding=0 border=0>
     <tr>
         <td class="text-right title" style="min-width:100%;border:1px solid #D6D4D4;border-bottom: 0;background-color: #fbfbfb;padding: 5px;">
@@ -68,7 +68,7 @@
         {/if}</span>
         </td>
         <td class="product-quantity" colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
-            <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.qty_in_cart|escape:'html':'UTF-8'} {l s='Packages' mod='roja45quotationspro'} ({$packageAzaiW} {l s='Units' mod='roja45quotationspro'})</span>
+            <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.qty_in_cart|escape:'html':'UTF-8'} {l s='Packages' mod='roja45quotationspro'} ({$product.qty_in_cart*$packageAzaiW} {l s='Units' mod='roja45quotationspro'})</span>
         </td>
         {assign var="priceValue" value=$product.product_price*($product.quote_quantity*$packageAzaiW) scope=parent}
         <td class="product-price" colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
