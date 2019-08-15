@@ -340,7 +340,10 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  header .col-sm-12 i{color:black!important;}
  header #_desktop_language_selector i.fa, header #_desktop_currency_selector i.fa{margin-left:.2rem !important;}
  header #_desktop_user_info i{margin-left:.7rem;}
-
+/*Desactivar text imagen slider holesale*/
+#block-container-row-1-2 h3 {
+    display: none!important;
+}
  /*----------------- Size Chart -----------------------*/
 .sizes-chart{
     text-decoration:underline;
@@ -994,10 +997,7 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 	background: #00000069;
     width: 100%
 }
-/*Desactivar text imagen slider holesale*/
-#block-container-row-1-2 h3 {
-    display: none!important;
-}
+
 /* Quitar raya divisora categoria home Azai Wholesale */
 #wt_cat_carousel .cool-link::after {
     content: '';
