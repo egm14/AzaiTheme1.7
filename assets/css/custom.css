@@ -1375,7 +1375,10 @@ nav.icono-menu-mobile a:hover{
   #module-roja45quotationspro-QuotationsProFront #content{
     box-shadow:none;
   }
-  
+#block-container-row-1-2 .jxmp-frontend-banner.jxmp-frontend-banner-2 {
+    top: 77px;
+    position: relative;
+}
 }
 /***************************************************************
  ******************* Screen Max-width 720x *********************
