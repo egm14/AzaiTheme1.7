@@ -996,7 +996,7 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 }
 /*Desactivar text imagen slider holesale*/
 #block-container-row-1-2 h3 {
-    display: none;
+    display: none!important;
 }
 /* Quitar raya divisora categoria home Azai Wholesale */
 #wt_cat_carousel .cool-link::after {
