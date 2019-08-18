@@ -23,12 +23,16 @@
 {if $smarty_settings.st_display}
   {if (count($product.images) > 1) && !($smarty_settings.st_type == 'slideshow' && !$smarty_settings.st_slider_pager && !$smarty_settings.st_slider_controls)}
     {if $smarty_settings.st_type == 'rollover'}
+
       <div class="thumbnails-rollover {$smarty_settings.st_rollover_animation}">
+     
         {foreach from=$product.images item=image name=image}
           {if $image.cover}
+          
             <img
               class="img-fluid"
-              src="{$product.cover.bySize.stores_default.url}"
+              src="{$urls.theme_assets}OtherFile/img_home_default.jpg"
+              data-src="{$image.bySize.home_default.url}"
               alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
               data-full-size-image-url="{$image.large.url}"
             >
@@ -37,7 +41,8 @@
                 {if $smarty.foreach.image.first}
                   <img
                     class="img-fluid"
-                    src="{$image.medium.url}"
+                    src="{$urls.theme_assets}OtherFile/img_home_default.jpg"
+                    data-src="{$image.bySize.home_default.url}"
                     alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                     data-full-size-image-url="{$image.large.url}"
                   >
@@ -50,7 +55,8 @@
                 {if $smarty.foreach.image.iteration == {$imageNext}}
                   <img
                     class="hover-image img-fluid"
-                    src="{$image.medium.url}"
+                    src="{$urls.theme_assets}OtherFile/img_home_default.jpg"
+                    data-src="{$image.bySize.home_default.url}"
                     alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                     data-full-size-image-url="{$image.large.url}"
                   >
@@ -89,7 +95,8 @@
           {foreach from=$product.images item=image name=image}
             <div class="carousel-item{if $image.cover} active{/if}">
               <img
-                src="{$image.medium.url}"
+                src="{$urls.theme_assets}OtherFile/img_home_default.jpg"
+                data-src="{$image.bySize.home_default.url}"
                 alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                 data-full-size-image-url="{$image.large.url}"
               >
@@ -117,7 +124,8 @@
       {if $image.cover}
         <img
           class="img-fluid"
-          src="{$image.medium.url}"
+          src="{$urls.theme_assets}OtherFile/img_home_default.jpg"
+          data-src="{$image.bySize.home_default.url}"
           alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
           data-full-size-image-url="{$image.large.url}"
         >
