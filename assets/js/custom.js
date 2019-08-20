@@ -5,7 +5,7 @@ $(document).ready(function(){
 		/*Adding lazy load class on image*/
 		//$(document).find('img').addClass("lozad");
 
-		// Initialize library
+		/* Initialize library
 			lozad('.lozad', {
 			    load: function(el) {
 			        el.src = el.dataset.src;
@@ -13,7 +13,7 @@ $(document).ready(function(){
 			            el.classList.add('fade')
 			        }
 			    }
-			}).observe()
+			}).observe()*/
 		/****** Ending Lazy Load ******/
 		
 		//Close loader
