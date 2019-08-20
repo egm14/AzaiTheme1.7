@@ -17,11 +17,11 @@
     
                <input 
                  type="number" 
-                 step="9"
+                 step="6"
                  name="qty" 
                  id="quote_quantity_wanted"
                  value="{if isset($product->product_attribute_minimal_quantity) && $product->product_attribute_minimal_quantity >= 1}{$product->product_attribute_minimal_quantity|intval}{else}{$product->minimal_quantity|intval}{/if}"
-                 min="9"
+                 min="1"
                  class="form-control"
                  aria-label="{l s='Quantity' mod='roja45quotationspro'}"
                  style="max-width:70px;color:black;height:35px;padding:10px;min-width:35px;"
@@ -30,7 +30,7 @@
     </div>
     <div class="add">
         <a class="btn btn-primary add-to-quote {if $roja45_quotation_enablequotecart}{if $roja45_quotation_useajax}ajax_add_quote_button{else}add_quote_button{/if}{/if}"
-           href="{url entity='module' name='roja45quotationspro' controller='QuotationsProFront' params = ['action' => 'addToQuote', 'id_product' => $product->id, 'id_product_attribute' => $id_product_attribute, 'qty' => 9 ]}"
+           href="{url entity='module' name='roja45quotationspro' controller='QuotationsProFront' params = ['action' => 'addToQuote', 'id_product' => $product->id, 'id_product_attribute' => $id_product_attribute, 'qty' => $packageAzaiStep ]}"
            rel="nofollow"
            title="{l s='Add to quote' mod='roja45quotationspro'}"
            data-url="{url entity='module' name='roja45quotationspro' controller='QuotationsProFront' params = ['action' => 'addToQuote']}"

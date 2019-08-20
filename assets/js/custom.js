@@ -2,6 +2,8 @@
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
+		//Adding lazy load class on image
+		$(document).find('img').addClass("lazyload");
 		//Close loader
 		setTimeout(function () {
 		    //$(".loader-page").css({visibility:"hidden",opacity:"0"})

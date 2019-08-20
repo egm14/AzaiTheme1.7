@@ -39,7 +39,7 @@
               ($product.category == 'accessories')}
                 <td scope="col">TotalQty</b></td>
               {else}
-                <td scope="col">TotalQty<br /><b>S-M-L (3-3-3)</b></td>
+                <td scope="col">TotalQty<br /><b>S-M-L (2-2-2)</b></td>
               {/if}
 
               <td scope="col">Pack Price</td>
