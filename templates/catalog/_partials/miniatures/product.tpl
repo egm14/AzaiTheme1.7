@@ -38,9 +38,11 @@
                 {hook h='displayProductListGallery' product=$product}
               {else}
                 <img
-                  src = "{$product.cover.bySize.home_default.url}"
+                  src = "{$product.cover.bySize.stores_default.url}"
+                  data-src = "{$product.cover.bySize.home_default.url}" 
                   alt = "{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                   data-full-size-image-url = "{$product.cover.large.url}"
+                  class="lazyload"
                 >
               {/if}
             </a>

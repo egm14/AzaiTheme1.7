@@ -2,8 +2,20 @@
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
-		//Adding lazy load class on image
-		$(document).find('img').addClass("lazyload");
+		/*Adding lazy load class on image*/
+		$(document).find('img').addClass("lozad");
+
+		// Initialize library
+			lozad('.lozad', {
+			    load: function(el) {
+			        el.src = el.dataset.src;
+			        el.onload = function() {
+			            el.classList.add('fade')
+			        }
+			    }
+			}).observe()
+		/****** Ending Lazy Load ******/
+		
 		//Close loader
 		setTimeout(function () {
 		    //$(".loader-page").css({visibility:"hidden",opacity:"0"})
@@ -216,6 +228,11 @@ $(document).ready(function(){
 
 
 	 	};
+	  /*==================== APPEND CLONE TO NOTIFICATION PRIVATE SHOP =======================*/
+
+	 setTimeout(function(){
+	 	$('#alertprivate').clone().append('#customer-form');
+	 },3000); 
 
 	 /*==================== CALCULADORA AJAX =======================*/
 	 	setTimeout(tableColor,2000);
