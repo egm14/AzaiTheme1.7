@@ -3,7 +3,7 @@
 
 $(document).ready(function(){
 		/*Adding lazy load class on image*/
-		$(document).find('img').addClass("lozad");
+		//$(document).find('img').addClass("lozad");
 
 		// Initialize library
 			lozad('.lozad', {

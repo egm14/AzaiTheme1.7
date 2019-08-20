@@ -30,7 +30,7 @@
           {if $image.cover}
           
             <img
-              class="img-fluid"
+              class="img-fluid lozad"
               
               data-src="{$image.bySize.home_default.url}"
               alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
@@ -40,7 +40,7 @@
               {foreach from=$product.images item=image name=image}
                 {if $smarty.foreach.image.first}
                   <img
-                    class="img-fluid"
+                    class="img-fluid lozad"
                     
                     data-src="{$image.bySize.home_default.url}"
                     alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
@@ -54,7 +54,7 @@
               {foreach from=$product.images item=image name=image}
                 {if $smarty.foreach.image.iteration == {$imageNext}}
                   <img
-                    class="hover-image img-fluid"
+                    class="hover-image img-fluid lozad"
                     
                     data-src="{$image.bySize.home_default.url}"
                     alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
@@ -76,7 +76,7 @@
               <li data-slide-to="{$smarty.foreach.image.iteration - 1}"{if $image.cover} class="active"{/if}{if $smarty_settings.st_type == 'gallery'} style="width: calc(100%/{$smarty_settings.st_visible})"{/if}>
                 {if $smarty_settings.st_type == 'gallery'}
                   <img
-                    class="img-fluid"
+                    class="img-fluid lozad"
                     src="{$image.small.url}"
                     alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                   >
@@ -95,7 +95,7 @@
           {foreach from=$product.images item=image name=image}
             <div class="carousel-item{if $image.cover} active{/if}">
               <img
-                
+                class="lozad"
                 data-src="{$image.bySize.home_default.url}"
                 alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                 data-full-size-image-url="{$image.large.url}"
@@ -123,7 +123,7 @@
     {foreach from=$product.images item=image name=image}
       {if $image.cover}
         <img
-          class="img-fluid"
+          class="img-fluid lozad"
          
           data-src="{$image.bySize.home_default.url}"
           alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
