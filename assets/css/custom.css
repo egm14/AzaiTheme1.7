@@ -979,6 +979,7 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
  ***************LAZY LOAD FUNCTION VIEW *********************
  ***************************************************************/
 
+
  .blur-up {
     -webkit-filter: blur(5px);
     filter: blur(5px);
@@ -1015,6 +1016,7 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 }
 
 /*Animation holder*/
+
 @-webkit-keyframes placeHolderShimmer {
   0% {
     background-position: -468px 0;
@@ -1032,7 +1034,8 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
     background-position: 468px 0;
   }
 }
-.product-thumbnail, .swiper-slide{
+.product-thumbnail, .swiper-slide, li.slick-slide,
+.item.category-miniature.js-category-miniature .cat-img a .category-image{
   -webkit-animation-duration: 1.25s;
           animation-duration: 1.25s;
   -webkit-animation-fill-mode: forwards;
