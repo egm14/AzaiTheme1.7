@@ -105,7 +105,7 @@ By Azai.com theme v1.7 test git
 /*Link subrayado crear nueva cuenta*/
 #account-list-block a.Registro-personal-link {
     text-decoration: underline blink;
-	font-weight: bold!important;
+  font-weight: bold!important;
 }
 /*Botone invertidos Registro*/
 #create-account-content-displayNav2 button.btn.btn-secondary.btn-md.btn-block.submit {background: black;color: white;}
@@ -340,10 +340,7 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  header .col-sm-12 i{color:black!important;}
  header #_desktop_language_selector i.fa, header #_desktop_currency_selector i.fa{margin-left:.2rem !important;}
  header #_desktop_user_info i{margin-left:.7rem;}
-/*Desactivar text imagen slider holesale*/
-#block-container-row-1-2 h3 {
-    display: none!important;
-}
+
  /*----------------- Size Chart -----------------------*/
 .sizes-chart{
     text-decoration:underline;
@@ -1073,10 +1070,9 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 
 #wt_cat_carousel h4.title-category.cool-link {
     text-transform: uppercase;
-	background: #00000069;
+  background: #00000069;
     width: 100%
 }
-
 /* Quitar raya divisora categoria home Azai Wholesale */
 #wt_cat_carousel .cool-link::after {
     content: '';
@@ -1267,7 +1263,7 @@ nav.icono-menu-mobile a:hover{
  ***************************************************************/
  /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width:768px){
-	
+  
   /*--------------- Footer Social Profiles ----------------*/
   #footer div.container #redes-desk a i{
       font-size:22px;
@@ -1454,7 +1450,7 @@ nav.icono-menu-mobile a:hover{
   #module-roja45quotationspro-QuotationsProFront #content{
     box-shadow:none;
   }
-
+  
 }
 /***************************************************************
  ******************* Screen Max-width 720x *********************
@@ -1519,7 +1515,7 @@ p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
  ***************************************************************/
 
 @media (max-width: 550px) {
-	
+  
    #footer div.container #redes-desk {font-size: 0.2rem;width: 110%;}
   /*Items del carrito de compra Fix*/
   #cart-summary-product-list img.img-fluid {height: 100px;}
@@ -1739,10 +1735,6 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
   .loader-submit-page .loader-submit-text{
     max-width:300px;
   }
-  #block-container-row-1-2 .jxmp-frontend-banner.jxmp-frontend-banner-2 {
-    top: 77px!important;
-    position: relative!important;
-}
 }   
 /***************************************************************
  ******************* Screen Max-width 375px *********************
