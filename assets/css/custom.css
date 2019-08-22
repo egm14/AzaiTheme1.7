@@ -1002,6 +1002,7 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 .fade {
   animation-name: fade;
   animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fade {
@@ -1011,6 +1012,41 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
   to {
     opacity: 1;
   }
+}
+
+/*Animation holder*/
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+.product-thumbnail, .swiper-slide{
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  background: #F6F6F6;
+  background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+  background-size: 1000px;
+  position: relative;
 }
 
 

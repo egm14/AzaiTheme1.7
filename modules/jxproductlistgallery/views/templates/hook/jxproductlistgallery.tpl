@@ -30,9 +30,9 @@
           {if $image.cover}
           
             <img
-              class="img-fluid"
-              data-src="{$urls.theme_assets}OtherFile/img_home_default.jpg"
-              src="{$image.bySize.home_default.url}"
+              class="img-fluid lozad"
+              src="{$urls.theme_assets}OtherFile/img_home_default.png"
+              data-src="{$image.bySize.home_default.url}"
               alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
               data-full-size-image-url="{$image.large.url}"
             >
@@ -40,9 +40,10 @@
               {foreach from=$product.images item=image name=image}
                 {if $smarty.foreach.image.first}
                   <img
-                    class="img-fluid"
-                    data-src="{$urls.theme_assets}OtherFile/img_home_default.jpg"
-                    src="{$image.bySize.home_default.url}"
+                    class="img-fluid lozad"
+                    src=
+="{$urls.theme_assets}OtherFile/img_home_default.png"
+                    data-src="{$image.bySize.home_default.url}"
                     alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                     data-full-size-image-url="{$image.large.url}"
                   >
@@ -54,9 +55,10 @@
               {foreach from=$product.images item=image name=image}
                 {if $smarty.foreach.image.iteration == {$imageNext}}
                   <img
-                    class="hover-image img-fluid"
-                    data-src="{$urls.theme_assets}OtherFile/img_home_default.jpg"
-                    src="{$image.bySize.home_default.url}"
+                    class="hover-image img-fluid lozad"
+                    src
+="{$urls.theme_assets}OtherFile/img_home_default.png"
+                    data-src="{$image.bySize.home_default.url}"
                     alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                     data-full-size-image-url="{$image.large.url}"
                   >
@@ -76,9 +78,10 @@
               <li data-slide-to="{$smarty.foreach.image.iteration - 1}"{if $image.cover} class="active"{/if}{if $smarty_settings.st_type == 'gallery'} style="width: calc(100%/{$smarty_settings.st_visible})"{/if}>
                 {if $smarty_settings.st_type == 'gallery'}
                   <img
-                    class="img-fluid"
-                    data-src="{$urls.theme_assets}OtherFile/img_small_default.jpg"
-                    src="{$image.small.url}"
+                    class="img-fluid lozad"
+                    src
+="{$urls.theme_assets}OtherFile/img_small_default.png"
+                    data-src="{$image.small.url}"
                     alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                   >
                 {/if}
@@ -96,9 +99,9 @@
           {foreach from=$product.images item=image name=image}
             <div class="carousel-item{if $image.cover} active{/if}">
               <img
-                class=""
-                data-src="{$urls.theme_assets}OtherFile/img_home_default.jpg"
-                src="{$image.bySize.home_default.url}"
+                class="lozad"
+                src="{$urls.theme_assets}OtherFile/img_home_default.png"
+                data-src="{$image.bySize.home_default.url}"
                 alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                 data-full-size-image-url="{$image.large.url}"
               >
@@ -125,9 +128,9 @@
     {foreach from=$product.images item=image name=image}
       {if $image.cover}
         <img
-          class="img-fluid"
-          data-src="{$urls.theme_assets}OtherFile/img_home_default.jpg"
-          src="{$image.bySize.home_default.url}"
+          class="img-fluid lozad"
+          src="{$urls.theme_assets}OtherFile/img_home_default.png"
+          data-src="{$image.bySize.home_default.url}"
           alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
           data-full-size-image-url="{$image.large.url}"
         >

@@ -2,19 +2,8 @@
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
-		/*Adding lazy load class on image*/
-		//$(document).find('img').addClass("lozad");
-
-		// Initialize library
-			lozad('.lozad', {
-			    load: function(el) {
-			        el.src = el.dataset.src;
-			        el.onload = function() {
-			            el.classList.add('fade')
-			        }
-			    }
-			}).observe()
-		/****** Ending Lazy Load ******/
+		//Change color table on product
+		
 		
 		//Close loader
 		setTimeout(function () {
@@ -56,6 +45,10 @@ $(document).ready(function(){
 	     }
 	/*==================== FIX COLOR RULE FILTER - COLUMN LEFT  =======================*/
 	 	
+	 	prestashop.on("updateProductList",filterColors);
+	 	filterColors();
+
+	 	function filterColors(){
 	 	var filterColor = $('#search_filters');
 	 	//verificando si existe el div #serach_filters
 	 	if(filterColor){
@@ -95,7 +88,9 @@ $(document).ready(function(){
 	 			}
 	 			/*console.log("Node no encontrado");*/
 	 				});
+	 		}
 	 	}
+
      /*==================== SIZE CHART  =======================*/
 	  
      /*sSIZE-CHART-CONTENT*/
