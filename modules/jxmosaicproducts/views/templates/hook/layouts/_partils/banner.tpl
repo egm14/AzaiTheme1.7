@@ -27,7 +27,7 @@
     <a href="{$banner->url}" title="{$banner->title}">
   {/if}
     {if $banner->image_path}
-      <img class="img-fluid" 
+      <img class="img-fluid lozad" 
       src="{$urls.theme_assets}OtherFile/img_category_default.jpg"
       data-src="{$jxmp_image_path}{$banner->image_path}" 
       alt="{$banner->title}" />
