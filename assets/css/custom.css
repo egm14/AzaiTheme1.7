@@ -157,6 +157,7 @@ By Azai.com theme v1.7 test git
 #block-container-row-1-8 h3 {display: none;}
 #block-container-row-3-2 h3 {text-align: center;text-decoration: underline;font-size: 15px;font-family: 'Didot-Italic', cursive!important;padding: 15px;}
 #block-container-row-2-2 h3 {display: none;}
+#block-container-row-1-2 h3 {display: none;}
 #wrapper h4.title_block.subpages-heading {text-align: center;text-decoration: underline;font-size: 15px;font-family: 'Didot-Italic', cursive!important;padding: 15px;display:none;}
 /*.alert.create-acount.alert-success.active{
   animation: alertAccount .25s ease-out forwards;
