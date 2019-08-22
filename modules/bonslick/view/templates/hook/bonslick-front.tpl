@@ -29,7 +29,9 @@
                     <!--a class="link-bonslick" href="{$item.url|escape:'htmlall':'UTF-8'}" title="{$item.title|escape:'htmlall':'UTF-8'}"-->
 					<a class="link-bonslick">
                         {if isset($item.image) && $item.image}
-                            <img class="img-responsive" src="{$image_baseurl|escape:'htmlall':'UTF-8'}{$item.image|escape:'htmlall':'UTF-8'}" alt="{$item.title|escape:'htmlall':'UTF-8'}" />
+                            <img class="img-responsive" 
+                            src="{$urls.theme_assets}OtherFile/img_category_default.png"
+                            data-src="{$image_baseurl|escape:'htmlall':'UTF-8'}{$item.image|escape:'htmlall':'UTF-8'}" alt="{$item.title|escape:'htmlall':'UTF-8'}" />
                         {/if}
                         <section class="box-bonslick">
                             {if isset($item.description) && $item.description}

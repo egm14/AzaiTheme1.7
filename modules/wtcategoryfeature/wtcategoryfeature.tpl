@@ -142,9 +142,9 @@
 										<a href="{$link->getCategoryLink($category->id_category, $category->link_rewrite)|escape:'html':'UTF-8'}"  title="{$category->name|escape:'html':'UTF-8'}" >
 
 											<div class="category-image fade-box">
-												<img class="category-image-src " 
-												data-src="{$urls.theme_assets}OtherFile/img_home_default.jpg"
-												src="{$link->getCatImageLink($category->link_rewrite, $category->id_image, 'home_default')|escape:'html':'UTF-8'}"width="100%"/>
+												<img class="category-image-src lozad" 
+												src="{$urls.theme_assets}OtherFile/img_home_default.png"
+												data-src="{$link->getCatImageLink($category->link_rewrite, $category->id_image, 'home_default')|escape:'html':'UTF-8'}"width="100%"/>
 											
 												<h4 class="title-category cool-link " style="text-align:center;">
 													{$category->name|escape:'html':'UTF-8'}

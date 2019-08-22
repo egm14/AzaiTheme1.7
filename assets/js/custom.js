@@ -2,6 +2,7 @@
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
+<<<<<<< HEAD
 		/*Adding lazy load class on image*/
 		//$(document).find('img').addClass("lozad");
 
@@ -15,6 +16,10 @@ $(document).ready(function(){
 			    }
 			}).observe()*/
 		/****** Ending Lazy Load ******/
+=======
+		//Change color table on product
+		
+>>>>>>> dev
 		
 		//Close loader
 		setTimeout(function () {
@@ -56,6 +61,10 @@ $(document).ready(function(){
 	     }
 	/*==================== FIX COLOR RULE FILTER - COLUMN LEFT  =======================*/
 	 	
+	 	prestashop.on("updateProductList",filterColors);
+	 	filterColors();
+
+	 	function filterColors(){
 	 	var filterColor = $('#search_filters');
 	 	//verificando si existe el div #serach_filters
 	 	if(filterColor){
@@ -95,7 +104,9 @@ $(document).ready(function(){
 	 			}
 	 			/*console.log("Node no encontrado");*/
 	 				});
+	 		}
 	 	}
+
      /*==================== SIZE CHART  =======================*/
 	  
      /*sSIZE-CHART-CONTENT*/
