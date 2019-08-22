@@ -60,7 +60,7 @@
   <link rel="icon" type="image/vnd.microsoft.icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
   <link rel="shortcut icon" type="image/x-icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
 {/block}
-
+<!--
 <script type="text/javascript">
 function downloadJSAtOnload() {
 var element = document.createElement("script");
@@ -72,7 +72,7 @@ window.addEventListener("load", downloadJSAtOnload, false);
 else if (window.attachEvent)
 window.attachEvent("onload", downloadJSAtOnload);
 else window.onload = downloadJSAtOnload;
-</script>
+</script>-->
 
 {block name='hook_header'}
   {$HOOK_HEADER nofilter}
@@ -83,7 +83,7 @@ else window.onload = downloadJSAtOnload;
 {/block}
 
 {block name='javascript_head'}
-  {include file="_partials/javascript.tpl" javascript=$javascript.head vars=$js_custom_vars}
+      {include file="_partials/javascript.tpl" javascript=$javascript.head vars=$js_custom_vars}
 {/block}
 
 {block name='hook_extra'}
@@ -98,4 +98,4 @@ else window.onload = downloadJSAtOnload;
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PBFFQKC');</script>
     <!-- End Google Tag Manager -->
-  {/literal}
+{/literal}
