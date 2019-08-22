@@ -2,24 +2,8 @@
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
-<<<<<<< HEAD
-		/*Adding lazy load class on image*/
-		//$(document).find('img').addClass("lozad");
-
-		/* Initialize library
-			lozad('.lozad', {
-			    load: function(el) {
-			        el.src = el.dataset.src;
-			        el.onload = function() {
-			            el.classList.add('fade')
-			        }
-			    }
-			}).observe()*/
-		/****** Ending Lazy Load ******/
-=======
 		//Change color table on product
 		
->>>>>>> dev
 		
 		//Close loader
 		setTimeout(function () {
