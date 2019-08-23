@@ -106,6 +106,9 @@ function submitLoginFunction(elem) {
       password: elem.find('[name=password]').val(),
       token: prestashop.token
     },
+    before: function(){
+       console.log("Está iniciando sesión ::::: success");
+    },
     success: function (jsonData) {
       if (jsonData.hasError) {
          console.log("Está iniciando sesión :: success");
