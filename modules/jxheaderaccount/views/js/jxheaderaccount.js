@@ -155,14 +155,16 @@ function submitCreate(elem){
     beforeSend: function(jsonData){
       var userAlert = $('#alerts-n')
       userAlert.find('.alerts.create-acount.alert-processing').addClass('active')
-      console.log(element)
+      console.log(elem.find('form'));
       console.log("Clic creando cuenta")
+      elem.find('button[type="submit"] .fa-spinner').fadeIn();
     },
     error: function (jsonData, textStatus, errorThrown) {
       console.log(jsonData)
       console.log("TextSatus: " +textStatus)
       console.log("errorThrown: "+errorThrown)
 
+       $('button.btn-primary').find('.fa-spinner').fadeOut();
       var userAlert = $('#alerts-n')
       userAlert.find('.alerts.create-acount.alert-processing').removeClass('active')
       userAlert.find('.alerts.create-acount.alert-error').addClass('active')
@@ -252,7 +254,7 @@ function submitCreate(elem){
   }
     var ajax = new jxha.ajax();
     ajax.init(options).responseJSON;
-    console.log(ajax.options);
+    //console.log(ajax.options);
 }
 
 function submitRetrieve(elem) {

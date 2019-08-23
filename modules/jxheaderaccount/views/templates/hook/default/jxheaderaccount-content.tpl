@@ -157,7 +157,12 @@
             <input type="hidden" name="is_new_customer" value="1"/>
             <input type="hidden" class="hidden" name="back" value="my-account"/>
             <button type="submit" name="submitAccount" class="btn btn-secondary btn-md btn-block submit">
-              {l s='Register' mod='jxheaderaccount'}
+              {if $shop.name = $azaimayoreo}
+                 {l s='Send Request' d='Shop.Theme.Actions'}
+              {else}
+                 {l s='Register' d='Shop.Theme.Actions'}
+              {/if}
+              <i class="fa fa-spinner fa-spin" style="display:none;"></i>
             </button>
             <div class="button-login nav d-block">
               <a href="#login-content-{$hook}" data-toggle="tab" class="btn btn-primary btn-md btn-block">
