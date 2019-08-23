@@ -1053,6 +1053,13 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
   position: relative;
 }
 
+/****Social Sharing ****/
+.product-additional-info .social-sharing ul{
+  margin-top:.3rem;
+  margin-bottom:1.543rem!important;
+
+}
+
 
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************
