@@ -23,7 +23,10 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div id="_desktop_cart">
-  <div class="blockcart cart-preview" data-refresh-url="{$refresh_url}">
+  <div class="blockcart cart-preview" 
+  {if ($shop.name != $azaimayoreo) or ($shop.name == $azaimayoreo && $customer.id_default_group != 12)}
+  style="display:none;"{/if} 
+  data-refresh-url="{$refresh_url}">
     <a class="clone-slidebar-toggle" data-id-slidebar="blockcart-slidebar" rel="nofollow" href="{$cart_url}" title="{l s='View Cart' d='Shop.Theme.Actions'}">
       {if $cart.products_count > 0}
       <p class="cart-products-count">{l s='%products_count%' sprintf=['%products_count%' => $cart.products_count] d='Shop.Theme.Checkout'}</p>
