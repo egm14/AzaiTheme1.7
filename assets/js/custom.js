@@ -27,7 +27,11 @@ $(document).ready(function(){
 			openLoader();
 		});
 		$('button#submitRequest').on('click tap', function(){
-			openLoaderSubmit();
+			if($(this).hasClass("disabled")){
+				console.log("La cotización no alcanza el minimo de compra.");
+			}else{
+				openLoaderSubmit();
+			}
 		});
      	 function openLoader(e){
 			//loader.css({visibility:"visibe",opacity:"100"});
