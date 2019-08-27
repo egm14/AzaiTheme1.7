@@ -14,7 +14,7 @@
 
 {block name="page_title"}
     <h4 id="quote_title" class="title_block">{l s='Request summary' mod='roja45quotationspro'}
-        {if isset($numberProducts)}<span id="summary_products_quantity">{*$numberProducts*} ({if $numberProducts == 1}{l s='Packages' mod='roja45quotationspro'}{else}{l s='Packages' mod='roja45quotationspro'}{/if})</span>{/if}
+        {if isset($numberProducts)}<span id="summary_products_quantity">{*$numberProducts*} ({if $numberProducts == 1}{l s='Package' mod='roja45quotationspro'}{else}{l s='Packages' mod='roja45quotationspro'}{/if})</span>{/if}
     </h4>
 {/block}
 
@@ -100,18 +100,28 @@
                     <td colspan="2" style="text-align:left!important;padding-left:10px;">
                         <div class="quote-qty-total-div">
                             <p style="margin-bottom:.6rem;">
+                            {if $customer.id_default_group != 12}
                                 <span class="product-amount-quote-qty" >{$total_quote_qtye}</span>
-                                <span>
-                                    {if $total_quote_qtye <= 1}
-                                        {l s='Package' mod='roja45quotationspro'}
-                                    {else}
-                                        {l s='Packages' mod='roja45quotationspro'}
-                                    {/if}
-                                </span>
+                                    <span>
+                                    
+                                        {if $total_quote_qtye <= 1}
+                                            {l s='Package' mod='roja45quotationspro'}
+                                        {else}
+                                            {l s='Packages' mod='roja45quotationspro'}
+                                        {/if}
+                                    
+                                    </span>
+                                {/if}
                             </p>
                             <p style="margin-bottom:0;">
                                 <span class="product-amount-quote-qty-und">{$packageAzai*$total_quote_qtye}</span>
-                                <span>{l s='Units' mod='roja45quotationspro'}</span>
+                                <span>
+                                     {if $total_quote_qtye <= 1}
+                                        {l s='Unit' mod='roja45quotationspro'}
+                                    {else}
+                                        {l s='Units' mod='roja45quotationspro'}
+                                    {/if}
+                                </span>
                             </p>
                         </div>
                     </td>
@@ -271,7 +281,7 @@
         </div>
       </div>
 
-        <div class="quotationspro_request notes col-lg-12" style="margin-bottom:2rem;">
+      <div class="quotationspro_request notes col-lg-12" style="margin-bottom:2rem;">
             <div class="row button-container">
                 <div class="col-lg-6">
                     <div class="row">
@@ -285,6 +295,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div>
+           <!-- <p class="alert alert-warning">{l s='To send a request quote, this have minimal: ' mod='roja45quotationspro'}{$WMinQuoteOrder}</p>-->
         </div>
 
         <div class="quote_navigation clearfix col-lg-12">
@@ -300,7 +313,7 @@
             {else}
                 <button type="submit"
                         id="submitRequest"
-                        class="btn btn-default btn-primary request-quotation button-medium {if $roja45quotationspro_enable_captcha}disabled{/if}"
+                        class="btn btn-default btn-primary request-quotation button-medium {if ($roja45quotationspro_enable_captcha) or ($total_quote < $WMinQuoteOrder)}disabled{/if}"
                         title="{l s='Request Quote' mod='roja45quotationspro'}">
                 {l s='Request Quote' d='Shop.Theme.Actions'}
                 </button>
@@ -313,6 +326,7 @@
             </div>
         </div>
         <div class="clear"></div>
+
     {/if}
     </form>
 {/block}

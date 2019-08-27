@@ -111,8 +111,6 @@
               {/if}
             </span>
           {/block}
-
-            <pre>{*$product|print_r*}</pre>
              {if $shop.name != $azaimayoreo}
                  {block name='product_prices'}
                    {include file='catalog/_partials/product-prices.tpl'}
@@ -198,7 +196,6 @@
           </div>
         </div>
           {block name='product_tabs'}
-
 
       <div class="tabs product-tabs mb-4">
         <ul class="nav nav-tabs d-none d-md-flex align-items-md-center justify-content-md-center" role="tablist">

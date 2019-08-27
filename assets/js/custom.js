@@ -2,9 +2,6 @@
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
-		//Change color table on product
-		
-		
 		//Close loader
 		setTimeout(function () {
 		    //$(".loader-page").css({visibility:"hidden",opacity:"0"})
@@ -183,6 +180,7 @@ $(document).ready(function(){
 		}
 		console.log("agregando clase gradiend-border " + timer);
 		//console.log(vb);
+		vb.removeClass("gradient-border");
 		vb.addClass("gradient-border");	
 		var add = vb;
 		setTimeout(function(){
