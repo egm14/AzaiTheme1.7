@@ -24,7 +24,7 @@
  *}
 <div id="_desktop_cart">
   <div class="blockcart cart-preview" 
-  {if ($shop.name != $azaimayoreo) or ($shop.name == $azaimayoreo && $customer.id_default_group != 12)}
+  {if ($shop.name == $azaimayoreo && $customer.id_default_group != 12)}
   style="display:none;"{/if} 
   data-refresh-url="{$refresh_url}">
     <a class="clone-slidebar-toggle" data-id-slidebar="blockcart-slidebar" rel="nofollow" href="{$cart_url}" title="{l s='View Cart' d='Shop.Theme.Actions'}">
