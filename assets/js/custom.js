@@ -406,9 +406,11 @@ $(document).ready(function(){
 
 	 function hiddenSize(){
 	 	/*-------------- DISPLAY NONE SIZE ----------*/
-	 	var shopName = $.trim($('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase());
+	 	//var shopName = $.trim($('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase());
+          var shopName = ShopAzai.shop.name;
+          var idGroupCustomer = ShopAzai.customer.id_default_group;
           //console.log(shopName)
-          if(shopName == "azaimayoreo"){
+          if(shopName == "azaimayoreo" && idGroupCustomer != 12){
 	 			var formSize = $('#add-to-cart-or-refresh').find('.product-variants-item');
 	 				formSize.each(function(key, value){
 	 					//console.log(value);

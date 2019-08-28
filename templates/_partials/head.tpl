@@ -40,6 +40,15 @@
 
 {assign var=azaimayoreo value="azaimayoreo" scope="global"}
 
+<script type="text/javascript">
+      var ShopAzai = {ldelim}
+        shop : {$shop|@json_encode nofilter},
+        currency : {$currency|@json_encode nofilter},
+        cart : {$cart|@json_encode nofilter},
+        customer: {$customer|@json_encode nofilter}
+        {rdelim}
+</script>
+
 {block name='head_ie_compatibility'}
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 {/block}
@@ -50,7 +59,7 @@
   {/if}
   
 {block name='head_seo'}
-  <title id="page-title">{$shop.name|upper} | {block name='head_seo_title'}{$page.meta.title}{/block}</title>
+  <title id="page-title">{block name='head_seo_title'}{$page.meta.title}{/block}</title>
   <meta name="description" content="{block name='head_seo_description'}{$page.meta.description}{/block}">
   <meta name="keywords" content="{block name='head_seo_keywords'}{$page.meta.keywords}{/block}">
   {if $page.meta.robots !== 'index'}
