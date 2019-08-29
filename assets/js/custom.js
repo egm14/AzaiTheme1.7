@@ -137,12 +137,15 @@ $(document).ready(function(){
 	
 	$('button[type="submit"]').on('click tap', function(e){
 		var timerA = 10000;
-		addGradient($(this),timerA);
-		$(this).append('<i class="fa fa-spinner fa-spin"></i>');
-		setTimeout(function(){
-			$(this).find('.fa-spinner').remove();
-			console.log("Removew elemente dom....");
-		}, timerA);
+		var button = $(this);
+		if(button.attr('id') == 'submit-login' || button.attr('name') == 'HeaderSubmitLogin'){
+			addGradient($(this),timerA);
+			button.append('<i class="fa fa-spinner fa-spin"></i>');
+			setTimeout(function(){
+				button.find('.fa-spinner').remove();
+				console.log("Removew elemente dom....");
+			}, timerA);
+		}
 	});
 
 	$('#box-cart-btn').on('click', function(e){
