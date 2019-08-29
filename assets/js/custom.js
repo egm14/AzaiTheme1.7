@@ -138,13 +138,24 @@ $(document).ready(function(){
 	$('button[type="submit"]').on('click tap', function(e){
 		var timerA = 10000;
 		var button = $(this);
+		var formbutton = button.closest('form');
+
 		if(button.attr('id') == 'submit-login' || button.attr('name') == 'HeaderSubmitLogin'){
-			addGradient($(this),timerA);
-			button.append('<i class="fa fa-spinner fa-spin"></i>');
-			setTimeout(function(){
-				button.find('.fa-spinner').remove();
-				console.log("Removew elemente dom....");
-			}, timerA);
+			console.log(formbutton);
+			var formulario = {
+				email: formbutton.find('[name=email]').val(),
+     			password: formbutton.find('[name=password]').val()
+     		}
+     		if((formulario.email && formulario.password)){
+     			console.log("Inputs llenos correctamentes.");
+     			addGradient(button,timerA);
+				button.append('<i class="fa fa-spinner fa-spin"></i>');
+				setTimeout(function(){
+					button.find('.fa-spinner').remove();
+					console.log("Removew elemente dom....");
+				}, timerA);
+     		}
+			
 		}
 	});
 
