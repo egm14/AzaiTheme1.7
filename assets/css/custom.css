@@ -284,6 +284,7 @@ body#checkout label.js-terms.custom-control-label::before{width:1rem;height:1rem
 
 /* Checkout show order summary */
 body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
+#show-orden:hover{cursor:pointer;}
 #show-orden .span.btn-order-summary{padding:10px 20px;margin-bottom:.5rem;background-color:black;color:white;display:flex;flex-wrap:wrap;justify-content:space-between;}
 #show-orden .span.btn-order-summary::after{content:"\f107";font-family:"FontAwesome";color:white;text-decoration:none!important;}
 #show-orden .span.btn-order-summary.active{background-color:#4CAF50;font-weight:700;}

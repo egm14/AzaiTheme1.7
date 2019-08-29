@@ -4,7 +4,6 @@
 $(document).ready(function(){
 		//Close loader
 		setTimeout(function () {
-		    //$(".loader-page").css({visibility:"hidden",opacity:"0"})
 		    $(".loader-page").hide();
 		  }, 300);
 		  console.log("Spinner fuera luego del documento estar ready");
@@ -12,8 +11,6 @@ $(document).ready(function(){
 
 		var loader = $(".loader-page");
 
-     	/*setTimeout(function () {openLoader() }, 300);
-			      console.log("Spinner a mostrar");*/
 		var wtCategory = $('#wt_cat_carousel').on('click tap', function(){
 			loader.show();
 		});
@@ -31,12 +28,10 @@ $(document).ready(function(){
 			}
 		});
      	 function openLoader(e){
-			//loader.css({visibility:"visibe",opacity:"100"});
 			loader.show();
 			console.log("Estoy abriendo loader");
     	 }
 	     function closeLoader(e){
-			//loader.css({visibility:"hidden",opacity:"0"});
 			loader.hide();
 			console.log("Estoy cerrando loader");
 	     }
@@ -94,7 +89,7 @@ $(document).ready(function(){
 
      /*==================== SIZE CHART  =======================*/
 	  
-     /*sSIZE-CHART-CONTENT*/
+     	/*sSIZE-CHART-CONTENT*/
      	$('div.container-woman-size-chart').find('ul.tabs li').click(function(e){
 		      e.preventDefault();
 
@@ -107,7 +102,7 @@ $(document).ready(function(){
 		    $(tab_id).addClass('current');
 		  });
 	   
-  /*========= END SIZE CHART ==============*/
+  		/*========= END SIZE CHART ==============*/
 
 
 	  /*==================== MENU LOGIN SESIÓN - MOBILE =======================*/
@@ -139,9 +134,15 @@ $(document).ready(function(){
 
 	/*==================== CHANGE COLOR ADD TO BAG =======================*/
 
-	$('[data-link-action="sign-in"]').on('click', function(e){
-		var ele = $('[data-link-action="sign-in"]');
-		addGradient(ele);
+	
+	$('button[type="submit"]').on('click tap', function(e){
+		var timerA = 10000;
+		addGradient($(this),timerA);
+		$(this).append('<i class="fa fa-spinner fa-spin"></i>');
+		setTimeout(function(){
+			$(this).find('.fa-spinner').remove();
+			console.log("Removew elemente dom....");
+		}, timerA);
 	});
 
 	$('#box-cart-btn').on('click', function(e){
@@ -166,13 +167,8 @@ $(document).ready(function(){
 		console.log("click cuento");
 		openLoader();
 	});
-	$('#login-content-displayNav2').find('button.submit').on('click tap',function(e){
-		var ele = $(this);
-		addGradient(ele, 8000);
-		//openLoader();
-	});
 	
-		
+	
 	function addGradient(vb, time){
 		var timer = 5000;
 		if (time){
@@ -184,7 +180,7 @@ $(document).ready(function(){
 		vb.addClass("gradient-border");	
 		var add = vb;
 		setTimeout(function(){
-			vb.removeClass("gradient-border")
+			vb.removeClass("gradient-border");
 			console.log("Removiendo clase gradiend-border");
 			}, timer);	
 	}

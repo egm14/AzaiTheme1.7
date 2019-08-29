@@ -74,6 +74,8 @@ $(document).ready(function () {
 
   $(document).on('submit', '[id*="login-content-"] form', function (e) {
     e.preventDefault();
+   // $(this).find('button[type="submit"]').append('<i class="fa fa-spinner fa-spin"></i>');
+    //$(this).find('button[type="submit"] .fa-spinner').fadeIn();
     submitLoginFunction($(this).closest('.login-content'));
   });
   $(document).on('submit', '[id*="create-account-content-"] form', function (e) {
@@ -107,11 +109,10 @@ function submitLoginFunction(elem) {
       token: prestashop.token
     },
     before: function(){
-       console.log("Está iniciando sesión ::::: success");
+       console.log("Está inician do sesión ::::: success");
     },
     success: function (jsonData) {
       if (jsonData.hasError) {
-         console.log("Está iniciando sesión :: success");
         var errors = '';
         for (error in jsonData.errors) {
           if (error != 'indexOf' && error != '' && error != 'back') {
@@ -132,6 +133,8 @@ function submitLoginFunction(elem) {
           }
         }
       } else {
+        //elem.find('button[type="submit"] .fa-spinner').fadeOut();
+        //console.log("Data complete inicio sesión.");
         document.location.reload();
       }
     }
@@ -160,14 +163,14 @@ function submitCreate(elem){
       userAlert.find('.alerts.create-acount.alert-processing').addClass('active')
       console.log(elem.find('form'));
       console.log("Clic creando cuenta")
-      elem.find('button[type="submit"] .fa-spinner').fadeIn();
+     // elem.find('button[type="submit"] .fa-spinner').fadeIn();
     },
     error: function (jsonData, textStatus, errorThrown) {
       console.log(jsonData)
       console.log("TextSatus: " +textStatus)
       console.log("errorThrown: "+errorThrown)
 
-       $('button.btn-primary').find('.fa-spinner').fadeOut();
+      $('button.btn-primary').find('.fa-spinner').fadeOut();
       var userAlert = $('#alerts-n')
       userAlert.find('.alerts.create-acount.alert-processing').removeClass('active')
       userAlert.find('.alerts.create-acount.alert-error').addClass('active')
