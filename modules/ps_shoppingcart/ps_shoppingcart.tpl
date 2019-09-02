@@ -55,7 +55,12 @@
 
           {block name='cart_summary'}
           <div class="cart-summary mb-3">
+            
             <hr>
+            {block name='hook_shopping_cart'}
+              {hook h='displayShoppingCart'}
+            {/block}
+            
               <div class="cart-total d-flex flex-wrap justify-content-between my-3">
                 <strong class="label" style="font-style:underline;">{l s='Subtotal' d='Shop.Theme.Checkout'}</strong>
               </div>
