@@ -100,7 +100,9 @@
                     <td colspan="2" style="text-align:left!important;padding-left:10px;">
                         <div class="quote-qty-total-div">
                             <p style="margin-bottom:.6rem;">
-                            {if $customer.id_default_group != 12}
+                            {if ($customer.id_default_group == 12 or $customer.id_default_group == 13) and $shop.name == $azaimayoreo}
+                         <!--do nothing-->
+                         {else}
                                 <span class="product-amount-quote-qty" >{$total_quote_qtye}</span>
                                     <span>
                                     

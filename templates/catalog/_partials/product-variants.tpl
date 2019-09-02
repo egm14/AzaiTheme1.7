@@ -26,7 +26,7 @@
   {foreach from=$groups key=id_attribute_group item=group}
     {if $group.attributes}
                 <div class="product-variants-item">
-                    {if $shop.name == $azaimayoreo && $customer.id_default_group == 12 }
+                    {if ($customer.id_default_group == 12 or $customer.id_default_group == 13) && $shop.name == $azaimayoreo }
                           <h5>{$group.name}</h5>
 
                     {else if $shop.name == $azaimayoreo && $customer.id_default_group != 12 && $group.name != 'Size' }
@@ -35,7 +35,7 @@
                          <h5>{$group.name}</h5>
                     {/if}
         {if $group.group_type == 'select'}
-          {if $shop.name == $azaimayoreo && $customer.id_default_group == 12}
+          {if ($customer.id_default_group == 12 or $customer.id_default_group == 13) && $shop.name == $azaimayoreo }
               <select
               class="custom-select"
               id="group_{$id_attribute_group}"

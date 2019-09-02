@@ -33,7 +33,9 @@
                   <tr style="background-color:black; color:white; text-align:center">
                     <td scrop="col">Color</td>
                     <td scope="col" style="cuento">
-                       {if ($shop.name == $azaimayoreo && $customer.id_default_group != 12)}<span>Pack</span>{/if} QTY</td>
+                       {if ($customer.id_default_group == 12 or $customer.id_default_group == 13) and $shop.name == $azaimayoreo}
+                         <!--do nothing-->
+                         {else}<span>Pack</span>{/if} QTY</td>
 
                     
                     {if ($product.category == 'bags') or ($product.category == 'necklaces') or ($product.category == 'jewelry-necklaces') or ($product.category == 'earrings') or ($product.category == 'jewelry-earrings') or ($product.category == 'bracelets') or ($product.category == 'jewelry-bracelets') or ($product.category == 'hats') or ($product.category == 'brooches') or ($product.category == 'clutches-crossbody-bags') or ($product.category == 'jewelry') or
@@ -42,14 +44,21 @@
                       <td scope="col">TotalQty</b></td>
                     {else}
                       <td scope="col">TotalQty
-                         {if ($shop.name == $azaimayoreo && $customer.id_default_group != 12)}
+                         {if ($customer.id_default_group == 12 or $customer.id_default_group == 13) and $shop.name == $azaimayoreo}
+                         <!--do nothing-->
+                         {else}
                         <br /><b>S-M-L (2-2-2)</b>
+
                         {/if}
                        </td>
                     {/if}
 
                     <td scope="col">
-                      {if ($shop.name == $azaimayoreo && $customer.id_default_group != 12)}<span>Pack</span>{/if} Price</td>
+                      {if ($customer.id_default_group == 12 or $customer.id_default_group == 13) and $shop.name == $azaimayoreo}
+                         <!--do nothing-->
+                         {else}
+                         <span>Pack</span>
+                       {/if} Price</td>
                   </tr>
                 
                 </tbody>
@@ -100,7 +109,7 @@
                   </div>
         {/if}
 
-        {if ($shop.name != $azaimayoreo) or ($shop.name == $azaimayoreo && $customer.id_default_group == 12)}
+        {if ($shop.name != $azaimayoreo) or ($shop.name == $azaimayoreo && ($customer.id_default_group == 12 or $customer.id_default_group == 13))}
           <div class="add mb-1">
             
             <button

@@ -27,7 +27,7 @@
 {/block}
 
 {*ASSIGN GLOBAL VARIABLES TO USE ON AZAI*}
-{if $customer.id_default_group == 12}
+{if ($customer.id_default_group == 12 or $customer.id_default_group == 13)}
     {assign var=packageAzai value="1" scope="global"}
     {assign var=packageAzaiStep value="1" scope="global"}
     {assign var="WMinQuoteOrder" value="500" scope="global"}
@@ -35,6 +35,7 @@
     {assign var=packageAzai value="6" scope="global"}
     {assign var=packageAzaiStep value="6" scope="global"}
     {assign var="WMinQuoteOrder" value="0" scope="global"}
+    
 {/if}
 
 
