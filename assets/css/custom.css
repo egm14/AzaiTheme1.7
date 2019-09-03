@@ -261,7 +261,8 @@ body#checkout #checkout-payment-step .payment-options .payment-option.custom-con
 body#checkout #checkout-payment-step .payment-options .stripe-payment-17{margin:10px 0 10px 0;}
 body#checkout #checkout-payment-step .payment-options img.dsecure{border-radius:0.4rem;height:4rem;}
 body#checkout #checkout-payment-step .payment-options input[data-module-name="paypal"]{z-index:1;opacity:1;top:13px;left:13px;}
-
+/*Agregar animacion al boton seguir comprando*/
+#add-to-cart-or-refresh a.button-exclusive.btn.btn-default.btn-product{animation: jittery 5s infinite;&:hover{animation:heartbeat 0.2s infinite};cursor: pointer;border: solid 1px;}
 
 /*-------------code Voucher----------
 body#checkout #js-checkout-summary #cart-voucher-promo #promo-code form{background-color:black!important;}
@@ -320,10 +321,7 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  #product span.discount {color: red;}
  #product span.regular-price {color: #b4b0b0;}
 .products .product-miniature .product-flags .quote {display: none;}
-/*Agregar animacion al boton seguir comprando*/
-#add-to-cart-or-refresh a.button-exclusive.btn.btn-default.btn-product{
-animation: jittery 5s infinite;
-    &: hover{animation:heartbeat 0.2s infinite};}
+
  /*------------------ FOOTER - SECTION -------------*/
  .footer-container #footer h3{font:bold 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
  header .col-sm-12 i{color:black!important;}
