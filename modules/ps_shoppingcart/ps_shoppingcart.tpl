@@ -24,8 +24,13 @@
  *}
 <div id="_desktop_cart">
   <div class="blockcart cart-preview" 
-  {if ($customer.id_default_group == 12 or $customer.id_default_group == 13) and $shop.name == $azaimayoreo}{else}
-  style="display:none;"{/if} 
+  {if ($shop.name != $azaimayoreo)}
+
+  {else if ($customer.id_default_group == 12 or $customer.id_default_group == 13) and $shop.name == $azaimayoreo}
+    
+  {else}
+  style="display:none;"
+  {/if} 
   data-refresh-url="{$refresh_url}">
     <a class="clone-slidebar-toggle" data-id-slidebar="blockcart-slidebar" rel="nofollow" href="{$cart_url}" title="{l s='View Cart' d='Shop.Theme.Actions'}">
       {if $cart.products_count > 0}
