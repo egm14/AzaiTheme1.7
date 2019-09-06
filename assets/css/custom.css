@@ -1333,6 +1333,8 @@ nav.icono-menu-mobile a:hover{
    #_mobile_menu_wrapper .only-mobile button.closeSlidebar:before,
    #_mobile_cart .cart-summary button.closeSlidebar:before{font-size:1.6rem;}
    #_mobile_menu_wrapper button.closeSlidebar.fa.fa-times {background-color: black;color: white;border-radius: 0;top: 0;right: 0;width: 3rem;height: 3rem;}
+   /*propiedades del Boton Continuar comprando version movil*/
+   #_mobile_cart button.closeSlidebar.shopping {max-width: 300px;width: 100%;padding: .85rem!Important;margin-left: auto!important;margin-right: auto!important;margin-top: .7rem!important;left: 1px;text-transform: uppercase;font-size: 1rem!Important;animation: jittery 5s infinite;&: hover{;animation: heartbeat 0.2s infinite;}:;cursor: pointer;border: solid 1px;}
    /*Shopping Cart*/
   .blockcart > a .cart-products-count{position:absolute;top:-12px;right:-9px;}
   /*shopping cart list*/

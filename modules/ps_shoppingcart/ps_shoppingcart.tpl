@@ -79,7 +79,7 @@
               {block name='cart_actions'}
                 {include file='checkout/_partials/cart-detailed-actions.tpl' cart=$cart}
               {/block}
-               <button type="button" class="closeSlidebar shopping" aria-label="Close">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
+               <button type="button" class="closeSlidebar shopping" aria-label="Close"><i class="material-icons">keyboard_arrow_left</i>{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
           </div>
           {/block}
 

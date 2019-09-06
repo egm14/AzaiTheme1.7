@@ -76,7 +76,7 @@
       </div>
       <div class="cart-footer text-center">
         <a id="tocheckout" class="btn btn-secondary btn-sm" href="{$cart_url}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}">{l s='Proceed to checkout' d='Shop.Theme.Actions'}</a>
-        <button type="button" class="closeSlidebar shopping" aria-label="Close">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
+        <button type="button" class="closeSlidebar shopping" aria-label="Close"><i class="material-icons">keyboard_arrow_left</i>{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
         <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>-->
       </div>
     </div>
