@@ -1265,7 +1265,15 @@ nav.icono-menu-mobile a:hover{
     z-index:200;
   }
 }
-
+/***************************************************************
+ ******************** Screen Max-width 320px ******************
+ ***************************************************************/
+/*fix botones agregar / subtotal */ 
+@media only screen and (max-width: 320px) and (min-width: 5px)  {  
+ .product-line-grid-right.product-line-actions.col-sm-4.col-md-4 {
+    left: -11px;
+}
+}
 
 /***************************************************************
  ******************** Screen Min-width 768px  ******************
