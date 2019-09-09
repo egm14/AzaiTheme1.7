@@ -650,6 +650,10 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
 .cart-grid .cart-grid-body a.btn-secondary.icon-left, #blockcart-modal .modal-body .button-container .btn-secondary{box-shadow:none; color:gray;}
 .cart-grid .cart-grid-right{border-left:solid 1px #f7f4ee;}
 .cart-grid .cart-grid-right .cart-summary .checkout.cart-detailed-actions a.btn{background-color:black;color:white;box-shadow:none;}
+/*propiedades del Boton Continuar comprando version desktop*/
+#_desktop_cart button.closeSlidebar.shopping {max-width: 300px;width: 100%;padding-top: .05rem!important;
+    padding: 0px 15px 12px 0px;margin-left: auto!important;margin-right: auto!important;margin-top: .7rem!important;left: 1px;text-transform: uppercase;font-size: 1rem!Important;/*animation: jittery 5s infinite;&: hover{;animation: heartbeat 0.2s infinite;}:;cursor: pointer;*/border: solid 1px;color: black;font-weight: bold;}
+#_desktop_cart i.material-icons {position: relative!important;top:9px!important;}
 
 /*Chcekctout  - Step - Addresses*/
 #checkout-addresses-step .js-address-form #delivery-addresses article.selected{background-color:black;}
