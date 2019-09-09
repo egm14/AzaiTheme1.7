@@ -339,7 +339,7 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  header .col-sm-12 i{color:black!important;}
  header #_desktop_language_selector i.fa, header #_desktop_currency_selector i.fa{margin-left:.2rem !important;}
  header #_desktop_user_info i{margin-left:.7rem;}
-
+ #notifications .alert.alert-danger {background-color: #f76063;border-color: #f76063;color: #fff;z-index: 999;top: -5px;}
  /*----------------- Size Chart -----------------------*/
 .sizes-chart{
     text-decoration:underline;
