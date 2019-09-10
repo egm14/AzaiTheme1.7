@@ -1270,8 +1270,8 @@ nav.icono-menu-mobile a:hover{
  ***************************************************************/
 /*fix botones agregar / subtotal */ 
 @media only screen and (max-width: 320px) and (min-width: 5px)  {  
- .product-line-grid-right.product-line-actions.col-sm-4.col-md-4 {
-    left: -11px;
+ #_mobile_cart .product-line-grid-right.product-line-actions.col-sm-4.col-md-4 {
+    left: -9px!important;
 }
 }
 
