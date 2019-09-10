@@ -29,7 +29,7 @@
     {$hookDisplayBeforeCarrier nofilter}
   </div>
 
-  <div class="delivery-options-list">
+  <div title="{l s='Seleccione su metodo de envio' d='Shop.Theme.Actions'}" class="delivery-options-list">
     {if $delivery_options|count}
       <form
         class="clearfix"
