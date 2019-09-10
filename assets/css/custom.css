@@ -1267,10 +1267,10 @@ nav.icono-menu-mobile a:hover{
   }
 }
 /***************************************************************
- ******************** Screen Max-width 360px ******************
+ ******************** Screen Max-width 320px ******************
  ***************************************************************/
 /*fix botones agregar / subtotal */ 
-@media only screen and (max-width: 360px) and (max-width: 5px)  {  
+@media only screen and (max-width: 320px) and (max-width: 5px)  {  
 #_mobile_cart .product-line-grid-right.product-line-actions.col-sm-4.col-md-4 {
     left: -9px!important;}
 	/*Bloque mi cuenta*/
