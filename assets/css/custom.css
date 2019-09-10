@@ -671,7 +671,7 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
 body#checkout .checkout-step .delivery-options .delivery-option-item{padding:0!important;}
 body#checkout .checkout-step .delivery-options .delivery-option-item:focus{background-color:black;}
 body#checkout .checkout-step .delivery-options .delivery-option-item input.custom-control-input:checked{background-color:black;}
-body#checkout .checkout-step .delivery-options .delivery-option-item label{padding:1rem;}
+body#checkout .checkout-step .delivery-options .delivery-option-item label{/*padding:1rem;*/padding: 25px 15px 10px 15px;}
 body#checkout .delivery-option .col-sm-4, body#checkout .delivery-option .col-sm-3{text-align:center;}
 body#checkout #checkout-delivery-step .form-fields .delivery-options hr{margin-top:1rem;margin-bottom:1rem;color:transparent;border:none;}
 body#checkout #checkout-delivery-step .custom-radio .custom-control-label::before{top:-.862rem;}
