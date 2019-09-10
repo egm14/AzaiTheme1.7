@@ -676,6 +676,7 @@ body#checkout .delivery-option .col-sm-4, body#checkout .delivery-option .col-sm
 body#checkout #checkout-delivery-step .form-fields .delivery-options hr{margin-top:1rem;margin-bottom:1rem;color:transparent;border:none;}
 body#checkout #checkout-delivery-step .custom-radio .custom-control-label::before{top:-.862rem;}
 body#checkout #checkout-delivery-step .custom-radio .custom-control-label::after{top:-0.682rem;}
+              #checkout-delivery-step a.custtom-test-shiping {position: relative;top: -13px;}
 
 /*Checkout - personal information */
 body#checkout #checkout-personal-information-step ul.nav li.nav-item a{text-decoration:underline;font-size:.85rem;font-weight:600;}

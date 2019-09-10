@@ -45,7 +45,7 @@
                 <label class="custom-control custom-radio">
                   <!--<div class="col-1">-->
                           <input class="custom-control-input" type="radio" name="delivery_option[{$id_address}]" id="delivery_option_{$carrier.id}" value="{$carrier_id}"{if $delivery_option == $carrier_id} checked{/if}>
-                          <span class="custom-control-label"></span>
+                          <span class="custom-control-label"><a class="custtom-test-shiping">{l s='Seleccionar este metodo de envio' d='Shop.Theme.Actions'}</a></span>
                       <!--</div>-->
                     <div class="row delivery-option">
                       
