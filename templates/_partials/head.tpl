@@ -41,16 +41,18 @@
 
 {assign var=azaimayoreo value="azaimayoreo" scope="global"}
 
-<script type="text/javascript">
+<!-- Creatting new variable about shop
+<script type="text/javascript" hidden>
       var ShopAzai = {ldelim}
         shop : {$shop|@json_encode nofilter},
-        urls : {$urls|@json_encode nofilter},
+        page : {$page|@json_encode nofilter},
         currency : {$currency|@json_encode nofilter},
         language : {$language|@json_encode nofilter},
         cart : {$cart|@json_encode nofilter},
         customer: {$customer|@json_encode nofilter}
+        urls : {*$urls|@json_encode nofilter*}
         {rdelim}
-</script>
+</script>-->
 
 {block name='head_ie_compatibility'}
   <meta http-equiv="x-ua-compatible" content="ie=edge">

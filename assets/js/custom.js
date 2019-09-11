@@ -2,6 +2,7 @@
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
+	
 		//Close loader
 		setTimeout(function () {
 		    $(".loader-page").hide();
@@ -417,8 +418,8 @@ $(document).ready(function(){
 	 function hiddenSize(){
 	 	/*-------------- DISPLAY NONE SIZE ----------*/
 	 	//var shopName = $.trim($('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase());
-          var shopName = ShopAzai.shop.name;
-          var idGroupCustomer = ShopAzai.customer.id_default_group;
+          var shopName = prestashop.shop.name;
+          var idGroupCustomer = prestashop.customer.id_default_group;
           //console.log(shopName)
           if(shopName == "azaimayoreo" && idGroupCustomer != 12){
 	 			var formSize = $('#add-to-cart-or-refresh').find('.product-variants-item');
@@ -488,5 +489,51 @@ $(document).ready(function(){
 			}
 		}
 		request.send(vars);
+	}
+
+	/*==================== Seller_code_Profile  =======================*/
+	//console.log(prestashop)
+	if(prestashop.page.page_name == "authentication"){
+		console.log("Pagina de autentificación");
+		seller_code();
+	}
+
+	function seller_code(){
+		var clientType = getQueryVariable("client");
+		var codeSeller = getQueryVariable("code");
+
+			console.log(clientType);
+			console.log(codeSeller);
+			
+			//Select type client
+			if(clientType == "t" || clientType == "tienda" || clientType == "w" || clientType == "shop"){
+				clientType = "Tienda";
+			}else if(clientType == "c" || clientType == "cliente" || clientType == "vip" || clientType == "customer"){
+				clientType = "Customer";
+			}else{
+				"No hay tipo de cliente en la url"
+			}
+				console.log("Esto es el client: "+ clientType );
+	
+		//Selected the seller_code_profile
+		var client_tag_form = $('select[name=seller_code_profile]').find('option[value='+clientType+']');
+			client_tag_form.attr("selected", "selected");
+			console.log(client_tag_form);
+
+		//Input the seller_code
+		var client_code_seller = $('input[name=seller_code]');
+			client_code_seller.val(codeSeller);
+			console.log(cliente_code_seller);
+	}
+
+	function getQueryVariable(variable)
+	{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+	       return(false);
 	}
 });
