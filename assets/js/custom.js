@@ -1,4 +1,3 @@
-
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
@@ -115,7 +114,6 @@ $(document).ready(function(){
 /*==================== SECTION CHECKOUT - FORM SLIDEDOWN =======================*/
 	// LOGIN FORM
 	var newAccountForm = $('#new_account_form');
-
 	
     $(document).on('click', '#openLoginFormBlock', function(e) {
       e.preventDefault();
@@ -275,6 +273,29 @@ $(document).ready(function(){
 	 		//console.log("click sobre color");
 			}
 		 });
+		 //Spinner to change on product list
+		 $('.module').on('click','.remove-from-cart.close',function(){
+		 	console.log("hello");
+		 	var cerca = $(this).closest('div.product-line-grid').find('.product-line-grid-left .product-thumbnail');
+		 	var cerca2 = cerca.find('img');
+		 		chargingElement(cerca, cerca2);
+		 });
+		 $('.module').on('change','.js-cart-line-product-quantity.form-control',function(){
+		 	console.log("hello");
+		 	var cerca = $(this).closest('div.product-line-grid').find('.product-line-grid-left .product-thumbnail');
+		 	var cerca2 = cerca.find('img');
+		 		chargingElement(cerca, cerca2);
+		 });
+		 
+
+		 function chargingElement(cl, cl2){
+		 	if(cl && cl2){
+			 	cl.append('<i class="fa fa-spinner fa-spin list"></i>');
+			 	cl2.css("opacity", "0.3");
+			 }else if(cl){
+			 	cl.append('<i class="fa fa-spinner fa-spin"></i>');
+			 }else{}	 	
+		 }
 
 	 	/*change color table auto or selected */
 	 	function tableColor(){
@@ -326,7 +347,7 @@ $(document).ready(function(){
 	 	//obteniendo id de form - elemento tagged
 
 	 	var target = $(evt.target.form).attr('id');
-	 	//console.log(target);
+	 	//console.log("ESto es target: " +target);
 	 	if(target == 'quotationspro_request_form'){
 	 		//console.log("estoy en resumen quotatino");
 	 		var targetRow = evt.target.parentElement.parentElement.parentElement;
@@ -511,19 +532,27 @@ $(document).ready(function(){
 			}else if(clientType == "c" || clientType == "cliente" || clientType == "vip" || clientType == "customer"){
 				clientType = "Customer";
 			}else{
-				"No hay tipo de cliente en la url"
+				console.log("No hay tipo de cliente en la url");
 			}
 				console.log("Esto es el client: "+ clientType );
 	
 		//Selected the seller_code_profile
-		var client_tag_form = $('select[name=seller_code_profile]').find('option[value='+clientType+']');
-			client_tag_form.attr("selected", "selected");
-			console.log(client_tag_form);
+		if(clientType){
+			var client_tag_form = $('select[name=seller_code_profile]').find('option[value='+clientType+']');
+				client_tag_form.attr("selected", "selected");
+				//console.log(client_tag_form);
+		}else{
+			console.log("Var perfil no establecida en URL");
+		}
 
 		//Input the seller_code
-		var client_code_seller = $('input[name=seller_code]');
-			client_code_seller.val(codeSeller);
-			console.log(cliente_code_seller);
+		if(codeSeller){
+			var client_code_seller = $('input[name=seller_code]');
+				client_code_seller.val(codeSeller);
+				//console.log(cliente_code_seller);
+		}else{
+			console.log("No hay código en la URL.");
+		}
 	}
 
 	function getQueryVariable(variable)
