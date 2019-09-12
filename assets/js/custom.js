@@ -234,6 +234,16 @@ $(document).ready(function(){
 
 
 	 	};
+
+	/*==================== DISABLE OR HIDDEN INPUT FIELD ON IDENTY PAGE FOR USER LOGGED =======================*/
+		
+		var pageName = prestashop.page.page_name;
+		console.log(pageName);
+		if(pageName == 'identity'){
+			$('#customer-form').find('select[name="seller_code_profile"]').closest("div.form-group").hide();
+			$('#customer-form').find('input[name="seller_code"]').closest("div.form-group").hide();
+		}
+
 	  /*==================== APPEND CLONE TO NOTIFICATION PRIVATE SHOP =======================*/
 
 	 setTimeout(function(){
