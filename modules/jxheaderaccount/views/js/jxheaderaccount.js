@@ -110,6 +110,7 @@ function submitLoginFunction(elem) {
     },
     before: function(){
        console.log("Está inician do sesión ::::: success");
+
     },
     success: function (jsonData) {
       if (jsonData.hasError) {
@@ -144,7 +145,9 @@ function submitLoginFunction(elem) {
 }
 
 function submitCreate(elem){
-  //console.log(elem)
+  
+  var elementButton = elem.find('button[type="submit"]');
+  console.log(elementButton);
   var element = jxha.getQueryParameters(elem.find('form').serializeArray())
   var datos = $.extend({}, element,{
   //var datos = JSON.stringify(jxha.getQueryParameters(elem.find('form').serializeArray()), { 
@@ -159,16 +162,19 @@ function submitCreate(elem){
   var options = {
     data: JSON.parse(JSON.stringify(datos)),
     beforeSend: function(jsonData){
-      var userAlert = $('#alerts-n')
-      userAlert.find('.alerts.create-acount.alert-processing').addClass('active')
+      addGradient(elementButton)
+      var userAlert = $('#alerts-n');
+      userAlert.find('.alerts.create-acount.alert-processing').addClass('active');
       console.log(elem.find('form'));
-      console.log("Clic creando cuenta")
+      console.log("Clic creando cuenta");
      // elem.find('button[type="submit"] .fa-spinner').fadeIn();
     },
     error: function (jsonData, textStatus, errorThrown) {
       console.log(jsonData)
       console.log("TextSatus: " +textStatus)
       console.log("errorThrown: "+errorThrown)
+
+      removeGradient(elementButton);
 
       $('button.btn-primary').find('.fa-spinner').fadeOut();
       var userAlert = $('#alerts-n')
@@ -228,6 +234,7 @@ function submitCreate(elem){
              menuUser2.css("display", "none")
           }
           console.log("Esto fue un éxito....")
+
           //Making redirection to modulo page preference at site
           var shopName = $.trim($('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase());
           console.log(shopName)
@@ -262,6 +269,19 @@ function submitCreate(elem){
     ajax.init(options).responseJSON;
     //console.log(ajax.options);
 }
+//New function to add gradient on submit create account
+function addGradient(vb){
+    console.log("agregando clase gradiend-border ");
+    //console.log(vb);
+    vb.removeClass("gradient-border");
+    vb.addClass("gradient-border"); 
+    vb.append('<i class="fa fa-spinner fa-spin"></i>');
+  }
+
+function removeGradient(vb){
+    console.log("Eliminando gradiend-border ");
+    vb.removeClass("gradient-border");
+  }
 
 function submitRetrieve(elem) {
   var options = {
