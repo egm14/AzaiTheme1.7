@@ -244,12 +244,24 @@ $(document).ready(function(){
 	 	setTimeout(tableColor,2000);
 
 	 	$(document).on('change', 'input[name=quote_quantity]', function(evt) {
-        //console.log("TTTTouchSpin .quote_quantity: ");
         //console.log(evt.target);
         obtenerCalculo(evt);
+        	//Spinner to change on product list
+        	var father = $(this).closest('tr.quote_item').find('.quote_product a');
+		 	var imgSon = father.find('img');
+		 	chargingElement(father, imgSon);
+		 	setTimeout(function(){unChargingElement(father, imgSon)},900);
+    	});
+    	//Spinner to change on product list
+    	$(document).on('click tap', '.quote_quantity_delete i', function(evt){
+    		var father = $(this).closest('tr.quote_item').find('.quote_product a');
+		 	var imgSon = father.find('img');
+		 	chargingElement(father, imgSon);
     	});
 		 $('#quantity_wanted').on('change mousewheel touchspin', function(evt){
 		 	obtenerCalculo(evt);
+		 	
+		 		
 		 });	
 		 //Change color table on product
 		 prestashop.on("updatedProduct",function(){
@@ -275,25 +287,36 @@ $(document).ready(function(){
 		 });
 		 //Spinner to change on product list
 		 $('.module').on('click','.remove-from-cart.close',function(){
-		 	console.log("hello");
-		 	var cerca = $(this).closest('div.product-line-grid').find('.product-line-grid-left .product-thumbnail');
-		 	var cerca2 = cerca.find('img');
-		 		chargingElement(cerca, cerca2);
+		 	//console.log("hello");
+		 	var father = $(this).closest('div.product-line-grid').find('.product-line-grid-left .product-thumbnail');
+		 	var imgSon = father.find('img');
+		 		chargingElement(father, imgSon);
 		 });
-		 $('.module').on('change','.js-cart-line-product-quantity.form-control',function(){
-		 	console.log("hello");
-		 	var cerca = $(this).closest('div.product-line-grid').find('.product-line-grid-left .product-thumbnail');
-		 	var cerca2 = cerca.find('img');
-		 		chargingElement(cerca, cerca2);
+		 $(document).on('change','.js-cart-line-product-quantity.form-control',function(){
+		 	console.log("Change quantity -> s-cart-line-product-quantity");
+		 	var father = $(this).closest('div.product-line-grid').find('.product-line-grid-left .product-thumbnail');
+		 	var imgSon = father.find('img');
+		 		chargingElement(father, imgSon);
 		 });
 		 
 
 		 function chargingElement(cl, cl2){
 		 	if(cl && cl2){
-			 	cl.append('<i class="fa fa-spinner fa-spin list"></i>');
-			 	cl2.css("opacity", "0.3");
+		 			cl.find('.fa-spinner.list').remove();
+			 		cl.append('<i class="fa fa-spinner fa-spin list"></i>');
+			 		cl2.css("opacity", "0.3");
 			 }else if(cl){
+			 	cl.find('.fa-spinner.list').remove();
 			 	cl.append('<i class="fa fa-spinner fa-spin"></i>');
+			 }else{}	 	
+		 }
+
+		 function unChargingElement(cl, cl2){
+		 	if(cl && cl2){
+			 	cl.find('.fa-spinner.list').remove();
+			 	cl2.css("opacity", "1");
+			 }else if(cl){
+			 	cl.find('.fa-spinner.list').remove();
 			 }else{}	 	
 		 }
 
@@ -387,6 +410,7 @@ $(document).ready(function(){
 		 		uriPhp = '/themes/AzaiShop/assets/php2/';
 		 		//console.log(window.location.origin + uriPhp+'calculadora.php');
 		 	}
+		 	
 	 	$.ajax({
 	 		data: parametros,
 	 		url: window.location.origin + uriPhp+'calculadora.php',

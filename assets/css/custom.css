@@ -646,11 +646,16 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
 
 /***fa-spinner list product***/
 
-.fa-spinner.list{
+a.product-thumbnail .fa-spinner.list{
   position:absolute;
   left:0;
   right:0;
   top:40%;
+}
+td.quote_product a .fa-spinner.list{
+  position:relative;
+  left:-50%;
+  font-size:.8rem;
 }
 
  /*Shopping Cart*/
