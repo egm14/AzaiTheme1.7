@@ -645,6 +645,20 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
   }
 }
 
+/***fa-spinner list product***/
+
+a.product-thumbnail .fa-spinner.list{
+  position:absolute;
+  left:0;
+  right:0;
+  top:40%;
+}
+td.quote_product a .fa-spinner.list{
+  position:relative;
+  left:-50%;
+  font-size:.8rem;
+}
+
  /*Shopping Cart*/
 .blockcart > a .cart-products-count{position:absolute;top:-13px;right:-9px; background:black;}
 .cart-grid .cart-grid-body a.btn-secondary.icon-left, #blockcart-modal .modal-body .button-container .btn-secondary{box-shadow:none; color:gray;}

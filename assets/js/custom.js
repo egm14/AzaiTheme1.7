@@ -1,7 +1,7 @@
-
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
+	
 		//Close loader
 		setTimeout(function () {
 		    $(".loader-page").hide();
@@ -114,7 +114,6 @@ $(document).ready(function(){
 /*==================== SECTION CHECKOUT - FORM SLIDEDOWN =======================*/
 	// LOGIN FORM
 	var newAccountForm = $('#new_account_form');
-
 	
     $(document).on('click', '#openLoginFormBlock', function(e) {
       e.preventDefault();
@@ -245,12 +244,24 @@ $(document).ready(function(){
 	 	setTimeout(tableColor,2000);
 
 	 	$(document).on('change', 'input[name=quote_quantity]', function(evt) {
-        //console.log("TTTTouchSpin .quote_quantity: ");
         //console.log(evt.target);
         obtenerCalculo(evt);
+        	//Spinner to change on product list
+        	var father = $(this).closest('tr.quote_item').find('.quote_product a');
+		 	var imgSon = father.find('img');
+		 	chargingElement(father, imgSon);
+		 	setTimeout(function(){unChargingElement(father, imgSon)},900);
+    	});
+    	//Spinner to change on product list
+    	$(document).on('click tap', '.quote_quantity_delete i', function(evt){
+    		var father = $(this).closest('tr.quote_item').find('.quote_product a');
+		 	var imgSon = father.find('img');
+		 	chargingElement(father, imgSon);
     	});
 		 $('#quantity_wanted').on('change mousewheel touchspin', function(evt){
 		 	obtenerCalculo(evt);
+		 	
+		 		
 		 });	
 		 //Change color table on product
 		 prestashop.on("updatedProduct",function(){
@@ -274,6 +285,40 @@ $(document).ready(function(){
 	 		//console.log("click sobre color");
 			}
 		 });
+		 //Spinner to change on product list
+		 $('.module').on('click','.remove-from-cart.close',function(){
+		 	//console.log("hello");
+		 	var father = $(this).closest('div.product-line-grid').find('.product-line-grid-left .product-thumbnail');
+		 	var imgSon = father.find('img');
+		 		chargingElement(father, imgSon);
+		 });
+		 $(document).on('change','.js-cart-line-product-quantity.form-control',function(){
+		 	console.log("Change quantity -> s-cart-line-product-quantity");
+		 	var father = $(this).closest('div.product-line-grid').find('.product-line-grid-left .product-thumbnail');
+		 	var imgSon = father.find('img');
+		 		chargingElement(father, imgSon);
+		 });
+		 
+
+		 function chargingElement(cl, cl2){
+		 	if(cl && cl2){
+		 			cl.find('.fa-spinner.list').remove();
+			 		cl.append('<i class="fa fa-spinner fa-spin list"></i>');
+			 		cl2.css("opacity", "0.3");
+			 }else if(cl){
+			 	cl.find('.fa-spinner.list').remove();
+			 	cl.append('<i class="fa fa-spinner fa-spin"></i>');
+			 }else{}	 	
+		 }
+
+		 function unChargingElement(cl, cl2){
+		 	if(cl && cl2){
+			 	cl.find('.fa-spinner.list').remove();
+			 	cl2.css("opacity", "1");
+			 }else if(cl){
+			 	cl.find('.fa-spinner.list').remove();
+			 }else{}	 	
+		 }
 
 	 	/*change color table auto or selected */
 	 	function tableColor(){
@@ -325,7 +370,7 @@ $(document).ready(function(){
 	 	//obteniendo id de form - elemento tagged
 
 	 	var target = $(evt.target.form).attr('id');
-	 	//console.log(target);
+	 	//console.log("ESto es target: " +target);
 	 	if(target == 'quotationspro_request_form'){
 	 		//console.log("estoy en resumen quotatino");
 	 		var targetRow = evt.target.parentElement.parentElement.parentElement;
@@ -365,6 +410,7 @@ $(document).ready(function(){
 		 		uriPhp = '/themes/AzaiShop/assets/php2/';
 		 		//console.log(window.location.origin + uriPhp+'calculadora.php');
 		 	}
+		 	
 	 	$.ajax({
 	 		data: parametros,
 	 		url: window.location.origin + uriPhp+'calculadora.php',
@@ -417,8 +463,8 @@ $(document).ready(function(){
 	 function hiddenSize(){
 	 	/*-------------- DISPLAY NONE SIZE ----------*/
 	 	//var shopName = $.trim($('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase());
-          var shopName = ShopAzai.shop.name;
-          var idGroupCustomer = ShopAzai.customer.id_default_group;
+          var shopName = prestashop.shop.name;
+          var idGroupCustomer = prestashop.customer.id_default_group;
           //console.log(shopName)
           if(shopName == "azaimayoreo" && idGroupCustomer != 12){
 	 			var formSize = $('#add-to-cart-or-refresh').find('.product-variants-item');
@@ -488,5 +534,59 @@ $(document).ready(function(){
 			}
 		}
 		request.send(vars);
+	}
+
+	/*==================== Seller_code_Profile  =======================*/
+	//console.log(prestashop)
+	if(prestashop.page.page_name == "authentication"){
+		console.log("Pagina de autentificación");
+		seller_code();
+	}
+
+	function seller_code(){
+		var clientType = getQueryVariable("client");
+		var codeSeller = getQueryVariable("code");
+
+			console.log(clientType);
+			console.log(codeSeller);
+			
+			//Select type client
+			if(clientType == "t" || clientType == "tienda" || clientType == "w" || clientType == "shop"){
+				clientType = "Tienda";
+			}else if(clientType == "c" || clientType == "cliente" || clientType == "vip" || clientType == "customer"){
+				clientType = "Customer";
+			}else{
+				console.log("No hay tipo de cliente en la url");
+			}
+				console.log("Esto es el client: "+ clientType );
+	
+		//Selected the seller_code_profile
+		if(clientType){
+			var client_tag_form = $('select[name=seller_code_profile]').find('option[value='+clientType+']');
+				client_tag_form.attr("selected", "selected");
+				//console.log(client_tag_form);
+		}else{
+			console.log("Var perfil no establecida en URL");
+		}
+
+		//Input the seller_code
+		if(codeSeller){
+			var client_code_seller = $('input[name=seller_code]');
+				client_code_seller.val(codeSeller);
+				//console.log(cliente_code_seller);
+		}else{
+			console.log("No hay código en la URL.");
+		}
+	}
+
+	function getQueryVariable(variable)
+	{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+	       return(false);
 	}
 });
