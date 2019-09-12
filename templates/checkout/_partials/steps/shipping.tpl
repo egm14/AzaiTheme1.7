@@ -65,12 +65,16 @@
                           </div>
                           <div class="col-sm-4">
                             {if $shop.name == $azaimayoreo}
-                              <img class="imgInternationCarrier" src="{$urls.theme_assets}OtherFile/internationalCarriers.png" style="max-height:30px;display:block;text-align:center;margin:10px auto"/>
-                              <span class="carrier-delay">{$carrier.delay}</span>
-                               </div>
-                              <div class="col-sm-3" style="font-weight:600;">
-                                <span class="carrier-price">{$carrier.price}</span>
-                              </div>
+                               <!-- Exception to dominican REpublica Carrier -->
+                              {if $carrier.url != "https://azai.com"}
+                                <img class="imgInternationCarrier" src="{$urls.theme_assets}OtherFile/internationalCarriers.png" style="max-height:30px;display:block;text-align:center;margin:10px auto"/>
+                              {/if}
+                                <span class="carrier-delay">{$carrier.delay}</span>
+                                 </div>
+                                <div class="col-sm-3" style="font-weight:600;">
+                                  <span class="carrier-price">{$carrier.price}</span>
+                                </div>
+
                             {else}
                                 <!-- Exception to dominican REpublica Carrier -->
                               {if ($customer.addresses[$cart.id_address_delivery].country == 'Dominican Republic' || $customer.addresses[$cart.id_address_delivery].country == 'República Dominicana')}
