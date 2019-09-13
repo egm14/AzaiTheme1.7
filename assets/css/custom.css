@@ -1296,6 +1296,11 @@ body#my-account ul.my-account-links.row li {
 #_mobile_cart .col-md-6.qty.mb-2.mb-md-0 {
     left: -6px;
 }
+#_mobile_cart .cart-summary.open-slidebar ul.cart-items li.cart-item .product-line-actions .input-group-btn-vertical button {
+    padding: 6px 17px 4px 8px;
+    background-color: black;
+    margin: 3px -8px;
+}
 }
 /***************************************************************
  ******************** Screen Min-width 768px  ******************
