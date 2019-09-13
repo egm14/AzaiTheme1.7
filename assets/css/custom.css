@@ -651,12 +651,15 @@ a.product-thumbnail .fa-spinner.list{
   position:absolute;
   left:0;
   right:0;
-  top:40%;
+  top:25%;
+  font-size:2rem!important;
+  color:#00ae00!important;
 }
 td.quote_product a .fa-spinner.list{
-  position:relative;
-  left:-50%;
-  font-size:.8rem;
+  position:absolute;
+  left:30%;
+  top:-.4rem;
+  font-size:2.5rem;
 }
 
  /*Shopping Cart*/
@@ -890,8 +893,7 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 .product-additional-info .roja45quotationspro_button_container .btn.add-to-quote{
   width:-moz-available;
   padding-top:.9rem;
-  display:flex;
-  flex-direction:row;
+  display:block;
   justify-content: center;
   font-size:.9rem;
   height:3rem;
@@ -900,6 +902,10 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 .product-additional-info .roja45quotationspro_button_container .btn.add-to-quote i{
   margin-right:5px;
   margin-top:-3px;
+}
+.product-additional-info .roja45quotationspro_button_container .btn.add-to-quote i.material-icons{
+  position:absolute;
+  left:19%;
 }
 #product .input-group-btn-vertical{
   width:1.3rem;
@@ -1076,6 +1082,9 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
   margin-bottom:1.543rem!important;
 
 }
+#quote_summary tbody td.quote_product a{
+    position:relative!important;
+  }
 
 
 /***************************************************************
@@ -1468,6 +1477,7 @@ body#my-account ul.my-account-links.row li {
   #quote_summary tbody td.quote_product{
     width:70px!important;
   }
+  
   #quote_summary tr.last-row-resumen{
     background-color:black;
     color:white!important;

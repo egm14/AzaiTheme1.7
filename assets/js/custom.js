@@ -134,9 +134,11 @@ $(document).ready(function(){
 	/*==================== CHANGE COLOR ADD TO BAG =======================*/
 
 	
-	$('button[type="submit"]').on('click tap', function(e){
+	$(document).on('click tap', 'button[type="submit"]',function(e){
 		var timerA = 10000;
 		var button = $(this);
+		//console.log("operación para los submit");
+		//console.log(button);
 		var formbutton = button.closest('form');
 
 		if(button.attr('id') == 'submit-login' || button.attr('name') == 'HeaderSubmitLogin'){
@@ -148,26 +150,28 @@ $(document).ready(function(){
      		if((formulario.email && formulario.password)){
      			console.log("Inputs llenos correctamentes.");
      			addGradient(button,timerA);
-				button.append('<i class="fa fa-spinner fa-spin"></i>');
 				setTimeout(function(){
 					button.find('.fa-spinner').remove();
 					console.log("Removew elemente dom....");
 				}, timerA);
      		}
 			
+		}else{
+			console.log("Button submit: Enviado datos...");
+     			addGradient(button,timerA);
 		}
 	});
 
-	$('#box-cart-btn').on('click', function(e){
+	/*$('#box-cart-btn').on('click', function(e){
 		var ele = $('#box-cart-btn');
 		addGradient(ele);
-	});
+	});*/
 	$('#tocheckout').on('click', function(e){
 		var ele = $('#tocheckout');
 		//console.log(this);
 		addGradient(ele);
 	});
-	$('#cartAction').on('click', function(e){
+	$(document).on('click', '#cartAction',function(e){
 		var ele = $('#cartAction');
 		//console.log(this);
 		addGradient(ele);
@@ -183,7 +187,7 @@ $(document).ready(function(){
 	
 	
 	function addGradient(vb, time){
-		var timer = 5000;
+		var timer = 10000;
 		if (time){
 			 timer = time;
 		}
@@ -191,11 +195,22 @@ $(document).ready(function(){
 		//console.log(vb);
 		vb.removeClass("gradient-border");
 		vb.addClass("gradient-border");	
-		var add = vb;
+		addPingButton(vb);
+		
 		setTimeout(function(){
 			vb.removeClass("gradient-border");
+			removePingButton(vb);
 			console.log("Removiendo clase gradiend-border");
 			}, timer);	
+	}
+
+	function addPingButton(ping){
+		ping.append('<i class="fa fa-spinner fa-spin"></i>');
+	}
+
+	function removePingButton(ping){
+		ping.find('.fa-spinner').remove();
+		console.log("borrando -fa-spinner");
 	}
 
 
@@ -260,7 +275,7 @@ $(document).ready(function(){
         	var father = $(this).closest('tr.quote_item').find('.quote_product a');
 		 	var imgSon = father.find('img');
 		 	chargingElement(father, imgSon);
-		 	setTimeout(function(){unChargingElement(father, imgSon)},900);
+		 	setTimeout(function(){unChargingElement(father, imgSon)},800);
     	});
     	//Spinner to change on product list
     	$(document).on('click tap', '.quote_quantity_delete i', function(evt){
@@ -296,7 +311,7 @@ $(document).ready(function(){
 			}
 		 });
 		 //Spinner to change on product list
-		 $('.module').on('click','.remove-from-cart.close',function(){
+		 $(document).on('click','.remove-from-cart.close',function(){
 		 	//console.log("hello");
 		 	var father = $(this).closest('div.product-line-grid').find('.product-line-grid-left .product-thumbnail');
 		 	var imgSon = father.find('img');
@@ -313,8 +328,8 @@ $(document).ready(function(){
 		 function chargingElement(cl, cl2){
 		 	if(cl && cl2){
 		 			cl.find('.fa-spinner.list').remove();
-			 		cl.append('<i class="fa fa-spinner fa-spin list"></i>');
-			 		cl2.css("opacity", "0.3");
+			 		cl.append('<i class="fa fa-spinner fa-spin list" ></i>');
+			 		cl2.css("opacity", "0.25");
 			 }else if(cl){
 			 	cl.find('.fa-spinner.list').remove();
 			 	cl.append('<i class="fa fa-spinner fa-spin"></i>');
@@ -547,7 +562,7 @@ $(document).ready(function(){
 	}
 
 	/*==================== Seller_code_Profile  =======================*/
-	//console.log(prestashop)
+	//console.log(prestashop);
 	if(prestashop.page.page_name == "authentication"){
 		console.log("Pagina de autentificación");
 		seller_code();
@@ -561,7 +576,7 @@ $(document).ready(function(){
 			console.log(codeSeller);
 			
 			//Select type client
-			if(clientType == "t" || clientType == "tienda" || clientType == "w" || clientType == "shop"){
+			if(clientType == "t" || clientType == "tienda" || clientType == "w" || clientType == "shop" || clientType == "ref"){
 				clientType = "Tienda";
 			}else if(clientType == "c" || clientType == "cliente" || clientType == "vip" || clientType == "customer"){
 				clientType = "Customer";
