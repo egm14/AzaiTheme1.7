@@ -32,18 +32,28 @@
         $(document).ready(function() {
             prestashop.blockcart = prestashop.blockcart || {}, prestashop.blockcart.ajax = !0;
             var t = prestashop.blockcart.showModal || function(t) {
-                var userAlert = $('#alerts-n').find('.alerts.create-acount.alert-success-product')
-                    
-                    userAlert.addClass('active')
-                    setTimeout(function(){userAlert.removeClass('active')},3000)
-                    $('.blockcart.cart-preview').show();
-                
                 $("body").append(t), $("#blockcart-modal")/*.modal("show")*/.on("hidden.bs.modal", function() {
-                    $("#blockcart-modal").remove()
+                    $("#blockcart-modal").remove();
                 })
             };
             $(document).ready(function() {
                 prestashop.on("updateCart", function(o) {
+                    // console.log(o);
+                    $('.blockcart.cart-preview').show();
+
+                    if(o.reason.linkAction =="add-to-cart"){
+                       // console.log("Carrito actualizado");
+                        var userAlert = $('#alerts-n').find('.alerts.create-acount.alert-success-product')
+                        userAlert.addClass('active')
+                        setTimeout(function(){userAlert.removeClass('active'); },3000);
+
+                        //Animation for buttons
+                        $('button#box-cart-btn').removeClass("gradient-border");
+                        $('button#box-cart-btn').find('.fa-spinner').remove();
+                        //console.log("Cart actualizado"); 
+                    }
+
+                    
                     var r = $(".blockcart").data("refresh-url"),
                         e = {};
                     o && o.reason && (e = {
@@ -53,6 +63,7 @@
                     }), $.post(r, e).then(function(o) {
                         $(".blockcart").replaceWith($(o.preview).find(".blockcart")), $(".block-cart-body").replaceWith($(o.preview).find(".block-cart-body")), o.modal && t(o.modal)
                     }).fail(function(t) {
+
                         prestashop.emit("handleError", {
                             eventType: "updateShoppingCart",
                             resp: t
