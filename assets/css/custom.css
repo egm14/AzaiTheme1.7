@@ -1648,6 +1648,15 @@ p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
 #formgiftcard p.datesendcard {margin: 10px 0px 0px -73px;}
 /*Fix slider Azai Mayoreo*/
 #bonslick .link-bonslick {display: block;position: relative;overflow: hidden;top: 87px;width: 100%;height: 307px;}
+/*Car qty*/
+#_mobile_cart .col-md-6.qty.mb-2.mb-md-0 {
+    left: -6px;
+}
+#_mobile_cart .cart-summary.open-slidebar ul.cart-items li.cart-item .product-line-actions .input-group-btn-vertical button {
+    padding: 6px 17px 4px 8px!important;
+    background-color: black!important;
+    margin: 3px -8px!important;
+}
  }
 
 
