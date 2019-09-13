@@ -80,7 +80,10 @@ $(document).ready(function () {
         }
         addAlertProductCart();
         var btnLook = $(this)
-        setTimeout(function(){btnLook.removeClass("gradient-border");},2600)
+        setTimeout(function(){
+            btnLook.removeClass("gradient-border");
+            btnLook.closest('a').find(".fa-spinner").remove();
+        },2600)
        
     });
 

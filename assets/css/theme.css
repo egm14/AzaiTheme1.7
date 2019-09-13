@@ -12190,7 +12190,7 @@ main .list .products article.product-miniature .product-miniature-container .pro
 }
 
 .btn-secondary-2:active,
-.btn-secondary-2:focus,
+/*.btn-secondary-2:focus,*/
 .btn-secondary-2:hover,
 .btn-secondary:active,
 .btn-secondary:focus,
