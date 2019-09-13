@@ -18,7 +18,7 @@
 <div class="jx-header-account-wrapper {$configs.JXHEADERACCOUNT_DISPLAY_STYLE}{if $customer.is_logged} is-logged{/if}">
   {if $customer.is_logged}
     <div class="header-account-content{if {$configs.JXHEADERACCOUNT_DISPLAY_STYLE} == 'onecolumn'} text-center{else}{/if}">
-      <h3 class="page-heading"><a href="{$link->getPageLink('my-account', true)|escape:'htmlall':'UTF-8'}" title="{l s='Mi Cuenta 01' mod='jxheaderaccount'}" rel="nofollow">{l s='My account' mod='jxheaderaccount'}</a></h3>
+      <h3 class="page-heading"><a href="{$link->getPageLink('my-account', true)|escape:'htmlall':'UTF-8'}" title="{l s='Mi Cuenta 01' mod='jxheaderaccount'}" rel="nofollow" style="text-decoration: underline;">{l s='My account' mod='jxheaderaccount'}</a></h3>
       <div class="user-data">
         <h3>{$firstname} {$lastname}</h3>
         {if $configs.JXHEADERACCOUNT_USE_AVATAR}
