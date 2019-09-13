@@ -1293,6 +1293,9 @@ body#my-account ul.my-account-links.row li {
     display: inline-block!important;
     width: 555px!important;
 }
+#_mobile_cart .col-md-6.qty.mb-2.mb-md-0 {
+    left: -6px;
+}
 }
 /***************************************************************
  ******************** Screen Min-width 768px  ******************
