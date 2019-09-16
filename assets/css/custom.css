@@ -1442,10 +1442,7 @@ flex-basis: auto !important;}
    span.expand-more-mobil {display: none;}/*Ocultar Lenguaje - Moneda Mobil desktop*/
    .button-exclusive.btn.btn-default.btn-product{display:none;}
    #submitRequest{height:-webkit-min-content;height:-moz-min-content;height:min-content;margin:15px 8px!important;padding:15px 20px;}
-   /*fix miniaturas scroll vistas de producto modulo MagiconeZoom*/
-   #product div.MagicToolboxContainer.selectorsLeft .MagicToolboxSelectorsContainer, div.MagicToolboxContainer.selectorsRight .MagicToolboxSelectorsContainer {order: 2;width: 100% !important;margin-bottom: 10px;min-height: 140px!important;flex: auto;
-   flex-basis: auto !important;}
-}
+   }
 
 /***************************************************************
  ******************* Screen Max-width 767px *********************
@@ -1597,7 +1594,9 @@ flex-basis: auto !important;}
   #module-roja45quotationspro-QuotationsProFront #content{
     box-shadow:none;
   }
-  
+  /*fix miniaturas scroll vistas de producto modulo MagiconeZoom*/
+   #product div.MagicToolboxContainer.selectorsLeft .MagicToolboxSelectorsContainer, div.MagicToolboxContainer.selectorsRight .MagicToolboxSelectorsContainer {order: 2;width: 100% !important;margin-bottom: 10px;min-height: 140px!important;flex: auto;
+   flex-basis: auto !important;}
 }
 /***************************************************************
  ******************* Screen Max-width 720x *********************
