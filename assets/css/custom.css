@@ -1394,6 +1394,8 @@ body#my-account ul.my-account-links.row li {
     background-color: black!important;
     margin: 3px -8px!important;
 }
+#product div.MagicToolboxContainer.selectorsLeft .MagicToolboxSelectorsContainer, div.MagicToolboxContainer.selectorsRight .MagicToolboxSelectorsContainer {order: 2;width: 100% !important;margin-bottom: 10px;min-height: 140px!important;flex: auto;
+flex-basis: auto !important;}
 }
 /***************************************************************
  ******************** Screen Min-width 768px  ******************
@@ -1891,7 +1893,8 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
  ***************************************************************/
 @media only screen and (max-width:375px){
  .breadcrumb {display: -webkit-box!important;/* display: flex; */}
-
+#product div.MagicToolboxContainer.selectorsLeft .MagicToolboxSelectorsContainer, div.MagicToolboxContainer.selectorsRight .MagicToolboxSelectorsContainer {order: 2;width: 100% !important;margin-bottom: 10px;min-height: 140px!important;flex: auto;
+flex-basis: auto !important;}
 }
 
 /***************************************************************
