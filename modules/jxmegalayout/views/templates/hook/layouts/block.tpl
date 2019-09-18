@@ -22,7 +22,7 @@
 
 {if $items.module_name == "logo"}
   <a class="jxml-logo{if $items.specific_class} {$items.specific_class}{/if}" href="{$urls.base_url}" title="{$shop.name}">
-    <img class="logo img-fluid" src="{$shop.logo}" alt="{$shop.name}" />
+    <img class="logo img-fluid" src="{$shop.logo}" alt="{$shop.name}" /> <spam class="logo img-fluid-refresh" ><i class="fa fa-refresh" aria-hidden="true"></i></spam>
   </a>
 {/if}
 {if $items.module_name == "copyright"}
