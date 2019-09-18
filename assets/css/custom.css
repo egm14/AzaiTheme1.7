@@ -366,6 +366,7 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  header #_desktop_language_selector i.fa, header #_desktop_currency_selector i.fa{margin-left:.2rem !important;}
  header #_desktop_user_info i{margin-left:.7rem;}
  #notifications .alert.alert-danger {background-color: #f76063;border-color: #f76063;color: #fff;z-index: 999;top: -5px;}
+ #header spam.logo.img-fluid-refresh {position: absolute;top: 14px;font-size: 18px;}
  /*----------------- Size Chart -----------------------*/
 .sizes-chart{
     text-decoration:underline;
@@ -1440,6 +1441,7 @@ flex-basis: auto !important;}
    /*Fix cart Item - tablet*/
    #_mobile_cart .cart-grid-body.mb-3.mb-lg-0.col-12.col-lg-8 {-webkit-box-flex: 0;-ms-flex: none;flex: none;max-width: none;}
    span.expand-more-mobil {display: none;}/*Ocultar Lenguaje - Moneda Mobil desktop*/
+   spam.logo.img-fluid-refresh {position: absolute;top: 14px;font-size: 18px;display: none;}/*Ocultar refresh desktop*/
    .button-exclusive.btn.btn-default.btn-product{display:none;}
    #submitRequest{height:-webkit-min-content;height:-moz-min-content;height:min-content;margin:15px 8px!important;padding:15px 20px;}
    }
