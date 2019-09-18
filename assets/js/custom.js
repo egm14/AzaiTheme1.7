@@ -20,6 +20,9 @@ $(document).ready(function(){
 		$('#js-product-list .product-title').on('click tap', function(){
 			openLoader();
 		});
+		$('.jxml-logo').on('click tap', function(){
+			openLoader();
+		});
 		$('button#submitRequest').on('click tap', function(){
 			if($(this).hasClass("disabled")){
 				console.log("La cotización no alcanza el minimo de compra.");
