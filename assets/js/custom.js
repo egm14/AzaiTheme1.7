@@ -23,10 +23,15 @@ $(document).ready(function(){
 		$('.jxml-logo').on('click tap', function(){
 			openLoader();
 		});
+
 		$('.closeSlidebar.shopping').on('click tap', function(){
 			openLoader();
 		});
 		$('.btn-product.shopping').on('click tap', function(){
+
+		});
+
+		$('.dropdown-item').on('click tap', function(){
 			openLoader();
 		});
 		$('button#submitRequest').on('click tap', function(){
@@ -59,6 +64,10 @@ $(document).ready(function(){
 	     			window.location.href = prestashop.urls.base_url;
 	     		}else if(cgma_minimal_order < websiteCart){
 	     			$('#cgma_errors').hide();
+
+	     		}else{
+	     			$('.checkout.cart-detailed-actions a').addClass('disabled');
+            		$('.cart-summary .cart-detailed-actions a').addClass('disabled');
 	     		}
 
 	     /*==================== Reload to home when page Checkout don´t have product  =======================*/
@@ -128,19 +137,6 @@ $(document).ready(function(){
 		  });
 	   
   		/*========= END SIZE CHART ==============*/
-
-  		 /*==================== Quantity Ajax =======================*/
-	  	var disableCheckout;
-
-     	function MinOrder(disableCheckout){
-     		if(disableCheckout <= 1){
-     			disableCheckout = false;
-     		}else{
-     			disableCheckout = true;
-     		}
-     	}
-	   
-  		/*========= Quantity Ajax ==============*/
 
 
 
@@ -364,14 +360,6 @@ $(document).ready(function(){
 		 	var father = $(this).closest('div.product-line-grid').find('.product-line-grid-left .product-thumbnail');
 		 	var imgSon = father.find('img');
 		 		chargingElement(father, imgSon);
-
-		 	prestashop.on("updateCart", function(){
-			 	//Minial Order
-			 	//var prestashopCart = $.trim($('#cart-subtotal-products').find('.value')[0].innerText.replace("$", ""));
-			 	//console.log("updating cart : "+ prestashopCart + " <=> " + cgma_minimal_order);
-			 	//cgmaMinialOrder(cgma_minimal_order, prestashopCart);
-		 	});
-		 	
 		 });
 		 
 
@@ -688,8 +676,7 @@ $(document).ready(function(){
 		 			var cartSummary = $('.cart-summary');
 		 			if(cartSummary.hasClass("open-slidebar")){
 				 			if(minOrder > amountCart){
-				 				
-				 				
+				 			
 				 					console.log("Aún no alcanzas el mínimo de order: " + minOrder);
 				 					minOrderError.show();
 				 					btnCartBox.addClass("disabled");

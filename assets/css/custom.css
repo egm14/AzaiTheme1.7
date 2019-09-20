@@ -28,9 +28,11 @@ By Azai.com theme v1. Test v2 git - v1.0.0.1
   border-radius: var(--borderWidth);
   color:white!important;
 }
-.disabled{
-  background-color:gray;
+a#cartAction.btn-secondary.disabled{
+  background-color:gray!important;
+  opacity:.5;
 }
+
 .gradient-border:after {
   content: '';
   position: absolute;
