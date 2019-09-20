@@ -270,7 +270,7 @@ class cgma extends Module
         }
         else
         {
-           if ($this->context->cart->getOrderTotal((Configuration::get('cgma_tax') == 1 ? true : false), Cart::ONLY_PRODUCTS) < $minimal_purchase)
+           if ($this->context->cart->getOrderTotal((Configuration::get('cgma_tax') == 1 ? true : false), Cart::ONLY_PRODUCTS) /*< $minimal_purchase*/)
             {
                 $this->context->smarty->assign('cgma_error', sprintf($this->l('A minimum purchase total of %1s is required to validate your order, current purchase total is %2s. HOLA II'), Tools::displayPrice($minimal_purchase, $currency), Tools::displayPrice($this->context->cart->getOrderTotal((Configuration::get('cgma_tax') == 1 ? true : false), Cart::ONLY_PRODUCTS), $currency)));
                 return $this->display(__FILE__, 'views/templates/front/displayShoppingCart.tpl');
