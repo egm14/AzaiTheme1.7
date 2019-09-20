@@ -1758,8 +1758,8 @@
 
 		 			var cartSummary = $('.cart-summary');
 		 			if(cartSummary.hasClass("open-slidebar")){
-				 			if(minOrder < amountCart){
-				 				//	console.log("Aún no alcanzas el mínimo de order: " + minOrder);
+				 			if(minOrder > amountCart){
+				 				//console.log("Aún no alcanzas el mínimo de order: " + minOrder);
 				 					minOrderError.show();
 				 					btnCartBox.addClass("disabled");
 				 				
