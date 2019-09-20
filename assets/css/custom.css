@@ -371,7 +371,7 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  header .col-sm-12 i{color:black!important;}
  header #_desktop_language_selector i.fa, header #_desktop_currency_selector i.fa{margin-left:.2rem !important;}
  header #_desktop_user_info i{margin-left:.7rem;}
- #notifications .alert.alert-danger {background-color: #f76063;border-color: #f76063;color: #fff;z-index: 999;top: -5px;}
+ #notifications .alert.alert-danger {background-color: #f76063;border-color: #f76063;color: #fff;z-index: 999;top: 95px;}
  #header spam.logo.img-fluid-refresh {position: absolute;top: 14px;font-size: 18px;}
  /*----------------- Size Chart -----------------------*/
 .sizes-chart{
@@ -1451,6 +1451,15 @@ flex-basis: auto !important;}
    #_desktop_cart .product-line-grid .product-line-grid-body>.product-line-info .current-price {color: #000;font: 700 1.125rem/1.75rem Helvetica Neue,sans-serif;font-size: 10px;}
    /*Fix cart Item - tablet*/
    #_mobile_cart .cart-grid-body.mb-3.mb-lg-0.col-12.col-lg-8 {-webkit-box-flex: 0;-ms-flex: none;flex: none;max-width: none;}
+   #_mobile_cart strong.price {
+    font-size: 10px!important;
+	}
+	#_mobile_cart span.product-price {
+    margin-bottom: 0px!important;
+    display: flex;
+    flex-direction: row-reverse;
+	
+}
    span.expand-more-mobil {display: none;}/*Ocultar Lenguaje - Moneda Mobil desktop*/
    spam.logo.img-fluid-refresh {position: absolute;top: 14px;font-size: 18px;display: none;}/*Ocultar refresh desktop*/
    .button-exclusive.btn.btn-default.btn-product{display:none;}
@@ -1610,6 +1619,11 @@ flex-basis: auto !important;}
   /*fix miniaturas scroll vistas de producto modulo MagiconeZoom*/
    #product div.MagicToolboxContainer.selectorsLeft .MagicToolboxSelectorsContainer, div.MagicToolboxContainer.selectorsRight .MagicToolboxSelectorsContainer {order: 2;width: 100% !important;margin-bottom: 10px;min-height: 140px!important;flex: auto;
    flex-basis: auto !important;}
+   #_mobile_cart span.product-price {
+    margin-bottom: 0px!important;
+    display: flex;
+    flex-direction: row-reverse;
+}
 }
 /***************************************************************
  ******************* Screen Max-width 720x *********************
@@ -1674,6 +1688,11 @@ p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
     padding: 6px 17px 4px 8px!important;
     background-color: black!important;
     margin: 3px -8px!important;
+}
+#_mobile_cart span.product-price {
+    margin-bottom: 0px!important;
+    display: flex;
+    flex-direction: row-reverse;
 }
  }
 
