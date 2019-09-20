@@ -17,8 +17,9 @@ By Azai.com theme v1. Test v2 git - v1.0.0.1
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-
-  cursor:default;
+}
+#box-cart-btn:hover{
+  cursor:pointer;
 }
 .gradient-border {
   --borderWidth: 3px;
@@ -26,6 +27,9 @@ By Azai.com theme v1. Test v2 git - v1.0.0.1
   position: relative;
   border-radius: var(--borderWidth);
   color:white!important;
+}
+.disabled{
+  background-color:gray;
 }
 .gradient-border:after {
   content: '';
@@ -1152,6 +1156,11 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
     position:relative!important;
   }
 
+/****** Box Cart btn ****/
+#cartAction{
+  background-color:#00ae00 !important;
+  color:white;
+}
 
 /***************************************************************
  ***************LIST OF DISABLED FUNCTIONS *********************

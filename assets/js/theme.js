@@ -288,6 +288,8 @@ function(t, e, n) {
                 })
             })
         }), prestashop.on("updatedProduct", function(n) {
+        	
+		 	
             if (n && n.product_minimal_quantity) {
                 var i = parseInt(n.product_minimal_quantity, 10);
                 (0, r.default)("#quantity_wanted").trigger("touchspin.updatesettings", {

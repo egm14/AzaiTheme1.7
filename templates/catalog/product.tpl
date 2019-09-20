@@ -182,7 +182,7 @@
                     {if $shop.name == $azaimayoreo}
                       {if $customer.is_logged != NULL}
                         <a href="{$link->getCategoryLink($category->id_category, $category->link_rewrite)|escape:'html':'UTF-8'}"
-                             class="button-exclusive btn btn-default btn-product" 
+                             class="button-exclusive btn btn-default btn-product shopping" 
                              title="{l s='Continue shopping' mod='roja45quotationspro'}">
                               <i class="material-icons">keyboard_arrow_left</i>{l s='Continue shopping' mod='roja45quotationspro'}
                           </a>

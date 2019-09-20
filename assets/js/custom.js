@@ -1,7 +1,7 @@
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
-	
+	//console.log("esto es la variable disableCheckout: " + disableCheckout);
 		//Close loader
 		setTimeout(function () {
 		    $(".loader-page").hide();
@@ -23,6 +23,12 @@ $(document).ready(function(){
 		$('.jxml-logo').on('click tap', function(){
 			openLoader();
 		});
+		$('.closeSlidebar.shopping').on('click tap', function(){
+			openLoader();
+		});
+		$('.btn-product.shopping').on('click tap', function(){
+			openLoader();
+		});
 		$('button#submitRequest').on('click tap', function(){
 			if($(this).hasClass("disabled")){
 				console.log("La cotización no alcanza el minimo de compra.");
@@ -42,6 +48,22 @@ $(document).ready(function(){
 	     	var loaderSubmit = $('.loader-submit-page');
 	     	loaderSubmit.show();
 	     }
+
+	     /*==================== Reload to home when page Checkout don´t have product =======================*/
+	     		
+				var checkoutPage = prestashop.page.page_name;
+	     		var websiteCart = prestashop.cart.totals.total_excluding_tax.amount;
+
+	     		if((cgma_minimal_order > websiteCart) && (checkoutPage == "checkout")){
+	     			openLoader();
+	     			window.location.href = prestashop.urls.base_url;
+	     		}else if(cgma_minimal_order < websiteCart){
+	     			$('#cgma_errors').hide();
+	     		}
+
+	     /*==================== Reload to home when page Checkout don´t have product  =======================*/
+	
+
 	/*==================== FIX COLOR RULE FILTER - COLUMN LEFT  =======================*/
 	 	
 	 	prestashop.on("updateProductList",filterColors);
@@ -106,6 +128,20 @@ $(document).ready(function(){
 		  });
 	   
   		/*========= END SIZE CHART ==============*/
+
+  		 /*==================== Quantity Ajax =======================*/
+	  	var disableCheckout;
+
+     	function MinOrder(disableCheckout){
+     		if(disableCheckout <= 1){
+     			disableCheckout = false;
+     		}else{
+     			disableCheckout = true;
+     		}
+     	}
+	   
+  		/*========= Quantity Ajax ==============*/
+
 
 
 	  /*==================== MENU LOGIN SESIÓN - MOBILE =======================*/
@@ -297,10 +333,12 @@ $(document).ready(function(){
 		 	//$('#quantity_wanted').val(qty);
 		 	closeLoader();
 		 	hiddenSize();
+
 		 });
 		 prestashop.on("handleError",function(){
 		 	closeLoader();
 		 });
+		 
 		 $("ul.variant-links.list-inline").on('click', function(dt){
 	 		openLoader();
 	 		//console.log("click sobre color");
@@ -322,9 +360,18 @@ $(document).ready(function(){
 		 });
 		 $(document).on('change','.js-cart-line-product-quantity.form-control',function(){
 		 	console.log("Change quantity -> s-cart-line-product-quantity");
+		 	//console.log("esto es la variable disableCheckout: " + disableCheckout);
 		 	var father = $(this).closest('div.product-line-grid').find('.product-line-grid-left .product-thumbnail');
 		 	var imgSon = father.find('img');
 		 		chargingElement(father, imgSon);
+
+		 	prestashop.on("updateCart", function(){
+			 	//Minial Order
+			 	//var prestashopCart = $.trim($('#cart-subtotal-products').find('.value')[0].innerText.replace("$", ""));
+			 	//console.log("updating cart : "+ prestashopCart + " <=> " + cgma_minimal_order);
+			 	//cgmaMinialOrder(cgma_minimal_order, prestashopCart);
+		 	});
+		 	
 		 });
 		 
 
@@ -347,6 +394,8 @@ $(document).ready(function(){
 			 	cl.find('.fa-spinner.list').remove();
 			 }else{}	 	
 		 }
+
+		 
 
 	 	/*change color table auto or selected */
 	 	function tableColor(){
@@ -618,3 +667,39 @@ $(document).ready(function(){
 	       return(false);
 	}
 });
+
+/************************************************************/
+/*************** Code using on core.js **********************/
+/*************************************************************/
+
+
+ 	/***** Action then updating cart and retriview minOrder *****/
+	    /*  var prestashopCart = $.trim($('#cart-subtotal-products').find('.value')[0].innerText.replace("$", ""));
+			 console.log("updating cart : "+ prestashopCart + " <=> " + cgma_minimal_order);
+
+			 cgmaMinialOrder(cgma_minimal_order, prestashopCart);
+
+			 function cgmaMinialOrder(minOrder, amountCart){
+		 		if(minOrder){
+		 			var boxCartS = $('.cart-summary');
+		 			var minOrderError = $('#cgma_errors');
+		 			var btnCartBox = $('#cartAction');
+
+		 			var cartSummary = $('.cart-summary');
+		 			if(cartSummary.hasClass("open-slidebar")){
+				 			if(minOrder > amountCart){
+				 				
+				 				
+				 					console.log("Aún no alcanzas el mínimo de order: " + minOrder);
+				 					minOrderError.show();
+				 					btnCartBox.addClass("disabled");
+				 				
+				 			}else{
+				 				console.log("Pasando al carrito");
+				 				minOrderError.hide();
+				 				btnCartBox.removeClass("disabled");
+				 			}
+				 	}
+		 		}
+		 	} */
+	/***** Action then updating cart and retriview minOrder *****/	

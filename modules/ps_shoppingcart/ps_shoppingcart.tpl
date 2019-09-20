@@ -58,7 +58,6 @@
 
           {block name='cart_summary'}
           <div class="cart-summary mb-3">
-            
             <hr>
             {block name='hook_shopping_cart'}
               {hook h='displayShoppingCart'}
@@ -67,6 +66,10 @@
               <div class="cart-total d-flex flex-wrap justify-content-between my-3">
                 <strong class="label" style="font-style:underline;">{l s='Subtotal' d='Shop.Theme.Checkout'}</strong>
               </div>
+
+
+              
+
 
               <!-- Section to block a voucher tpl -->
               {block name='cart_totals'}
@@ -77,6 +80,8 @@
               {block name='cart_actions'}
                 {include file='checkout/_partials/cart-detailed-actions.tpl' cart=$cart}
               {/block}
+
+              
                <button type="button" class="closeSlidebar shopping" aria-label="Close"><i class="material-icons">keyboard_arrow_left</i>{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
           </div>
           {/block}
