@@ -65,21 +65,19 @@ $(document).ready(function(){
 		     		if((minimal > websiteCart)&&(checkoutPage == "checkout")){
 		     			openLoader();
 		     			$('#cgma_errors').show();
-		     			//window.location.href = prestashop.urls.base_url;
+		     			window.location.href = prestashop.urls.base_url;
 		     			console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCart);
 		     		
 		     		}else if((minimal < websiteCart)&&(checkoutPage == "checkout")){
 		     			$('#cgma_errors').hide();
 		     			console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCart);
 		     		
-		     		}else{
-
-		     			if(minimal < websiteCartPre){
+		     		}else if(minimal > websiteCartPre){
 		     				$('#cgma_errors').show();
 		     				$('.checkout.cart-detailed-actions a').addClass('disabled');
 		            		$('.cart-summary .cart-detailed-actions a').addClass('disabled');
 		            		console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCartPre);
-		     			}else{
+		     		}else{
 		     				$('#cgma_errors').hide();
 		     				$('.checkout.cart-detailed-actions a').removeClass('disabled');
 		            		$('.cart-summary .cart-detailed-actions a').removeClass('disabled');
@@ -87,7 +85,7 @@ $(document).ready(function(){
 		     			}
 		     			
 		     		
-		     		}
+		     		
 	     		
 
 	     /*==================== Reload to home when page Checkout don´t have product  =======================*/
