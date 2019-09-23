@@ -6,7 +6,7 @@
  * @license   This program is not free software and you can't resell and redistribute it
  *
  * CONTACT WITH DEVELOPER
- * support@mypresta.eu
+ * support@mypresta.eu*/
  
 
 
@@ -20,4 +20,4 @@ $(document).ready(function () {
             $('.cart-summary .cart-detailed-actions a').removeClass('disabled');
         }
     }
-});*/
+});
