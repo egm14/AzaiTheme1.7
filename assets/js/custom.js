@@ -56,19 +56,37 @@ $(document).ready(function(){
 
 	     /*==================== Reload to home when page Checkout don´t have product =======================*/
 	     		
+	     		var websiteCart = $.trim($('#cart-subtotal-products').find('.value')[0].innerText.replace("$", "").replace(prestashop.currency.iso_code, "")).toLocaleString('en-US');
+				var websiteCartPre = prestashop.cart.totals.total.amount.toLocaleString('en-US');
+				var minimal = cgma_minimal_order.toLocaleString('en-US');
 				var checkoutPage = prestashop.page.page_name;
-	     		var websiteCart = prestashop.cart.totals.total_excluding_tax.amount;
 
-	     		if((cgma_minimal_order > websiteCart) && (checkoutPage == "checkout")){
-	     			openLoader();
-	     			window.location.href = prestashop.urls.base_url;
-	     		}else if(cgma_minimal_order < websiteCart){
-	     			$('#cgma_errors').hide();
+				
+		     		if((minimal > websiteCart)&&(checkoutPage == "checkout")){
+		     			openLoader();
+		     			//window.location.href = prestashop.urls.base_url;
+		     			console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCart);
+		     		
+		     		}else if((minimal < websiteCart)&&(checkoutPage == "checkout")){
+		     			$('#cgma_errors').hide();
+		     			console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCart);
+		     		
+		     		}else{
 
-	     		}else{
-	     			$('.checkout.cart-detailed-actions a').addClass('disabled');
-            		$('.cart-summary .cart-detailed-actions a').addClass('disabled');
-	     		}
+		     			if(minimal > websiteCartPre){
+		     				$('.checkout.cart-detailed-actions a').addClass('disabled');
+		            		$('.cart-summary .cart-detailed-actions a').addClass('disabled');
+		            		console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCartPre);
+		     			}else{
+		     				$('#cgma_errors').hide();
+		     				$('.checkout.cart-detailed-actions a').removeClass('disabled');
+		            		$('.cart-summary .cart-detailed-actions a').removeClass('disabled');
+		            		console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCartPre);
+		     			}
+		     			
+		     		
+		     		}
+	     		
 
 	     /*==================== Reload to home when page Checkout don´t have product  =======================*/
 	
