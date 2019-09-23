@@ -60,10 +60,11 @@ $(document).ready(function(){
 				var websiteCartPre = prestashop.cart.totals.total.amount.toLocaleString('en-US');
 				var minimal = cgma_minimal_order.toLocaleString('en-US');
 				var checkoutPage = prestashop.page.page_name;
-
+				console.log("websiteCArt: "+ websiteCart);
 				
 		     		if((minimal > websiteCart)&&(checkoutPage == "checkout")){
 		     			openLoader();
+		     			$('#cgma_errors').show();
 		     			//window.location.href = prestashop.urls.base_url;
 		     			console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCart);
 		     		
@@ -73,7 +74,8 @@ $(document).ready(function(){
 		     		
 		     		}else{
 
-		     			if(minimal > websiteCartPre){
+		     			if(minimal < websiteCartPre){
+		     				$('#cgma_errors').show();
 		     				$('.checkout.cart-detailed-actions a').addClass('disabled');
 		            		$('.cart-summary .cart-detailed-actions a').addClass('disabled');
 		            		console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCartPre);
