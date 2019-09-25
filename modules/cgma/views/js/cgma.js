@@ -15,9 +15,6 @@ $(document).ready(function () {
         if (disableCheckout == 1) {
             $('.checkout.cart-detailed-actions a').addClass('disabled');
             $('.cart-summary .cart-detailed-actions a').addClass('disabled');
-        }else{
-        	$('.checkout.cart-detailed-actions a').removeClass('disabled');
-            $('.cart-summary .cart-detailed-actions a').removeClass('disabled');
         }
     }
 });

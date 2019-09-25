@@ -55,7 +55,13 @@ $(document).ready(function(){
 	     }
 
 	     /*==================== Reload to home when page Checkout don´t have product =======================*/
-	     		
+	     	MinOrderReload();
+
+	     	$(document).on('click tap', '.blockcart.cart-preview a',function(){
+				MinOrderReload();
+				
+			});
+	     	function MinOrderReload(){
 	     		var websiteCart = $.trim($('#cart-subtotal-products').find('.value')[0].innerText.replace("$", "").replace(prestashop.currency.iso_code, "")).toLocaleString('en-US');
 				var websiteCartPre = prestashop.cart.totals.total.amount.toLocaleString('en-US');
 				var minimal = cgma_minimal_order.toLocaleString('en-US');
@@ -81,13 +87,10 @@ $(document).ready(function(){
 		     				$('#cgma_errors').hide();
 		     				$('.checkout.cart-detailed-actions a').removeClass('disabled');
 		            		$('.cart-summary .cart-detailed-actions a').removeClass('disabled');
-		            		console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCartPre);
+		            		console.log("Checkout <- "+"minial:"+minimal + "vs" + "cart: "+websiteCartPre);
 		     			}
-		     			
-		     		
-		     		
-	     		
 
+		     }
 	     /*==================== Reload to home when page Checkout don´t have product  =======================*/
 	
 
@@ -185,8 +188,8 @@ $(document).ready(function(){
 
 
 	/*==================== CHANGE COLOR ADD TO BAG =======================*/
-
 	
+
 	$(document).on('click tap', 'button[type="submit"]',function(e){
 		var timerA = 10000;
 		var button = $(this);
