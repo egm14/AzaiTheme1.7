@@ -39,11 +39,7 @@
           {/block}
         </div>
 
-        <!--{block name='continue_shopping'}
-          <a class="btn btn-secondary btn-sm icon-left" href="{$urls.pages.index}">
-            <span>{l s='Continue shopping' d='Shop.Theme.Actions'}</span>
-          </a>
-        {/block}-->
+        
 
         <!-- shipping informations -->
         {block name='hook_shopping_cart_footer'}
@@ -71,8 +67,15 @@
               {include file='checkout/_partials/cart-detailed-actions.tpl' cart=$cart}
             {/block}
 
+            {block name='continue_shopping'}
+              <a class="btn btn-secondary btn-sm icon-left" href="{$urls.pages.index}">
+                <span>{l s='Continue shopping' d='Shop.Theme.Actions'}</span>
+              </a>
+            {/block}
+
           </div>
         {/block}
+
 
         {block name='hook_reassurance'}
           {hook h='displayReassurance'}

@@ -27,8 +27,8 @@ $(document).ready(function(){
 		$('.closeSlidebar.shopping').on('click tap', function(){
 			openLoader();
 		});
-		$('.btn-product.shopping').on('click tap', function(){
-
+		$('a.btn-secondary.icon-left').on('click tap', function(){
+			openLoader();
 		});
 
 		$('.dropdown-item').on('click tap', function(){
