@@ -1496,7 +1496,7 @@ flex-basis: auto !important;}
 	
 }
    span.expand-more-mobil {display: none;}/*Ocultar Lenguaje - Moneda Mobil desktop*/
-   spam.logo.img-fluid-refresh {position: absolute;top: 14px;font-size: 18px;display: none;}/*Ocultar refresh desktop*/
+   spam.logo.img-fluid-refresh {position: absolute;top: 14px;font-size: 18px;display: none!important;}/*Ocultar refresh desktop*/
    .button-exclusive.btn.btn-default.btn-product{display:none;}
    #submitRequest{height:-webkit-min-content;height:-moz-min-content;height:min-content;margin:15px 8px!important;padding:15px 20px;}
 
