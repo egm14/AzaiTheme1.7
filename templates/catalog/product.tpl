@@ -148,9 +148,6 @@
                   {/block}
                   <!-- End Size Chart Dinamic -->
 
-                  {block name='language_block'}
-                    {include file="../_partials/language.tpl"}
-                  {/block}
 
                 {block name='product_pack'}
                   {if $packItems}
