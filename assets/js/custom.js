@@ -1,6 +1,7 @@
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
+
 	//console.log("esto es la variable disableCheckout: " + disableCheckout);
 		//Close loader
 		setTimeout(function () {
@@ -24,9 +25,9 @@ $(document).ready(function(){
 			openLoader();
 		});
 
-		$('.closeSlidebar.shopping').on('click tap', function(){
+		/*$('.closeSlidebar.shopping').on('click tap', function(){
 			openLoader();
-		});
+		});*/
 		$('a.btn-secondary.icon-left').on('click tap', function(){
 			openLoader();
 		});
