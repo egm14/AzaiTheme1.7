@@ -392,7 +392,7 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  header #_desktop_language_selector i.fa, header #_desktop_currency_selector i.fa{margin-left:.2rem !important;}
  header #_desktop_user_info i{margin-left:.7rem;}
  #notifications .alert.alert-danger {background-color: #f76063;border-color: #f76063;color: #fff;z-index: 999;top: 95px;}
- #header spam.logo.img-fluid-refresh {position: absolute;top: 14px;font-size: 18px;}
+ #header spam.logo.img-fluid-refresh {position: absolute;top: 14px;font-size: 18px;display: flex;right: 0%;}
  /*----------------- Size Chart -----------------------*/
 .sizes-chart{
     text-decoration:underline;
