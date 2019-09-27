@@ -24,14 +24,18 @@ $(document).ready(function(){
 		$('.jxml-logo').on('click tap', function(){
 			openLoader();
 		});
-
-		/*$('.closeSlidebar.shopping').on('click tap', function(){
+		$('ul#wt_cat_carousel').on('click tap', 'li a', function(){
 			openLoader();
-		});*/
+		});
+		$(document).on('click tap', 'ul.top-level-menu li a.jxmegamenu_item', function(){
+			openLoader();
+		});
+		$(document).on('click tap', 'ul.top-level-menu li  ul.is-simplemenu li a', function(){
+			openLoader();
+		});
 		$('a.btn-secondary.icon-left').on('click tap', function(){
 			openLoader();
 		});
-
 		$('.dropdown-item').on('click tap', function(){
 			openLoader();
 		});
