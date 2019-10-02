@@ -25,8 +25,8 @@ $(document).ready(function(){
 					//console.log("cookLanguage Relink: " + $(e.target).closest('a').data('language'));
 				}
 			}else{
-				createCookie("cookLanguage", prestashop.language.iso_code, 365);
-				//console.log("cookLanguage: " + prestashop.language.iso_code);
+				//createCookie("cookLanguage", prestashop.language.iso_code, 365);
+				//console.log("No será creada la cookLanguage: " + prestashop.language.iso_code);
 			}
 		});
 	}
