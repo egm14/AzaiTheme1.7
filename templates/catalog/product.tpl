@@ -148,7 +148,7 @@
                   {/block}
                   <!-- End Size Chart Dinamic -->
 
-
+                  
                 {block name='product_pack'}
                   {if $packItems}
                     <section class="product-pack u-carousel uc-el-pack-miniature uc-nav mb-3">

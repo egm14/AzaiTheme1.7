@@ -122,7 +122,13 @@
               </div>
             {/if}
 
-           
+
+                  <!-- language Block PopUp  --->
+                    {block name='language_block'}
+                       {include file="_partials/language.tpl"}
+                     {/block}
+                  <!-- language Block PopUp --->
+
            
           </footer>
           
@@ -139,6 +145,9 @@
       {hook h='displayBeforeBodyClosingTag'}
     {/block}
 
+<script type="text/javascript">
+  document.cookie = 
+</script>
     
   </body>
 

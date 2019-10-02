@@ -8,7 +8,7 @@ $(document).ready(function(){
 		    $(".loader-page").hide();
 		  }, 300);
 		  console.log("Spinner fuera luego del documento estar ready");
-
+		 
 
 		var loader = $(".loader-page");
 

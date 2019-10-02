@@ -475,6 +475,83 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
     transition:0.3s all ease;
     margin-left:5px;
 }
+
+#languagemodal  .modal-dialog{
+  max-width:500px;
+}
+#languagemodal .modal-content{
+  min-height:180px;
+  padding:15px 20px;
+}
+#languagemodal .modal-content .language-title{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding:5px 10px;
+}
+#languagemodal .modal-content .language-title h3{
+  color:white;
+  margin:0px;
+}
+
+/****/
+#languagemodal input[type="radio"] {
+  appearance:none;
+  margin:0 40px;
+  width: 24px;
+  height: 24px;
+  background: #eeeeee;
+  box-shadow:
+    inset 0 0 0 .4em white;
+  border-radius: 50%;
+  transition: .2s;
+  cursor:pointer;
+  color: #363945;
+}
+
+  #languagemodal input[type="radio"]:hover,
+  #languagemodal input[type="radio"]:checked {
+    background: #363945;
+    box-shadow:
+    inset 0 0 0 .6em white;
+  }
+  
+  #languagemodal input[type="radio"]:checked {
+    background: #56be8e;
+    box-shadow:
+      inset 0 0 0 .4em white;
+  } 
+
+  #languagemodal input[type="radio"]:focus { outline: 0; }
+
+
+  #languagemodal  div ~ i.fa.fa-square-o{
+    color: black;    display: inline;
+  }
+  #languagemodal  div i.fa.fa-check-square-o{
+      display: none;
+  }
+  #languagemodal  a i.fa.fa-spinner.fa-spin{
+    display:none;
+  }
+  #languagemodal  a:focus i.fa.fa-square-o{
+      display: none;
+  }
+  #languagemodal  a:focus i.fa.fa-check-square-o{
+      color: #000;   display: inline;
+  }
+  #languagemodal  a:focus i.fa.fa-spinner.fa-spin{
+    display:inline-block;
+  }
+  #languagemodal a:hover i.fa {
+  color: #7AA3CC;
+  }
+/***/
 #_desktop_user_info a#jx-header-account-link:focus:after{
     transform:rotate(180deg);
     transition:0.3s all ease;
