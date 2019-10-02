@@ -31,7 +31,7 @@
     </span>
     <div class="dropdown-menu dropdown-menu-left" aria-labelledby="language-selector-label">
       {foreach from=$languages item=language}
-        <a href="{url entity='language' id=$language.id_lang}" class="dropdown-item{if $language.id_lang == $current_language.id_lang} active{/if}">{$language.name_simple}</a>
+        <a href="{url entity='language' id=$language.id_lang}" class="dropdown-item{if $language.id_lang == $current_language.id_lang} active{/if}" data-language="{$language.iso_code}">{$language.name_simple}</a>
       {/foreach}
     </div>
   </div>

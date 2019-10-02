@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 	var cookieLangue = readCookie("cookLanguage");
 	var modalLangue = $(document).find('#languagemodal');
-
+	var cookieTimer = 365;
 	if(!cookieLangue){
 		modalLangue.modal();
 
@@ -14,7 +14,7 @@ $(document).ready(function(){
 			//console.log($(e.target).closest('a'));
 			//console.log($(this));
 			if($(e.target).attr('id') != modalLangue.attr('id')){
-				createCookie("cookLanguage", $(e.target).closest('a').data('language'), 365);
+				createCookie("cookLanguage", $(e.target).closest('a').data('language'), cookieTimer);
 				//console.log("cookLanguage btn: " + $(e.target).closest('a').data('language'));
 
 				if($(e.target).closest('a').data('language') == prestashop.language.iso_code){
@@ -30,6 +30,12 @@ $(document).ready(function(){
 			}
 		});
 	}
+
+	$(document).on("click tap", ".language-selector .dropdown-menu a", function(e){
+		//console.log("select language: " +$(this).data("language"));
+		createCookie("cookLanguage", $(this).data("language"), cookieTimer);
+
+	});
 
 	function createCookie(name,value,days) {
 		if (days) {
