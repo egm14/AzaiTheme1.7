@@ -145,9 +145,7 @@
       {hook h='displayBeforeBodyClosingTag'}
     {/block}
 
-<script type="text/javascript">
-  document.cookie = 
-</script>
+
     
   </body>
 
