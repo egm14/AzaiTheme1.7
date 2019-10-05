@@ -501,14 +501,20 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
 
 /****/
 #languagemodal input[type="radio"] {
-  appearance:none;
+  -webkit-appearance:none;
+     -moz-appearance:none;
+          appearance:none;
   margin:0 40px;
   width: 24px;
   height: 24px;
   background: #eeeeee;
-  box-shadow:
+  -webkit-box-shadow:
+    inset 0 0 0 .4em white;
+          box-shadow:
     inset 0 0 0 .4em white;
   border-radius: 50%;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
   transition: .2s;
   cursor:pointer;
   color: #363945;
@@ -517,13 +523,17 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
   #languagemodal input[type="radio"]:hover,
   #languagemodal input[type="radio"]:checked {
     background: #363945;
-    box-shadow:
+    -webkit-box-shadow:
+    inset 0 0 0 .6em white;
+            box-shadow:
     inset 0 0 0 .6em white;
   }
   
   #languagemodal input[type="radio"]:checked {
     background: #56be8e;
-    box-shadow:
+    -webkit-box-shadow:
+      inset 0 0 0 .4em white;
+            box-shadow:
       inset 0 0 0 .4em white;
   } 
 
@@ -1259,6 +1269,16 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 #cartAction{
   background-color:#00ae00 !important;
   color:white;
+}
+
+/************* Affiliates Modules ****************/
+#module-affiliates-myaffiliates ul.affiliation_tabs li.selected a, 
+#module-affiliates-myaffiliates ul.affiliation_tabs li.selected a:hover{
+  background:#000 none repeat scroll 0 0;
+  border-color:#000;
+}
+#module-affiliates-myaffiliates div.tabcontents{
+  border-top:5px solid #030303 !important;
 }
 
 /***************************************************************
