@@ -11,6 +11,8 @@ $(document).ready(function(){
 
 		modalLangue.on("click tap", function(e){
 			//console.log($(e.target));
+			modalLangue.find('a').removeClass("active");
+			$(e.target).closest('a').addClass("active");
 			//console.log($(e.target).closest('a'));
 			//console.log($(this));
 			if($(e.target).attr('id') != modalLangue.attr('id')){

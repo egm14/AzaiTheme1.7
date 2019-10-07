@@ -549,16 +549,16 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
   #languagemodal  a i.fa.fa-spinner.fa-spin{
     display:none;
   }
-  #languagemodal  a:focus i.fa.fa-square-o{
+  #languagemodal  a.active i.fa.fa-square-o{
       display: none;
   }
-  #languagemodal  a:focus i.fa.fa-check-square-o{
+  #languagemodal  a.active i.fa.fa-check-square-o{
       color: #000;   display: inline;
   }
-  #languagemodal  a:focus i.fa.fa-spinner.fa-spin{
+  #languagemodal  a.active i.fa.fa-spinner.fa-spin{
     display:inline-block;
   }
-  #languagemodal a:hover i.fa {
+  #languagemodal a.active i.fa {
   color: #7AA3CC;
   }
 /***/
