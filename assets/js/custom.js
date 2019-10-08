@@ -634,59 +634,7 @@ $(document).ready(function(){
 		request.send(vars);
 	}
 
-	/*==================== Seller_code_Profile  =======================*/
-	//console.log(prestashop);
-	if(prestashop.page.page_name == "authentication"){
-		console.log("Pagina de autentificación");
-		seller_code();
-	}
 
-	function seller_code(){
-		var clientType = getQueryVariable("client");
-		var codeSeller = getQueryVariable("code");
-
-			console.log(clientType);
-			console.log(codeSeller);
-			
-			//Select type client
-			if(clientType == "t" || clientType == "tienda" || clientType == "w" || clientType == "shop" || clientType == "ref"){
-				clientType = "Tienda";
-			}else if(clientType == "c" || clientType == "cliente" || clientType == "vip" || clientType == "customer"){
-				clientType = "Customer";
-			}else{
-				console.log("No hay tipo de cliente en la url");
-			}
-				console.log("Esto es el client: "+ clientType );
-	
-		//Selected the seller_code_profile
-		if(clientType){
-			var client_tag_form = $('select[name=seller_code_profile]').find('option[value='+clientType+']');
-				client_tag_form.attr("selected", "selected");
-				//console.log(client_tag_form);
-		}else{
-			console.log("Var perfil no establecida en URL");
-		}
-
-		//Input the seller_code
-		if(codeSeller){
-			var client_code_seller = $('input[name=seller_code]');
-				client_code_seller.val(codeSeller);
-				//console.log(cliente_code_seller);
-		}else{
-			console.log("No hay código en la URL.");
-		}
-	}
-
-	function getQueryVariable(variable)
-	{
-       var query = window.location.search.substring(1);
-       var vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
-               var pair = vars[i].split("=");
-               if(pair[0] == variable){return pair[1];}
-       }
-	       return(false);
-	}
 });
 
 /************************************************************/

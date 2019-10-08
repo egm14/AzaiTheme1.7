@@ -1273,12 +1273,15 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 
 /************* Affiliates Modules ****************/
 #module-affiliates-myaffiliates ul.affiliation_tabs li.selected a, 
-#module-affiliates-myaffiliates ul.affiliation_tabs li.selected a:hover{
-  background:#000 none repeat scroll 0 0;
+#module-affiliates-myaffiliates ul.affiliation_tabs li a:hover{
+  background:#000 none repeat scroll 0 0!important;
   border-color:#000;
 }
 #module-affiliates-myaffiliates div.tabcontents{
   border-top:5px solid #030303 !important;
+}
+#module-affiliates-myaffiliates ul.affiliation_tabs li a{
+  text-shadow:none!important;
 }
 
 /***************************************************************
@@ -1597,6 +1600,9 @@ flex-basis: auto !important;}
    .button-exclusive.btn.btn-default.btn-product{display:none;}
    #submitRequest{height:-webkit-min-content;height:-moz-min-content;height:min-content;margin:15px 8px!important;padding:15px 20px;}
 
+   #my-account a.col-md-6{
+    max-width:100%!important;
+   }
 }
 
 /***************************************************************

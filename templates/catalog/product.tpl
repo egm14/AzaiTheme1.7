@@ -53,8 +53,27 @@
             <script type="text/javascript">
               var w = "{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}?create_account=1";
               {literal}
-            location.href =  w ;
-            console.log("Redireccionando...." + w);
+
+                if(getQueryVariable("cl")){
+                  var clCustom = "&cl="+getQueryVariable("cl");
+                }
+                if(getQueryVariable("ref")){
+                  var refCustom = "&ref="+getQueryVariable("ref");
+                }
+
+                function getQueryVariable(variable)
+                {
+                     var query = window.location.search.substring(1);
+                     var vars = query.split("&");
+                     for (var i=0;i<vars.length;i++) {
+                             var pair = vars[i].split("=");
+                             if(pair[0] == variable){return pair[1];}
+                     }
+                       return(false);
+                }
+
+              location.href =  w + refCustom + clCustom ;
+              //console.log("Redireccionando...." + w + refCustom + clCustom);
             {/literal}
             </script>
           
@@ -66,8 +85,8 @@
     {else}
         <script type="text/javascript">
           var w = "{$smarty.server.HTTP_HOST}";
-        {literal}
-              console.log(w);
+           {literal}
+             // console.log(w);
             {/literal}
         </script>
     {/if}
