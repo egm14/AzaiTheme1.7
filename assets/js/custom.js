@@ -67,8 +67,8 @@ $(document).ready(function(){
 			});
 			
 	     	function MinOrderReload(){
-	     		var websiteCart = $.trim($('#cart-subtotal-products').find('.value')[0].innerText.replace("$", "").replace(prestashop.currency.iso_code, "")).toLocaleString('en-US');
-				var websiteCartPre = prestashop.cart.totals.total.amount.toLocaleString('en-US');
+	     		var websiteCart = $.trim($('#cart-subtotal-products').find('.value').text().replace("$", "").replace(prestashop.currency.iso_code, "")).toLocaleString('en-US');
+				var websiteCartPre = prestashop.cart.subtotals.products.amount.toLocaleString('en-US');
 				var minimal = cgma_minimal_order.toLocaleString('en-US');
 				var checkoutPage = prestashop.page.page_name;
 				console.log("websiteCArt: "+ websiteCart);
