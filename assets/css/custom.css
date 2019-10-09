@@ -358,7 +358,7 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  .product-reference span {color: #A1A1A1;}
  h1.h2.product-name {font-family: 'Didot-Italic', cursive!important;margin-bottom:.2rem;font-size:2rem;}
  div.product-right-column .product-reference{margin-bottom:1.1rem;}
- div.product-right-column #product-availability {border-color: #f76063;color: #ff7070;padding: 10px;display: flex;flex: auto;font-size: 16px;place-items: center; margin: 10px;}
+ div.product-right-column #product-availability {border-color: #f76063;color: #ff7070;padding: 10px;display: flex;flex: auto;font-size: 16px;place-items: center; margin: 0px;}
  div.product-right-column .product-prices{display:block;}
  div.product-right-column .product-prices .product-price-container .price{font:400 23px/25px Helvetica, sans-serif;}
  div.product-right-column #tab-content #description ul{list-style:disc;line-height:26px;}
