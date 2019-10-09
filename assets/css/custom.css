@@ -358,7 +358,7 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  .product-reference span {color: #A1A1A1;}
  h1.h2.product-name {font-family: 'Didot-Italic', cursive!important;margin-bottom:.2rem;font-size:2rem;}
  div.product-right-column .product-reference{margin-bottom:1.1rem;}
- div.product-right-column #product-availability{display:none;}
+ div.product-right-column #product-availability {border-color: #f76063;color: #ff7070;padding: 10px;display: flex;flex: auto;font-size: 16px;place-items: center;}
  div.product-right-column .product-prices{display:block;}
  div.product-right-column .product-prices .product-price-container .price{font:400 23px/25px Helvetica, sans-serif;}
  div.product-right-column #tab-content #description ul{list-style:disc;line-height:26px;}
@@ -373,7 +373,7 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  #product span.discount {color: red;}
  #product span.regular-price {color: #b4b0b0;}
 .products .product-miniature .product-flags .quote {display: none;}
-
+ #product-availability .product-unavailable {background: none!important;}
  /*------------------ FOOTER - SECTION -------------*/
  .footer-container #footer h3{font:bold 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
  header .col-sm-12 i{color:black!important;}
