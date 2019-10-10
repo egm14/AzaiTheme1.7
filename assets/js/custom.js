@@ -67,9 +67,9 @@ $(document).ready(function(){
 			});
 			
 	     	function MinOrderReload(){
-	     		var websiteCart = parseFloat($.trim($('#cart-subtotal-products').find('.value').text().replace(",", "").replace("$", "").replace(prestashop.currency.iso_code, "")).toLocaleString('en-US'));
+	     		var websiteCart = $.trim($('#cart-subtotal-products').find('.value').text().replace("$", "").replace(prestashop.currency.iso_code, "")).toLocaleString('en-US'));
 				if(prestashop.cart){
-					var websiteCartPre = parseFloat($.trim(prestashop.cart.subtotals.products.value.replace(",", "").replace("$", "").replace(" ", "")).toLocaleString('en-US'));
+					var websiteCartPre = parseFloat($.trim(prestashop.cart.subtotals.products.value.replace("$", "").replace(" ", "")).toLocaleString('en-US'));
 				}
 				var minimal = parseFloat(cgma_minimal_order.toLocaleString('en-US'));
 				var checkoutPage = prestashop.page.page_name;
@@ -84,12 +84,12 @@ $(document).ready(function(){
 			            		if(checkoutPage == "checkout"){
 					     				window.location.href = prestashop.urls.base_url;
 					     			}
-			            		console.log("Checkout -> "+"minial: "+minimal + " vs " + "cartPre: "+websiteCartPre);
+			            		//console.log("Checkout -> "+"minial: "+minimal + " vs " + "cartPre: "+websiteCartPre);
 				     		}else{
 				     			$('#cgma_errors').hide();
 				     			$('.checkout.cart-detailed-actions a').removeClass('disabled');
 				            	$('.cart-summary .cart-detailed-actions a').removeClass('disabled');
-				            	console.log("Checkout <- "+"minial: "+minimal + " vs " + "cartPre: "+websiteCartPre);
+				            	//console.log("Checkout <- "+"minial: "+minimal + " vs " + "cartPre: "+websiteCartPre);
 				     			}
 						}else{
 				     		if(minimal > websiteCart){
@@ -98,11 +98,11 @@ $(document).ready(function(){
 					     			if(checkoutPage == "checkout"){
 					     				window.location.href = prestashop.urls.base_url;
 					     			}
-				     			console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCart);
+				     			//console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCart);
 				     		
 				     		}else if(minimal < websiteCart){
 				     			$('#cgma_errors').hide();
-				     			console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCart);
+				     			//console.log("Checkout -> "+"minial:"+minimal + "vs" + "cart: "+websiteCart);
 				     		}
 			     		}
 		     }
@@ -693,4 +693,3 @@ $(document).ready(function(){
 	     		}
 	/***** Action then updating cart and retriview minOrder *****/
 
-	
