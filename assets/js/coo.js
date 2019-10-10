@@ -112,14 +112,23 @@ $(document).ready(function(){
 	}
 	/*==================== Seller_code_Profile  =======================*/
 
-	function createCookie(name,value,days) {
+	function createCookie(name,value,days,sameSites) {
+		
+		if(sameSites){
+			var sites = ";SameSite" + sameSites;
+		}else{
+			var sites = ";SameSite=Strict";
+		}
+
 		if (days) {
 			var date = new Date();
 			date.setTime(date.getTime()+(days*24*60*60*1000));
 			var expires = "; expires="+date.toGMTString();
 		}
-		else var expires = "";
-		document.cookie = name+"="+value+expires+"; path=/";
+		else {
+			var expires = "";
+		}
+		document.cookie = name+"="+value+expires+"; path=/"+sites;
 	}
 
 	function readCookie(name) {

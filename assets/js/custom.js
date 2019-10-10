@@ -67,13 +67,16 @@ $(document).ready(function(){
 			});
 			
 	     	function MinOrderReload(){
-	     		var websiteCart = $.trim($('#cart-subtotal-products').find('.value').text().replace("$", "").replace(prestashop.currency.iso_code, "")).toLocaleString('en-US');
-				var websiteCartPre = prestashop.cart.subtotals.products.amount.toLocaleString('en-US');
-				var minimal = cgma_minimal_order.toLocaleString('en-US');
+	     		var websiteCart = parseFloat($.trim($('#cart-subtotal-products').find('.value').text().replace(",", "").replace("$", "").replace(prestashop.currency.iso_code, "")).toLocaleString('en-US'));
+				if(prestashop.cart){
+					var websiteCartPre = parseFloat($.trim(prestashop.cart.subtotals.products.value.replace(",", "").replace("$", "").replace(" ", "")).toLocaleString('en-US'));
+				}
+				var minimal = parseFloat(cgma_minimal_order.toLocaleString('en-US'));
 				var checkoutPage = prestashop.page.page_name;
-				console.log("websiteCArt: "+ websiteCart);
+				//console.log("websiteCArt: "+ websiteCart);
 					
 						if(websiteCartPre != undefined){
+							//console.log("websiteCArtPre: "+ websiteCartPre);
 							if(minimal > websiteCartPre){
 			     				$('#cgma_errors').show();
 			     				$('.checkout.cart-detailed-actions a').addClass('disabled');
@@ -81,12 +84,12 @@ $(document).ready(function(){
 			            		if(checkoutPage == "checkout"){
 					     				window.location.href = prestashop.urls.base_url;
 					     			}
-			            		console.log("Checkout -> "+"minial:"+minimal + "vs" + "cartPre: "+websiteCartPre);
+			            		console.log("Checkout -> "+"minial: "+minimal + " vs " + "cartPre: "+websiteCartPre);
 				     		}else{
 				     			$('#cgma_errors').hide();
 				     			$('.checkout.cart-detailed-actions a').removeClass('disabled');
 				            	$('.cart-summary .cart-detailed-actions a').removeClass('disabled');
-				            	console.log("Checkout <- "+"minial:"+minimal + "vs" + "cartPre: "+websiteCartPre);
+				            	console.log("Checkout <- "+"minial: "+minimal + " vs " + "cartPre: "+websiteCartPre);
 				     			}
 						}else{
 				     		if(minimal > websiteCart){
@@ -642,32 +645,52 @@ $(document).ready(function(){
 /*************************************************************/
 
 
- 	/***** Action then updating cart and retriview minOrder *****/
-	    /*  var prestashopCart = $.trim($('#cart-subtotal-products').find('.value')[0].innerText.replace("$", ""));
-			 console.log("updating cart : "+ prestashopCart + " <=> " + cgma_minimal_order);
+ 	/***** Action then updating cart and retriview minOrder 
+	   function minOrderPlus(){
 
-			 cgmaMinialOrder(cgma_minimal_order, prestashopCart);
+	     			 /***** Action then updating cart and retriview minOrder 
+	     	var prestashopCart = parseFloat($.trim($('#cart-subtotal-products').find('.value').text().replace(",", "").replace("$", "").replace(prestashop.currency.iso_code, "")).toLocaleString('en-US'));
+			var minimal_Order = parseFloat(cgma_minimal_order.toLocaleString('en-US'));
+			var checkoutPage = prestashop.page.page_name;
+			 
+		 	/*==================== Reload to home when page Checkout don´t have product =======================
+	     		
+	     		if(checkoutPage == "checkout"){
+		     		if(minimal_Order > prestashopCart){
+		     			//openLoader();
+		     			window.location.href = prestashop.urls.base_url;
+		     			//console.log("Checkout -> "+prestashopCart);
+		     			console.log("Checkout -> "+"minial:"+minimal_Order + "vs" + "cart: "+prestashopCart);
+		     		}
+	     		}else{
+	     			cgmaMinialOrder(minimal_Order, prestashopCart);
 
-			 function cgmaMinialOrder(minOrder, amountCart){
-		 		if(minOrder){
-		 			var boxCartS = $('.cart-summary');
-		 			var minOrderError = $('#cgma_errors');
-		 			var btnCartBox = $('#cartAction');
-
-		 			var cartSummary = $('.cart-summary');
-		 			if(cartSummary.hasClass("open-slidebar")){
-				 			if(minOrder > amountCart){
+					 function cgmaMinialOrder(minOrder, amountCart){
+				 		if(minOrder){
+				 			var boxCartS = $('.cart-summary');
+				 			var minOrderError = $('#cgma_errors');
+				 			var btnCartBox = $('#cartAction');
+							var cartSummary = $('.cart-summary');
 				 			
-				 					console.log("Aún no alcanzas el mínimo de order: " + minOrder);
-				 					minOrderError.show();
-				 					btnCartBox.addClass("disabled");
-				 				
-				 			}else{
-				 				console.log("Pasando al carrito");
-				 				minOrderError.hide();
-				 				btnCartBox.removeClass("disabled");
-				 			}
-				 	}
-		 		}
-		 	} */
-	/***** Action then updating cart and retriview minOrder *****/	
+				 			if(cartSummary.hasClass("open-slidebar")){
+								console.log("Opens sliderbar active");
+						 			if(minOrder > amountCart){
+						 				console.log("Aún no alcanzas el mínimo de order: " + minOrder + " > Cart amount:" + amountCart);
+						 					minOrderError.show();
+						 					btnCartBox.addClass("disabled");
+						 			}else{
+						 				console.log("Pasando al carrito"+" Min Order: "+ minOrder + " < Cart amount:" + amountCart);
+						 				minOrderError.hide();
+						 				btnCartBox.removeClass("disabled");
+						 			}
+						 	}
+				 		}
+				 	} 
+
+	     		}
+	     /*==================== Reload to home when page Checkout don´t have product  =======================
+		 	/***** Action then updating cart and retriview minOrder 	
+	     		}
+	/***** Action then updating cart and retriview minOrder *****/
+
+	
