@@ -67,7 +67,7 @@ $(document).ready(function(){
 			});
 			
 	     	function MinOrderReload(){
-	     		var websiteCart = $.trim($('#cart-subtotal-products').find('.value').text().replace("$", "").replace(prestashop.currency.iso_code, "")).toLocaleString('en-US'));
+	     		var websiteCart = parseFloat($.trim($('#cart-subtotal-products').find('.value').text().replace("$", "").replace(prestashop.currency.iso_code, "")).toLocaleString('en-US'));
 				if(prestashop.cart){
 					var websiteCartPre = parseFloat($.trim(prestashop.cart.subtotals.products.value.replace("$", "").replace(" ", "")).toLocaleString('en-US'));
 				}
