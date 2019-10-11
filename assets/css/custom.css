@@ -1551,6 +1551,7 @@ flex-basis: auto !important;}
  /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width:768px){
   
+
   /*--------------- Footer Social Profiles ----------------*/
   #footer div.container #redes-desk a i{
       font-size:22px;
@@ -1605,11 +1606,25 @@ flex-basis: auto !important;}
    }
 }
 
+/**********************************************************************
+ ****** Fix Input Zoom on iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus,
+ iPhone 8, iPhone X, XS, XS Max  ***************************************
+ ***********************************************************************/
+ /*--------------- iphone fix form autozoom-------------*/
+@media screen and (device-aspect-ratio: 9/16) {
+    select:focus, textarea, input.form-control, input[type="text"], 
+    input[type="number"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"]{ font-size: 15px!important; }
+}
 /***************************************************************
  ******************* Screen Max-width 767px *********************
  ***************************************************************/
 
 @media only screen and (max-width:767px){ 
+
   body{font-size:.85rem;}
     /*IPAD top banner sticker*/
     #footer div.container div.text-center{margin-top:20px;}
