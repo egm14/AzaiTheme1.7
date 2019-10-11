@@ -24,7 +24,19 @@
  *}
 {extends file='checkout/_partials/steps/checkout-step.tpl'}
 
+
+
 {block name='step_content'}
+
+<!-- Alert to Dominican Republic customer - buy over $200.o0 -->
+
+    {if $cart.totals.total.value >= '$200' && ($customer.addresses[$cart.id_address_delivery].country == 'Dominican Republic' || $customer.addresses[$cart.id_address_delivery].country == 'República Dominicana')}
+        <div class="notification alert alert-warning mobil" style="margin-bottom:2rem;">
+          <h3 style="color:white;margin-left:.4rem;margin-bottom:0px;text-decoration:underline;">{l s='Cargos aduanales República Dominicana' d='Shop.Theme.Checkout'}</h3>
+         <p style="padding-left:.4rem">{l s="Se aplicarán cargos aduanales en compras mayores a "}<span style="text-decoration:underline;color:black">{l s="USD$200.00. "}</span>{l s='Para mayor información marcar o escribenos a: ' d='Shop.Theme.Checkout'}<a href="phone:+1-809-705-8665">{l s="+1(809)705-8665"}</a> | <a href="mailto:autorizaciones@azai.com.com?subject=Compras%20RD%20mayor%20a%20USD$200">{l s="autorizaciones@azai.com" d='Shop.Theme.Checkout'}</a>
+        </div>
+    {/if}
+
   <div id="hook-display-before-carrier">
     {$hookDisplayBeforeCarrier nofilter}
   </div>
