@@ -39,7 +39,7 @@
 								  <div class="col-6 col-sm-6 col-md-6">
 								  	<span>{l s='Spanish (Español)' d='Shop.Theme.Global'}</span>
 								  </div>
-								  <div class="col-3 col-sm-3 col-md-3">
+								  <div class="col-3 col-sm-3 col-md-3 flags-container">
 								  	<img class="flags" src="{$urls.theme_assets}OtherFile/flags/es.png" />
 								  	<i class="fa fa-spinner fa-spin"></i>
 								  </div>
@@ -58,7 +58,7 @@
 								  <div class="col-6 col-sm-6 col-md-6">
 								  	<span>{l s='English (Ingés)' d='Shop.Theme.Global'}</span>
 								  </div>
-								  <div class="col-3 col-sm-3 col-md-3">
+								  <div class="col-3 col-sm-3 col-md-3 flags-container">
 								  	<img class="flags" src="{$urls.theme_assets}OtherFile/flags/en.png" />
 								  	<i class="fa fa-spinner fa-spin"></i>
 								  </div>
