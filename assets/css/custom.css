@@ -361,7 +361,7 @@ body#checkout #checkout-payment-step .payment-options .stripe-payment-17{margin:
 body#checkout #checkout-payment-step .payment-options img.dsecure{border-radius:0.4rem;height:4rem;}
 body#checkout #checkout-payment-step .payment-options input[data-module-name="paypal"]{z-index:1;opacity:1;top:13px;left:13px;}
 /*Agregar animacion al boton seguir comprando*/
-#add-to-cart-or-refresh a.button-exclusive.btn.btn-default.btn-product{-webkit-animation: jittery 5s infinite;animation: jittery 5s infinite;&:hover{-webkit-animation:heartbeat 0.2s infinite;animation:heartbeat 0.2s infinite};cursor: pointer;border: solid 1px;}
+/*#add-to-cart-or-refresh a.button-exclusive.btn.btn-default.btn-product{-webkit-animation: jittery 5s infinite;animation: jittery 5s infinite;&:hover{-webkit-animation:heartbeat 0.2s infinite;animation:heartbeat 0.2s infinite};cursor: pointer;border: solid 1px;}*/
 
 /*-------------code Voucher----------
 body#checkout #js-checkout-summary #cart-voucher-promo #promo-code form{background-color:black!important;}
@@ -421,6 +421,7 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  #product span.regular-price {color: #b4b0b0;}
 .products .product-miniature .product-flags .quote {display: none;}
  #product-availability .product-unavailable {background: none!important;}
+ body#product i.material-icons {left: 5%;}
  /*------------------ FOOTER - SECTION -------------*/
  .footer-container #footer h3{font:bold 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
  header .col-sm-12 i{color:black!important;}
@@ -1910,7 +1911,7 @@ p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
  /*Add to wish list span*/
  body#product .product-additional-info #wishlist_button span{font-size:1rem;}
  .product-variants .custom-select {width: 89%;}
- 
+ body#product i.material-icons {left: 5%;}
 #footer div.container div.text-center{margin-top:0;padding-bottom:0;}
 #footer .copyright{margin-top:1rem};
 #formgiftcard p.datesendcard {margin: 10px 0px 0px -73px;}
