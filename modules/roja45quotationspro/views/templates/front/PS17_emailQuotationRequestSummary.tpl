@@ -11,7 +11,7 @@
 *  @license          /license.txt
 *}
 
- {assign var=packageAzaiW value="6"}
+ {assign var=packageAzaiW value="12"}
 <table class="table table-recap title" bgcolor="#ffffff" style="width:100%;border-collapse:collapse" cellSpacing=0 cellPadding=0 border=0>
     <tr>
         <td class="text-right title" style="min-width:100%;border:1px solid #D6D4D4;border-bottom: 0;background-color: #fbfbfb;padding: 5px;">

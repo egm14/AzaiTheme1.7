@@ -47,7 +47,7 @@
                          {if ($customer.id_default_group == 12 or $customer.id_default_group == 13) and $shop.name == $azaimayoreo}
                          <!--do nothing-->
                          {else}
-                        <br /><b>S-M-L (2-2-2)</b>
+                        <br /><b>S-M-L ({$packageAzai/3}-{$packageAzai/3}-{$packageAzai/3})</b>
 
                         {/if}
                        </td>
