@@ -361,7 +361,7 @@ body#checkout #checkout-payment-step .payment-options .stripe-payment-17{margin:
 body#checkout #checkout-payment-step .payment-options img.dsecure{border-radius:0.4rem;height:4rem;}
 body#checkout #checkout-payment-step .payment-options input[data-module-name="paypal"]{z-index:1;opacity:1;top:13px;left:13px;}
 /*Agregar animacion al boton seguir comprando*/
-#add-to-cart-or-refresh a.button-exclusive.btn.btn-default.btn-product{-webkit-animation: jittery 5s infinite;animation: jittery 5s infinite;&:hover{-webkit-animation:heartbeat 0.2s infinite;animation:heartbeat 0.2s infinite};cursor: pointer;border: solid 1px;}
+/*#add-to-cart-or-refresh a.button-exclusive.btn.btn-default.btn-product{-webkit-animation: jittery 5s infinite;animation: jittery 5s infinite;&:hover{-webkit-animation:heartbeat 0.2s infinite;animation:heartbeat 0.2s infinite};cursor: pointer;border: solid 1px;}*/
 
 /*-------------code Voucher----------
 body#checkout #js-checkout-summary #cart-voucher-promo #promo-code form{background-color:black!important;}
