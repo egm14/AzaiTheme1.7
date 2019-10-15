@@ -44,6 +44,30 @@ By Azai.com theme v1. Test v2 git - v1.0.0.1
 #box-cart-btn:hover{
   cursor:pointer;
 }
+body#module-userbalance-balance .page-footer a.account-link {
+    display: inline-flex;
+    background: black;
+    border-radius: 21px;
+    color: white;
+    padding: .5rem 1.4rem;
+    border:2px solid black;
+  }
+body#module-userbalance-balance .page-footer a.account-link span {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+body#module-userbalance-balance .page-footer a.account-link:hover{
+    background-color:transparent!important;
+    color:black!important;
+}
+body#module-userbalance-balance .page-footer a.account-link:focus{
+    background-color:black!important;
+    color:white!important;
+    font-weight:700;
+}
+
+
 .gradient-border {
   --borderWidth: 3px;
   background: #1D1F20;
@@ -578,11 +602,19 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
   #languagemodal  a.active i.fa.fa-check-square-o{
       color: #000;   display: inline;
   }
+  #languagemodal a.active div.flags-container img{
+    margin-right:10px;
+  }
+   #languagemodal a.active div.flags-container{
+    display:flex;
+  }
+
   #languagemodal  a.active i.fa.fa-spinner.fa-spin{
     display:inline-block;
+    font-size:1.8rem;
   }
   #languagemodal a.active i.fa {
-  color: #7AA3CC;
+  color: #07C91A;
   }
 /***/
 #_desktop_user_info a#jx-header-account-link:focus:after{
@@ -2156,7 +2188,10 @@ body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
     #notifications .alert.alert-danger{
       top:9rem;
     }
-    
+    body#module-userbalance-balance #history_tab{
+      overflow-x: scroll;
+      width:100%;
+    }
 }   
 /***************************************************************
  ******************* Screen Max-width 375px *********************
