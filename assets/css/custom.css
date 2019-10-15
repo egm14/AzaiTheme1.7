@@ -1907,7 +1907,7 @@ p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
  /*Add to wish list span*/
  body#product .product-additional-info #wishlist_button span{font-size:1rem;}
  .product-variants .custom-select {width: 89%;}
- 
+ body#product i.material-icons {left: 5%;}
 #footer div.container div.text-center{margin-top:0;padding-bottom:0;}
 #footer .copyright{margin-top:1rem};
 #formgiftcard p.datesendcard {margin: 10px 0px 0px -73px;}
