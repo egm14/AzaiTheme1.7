@@ -32,12 +32,15 @@
     {assign var=packageAzaiStep value="1" scope="global"}
     {assign var="WMinQuoteOrder" value="500" scope="global"}
 {else}
-    {assign var=packageAzai value="12" scope="global"}
-    {assign var=packageAzaiStep value="12" scope="global"}
+    {assign var=packageAzai value="6" scope="global"}
+    {assign var=packageAzaiStep value="6" scope="global"}
     {assign var="WMinQuoteOrder" value="0" scope="global"}
     
 {/if}
 
+ {if ($product.category == 'bags') or ($product.category == 'necklaces') or ($product.category == 'jewelry-necklaces') or ($product.category == 'earrings') or ($product.category == 'jewelry-earrings') or ($product.category == 'bracelets') or ($product.category == 'jewelry-bracelets') or ($product.category == 'hats') or ($product.category == 'brooches') or ($product.category == 'clutches-crossbody-bags') or ($product.category == 'jewelry') or ($product.category == 'rings') or ($product.category == 'jewelry-rings') or ($product.category == 'accessories')}
+     <td scope="col">TotalQty</b></td>
+ {/if}
 
 {assign var=azaimayoreo value="azaimayoreo" scope="global"}
 
