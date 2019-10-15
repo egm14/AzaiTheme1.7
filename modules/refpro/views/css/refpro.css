@@ -1,0 +1,317 @@
+.ui-widget-content h2 {
+	background: none repeat scroll 0 center transparent;
+	color: #000000;
+	width: auto;
+}
+
+table.table {
+	width: 100%;
+}
+
+/*table.table td {
+	border: 1px dotted #DDDDDD !important;
+	color: #333333;
+	padding: 5px;
+}*/
+
+table.table thead td {
+	font-weight: bold;
+	text-align: left;
+}
+
+table.affiliates-table td.number {
+	width: 50px;
+}
+
+table.affiliates-table td.email {
+	width: 250px;
+}
+
+table.table td.profit {
+	text-align: center;
+	width: 150px;
+}
+
+table.table td .sponsor {
+    color: rgb(48, 111, 245);
+}
+
+table.table input {
+	width: 96%;
+	border: 1px;
+	padding: 3px;
+	margin: 5px;
+}
+
+.big_button {
+	padding: 5px;
+	border-radius: 7px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6px;
+	cursor: pointer;
+}
+
+.money {
+	font-size: 12pt;
+	font-weight: bold;
+    color: rgb(48, 111, 245);
+}
+
+#getPaid {
+	margin-left: 10px;
+	color: green;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.ordered {
+	color: green;
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 10px;
+}
+
+.refbanner {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	margin-top: 20px;
+    text-align: center;
+}
+
+.ref_cb {
+
+}
+
+.ref_lbl {
+	float: none !important;
+}
+
+li.ui-state-default, ul.ui-tabs-nav {margin: 0!important;}
+
+#ref_url {
+    margin-left: 69px;
+    padding: 0 10px 0 0;
+    width: auto;
+}
+
+#dialog {
+	text-align: center;
+	z-index: 9999;
+}
+
+/*label.ref_lbl, #fancybox-wrap {width: 400px!important;}*/
+#tabs .table thead tr
+{
+    background: #FFF8B0;
+}
+
+.view_more
+{
+    display: block;
+    text-decoration: none!important;
+    padding: 10px;
+    border: 1px solid #03a9db;
+    background: #03a9db!important;
+    color: #FFFFFF!important;
+    font-weight: bolder;
+    text-align: center;
+}
+.tabs_content .table
+{
+    margin-bottom: 0;
+}
+
+#goref_a
+{
+	padding: 6px 14px;
+	background: #03A9DB;
+	color: #FFFFFF;
+	font-weight: bolder;
+	margin-top: 20px;
+	text-decoration: none!important;
+	border-radius: 5px;
+	border: 1px solid #03A9DB;
+	display: inline-block;
+	font-size: 14px;
+}
+#goref_a:hover
+{
+	background: #0B8FB7;
+	border: 1px solid #0B8FB7;
+}
+#module-refpro-myaccount .container_9 .grid_5 {
+    width: 756px;
+}
+
+.c-modal .modal-header
+{
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+	min-height: 16.42857px;
+}
+
+.c-modal .modal-header:after
+{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.c-modal .modal-header h4
+{
+	float: left;
+	margin: 0;
+}
+
+.c-modal .modal-header .close
+{
+	margin-top: -9px;
+}
+
+.c-modal .modal-body {
+	position: relative;
+	padding: 15px;
+}
+
+.c-modal .modal-footer {
+	padding: 15px;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;
+}
+
+.reflinks
+{
+	cursor: pointer;
+}
+
+
+.c-modal .modal-footer .buttons
+{
+	margin-right: 15px;
+}
+
+.c-modal .modal-footer .buttons button
+{
+	margin-left: 15px;
+}
+
+.reflinks_text
+{
+	word-wrap: break-word;
+}
+
+/*.btn {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 4px 8px;
+	font-size: 12px;
+	line-height: 1.42857;
+	border-radius: 3px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-decoration:none;
+}*/
+
+.button {
+	text-decoration:none;
+}
+
+.btn-default {
+	color: #555;
+	background-color: #fff;
+	border-color: #ccc;
+}
+.1btn.btn-default {
+	-webkit-box-shadow: #e6e6e6 0 -2px 0 inset;
+	box-shadow: #e6e6e6 0 -2px 0 inset;
+}
+.btn.btn-default:hover {
+	color: #fff;
+	background-color: #00aff0;
+	border-color: #008abd;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active
+{
+	color: #555;
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+
+.wrapp_submit_button
+{
+	padding: 20px;
+}
+
+.prod.reflinks
+{
+    background: url("../img/money_bag.png") no-repeat left center;
+    background-size: 16px;
+    cursor: pointer;
+	padding-left: 20px;
+}
+
+.voucher_cart_rule
+{
+	display: inline-block;
+	background: #e0ffe0;
+	padding: 10px;
+}
+
+.wrapp_voucher_cart_rule
+{
+	border: 1px dashed #c3efc2;
+	padding: 15px;
+}
+
+.voucher_code
+{
+	text-align: center;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+
+.refpro-svg {
+	float: right;
+	text-align: center;
+}
+
+.refpro-svg img {
+	width: 180px;
+	height: 180px;
+}
+
+div.reflinks_text .refpro-svg {
+	padding-bottom: 1em;
+}
+
+div.reflinks_text .refpro-svg img {
+	width: 130px;
+	height: 130px;
+}
+
+div.reflinks_text hr {
+	clear: both;
+}
+
+@media only screen and (max-width:550px){
+	.refpro-svg {
+		float: none!important;
+		text-align: center;
+		margin-bottom:1.85rem;
+	}
+}
