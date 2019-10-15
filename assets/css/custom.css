@@ -421,6 +421,7 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
  #product span.regular-price {color: #b4b0b0;}
 .products .product-miniature .product-flags .quote {display: none;}
  #product-availability .product-unavailable {background: none!important;}
+ body#product i.material-icons {left: 5%;}
  /*------------------ FOOTER - SECTION -------------*/
  .footer-container #footer h3{font:bold 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
  header .col-sm-12 i{color:black!important;}
