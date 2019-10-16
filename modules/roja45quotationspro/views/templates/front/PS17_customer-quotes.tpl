@@ -50,22 +50,25 @@
         <tbody id="fileList">
              
         {foreach $customerquotes as $customerquote}
-            <pre>{*$customerquote|print_r*}</pre>
+            
             <tr class="nodrag nodrop" data-id="{$customerquote->id_roja45_quotation}">
+                <!--<td><pre>{$customerquote|print_r}</pre></td>-->
                 <td class="fixed-width-lg reference">{$customerquote->reference}</td>
                 <td class="fixed-width-lg added-date">{dateFormat date=$customerquote->date_add full=false}</td>
                 <td class="fixed-width-lg updated-date">{dateFormat date=$customerquote->date_upd full=true}</td>
                 <td class="fixed-width-lg expiration-date">{if ($customerquote->expiry_date != '0000-00-00 00:00:00')}{dateFormat date=$customerquote->expiry_date full=true}{/if}</td>
                 <td class="fixed-width-sm total">
-                    {if $customerquote->quote_sent == 1}
+                    {if $customerquote->quote_sent == 1 or $customerquote->id_roja45_quotation_status == 12}
                        {$customerquote->total_exc_formatted}   
                     {else}
                          {$currency.sign}{($customerquote->total_exc*$packageAzai)|number_format:2:".":","}
                     {/if}
+
+
                 </td>
                 <td class="fixed-width-sm total">
-                    {if $customerquote->calculate_taxes}
-                        {if $customerquote->quote_sent == 1}
+                    {if $customerquote->calculate_taxes }
+                        {if $customerquote->quote_sent == 1 or $customerquote->id_roja45_quotation_status == 12}
                            {$customerquote->total_inc_formatted}  
                         {else}
                              {$currency.sign}{($customerquote->total_inc*$packageAzai)|number_format:2:".":","}
@@ -77,7 +80,7 @@
                 </td>
 
                 <td class="fixed-width-lg">
-                    {if $customerquote->quote_sent == 1}
+                    {if $customerquote->quote_sent == 1 or $customerquote->id_roja45_quotation_status == 12}
                     <a href=" 
                                   {url entity='module'
                                   name='roja45quotationspro'
@@ -98,7 +101,7 @@
                        class="btn btn-default btn-primary downloadPDF" style="background:#e7e7e7!important;box-shadow:none!important">
                         <i class="material-icons">description</i></div>
                     {/if}
-                    {if $customerquote->quote_sent == 1}
+                    {if $customerquote->quote_sent == 1 or $customerquote->id_roja45_quotation_status == 12}
                     <a href="{url entity='module'
                                 name='roja45quotationspro'
                                 controller='QuotationsProFront'
@@ -147,8 +150,12 @@
                             <i class="material-icons">av_timer</i>
                         </a>
                 {/if}
+
                 </td>
+                
             </tr>
+            
+
         {/foreach}
         </tbody>
     </table>
