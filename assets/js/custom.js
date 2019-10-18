@@ -71,9 +71,16 @@ $(document).ready(function(){
 				if(prestashop.cart){
 					var websiteCartPre = parseFloat($.trim(prestashop.cart.subtotals.products.value.replace(",", "").replace("$", "").replace(" ", "")).toLocaleString('en-US'));
 				}
-				if(cgma_minimal_order){
+				//var cgma_minimal_order;
+
+				if(typeof(cgma_minimal_order) != 'undefined'){
 				var minimal = parseFloat(cgma_minimal_order.toLocaleString('en-US'));
+				}else{
+					var minimal = 0;
 				}
+
+				//console.log("cgma minimalorder: " + cgma_minimal_order);
+
 				var checkoutPage = prestashop.page.page_name;
 				//console.log("websiteCArt: "+ websiteCart);
 					

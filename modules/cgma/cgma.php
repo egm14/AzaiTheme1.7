@@ -248,7 +248,7 @@ class cgma extends Module
         $orderTotal = $this->context->cart->getOrderTotal();
         $minimal_purchase = Tools::convertPrice((float)self::returnCustomerGroupMinimum(), $currency);
 
-            //echo '<span class="minimal_order_conver">';
+            //echo '<span class="minimal_order_conver_condition"></span';
             echo '<script> var cgma_minimal_order='.$minimal_purchase.'</script>';
              //echo '</span>';
             
