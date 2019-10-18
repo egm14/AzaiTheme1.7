@@ -71,7 +71,9 @@ $(document).ready(function(){
 				if(prestashop.cart){
 					var websiteCartPre = parseFloat($.trim(prestashop.cart.subtotals.products.value.replace(",", "").replace("$", "").replace(" ", "")).toLocaleString('en-US'));
 				}
+				if(cgma_minimal_order){
 				var minimal = parseFloat(cgma_minimal_order.toLocaleString('en-US'));
+				}
 				var checkoutPage = prestashop.page.page_name;
 				//console.log("websiteCArt: "+ websiteCart);
 					
