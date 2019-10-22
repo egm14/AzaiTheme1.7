@@ -1858,9 +1858,9 @@ flex-basis: auto !important;}
     display: flex;
     flex-direction: row-reverse;
 }
-  #languagemodal  a.active i.fa.fa-spinner.fa-spin{
+  /*#languagemodal  a.active i.fa.fa-spinner.fa-spin{
     position:absolute;
-  }
+  }*/
 }
 /***************************************************************
  ******************* Screen Max-width 720x *********************
