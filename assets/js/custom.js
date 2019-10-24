@@ -39,6 +39,9 @@ $(document).ready(function(){
 		$('.dropdown-item').on('click tap', function(){
 			openLoader();
 		});
+		$('.page-heading').on('click tap', function(){
+			openLoader();
+		});
 		$('button#submitRequest').on('click tap', function(){
 			if($(this).hasClass("disabled")){
 				console.log("La cotización no alcanza el minimo de compra.");
