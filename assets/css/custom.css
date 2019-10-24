@@ -9,7 +9,12 @@ By Azai.com theme v1. Test v2 git - v1.0.0.1
  ***************************************************************/
 
 /* Style the checkmark/indicator */
-
+.force-select-all {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
 
 #checkout #checkout-delivery-step .custom-radio .custom-control-label::before{
   width:1.5rem;
@@ -1662,7 +1667,6 @@ flex-basis: auto !important;}
    }
 
   
-
 }
 
 /**********************************************************************
@@ -1704,6 +1708,14 @@ flex-basis: auto !important;}
  ***************************************************************/
 
 @media only screen and (max-width:767px){ 
+
+  
+   /*Fixing alert size */
+  .alerts.create-acount.alert-processing.active{
+    top:2rem;
+    right:1.2rem;
+    left:1.2rem;
+  }
 
   body{font-size:.85rem;}
     /*IPAD top banner sticker*/
@@ -2075,14 +2087,10 @@ p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
 }
 /*Fix Cart */
 #_desktop_cart .product-line-grid .product-line-grid-right .cart-line-product-actions, .product-line-grid .product-line-grid-right .product-price {top: 30px;position: absolute;right: 45px;}
+
 }
 
-/*Fixing alert size */
-.alerts.create-acount.alert-processing.active{
-  top:2rem;
-  right:1.2rem;
-  left:1.2rem;
-}
+
 /***************************************************************
  ******************* Screen Max-width 420px *********************
  ***************************************************************/

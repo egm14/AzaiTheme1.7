@@ -68,7 +68,9 @@
 						</div>
 					</div>
 					<!--<p><span style="font-weight:700;">{l s='Client VIP' d='Shop.Theme.Global'}: </span><a href="{$link_num|escape:'htmlall':'UTF-8'}&cl=vip" target=new>{$link_num|escape:'htmlall':'UTF-8'}&cl=vip</a></p> -->
-					<p><span style="font-weight:700;">{l s='Referer Link' d='Shop.Theme.Global'}: </span><a href="{$link_num|escape:'htmlall':'UTF-8'}&cl=shop" target=new>{$link_num|escape:'htmlall':'UTF-8'}&cl=shop</a></p>
+					<p><span style="font-weight:700;">{l s='Referer Link' d='Shop.Theme.Global'}: </span><br style="margin-bottom:10px;"/><span id="refproLink" style="padding:10px 15px;text-decoration:underline;border:1.4px solid #e2e2e2;margin-top:10px;margin-right:10px;font-size:1rem" class="force-select-all" href="" target=new>{$link_num|escape:'htmlall':'UTF-8'}&cl=shop</span>
+						<span><i id="copyText" class="fa fa-clipboard" aria-hidden="true"> {l s='Copy link' d='Shop.Theme.Global'}</i></span>
+</p>
 					<!--<p>{l s='or' mod='refpro'}</p>
 					<p><a href="{$link_char|escape:'htmlall':'UTF-8'}" target=new>{$link_char|escape:'htmlall':'UTF-8'}</a><br></p>
 					<p>{l s='or' mod='refpro'}</p>

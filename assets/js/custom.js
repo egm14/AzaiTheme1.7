@@ -221,7 +221,7 @@ $(document).ready(function(){
 		var timerA = 10000;
 		var button = $(this);
 		//console.log("operación para los submit");
-		//console.log(button);
+		//console.log(button.attr('id'));
 		var formbutton = button.closest('form');
 
 		if(button.attr('id') == 'submit-login' || button.attr('name') == 'HeaderSubmitLogin'){
@@ -235,11 +235,11 @@ $(document).ready(function(){
      			addGradient(button,timerA);
 				setTimeout(function(){
 					button.find('.fa-spinner').remove();
-					console.log("Removew elemente dom....");
+					console.log("Remove elemente dom....");
 				}, timerA);
      		}
 			
-		}else{
+		}else if(button.data('link-action') !== "save-customer"){
 			console.log("Button submit: Enviado datos...");
      			addGradient(button,timerA);
 		}
@@ -648,6 +648,43 @@ $(document).ready(function(){
 		}
 		request.send(vars);
 	}
+	 //console.log($("#refproLink").text);
+	 //Copy element to clipboard and subraying
+	 $('#refproLink').on('click tap', function(){
+
+	 	$("#refproLink").css({"background-color":"black", "color":"white"});
+
+	 	setTimeout(function(){
+	 		$("#refproLink").css({"background-color":"inherit", "color":"initial"});
+	 		$("#copy").css("color", "initial");
+	 	},2000);
+	 	
+	 	copyToClipboard($("#refproLink"));
+	 });
+
+	 $('#copyText').on('click tap', function(){
+
+	 	$("#refproLink").css({"background-color":"black", "color":"white"});
+	 	$(this).css("color", "black");
+
+	 	setTimeout(function(){
+	 		$("#refproLink").css({"background-color":"inherit", "color":"initial"});
+	 		$(this).css("color", "initial");
+	 	},2000);
+	 	
+	 	copyToClipboard($("#refproLink"));
+	 });
+
+	function copyToClipboard(element) {
+	 console.log(element);
+	  var $temp = $("<input>");
+	  
+	$("body").append($temp);
+	  $temp.val($(element).text()).select();
+	  document.execCommand("copy");
+	  $temp.remove();
+	}
+
 
 
 });
