@@ -192,7 +192,7 @@ function submitCreate(elem){
     },
     success: function (datab, textStatus, jqXHR) {
       //console.log(datab)
-      //console.log("Uusario registrado con request adquirido")
+      console.log("Uusario registrado con request adquirido")
       var userAlert = $('#alerts-n')
       if (datab.hasError) {
          userAlert.find('.alerts.create-acount.alert-processing').removeClass('active')
@@ -236,7 +236,8 @@ function submitCreate(elem){
           console.log("Esto fue un éxito....")
 
           //Making redirection to modulo page preference at site
-          var shopName = $.trim($('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase());
+         // var shopName = $.trim($('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase());
+          var shopName = prestashop.shop.name;
           console.log(shopName)
           if(shopName == "azaimayoreo"){
             var uriPhp;
