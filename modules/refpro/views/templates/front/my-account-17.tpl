@@ -68,8 +68,15 @@
 						</div>
 					</div>
 					<!--<p><span style="font-weight:700;">{l s='Client VIP' d='Shop.Theme.Global'}: </span><a href="{$link_num|escape:'htmlall':'UTF-8'}&cl=vip" target=new>{$link_num|escape:'htmlall':'UTF-8'}&cl=vip</a></p> -->
-					<p><span style="font-weight:700;">{l s='Referer Link' d='Shop.Theme.Global'}: </span><br style="margin-bottom:10px;"/><span id="refproLink" style="padding:10px 15px;text-decoration:underline;border:1.4px solid #e2e2e2;margin-top:10px;margin-right:10px;font-size:1rem" class="force-select-all" href="" target=new>{$link_num|escape:'htmlall':'UTF-8'}&cl=shop</span>
-						<span><i id="copyText" class="fa fa-clipboard" aria-hidden="true"> {l s='Copy link' d='Shop.Theme.Global'}</i></span>
+					<p><span style="font-weight:700;">{l s='Referer Link' d='Shop.Theme.Global'}: </span><br style="margin-bottom:10px;"/>
+					<span class="group-clipboard">
+						<span id="refproLink" style="padding:10px 15px;text-decoration:underline;border:1.4px solid #e2e2e2;font-size:1rem" class="force-select-all" href="" target=new>{$link_num|escape:'htmlall':'UTF-8'}&cl=shop</span>
+						<span id="copyText">
+							<i  class="fa fa-clipboard" aria-hidden="true">
+							<span class="off_X" style="display:none"> {l s='Click to copy Clipboard' d='Shop.Theme.Global'}</span>
+							<span class="on" style="display:none"> {l s='Link was copy' d='Shop.Theme.Global'}</span>
+						</i></span>
+					</span>
 </p>
 					<!--<p>{l s='or' mod='refpro'}</p>
 					<p><a href="{$link_char|escape:'htmlall':'UTF-8'}" target=new>{$link_char|escape:'htmlall':'UTF-8'}</a><br></p>

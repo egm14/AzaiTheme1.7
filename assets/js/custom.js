@@ -651,25 +651,33 @@ $(document).ready(function(){
 	 //console.log($("#refproLink").text);
 	 //Copy element to clipboard and subraying
 	 $('#refproLink').on('click tap', function(){
-
+	 	var copyText = $('#copyText');
 	 	$("#refproLink").css({"background-color":"black", "color":"white"});
+	 	copyText.find(".off").hide();
+	 	copyText.find(".on").show();
+		copyText.css("color", "#0050ff");
 
 	 	setTimeout(function(){
 	 		$("#refproLink").css({"background-color":"inherit", "color":"initial"});
-	 		$("#copy").css("color", "initial");
+	 		copyText.css("color", "initial");
+	 		copyText.find(".on").hide();
+	 		copyText.find(".off").show();
 	 	},2000);
 	 	
 	 	copyToClipboard($("#refproLink"));
 	 });
 
 	 $('#copyText').on('click tap', function(){
+	 	var copyText = $(this);
 
 	 	$("#refproLink").css({"background-color":"black", "color":"white"});
-	 	$(this).css("color", "black");
+	 	copyText.css({"color":"black", "background-color":"#dedede" });
+	 	copyText.find(".on").show();
 
 	 	setTimeout(function(){
-	 		$("#refproLink").css({"background-color":"inherit", "color":"initial"});
-	 		$(this).css("color", "initial");
+	 		$("#refproLink").css({"background-color":"inherit", "color":"initial", "border-left":"0px"});
+	 		copyText.css({"color":"white", "background-color":"black" });
+	 		copyText.find(".on").hide();
 	 	},2000);
 	 	
 	 	copyToClipboard($("#refproLink"));

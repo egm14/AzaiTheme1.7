@@ -15,6 +15,65 @@ By Azai.com theme v1. Test v2 git - v1.0.0.1
   -ms-user-select: all;
   user-select: all;
 }
+/*** User Balance Module ****/
+.group-clipboard{
+  display:flex;
+  flex-direction:row;
+}
+.group-clipboard #copyText{
+  border:1px solid black;
+  box-shadow:black inset;
+  padding:.7rem 1rem;
+  display:flex;
+  align-items:center;
+  background-color:black;
+  color:white;
+  position:relative;
+  border:0px;
+}
+#copyText i .on {
+    color: white;
+    position: absolute;
+    background-color: gray;
+    width: 110px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    left: -67px;
+    top: -33px;
+    font-family:Tahoma;
+    font-size:.9rem;
+    text-align:center;
+    }
+
+#copyText span.on::before{
+    width: 0;
+    height: 0;
+    border-top: 15px solid gray;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    right: 14px; 
+    }
+/*** User Balance Module ****/
+#module-userbalance-balance .tabContainer .tabs li.active {
+    border-top: 3px solid #000 !important;
+    border-left: 1px solid #000 !important;
+    border-right: 1px solid #000 !important;
+    background-color:white;
+}
+#module-userbalance-balance .tabContainer .tabs_content{
+  background-color:white;
+  border:1px solid #000;
+}
+#module-userbalance-balance .tabContainer .tabs li::after{
+  background:transparent;
+}
+#module-userbalance-balance .btn.btn-default.withdrawal:hover{
+  background-color:#000;
+  border-color:#000;
+}
 
 #checkout #checkout-delivery-step .custom-radio .custom-control-label::before{
   width:1.5rem;
@@ -1709,7 +1768,7 @@ flex-basis: auto !important;}
 
 @media only screen and (max-width:767px){ 
 
-  
+
    /*Fixing alert size */
   .alerts.create-acount.alert-processing.active{
     top:2rem;
@@ -1951,6 +2010,8 @@ p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
  ***************************************************************/
 
 @media (max-width: 550px) {
+  /***Module ***/
+ 
   
    #footer div.container #redes-desk {font-size: 0.2rem;width: 110%;}
   /*Items del carrito de compra Fix*/
