@@ -15,6 +15,9 @@ $(document).ready(function(){
 		var wtCategory = $('#wt_cat_carousel').on('click tap', function(){
 			loader.show();
 		});
+		$(document).on('click tap','.module a.quote-summary .header', function(){
+			openLoader();
+		});
 		$('a.product-thumbnail-link').on('click tap',function(){
 			openLoader();
 		});
@@ -648,48 +651,7 @@ $(document).ready(function(){
 		}
 		request.send(vars);
 	}
-	 //console.log($("#refproLink").text);
-	 //Copy element to clipboard and subraying
-	 $('#refproLink').on('click tap', function(){
-	 	var copyText = $('#copyText');
-	 	$("#refproLink").css({"background-color":"black", "color":"white"});
-	 	copyText.css({"color":"black", "background-color":"#dedede" });
-	 	copyText.find(".on").show();
-
-	 	setTimeout(function(){
-	 		$("#refproLink").css({"background-color":"inherit", "color":"initial", "border-left":"0px"});
-	 		copyText.css({"color":"white", "background-color":"black" });
-	 		copyText.find(".on").hide();
-	 	},2000);
-	 	
-	 	copyToClipboard($("#refproLink"));
-	 });
-
-	 $('#copyText').on('click tap', function(){
-	 	var copyText = $(this);
-
-	 	$("#refproLink").css({"background-color":"black", "color":"white"});
-	 	copyText.css({"color":"black", "background-color":"#dedede" });
-	 	copyText.find(".on").show();
-
-	 	setTimeout(function(){
-	 		$("#refproLink").css({"background-color":"inherit", "color":"initial", "border-left":"0px"});
-	 		copyText.css({"color":"white", "background-color":"black" });
-	 		copyText.find(".on").hide();
-	 	},2000);
-	 	
-	 	copyToClipboard($("#refproLink"));
-	 });
-
-	function copyToClipboard(element) {
-	 console.log(element);
-	  var $temp = $("<input>");
-	  
-	$("body").append($temp);
-	  $temp.val($(element).text()).select();
-	  document.execCommand("copy");
-	  $temp.remove();
-	}
+	 
 
 
 

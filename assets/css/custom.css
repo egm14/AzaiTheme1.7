@@ -56,6 +56,7 @@ By Azai.com theme v1. Test v2 git - v1.0.0.1
     bottom: -13px;
     right: 14px; 
     }
+  .highlight { background-color: #06a2ea7e; }
 /*** User Balance Module ****/
 #module-userbalance-balance .tabContainer .tabs li.active {
     border-top: 3px solid #000 !important;
