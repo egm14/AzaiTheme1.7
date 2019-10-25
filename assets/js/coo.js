@@ -149,26 +149,18 @@ $(document).ready(function(){
 	//console.log($("#refproLink").text);
 	 //Copy element to clipboard and subraying
 	 $('#refproLink').on('click tap', function(){
-	 	var copyText = $('#copyText');
-	 	copyText.css({"color":"#cecece", "background-color":"#404040" });
-	 	$('#refproLink').highlight($("#refproLink").text(),false);
-	 	
-	 	setTimeout(function(){
-	 		copyText.find(".on").fadeIn();
-	 	},500);
-	 	
-
-	 	setTimeout(function(){
-	 		copyText.css({"color":"white", "background-color":"black" });
-	 		copyText.find(".on").fadeOut();
-	 		$('#refproLink').removeHighlight();
-	 	},2600);
-	 	
-	 	copyToClipboard($("#refproLink"));
+	 	puthightlight();
 	 });
 
 	 $('#copyText').on('click tap', function(){
-	 	var copyText = $(this);
+	 	puthightlight();
+	 });
+
+	 function puthightlight(){
+	 	$('#refproLink').removeHighlight();
+	 	clearTimeout(time);
+	 	
+	 	var copyText = $('#copyText');
 		
 		copyText.css({"color":"#cecece", "background-color":"#404040" });
 	 	$('#refproLink').highlight($("#refproLink").text(),false);
@@ -177,15 +169,14 @@ $(document).ready(function(){
 	 		copyText.find(".on").fadeIn();
 	 	},500);
 
-	 	setTimeout(function(){
+	 	var time = setTimeout(function(){
 	 		copyText.css({"color":"white", "background-color":"black" });
 	 		copyText.find(".on").fadeOut();
-	 		$('#refproLink').removeHighlight();
+	 		//$('#refproLink').removeHighlight();
 	 	},2600);
 	 	
 	 	copyToClipboard($("#refproLink"));
-	 });
-
+	 }
 	function copyToClipboard(element) {
 	 //console.log(element);
 	  var $temp = $("<input>");
