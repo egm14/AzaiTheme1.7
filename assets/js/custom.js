@@ -653,15 +653,13 @@ $(document).ready(function(){
 	 $('#refproLink').on('click tap', function(){
 	 	var copyText = $('#copyText');
 	 	$("#refproLink").css({"background-color":"black", "color":"white"});
-	 	copyText.find(".off").hide();
+	 	copyText.css({"color":"black", "background-color":"#dedede" });
 	 	copyText.find(".on").show();
-		copyText.css("color", "#0050ff");
 
 	 	setTimeout(function(){
-	 		$("#refproLink").css({"background-color":"inherit", "color":"initial"});
-	 		copyText.css("color", "initial");
+	 		$("#refproLink").css({"background-color":"inherit", "color":"initial", "border-left":"0px"});
+	 		copyText.css({"color":"white", "background-color":"black" });
 	 		copyText.find(".on").hide();
-	 		copyText.find(".off").show();
 	 	},2000);
 	 	
 	 	copyToClipboard($("#refproLink"));
