@@ -31,6 +31,10 @@
 {block name='page_content'}
   <ul class="my-account-links row">
 
+    {block name='display_customer_account'}
+        {hook h='displayCustomerAccount'}
+      {/block}
+
     <li class="ma-link-item col-lg-2 col-md-3 col-sm-4 col-6">
       <a id="identity-link" href="{$urls.pages.identity}">
         <i class="fa fa-user-circle-o" aria-hidden="true"></i>
@@ -88,9 +92,7 @@
       </li>
     {/if}
    
-      {block name='display_customer_account'}
-        {hook h='displayCustomerAccount'}
-      {/block}
+      
       
     
 
