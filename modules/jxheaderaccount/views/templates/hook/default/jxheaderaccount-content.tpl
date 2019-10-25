@@ -127,6 +127,7 @@
             {l s='Sign in' mod='jxheaderaccount'}
           </button>
           <div class="register-link nav d-block">
+            <!-- change viceversa the behavior if to not open-->
             <a {if $configs.JXHEADERACCOUNT_USE_REDIRECT}href="{$urls.pages.register}" {else}href="#create-account-content-{$hook}" data-toggle="tab"{/if} data-link-action="display-register-form">
               {l s='No account?' d='Shop.Theme.Customeraccount'}&nbsp;<span class="one">{l s='Create one here' d='Shop.Theme.Customeraccount'}</span> 
             </a>
