@@ -73,7 +73,7 @@ $(document).ready(function(){
 		'autoDimensions'	: true,
 		'type'				: 'iframe',
 		'width'				: 920,
-		'height'			: 440
+		'height'			: 650
 	}).trigger('click');
 
 	var tab_container = new TabContainer('.tab_container');
