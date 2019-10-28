@@ -175,10 +175,14 @@ $this->context->smarty->assign(array('user_data' => Referral::getUserData($this-
 			$query_str = 'SELECT * FROM '._DB_PREFIX_.'refpro_customer WHERE id = '.(int)$this->context->customer->id.' AND is_sponsor = "1"';
 			$result = Db::getInstance()->GetRow($query_str);
 		}
-
+		/*
+			Tools::redirect($this->context->link->getPageLink('authentication', null, null, array(
+				'back' => $this->context->link->getModuleLink('refpro', 'myaccount')
+			)));
+		*/
 		if (!empty($s_goref) || (isset($result) && is_array($result)))
 		{
-			$link_num = $this->context->link->getPageLink('index.php').'?ref='.$this->context->customer->id;
+			$link_num = $this->context->link->getPageLink('authentication').'?ref='.$this->context->customer->id;
 			$link_char = $this->context->link->getPageLink('index.php').'?ref='.$this->context->customer->email;
 			$link_sec = $this->generateSecureLink();
 			$this->context->smarty->assign(array(

@@ -169,7 +169,7 @@
 						{if isset($rules) && $rules}
 							<p>
 								<div style='margin-right: 5px;float: left; width: 15px; height: 15px;'><input type="checkbox" name="ref_agree" class="ref_cb" /></div>
-								<label for="ref_agree" class="ref_lbl" style="color: #000000; margin-left: 5px;">{l s='I have read and agree to the' mod='refpro'} <a href="{$rules|escape:'quotes':'UTF-8'}" id="ref_agree" class="iframe">"{l s='Terms of Service' mod='refpro'}"</a>.</label>
+								<label for="ref_agree" class="ref_lbl" style="color: #000000; margin-left: 5px;">{l s='I have read and agree to the' mod='refpro'} <a href="{$rules|escape:'quotes':'UTF-8'}" id="ref_agree" class="iframe">"{l s='Terms of Service.' mod='refpro'}"</a>.</label>
 							</p>
 						{else}
 							<input type="hidden" name="ref_agree" value="checked" id="ref_agree_alt" />
