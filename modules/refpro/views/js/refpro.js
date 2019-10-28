@@ -68,7 +68,11 @@ $(document).ready(function(){
 		}
 		$(this).attr("href", href);
 	});
-	$('#ref_agree').fancybox().trigger('click');
+	$('#ref_agree').fancybox({
+		'autoScale'			: true, 
+		'autoDimensions'	: true,
+		'type'				: 'iframe'
+	}).trigger('click');
 
 	var tab_container = new TabContainer('.tab_container');
 	tab_container.init();
