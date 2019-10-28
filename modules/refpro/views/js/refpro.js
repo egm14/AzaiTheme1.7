@@ -69,11 +69,13 @@ $(document).ready(function(){
 		$(this).attr("href", href);
 	});
 	$('#ref_agree').fancybox({
+		'width'				: 920,
+		'height'			: 557,
 		'autoScale'			: true, 
 		'autoDimensions'	: true,
 		'type'				: 'iframe',
-		'width'				: 920,
-		'height'			: 650
+		'scrolling'			: 'auto'
+
 	}).trigger('click');
 
 	var tab_container = new TabContainer('.tab_container');
