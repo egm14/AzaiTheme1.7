@@ -57,6 +57,7 @@ By Azai.com theme v1. Test v2 git - v1.0.0.1
     right: 14px; 
     }
   .highlight { background-color: #bce0ff; }
+
 /*** User Balance Module ****/
 #module-userbalance-balance .tabContainer .tabs li.active {
     border-top: 3px solid #000 !important;
@@ -76,6 +77,16 @@ By Azai.com theme v1. Test v2 git - v1.0.0.1
   border-color:#000;
 }
 
+/**** refpro style *****/
+#ref_agree{
+  text-decoration:underline;
+  color:blue;
+  font-weight:600;
+}
+#ref_agree:hover{
+  color:darkblue;
+  text-decoration:none;
+}
 #checkout #checkout-delivery-step .custom-radio .custom-control-label::before{
   width:1.5rem;
   height:1.5rem;
