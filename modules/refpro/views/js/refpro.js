@@ -71,7 +71,9 @@ $(document).ready(function(){
 	$('#ref_agree').fancybox({
 		'autoScale'			: true, 
 		'autoDimensions'	: true,
-		'type'				: 'iframe'
+		'type'				: 'iframe',
+		'width'				: 920,
+		'height'			: 440
 	}).trigger('click');
 
 	var tab_container = new TabContainer('.tab_container');
