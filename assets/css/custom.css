@@ -1908,7 +1908,10 @@ flex-basis: auto !important;}
   body#product h1.h2.product-name{display:none;}
   /*------------------RojaQuote Module----------------------*/
   #quote_summary tbody td.quote_product{
-    width:70px!important;
+    width:6.7rem!important;
+  }
+  #quote_summary tbody td.quote_description{
+    width:10rem;
   }
   
   #quote_summary tr.last-row-resumen{
