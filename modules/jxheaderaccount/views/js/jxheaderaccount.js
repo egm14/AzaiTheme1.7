@@ -240,6 +240,8 @@ function submitCreate(elem){
           var shopName = prestashop.shop.name;
           console.log(shopName)
           
+          $(".loader-page").show();
+          
           if(shopName == "azaimayoreo2"){
                       uripage = prestashop.urls.base_url + prestashop.language.iso_code; 
                       setTimeout(function(){
