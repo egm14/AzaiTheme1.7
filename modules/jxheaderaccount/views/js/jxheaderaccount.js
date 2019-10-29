@@ -239,6 +239,7 @@ function submitCreate(elem){
          // var shopName = $.trim($('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase());
           var shopName = prestashop.shop.name;
           console.log(shopName)
+          
           if(shopName == "azaimayoreo2"){
                       uripage = prestashop.urls.base_url + prestashop.language.iso_code; 
                       setTimeout(function(){
