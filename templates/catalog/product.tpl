@@ -130,11 +130,11 @@
               {/if}
             </span>
           {/block}
-             {if $shop.name != $azaimayoreo}
+             {*if $shop.name != $azaimayoreo*}
                  {block name='product_prices'}
                    {include file='catalog/_partials/product-prices.tpl'}
                  {/block}
-            {/if}
+            {*/if*}
          
 
           {block name='product_description_short'}
