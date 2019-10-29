@@ -239,24 +239,15 @@ function submitCreate(elem){
          // var shopName = $.trim($('title#page-titles').prevObject.context.title.split("|")[0].toLowerCase());
           var shopName = prestashop.shop.name;
           console.log(shopName)
-          if(shopName == "azaimayoreo"){
-            var uriPhp;
-              if(window.location.hostname =="localhost"){
-                      urihref = window.location.pathname.split("/");
-                      uripage = "/"+urihref[1]+"/"+urihref[2]
-                      console.log("/"+uripage+"/module/idxvalidatinguser/deluxevalidatinguser")
+          if(shopName == "azaimayoreo2"){
+                      uripage = prestashop.urls.base_url + prestashop.language.iso_code; 
                       setTimeout(function(){
-                        window.location.href = uripage+"/module/idxvalidatinguser/deluxevalidatinguser"
+                     //window.location.assign(uripage +"/module/idxvalidatinguser/deluxevalidatinguser")
+                      window.location.href = prestashop.urls.pages.authentication;
                       },3000)
-              }else{
-                      urihref = window.location.pathname.split("/");
-                      uripage = "/"+urihref[1] 
-                      setTimeout(function(){
-                      window.location.assign(uripage +"/module/idxvalidatinguser/deluxevalidatinguser")
-                      },3000)
-              } 
+               
           }else{
-              var loginUrl = $('footer#footer').find('.footer-column div .block_myaccount_infoso h3 a').context.referrer
+              var loginUrl = prestashop.urls.pages.authentication;
                //console.log(loginUrl)
               setTimeout(function(){
               document.location.assign(loginUrl)
