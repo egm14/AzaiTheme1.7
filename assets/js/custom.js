@@ -39,6 +39,9 @@ $(document).ready(function(){
 		$('a.btn-secondary.icon-left').on('click tap', function(){
 			openLoader();
 		});
+		$(document).on('click tap', 'a.button-exclusive.btn', function(){
+			openLoader();
+		});
 		$('.dropdown-item').on('click tap', function(){
 			openLoader();
 		});

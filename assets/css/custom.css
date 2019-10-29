@@ -1910,10 +1910,6 @@ flex-basis: auto !important;}
   #quote_summary tbody td.quote_product{
     width:6.7rem!important;
   }
-  #quote_summary tbody td.quote_description{
-    width:10rem;
-  }
-  
   #quote_summary tr.last-row-resumen{
     background-color:black;
     color:white!important;
@@ -1930,8 +1926,9 @@ flex-basis: auto !important;}
     flex-direction: column;
   }
   .quote_navigation .button-exclusive.btn.btn-default{
-    padding:15px 8px;
-    margin-top:1.2rem;
+    padding:1.2rem 1rem;
+    margin-top: 1.8rem!important;
+    border: solid 1px black;
   }
   #module-roja45quotationspro-QuotationsProFront #content{
     box-shadow:none;
@@ -2183,6 +2180,11 @@ ul.menu.clearfix.top-level-menu.jxmegamenu_item {margin: 0px -13px 0px -13px;}
 .menu-mobile-grover:after {padding: 5px;}
  body#checkout .nav-tabs li a.reachable span span.punto-step{display:none;}
 body#checkout .nav-tabs li a.reachable span.step-number{display:block;}
+
+/*---------- Quote Summary Module ---------*/
+#quote_summary tbody td.quote_description{
+    width:10rem;
+  }
  /*---------Footer to mobile -----------*/
     
     #jxhtmlcontent_footer #redes-desk  a i{
