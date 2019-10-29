@@ -240,21 +240,23 @@ function submitCreate(elem){
           var shopName = prestashop.shop.name;
           console.log(shopName)
           
-          $(".loader-page").show();
           
+
           if(shopName == "azaimayoreo2"){
                       uripage = prestashop.urls.base_url + prestashop.language.iso_code; 
                       setTimeout(function(){
                      //window.location.assign(uripage +"/module/idxvalidatinguser/deluxevalidatinguser")
                       window.location.href = prestashop.urls.pages.authentication;
+                      $(".loader-page").show();
                       },3000)
                
           }else{
               var loginUrl = prestashop.urls.pages.authentication;
                //console.log(loginUrl)
               setTimeout(function(){
-              document.location.assign(loginUrl)
-              }, 2000)
+              document.location.assign(loginUrl);
+              $(".loader-page").show();
+              }, 2400)
 
           }
       }
