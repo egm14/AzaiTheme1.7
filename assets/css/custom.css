@@ -1456,6 +1456,15 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
     transition: 1s ease;
 }
 
+/*Display Ship only page id 11 */
+.cms-id-11 div#ship {
+    display: none!important;
+}
+/*Display Breadcrumb only page id 11*/
+.cms-id-11 ol.breadcrumb {
+    display: none!important;
+}
+
 /***************************************************************
  ******************* Screen Max-width 1650px *******************
  ***************************************************************/
