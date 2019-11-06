@@ -27,20 +27,29 @@
 {/block}
 
 {*ASSIGN GLOBAL VARIABLES TO USE ON AZAI*}
+
 {if ($customer.id_default_group == 12 or $customer.id_default_group == 13)}
     {assign var=packageAzai value="1" scope="global"}
     {assign var=packageAzaiStep value="1" scope="global"}
     {assign var="WMinQuoteOrder" value="500" scope="global"}
 {else}
-    {assign var=packageAzai value="6" scope="global"}
-    {assign var=packageAzaiStep value="6" scope="global"}
-    {assign var="WMinQuoteOrder" value="0" scope="global"}
+    
+    {*if ($product.category == 'bags') or ($product.category == 'necklaces') or ($product.category == 'jewelry-necklaces') or ($product.category == 'earrings') or ($product.category == 'jewelry-earrings') or ($product.category == 'bracelets') or ($product.category == 'jewelry-bracelets') or ($product.category == 'hats') or ($product.category == 'brooches') or ($product.category == 'clutches-crossbody-bags') or ($product.category == 'jewelry') or ($product.category == 'rings') or ($product.category == 'jewelry-rings') or ($product.category == 'accessories')*}
+    <!---Category parent accesories and Jewerely-->
+    {if $category->id_parent == 15 or $category->id_parent == 12}
+      {assign var=packageAzai value="3" scope="global"}
+      {assign var=packageAzaiStep value="3" scope="global"}
+      {assign var="WMinQuoteOrder" value="0" scope="global"}
+    {else}
+      {assign var=packageAzai value="6" scope="global"}
+      {assign var=packageAzaiStep value="6" scope="global"}
+      {assign var="WMinQuoteOrder" value="0" scope="global"}
+    {/if}
+    
     
 {/if}
 
- {if ($product.category == 'bags') or ($product.category == 'necklaces') or ($product.category == 'jewelry-necklaces') or ($product.category == 'earrings') or ($product.category == 'jewelry-earrings') or ($product.category == 'bracelets') or ($product.category == 'jewelry-bracelets') or ($product.category == 'hats') or ($product.category == 'brooches') or ($product.category == 'clutches-crossbody-bags') or ($product.category == 'jewelry') or ($product.category == 'rings') or ($product.category == 'jewelry-rings') or ($product.category == 'accessories')}
-     <td scope="col">TotalQty</b></td>
- {/if}
+ 
 
 {assign var=azaimayoreo value="azaimayoreo" scope="global"}
 
@@ -116,12 +125,18 @@ else window.onload = downloadJSAtOnload;
 <script src='https://www.google.com/recaptcha/api.js'></script>
 {/block}
 
-{literal}
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PBFFQKC');</script>
-    <!-- End Google Tag Manager -->
-{/literal}
+{assign var="parts" value=":"|explode:$urls.shop_domain_url}
+         
+  {if $parts[1] != "//localhost"}
+    {literal}
+      
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PBFFQKC');</script>
+        <!-- End Google Tag Manager -->
+      
+    {/literal}
+  {/if}
