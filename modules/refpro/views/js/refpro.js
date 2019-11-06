@@ -53,6 +53,8 @@ $(document).ready(function(){
 	$("#goref_a").click(function(e){
 		e.preventDefault();
 		if($("input[name='ref_agree']").attr("checked") || $("#ref_agree_alt")[0]){
+			var loader = $(".loader-page");
+			loader.show();
 			window.location.href = $(this).attr("href");
 		} else {
 			alert(phrases['alert_text']);

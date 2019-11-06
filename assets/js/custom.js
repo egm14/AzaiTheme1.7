@@ -42,6 +42,9 @@ $(document).ready(function(){
 		$(document).on('click tap', 'a.button-exclusive.btn', function(){
 			openLoader();
 		});
+		$('#my-account').find('ul.my-account-links li a').on('click tap',function(){
+			openLoader();
+		});
 		$('.dropdown-item').on('click tap', function(){
 			openLoader();
 		});
