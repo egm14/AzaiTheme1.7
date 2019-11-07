@@ -1,0 +1,61 @@
+.tab_container .tabs
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tab_container .tabs:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+.tab_container .tabs li
+{
+    float: left;
+    padding: 0 15px;
+    line-height: 30px;
+    color: #333333;
+    background: #DDDDDD;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 14px;
+    margin-right: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.tab_container .tabs li:after
+{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 1px;
+    background: #DDDDDD;
+    position: absolute;
+    left: -3px;
+    bottom: 0;
+}
+.tab_container .tabs li:first-child:after
+{
+    display: none;
+}
+.tab_container .tabs li.active
+{
+    color: #FFFFFF;
+    background: #000;
+}
+.tab_container .tabs_content
+{
+    border: 1px solid #000;
+    position: relative;
+    z-index: 1;
+    margin-top: -1px;
+    border-radius: 3px;
+}
+.tab_container .tabs_content > div,
+.tab_container .tabs_content > form > div
+{
+    padding: 15px;
+}
