@@ -112,8 +112,8 @@
 							<td>{l s='The first level:' mod='refpro'}</td>
 							<td><b>{if isset($rate_1) && $rate_1}{$rate_1|escape:'htmlall':'UTF-8'}{else}0{/if}</b> %</td>
 						</tr>
-
-						{if isset($rate_2) && $rate_2}
+						<!-- rate_2 -->
+						{if isset($rate_3) && $rate_3}
 							<tr>
 								<td>{l s='The second level:' mod='refpro'}</td>
 								<td><b>{$rate_2|escape:'htmlall':'UTF-8'}</b> %</td>
