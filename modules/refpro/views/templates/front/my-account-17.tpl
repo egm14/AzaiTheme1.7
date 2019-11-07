@@ -571,7 +571,7 @@
 {else}
 <div class="help-block">
 <ul>
-<li class="alert alert-danger">{l s='Your account has been disabled, contact the store owner to specify the reason! ' mod='refpro'}</li>
+<li class="alert alert-info">{l s='Your account has been disabled, contact the store owner to specify the reason! ' mod='refpro'}</li>
 </ul>
 </div>
 
