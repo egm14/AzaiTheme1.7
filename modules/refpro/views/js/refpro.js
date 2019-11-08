@@ -63,6 +63,7 @@ $(document).ready(function(){
 
 	$("#ref_agree").each(function(e){
 		var href = $(this).attr("href");
+		console.log("Esto va abrir");
 		if(href.indexOf('?') != -1){
 			href = href + "&content_only=1";
 		} else {
@@ -76,9 +77,9 @@ $(document).ready(function(){
 		'autoScale'			: true, 
 		'autoDimensions'	: true,
 		'type'				: 'iframe',
-		'scrolling'			: 'auto'
-
-	}).trigger('click');
+		'scrolling'			: 'auto',
+		'preload'			: true
+	}).trigger('click').showLoader();
 
 	var tab_container = new TabContainer('.tab_container');
 	tab_container.init();
