@@ -62,7 +62,7 @@ $(document).ready(function(){
 
 	$("#ref_agree").each(function(e){
 		var href = $(this).attr("href");
-		//console.log("Esto va abrir");
+		console.log("Esto va abrir");
 		if(href.indexOf('?') != -1){
 			href = href + "&content_only=1";
 		} else {
@@ -72,20 +72,21 @@ $(document).ready(function(){
 	});
 	var loader = $(".loader-page");
 	$('#ref_agree').fancybox({
-		'width'				: 920,
-		'height'			: 557,
-		'autoScale'			: true, 
-		'autoDimensions'	: true,
-		'type'				: 'iframe',
-		'scrolling'			: 'auto',
-		'preload'			: true,
-		'beforeLoad'	: function(instance, current){
-				console.log("spinner open");
-				loader.show();
+		width			: 920,
+		height			: 557,
+		autoScale			: true, 
+		autoDimensions	: true,
+		type			: 'iframe',
+		scrolling		: 'auto',
+		preload		: false,
+		spinnerTpl: '<div class="fancybox-loading"></div>',
+		afterShow : function(instance, current) {
+			loader.show();
+			console.info("fancbybox show");
 			},
-		'afterLoad'		: function(instance, current){
-				console.log("Loader Cerrando");
-				loader.hide();
+		afterShow : function(instance, current) {
+			loader.hide();
+			console.info("fancbybox hide");
 			}
 		
 	}).trigger('click');
