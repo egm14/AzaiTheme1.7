@@ -80,11 +80,11 @@ $(document).ready(function(){
 		'scrolling'			: 'auto',
 		'preload'			: true,
 		'beforeLoad'	: function(instance, current){
-				console.info("spinner open");
+				console.log("spinner open");
 				loader.show();
 			},
 		'afterLoad'		: function(instance, current){
-				console.info("Loader Cerrando");
+				console.log("Loader Cerrando");
 				loader.hide();
 			}
 		
