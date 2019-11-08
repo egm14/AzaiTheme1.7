@@ -53,8 +53,7 @@ $(document).ready(function(){
 	$("#goref_a").click(function(e){
 		e.preventDefault();
 		if($("input[name='ref_agree']").attr("checked") || $("#ref_agree_alt")[0]){
-			var loader = $(".loader-page");
-			loader.show();
+			
 			window.location.href = $(this).attr("href");
 		} else {
 			alert(phrases['alert_text']);
@@ -63,7 +62,7 @@ $(document).ready(function(){
 
 	$("#ref_agree").each(function(e){
 		var href = $(this).attr("href");
-		console.log("Esto va abrir");
+		//console.log("Esto va abrir");
 		if(href.indexOf('?') != -1){
 			href = href + "&content_only=1";
 		} else {
@@ -71,6 +70,7 @@ $(document).ready(function(){
 		}
 		$(this).attr("href", href);
 	});
+	var loader = $(".loader-page");
 	$('#ref_agree').fancybox({
 		'width'				: 920,
 		'height'			: 557,
@@ -78,8 +78,17 @@ $(document).ready(function(){
 		'autoDimensions'	: true,
 		'type'				: 'iframe',
 		'scrolling'			: 'auto',
-		'preload'			: true
-	}).trigger('click').showLoader();
+		'preload'			: true,
+		'beforeLoad'	: function(instance, current){
+				console.info("spinner open");
+				loader.show();
+			},
+		'afterLoad'		: function(instance, current){
+				console.info("Loader Cerrando");
+				loader.hide();
+			}
+		
+	}).trigger('click');
 
 	var tab_container = new TabContainer('.tab_container');
 	tab_container.init();
