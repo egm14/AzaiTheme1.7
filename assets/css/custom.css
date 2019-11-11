@@ -1468,6 +1468,10 @@ body#checkout #hook-display-before-carrier .custom-control:active, .custom-contr
 .cms-id-11 footer#footer {
     display: none!important;
 }
+/* Display label form control*/
+#authentication label.form-control-label {
+    display: none;
+}
 
 /***************************************************************
  ******************* Screen Max-width 1650px *******************
