@@ -11,6 +11,7 @@
 *  @license          /license.txt
 *}
 
+
  {assign var=packageAzaiW value="6"}
 <table class="table table-recap title" bgcolor="#ffffff" style="width:100%;border-collapse:collapse" cellSpacing=0 cellPadding=0 border=0>
     <tr>
@@ -47,6 +48,10 @@
         {assign var="total_quote" value='0'} 
         {assign var="total_quote_qtye" value='0'} 
     {foreach $requested_products as $product}
+
+        {if $product.id_category_default == 12 or $product.id_category_default == 15 or $product.id_category_default == 16 or $product.id_category_default == 37 or $product.id_category_default == 36 or $product.id_category_default == 61 or $product.id_category_default == 62 or $product.id_category_default == 55 or $product.id_category_default == 56 or $product.id_category_default == 57 or $product.id_category_default == 58 or $product.id_category_default == 33}
+             {assign var=packageAzaiW value="3"}
+        {/if}
     <tr class="product-line">
         <td class="product-image" colspan="2" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
             <img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'small_default')|escape:'html':'UTF-8'}"
@@ -69,6 +74,7 @@
         </td>
         <td class="product-quantity" colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
             <span style="color: #333;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.qty_in_cart|escape:'html':'UTF-8'} {l s='Packages' mod='roja45quotationspro'} ({$product.qty_in_cart*$packageAzaiW} {l s='Units' mod='roja45quotationspro'})</span>
+            <pre>{*$product|print_r*}</pre>
         </td>
         {assign var="priceValue" value=$product.product_price*($product.quote_quantity*$packageAzaiW) scope=parent}
         <td class="product-price" colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">

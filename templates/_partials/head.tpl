@@ -36,7 +36,9 @@
     
     {*if ($product.category == 'bags') or ($product.category == 'necklaces') or ($product.category == 'jewelry-necklaces') or ($product.category == 'earrings') or ($product.category == 'jewelry-earrings') or ($product.category == 'bracelets') or ($product.category == 'jewelry-bracelets') or ($product.category == 'hats') or ($product.category == 'brooches') or ($product.category == 'clutches-crossbody-bags') or ($product.category == 'jewelry') or ($product.category == 'rings') or ($product.category == 'jewelry-rings') or ($product.category == 'accessories')*}
     <!---Category parent accesories and Jewerely-->
-    {if $category->id_parent == 15 or $category->id_parent == 12}
+    {*if $category->id_category == 12 or $category->id_category == 15 or $category->id_category == 16 or $category->id_parent == 12 or $category->id_parent == 15 or $category->id_parent == 16*}
+    
+    {if $product.id_category_default == 12 or $product.id_category_default == 15 or $product.id_category_default == 16 or $product.id_category_default == 37 or $product.id_category_default == 36 or $product.id_category_default == 61 or $product.id_category_default == 62 or $product.id_category_default == 55 or $product.id_category_default == 56 or $product.id_category_default == 57 or $product.id_category_default == 58 or $product.id_category_default == 33}  
       {assign var=packageAzai value="3" scope="global"}
       {assign var=packageAzaiStep value="3" scope="global"}
       {assign var="WMinQuoteOrder" value="0" scope="global"}

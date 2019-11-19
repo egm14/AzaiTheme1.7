@@ -97,6 +97,7 @@
     <meta itemprop="url" content="{$product.url}">
     {block name='page_header'}
             <h1 class="h2 product-name mobile" style="display:none" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+            <pre>{*$category|print_r*}</pre>
           {/block}
 
     <div class="product-card row mb-2 mb-lg-3 mb-xxl-4">

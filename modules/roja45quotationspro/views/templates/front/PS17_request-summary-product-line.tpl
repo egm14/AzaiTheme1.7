@@ -11,7 +11,15 @@
 *  @license          /license.txt
 *}
 
-
+{if $product.id_category_default == 12 or $product.id_category_default == 15 or $product.id_category_default == 16 or $product.id_category_default == 37 or $product.id_category_default == 36 or $product.id_category_default == 61 or $product.id_category_default == 62 or $product.id_category_default == 55 or $product.id_category_default == 56 or $product.id_category_default == 57 or $product.id_category_default == 58 or $product.id_category_default == 33}  
+      {assign var=packageAzai value="3" scope="global"}
+      {assign var=packageAzaiStep value="3" scope="global"}
+      {assign var="WMinQuoteOrder" value="0" scope="global"}
+    {else}
+      {assign var=packageAzai value="6" scope="global"}
+      {assign var=packageAzaiStep value="6" scope="global"}
+      {assign var="WMinQuoteOrder" value="0" scope="global"}
+    {/if}
 
 <tr id="product_{$product.id_product|escape:'html':'UTF-8'}_{$product.id_product_attribute|escape:'html':'UTF-8'}_{if $displayQuantity > 0}nocustom{else}0{/if}"
     class="quote_item{if isset($productLast) && $productLast && (!isset($ignoreProductLast) || !$ignoreProductLast)} last_item{/if}{if isset($productFirst) && $productFirst} first_item{/if}{if $displayQuantity == 0} alternate_item{/if} {if $odd}odd{else}even{/if}">
