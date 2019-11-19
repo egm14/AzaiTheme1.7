@@ -1994,6 +1994,9 @@ body#module-roja45quotationspro-QuotationsProFront a.pull-right.button-exclusive
 #ps-image-slider.swiper-container .swiper-slide .img-fluid {top: 37%!important;width: 110%!important;height: auto;min-width: 440px!important;}
 #ps-image-slider.swiper-container .swiper-slide {width: 122%;min-height: 350px;top: 70px}
 #choicegiftcard section .step-title {text-transform: uppercase;margin-bottom:0;font-size: 12px;}/*Font size module gift card */
+#choicegiftcard #gc-step-information .gc-section-content .ta-gc-submit .btn{margin-bottom:15px;}
+#choicegiftcard #gc-step-information .gc-section-content .ta-gc-submit .col-sm-6{padding-left:0px;padding-right:0px;}
+#choicegiftcard #ta_gc_products_virtual{width:36%;}
 p.select.datesendcard {margin: 0px -40px 0px -40px;}/*gift card date*/
 /*------------------- PRODUCT- SECTION ----------------*/
   /*Buttom add to bag*/
