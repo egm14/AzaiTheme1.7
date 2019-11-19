@@ -2,6 +2,12 @@ $(document).ready(function(){
 
 	//document.cookie = "language=true; expires=Thu, 31 Dec 2019 12:00:00 UTC; path=/";
 
+	/*Hidding menu if customer not logged*/
+	if(prestashop.customer.is_logged == false){
+		//alert("No está logeado");
+		$('ul.menu').find('.menu-gift-card').hide();
+	}
+
 	var cookieLangue = readCookie("cookLanguage");
 	var modalLangue = $(document).find('#languagemodal');
 	var cookieTimer = 365;
