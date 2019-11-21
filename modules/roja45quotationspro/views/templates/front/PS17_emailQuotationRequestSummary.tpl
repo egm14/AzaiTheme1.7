@@ -85,7 +85,7 @@
     </tr>
         {*Sum the total quote*}
         {$total_quote=$total_quote+$priceValue}
-        {assing var="total_qty_pack" value=$product.qty_in_cart*$packageAzaiW}
+        {assign var="total_qty_pack" value=$product.qty_in_cart*$packageAzaiW}
         {$total_quote_qtye=$total_quote_qtye+$total_qty_pack}
     {/foreach}
     <!--Adding total Quote request -->
