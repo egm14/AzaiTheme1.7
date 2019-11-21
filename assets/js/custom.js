@@ -508,11 +508,17 @@ $(document).ready(function(){
 	 		var priceLocation = $('#product-price-quantity');
 	 		var price = $('#product-price-quantity').data('price');
 	 		var qty = $('#quantity_wanted').val();
-	 		console.log('Esto es precio: ' + price);
-	 	}	console.log('Esto es qty: ' + qty);
-	 		var datapack = $(targetRow).find('#quantity_wanted').data('pack');
+	 		//console.log('Esto es precio: ' + price);
+	 	}	//console.log('Esto es qty: ' + qty);
+
+	 		if(prestashop.page.page_name == 'module-roja45quotationspro-QuotationsProFront'){
+	 			var datapack = $(targetRow).find('#quantity_wanted').data('pack');
+	 		}else{
+	 			var datapack = $('#quantity_wanted').data('pack');
+	 		}
+	 		
 		 	//console.log('obteniendo variables');
-		 	console.log('Esto es datapack: ' + datapack);
+		 	//console.log('Esto es datapack: ' + datapack);
 
 	 	calculadoraQTY(qty, price, datapack, priceLocation);
 

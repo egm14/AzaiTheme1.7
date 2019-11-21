@@ -12,7 +12,7 @@
 *}
 
 
- {assign var=packageAzaiW value="6"}
+ {*assign var=packageAzaiW value="6"*}
 <table class="table table-recap title" bgcolor="#ffffff" style="width:100%;border-collapse:collapse" cellSpacing=0 cellPadding=0 border=0>
     <tr>
         <td class="text-right title" style="min-width:100%;border:1px solid #D6D4D4;border-bottom: 0;background-color: #fbfbfb;padding: 5px;">
@@ -51,6 +51,8 @@
 
         {if $product.id_category_default == 12 or $product.id_category_default == 15 or $product.id_category_default == 16 or $product.id_category_default == 37 or $product.id_category_default == 36 or $product.id_category_default == 61 or $product.id_category_default == 62 or $product.id_category_default == 55 or $product.id_category_default == 56 or $product.id_category_default == 57 or $product.id_category_default == 58 or $product.id_category_default == 33}
              {assign var=packageAzaiW value="3"}
+        {else}
+            {assign var=packageAzaiW value="6"}
         {/if}
     <tr class="product-line">
         <td class="product-image" colspan="2" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
@@ -83,7 +85,8 @@
     </tr>
         {*Sum the total quote*}
         {$total_quote=$total_quote+$priceValue}
-        {$total_quote_qtye=$total_quote_qtye+$product.qty_in_cart}
+        {assing var="total_qty_pack" value=$product.qty_in_cart*$packageAzaiW}
+        {$total_quote_qtye=$total_quote_qtye+$total_qty_pack}
     {/foreach}
     <!--Adding total Quote request -->
     <tr class="last-row-resumen" style="font-weight:bold;font-size:1rem;">
@@ -91,7 +94,7 @@
         <td colspan="5" style="text-align:center;color:#777;padding:7px 0">&nbsp;&nbsp;&nbsp;</td>  
         <td colspan="5" style="text-align:center;color:#777;padding:7px 0">&nbsp;&nbsp;&nbsp;</td>              
         <td colspan="5" style="text-align:center;color:#777;padding:7px 10px;background-color:#000;"><span style="color: #fff;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">Total</span></td>
-        <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 10px;background-color:#000;"><span style="color: #fff;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$total_quote_qtye} {l s='Packages' mod='roja45quotationspro'} ({$total_quote_qtye*$packageAzaiW} {l s='Units' mod='roja45quotationspro'})</span></td>
+        <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 10px;background-color:#000;"><span style="color: #fff;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$total_quote_qtye} {l s='Packages' mod='roja45quotationspro'} ({$total_quote_qtye} {l s='Units' mod='roja45quotationspro'})</span></td>
         <td colspan="5" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 10px;background-color:#000;"><span style="color: #fff;font-family: Arial;font-size: 13px;padding: 5px;font-weight: 500;">{$product.product_price_currency_iso}{$product.product_price_currency_symbol}{$total_quote|number_format:2:".":","}</span></h3></td>
         
         
