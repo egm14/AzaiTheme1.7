@@ -34,8 +34,8 @@
           <a href="{$slide.url}">
             <figure class="m-0">
               <img class="img-fluid lozad" 
-              src="{$urls.theme_assets}OtherFile/img_category_default.png"
-              data-src="{$slide.image_url}" 
+              data-src="{$urls.theme_assets}OtherFile/img_category_default.png"
+              src="{$slide.image_url}" 
               alt="{$slide.legend|escape}">
               {if $slide.title || $slide.description}
                 <figcaption>
