@@ -16,8 +16,8 @@
       {assign var=packageAzaiStep value="3" scope="global"}
       {assign var="WMinQuoteOrder" value="0" scope="global"}
     {else}
-      {assign var=packageAzai value="6" scope="global"}
-      {assign var=packageAzaiStep value="6" scope="global"}
+      {assign var=packageAzai value="3" scope="global"}
+      {assign var=packageAzaiStep value="3" scope="global"}
       {assign var="WMinQuoteOrder" value="0" scope="global"}
     {/if}
 

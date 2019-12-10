@@ -38,13 +38,14 @@
     <!---Category parent accesories and Jewerely-->
     {*if $category->id_category == 12 or $category->id_category == 15 or $category->id_category == 16 or $category->id_parent == 12 or $category->id_parent == 15 or $category->id_parent == 16*}
     
+    
     {if $product.id_category_default == 12 or $product.id_category_default == 15 or $product.id_category_default == 16 or $product.id_category_default == 37 or $product.id_category_default == 36 or $product.id_category_default == 61 or $product.id_category_default == 62 or $product.id_category_default == 55 or $product.id_category_default == 56 or $product.id_category_default == 57 or $product.id_category_default == 58 or $product.id_category_default == 33}  
       {assign var=packageAzai value="3" scope="global"}
       {assign var=packageAzaiStep value="3" scope="global"}
       {assign var="WMinQuoteOrder" value="0" scope="global"}
     {else}
-      {assign var=packageAzai value="6" scope="global"}
-      {assign var=packageAzaiStep value="6" scope="global"}
+      {assign var=packageAzai value="3" scope="global"}
+      {assign var=packageAzaiStep value="3" scope="global"}
       {assign var="WMinQuoteOrder" value="0" scope="global"}
     {/if}
     
