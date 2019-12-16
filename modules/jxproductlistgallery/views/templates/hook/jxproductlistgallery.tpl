@@ -31,8 +31,8 @@
           
             <img
               class="img-fluid lozad"
-              data-src="{$urls.theme_assets}OtherFile/img_home_default.png"
-              src="{$image.bySize.home_default.url}"
+              src="{$urls.theme_assets}OtherFile/img_home_default.png"
+              data-src="{$image.bySize.home_default.url}"
               alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
               data-full-size-image-url="{$image.large.url}"
             >
@@ -41,9 +41,9 @@
                 {if $smarty.foreach.image.first}
                   <img
                     class="img-fluid lozad"
-                    data-src=
+                    src=
 ="{$urls.theme_assets}OtherFile/img_home_default.png"
-                    src="{$image.bySize.home_default.url}"
+                    data-src="{$image.bySize.home_default.url}"
                     alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                     data-full-size-image-url="{$image.large.url}"
                   >
@@ -56,9 +56,9 @@
                 {if $smarty.foreach.image.iteration == {$imageNext}}
                   <img
                     class="hover-image img-fluid lozad"
-                    data-src
+                    src
 ="{$urls.theme_assets}OtherFile/img_home_default.png"
-                    src="{$image.bySize.home_default.url}"
+                    data-src="{$image.bySize.home_default.url}"
                     alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                     data-full-size-image-url="{$image.large.url}"
                   >
@@ -79,9 +79,9 @@
                 {if $smarty_settings.st_type == 'gallery'}
                   <img
                     class="img-fluid lozad"
-                    data-src
+                    src
 ="{$urls.theme_assets}OtherFile/img_small_default.png"
-                    src="{$image.small.url}"
+                    data-src="{$image.small.url}"
                     alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                   >
                 {/if}
@@ -100,8 +100,8 @@
             <div class="carousel-item{if $image.cover} active{/if}">
               <img
                 class="lozad"
-                data-src="{$urls.theme_assets}OtherFile/img_home_default.png"
-                src="{$image.bySize.home_default.url}"
+                src="{$urls.theme_assets}OtherFile/img_home_default.png"
+                data-src="{$image.bySize.home_default.url}"
                 alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                 data-full-size-image-url="{$image.large.url}"
               >
@@ -129,8 +129,8 @@
       {if $image.cover}
         <img
           class="img-fluid lozad"
-          data-src="{$urls.theme_assets}OtherFile/img_home_default.png"
-          src="{$image.bySize.home_default.url}"
+          src="{$urls.theme_assets}OtherFile/img_home_default.png"
+          data-src="{$image.bySize.home_default.url}"
           alt="{if !empty($image.legend)}{$image.legend}{else}{$product.name|truncate:30:'...'}{/if}"
           data-full-size-image-url="{$image.large.url}"
         >

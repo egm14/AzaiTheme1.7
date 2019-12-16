@@ -30,8 +30,8 @@
 					<a class="link-bonslick">
                         {if isset($item.image) && $item.image}
                             <img class="img-responsive" 
-                            data-src="{$urls.theme_assets}OtherFile/img_category_default.png"
-                            src="{$image_baseurl|escape:'htmlall':'UTF-8'}{$item.image|escape:'htmlall':'UTF-8'}" alt="{$item.title|escape:'htmlall':'UTF-8'}" />
+                            src="{$urls.theme_assets}OtherFile/img_category_default.png"
+                            data-src="{$image_baseurl|escape:'htmlall':'UTF-8'}{$item.image|escape:'htmlall':'UTF-8'}" alt="{$item.title|escape:'htmlall':'UTF-8'}" />
                         {/if}
                         <section class="box-bonslick">
                             {if isset($item.description) && $item.description}

@@ -143,8 +143,8 @@
 
 											<div class="category-image fade-box">
 												<img class="category-image-src lozad" 
-												data-src="{$urls.theme_assets}OtherFile/img_home_default.png"
-												src="{$link->getCatImageLink($category->link_rewrite, $category->id_image, 'home_default')|escape:'html':'UTF-8'}"width="100%"/>
+												src="{$urls.theme_assets}OtherFile/img_home_default.png"
+												data-src="{$link->getCatImageLink($category->link_rewrite, $category->id_image, 'home_default')|escape:'html':'UTF-8'}"width="100%"/>
 											
 												<h4 class="title-category cool-link " style="text-align:center;">
 													{$category->name|escape:'html':'UTF-8'}

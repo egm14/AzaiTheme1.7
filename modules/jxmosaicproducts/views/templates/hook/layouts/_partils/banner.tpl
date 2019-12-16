@@ -28,8 +28,8 @@
   {/if}
     {if $banner->image_path}
       <img class="img-fluid lozad" 
-      data-src="{$urls.theme_assets}OtherFile/img_category_default.jpg"
-      src="{$jxmp_image_path}{$banner->image_path}" 
+      src="{$urls.theme_assets}OtherFile/img_category_default.jpg"
+      data-src="{$jxmp_image_path}{$banner->image_path}" 
       alt="{$banner->title}" />
     {/if}
     {if $banner->description}
