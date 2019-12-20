@@ -83,7 +83,9 @@ $(document).ready(function(){
 				}else if(clientType == "c" || clientType == "cliente" || clientType == "vip" || clientType == "customer"){
 					clientType = "Customer";
 				}else{
-					console.log("No hay tipo de cliente en la url");
+					$('input[name="seller_code"]').closest('.form-group').hide();
+					$('select[name="seller_code_profile"]').closest('.form-group').hide();
+					//console.log("No hay tipo de cliente en la url");
 				}
 					//console.log("Esto es el client: "+ clientType );
 		
