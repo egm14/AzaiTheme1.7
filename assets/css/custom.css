@@ -1078,13 +1078,13 @@ li.swiper-slide .copy-container-btn img{
 }
 
 
-div#stage {
+/*div#stage {
     position: absolute;
     top: 0px;
     z-index: 99;
     height: 462px;
     width: 100%;
-}
+}*/
 /* Estilo Carrier */
 body#checkout .checkout-step .delivery-options .delivery-option-item label .row {background: #f1f1f1;border: none;}
 body#checkout #hook-display-before-carrier .custom-control:active, .custom-control:focus, .custom-control:hover {color: #4CAF50;}
@@ -2384,7 +2384,13 @@ flex-basis: auto !important;}
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+div#stage {
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    height: 462px;
+    width: 100%;
+}
 .swipe {
   display: inline-block;
   color: #000000;
