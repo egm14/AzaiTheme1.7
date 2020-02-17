@@ -46,7 +46,7 @@ $(document).ready(function(){
 			openLoader();
 		});
 		$('.dropdown-item').on('click tap', function(){
-			openLoader();
+			openLoader(this);
 		});
 		$('.page-heading').on('click tap', function(){
 			openLoader();
