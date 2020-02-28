@@ -109,7 +109,7 @@
                   </div>
         {/if}
 
-        {if ($shop.name != $azaimayoreo) or ($shop.name == $azaimayoreo && ($customer.id_default_group == 12 or $customer.id_default_group == 13))}
+        {if ($shop.name != $azaimayoreo) or ($shop.name == $azaimayoreo && ($customer.id_default_group == 11 or $customer.id_default_group == 12 or $customer.id_default_group == 13))}
           <div class="add mb-1">
             
             <button
@@ -123,9 +123,9 @@
             >  
           {$in_cart = 0}
           {foreach from=$cart['products'] item='cart_product' }
-          {if $cart_product['id_product'] == $product.id}
-            {$in_cart = 1}
-          {/if}
+            {if $cart_product['id_product'] == $product.id}
+              {$in_cart = 1}
+            {/if}
           {/foreach}
           
             {if $in_cart}
