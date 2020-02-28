@@ -52,7 +52,7 @@
         {if $product.id_category_default == 12 or $product.id_category_default == 15 or $product.id_category_default == 16 or $product.id_category_default == 37 or $product.id_category_default == 36 or $product.id_category_default == 61 or $product.id_category_default == 62 or $product.id_category_default == 55 or $product.id_category_default == 56 or $product.id_category_default == 57 or $product.id_category_default == 58 or $product.id_category_default == 33}
              {assign var=packageAzaiW value="3"}
         {else}
-            {assign var=packageAzaiW value="6"}
+            {assign var=packageAzaiW value="3"}
         {/if}
     <tr class="product-line">
         <td class="product-image" colspan="2" style="border:1px solid #D6D4D4;text-align:center;color:#777;padding:7px 0">
