@@ -23,16 +23,22 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name='cart_detailed_actions'}
+
+  {if $customer.id_default_group == 11}
+    {assign var="btncheckout" value="Make a Preorder"}
+  {else}
+    {assign var="btncheckout" value="Proceed to checkout"}
+  {/if}
   <div class="checkout cart-detailed-actions text-center">
     {if $cart.minimalPurchaseRequired}
       <div class="alert alert-warning" role="alert">
         {$cart.minimalPurchaseRequired}
       </div>
-      <button id="cartAction" type="button" class="btn btn-lg btn-secondary icon-right disabled" disabled><span>{l s='Proceed to checkout' d='Shop.Theme.Actions'}</span></button>
+      <button id="cartAction" type="button" class="btn btn-lg btn-secondary icon-right disabled" disabled><span>{l s=$btncheckout d='Shop.Theme.Actions'}</span></button>
     {elseif empty($cart.products) }
-      <button id="cartAction" type="button" class="btn btn-lg btn-secondary icon-right disabled" disabled><span>{l s='Proceed to checkout' d='Shop.Theme.Actions'}</span></button>
+      <button id="cartAction" type="button" class="btn btn-lg btn-secondary icon-right disabled" disabled><span>{l s=$btncheckout d='Shop.Theme.Actions'}</span></button>
     {else}
-      <a id="cartAction" href="{$urls.pages.cart}?action=show&checkout" class="btn btn-lg btn-secondary icon-right"><span>{l s='Proceed to checkout' d='Shop.Theme.Actions'}</span></a>
+      <a id="cartAction" href="{$urls.pages.cart}?action=show&checkout" class="btn btn-lg btn-secondary icon-right"><span>{l s=$btncheckout d='Shop.Theme.Actions'}</span></a>
       {hook h='displayExpressCheckout'}
     {/if}
   </div>
