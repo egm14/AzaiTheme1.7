@@ -25,7 +25,7 @@
 <div id="_desktop_cart"   >
   <div class="blockcart cart-preview" 
       {if ($shop.name != $azaimayoreo) or ($shop.name == "")}
-      {else if ($customer.id_default_group == 12 or $customer.id_default_group == 13) and $shop.name == $azaimayoreo}
+      {else if ($customer.id_default_group == 11 or $customer.id_default_group == 12 or $customer.id_default_group == 13) and $shop.name == $azaimayoreo}
       {else}
       style="display:none;"
       {/if}
