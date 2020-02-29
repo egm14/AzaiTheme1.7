@@ -25,7 +25,7 @@
 {block name='cart_detailed_actions'}
 
   {if $customer.id_default_group == 11}
-    {assign var="btncheckout" value="Make a Preorder"}
+    {assign var="btncheckout" value="Make a Pre-order"}
   {else}
     {assign var="btncheckout" value="Proceed to checkout"}
   {/if}
