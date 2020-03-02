@@ -25,7 +25,7 @@
 {block name='cart_detailed_actions'}
 
   {if $customer.id_default_group == 11}
-    {assign var="btncheckout" value="Make a Pre-order"}
+    {assign var="btncheckout" value="pre-order"}
   {else}
     {assign var="btncheckout" value="Proceed to checkout"}
   {/if}
@@ -41,6 +41,7 @@
       <a id="cartAction" href="{$urls.pages.cart}?action=show&checkout" class="btn btn-lg btn-secondary icon-right"><span>{l s=$btncheckout d='Shop.Theme.Actions'}</span></a>
       {hook h='displayExpressCheckout'}
     {/if}
+    <p style="display:none;">{l s='pre-order' d='Shop.Theme.Actions'}</p>
   </div>
 {/block}
 
