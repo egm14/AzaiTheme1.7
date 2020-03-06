@@ -1,14 +1,25 @@
 /*=========== Fancy spinner - Windows ==========*/
 
 $(document).ready(function(){
+	//Swipe icon in product page
+		if(prestashop.page.page_name == "product"){
+			var swipeIcon = $('#stage').find('.swipe');
+			console.log(swipeIcon);
+
+			setTimeout(function(){
+			  swipeIcon.hide();
+			  //alert("hola, esto es una alerta");
+			}, 4000);
+		}
+		
 
 	//console.log("esto es la variable disableCheckout: " + disableCheckout);
 		//Close loader
 		setTimeout(function () {
 		    $(".loader-page").hide();
 		  }, 300);
-		  console.log("Spinner fuera luego del documento estar ready");
-		 
+		console.log("Spinner fuera luego del documento estar ready");
+		
 
 		var loader = $(".loader-page");
 
