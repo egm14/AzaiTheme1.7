@@ -4,10 +4,10 @@ $(document).ready(function(){
 	//Swipe icon in product page
 		if(prestashop.page.page_name == "product"){
 			var swipeIcon = $('#stage')/*.find('.swipe')*/;
-			console.log(swipeIcon);
+			//console.log(swipeIcon);
 
 			setTimeout(function(){
-			  swipeIcon.hide();
+			  swipeIcon.css("display","none");
 			  //alert("hola, esto es una alerta");
 			}, 4000);
 		}
