@@ -3,7 +3,7 @@
 $(document).ready(function(){
 	//Swipe icon in product page
 		if(prestashop.page.page_name == "product"){
-			var swipeIcon = $('#stage').find('.swipe');
+			var swipeIcon = $('#stage')/*.find('.swipe')*/;
 			console.log(swipeIcon);
 
 			setTimeout(function(){
