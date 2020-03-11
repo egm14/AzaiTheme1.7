@@ -242,11 +242,11 @@ function submitCreate(elem){
           
           
 
-          if(shopName == "azaimayoreo2"){
+          if(shopName == "azaimayoreo"){
                       uripage = prestashop.urls.base_url + prestashop.language.iso_code; 
                       setTimeout(function(){
-                     //window.location.assign(uripage +"/module/idxvalidatinguser/deluxevalidatinguser")
-                      window.location.href = prestashop.urls.pages.authentication;
+                      window.location.assign(uripage +"/module/idxvalidatinguser/deluxevalidatinguser")
+                      //window.location.href = prestashop.urls.pages.authentication;
                       $(".loader-page").show();
                       },3000)
                
