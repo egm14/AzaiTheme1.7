@@ -24,9 +24,7 @@
  *}
 <div id="_desktop_cart"   >
   <div class="blockcart cart-preview" 
-      {if ($shop.name != $azaimayoreo) or ($shop.name == "")}
-      {else if ($customer.id_default_group == 11 or $customer.id_default_group == 12 or $customer.id_default_group == 13) and $shop.name == $azaimayoreo}
-      {else}
+      {if $shop.name == $azaimayoreo and $packBehavior == "quote" and $customer.id_default_group == 11}
       style="display:none;"
       {/if}
   data-refresh-url="{$refresh_url}">

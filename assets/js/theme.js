@@ -221,7 +221,7 @@ function(t, e, n) {
         }
 
         function o(t) {
-        	/* 	Invalidar función en pagina producto*/
+            /*  Invalidar función en pagina producto*/
             
             if(document.body.id != "product"){
                 var e = new Swiper(t.find(".products-swiper-container:visible"), {
@@ -288,8 +288,8 @@ function(t, e, n) {
                 })
             })
         }), prestashop.on("updatedProduct", function(n) {
-        	
-		 	
+            
+            
             if (n && n.product_minimal_quantity) {
                 var i = parseInt(n.product_minimal_quantity, 10);
                 (0, r.default)("#quantity_wanted").trigger("touchspin.updatesettings", {
@@ -693,7 +693,9 @@ function(t, e, n) {
     }), $(".clone-slidebar-toggle").each(function() {
         $("body").append('<span id="' + $(this).attr("data-id-slidebar") + '" class="slidebar-toggle" data-id-slidebar="' + $(this).attr("data-id-slidebar") + '"></span>')
     }), $(document).on("click", ".clone-slidebar-toggle", function(t) {
-        t.preventDefault(), $("#" + $(this).attr("data-id-slidebar")).trigger("click")
+        
+        //Cambio
+         t.preventDefault(), $("#" + $(this).attr("data-id-slidebar")).trigger("click")
     });
     var i = new function() {
         var t = $("[data-canvas]"),

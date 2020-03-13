@@ -498,6 +498,11 @@ body#checkout #checkout-payment-step{padding-left:2rem;padding-right:2rem;}
 .products .product-miniature .product-flags .quote {display: none;}
  #product-availability .product-unavailable {background: none!important;}
  body#product i.material-icons {left: 5%;}
+ body#product #table_qty td#table_qty_qty{min-width:6rem;}
+ body#product #table_qty td.sales .product-quantity .qty.mb-1.mr-3{margin-left:0!important;}
+ body#product #table_qty td.sales .product-quantity .qty.mb-1.mr-3 .input-group #quantity_wanted{padding-left:2.5rem!important;}
+ body#product #table_qty td.sales .product-quantity .qty.mb-1.mr-3 .input-group span.input-group-btn-vertical{left:-.9rem;background-color:white;width:max-content;}
+ body#product #table_qty td.sales .product-quantity .qty.mb-1.mr-3 .input-group span.input-group-btn-vertical i.fa{font-size:1.2rem;}
  /*------------------ FOOTER - SECTION -------------*/
  .footer-container #footer h3{font:bold 20px/30px Helvetica, sans-serif;text-transform:uppercase;color:#2f2c2f;}
  header .col-sm-12 i{color:black!important;}

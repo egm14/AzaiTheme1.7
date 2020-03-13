@@ -86,7 +86,7 @@ $(document).ready(function(){
 	     	MinOrderReload();
 
 	     	$(document).on('click tap', '.blockcart.cart-preview a',function(){
-				MinOrderReload();				
+				MinOrderReload();			
 			});
 			
 	     	function MinOrderReload(){
@@ -524,8 +524,10 @@ $(document).ready(function(){
 
 	 		if(prestashop.page.page_name == 'module-roja45quotationspro-QuotationsProFront'){
 	 			var datapack = $(targetRow).find('#quantity_wanted').data('pack');
+	 			console.log("module data: " + datapack);
 	 		}else{
 	 			var datapack = $('#quantity_wanted').data('pack');
+	 			console.log("normal data: " + datapack);
 	 		}
 	 		
 		 	//console.log('obteniendo variables');
@@ -536,13 +538,23 @@ $(document).ready(function(){
 	 }
 	 
 	 function calculadoraQTY(qty,price, pack, priceLocation){
+	 		var QtyxData
+	 	/*Verifying the wholesaler estatus to do an action*/
+	 	//console.log("packBehavior: "+packBehavior);
+	 	if(packBehavior == "quote"){
+	 		QtyxData = qty * pack;
+	 	}else{
+	 		QtyxData = qty;
+	 	}
+	 	
 	 	var parametros ={
 	 		"prodqty" :  qty,
 	 		"prodprice" : price,
 	 		"proddata" : pack,
 	 		"async"	: true,
-	 		"QtyxData" : qty * pack
+	 		"QtyxData" : QtyxData
 	 	}
+	 	//console.log(pack);
 	 		var uriPhp;
 		 	if(window.location.hostname =="localhost"){
 		 		uriPhp = '/azai19b/themes/AzaiShop/assets/php2/';
@@ -561,14 +573,21 @@ $(document).ready(function(){
 	 			//console.log(url.value);
 	 		},
 	 		success: function(resultado, text){
-	 			priceLocation.find('.product-amount').html(" " + resultado);//value tag price html
+	 			
+	 				priceLocation.find('.product-amount').html(" " + resultado);//value tag price html
 	 				
-	 			$('#table_qty_qty').html(parametros.QtyxData);
-	 			//console.log("Resultado obtenido");
-	 			//console.log(resultado);
-	 			//console.log('------------------------------');
-	 			giveTotalQuote(parametros.proddata);
-	 			//console.log("Esto es un; " + parametros.proddata);
+	 				if(packBehavior == "quote"){
+	 					$('#table_qty_qty').html(parametros.QtyxData);
+		 			}else{
+		 				$('#table_qty_qty').html(parametros.prodqty/parametros.proddata);
+		 			}
+		 			//console.log("Resultado obtenido");
+		 			//console.log(resultado);
+		 			//console.log('------------------------------');
+		 			giveTotalQuote(parametros.proddata);
+		 			//console.log("Esto es un; " + parametros.proddata);
+	 			
+	 			
 	 		},
 	 		 error: function (request, status, error) {
 	 		 	//console.log("Hay un error: " + error);
@@ -588,7 +607,7 @@ $(document).ready(function(){
 		 		//console.log(priceRow);
 		 		var qtyRow = parseInt($(value).find('#quantity_wanted').val());
 		 		//console.log("Esto es el valor quantity: " + qtyRow);
-
+		 		//console.log(PackaValue);
 		 		conteoTotalQuote = conteoTotalQuote+priceRow;
 		 		conteoTotalQuantity = conteoTotalQuantity+qtyRow;
 		 		conteoTotalQuantityUnid = PackaValue*conteoTotalQuantity;
@@ -675,11 +694,21 @@ $(document).ready(function(){
 		}
 		request.send(vars);
 	}
-	 
+	/*==================== Validation email form input  =======================*/
 
-
+	prestashop.on("updateCart", desabilitarInputCart);
+	//desabilitarInputCart();
+	function desabilitarInputCart(){
+		//alert("Se actualizaron los productos");
+		 if(prestashop.shop.name == "azaimayoreo" && packBehavior == "sale" && cGroup == 11){
+		 	var  inputCartResumen = $(document).find('input.js-cart-line-product-quantity');
+		 	inputCartResumen.closest('.input-group').css("display", "none");	
+		 }
+	 }
+	/*==================== Validation email form input  =======================*/
 
 });
+
 
 /************************************************************/
 /*************** Code using on core.js **********************/

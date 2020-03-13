@@ -28,38 +28,58 @@
 
 {*ASSIGN GLOBAL VARIABLES TO USE ON AZAI*}
 
-{if ($customer.id_default_group == 12 or $customer.id_default_group == 13)}
-    {assign var=packageAzai value="1" scope="global"}
-    {assign var=packageAzaiStep value="1" scope="global"}
-    {assign var="WMinQuoteOrder" value="500" scope="global"}
-{else}
-    
-    {*if ($product.category == 'bags') or ($product.category == 'necklaces') or ($product.category == 'jewelry-necklaces') or ($product.category == 'earrings') or ($product.category == 'jewelry-earrings') or ($product.category == 'bracelets') or ($product.category == 'jewelry-bracelets') or ($product.category == 'hats') or ($product.category == 'brooches') or ($product.category == 'clutches-crossbody-bags') or ($product.category == 'jewelry') or ($product.category == 'rings') or ($product.category == 'jewelry-rings') or ($product.category == 'accessories')*}
-    <!---Category parent accesories and Jewerely by customer profile wholesaler-->
-    {*if $category->id_category == 12 or $category->id_category == 15 or $category->id_category == 16 or $category->id_parent == 12 or $category->id_parent == 15 or $category->id_parent == 16*}
-    
-    <!-- Quantity package split by category id at the shop-->
-    {if $product.id_category_default == 12 or $product.id_category_default == 15 or $product.id_category_default == 16 or $product.id_category_default == 37 or $product.id_category_default == 36 or $product.id_category_default == 61 or $product.id_category_default == 62 or $product.id_category_default == 55 or $product.id_category_default == 56 or $product.id_category_default == 57 or $product.id_category_default == 58 or $product.id_category_default == 33}  
-      {assign var=packageAzai value="3" scope="global"}
-      {assign var=packageAzaiStep value="3" scope="global"}
-      {assign var="WMinQuoteOrder" value="0" scope="global"}
+{*Variable behavior form objective Quote or Sale*}
+{assign var=packBehavior value="quote" scope="global"}
+
+{if $packBehavior == "quote"}
+
+    {if ($customer.id_default_group == 12 or $customer.id_default_group == 13)}
+        {assign var=packageAzai value="1" scope="global"}
+        {assign var=packageAzaiStep value="1" scope="global"}
+        {assign var="WMinQuoteOrder" value="500" scope="global"}
     {else}
-    <!-- Quantity package by other product category -->
-      {assign var=packageAzai value="3" scope="global"}
-      {assign var=packageAzaiStep value="3" scope="global"}
-      {assign var="WMinQuoteOrder" value="0" scope="global"}
+        <!-- Quantity package split by category id at the shop-->
+        {if $product.id_category_default == 12 or $product.id_category_default == 15 or $product.id_category_default == 16 or $product.id_category_default == 37 or $product.id_category_default == 36 or $product.id_category_default == 61 or $product.id_category_default == 62 or $product.id_category_default == 55 or $product.id_category_default == 56 or $product.id_category_default == 57 or $product.id_category_default == 58 or $product.id_category_default == 33}  
+          {assign var=packageAzai value="3" scope="global"}
+          {assign var=packageAzaiStep value="3" scope="global"}
+          {assign var="WMinQuoteOrder" value="0" scope="global"}
+        {else}
+        <!-- Quantity package by other product category -->
+          {assign var=packageAzai value="3" scope="global"}
+          {assign var=packageAzaiStep value="1" scope="global"}
+          {assign var="WMinQuoteOrder" value="0" scope="global"}
+        {/if}
     {/if}
-    
-    
+{else}
+    {if ($customer.id_default_group == 12 or $customer.id_default_group == 13)}
+        {assign var=packageAzai value="1" scope="global"}
+        {assign var=packageAzaiStep value="1" scope="global"}
+        {assign var="WMinQuoteOrder" value="500" scope="global"}
+    {else}  
+        <!-- Quantity package split by category id at the shop-->
+        {if $product.id_category_default == 12 or $product.id_category_default == 15 or $product.id_category_default == 16 or $product.id_category_default == 37 or $product.id_category_default == 36 or $product.id_category_default == 61 or $product.id_category_default == 62 or $product.id_category_default == 55 or $product.id_category_default == 56 or $product.id_category_default == 57 or $product.id_category_default == 58 or $product.id_category_default == 33}  
+          {assign var=packageAzai value="3" scope="global"}
+          {assign var=packageAzaiStep value="3" scope="global"}
+          {assign var="WMinQuoteOrder" value="0" scope="global"}
+        {else}
+        <!-- Quantity package by other product category -->
+          {assign var=packageAzai value="3" scope="global"}
+          {assign var=packageAzaiStep value="3" scope="global"}
+          {assign var="WMinQuoteOrder" value="0" scope="global"}
+        {/if}
+    {/if}
+
 {/if}
+
+
 
  
 
 {assign var=azaimayoreo value="azaimayoreo" scope="global"}
 
-<!-- Creatting new variable about shop
+<!-- Creatting new variable about shop-->
 <script type="text/javascript" hidden>
-      var ShopAzai = {ldelim}
+      /*var ShopAzai = {ldelim}
         shop : {$shop|@json_encode nofilter},
         page : {$page|@json_encode nofilter},
         currency : {$currency|@json_encode nofilter},
@@ -67,8 +87,10 @@
         cart : {$cart|@json_encode nofilter},
         customer: {$customer|@json_encode nofilter}
         urls : {*$urls|@json_encode nofilter*}
-        {rdelim}
-</script>-->
+        {rdelim}*/
+        var packBehavior = "{$packBehavior|escape:javascript}";
+        var cGroup = "{$customer.id_default_group}";
+</script>
 
 {block name='head_ie_compatibility'}
   <meta http-equiv="x-ua-compatible" content="ie=edge">
